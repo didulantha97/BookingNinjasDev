@@ -1,0 +1,179 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_EmailSubscribeController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg8.png)');
+                    $('.wrapper').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg8.jpg)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Restaurant Management Software - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/Flat_MacBook8.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Best Online Restaurant Management System</h1>
+                                <h2>All-In-One Restaurant Management Software Includes POS Integration, Online Reservation, Mobile Payments &amp; More</h2>
+                                <br />
+                            </article>
+                            
+                            <div class="text_center">
+                                <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button">SCHEDULE A MEETING</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>According to our users….</h2>
+                        <p>The Booking Ninjas system is the best thing to ever happen to the hospitality industry. In this era, restaurants require a better level of service, healthy practices, and much more. What’s better than using the digital system made specifically for those purposes?</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>Digital is The New Norm</h2>
+                        <p>Inventory control, bookkeeping, and managing customer payment. These are all important aspects of running a business, no doubt. Perhaps you find it tedious to carry out all said operations manually. Well, that’s just what a restaurant administration software is for. And with our very own management service, you can get some of the workloads off yourself.</p>
+                        <p>It’s not really a recommendation to use an administration software, but more so a necessity. The world’s gone digital, and you are left in the dust. Making use of a restaurant management software not only makes your work easier but also enriches the customer experience and helps you make decisions to maximize profits. One thing though – don’t expect it to improve the quality of your food. That’s something best left to good old humans.</p>
+                    </div>   
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">What’s our offer?</h2>
+                        <h2>Inventory Control</h2>
+                        <p>No restaurant can survive without proper handling of inventory. You don’t want to be stranded with a low amount of ingredients during rush hour, or find half your foodstuffs expired.</p>
+                        <p>A restaurant management system can help you log your inventory and keep track of them. You can monitor how much you currently have and the estimated date of exhaustion. With an RMS, You can also set a fixed date on the built-in calendar for automatic restocking. It can even help you determine expired goods, to prevent possible issues with health inspectors and diners alike.</p>
+                        <p>Statistics can also be generated on the most and least demanded dishes so you’ll know popular demand and what dishes to dial down on. With inventory control, you can save up on food and money.</p>
+                        <br/>
+                        <h2>Sales Tracking</h2>
+                        <p>Every smart restaurant administration software records all transactions and provides data with which you can improve your business. For instance, knowing your best and worst performing dishes, and most lucrative periods can help you make the right decisions on managing your business by stocking up on resources for such periods and increasing the availability of the dishes.</p>
+                        <br/>
+                        <h2>Financial Statement Preparation</h2>
+                        <p>A management software without the ability to create financial statements is pretty useless. You are running a business after all. At specified intervals, a restaurant administration software will calculate all transactions and expenses and prepare a financial statement. Tax, salaries, sales, and inventory are all taken into account to render a flawless statement. There’s no need to manually calculate finances with ever-changing variables increasing the chance of accruing errors. An administration software can easily handle that.</p>
+                        <p>Of course, this doesn’t mean you should take a completely hands-off approach. You’re still expected to review things once in a while.</p>
+                        <br/>
+                        <h2>Staff Management</h2>
+                        <p>Keeping track of your staff’s attendance record and performance can be a Herculean task when doing so with spreadsheets. Luckily, with administration software, this becomes a trivial issue. </p>
+                        <p>Workers will also be able to place in leave requests via the system, whether for vacations or health-related reasons</p>
+                        <p>Performance reviews of staff can also be carried out with an administration system. With the service, customers will be able to review the workers who attend to their needs. You’ll be able to easily tell your highest performing workers by taking a look at their stats, and reward them accordingly.</p>
+                        <p>A restaurant administration software helps you not just manage your business, but also your staff.</p>
+                    </div> 
+                </div>
+            </div>
+            <!-- CTA button -->
+            <div class="text_center">
+                <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button">SCHEDULE A MEETING</apex:outputLink>
+            </div>
+            <!-- /CTA button -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">How About The Customers?</h2>
+                        <p>Enough about the more managerial aspects. Let’s focus on your number one priority – the customers. Every good restaurant management service also offers an interface to grant customers access to features which helps them achieve maximum satisfaction.</p>
+                        <br/>
+                        <h2>Online Reservations</h2>
+                        <p>With an online system, customers will be able to make reservations in advance from the comfort of their homes. Adios to scheduling conflicts. A restaurant administration software ensures unavailable seats are marked as so and even sends a reminder to customers to reduce cases of no-shows. This ease of use will encourage more clients to patronize your business. Even without anyone at the desk, this aspect of your business will continue to move on without a hitch.</p>
+                        <br/>
+                        <h2>Online Ordering</h2>
+                        <p>If your customers won’t come to you, going out to them is easily achievable via administration software. All they have to do is make orders after which staff are automatically dispatched to their locations.</p>
+                        <p>This also makes it easier to monitor your customers, and generate data on sales made.</p>
+                        <p>Having an online option for ordering also grants more access to customers who are physically incapable of leaving their homes.</p>
+                        <p>One further advantage of online ordering for your business is the reduction of overbooking. You’ll run at a lower risk of running out of seats in your restaurant without enough resources to handle the situation.</p>
+                        <br/>
+                        <h2>POS Integration</h2>
+                        <p>No cash? No problem? Our restaurant management software integrates with your POS system to manage payments. With the AI-based Einstein technology, numbers are crunched from the moment of purchase. All that’s required is for your customers to possess a credit card for payment.</p>
+                        <p>You also get the integration of popular delivery channels. Make your service an easy point of access through the best channels out there, depending on your customers’ needs. With us, you get integrations with Uber Eats, Deliveroo, DoorDash, Glovo, Takeaway, and much more. It’s expected from your business.</p>
+                        <br/>
+                        <h2>Mobile Payment</h2>
+                        <p>There’s no need for customers to walk around with cash, or even a card, in hand. With our mobile integration, they can conveniently make payments with their smartphones. This allows them to save money otherwise billed on credit card fees.</p>
+                        <p>Mobile technology simply isn’t going anywhere. In fact, just under 30% of Americans exclusively use mobile transactions, and that number is only going to increase.  A lot of your customers will certainly have preference for mobile payment so it’s your duty to ensure it’s available.</p>
+                        <br/>
+                        <h2>More Effective Communication</h2>
+                        <p>No good business can thrive without feedback from its audience. Through our management software, diners can easily give feedback about their experience at your restaurant, and also advise you on areas to improve, be it the food, service, or aesthetics.</p>
+                        <p>This will help you get in sync with your patrons and gear your service to be more customer-friendly, which in turn will bolster your reputation in circles. You’ll be sure to see your reviews become more positive and receive a whole lot more customers.</p>
+                    </div> 
+                </div>
+            </div>
+            <!-- CTA button -->
+            <div class="text_center">
+                <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button">SCHEDULE A MEETING</apex:outputLink>
+            </div>
+            <!-- /CTA button -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Restaurant Management Software - 2" class="adaptive-img wow fadeInRight" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration8.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <h2>3-point steps to get started</h2>
+                            <dl>
+                                <h3>Get in Touch</h3>
+                                <dd>To begin, simply schedule a brief intro call&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}" target="_blank">here</apex:outputLink>. Our support team will be in touch at your desired date and time to answer all your questions and address any concerns you may have about our Property Management System. Ready now? Call <a href="tel:+19176002345">(917) 600-2345</a> to expedite the process.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Import Your Data</h3>
+                                <dd>Our support team will assist you in transferring your hotel’s data into the application. Data migration takes just a few clicks.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Launch for Success</h3>
+                                <dd>Good news! You just made a major improvement to your hotel. Open the Booking Ninjas app and start exploring all the tools that Booking Ninjas and Salesforce have to offer. Our 24hr live support team will always be there to answer any questions you encounter on the app. Want to know how to get the most out of our Property Management System features or your Salesforce cloud? We offer&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Consulting)}" target="_blank">Salesforce consultations</apex:outputLink> with our team of experts!</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>The Best Fit for Your Business</h2>
+                        <p>The Booking Ninjas system is designed to help you get to your business goals without the setbacks familiar in most management systems. We offer high-end tools to provide a seamless management process for the staff, and a platform to provide exceptional customer service to your guests.</p>
+                        <p>We are all about productivity, customer experience, and user benefits. That’s why we offer highly useful packages as part of our core implementation process. Our developers and customization platform helps you include specific packages and remove currently unwanted ones. In other words, you will get exactly what you are looking for, and better.</p>
+                        <p>We engage in business internationally. From North America to Europe and Asia, we are keen on delivering absolute excellence.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/Restaurant_icon-bg.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Restaurant Management Software Price - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/Restaurant_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Our restaurant software packages start </p>
+                                        <p><b>$150</b> / Terminal / month! </p>
+                                        <p>Click&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Pricing)}">here</apex:outputLink> for pricing info.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button" target="_blank">Take a Pilot Today</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

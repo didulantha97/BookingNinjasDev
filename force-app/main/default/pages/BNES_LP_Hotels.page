@@ -1,0 +1,231 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_EmailSubscribeController">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url( https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg6.jpg)');
+                    $('.wrapper').css('background-image', 'url( https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg6.jpg)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="A Central Platform For Effective Hotel Management - 1" src=" https://d1b89zc79exfxt.cloudfront.net/img/Flat_MacBook6.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>
+                                    Una plataforma central<br/>
+                                    Para una gestión efectiva de hoteles
+                                </h1>
+                                <p>Una plataforma todo en uno para gestionar todas las necesidades de su hotel de la forma más fluida posible. Salude a una gestión fácil.</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h3>Plataforma intuitiva para su comodidad</h3>
+                        <p>El sistema Booking Ninjas está diseñado para facilitar el proceso de gestión de su hotel. Su plataforma Booking Ninjas es una representación virtual del entorno de su negocio, ofreciéndole la habilidad de automatizar y gestionar efectivamente cada aspecto de su organización.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Todo lo que necesita saber sobre los sistemas de gestión de hoteles</h3>
+                                <p>Con los últimos avances tecnológicos de la industria hotelera, el sistema de gestión de hoteles Booking Ninjas ha evolucionado mucho en la asistencia de gestión o en la mejora de todas las funciones generales de su instalación. De hecho, la gestión puede mejorar fácilmente los procesos administrativos del hotel, así como mejorar las operaciones generales de la entidad.</p>
+                                <p>Es por esa razón que la mayoría de los dueños de hoteles han llegado a comprender la importancia de un buen sistema de gestión para sus negocios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">¿Qué es un sistema de gestión de hoteles?</h3>
+                                <p>Dicho simplemente; un sistema de gestión de hoteles se refiere a cualquier solución de sistema diseñado para asistir en el día a día de la gestión de un hotel, complejo o propiedad similar. Esta solución es popular en la industria hotelera, permitiéndole hacer tareas que antes debían hacerse manualmente en papel para ser realizadas digitalmente - típicamente con cierto grado de automatización.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Tipos de sistemas de gestión de hoteles</h3>
+                                <p>Los sistemas digitales de gestión de hoteles han evolucionado a lo largo de los años, y basándonos en la tecnología, estos sistema de gestión de hoteles se clasifican en dos:</p>
+                                <p>- Sistema de gestión de hoteles basado en la nube</p>
+                                <p>- Sistema de gestión de hoteles en la premisa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Sistema de gestión de hoteles en la nube</h3>
+                                <p>Es un sistema basado en el navegador. Como el HMS en premisa, también proporciona todas las funcionalidades que ayudan a los hoteles a dirigir sus operaciones más básicas. La mayor ventaja es que ya no tiene que preocuparse sobre el mantenimiento de su servidor y otras operaciones relacionadas con la IT. Se ocupará un tercero. Necesita crear una cuenta de propiedad. Con conexión a internet, podrá gestionar fácilmente su hotel desde cualquier dispositivo y en cualquier momento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">¿Por qué necesita un sistema de gestión de hoteles?</h3>
+                                <p>La razón fundamental por la que los hoteleros cuentan con una tecnología de gestión de hoteles es llegar al límite de las operaciones básicas del hotel. En este mundo de tecnología vertiginosa, los huéspedes esperan servicios rápidos de sus anfitriones. Gestionar operaciones y satisfacer las necesidades de lujo de sus huéspedes puede ser todo un desafío.</p>
+                                <p>El software de gestión de hoteles le ayudará a encontrar lo más adecuado para las operaciones de su hotel y la gestión de sus clientes.</p>
+                                <p><strong>• Gestione operaciones</strong></p>
+                                <p>Su hotel necesita un sistema de gestión centralizado para simplificar las operaciones y, así, cosechar resultados efectivos. Un sistema de gestión de hoteles adecuado ayuda a los operadores hoteleros a hacer reservas, reservas de habitaciones, registros de entradas y salidas, comunicaciones, auditorías nocturnas (recepcionista nocturno), y extender estancias de huéspedes en unos pocos clicks. Esto reducirá, drásticamente, el tiempo dedicado a tareas administrativas y le permitirá centrarse en nuevas formas de obtener ingresos.</p>
+                                <p><strong>• Gestionar reservas</strong></p>
+                                <p>Su sistema de gestión de hoteles ayudará a su plantilla a gestionar las reservas sin esfuerzo alguno. Su plantilla será notificada en cuanto se realice una reserva, y esta se actualizará automáticamente en las plataformas de reservas.</p>
+                                <p>Por tanto, el tiempo dedicado a actualizar las reservas manualmente será reducido, y evitará errores como el overbooking. De esta manera, el software de gestión adecuado permitirá a su plantilla interactuar más con los huéspedes, en vez de dedicarse a tareas tediosas.</p>
+                                <p><strong>• Gestionar huéspedes</strong></p>
+                                <p>El verdadero propósito de la industria hotelera es satisfacer las necesidades de los huéspedes y complacerlos. A medida que cambian los tiempos, también cambian las expectativas de los huéspedes. Entender las necesidades insatisfechas de los huéspedes más exigentes es esencial, lo que le llevará a ofrecer servicios valiosos.</p>
+                                <p>Su sistema de gestión de hoteles, con un exhaustivo historial de huéspedes, le permitirá entender las necesidades de sus huéspedes y sus preferencias, al analizar las estancias anteriores, y le ayudará a ofrecer servicios personalizados en su siguiente visita.</p>
+                                <p>Gracias a estos datos de los huéspedes, también podrá entender las nuevas necesidades de sus huéspedes y crear campañas efectivas de marketing.</p>
+                                <p><strong>• Gestione los pagos y la contabilidad</strong></p>
+                                <p>Su sistema de gestión de hoteles le facilitará la gestión de sus datos financieros y transacciones desde la comodidad de su plataforma. Los sistemas de pagos y contabilidad suelen integrarse en otras partes del sistema, lo que permite una sincronización de datos efectiva. Esto permite que los datos globales de su negocio sean almacenados y analizados de una forma organizada, en comparación con los sistemas tradicionales.</p>
+                                <p>Gracias a la estructura centralizada de nuestro sistema de gestión financiera, podrá reducir significativamente los contracargos, así como reforzar la seguridad de los pagos de sus clientes a través de Stripe API.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Ventajas de un sistema de gestión de hoteles</h3>
+                                <p>Hay muchos dueños de hoteles que no conocen las funciones y la importancia de un sistema de gestión de hoteles. De hecho, un sistema de gestión respetado le ayudará a optimizar las tareas administrativas del día a día de su negocio y aumentar las reservas a corto y largo plazo.</p>
+                                <p>El sistema es esencial para reducir las funciones manuales del día a día de sus operaciones y mejorar la experiencia general de los huéspedes. Un sistema adecuado le ayudará a mejorar la conciencia general de su marca con una gran variedad de clientes actuales y potenciales. De modo que es importante elegir un sistema adecuado que incluya todas las funciones que necesita.</p>
+                                <p>Esto le ayudará a gestionar efectivamente las funciones de su hotel en un clima económico mundial competitivo. Con cientos de sistemas de gestión de hoteles en el mercado, elegir el más adecuado no es una tarea fácil. Hay muchas cosas importantes que debe tener en cuenta al elegir un sistema de gestión de huéspedes para su instalación.</p>
+                                <p>Aquí abajo encontrará los beneficios de elegir un sistema de gestión de hoteles adecuado.</p>
+                                <p><strong>1. Un buen sistema de gestión le ayudará a reducir drásticamente el tiempo dedicado a funciones administrativas de su negocio.</strong> El sistema realizará la mayoría del trabajo en ese ámbito, ahorrándole tiempo y permitiéndole centrarse en el panorama general. Será capaz de realizar todas las cosas importantes de comercializar su marca y llevarla al siguiente nivel en esas circunstancias.</p>
+                                <p>Por eso es importante que invierta en un sistema de gestión adecuado para su negocio. El sistema le ofrecerá datos valiosos sobre cómo sus empleados realizan sus tareas. Esto le ayudará a medir la satisfacción de sus empleados y su productividad. En el entorno empresarial competitivo de hoy en día, es casi esencial que automatice tantas tareas como le sea posible para llevar a su negocio al siguiente nivel.</p>
+                                <p><strong>El sistema de gestión adecuado le ayudará a crear relaciones más sólidas con sus huéspedes.</strong> Será capaz de aprovechar mejor su objetivo de mercado mientras identifica clientes potenciales. Los huéspedes apreciarán la mejorada experiencia general de su operación. Las tasas de retención de empleados y huéspedes mejorarán como resultado de invertir en el mejor sistema de gestión del mercado. Puede llevar fácilmente a su marca al siguiente nivel, al invertir en un sistema reputado para su instalación.</p>
+                                <p><strong>3. Un sistema de gestión de hoteles moderno y efectivo le ayudará a implementar un buen sistema de gestión de ingresos.</strong> Podrá usar herramientas innovadoras de precios incluidas en el sistema de gestión para este propósito. Le ayudará a crear una estrategia efectiva de fijación de precios de habitaciones para maximizar los ingresos. De hecho, una fijación de precios de habitaciones adecuada es una de las mejores estrategias para tener éxito en este sector empresarial tan competitivo. Las herramientas que obtenga de un sistema de gestión de hoteles adecuado, le ayudarán mucho en este sentido.</p>
+                                <p><strong>4. Un buen sistema de gestión de hoteles le ayudará a llegar a través de la industria y gestionar las funciones de distribución de forma efectiva.</strong> El sistema incluye un gestor de canales, por el que podrá anunciarse a través de muchos canales mientras mantiene la paridad de tarifas. Desde las agencias de viajes más grandes hasta las más pequeñas e individuales, podrá anunciar fácilmente su negocio en toda la industria, gracias al sistema de gestión de hoteles adecuado. Le proporcionará información de reservas en tiempo real, que le ayudará a impulsar las reservas con el tiempo.</p>
+                                <p><strong>5. La función principal de un buen sistema de gestión de hoteles es incrementar las reservas a largo plazo.</strong> Cada función de su sistema de gestión trabajará para mejorar las tasas generales de reservas de su hotel. Tanto si planea adentrarse en nuevos mercados o incrementar las reservas en la temporada baja, el sistema adecuado le ayudará con su trabajo. Por esa razón, es importante elegir el mejor sistema de gestión de hoteles del mercado.</p>
+                                <p><strong>6. El sistema de gestión de hoteles adecuado le proporcionará informes diarios precisos.</strong> El administrador tendrá acceso a informes diarios de ingresos precisos, a través del mejor sistema de gestión de hoteles del mercado. Puede aprovecharse de estos informes para adaptar sus estrategias de marketing a los resultados de los informes. Es por esta razón, por la que necesita invertir en el sistema adecuado en todo momento. Si no, malgastará su dinero en el proceso.</p>
+                                <p><strong>7. La segmentación del mercado es otra ventaja importante del sistema de gestión de huéspedes adecuado.</strong> Los dueños y administradores podrán hacer un seguimiento de los tipos de clientes que tienen. Gracias a estos datos, podrán decidir si sus estrategias de marketing están dirigidas a los clientes adecuados. Esta es una función fundamental para aumentar los ingresos y las ganancias de su negocio a largo plazo.</p>
+                                <p><strong>8. Reducción de costes</strong>: aunque los software de hotel requieren una inversión inicial, durante un período más largo de tiempo, estas aplicaciones y sistemas le ayudarán a ahorrar gastos. Esto es porque se requerirá menos intervención humana en los procesos del día a día, mientras que podrá ahorrar dinero en otras áreas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">El sistema Booking Ninjas</h3>
+                                <p>Las ventajas del sistema de gestión de hoteles Booking Ninjas le ayudarán a llevar a su negocio al siguiente nivel en un breve período.</p>
+                                <p>Obtener el sistema adecuado le ahorrará tiempo y dinero a largo plazo. Con el sistema de gestión de hoteles adecuado, gestionar operaciones de hoteles y huéspedes será más fácil que nunca.</p>
+                                <p>Puede contactar con nosotros y realizarnos preguntas y consultas. Estamos siempre disponibles, las 24 horas del día, los 7 días de la semana, para atender sus necesidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                        <h3 class="text_center">Tres pasos para empezar</h3>
+                        <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="A Central Platform For Effective Hotel Management - 2" class="wow fadeInRight" src=" https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration6.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <dl>
+                                <h3>Ponerse en contacto</h3>
+                                <dd>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al <a href="tel:+19176002345">(907) 600-2345</a> para agilizar el proceso.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Importe sus datos</h3>
+                                <dd>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Láncese al éxito</h3>
+                                <dd>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url( https://d1b89zc79exfxt.cloudfront.net/img/Hotels_icon-bg.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="A Central Platform For Effective Hotel Management Price - icon" src=" https://d1b89zc79exfxt.cloudfront.net/img/Hotels_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>¡Tenemos paquetes desde $17 por habitación al mes! Consúltenos ahora. Dependiendo de su situación, podría ser elegible para paquetes de descuentos. Haga click&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" target="_blank">aquí</apex:outputLink> para información de precios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">PRUEBA EL PILOTO HOY</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

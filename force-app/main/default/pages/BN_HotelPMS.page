@@ -1,0 +1,181 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <div class="solution-title">
+                <div class="container">
+                    <div class="solution-title__hidden">solutions</div>
+                    <h1 class="title">Manage all property operations from one place</h1>
+                </div>
+            </div>
+        
+            <div class="solutions_wrap">
+                <div class="solutions_block">
+                    <figure class="solution1">
+                        <figcaption>Custom Objects</figcaption>
+                    </figure>
+                    <figure class="solution2">
+                        <figcaption>Apps from app Exchange</figcaption>
+                    </figure>
+                    <figure class="solution3">
+                        <figcaption>Website  (booking system)</figcaption>
+                    </figure>
+                    <figure class="solution4">
+                        <figcaption>Financial Integrations</figcaption>
+                    </figure>
+                    <figure class="solution9">
+                        <figcaption>Ticketing  Systems</figcaption>
+                    </figure>
+                    <figure class="solution5">
+                        <figcaption>Salesforce Clouds</figcaption>
+                    </figure>
+                    <figure class="solution6">
+                        <figcaption>All GDS /OTA distribution websites</figcaption>
+                    </figure>
+                    <figure class="solution7">
+                        <figcaption>POS systems</figcaption>
+                    </figure>
+                    <figure class="solution8">
+                        <figcaption>Phone Systems</figcaption>
+                    </figure>
+                    <figure class="solution10">
+                        <figcaption>Maintenance  and housekeeping</figcaption>
+                    </figure>
+                    <figure class="solution11">
+                        <figcaption>Access Controls</figcaption>
+                    </figure>
+                    <figure class="solution12">
+                        <figcaption>Artificial Intelligence</figcaption>
+                    </figure>
+                </div>
+            </div>
+        
+            <div class="product_slider ">
+                <div class="container">
+                    <h2 class="title">Product Features</h2>
+                    <div class="product_slider_block">
+                        <div class="product_slider_nav">
+                            <a data-slide-index="0" href="" >Centralised control</a>
+                            <a data-slide-index="1" href="">360 analysis</a>
+                            <a data-slide-index="2" href="">Partnership which exceeds boundaries</a>
+                            <a data-slide-index="3" href="">Artificial Intelligence</a>
+                            <a data-slide-index="4" href="">Voice control</a>
+                        </div>
+                        <ul class="product_slider_item">
+                            <li>
+                                <div class="product_slider_inner">
+                                    <img alt="BookingNinjas PMS Features - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/solution-slider5.png"/>
+                                    <div class="product_slider_txt">
+                                            Many properties?  <br/>
+                                            Many tasks? <br/>
+                                            You just need one  <br/>
+                                            platform!
+                                            <p>Handle more than you were meant to handle! 
+                                                    By advanced task handling technology which integrates Artificial Intelligence and the power of your own voice. Waste less time doing your own routine work and let technology do it for you! An assistant to delegate your day-to-day task with minimal instruction. Combine everything you do in one platform.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product_slider_inner product_slider_inner-center">
+                                    <img alt="BookingNinjas PMS Features - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/solution-slider4.png"/>
+                                    <h3 class="product_slider_txt">
+                                            Get to know all about your guest!
+                                            <p>His/her preferences, favorite sights, favorite activities, room preferences and many more. Everything your guest experiences and likes to experience, we make sure he/she experiences the same or much of the related when he/she visits your property the next time. It is like he is a member of your property and not a guest anymore.</p>
+                                    </h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product_slider_inner">
+                                    <div class="product_slider_txt text_left">
+                                            You become a Salesforce 
+                                            partner by default!
+                                            <p>That’s right. Upon getting onboard with Booking Ninjas, you are automatically in partnership with Salesforce as an exclusive advantage. This also means integration with over 1000s of apps on the Salesforce AppExchange, which are only available to Salesforce platform. along being the first to take advantage of platform upgrade that you cannot stop like the seasons.</p>
+                                    </div>
+                                    <img alt="Salesforce Partner - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/solution-slider3.png"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product_slider_inner">
+                                    <div class="product_slider_txt text_left">
+                                            Artificial Intelligence
+                                            <p>This piece of technology is not new in the market anymore, most people are familiar with the capabilities and what Artificial Intelligence can bring onto the table, but what they are not aware of is that Artificial Intelligence is now combined with software/hardware in order to be able to exceed capabilities that were once thought to be the limit. And the reason for this wonderful paragraph of AI is to let you know that Booking Ninjas is a platform that has incorporated Cloud computing and Artificial Intelligence. Yes, what you are thinking to yourself is absolutely right. Getting on board with booing Ninjas means that you will also be onboard with the benefits that Artificial Intelligence has to offer. If you were ever in doubt as to how we are able to achieve the benefits mentioned above, well! Now you have the complete answer..</p>
+                                    </div>
+                                    <img alt="Artificial Intelligence" src="https://d1b89zc79exfxt.cloudfront.net/img/solution-slider2.png"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product_slider_inner">
+                                    <div class="product_slider_txt text_left">
+                                            Voice control
+                                            <p>Once again, voice recognition and control has been in the market for quite some time now. But, it has not been put to it’s ultimate use yet. Booking Ninjas allows you to experience the power of your own voice! The power to do more while already doing more! That is what you will experience with Booking Ninjas. We help you make a difference and help you in becoming a part of this up and coming trend of working.</p>
+                                    </div>
+                                    <img alt="Voice Control" src="https://d1b89zc79exfxt.cloudfront.net/img/solution-slider1.png"/>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="bridge_wrap ">
+            <div class="container">
+                <div class="title">Booking ninjas is the bridge to the future</div>
+                <div class="bridge_block">
+                    <div class="float_left">
+                        <figure>
+                            <img alt="Your Company - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solution-company.png"/>
+                            <figcaption>Your company</figcaption>
+                        </figure>
+                        <section>
+                            <strong> &#x3C; 1<sup>%</sup> </strong>
+                            <small>Of guests data <br/>has been analyzed</small>
+                        </section>
+                    </div>
+                    <div class="float_right">
+                        <section>
+                            <strong>77<sup>%</sup> </strong>
+                            <small>Of guests are not <br/> engaged with companies</small>
+                        </section>
+                        <figure>
+                            <img alt="Your Quests - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solution-support.png"/>
+                            <figcaption>Your quests</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+            <div class="solution_steps container">
+                <div class="solution_steps_block">
+                <figure>
+                    <figcaption>
+                        Our business model is focused on customer success 
+                    </figcaption>
+                    <div><img alt="BookingNinjas PMS Features - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/solution-man.png"/></div>
+                </figure>
+                <figure>
+                    <figcaption>
+                        We make sure we bring you to future fast
+                    </figcaption>
+                    <div><img alt="BookingNinjas PMS Features - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/solution-totop.png"/></div>
+                </figure>
+                <figure>
+                    <figcaption>
+                        Сapture value in record time with our expertise 
+                    </figcaption>
+                    <div><img alt="BookingNinjas PMS Features - icon - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/solution-timer.png"/></div>
+                </figure>
+                </div>
+                <div class="solution_steps_button">
+                    <apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button-secondary" target="_blank">Start here</apex:outputLink>
+                </div>
+            </div>
+        
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

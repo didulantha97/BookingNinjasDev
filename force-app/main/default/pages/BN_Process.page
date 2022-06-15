@@ -1,0 +1,196 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+        
+            <!-- top -->
+            <div class="about-page-top process-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="about-page-top__img">
+                                <img alt="Booking Ninjas PMS System Buying Process - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/process-top.png"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1>Booking Ninjas PMS System Buying Process</h1>
+                            <p>At Booking Ninjas, our goal is to make everything simple for the end-user. Whatever your technical proficiency might be, adopting and implementing the Booking Ninjas system will always be very easy. </p>
+                            <p>We have a buying process for potential customers. It is designed in a way to make the entire purchase journey simple and fun. From phase 1, which involves a series of business-related questions, to phase 3, which cover after-purchase services, we make the buying process easy, and accountable. In this brief article, we will be going over each of these stages and their significance in the customer journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="process-page">
+                <div class="container">
+                    <!-- before -->
+                    <div class="process-before">
+                        <div class="process-before__wrapper">
+                            <div class="process-before__content">
+                                <p>[ Before we begin the walk-through, let’s have a brief reminder of why we are doing this. For the hospitality industry, our system, the Booking Ninjas application is a unique solution. It makes property and business management an automated experience, saving lots of money in the process. For most of our customers, it is a highly efficient system specialized in intelligently collating user information, leading to better marketing campaigns, improved customer engagement, and spotting of trends and opportunities.</p>
+                                <br/>
+                                <p>We have developed useful partnerships with reputable brands such as Salesforce and Twilio in order to provide improved functionalities for our application users. One of such functionalities is the Einstein Analytics, an AI-powered tool that assists businesses in highly intelligent operations and analyzes data to ensure efficiency boost.</p>
+                                <br/>
+                                <p>To learn more about we help make hospitality businesses more profitable and productive, check out our web site’s homepage, or simply set up a brief meeting with one of us, using this link. ]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /before -->
+                    <!-- steps -->
+                    <div class="process-steps">
+                        <!-- phase 1 -->
+                        <div class="process-steps__item">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <p class="process-steps__description">Our buying process comes in 4 stages (as hinted earlier), and all of these stages are designed to help the customer feel better and more confident about their purchase. Let’s jump in and see how each of these stages play out (pun intended).</p>
+                                </div>
+                            </div>
+                            <div class="row">   
+                                <div class="col-auto process-line wow slideInUp"><img src="https://d1b89zc79exfxt.cloudfront.net/img/process-point.png" alt=""/></div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-xl-11">
+                                            <p class="title">Phase 1: Discovery session  (up to 30min)</p>  
+                                        </div>
+                                    </div>
+                                <div class="process-steps__item-content wow bounceInRight">
+                                    <p>This is where we engage in a series of discussions with you to know exactly what you want and how you want to get it. From this discussion, we will get valuable data like dreams and goals for the near future in your business. We will make a detailed analysis of your business structure so as to determine how much you stand to gain by adopting the Booking Ninjas system. By taking this necessary step, we ensure maximum results from the application for your organization.</p>
+                                    <p>It is basically the question stage. In this phase, we ask business-related questions such as:</p>
+                                    <ul>
+                                        <li>Are you determined to find a lasting solution for your organizational needs?</li>
+                                        <li>Are you willing and ready to put in the necessary time, effort, and resources to achieve the desired results?</li>
+                                        <li>Do you agree to offer adequate information to strategic personnel when needed?</li>
+                                        <li>Do you agree to keep business engagement honest and transparent and supply authentic feedback whenever possible?</li>
+                                    </ul>
+                                    <div class="row phase-row">
+                                        <div class="col-lg-5"><img alt="Discovery Session" src="https://d1b89zc79exfxt.cloudfront.net/img/process-item-1.png"/></div>
+                                        <div class="col-lg-7"><p>By going through these questions, we will get to the root of the buying reason; the benefit you plan to gain from using the Booking Ninjas system. By doing that, we further ensure your chances of getting your ROI as quickly as possible.</p>
+                                        </div>
+                                    </div>
+                                    <p>Also, this is where we evaluate your existing data and how the transition process will be. The main objective of this phase is to ensure a smooth migration of your data. During this phase, we will observe how your data is stored and will give you helpful advice regarding data exportation. We will also go further by helping you with the data importation and setting up of the application.</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- /phase 1 -->
+                        <!-- phase 2 -->
+                        <div class="process-steps__item">
+                            <div class="row">   
+                                <div class="col-auto process-line wow slideInUp"><img src="https://d1b89zc79exfxt.cloudfront.net/img/process-point.png" alt=""/></div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-xl-11">
+                                            <p class="title">Phase 2: Presentation of the application (web meeting) Up to 30 min</p>    
+                                        </div>
+                                    </div>
+                                    <div class="process-steps__item-content wow bounceInRight">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6">
+                                                <p>During this phase, we will bring the application directly to you. A meeting will be set up where we will elaborate more on the application and how exactly it works. A demo presentation of the application will be demonstrated so that you can see the workings of the system. A trial account will be set up for you so you can get a feel for the application. The data provided may be sample data or your own data so as to provide a realistic experience. You can explore the application and get to know the full working power of the Booking Ninjas application.</p>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <img alt="Presentation of the Application" src="https://d1b89zc79exfxt.cloudfront.net/img/process-item-2.png"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /phase 2 -->
+                        <!-- phase 3 -->
+                        <div class="process-steps__item">
+                            <div class="row">   
+                                <div class="col-auto process-line wow slideInUp"><img src="https://d1b89zc79exfxt.cloudfront.net/img/process-point.png" alt=""/></div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-xl-11">
+                                                <p class="title">Phase 3: Creation of trial account and Implementation of the system</p>
+                                                <p class="subtitle">The trial account created in phase 3 is tested and applied in real-time processes.</p>  
+                                        </div>
+                                    </div>
+                                    <div class="process-steps__item-content wow bounceInRight">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-7">
+                                                <p>This is where you get to experience what you’ve been shown in the webcast and presentation in phase 2.  In this phase, data is handed over to your control, whether demo or actual data, depending on your choice. It is then left to you to see how easy it is to utilize the product, and how much benefit it can bring.</p>
+                                                <apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button process-button">Click here to sign up for the trial</apex:outputLink>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <img alt="Creation of Trial Account &amp; Implementation" src="https://d1b89zc79exfxt.cloudfront.net/img/process-item-3.png"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /phase 3 -->
+                    </div>
+                    <!-- /steps -->
+                    <!-- best fit -->
+                    <div class="process-fit">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <img alt="Booking Ninjas PMS System Buying Process - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/process-fit.png"/>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="title">The best fit for your business</p>
+                                    <p>Integrate the BookingNinjas application with your business process and see how much value it brings to your business. Totally enhance your income through a change in all factors that influence business growth.</p>
+                                    <p class="title"><small>More,</small> More <big>and More</big></p>
+                                    <p>Get all the available tools and technologies that can enhance your business and provide innovations to surpass your competitors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /best fit -->
+                </div>
+                <!-- /container -->
+                <!-- follow us -->
+                <div class="process-follow">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 process-follow__content">
+                                <p class="title">After-sales follow up</p>
+                                <p>Continue receiving updates and customer advice from us. We aim for uninterrupted growth for our application users and also improved customer experience, so we will be engaged in your growth mission until you achieve the goals you set.</p>
+                                <br/>
+                                <p>We are inclined to take your business forward at the speed of innovation. Booking Ninjas keeps you in sync with the world's latest technological advances; we want you to take this opportunity to better your business and excel in your market.</p> 
+                            </div>
+                            <div class="col-md-6">
+                                <img alt="Booking Ninjas PMS System Buying Process - 3" class="process-follow__img" src="https://d1b89zc79exfxt.cloudfront.net/img/process-follow.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /follow us -->
+                <!-- conclusion -->
+                <div class="process-conclusion text_center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <h2>Conclusion</h2>
+                                <p>The buying process of the Booking Ninjas system is a complete journey that takes you from asking questions to totally getting the point of our product and being excited about it. Because that’s what we are all about. Our all-in-one solution aims to provide the best ROI of any hospitality-related software.</p>
+                                <p>Throughout our existence, we have maintained a quality of service, in terms of product excellence, customer relationship, follow-ups, and maintenance. We are poised to deliver the best in the industry, and give our customers the value we promised.</p>
+                                <p class="title">The Best Fit for Your Business</p>
+                                <p>The Booking Ninjas system is designed to help you get to your business goals without the setbacks familiar in most management systems. We offer high-end tools to provide a seamless management process for the staff, and a platform to provide exceptional customer service to your guests.</p>
+                                <p>We are all about productivity, customer experience, and user benefits. That’s why we offer highly useful packages as part of our core implementation process. Our developers and customization platform helps you include specific packages and remove currently unwanted ones. In other words, you will get exactly what you are looking for, and better.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- conclusion -->
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

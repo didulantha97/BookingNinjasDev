@@ -1,0 +1,208 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg10.png)');
+                    $('.wrapper').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg10.png)');
+                });
+            </script>
+        
+            <!-- banner -->
+            <div class="landing__hero" style="padding: 80px 0 80px 0;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Software de Gestión de Eventos - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/flat-landing-illustration10.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Software de Gestión de Eventos</h1>
+                                <p>Los eventos ordenados y memorables suelen ser gestionados con Booking Ninjas.</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>La nueva forma de gestionar eventos</h2>
+                        <p>Usted ha notado cambios masivos en la forma en la que se realizan los eventos. Esto lo hemos estudiado en Booking Ninjas. Y ahora contamos con las herramientas adecuadas para ayudarle a organizar los eventos más memorables y organizados que usted quisiera para sus clientes.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- /content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Booking Ninjas, y la forma como vemos eventos.</h3>
+                                <p>En nuestra vida cotidiana vemos diferentes tipos de eventos, que van desde los pequeños, hasta los más solemnes e importantes. Existe la necesidad de implementar el uso de sistemas eficientes o emplear los servicios de una compañía que se especialice en la planificación de eventos para que estos se planifiquen de manera adecuada. En esta página web, vamos a definir el significado del sistema de gestión de eventos, hablaremos también de la clasificación de los tipos de eventos que existen, cuales son aquellas características que debemos buscar en un sistema de gestión de eventos y los beneficios que obtendremos al momento de emplear estos sistemas de planificación en su evento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">¿Qué es un sistema de gestión de eventos?</h3>
+                                <p>Los sistemas de gestión de eventos son tipos de métodos que se emplean para la planificación, creación y coordinación de diversos eventos que van desde los de pequeña escala, por ejemplo, reuniones de desarrollo profesional, hasta los eventos de gran escala como son los festivales, fiestas formales, conciertos, conferencias, convenciones, ceremonias, bodas, exposiciones comerciales, y muchos más que pueden ser planificados de manera exitosa mediante la implementación de los sistemas de gestión de eventos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">¿Cómo clasificamos nuestros eventos?</h3>
+                                <p><strong>1. Eventos privados: </strong>Uno de los tres tipos de eventos que manejamos para nuestros clientes son los llamados eventos privados. Como su nombre lo indica, estos eventos son exclusivamente para uso privado. Aquí, utilizamos nuestros sistemas de gestión para ayudar a nuestros clientes a gestionar grandes cantidades de invitados. Los eventos que encontramos dentro de esta categoría incluye bodas, fiestas de cumpleaños, reuniones y festivales.</p>
+                                <p>Además, algunas organizaciones privadas organizan eventos supervisados con invitados determinados, y no desean que dichos eventos se encuentren abiertos al público. Adicionalmente, algunos clientes desean buscar lugares seguros para sus eventos, lo cual es una tarea que puede ser muy estresante y demandante en cuanto al tiempo. Delegar esa tarea a Booking Ninjas puede ser muy gratificante y a un precio bastante amigable.</p>
+                                <p><strong>2. Eventos corporativos: </strong>Estos son los tipos de eventos que son organizados por empresas para promocionar su marca y sus productos. Estos eventos incluyen cenas y comidas de negocios, eventos de networking, conferencias, lanzamientos de productos, seminarios, actividades que promuevan el trabajo en equipo, y reuniones. Los eventos corporativos no se salen del ámbito de los negocios, ya que su único propósito es el de la comercialización de marcas y productos. Todos estos eventos deben ser gestionados de una manera adecuada para garantizar que los objetivos específicos de las organizaciones empresariales se hagan realidad.</p>
+                                <p><strong>3. Eventos Benéficos/Recaudación de fondos: </strong>Los eventos benéficos y de recaudación de fondos se organizan para ayudar tanto a personas individuales como a grupos a recaudar dinero para organizaciones benéficas. Este tipo de eventos incluye eventos deportivos, bailes, subastas benéficas y muchos más. A diferencia de los eventos privados, los eventos benéficos suelen ser más abiertos, puesto que cualquier persona puede acudir a estos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">¿Por qué utilizar nuestro sistema de gestión de eventos?</h3>
+                                <p>Lograr organizar un evento de cualquier tipo de los mencionados anteriormente, puede ser una tarea tediosa. Sin embargo, es sin duda una táctica de marketing eficaz para cualquier empresa que quiere promover su marca y productos para obtener mejores retornos. Un evento bien planificado, permite a los individuos y a los inversores encontrarse cara a cara con su público objetivo, además, también puede contribuir a aumentar su reputación. Para que una organización pueda mostrar de manera efectiva sus productos, su marca y sus conocimientos, necesita emplear los servicios de una empresa de gestión de eventos competente.</p>
+                                <p>Todas las personas y organizaciones desean que sus eventos transcurran satisfactoriamente, por lo tanto, contratar los servicios de una empresa de gestión de eventos puede ser la clave para lograrlo. Ahora bien, ¿cuáles son los beneficios para usted y para su marca si decide utilizar un sistema de gestión de eventos?</p>
+                                <p><strong>1. Es efectivo en cuanto a costo y tiempo: </strong>Así como una máquina reduce el trabajo que realiza un individuo, también lo hace un Sistema de Gestión de Eventos. Cuando se trata de planear un evento, muchos factores juegan un papel importante para que dicho evento sea un éxito. La mayoría de los procesos que están involucrados en la realización de un evento pueden ser automatizados gracias a la ayuda de estos sistemas. En ocasiones, mantener los gastos del evento dentro de un presupuesto establecido puede ser una tarea desalentadora, sobre todo cuando la organización de este debe ser realizada de forma manual. Incluso, los eventos pequeños pueden demandar demasiado tiempo y recursos.</p>
+                                <p>Un sistema de gestión de eventos excelente ofrece características como el         procesamiento de pagos, el seguimiento de registros y otras herramientas que pueden ayudar a mejorar la experiencia de los clientes. Además, pueden ofrecer una imagen clara de los procedimientos que se están realizando en tiempo real; las personas que se registraron al evento, las que pagaron, e incluso las que asistieron. Toda esta información puede estar disponible de forma inmediata.</p>
+                                <p>Además, los sistemas de gestión de eventos ahorran tiempo en cuanto a la comunicación. En lugar de usted tener que dirigirse uno a uno a sus invitados para pasarles información detallada, con solo unos pocos clics, podria enviar mensajes excelentemente redactados, ya sean mensajes de gratitud como un “Gracias por venir” a los que asistieron, como un “Te echamos de menos” a los invitados que no pudieron asistir por alguna razón.</p>
+                                <p><strong>2. Aumenta el compromiso: </strong>Fidelizar clientes con tu marca podría decirse que es una de las tácticas más valoradas en el mundo del Marketing. Antes de programar un evento, debería asegurarse que existe un engagement adecuado entre clientes y la marca. Un buen sistema de gestión de eventos puede ayudarle a visualizar y analizar el panorama general de los niveles de engagement que existen entre una marca y los potenciales clientes.</p>
+                                <p><strong>3. Promueve la experiencia profesional y general: </strong>Los eventos se planifican con un propósito y objetivo particular. La implementación de sistemas de gestión para la realización de eventos hace que la gestión de los mismos luzca mucho más profesional a diferencia de cuando estos son organizados de forma manual. Mucha gente espera que los eventos transcurran sin problemas ni contratiempos, especialmente con todo lo que respecta al dinero. Dado que el uso de estos sistemas garantiza la gestión efectiva de los pagos, la gestión de los mismos resulta extremadamente fácil.</p>
+                                <p><strong>4. Hace que la gestión sea más fácil: </strong>Uno de los beneficios más destacados de la utilización de los sistemas de gestión de eventos es su capacidad para ayudar a las personas y a las organizaciones comerciales a maximizar el número de clientes inscritos en los mismos. Al mismo tiempo, también ayuda a definir la cantidad de recursos que podrían ser necesarios para el mismo. Confiar a una empresa de gestión de eventos la pesada carga de organizar un evento excelente vale todo el dinero del mundo. Lo único que usted tendría que hacer, aparte de pagar por los servicios, es relajarse, y dejar que nosotros nos encargamos de todo. Esto significa que usted está poniendo su dinero donde realmente vale la pena.</p>
+                                <p><strong>5. Apoya actividades específicas: </strong>La economía nos dice que el único propósito de crear un producto es que posteriormente este sea consumido, es decir, estos eventos se organizan porque hay que llegar a una población objetivo con la finalidad de obtener los ingresos que esperamos. Una de las estrategias clave para hacer que esto suceda es mediante lo que se conoce como Marketing efectivo, lo cual puede ejemplificarse de muchas maneras: la planificación de eventos es una de ellas. Los especialistas suelen manejar esta forma de Marketing para obtener mejores resultados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Atributos y características clave a tener en cuenta cuando se elige un Sistema de Gestión de Eventos.</h3>
+                                <p>Al momento de elegir el mejor sistema de gestión de eventos, es obligatorio pensar en todos los aspectos críticos del evento que queremos organizar, esto con el fin de escoger el sistema que mejor se adapte a nosotros. Para facilitarte las cosas, hemos reunido una lista de atributos o características a considerar al momento de elegir el mejor sistema de gestión de eventos.</p>
+                                <p><strong>1. </strong>El sistema debe ser capaz de integrarse con los sistemas existentes: No es ningún secreto que el engagement con los clientes es un aspecto muy vital cuando se tiene una gran base de clientes y en última instancia, el objetivo principal de las marcas es obtener grandes ingresos. Los clientes siempre quieren involucrarse, sentirse relevantes y que sus quejas sean atendidas lo más rápido posible. Por lo tanto, si usted está buscando implementar un sistema para un evento, debe estar seguro de cuáles son los requerimientos que el sistema necesita para funcionar de manera mancomunada con sus otros sistemas de gestión de Relaciones con el cliente (CRM).</p>
+                                <p><strong>2. </strong>El sistema debe ser capaz de recopilar la información necesaria de los asistentes con formularios de registro personalizables. Si no hay asistentes, no hay ningún evento que gestionar. Por lo tanto, la función de registro debe ser una de las primeras cosas a tener en cuenta a la hora de elegir un sistema de gestión de eventos.</p>
+                                <p>Es posible que la mayoría de los asistentes al evento no sean expertos en tecnología; por lo tanto, es necesario asegurarse de que el sistema sea muy sencillo de usar. De esta manera, el proceso de inscripción por parte de los asistentes sería una tarea muy sencilla. Además, para el organizador del evento, el sistema de eventos debe presentarle una opción para que el mismo pueda personalizar y clasificar los datos recogidos por parte de los asistentes y proporcionarle a cada uno de estos una identificación única (ID). Este paso es vital sobretodo para los eventos que son de tipo corporativo, eventos que solo esperan invitados determinados.</p>
+                                <p><strong>3. </strong>El sistema de gestión de eventos debe tener un excelente servicio al cliente: No es un secreto, los productos y marcas que tienen un excelente servicio al cliente tienden a ocupar un lugar más alto en las ventas que la mayoría de marcas que no lo tienen. A los clientes a veces le surgen problemas, errores, o pueden tener recomendaciones y comentarios, que para la marca podrían ser de gran beneficio conocer. Al cliente le gustaría poder ponerse en determinado contacto de manera rápida con la empresa para que sus quejas y sugerencias se solucionen rápidamente.</p>
+                                <p>Por lo tanto, para comprobar que el servicio al cliente del potencial sistema de gestión que usted va a contratar, compruebe con qué rapidez y frecuencia responden a las menciones y comentarios de sus clientes anteriores en las plataformas de redes y medios sociales.</p>
+                                <p><strong>4. </strong>Construcción y monitoreo del presupuesto del evento: Si, mantenerse dentro del presupuesto planificado puede ser una tarea difícil, pero tener un sistema que pueda ayudar a crear y monitorear el presupuesto del evento con la ayuda de las herramientas de presupuesto e informes financieros del sistema puede ser algo muy agradable y gratificante. Un sistema de gestión de eventos sólido ayuda al planificador de eventos a hacer un seguimiento de los lugares de celebración disponibles, el costo de los mismos y también proporciona herramientas para determinar el retorno de la inversión (ROI).</p>
+                                <p>Un excelente sistema de gestión de eventos permite a los planificadores esbozar un presupuesto basado en el costo fijo y el costo variable por asistente. This way, you can be able to determine the cost per head. Therefore, it is advisable to pick systems that will enable you to calculate the unit’s cost individually.</p>
+                                <p>Gracias a las funciones descritas arriba, hemos descrito el sistema Booking Ninjas, y cómo puede ayudarle a obtener la organización que quiere.</p>
+                                <p>Como se indica en esta página, usar un sistema de gestión de eventos es bastante beneficioso. Nuestra compañía puede ofrecer servicios por tarifas asequibles, que van con el número de eventos que esté planeando. Contacte hoy con nosotros para disfrutar de una gestión fluida para su evento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <h3 class="text_center">Tres pasos para empezar</h3>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Software de Gestión de Eventos - 2" class="wow fadeInRight" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration10.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <div class="landing-illustration-list">
+                                <dl>
+                                    <h3>Ponerse en contacto:</h3>
+                                    <dd>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al (907) 600-2345 para agilizar el proceso.</dd>
+                                </dl>
+                                <dl>
+                                    <h3>Importe sus datos</h3>
+                                    <dd>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</dd>
+                                </dl>
+                                <dl>
+                                    <h3>Láncese al éxito</h3>
+                                    <dd>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class=" wow fadeInUp" >
+                                <h3 class="text_center">La mejor opción para su negocio</h3>
+                                <p>El sistema de Booking Ninjas está diseñado para ayudarle a alcanzar sus objetivos empresariales sin los contratiempos familiares a la mayoría de los sistemas de gestión. Nosotros ofrecemos herramientas de alta calidad con el fin de proporcionarles a ustedes un proceso de gestión sin problemas para el personal y una plataforma que proporciona un servicio excepcional de atención al cliente a sus huéspedes.</p>
+                                <p>Nos interesa la productividad, la experiencia del cliente y los beneficios para el usuario. Por esa razón ofrecemos paquetes muy útiles como parte de nuestro proceso de implementación. Nuestra plataforma de desarrollo y personalización le ayuda a usted a incluir paquetes específicos y a eliminar los que actualmente no desee. En otras palabras, usted va a obtener exactamente lo que está buscando, y mejor.</p>
+                                <p>Nosotros hacemos negocios a nivel internacional. Desde Norteamérica, hasta Europa y Asia, estamos interesados en ofrecer excelencia absoluta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h3>Digitalícese para estar un paso por delante de sus competidores</h3>
+                        <p>A medida que más y más miembros de la fuerza de trabajo tradicional empiezan a entender y apreciar la “economía gig”, se espera que el número de nuevas empresas (startups) y freelancers crezca continuamente en los próximos años. Con esta tendencia, las instalaciones de trabajo cooperativo serán muy demandadas. Solo el mejor software de gestión de trabajo cooperativo le diferenciará de su competencia y le asegurará que obtenga un buen porcentaje de esta creciente demanda.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/Event_management_icon-gray.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Software de Gestión de Eventos - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/Event_management_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Una gestión de eventos fácil. Desde</p>
+                                        <p><b>$25</b> por espacio al mes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">Prueba el piloto hoy</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content --> 
+        
+        </apex:define>
+    </apex:composition>
+        
+</apex:page>

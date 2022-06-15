@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DetailBannerArt__c</fullName>
+    <description>The artwork that is displayed in the banner of the detail page.</description>
+    <externalId>false</externalId>
+    <label>Detail Banner Art</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>VacancyDetailArt</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,128 @@
+<!--
+  @description       : 
+  @author            : teguh@bookingninjas.com
+  @group             : 
+  @last modified on  : 11-23-2020
+  @last modified by  : teguh@bookingninjas.com
+  Modifications Log 
+  Ver   Date         Author                    Modification
+  1.0   11-23-2020   teguh@bookingninjas.com   Initial Version
+-->
+<apex:page controller="BNES_ArticleController" action="{!saveArticleView}" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false" >
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                    $('.main').addClass('blog-page');
+                });
+            </script>
+
+            <!-- bread -->
+            <nav class="blog-page-bread">
+                <div class="container">
+                    <a href="/es">Página principal</a>
+                    <a href="/es/blog">Blog</a>
+                    <span>{!article.Name}</span>
+                </div>
+            </nav>
+            <!-- /bread -->
+
+            <!-- content -->
+            <div class="container">
+                <div class="blog-page-img">
+                    <apex:image alt="{!article.Name} thumbnail picture" value="{!article.Cover_Photo__c}" />
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="blog-page__post">
+                            <div class="blog-page__info">
+                                <div class="row align-items-end">
+                                    <div class="col-sm">
+                                        <div class="blog-page-author">
+                                            <apex:outputPanel styleClass="blog-page-author__photo" rendered="{!IF(article.Author__r.Profile_Picture__c != null, true, false)}">
+                                                <apex:image width="67" height="67" style="border-radius:50%;" value="{!article.Author__r.Profile_Picture__c}" alt="{!if(article.Author__r.Name != null, article.Author__r.Name, 'David Harroch')}'s profile picture" />
+                                            </apex:outputPanel>
+                                            <div class="blog-page-author__name">
+                                                Por:
+                                                <a href='/author?id={!if(article.Author__c != null, article.Author__c, "admin")}' class="{!if(article.Author__r.Show_Author_Page__c == true && article.Author__c != null, '', 'd-none')}">
+                                                    <apex:outputText value="{!if(article.Author__r.Name != null, article.Author__r.Name, 'Admin')}" />
+                                                </a>
+                                                <apex:outputText rendered="{!if(article.Author__r.Show_Author_Page__c != true, true, false)}" value="{!if(article.Author__r.Name != null, article.Author__r.Name, 'Admin')}" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-auto">
+                                        <span>
+                                            <i class="fas fa-calendar-alt"></i>&nbsp;
+                                            <apex:outputText value="{0, date, dd MMM yyyy}">
+                                            <apex:param value="{!IF(article.Scheduled_Publish_Date__c == null, article.CreatedDate, article.Scheduled_Publish_Date__c)}" /> 
+                                        </apex:outputText>
+                                        </span>
+                                    </div>
+                                    <div class="col-sm-auto">
+                                        <span>
+                                            <i class="fas fa-eye"></i>&nbsp;
+                                            <apex:outputText value="{!article.Total_Views__c} view{!if(article.Total_Views__c > 1, 's', '')}"></apex:outputText>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-page__tag-title">Artículo</div>
+                            <h1 class="blog-page__title">{!article.Name}</h1>
+                            <hr/>
+                            <article>
+                                <apex:outputText escape="false" value="{!article.Content__c}" />
+                            </article>
+                            <div class="blog-page__tags">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>            
+            <div class="blog-page__related">
+                <div class="container">
+                    <h3 class="blog-page-title text_center">Publicaciones de tendencia</h3>
+                    <div class="row">
+                        <apex:repeat value="{!trendingArticles}" var="trending">
+                            <div class="col-lg-4">
+                                <figure class="blog-page__related-item">
+                                    <a styleClass="blog-page__item-img" href="{!trending.Article_Link__c}">
+                                        <apex:image alt="{!trending.Name} thumbnail picture" value="{!trending.Cover_Photo__c}" />
+                                    </a>
+                                    <figcaption>
+                                        <a styleClass="blog-page__item-img" href="{!trending.Article_Link__c}">
+                                            <apex:outputText value="{!trending.Name}" />
+                                        </a>
+                                        <div class="blog-page-author">
+                                            <div class="blog-page-author__name">
+                                                Por:
+                                                <a href="{!URLFOR($Page.BNES_Author, null, [id=IF(trending.Author__c != null, trending.Author__c, 'admin')])}">
+                                                    <apex:outputText value="{!if(trending.Author__r.Name != null, trending.Author__r.Name, 'Admin')}" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>                        
+                        </apex:repeat>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+            <script>
+                $(function () {
+                    $('article').find("*").removeAttr("style");
+                });
+            </script>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

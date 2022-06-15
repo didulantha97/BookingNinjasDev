@@ -1,0 +1,11 @@
+<apex:page controller="SendTwilioController" showHeader="false" sidebar="false">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <apex:slds />
+    </head>
+    
+    <body>        
+        <!-- <c:SendTwilioComponent mobile_number="{!Contact.MobilePhone}" record_id="{!Contact.Id}"/> -->
+        <c:SendTwilioComponent record_ids="{!Ids}"/>
+    </body>
+</apex:page>

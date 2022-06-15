@@ -1,0 +1,182 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url( https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg3.jpg)');
+                    $('.wrapper').css('background-image', 'url( https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg3.jpg)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Self Storage Software - 1" src=" https://d1b89zc79exfxt.cloudfront.net/img/Flat_MacBook3.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Software de gestión de almacenamiento</h1>
+                                <p>Lleve su almacenamiento al siguiente nivel con el sistema especializado de Booking Ninjas.</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                    <h2>Es hora de almacenar mejor</h2>
+                    <p>Con el sistema de Booking Ninjas, sus instalaciones de almacenamiento estarán bien gestionadas y optimizadas para servir mejor a sus clientes. Aproveche las ventajas del acceso remoto, los sistemas POS y ticketing, la adquisición de clientes en línea y mucho más en nuestro sistema de ventanilla única. Es hora de almacenar mejor.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="landing__workspace-item wow fadeInLeft">
+                                <div class="landing__workspace-icon"><i><img alt="Una gestión sofisticada de clientes - icon - 2" src=" https://d1b89zc79exfxt.cloudfront.net/img/landing-workspace-icon1.png"/></i></div>
+                                <h3>Una gestión sofisticada de clientes</h3>
+                                <p>Herramientas de marketing y comunicación incorporadas para crear y mantener la relación con el cliente.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="landing__workspace-item wow fadeInUp" >
+                                <div class="landing__workspace-icon light-blue"><i><img alt="Todo el control en una sola aplicación - icon - 2" src=" https://d1b89zc79exfxt.cloudfront.net/img/landing-workspace-icon2.png"/></i></div>
+                                <h3 class="light-blue">Todo el control en una sola aplicación</h3>
+                                <p>Gestiona varias oficinas desde una sola plataforma al mismo tiempo que mantienes la calidad de tu servicio.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="landing__workspace-item wow fadeInRight"  >
+                                <div class="landing__workspace-icon"><i><img alt="Una experiencia más enriquecedora para todos - icon - 2" src=" https://d1b89zc79exfxt.cloudfront.net/img/landing-workspace-icon3.png"/></i></div>
+                                <h3>Una experiencia más enriquecedora para todos</h3>
+                                <p>Sus inquilinos y el personal disfrutaran de un mejor ambiente de trabajo con un estilo de gestión flexible y eficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <h3 class="text_center">Para darle respuesta a tus preguntas</h3>
+                            <div class="wow fadeInUp">
+                                <h3>¿Por qué ahora?</h3>
+                                <p>La tecnología ha transformado la manera en que almacenamos. La introducción de un sistema de gestión  en el negocio del almacenamiento equivale a mayores niveles de productividad, mejor control, eficiencia mejorada y eventualmente, a mejores experiencias de los clientes. Indiscutiblemente, estas son las características que usted debería considerar para mantenerse por delante de sus principales competidores y obtener mayores ganancias.</p>
+                                <p>Por lo tanto, usted podría volverse un experto en los requerimientos que pide esta nueva tendencia y utilizarlos para su beneficio. Aquí le explicamos como.</p>
+                                
+                                <h3>¿Que es el sistema de gestión de instalaciones de almacenamiento?</h3>
+                                <p>Dicho de una manera sencilla, el sistema de gestión de almacenamiento es un sistema que permite a los dueños de bodegas y depósitos a administrar sus unidades de forma remota al mismo tiempo que tienen toda la información necesaria a la mano. Usted fácilmente podría acceder a la información acerca de la disponibilidad de sus unidades, el balance de los clientes, la contabilidad, el procesamiento de pagos y apuntes de sus clientes. Tener toda esta información a la mano, le ayudará a usted a concentrarse en su negocio de una manera más intensiva al mismo tiempo que le permite a usted ahorrar más tiempo y tener mayor control sobre el flujo de trabajo.</p>
+                                
+                                <h3>Características del sistema de gestión de instalaciones de almacenamiento</h3>
+                                <p><strong>Opciones de pago:</strong> El modelo de ingresos para el sistema de gestión de instalaciones de almacenamiento requiere de ciertas características de contabilidad adicionales que una firma típica de gestión de propiedades no necesitaría. Estas incluyen el acceso a pagos o depósitos para equipos de alquiler, realizar ventas de mercancías, aceptar pagos con tarjetas de crédito, programación de pagos automáticos recurrentes, basados en las necesidades del cliente, o bloqueo del arrendador por falta de pagos</p>
+                                <p><strong>Reservas en línea:</strong>El sistema de gestión de instalaciones de almacenamiento tendrá un portal para inquilinos actuales o potenciales inquilinos. Ellos pueden reservar una unidad (basado en la disponibilidad, tal y como se señala a través del software) o realizar el pago de la cuota de arriendo desde la comodidad del hogar.</p>
+                                <p><strong>Integración al acceso de entrada:</strong> Los paquetes de software más avanzados se integrarán de manera desapercibida a su sistema de acceso. Al darle a cada uno de sus inquilinos un código de acceso único, el sistema le dará a sus nuevos inquilinos acceso de manera inmediata, lo cual le permite a usted hacer seguimiento de las visitas, y negarles el acceso cuando sus pagos se encuentren en mora</p>
+                                <p><strong>Mapa de instalaciones:</strong> Crea mapas interactivos de las instalaciones que muestra la disponibilidad, lugar, y especificaciones de sus unidades de almacenamiento.</p>
+                                <p><strong>Gestión de la relación con los clientes:</strong> Le ayuda a mantener contacto con los inquilinos y la información de los pagos, contratos firmados e información de contacto para nuevos clientes. Le permite comunicarse con los inquilinos a través de correos electrónicos automatizados y vía mensajes de texto.</p>
+                                
+                                <h3>¿Cuáles son los beneficios de tener un sistema de gestión de las instalaciones de almacenamiento?</h3>
+                                <p>Los sistemas de gestión de depósitos de almacenamiento no solo permiten diagnosticar los posibles desafíos a los que se pueden enfrentar los propietarios de depósitos, estos también permiten lograr objetivos empresariales, tales como mejorar la eficiencia de los procesos y mejorar los ingresos. Los propietarios de las empresas pueden aprovechar las siguientes ventajas del sistema de gestión de depósitos de almacenamiento.</p>
+                                <p><strong>Automatización de las tareas manuales:</strong> El sistema permite la automatización de las tareas manuales, tales como la facturación, el envío de recordatorios de pagos, generación de reportes, entre otras. Adicionalmente, los sistemas de gestión de depósitos de almacenamiento le permite a los propietarios generar cartas de subasta, acuerdos de alquiler y notificaciones.</p>
+                                <p><strong>Supervisar el rendimiento de las empresas:</strong> El sistema de gestión de las instalaciones de almacenamiento proporciona a los usuarios funciones de inteligencia comercial y de presentación de informes con el objetivo de ayudarles a supervisar los principales indicadores de rendimiento de sus respectivos negocios de alquiler. Con informes actualizados, los propietarios pueden hacer frente a los problemas que puedan surgir y adoptar medidas correctivas en tiempo real.</p>
+                                <p><strong>Habilitar el autoservicio del cliente:</strong> El sistema permite a los arrendatarios examinar fácilmente la disponibilidad de las unidades de almacenamiento, con la ayuda de un mapa de instalaciones. Con un portal para inquilinos, los clientes pueden comprobar las cuotas, personalizar sus planes de almacenamiento, añadir servicios adicionales y ver todos sus documentos. Además, pueden comprobar las fechas de vencimiento de los pagos y los montos totales.</p>
+                                <p><strong>Facilitar los pagos digitales:</strong> El sistema de gestión de las instalaciones de almacenamiento facilita las transacciones que se realizan mediante tarjetas de crédito, monederos digitales y operaciones bancarias, lo que aumenta la comodidad tanto para el propietario como para el inquilino. Además, las soluciones avanzadas también ayudan en los procesos de conciliaciones bancarias y en los cálculos de impuestos para ayudar a evitar errores durante los cálculos de impuestos anuales. Así pues, los proveedores de programas informáticos se están asociando con los bancos para integrar los pagos en sus cuentas comerciales.</p>
+                                <p><strong>Gestionar múltiples instalaciones:</strong> Los negocios de almacenamiento operan en varios lugares con diferentes unidades de almacenamiento. La disponibilidad de estas unidades sigue cambiando debido a la demanda que tienen estos espacios a corto plazo. Por lo tanto, el seguimiento de la disponibilidad de cada unidad se vuelve una tarea tediosa para los administradores de las propiedades. El sistema crea los llamados mapas de instalaciones que visualizan los espacios disponibles y ocupados, para ayudar a prevenir errores y así maximizar ingresos.</p>
+                                
+                                <h3>¿Cuáles son los errores que hay que evitar al elegir y adquirir un sistema de gestión de instalaciones de almacenamiento?</h3>
+                                <p>Estos son los errores más comunes que hay que evitar al elegir un sistema de gestión de almacenes.</p>
+                                <p><strong>Llegar tarde a la compra del sistema:</strong> Es esencial elegir el sistema al menos seis meses antes de entrar oficialmente en el negocio del almacenamiento. Las razones de esto tienen una explicación muy sensata. Las necesidades que usted tiene son únicas, y el sistema que usted elija debe estar diseñado de acuerdo con sus requerimientos. Es de suma importancia disponer de tiempo suficiente para considerar todas las opciones viables y luego elegir dentro de estas, la más apropiada. Por lo tanto, en el momento en que empiece a anunciar sus servicios de almacenamiento y a negociar con los posibles clientes, este sistema ya debe estar bien diseñado, organizado, y funcionando.</p>
+                                <p><strong>No elegir un programa de gestión flexible: </strong>Con suerte, su negocio de almacenamiento pasará por un desarrollo continuo, lo cual es imposible sin hacer los cambios necesarios en la forma de manejar el negocio. Por lo tanto, usted necesita un sistema que se adapte a sus cambios, a sus políticas y reglas de su negocio. De lo contrario, corre el riesgo de encontrarse en una situación en la que tiene que adaptar su empresa a las limitaciones del software y no al revés.</p>
+                                <p><strong>Comprar software que no se interconectara con otros sistemas que utilice:</strong> Puede ser un serio obstáculo para que su negocio funcione de manera eficiente y exitosa el hecho de elegir un sistema que no se interconecta con otros sistemas que usted utiliza, por ejemplo, opciones de pago en línea, identificación con foto, control de acceso, procesamiento de pagos electrónicos, etc. Un error como este impedirá que su software siga el desarrollo y el crecimiento de su negocio.</p>
+                                <p><strong>Elección de software con opciones de pago insuficientes: </strong>Al seleccionar un sistema de gestión de instalaciones de almacenamiento, es importante elegir al que ofrezca diversas opciones de pago sin restricciones a sus clientes. Solo de esta manera puede esperar pagos puntuales por sus servicios y una relación positiva con sus inquilinos. Además, cuantas más opciones de pago usted ofrezca a sus clientes, menos excusas podrán estos para no pagar.</p>
+                                <p><strong>Eligiendo el proveedor de software equivocado:</strong> Es fundamental cooperar solo con profesionales genuinos. Este es el único requisito para hacer negocios de almacenamiento con una garantía de éxito a largo plazo. Cada una de las inversiones que usted realice deben hacerse de manera inteligente, después de contemplar minuciosamente los beneficios y desventajas de cada decisión. Un proveedor de sistemas de gestión de instalaciones de alta calidad es un socio fiable que necesita para convertir todos sus objetivos empresariales en realidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <h3 class="text_center">Tres pasos para empezar</h3>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Self Storage Software - 2" class="wow fadeInRight" src=" https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration3.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <dl>
+                                <h3>Ponerse en contacto:</h3>
+                                <dd>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al (907) 600-2345 para agilizar el proceso.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Importe sus datos</h3>
+                                <dd>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Láncese al éxito</h3>
+                                <dd>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="text_center wow fadeInUp">
+                                <h3 class="text_center">La mejor opción para su negocio</h3>
+                                <p>El sistema de Booking Ninjas está diseñado para ayudarle a alcanzar sus objetivos empresariales sin los contratiempos familiares a la mayoría de los sistemas de gestión. Nosotros ofrecemos herramientas de alta calidad con el fin de proporcionarles a ustedes un proceso de gestión sin problemas para el personal y una plataforma que proporciona un servicio excepcional de atención al cliente a sus huéspedes.</p>
+                                <p>Nos interesa la productividad, la experiencia del cliente y los beneficios para el usuario. Por esa razón ofrecemos paquetes muy útiles como parte de nuestro proceso de implementación. Nuestra plataforma de desarrollo y personalización le ayuda a usted a incluir paquetes específicos y a eliminar los que actualmente no desee. En otras palabras, usted va a obtener exactamente lo que está buscando, y mejor.</p>
+                                <p>Nosotros hacemos negocios a nivel internacional. Desde Norteamérica, hasta Europa y Asia, estamos interesados en ofrecer excelencia absoluta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url( https://d1b89zc79exfxt.cloudfront.net/img/Self_Storage_icon-bg.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Self Storage Software Price - icon" src=" https://d1b89zc79exfxt.cloudfront.net/img/Self_Storage_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Gestión de auto almacenamiento fácil. Desde</p>
+                                        <p><b>$0.45</b> por unidad de almacenamiento al mes</p>
+                                        <p>Haga click&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Pricing)}">aquí</apex:outputLink> para información de precios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">Prueba el piloto hoy</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

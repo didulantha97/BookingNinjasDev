@@ -1,0 +1,49 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false" controller="BN_TemplateController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <div class="notfound-page-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <article><h1>404 - The page can’t be found</h1></article>
+                        </div>  
+                    </div>
+                    <div class="row">
+                        <p class="col-md-12 col-lg-6 col-xl-4">Contact us and we will help you or call <a href="tel:+19176002345"><span>+1 (917) 600 2345</span></a></p>
+                    </div>
+                    <apex:outputLink styleClass="button" value="{!URLFOR($Page.BN_Contact)}">Contact Us</apex:outputLink>
+                </div>
+        
+            </div>
+        
+            <div class="notfound-page-form-title text_center">
+                <div class="container">
+                    <h2>Send us a message</h2>
+                    <p>Use the form below or email us at support@bookingninjas.com.</p>
+                </div>
+            </div>
+        
+            <div class="notfound-page-form">
+                <div class="row justify-content-center">
+                    <div class="wrapper col-sm-10 col-md-8 col-lg-6 col-xl-4">
+                        <apex:form styleClass="contact-form" id="contact-form">
+                            <label for="email">Your Email</label>
+                            <apex:input type="email" value="{!clientEmail}" id="email" required="true" />
+                            <label for="subject">Subject</label>
+                            <apex:input type="text" value="{!subject}" id="subject" required="true" />
+                            <label for="message">How can we help?</label>
+                            <apex:inputTextarea value="{!content}" id="message" rows="5" cols="25" required="true" />
+                            <apex:commandButton styleClass="button" value="Send" action="{!send404Message}" rerender="contact-form"/>
+                        </apex:form>
+                    </div>
+                </div>
+            </div>
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

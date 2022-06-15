@@ -1,0 +1,282 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" controller="BN_Portal_Template_Controller" action="{!redirectToLandingPage}">
+    <html>
+       <head>
+           <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <meta name="title" content="{!title}"/>
+            <meta name="description" content="{!description}"/>
+            <meta name="viewport" content="initial-scale=1"/>
+            <meta name="p:domain_verify" content="0c174b6a022a36c8e8c789bca41bb785"/>
+            <title>{!title}</title>
+            <!--Favicon-->
+            <link rel="icon" type="image/x-icon" href="https://s3.us-east-2.amazonaws.com/bnsrc/favicon.ico"/>
+            <!--End Favicon-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+            <!--build:css css/styles.min.css-->
+            <link rel="stylesheet" href="https://d1b89zc79exfxt.cloudfront.net/css/fontawesome.css"/>
+            <link rel="stylesheet" href="https://d1b89zc79exfxt.cloudfront.net/css/slick.css"/>
+            <link rel="stylesheet" href="https://d1b89zc79exfxt.cloudfront.net/css/bootstrap-grid.css"/>
+            <link rel="stylesheet" href="https://d1b89zc79exfxt.cloudfront.net/css/jquery-ui.min.css"/>
+            <link rel="stylesheet" href="https://d1b89zc79exfxt.cloudfront.net/css/jquery-ui-timepicker-addon.min.css"/>
+            <link href="https://d1b89zc79exfxt.cloudfront.net/css/screen.css" rel="stylesheet" media="screen"/>
+            <link href="https://www.bookingninjas.com/{!page}" rel="canonical"/> 
+            <script src="https://d1b89zc79exfxt.cloudfront.net/js/jquery.js"></script>
+            <!--endbuild-->
+            <!-- Google Tag Manager -->
+            <script>
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-PQ4V7BZ');
+            </script>
+            <!-- End Google Tag Manager -->
+        </head>
+        
+        <body class="no-bg"> 
+
+            <div class="wrapper">
+                <!--header-->
+                <header class="header header-login">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 col-7">
+                            <a href="/" class="logo"><img src="https://d1b89zc79exfxt.cloudfront.net/img/logo.png" alt="Booking Ninjas Logo"/></a>
+                        </div>
+                    </div>
+                    </div>
+                </header>
+                <div class="navigation__overlay"></div>
+                <!--end-header-->
+                <!--main-->
+                <div class="main">
+                
+                    <div class="login-page-top">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/login-bg.png" alt="" class="login-page-top__image"/>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="login-page-top__section-title">
+                                        <h5>LogIn <br/> to our portal</h5>
+                                        <a href="#portal-login-modal" data-fancybox="portal-login-modal" class="button"><i class="fas fa-sign-in-alt"></i>Login</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="login-page-content">
+                        <div class="container">
+                            <div class="row align-items-end">
+                                <div class="col-lg-6 order-lg-1">
+                                    <a class="video__img wow zoomIn fancybox" data-fancybox="fancybox" href="https://www.youtube.com/watch?v=rbR85czmMIA&amp;feature=youtu.be" >
+                                        <img alt="Video" src="https://d1b89zc79exfxt.cloudfront.net/img/go_digital.png"/>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Customer service is at the heart of every successful property management. Keeping in touch with your customers at all times, helping them solve knotty issues and helping them make the acquisition and maintenance process of properties and hotel rooms easy is why we are in business. We know how it can be tasking sometimes to handle all these niggling problems. We know how pressed for time and attention property managers are. That is why we bring solutions that help you stay connected with your buyers and renters as well as guests. We make the booking and customer service side of hotel management easy and smooth, leaving the property manager’s time to do other things.</p>
+                                    <p>The CEO’s vision of helping travelers have wonderful, stress-free experiences has morphed into assisting guests and property managers experience freedom and rest of mind. BookingNinjas takes the burden of customer service, property  maintenance, reservation management, and modernizes every aspect in order to better run the entire business. We ensure your experience is poetic and easy. </p>
+                                </div>
+                                
+                            </div>
+                            <p>Our partnership with Salesforce in 2016 expanded our reach and helped us build a business, using Artificial Intelligence, that solves many of the property management problems.</p>
+                        </div>
+                    </div>
+                    <div class="login-page-content">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <img alt="Login - img - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/login-clients.png"/>
+                                </div>
+                                <div class="col-lg-5">
+                                    <h3>Clients</h3>
+                                    <p>We make managing properties easier and less time-consuming. Utilizing our services to aid in your property management will not only ease your stress but also bolster your success. You will have access to all of your payment history, whether Billing, Financial, or Invoice information, and you will always be able to add new services and users. You will be aware of any updates or announcements as they are posted, and our online system makes it easy for you to access in any location. In essence, Booking Ninjas will ensure a seamless transition and integration into your current administration and help you efficiently manage all accounts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-page-content">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-end">
+                                <div class="col-lg-6 order-lg-1">
+                                    <img alt="Login - img - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/login-partners.png"/>
+                                </div>
+                                <div class="col-lg-5">
+                                    <h3>Partners</h3>
+                                    <p>Doing business with us affords you the chance to witness dedication and service to humanity at its finest. The free flow of important information before and on request is transparent. We use ethically derived data to compute our customers’ needs so we can provide them with the best services. Our resources are world-class and our staff is dedicated to the vision of making property management easy for managers and customer-centric for customers. It hasn’t been easy since 2009, but we are dedicated to excellence, all the time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-page-content">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <img alt="Login - img - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/login-staff.png"/>
+                                </div>
+                                <div class="col-lg-5">
+                                    <h3>Staff</h3>
+                                    <p>The vision of the company is in tandem with the individual goals of our staff. Our payment system rewards every member of staff for being artists that make customers happy and fulfilled. We reward excellent performers. The criteria we use aren’t based solely on metrics but on emotional labor, artistry and dedication to doing things out of the box. The organizational structure is such that every member of staff is an important part of the family. The myriad of growth opportunities is another lure for people.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- modal -->
+                    <div class="modal portal-login-modal" id="portal-login-modal">
+                        <h3>Log In</h3>
+                        <div class="portal-login-modal__form">
+                            <apex:form id="portal-login">
+                                <div class="portal-login-modal__form-item">
+                                    <label>Name or Email <sup>*</sup></label>
+                                    <apex:input type="text" value="{!username}" required="true" />
+                                </div>
+                                <div class="portal-login-modal__form-item">
+                                    <label>Password <sup>*</sup></label>
+                                    <apex:inputsecret value="{!password}" required="true" />
+                                </div>
+                                <div class="portal-login-modal__form-checkbox">
+                                    <label><input type="checkbox"/> Remember Me</label>
+                                </div>
+                                <div class="portal-login-modal__form-button">
+                                    <apex:commandButton styleClass="button" value="Login" action="{!login}" rerender="portal-login" />
+                                    <p>Forgot your password?&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Portal_ForgotPassword)}">Get help</apex:outputLink></p>
+                                </div>
+                                <br/>
+                                <apex:messages style="color: red;"/>
+                            </apex:form>
+                        </div>
+                        <div class="portal-login-modal__bottom">
+                            <!-- <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <a href="#">Not a member?  </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="button">Sign In</a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- /modal -->
+            
+                </div>
+                <!--end-main-->
+                <!--footer-->
+                <footer class="footer">
+                    <div class="footer__top">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-lg-5">
+                            <a href="/" class="logo"><img src="https://d1b89zc79exfxt.cloudfront.net/img/logo-footer.png" alt="Booking Ninjas Logo"/></a>
+                            <address>
+                            <p>
+                                1815 Purdy Avenue  <br/>
+                                Miami Beach, FL 33139
+                            </p>
+                            <p><a href="mailto:sales@bookingninjas.com"><small>sales@bookingninjas.com</small></a></p>
+                            <p><a href="tel:+19176002345"><small>+1 (917) 600 2345</small></a></p>
+                            </address>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row">
+                            <div class="col-lg-3">
+                                <div class="footer__title">Company:</div>
+                                <nav class="footer__list">
+                                <ul>
+                                    <li><apex:outputLink value="{!URLFOR($Page.BN_About)}">About Us</apex:outputLink></li>
+                                    <li><apex:outputLink value="{!URLFOR($Page.BN_Career)}">Careers</apex:outputLink></li>
+                                    <li><apex:outputLink value="{!URLFOR($Page.BN_Resources)}">Resources</apex:outputLink></li>
+                                    <li><apex:outputLink value="{!URLFOR($Page.BN_Blog)}">Blog</apex:outputLink></li>
+                                    <li><apex:outputLink value="{!URLFOR($Page.BN_FAQs)}">FAQs</apex:outputLink></li>
+                                </ul>
+                                </nav>
+                            </div>
+                            <!-- <div class="col-lg-12 order-lg-1">
+                                <div class="footer__title">BOOKINGNINJAS</div>
+                                <p>Enhance the quality of guest services, increasing staff productivity and streamlining operations. Make your business a lot simpler and a lot more effective with Booking Ninjas.</p>
+                            </div> -->
+                            <div class="col-lg-9">
+                                 <nav class="footer__social">
+                                    <a href="https://www.facebook.com/bookingninjas" target="_blank"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/bookingninjas" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCOrcTzmQnmY7DG2nzwfa8zw" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.linkedin.com/company/5346092/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://twitter.com/bookingninjas" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.pinterest.com/bookingninjas" target="_blank"><i class="fab fa-pinterest"></i></a>
+                                    <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank"><i class="fab fa-salesforce"></i></a>
+                                </nav>
+                                <apex:form id="footer-form" styleClass="footer__form">
+                                    <apex:inputText value="{!email}" html-placeholder="Enter Your Email" required="true" />
+                                    <apex:commandButton styleClass="button footer-btn-submit" value="Subscribe" action="{!subscribe}" rerender="footer-form" />
+                                </apex:form>
+                                <div class="modal modal__success" id="modal-thanks">
+                                    <div class="modal__success-icon"><i class="far fa-check-circle"></i></div>
+                                    <p>Thanks</p>
+                                    <p>We send a monthly email with announcements, tips, news, feature updates, and important info. We'll only e-mail you if it's important.</p>
+                                </div>
+                                <p class="footer__form-text">We send a monthly email with announcements, tips, news, feature updates, and important info. We'll only e-mail you if it's important.</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="footer__bottom">
+                    <div class="container">
+                        <div class="row align-items-center">
+                        <div class="col-md-6">All rights reserved © 2020 - Booking Ninjas</div>
+                        <div class="col-md-6">
+                            <!-- <nav class="payments">
+                            <a href="#"><img src="img/visa.png" alt=""></a>
+                            <a href="#"><img src="img/mc.png" alt=""></a>
+                            <a href="#"><img src="img/ae.png" alt=""></a>
+                            <a href="#"><img src="img/paypal.png" alt=""></a>
+                            </nav> -->
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </footer>
+                <!--end-footer-->
+            </div>
+                    
+            <!--SCRIPT --> 
+            <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+            <!--build:js js/main.min.js -->
+            <script src="https://d1b89zc79exfxt.cloudfront.net/js/slick.js"></script>
+            <script src="https://d1b89zc79exfxt.cloudfront.net/js/wow.js"></script>
+            <script src="https://d1b89zc79exfxt.cloudfront.net/js/jquery-ui.min.js"></script>
+            <script src="https://d1b89zc79exfxt.cloudfront.net/js/jquery-ui-timepicker-addon.min.js"></script>
+            <!-- endbuild -->
+            <script src="https://d1b89zc79exfxt.cloudfront.net/js/common.js"></script>
+            <script>
+                var _mfq = _mfq || [];
+                  (function() {
+                    var mf = document.createElement("script");
+                    mf.type = "text/javascript"; mf.async = true;
+                    mf.src = "//cdn.mouseflow.com/projects/6defcb08-eb86-45f4-aca3-66c1425e4139.js";
+                    document.getElementsByTagName("head")[0].appendChild(mf);
+                  })();
+            </script>
+            <script type="application/ld+json">
+                [ {
+                    "@context" : "http://schema.org",
+                    "@type" : "LocalBusiness",
+                    "name" : "Booking Ninjas",
+                    "image" : "https://d1b89zc79exfxt.cloudfront.net/img/logo-footer.png",
+                    "email" : "sales@bookingninjas.com",
+                    "address" : {
+                    "@type" : "PostalAddress",
+                    "streetAddress" : "1815 Purdy Avenue Miami Beach, FL 33139",
+                    "telephone" : "+19176002345"
+                    },
+                    "url" : "https://www.bookingninjas.com"
+                } ]
+            </script>
+            <!-- END OF SCRIPT -->
+            
+        </body>
+    </html>
+        
+</apex:page>

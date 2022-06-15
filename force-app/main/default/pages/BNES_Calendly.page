@@ -1,0 +1,185 @@
+<apex:page controller="BNES_HomeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false" >
+
+    <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- content -->
+            <div class="calendly-page__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 text_center">
+                            <img alt="Schedule an Appointment - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/calendly-top.png"/>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="calendly-page__form">
+                                <div class="row calendly-page__form-heading">
+                                    <div class="col-auto">
+                                        <img class="calendly-page__form-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/calendly-logo.jpg" alt="Booking Ninjas Logo"/>
+                                    </div>
+                                    <div class="col">
+                                        <p class="calendly-page__form-subtitle">Booking Ninjas</p>
+                                        <p class="calendly-page__form-title">Seleccione solo uno, por favor.</p>
+                                    </div>
+                                </div>
+                                <apex:form >
+                                    <div class="calendly-page__form-item select-option__globe">
+                                        <apex:selectList size="1" value="{!continent}" styleClass="extra-padding">
+                                            <apex:actionSupport id="continent" event="onchange" action="{!changeContinent}" rerender="calendly,calendly-name"/>
+                                            <apex:selectOptions value="{!calendlyContinents}"/>
+                                        </apex:selectList>
+                                    </div>
+                                    <div class="calendly-page__form-item">
+                                        <apex:selectList size="1" value="{!meetingType}" >
+                                            <apex:actionSupport id="meetingType" event="onchange" action="{!changeMeetingType}" rerender="calendly,calendly-name"/>                                           
+                                            <apex:selectOptions value="{!calendlyMeetingTypeList}"/>
+                                        </apex:selectList>
+                                    </div>
+                                    <div class="text_center calendly-page__form-submit">
+                                        <a class="button" href="#calendly-modal" data-fancybox="calendly-modal">CONFIRMAR</a>
+                                    </div>
+                                </apex:form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <div class="calendly-page__call-types">
+                <div class="container">
+                    <h1>Tipos de llamada</h1>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure ><img alt="Intro/descubrimiento - icono" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/calendly-type-1.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <p class="call-types__item-text wow slideInUp"><strong>Intro/descubrimiento: </strong>nuestras llamadas de “descubrimiento” son las que usamos para conocer su negocio y aprender más de sus necesidades y sobre lo que busca de un sistema de gestión de propiedades. Le haremos saber cómo podemos ayudarle, y si funciona, empezaremos con una cuenta piloto para usted. Durante la fase piloto, comenzaremos a trabajar en customizaciones para darle la solución digital más potente para su propiedad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure ><img alt="Demostración - icono" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/calendly-type-2.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <p class="call-types__item-text wow slideInUp"><strong>Demostración: </strong>¿Quiere que le guiemos a través de casos aplicables a su propiedad? Programe una reunión de demostración para ver cómo nuestro sistema PMS es la solución digital que su empresa necesita para solucionar cualquier problema. Entonces, asegúrate de rellenar nuestro formulario piloto para que podamos iniciar su propia cuenta Booking Ninjas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure><img alt="Entrega - icono" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/calendly-type-3.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <p class="call-types__item-text wow slideInUp"><strong>Entrega: </strong>en nuestras reuniones de entrega podrá echar un primer vistazo a las customizaciones en las que han trabajado los desarrolladores para su propiedad. Le guiaremos a través del sistema y escucharemos lo que tenga que decir para la siguiente ronda. ¡Está a un solo paso de activar su cuenta!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure><img alt="Llamada de comprobación - icono" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/calendly-type-4.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <p class="call-types__item-text wow slideInUp"><strong>Llamada de comprobación: </strong>estas llamadas nos permitirán saber si está satisfecho con las customizaciones que hemos realizado en su sistema y para que podamos fijar una fecha oficial de activación de su PMS. Las llamadas de comprobación pueden ser programadas en cualquier momento, mientras seas suscriptor de Booking Ninjas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure><img alt="General - icono" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/calendly-type-5.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <p class="call-types__item-text wow slideInUp"><strong>General: </strong>¿Tiene alguna pregunta sobre nuestra aplicación? ¿Oportunidades de negocio? ¿Empleo o consultas de prensa? Programe una reunión general en la que un representante resolverá cualquier preocupación que tenga.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure><img alt="Consulta de empleo - icono" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/calendly-type-6.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <p class="call-types__item-text wow slideInUp"><strong>Consulta de empleo: </strong>Si está interesado en trabajar con Booking Ninjas, nos encantaría hablar con usted. Nos gustaría tener una idea de su experiencia, de modo que, prepárese para responder preguntas sobre su experiencia pasada y conocimiento actual. También le pondremos al tanto de nuestros objetivos y expectativas para asegurarnos que estamos en la misma página al movernos hacia delante.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /call-types -->
+            <div class="calendly-page__description">
+                <div class="container">
+                    <div class="calendly-page__description-box calendly-box__half-gray">
+                        <article>
+                            <h2 class="title">Vea cómo funciona</h2>
+                            <p>Reconocemos todas las tareas y objetivos que un administrador de propiedades equilibra a diario. Hemos tomado en consideración cada faceta de gestionar una propiedad, y hemos desarrollado productos y servicios cuyo fin es reducir su carga de trabajo, además de sus preocupaciones. El sistema Booking Ninjas de gestión de propiedades fue diseñado para facilitar la vida de los administradores de propiedad.</p>
+                        </article>
+                        <div class="calendly-page__description-item wow fadeIn">
+                            <p>Programe una llamada en el calendario para aprender más sobre nuestro software de última generación, basado en la nube, y los numerosos beneficios que puede aportar a su negocio hotelero. Nos encantaría hablar sobre lo que pueden hacer nuestros productos para usted y su organización.</p>
+                        </div>
+                        <div class="calendly-page__description-item wow fadeIn">
+                            <p>Si le gustaría recibir ciertas funciones o funciones, trabajaremos con usted para garantizar que sus necesidades sean satisfechas. Sin embargo, nuestro portal y sistema Booking Ninjas son capaces de manejar todos los servicios que necesite, permitiéndole acceder a varios subconjuntos de la gestión de propiedades desde el mismo lugar y con tan solo iniciar sesión.</p>
+                        </div>
+                        <div class="calendly-page__description-item wow fadeIn">
+                            <p>Nuestro PMS es totalmente personalizable y altamente escalable para ajustarse a las necesidades de cualquier propiedad que le pertenezca. Somos capaces de desarrollar aplicaciones móviles, disponer de nuestro propio sistema de punto de venta (Point of Sale), e incluso ofrecer un canal de gestión como un motor de reservas. Nuestro equipo también trabajará con usted para asegurar que cualquier servicio o sistema que elija con nosotros pueda ser desarrollado a medida, y así conseguir lo que mejor funcione para usted y sus empleados. Si quiere un diseño o plataforma más cómoda para usted, podemos hacer que eso suceda. A su vez, ofrecemos una integración óptima entre nuestro sistema y cualquier sistema que pueda tener actualmente. Esto facilitará mucho más la elección de Booking Ninjas.</p>
+                        </div>
+                        <div class="calendly-page__description-item wow fadeIn">
+                            <p>Nuestros clientes van desde hoteles a restaurantes hasta alojamientos para estudiantes. Si usted administra una propiedad, es muy probable que podemos asistirle con sus productos. Si decide elegir varios de nuestros productos o unos pocos, nos esforzaremos para hacer su trabajo menos estresante. Garantizamos que todos los productos Booking Ninjas harán más fácil su administración de propiedades, permitiéndole centrarse en otras prioridades y objetivos. Buscamos ayudar a gestores de propiedades de todas partes y solucionar sus problemas particulares. Así que, contacte con nosotros para ver si podemos ayudarle con su propiedad.</p>
+                        </div>
+                        <div class="calendly-page__description-item wow fadeIn">
+                            <p>Nuestro acceso exclusivo a una tecnología Salesforce de primera clase es la guinda del pastel. Vaya un paso por delante de sus competidores, teniendo acceso a tecnología Einstein, que incluye análisis de datos en tiempo real, sugerencias inteligentes, y una variedad de herramientas de inteligencia artificial para mejorar cada departamento de su negocio de propiedades.</p>
+                        </div>
+                    </div>
+                    <div class="calendly-page__description-box calendly-box__gray">
+                        <div class="calendly-page__description-item wow fadeIn no-line">
+                            <p>Antes de programar una llamada, haga el favor de preparar la siguiente información:</p>
+                            <ul>
+                                <li>Tipo de propiedad, localización</li>
+                                <li>Número de unidades que necesita cubrir con nuestro PMS</li>
+                                <li>Establezca sus objetivos</li>
+                                <li>Número de usuarios autorizados</li>
+                            </ul>
+                            <p>Nuestro sistema usará esta información para proporcionarle una cuota y para demostrar que nuestro PMS puede enfrentarse a los problemas que surjan. También tendrá la opción de probar nuestro software con una demostración para ver por sí mismo la eficiencia de Booking Ninjas para solucionar los problemas de su propiedad. Esta demostración será totalmente personalizada para mostrarle lo que usted quiere de un software de gestión de propiedades. Entendemos que cada propiedad es diferente, de modo que nos aseguraremos de que nuestra demostración se ajuste a usted, para darle una mejor idea de lo que podemos ofrecerle.</p>
+                        </div>
+                        <p>¿Aún sigue teniendo reservas sobre programar una llamada? Compruebe nuestra recientemente actualizada página de preguntas más frecuentes (FAQ), donde respondemos a las preguntas más frecuentes de nuestros clientes. También puede tomar un tour de nuestras funciones; cada página de funciones tiene información detallada del servicio prestado y cómo puede beneficiarlo a usted, a su plantilla, y a sus clientes.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /description -->
+            <div class="calendly-page__learn">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img alt="Schedule an Appointment - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/calendly-item-2.png"/>
+                        </div>
+                        <div class="col-md-6">
+                            <article>
+                                <h2 class="title">Aprenda más</h2>
+                                <p>Hágase la idea de por qué somos el PMS, basado en la nube, más hablado de la industria hotelera, mediante la lectura de las mejores funciones PMS que Booking Ninjas ofrece. Si tienen una empresa que usa Salesforce, entonces, sin ninguna duda, somos el mejor sistema de gestión de propiedades. Esto es debido a que somos el único PMS que es una aplicación oficial, de innovación de socio, del proveedor líder mundial de soluciones digitales.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="text_center">
+                        <apex:outputLink value="{!URLFOR($Page.BNES_PMS)}" styleClass="button" target="_blank">Aprende más sobre nosotros</apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <div class="modal calendly-modal" id="calendly-modal">
+                <div class="calendly-modal__wrap">
+                    <apex:outputPanel id="calendly">
+                        <apex:outputText rendered="{!IF(calendlyLink == '', true, false)}" style="color:red;padding:20px;font-size:25px;" value="Please select from the options."></apex:outputText>
+                        <iframe frameborder="0" src="{!calendlyLink}"></iframe>
+                    </apex:outputPanel>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

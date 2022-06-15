@@ -1,0 +1,136 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_RegisterController">
+
+    <!-- Template -->
+    <apex:composition template="BN_LP_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                    $('#main-section').css('padding-bottom', 0);
+                    let currentUrl = new URL(window.location.href).pathname;
+                    $('[id$=current-url-val]').val(currentUrl);
+                });
+            </script>
+
+            <link rel="stylesheet" href="https://eggshell-quoll-1301.twil.io/assets/intlTelInput.css" />
+
+            <div class="trial trial-ppc">
+				<div class="container">	
+					<!-- form -->
+					<div class="row justify-content-center">
+						<div class="col-lg-8 trial__col-bg">
+                            <div id="gif" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;width:100%;background: rgba(0,0,0,0.75) url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/loading.gif) no-repeat center center;z-index: 10000;" />
+                            <apex:form id="trial-form">
+                                <div class="trial__form trial__form-ppc">
+                                    <h3>Sign up for your 14-day pilot access.</h3>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="trial__form-item">
+                                                <apex:inputText value="{!firstName}" html-placeholder="First name" id="first_name" required="true" maxlength="25" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="trial__form-item">
+                                                <apex:inputText value="{!lastName}" html-placeholder="Last name" id="last_name" required="true" maxlength="25" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trial__form-item">
+                                        <apex:inputText value="{!businessName}" html-placeholder="Company name" required="true" maxlength="50" />
+                                    </div>
+                                    <div class="trial__form-item">
+                                        <apex:input type="email" value="{!email}" html-placeholder="Work email" required="true" />
+                                    </div>
+                                    <div class="trial__form-item">
+                                        <apex:inputText id="trial-phone" value="{!phone}" html-placeholder="123-456-7890" required="true" onkeypress="return inputLimiter(event,'Telephone');" maxlength="14" style="padding-left: 115px !important;" />
+                                    </div>
+                                    <div class="trial__form-item-check">
+                                        <label>
+                                            <input class="trial__form-checkbox" type="checkbox" required="required" />
+                                            I agree to the <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a> and understand that this a recurring
+                                            subsription. I will be charged automatically on a recurring basis unless I cancel.
+                                        </label>
+                                    </div>
+                                    <div class="trial__form-btn">
+                                        <apex:inputHidden value="{!currentUrl}" id="current-url-val"/>
+                                        <apex:commandButton id="submit-trial" styleClass="button" action="{!register}" value="continue to $1 payment" onclick="showLoadeder()" oncomplete="checkout('{!checkoutSession}');" />
+                                    </div>
+                                </div>
+                            </apex:form>
+						</div>
+					</div>
+					<!-- /form -->
+					<!-- embed video -->
+					<div class="trial__video wow zoomIn">
+						<iframe class="trial__video-responsive" src="https://www.youtube.com/embed/5vwaicRadZQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+					</div>
+					<!-- //embed video -->
+				</div>
+				<!-- trial program -->
+				<div class="trial__program">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-7 col-xl-6 trial__col-padding trial__bg trial__bg-ppc">
+								<h4>The Booking Ninjas $1 Trial Program</h4>
+								<h2><strong>Disclaimer:</strong> $1 charge is our anti-spam measure.  For the Pilot testing, you get a working demo of what we will be offering you. Our pilot features include:</h2>
+								<ul class="trial__advantage">
+									<li>Intelligent Customer/Guest Analysis</li>
+									<li>Accept online payments instantly</li>
+									<li>Virtual Management of Physical Properties and Facilities</li>
+									<li>Digital Marketing Management Platform</li>
+									<li>All-in-one Channel Management</li>
+									<li>Integration of external third-party services (optional)</li>
+									<li>Customization upon your request</li>
+									<li>You can find out more&nbsp;<a href="/pms-integration" target="_blank">here</a> and&nbsp;<a href="/solutions-for-property-management" target="_blank">here</a>.</li>
+                                </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /trial program -->
+            </div>
+            
+            <script src="https://eggshell-quoll-1301.twil.io/assets/intlTelInput.min.js"></script>
+            <script src="https://bngeneral.s3-us-west-2.amazonaws.com/js/form-validation.js"></script>
+            <script type="text/javascript">
+                // add dash on phone number
+                $('[id$=trial-phone]').bind('keyup','keydown', function(e){
+                    //To accomdate for backspacing, we detect which key was pressed - if backspace, do nothing:
+                    if(e.which !== 8) { 
+                        var numChars = $('[id$=trial-phone]').val().length;
+                        if(numChars === 3 || numChars === 7){
+                            var thisVal = $('[id$=trial-phone]').val();
+                            thisVal += '-';
+                            $('[id$=trial-phone]').val(thisVal);
+                        }
+                    }
+                });
+
+                // Show a loader on payment submission
+                function showLoadeder() {
+                    let formObj = document.querySelector("[id$=trial-form]")
+                    if (formObj.checkValidity() === true) {
+                        $('#gif').show();
+                    }
+                }
+
+                checkout = function(sessionId) {
+                    stripe = Stripe('pk_live_jX0HeMWsekaEmgRdAPX4jsFl');
+                    stripe
+                        .redirectToCheckout({
+                            sessionId: sessionId,
+                        })
+                        .then(function(result) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer
+                            // using `result.error.message`.
+                        });
+                }
+            </script>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

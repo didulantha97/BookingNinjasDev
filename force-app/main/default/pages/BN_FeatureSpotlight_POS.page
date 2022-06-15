@@ -1,0 +1,142 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('feature-bg').css('background-image', 'url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-POS-bg.png)');
+                });
+            </script>
+            
+            <!-- hero -->
+            <div class="feature-hero">
+                <div class="container d-flex">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 order-lg-1 align-self-lg-center">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-pos-hero.png" alt="Communication Services" class="adaptive-img" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h1>POS features for better service</h1>
+                            <p>
+                                Booking Ninjas offer a platform that integrates with your Point of Sale system, making it easier for you to manage all payments and transactions between you and your guests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+            <!-- content -->
+            <div class="features-page-grid feature-pos-grid">
+                <div class="features-page-grid__row">
+                    <div class="container">
+                        <div class="row align-items-center features-page-grid__cells">
+                            <div class="col-xl-5 cell-background">
+                                <div class="features-page-grid__content-img d-flex align-items-center justify-content-center justify-content-xl-end">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-pos-1.jpg" alt="Globally Accessible, Mobile Friendly" />
+                                </div>
+                            </div>
+                            <div class="col-xl-7 cell-background features-page-grid__content">
+                                <div class="features-page-grid__content-text">
+                                    <h3>Globally Accessible, Mobile Friendly</h3>
+                                    <p>Instead of operating physically on the premises, the POS system manages its function online. This feature makes it easier for you to access information and payments from the system at any time and wherever is most convenient for you! Since it performs on the cloud, updates, and changes are monitored and sent to you in real-time, making the information transfer seamless and giving you everything you need to know.</p>
+                                    <p>Additionally, accessibility to our POS system online is one thing, but it is also available for use on mobiles or tablets. You will not need to be tied to a computer in order to monitor transactions, and you can take the program with you as you move around on the job. From a hostess managing table availability on a tablet to waitresses logging in orders on their mobile, you can even utilize this function for your employees to use. If you have to check something quickly, all you need to do is pull out your phone or tablet to access the information you need.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="container">
+                        <div class="features-page-grid__cells">
+                            <div class="row align-items-center features-page-grid__cells">
+                                <div class="col-xl-5 cell-background justify-content-xl-start order-xl-1">
+                                    <div class="features-page-grid__content-img d-flex align-items-center justify-content-center justify-content-xl-start">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-pos-2.jpg" alt="Deliver Better Services" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 cell-background features-page-grid__content">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Deliver Better Services</h3>
+                                        <p>Guests can tell you quite a bit about themselves; from their room orders to what they buy at the hotel restaurant, there is data to be gathered from the choices that guests make. Not only is this data easily accessible for you, but it is also analyzed by our system. Our smart technology uses the data collected to come up with predictive statistics and lets you know about possible marketing opportunities. </p>
+                                        <p>Guests are also able to favorite their preferences, making it even more apparent as to the level of precision that our system can handle.</p>
+                                        <p>Your future guests will even benefit from this software without even knowing it; its system on the client’s side is easily accessible and user-friendly. Being able to pay without the hassle or re-order a favorite are a few simple perks that will make your guests enjoy their stay just a little bit more.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="container">
+                        <div class="row align-items-center features-page-grid__cells">
+                            <div class="col-xl-5 cell-background">
+                                <div class="features-page-grid__content-img d-flex align-items-center justify-content-center justify-content-xl-end">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-pos-3.jpg" alt="Take Proper Care of Data" />
+                                </div>
+                            </div>
+                            <div class="col-xl-7 cell-background features-page-grid__content">
+                                <div class="features-page-grid__content-text">
+                                    <h3>Take Proper Care of Data</h3>
+                                    <P>Critical data that can be easily missed manually will be stored and brought to your attention within the system. For example, guest delivery will be streamlined efficiently as a result of our POS system working with the PMS data and payment information. </P>
+                                    <P>Essentially, the POS software, combined with other Booking Ninjas features, is a force to be reckoned with. You’ve got plenty of things to worry about, but the little details that surface from transactions and payment processing? We’ve got you covered.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="container">
+                        <div class="features-page-grid__cells">
+                            <div class="row align-items-center features-page-grid__cells">
+                                <div class="col-xl-5 cell-background justify-content-xl-start order-xl-1">
+                                    <div class="features-page-grid__content-img d-flex align-items-center justify-content-center justify-content-xl-start">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-pos-4.jpg" alt="Organize Like A Pro" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 cell-background features-page-grid__content">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Organize Like A Pro</h3>
+                                        <p>Our Point of Sale system makes it easy for you to manage different departments that process payments. Whether you have hotel restaurants on property or off, you will be able to control operations and payments from wherever you need to be. Because our service is in the cloud, you will no longer need to worry about “on-premises” systems anymore. </p>
+                                        <p>It even lets you control which staff members can access certain amounts of data. If you decide to let an employee be in the know about specific information the system has received, you can set the permission settings yourself and allow them access.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="container">
+                        <div class="row align-items-center features-page-grid__cells">
+                            <div class="col-xl-5 cell-background ">
+                                <div class="features-page-grid__content-img d-flex align-items-center justify-content-center justify-content-xl-end">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-pos-5.jpg" alt="Integrate With Other Features" />
+                                </div>
+                            </div>
+                            <div class="col-xl-7 cell-background features-page-grid__content">
+                                <div class="features-page-grid__content-text">
+                                    <h3>Integrate With Other Features</h3>
+                                    <p>You can use our POS system with your hotel’s stand-alone restaurant and even allow guests to charge to their room. Our software makes it easy for you to manage and set up your inventory in separate departments under one central hub of the organization. For corporate banquet orders, the POS system can handle the stress and transactions for you; instead, you can focus on serving guests and managing staff.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="features-page-text text_center feature-bottom">
+                <div class="container">
+                    <h2>Try out our system for free</h2>
+                    <apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button">Click here to continue</apex:outputLink>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

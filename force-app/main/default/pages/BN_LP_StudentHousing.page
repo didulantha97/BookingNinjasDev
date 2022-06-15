@@ -1,0 +1,909 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false"
+    applyHtmlTag="false" cache="true" controller="BN_TemplateController">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <div class="segment">
+                <!-- hero -->
+                <div class="student-housing-page__hero">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housin-notebook.png"
+                                    alt="Best Student Housing Management Software For Your Property"
+                                    class="adaptive-img" />
+                            </div>
+                            <div class="col-lg-6">
+                                <article class="segment__hero-txt">
+                                    <h1>
+                                        Best Student Housing Management Software For Your Property
+                                    </h1>
+                                    <h2>
+                                        Affordable Cloud-Based Student Accommodation Management System with
+                                        Accounting, Maintenance, Access Control, Online Student Portal &amp;
+                                        More
+                                    </h2>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Call</apex:outputLink>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /hero -->
+                <!-- text -->
+                <div class="student-housing-page__center-text">
+                    <div class="container">
+                        <h2>Enjoy A Modern Student Housing Property Management Software Tailored to Meet Your
+                            Specifications</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <p>Booking Ninjas Student Housing Management Software comes with amazing
+                                    features that unify. Accounting, Maintenance, Access Control, Online Student
+                                    Portal, making for easy navigation and control of the portal.</p>
+                                <p>The PMS also breaks down various silos into a unified single system that
+                                    enables the automatic collection of data for your rental service. Enjoy
+                                    autonomous collation and analysis of previously discarded data. What a
+                                    simplified life!</p>
+                                <p>As students become increasingly internet-savvy, you want to key into this by
+                                    having cloud-based software that solves their accommodation woes online.</p>
+                                <p>We care about your data. With the Booking Ninjas Cloud-based PMS, you can
+                                    create a single, central repository for the entire student database.</p>
+                            </div>
+                        </div>
+                        <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
+                            PLANS
+                            &amp; PRICING</apex:outputLink>
+                    </div>
+                </div>
+                <!-- /text -->
+                <!-- title -->
+                <div class="student-housing-page__main-title">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <h2>With The Online Student Housing Application, You Attract More Applicants
+                                </h2>
+                                <p>You see, you need a software that аllоws studеnts tо gо оnlinе аnd select
+                                    room types, check dеtаils rеgаrding due rent, place rеquеsts for mаintеnаnсе
+                                    and more. That is why we’ve got you covered with our PMS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /title -->
+                <!-- articles -->
+                <div class="student-housing-page__articles">
+                    <div class="container">
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-1.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <section>
+                                            <ul>
+                                                <li>It allows you to create an online resident application
+                                                    process by using secure online forms. </li>
+                                                <li>These secure forms protect your data and help attract more
+                                                    applicants which in turn saves time.</li>
+                                                <li>The beauty of it all is that this form is on a public online
+                                                    application page that can be accessed without an account
+                                                </li>
+                                                <li>We even provide a website builder for you to build your
+                                                    online application page...no coding required!</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /articles -->
+                <!-- title -->
+                <div class="student-housing-page__main-title">
+                    <div class="container">
+                        <h2>
+                            You Can Comfortably Manage Your Student Housing By Bed, Unit &amp; Suite
+                        </h2>
+                    </div>
+                </div>
+                <!-- /title -->
+                <!-- articles -->
+                <div class="student-housing-page__articles">
+                    <div class="container">
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-1">
+                                    <figure class="segment-article-figure__right"><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-2.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <section>
+                                            <ul>
+                                                <li>Our Student Housing Software helps you break down your
+                                                    rental space by bed, unit (private room) &amp; suite
+                                                    (premium
+                                                    room) to cater to different student needs and price points.
+                                                </li>
+                                                <li>You can easily make room moves within the system, moving a
+                                                    student from one room to the other for whatever reasons.
+                                                </li>
+                                                <li>With our Centralized Room Reservation System, you can give
+                                                    your leasing agents the ability to see the availability of
+                                                    different spaces. This helps them keep track of all your
+                                                    spaces and ensures quick renting of space. More money is
+                                                    made for your business.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /articles -->
+                <!-- title -->
+                <div class="student-housing-page__main-title">
+                    <div class="container">
+                        <h2>
+                            Reduce The Move-In-Day Chaos With Our Mass Student Check-In &amp; Check-Out Software
+                        </h2>
+                        <p>One thing student housing property owners dread is the chaos that accompanies every
+                            move-in day. Too many people talking, needing attention, and moving around
+                            simultaneously. If not properly managed, it can lead to several mistakes that can
+                            take time and effort in addition to money, to correct. Save yourself the stress with
+                            our PMS!</p>
+                        <p>The Booking Ninjas PMS helps you simplify the moving day buzz with our mass move-in
+                            and move-out feature.</p>
+                    </div>
+                </div>
+                <!-- /title -->
+                <!-- articles -->
+                <div class="student-housing-page__articles">
+                    <div class="container">
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-3.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <section>
+                                            <ul>
+                                                <li>The mass move-in and move-out feature reduce the stress of
+                                                    moving day with our group check-in/out feature.</li>
+                                                <li>This helps for proper planning and crowd control as you
+                                                    prepare effectively to handle the number of movements in
+                                                    your property.</li>
+                                                <li>Our single dashboard can display student check-in/check-out
+                                                    information in bulk, making it easier to be viewed and
+                                                    managed.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /articles -->
+                <!-- title -->
+                <div class="student-housing-page__main-title">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <h2>
+                                    Help your Students Settle In According To Their Pace With The Built-In
+                                    Student Orientation Feature
+                                </h2>
+                            </div>
+                        </div>
+                        <p>As we settle into the new normal, take advantage of this feature to conduct student
+                            orientations. Why assemble all students in one hall, when they can easily go through
+                            the orientation from the comfort of their rooms, with their phones?</p>
+                        <p>The Built-In Student Orientation feature helps your tenants settle in well through
+                            the mobile app</p>
+                    </div>
+                </div>
+                <!-- /title -->
+                <!-- articles -->
+                <div class="student-housing-page__articles">
+                    <div class="container">
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-1">
+                                    <figure class="segment-article-figure__right"><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-4.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <section>
+                                            <ul>
+                                                <li>You can include information on their bedroom allocations.
+                                                    This reduces the front desk inquiry. </li>
+                                                <li>More beautifully, it allows students to conduct room
+                                                    self-inspection using a checklist and submit them
+                                                    electronically via the mobile app.</li>
+                                                <li>Allows for online student contract signing which reduces
+                                                    paperwork and saves time.</li>
+                                                <li>And another awesome part: students go through the online
+                                                    student induction where you input details about your student
+                                                    housing policies, processes, practices, culture, values,
+                                                    etc. What better way to ease the stress of managing an
+                                                    offline orientation?</li>
+                                                <li>The online student request submission feature allows
+                                                    students to make direct requests on the app about
+                                                    maintenance, room transfers, guests, etc. This reduces the
+                                                    need for constant phone calls and emails as the centralised
+                                                    system enables them to make all their requests in one place.
+                                                    And you manage it from there.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /articles -->
+                <!-- title -->
+                <div class="student-housing-page__main-title">
+                    <div class="container">
+                        <h2>
+                            Student Housing Apps &amp; Online Portal
+                        </h2>
+                        <p>Get student-friendly features that solve simple problems faced by students in housing
+                            accommodations using the student housing apps. </p>
+                    </div>
+                </div>
+                <!-- /title -->
+                <!-- articles -->
+                <div class="student-housing-page__articles">
+                    <div class="container">
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-5.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <section>
+                                            <ul>
+                                                <li>For students &amp; parents to keep track of their
+                                                    accommodation.
+                                                </li>
+                                                <li>Use the online portal to manage various accounts, make
+                                                    payments online, create work orders, renew leases, and much
+                                                    more. One portal, different functionalities. How easy can
+                                                    life get?</li>
+                                                <li>Students can self-serve their bookings and services without
+                                                    calling the front desk nonstop or dropping emails
+                                                    continually. With this feature, they manage their bookings
+                                                    and the services you offer from the comfort of their phones
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /articles -->
+                <!-- title -->
+                <div class="student-housing-page__main-title">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <h2>
+                                    Simplify Your Business Math With The Student Housing Accounting Software
+                                </h2>
+                            </div>
+                        </div>
+                        <p>Managing properties across various sites implies there's the need for a reliable
+                            accounting system that manages accounting, simplifies payment modalities, and makes
+                            rent collection much easier. You also need one that helps collate data and offers a
+                            great financial report for transactions.</p>
+                    </div>
+                </div>
+                <!-- /title -->
+                <!-- articles -->
+                <div class="student-housing-page__articles">
+                    <div class="container">
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-1">
+                                    <figure class="segment-article-figure__right"><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-6.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <section>
+                                            <ul>
+                                                <li>Our PMS offers accounting software that makes debt
+                                                    management easy for you. Track all your debtors, get real
+                                                    data on debt owed, and organise your report to make for
+                                                    healthy finance for your business.</li>
+                                                <li>It also offers automated renewals for your students. This
+                                                    helps reduce the bureaucracy of rent renewals. Saved time =
+                                                    saved money!</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /articles -->
+                <!-- title -->
+                <div class="student-housing-page__main-title">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2>
+                                    What’s A Business Without Real-time Reporting &amp; Analytics of Data?
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /title -->
+                <!-- articles -->
+                <div class="student-housing-page__articles">
+                    <div class="container">
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-7.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <section>
+                                            <ul>
+                                                <li>Our PMS enables Tableau CRM integration, allowing you to
+                                                    visualize data in the most meaningful way. This ensures that
+                                                    you get all the data and analytical insights for your
+                                                    business. Businesses thrive when we get data right! </li>
+                                                <li>Availability forecasting: You can also use semester-based
+                                                    forecasting to further tailor your analytics.</li>
+                                                <li>Get customized reports of your business to suit specific
+                                                    areas you’d love to pay more interest in.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /articles -->
+                <!-- title -->
+                <div class="student-housing-page__main-title">
+                    <div class="container">
+                        <h2>
+                            More Features To Help You Manage Your Student Housing Better
+                        </h2>
+                    </div>
+                </div>
+                <!-- /title -->
+                <!-- articles -->
+                <div class="student-housing-page__articles">
+                    <div class="container">
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-8.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">
+                                            Ancillary Services Integration
+                                        </h3>
+                                        <section>
+                                            <p>Gеnеrаtе add-on revenue features to suit your business through
+                                                inbuilt shopping platforms where students can buy toiletries,
+                                                stationeries and bedding packs. The cool thing here is, it saves
+                                                students time from going to shopping malls and also helps the
+                                                property owner generate more income. Steady cash flow is
+                                                necessary, you’d agree with me.</p>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-1">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-9.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">
+                                            Never Be Caught Unaware With Our Maintenance &amp; Inсidеnсе
+                                            Management
+                                            Software
+                                        </h3>
+                                        <section>
+                                            <p>Life is good when incidents and emergencies are properly
+                                                forecasted and taken care of. Because we know how important it
+                                                is to maintain properties and manage incidences, your business
+                                                is safe with our PMS.</p>
+                                            <ul>
+                                                <li>Your students can request maintenance via the online portal
+                                                    and have their needs met in real-time. </li>
+                                                <li>Take charge of your students' welfare by the online incident
+                                                    report form where they inform you of incidents that require
+                                                    attention.</li>
+                                                <li>As the reports are sent by students, your staff can receive
+                                                    notifications of these and update the status of the report
+                                                    as they deploy solutions or escalate the reports.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-10.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">
+                                            Mass Texting &amp; Messaging for Marketing
+                                        </h3>
+                                        <section>
+                                            <p>Send transactional messages like payment reminders, news alerts,
+                                                work order status, package tracking, or announcements with text,
+                                                email, or even WhatsApp using the Mass Texting and Messaging
+                                                software.</p>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-1">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-11.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">
+                                            Online Student Housing Payment Software
+                                        </h3>
+                                        <section>
+                                            <ul>
+                                                <li>Minimize past due accounts, enhance security, remove
+                                                    paperwork, and improve accuracy using the student housing
+                                                    software. It comes with features that enable these.</li>
+                                                <li>This is also a Mobile app supported software</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-12.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">
+                                            Your Student’s Package &amp; Parcel Are Safe Through Our Tracking
+                                            System
+                                        </h3>
+                                        <section>
+                                            <p>Every now and then, students receive packages and parcels from
+                                                family, friends, and school-related purposes. The ability to get
+                                                these parcels tracked and delivered in time helps ease off
+                                                stress for your students and your staffs</p>
+                                            <ul>
+                                                <li>With our software, packages can be received and tracked
+                                                    until it lands in the hands of the student. Each package
+                                                    information is added to the student record. </li>
+                                                <li>Our PMS is Integrated with USPS for detailed tracking even
+                                                    before it reaches the student housing. This helps control
+                                                    your storage space and reduces anxiety while waiting.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="student-housing-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-1">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-13.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">
+                                            Student Housing Access Control
+                                        </h3>
+                                        <section>
+                                            <p>Have total control of the access available to various sections of
+                                                your property. Allow for ‘Out-Of-Bounds’ areas, general areas,
+                                                and the likes.</p>
+                                            <ul>
+                                                <li>Control access to various sections of your property to limit
+                                                    trespassing and security breaches.</li>
+                                                <li>Easily set rule-based control via the system to allow
+                                                    passage and access to only qualified students/staff.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /articles -->
+
+                <!-- prices -->
+                <div class="segment__prices">
+                    <div class="container">
+                        <h2 class="text_center section-title">Booking Ninjas Student Housing Management Software
+                            Pricing</h2>
+                        <p class="text_center">Enjoy a price range that reflects the excellent value we bring to
+                            your business.</p>
+                        <h3>Core Student Housing PMS (Starts from <span>
+                                <apex:outputText value="{0, number, currency}">
+                                    <apex:param value="{!lowest_monthly_price}" />
+                                </apex:outputText>/month</span>)
+                        </h3>
+                        <div class="text_center pricing-support__btn wow fadeIn">
+                            <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
+                                PLANS
+                                &amp; PRICING</apex:outputLink>
+                        </div>
+                    </div>
+                </div>
+                <!-- /prices -->
+
+                <!-- Add-ons -->
+                <div class="segment__addons">
+                    <div class="container">
+                        <h2 class="text_center section-title">
+                            Add-Ons For Your Student Housing Property Management Software
+                        </h2>
+                        <p class="section-subtitle">Get tailor-made add-ons that serve your business better with
+                            the Booking Ninjas Student Housing Property Management Software. Our value-reaching
+                            add-ons further extend the functionality of your system.</p>
+                        <!-- Slider -->
+                        <div class="pricing-addons__slider">
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-be.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Booking Engine</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-channel-manager.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Channel Manager</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-data-analytics.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Data Analytics</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-pos.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">POS</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-cash-register.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Cash Register</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-portal.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Portal</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-email-app.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Email App</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-membership-module.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Membership Module</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-esign.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Esign (Additional Api's)</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-communications.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Communications (paid by usage)</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learn-more-center">
+                            <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}">More add-ons
+                                available soon</apex:outputLink>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Add-ons -->
+                <!-- FAQ -->
+                <div class="segment__faq">
+                    <div class="container">
+                        <h2 class="text_center section-title">FAQ</h2>
+                        <div class="segment-accordion">
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>What is student hоusing management sоftwаrе?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Student housing sоftwаrе is the technology that goes beyond basic
+                                        рrореrtу management sоftwаrе fеаturеs and fосusеs on features unique to
+                                        student housing. These include mаximizing rооm оссuраnсу, managing rооm
+                                        and roommate рrеfеrеnсеs, intеgrаting with саmрus sуstеms, аnd storing
+                                        information for parents оr tеnаnts. Inсludеs stаndаrd ассounting,
+                                        maintenance, аnd tеnаnt and lеаsе management functions.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Whаt fеаturеs tо lооk fоr in a studеnt housing sоftwаrе?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <ul class="segment__list segment-accordion__list">
+                                        <li>Accounting</li>
+                                        <li>Budgеting and forecasting</li>
+                                        <li>Online роrtаl fоr studеnts</li>
+                                        <li>Ancillary services Integration</li>
+                                        <li>Maintenance аnd inсidеnсе management</li>
+                                        <li>Marketing</li>
+                                        <li>Access Control</li>
+                                        <li>Package Management</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Exресtеd Benefits of Student Housing Management Software</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Using our PMS affords you the following comfort for your business:</p>
+                                    <ul class="segment__list segment-accordion__list">
+                                        <li>You save соsts and administrative timе viа online аррliсаtiоns. Most
+                                            modern housing applications have enabled options for students to
+                                            apply and make preferred choices of rooms from the available
+                                            options.</li>
+                                        <li>This helps fасilitаtе рареrlеss аррrоvаls by universities and
+                                            property owners and makes for more transactions per day by students.
+                                        </li>
+                                        <li>It comes with a centralised infоrmаtiоn feature that ensures all
+                                            data are safely kept and updated in one place.</li>
+                                        <li>You can gеnеrаtе add-on revenue features to suit your business. This
+                                            could be in the form of inbuilt shopping platforms where students
+                                            can buy toiletries, stationery, and bedding packs. This saves
+                                            students time from going to shopping malls and also helps the
+                                            property owner generate more income. Steady cash flow is necessary!
+                                        </li>
+                                        <li>Also enables livе аttеndаnсе tracking for your students on campus.
+                                            Not many PMSs can integrate various biometric devices or swipe cards
+                                            to capture real-time movement on student accommodations. This
+                                            automatically records attendance and restricts illegal access on
+                                            campus. A very beautiful way to secure your property and the lives
+                                            of students. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Kеу cоnsidеrаtiоns for student hоusing management software</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Before you deploy a PMS, you must take note of the following:</p>
+                                    <ul class="segment__list segment-accordion__list">
+                                        <li>Business sizе: The size of the business will determine the type of
+                                            PMS you sign up for. If you want to perfectly manage the number of
+                                            rooms and students on your property, you want to get a PMS that can
+                                            adequately cover the size your property operates on. This is to
+                                            avoid mistakes in room tracking, room booking, rent renewals,
+                                            maintenance, etc. Ensure to get the Booking Ninjas PMS as it
+                                            comfortably caters for all sizes of student accommodations, in
+                                            whatever location of the world. Get software that offers the
+                                            opportunity to scale up your business, if you are a first-time user.
+                                        </li>
+                                        <li>Dерlоуmеnt architecture: To each business, it’s own. We encourage
+                                            you to&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}">
+                                                schedule a demo
+                                            </apex:outputLink> to
+                                            ensure our services suit your deployment architecture.</li>
+                                        <li>Intеgrаtiоn capability: If you need integrations with 3rd party
+                                            applications, Booking Ninjas is the right PMS for you. Being built
+                                            on Salesforce, our system is has a high integration capacity.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>How We Work With Student Housing Providers?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Mаnаging student housing is unique and сhаllеnging because students аrе
+                                        tурiсаllу a trаnsiеnt population, with many studеnts shаring the sаmе
+                                        house, but rеnting individual rooms or bеds. Using management sоftwаrе
+                                        for studеnt hоusing is еssеntiаl fоr mаnаging tenant turnоvеr,
+                                        maintenance, аnd dаilу ореrаtiоns. We go beyond typical PMS features and
+                                        provide an instance that prioritises features needed by student housing
+                                        providers.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Can you install this Student housing management system into an existing
+                                        Salesforce organisation?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Yes, you can install this system into your existing Salesforce
+                                        organisation.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Can I get a demo of your student housing management system?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Yes, you can schedule a demo of our student housing system. With a demo,
+                                        you see how the system helps deliver features peculiar to student
+                                        housing management. Features you probably won’t find anywhere in an
+                                        all-in-one system.</p>
+                                    <p>
+                                        <apex:outputLink value="{!URLFOR($Page.BNCalendly)}">Schedule a demo
+                                        </apex:outputLink>&nbsp;today! You can
+                                        choose any day or time convenient for you.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Do you support online booking for seats, desks, private offices via
+                                        booking engine/app?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Yes, Booking Ninjas PMS provides a booking engine that supports online
+                                        booking for your community. Members and guests can book online, pay and
+                                        manage their meeting room reservations in any of your centres. Also
+                                        ensures availability of Private &amp; Meeting Room Booking. Available
+                                        both
+                                        on desktop and mobile platforms.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Do you connect with the POS (snacks shop)?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    Yes, we do. Whether your POS operates in a snack shop, restaurant, bursary
+                                    or cafe, our PMS connects the POS to the rest of the PMS. If you already
+                                    have a POS system, we can connect it to the rest of your instance. If you
+                                    don’t have an existing POS system, we will provide the POS system which is
+                                    automatically synced with the rest of the PMS.
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Do you have a member portal for the member to manage their account?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    Yes, we do. For the member portal, you can do the following: Status booking,
+                                    etc (day pass/monthly member), upgrade plan, referrer program, etc. You can
+                                    also include custom options you’d like your members to see on their portal.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learn-more-center">
+                            <apex:outputLink value="{!URLFOR($Page.BN_FAQs)}">More FAQs about Booking Ninjas
+                            </apex:outputLink>
+                        </div>
+                    </div>
+                </div>
+                <!-- /FAQ -->
+            </div>
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,229 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+    <html>
+        <head>
+          <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+          <meta content="Best Hotel Management Software - Cloud-Based PMS | Booking Ninjas" name="title" />
+          <meta content="The proper way to handle your property management today. Join our users and enjoy predictable growth" name="description" />
+          <meta content="pms hotel, hotel software, hotel pms systems, hotel management software, hotel property management system, hotel management system, hotel reservation software, hotel booking software, hotel property management software, hotel system, hotel management system software, property management software, rental property management software, property management system, pms system, pms software, rental management software, rental property software, landlord software, rental software, cloud pms, cloud based pms" name="keywords" />
+          <meta name="viewport" content="initial-scale=1"/>
+          <title>Best Hotel Management Software - Cloud-Based PMS | Booking Ninjas</title>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+          <!--build:css css/styles.min.css-->
+          <link rel="stylesheet" href="https://dhok0tst40ftg.cloudfront.net/css/slick.css"/>
+          <link rel="stylesheet" href="https://dhok0tst40ftg.cloudfront.net/css/bootstrap-grid.css"/>
+          <link rel="stylesheet" href="https://dhok0tst40ftg.cloudfront.net/css/styles.css"/>
+          <!--endbuild-->
+        </head>
+        <body>
+        <div class="wrapper">
+        <!--header-->
+        <header class="header">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <a href="/" class="logo"><img src="https://dhok0tst40ftg.cloudfront.net/img/logo.png" alt="Bookingninjas Property Management System"/></a>
+              </div>
+              <div class="col-6">
+                <a href="/" class="logo-right"><img src="https://dhok0tst40ftg.cloudfront.net/img/logo-right.png" alt="Bookingninjas Property Management System"/></a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!--end-header-->
+        <!--main-->
+        <div class="main">
+        
+           
+        <!-- banner -->
+        <div class="main-image">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1>
+                            <strong>3</strong> Days <br/>
+                            <strong>10</strong>  Workshops <br/>
+                            <strong>9</strong>  Speakers
+                        </h1>
+                        <p>[ Equipotel São Paulo- Sep 10th-13th ]</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="main-image__button">
+                            <a href="#booking-modal" data-fancybox="" class="button">book  appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /banner -->
+        <!-- about -->
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <article>
+                            <div class="title">ABOUT</div>
+                            <h6>[about conference]</h6>
+                            <h2>Welcome to the Greatest
+                                    Property Conference 2018</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen</p>
+                            <a href="#" class="button button-empty">read more</a>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="" class="about__video">
+                            <img src="https://dhok0tst40ftg.cloudfront.net/img/main-img.png" alt="Bookingninjas Property Management System"/>
+                        </a>
+                    </div>
+                </div> 
+                <div class="timer">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="timer__title">Count <span>Every Second</span> Until 
+                                    the Event</div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="timer__section">
+                                <div id="remainder" class="reminder"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /about -->
+        
+        
+        </div>
+        <!--end-main-->
+        <!--footer-->
+        <footer class="footer">
+          <div class="foot_top container">
+            <div class="row">
+              <div class="col-lg-4 col-sm-6">
+                <div class="foot_left">
+                  <div class="foot__ready">
+                      Ready to
+                     <b> Get started?</b>
+                  </div>
+                  <a href="#" class="button">Start Here</a>
+                  <p>1815 Purdy Avenue  <br/>
+                      Miami Beach, FL 33139
+                      </p>
+                  <p>sales@bookingninjas.com</p>
+                  <p><strong>+1-305-428-2421</strong></p>
+                  <div class="foot__partner">
+                    <a href="#"><img src="https://dhok0tst40ftg.cloudfront.net/img/partner1.png" alt="Bookingninjas Property Management System"/></a>
+                    <a href="#"><img src="https://dhok0tst40ftg.cloudfront.net/img/partner2.png" alt="Bookingninjas Property Management System"/></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="foot_center">
+                  <div class="foot_list">
+                    <h6>Company:</h6>
+                    <ul>
+                      <li><a href="/about-us">About Us</a></li>
+                      <li><a href="/careers">Careers</a></li>
+                      <li><a href="/resources">Resources</a></li>
+                      <li><a href="/gallery">Gallery</a></li>
+                      <li><a href="/faqs">FAQs</a></li>
+                    </ul>
+                  </div>
+                  <div class="foot_list">
+                    <h6>Connect with us:</h6>
+                    <ul>
+                      <li><a href="https://www.facebook.com/bookingninjas" target="_blank">Facebook</a></li>
+                      <li><a href="https://www.instagram.com/bookingninjas" target="_blank">Instagram</a></li>
+                      <li><a href="https://www.youtube.com/channel/UCOrcTzmQnmY7DG2nzwfa8zw" target="_blank">YouTube</a></li>
+                      <li><a href="https://www.linkedin.com/company/5346092/" target="_blank">LinkedIn</a></li>
+                      <li><a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank">Appexchange</a></li>
+                    </ul>
+                  </div>
+                  <div class="clear"></div>
+                  <h6>Bookingninjas</h6>
+                  <p>Enhance the quality of guest services, increasing staff productivity and streamlining operations. Make your business a lot simpler and a lot more effective with Booking Ninjas.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="foot_right">
+                  <h6>Contact us</h6>
+                  <form>
+                    <div><input type="text" placeholder="First Name"/></div>
+                    <div><input type="text" placeholder="Last Name"/></div>
+                    <div><input type="text" placeholder="Email"/></div>
+                    <div><textarea placeholder="Message"></textarea></div>
+                    <div><input type="submit" class="button" value="Send Message"/></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="foot_bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                    <address class="float_left">
+                      All rights reserved © 2016 - Booking Ninjas
+                    </address>
+                </div>
+                <div class="col-6">
+                    <nav class="float_right">
+                        <a href="#">Terms &#x26; Conditions</a> | 
+                        <a href="#">Privacy Policy</a>
+                     </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--end-footer-->
+        
+        <!--modal-->
+        <div class="modal booking-modal" id="booking-modal">
+          <h6>Booking appintment</h6>
+          <div class="modal__form">
+            <div class="modal__form-item"><input type="text" placeholder="Name &#x26; Surname"/></div>
+            <div class="modal__form-item"><input type="tel" placeholder="Phone"/></div>
+            <div class="modal__form-item"><input type="email" placeholder="Email"/></div>
+            <div class="modal__form-item">
+              <span>Pick the time</span>
+              <select>
+                <option>10:30</option>
+                <option>11:00</option>
+                <option>12:00</option>
+              </select>
+            </div>
+            <div class="modal__form-buttons">
+              <a href="#" class="button"><i class="fas fa-map-marker-alt"></i>See on map</a>
+              <a href="#thanks" data-fancybox="" class="button">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal thanks" id="thanks">
+          <div class="thanks__img">
+            <img src="https://dhok0tst40ftg.cloudfront.net/img/thanks.jpg" alt="Bookingninjas Property Management System"/>
+          </div>
+          <p>Thank you for your application, we will be waiting  <br/> 
+            for you at the exhibition at the specified time </p>
+        </div>
+        <!--/modal-->
+        
+        </div>
+        
+        <!--SCRIPT -->
+        <script src="https://dhok0tst40ftg.cloudfront.net/js/jquery.js"></script> 
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+        <!--build:js js/main.min.js -->
+        <script src="https://dhok0tst40ftg.cloudfront.net/js/classie.js"></script>
+        <script src="https://dhok0tst40ftg.cloudfront.net/js/countdown.js"></script>
+        <!-- endbuild -->
+        <script src="https://dhok0tst40ftg.cloudfront.net/js/common.js"></script>
+        <!--[if IE]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!-- END OF SCRIPT -->
+        
+        </body>
+    </html>
+</apex:page>

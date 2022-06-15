@@ -1,0 +1,208 @@
+<!--
+  @description       : 
+  @author            : teguh@bookingninjas.com
+  @group             : 
+  @last modified on  : 12-29-2020
+  @last modified by  : teguh@bookingninjas.com
+  Modifications Log 
+  Ver   Date         Author                    Modification
+  1.0   11-22-2020   teguh@bookingninjas.com   Initial Version of BNES
+-->
+<apex:page controller="BNES_BlogController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                    $('.main').addClass('blog-page');
+                });
+            </script>
+
+            <!-- content -->
+            <div class="container">
+                <br />
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="blog-page__tags">
+                            <li><a href="/es/blog" class="{!if(categoryParameter == null, 'active', '')}">Más reciente</a></li>
+                            <apex:repeat value="{!ArticleCategories}" var="item">
+                                <li><a href="{!item.href}" class="{!if(categoryParameter == '{!item.category}', 'active', '')}"><apex:outputText >{!item.category}</apex:outputText></a></li>
+                            </apex:repeat>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-page__search">
+                            <apex:form id="search-form">
+                                <apex:inputText styleClass="blog-page__search-input" html-placeholder="Search..." required="required" value="{!searchQuery}" />
+                                <apex:commandButton styleClass="blog-page__search-button" value=" " action="{!search}" />
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <apex:repeat value="{!recentArticles}" var="article">
+                        <div class="col-lg-6">
+                            <div class="blog-page__item">
+                                <apex:outputLink value="{!URLFOR($Page.BNES_Article, null, [id=article.Id])}" styleClass="blog-page__item-img">
+                                    <img src="{!article.Cover_Photo__c}" alt="{!article.Name}"/>
+                                </apex:outputLink>
+                                <div class="blog-page__item-bottom">
+                                    <div class="row justify-content-between">
+                                        <div class="col-sm">
+                                            <div class="blog-page-author">
+                                                <apex:outputPanel styleClass="blog-page-author__photo"
+                                                    rendered="{!IF(article.Author__r.Profile_Picture__c != null, true, false)}">
+                                                <apex:image width="67" height="67" style="border-radius:50%;"
+                                                    value="{!article.Author__r.Profile_Picture__c}"
+                                                    alt="Profile {!if(article.Author__r.Name != null, article.Author__r.Name, 'Admin')}" />
+                                                </apex:outputPanel>
+                                                <div class="blog-page-author__name">
+                                                    Por:
+                                                    <apex:outputLink value="{!URLFOR($Page.BNES_Author,null,[Id=article.Author__r])}">
+                                                        <apex:outputText value="{!if(article.Author__r.Name != null, article.Author__r.Name, 'Admin')}" />
+                                                    </apex:outputLink>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-auto">
+                                            <div class="blog-page-date">
+                                                <i class="fas fa-calendar-alt"></i>
+                                                <apex:outputText value="{0, date, dd MMM yyyy}">
+                                                    <apex:param value="{!IF(article.Scheduled_Publish_Date__c == null, article.CreatedDate, article.Scheduled_Publish_Date__c)}" /> 
+                                                </apex:outputText>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <article>
+                                        <apex:outputLink value="{!URLFOR($Page.BNES_Article, null, [id=article.Id])}"
+                                            style="text-decoration: none">
+                                            <h6>{!article.Name}</h6>
+                                        </apex:outputLink>
+                                        <p><apex:outputText value="{!if(article.Article_Preview__c != null, article.Article_Preview__c, LEFT(article.HTML_Content__c, FIND('</p>', article.HTML_Content__c)) + '</p>')}" escape="false"></apex:outputText></p>
+                                    </article>
+                                    <div class="blog-page-more">
+                                        <apex:outputLink value="{!URLFOR($Page.BNES_Article, null, [id=article.Id])}">
+                                            Lee mas 
+                                        </apex:outputLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </apex:repeat>
+                </div>  
+                <div class="row">
+                    <apex:outputPanel rendered="{!if(TrendingArc == true, true, false)}" styleClass="blog-page__related">
+                        
+                        <h3 class="blog-page-title">Publicaciones de tendencia</h3>
+                    
+                    </apex:outputPanel>
+                    
+                        <div class ="col-lg-12">
+                            <div class="row justify-content-between">
+                            <apex:repeat value="{!trendingArticles}" var="trending">
+                                <div class="col-lg-6 ">
+                                    <div class="blog-page__item">
+                                        <apex:outputLink value="{!URLFOR($Page.BNES_Article, null, [id=trending.Id])}"
+                                            styleClass="blog-page__item-img">
+                                            <img src="{!trending.Cover_Photo__c}" alt="{!trending.Name}" />
+                                        </apex:outputLink>
+                                        <div>
+                                            <div class="blog-page__item-bottom">
+                                                <div class="row justify-content-between">
+                                                    <div class="col-sm">
+                                                        <div class="blog-page-author">
+                                                            <apex:outputPanel styleClass="blog-page-author__photo"
+                                                            rendered="{!IF(trending.Author__r.Profile_Picture__c != null, true, false)}">
+                                                            <apex:image width="67" height="67" style="border-radius:50%;"
+                                                                value="{!trending.Author__r.Profile_Picture__c}"
+                                                                alt="Profile {!if(trending.Author__r.Name != null, trending.Author__r.Name, 'Admin')}" />
+                                                            </apex:outputPanel>
+                                                            <div class="blog-page-author__name">
+                                                                Por:
+                                                                <apex:outputLink value="{!URLFOR($Page.BNES_Author,null,[Id=trending.Author__r])}">
+                                                                    <apex:outputText value="{!if(trending.Author__r.Name != null, trending.Author__r.Name, 'Admin')}" />
+                                                                </apex:outputLink>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-auto">
+                                                        <div class="blog-page-date">
+                                                            <i class="fas fa-calendar-alt"></i>
+                                                            <apex:outputText value="{0, date, dd MMM yyyy}">
+                                                                <apex:param value="{!IF(trending.Scheduled_Publish_Date__c == null, trending.CreatedDate, trending.Scheduled_Publish_Date__c)}" /> 
+                                                            </apex:outputText>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <article>
+                                                    <apex:outputLink value="{!URLFOR($Page.BNES_Article, null, [id=trending.Id])}"
+                                                        style="text-decoration: none">
+                                                        <h3>{!trending.Name}</h3>
+                                                    </apex:outputLink>
+                                                    <p>
+                                                        <apex:outputText value="{!if(trending.Article_Preview__c != null, trending.Article_Preview__c, LEFT(trending.HTML_Content__c, FIND('</p>', trending.HTML_Content__c)) + '</p>')}"
+                                                            escape="false" />
+                                                    </p>
+                                                </article>
+                                                <div class="blog-page-more">
+                                                    <apex:outputLink value="{!URLFOR($Page.BNES_Article, null, [id=trending.Id])}"
+                                                        style="text-decoration: none">
+                                                        Lee mas
+                                                    </apex:outputLink>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </apex:repeat>    
+                        </div>
+                    </div>
+                    <apex:outputPanel id="subs-form" styleClass="col-lg-12 blog-page-subscribe">
+                    <h4>Suscríbete a nuestro blog para no perderte información importante</h4>
+                    <apex:form styleClass="blog-page-subscribe__form">
+                        <apex:inputText value="{!subEmail}" html-placeholder="¿Cuál es tu e-mail?" required="true" />
+                        <apex:commandButton styleClass="button" value="Únete a nosotras" action="{!subscribe}"
+                            reRender="subs-form" />
+                    </apex:form>
+                    <p>Sin pelusa. No es basura. Listas ocasionales. Darse de baja en cualquier momento.</p>
+                    </apex:outputPanel>
+                </div>
+            </div>
+            <nav class="blog-page__pager">
+                <ul>
+                    <li>
+                        <apex:outputLink rendered="{!if(currentPageNumber-1 == 1 && disablePrevious == false, true, false)}"
+                            value="/es/blog{!if(searchParameter != null, '?search='+searchParameter, '')}{!if(categoryParameter != null, '?category='+categoryParameter, '')}"
+                            styleClass="blog-page__pager-prev"><i class="fas fa-chevron-left"></i> pagina anterior
+                        </apex:outputLink>
+                        <apex:outputLink rendered="{!if(currentPageNumber-1 != 1 && disablePrevious == false, true, false)}"
+                            value="?{!if(searchParameter != null, 'search='+searchParameter+'&', '')}{!if(categoryParameter != null, 'category='+categoryParameter+'&', '')}page={!currentPageNumber-1}"
+                            styleClass="blog-page__pager-prev"><i class="fas fa-chevron-left"></i> pagina anterior
+                        </apex:outputLink>
+                    </li>
+                    <li>
+                        <apex:outputLink rendered="{!if(disableNext == false, true, false)}"
+                            value="?{!if(searchParameter != null, 'search='+searchParameter+'&', '')}{!if(categoryParameter != null, 'category='+categoryParameter+'&', '')}page={!currentPageNumber+1}"
+                            styleClass="blog-page__pager-next">Siguiente página <i class="fas fa-chevron-right"></i>
+                        </apex:outputLink>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /content -->
+
+            <script>
+                $(function () {
+                    $('article').find("*").removeAttr("style");
+                });
+            </script>
+            
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,159 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg feature-subpage feature-subpage-payment');
+                    $('div.wrapper').css('background', 'url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-bg-1.png) no-repeat right 50vw top 850px;');
+                });
+            </script>
+            
+            <!-- hero -->
+            <div class="feature-subpage-hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-5 order-lg-1">
+                            <div class="feature-subpage-hero__img wow fadeInRight">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-payment-hero.png" alt="Payment Integrations" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 wow fadeIn">
+                            <h1>Payment Integrations</h1>
+                            <p>It is no news anymore that technology advances every day, and it has changed or somewhat enhanced all aspects of our daily life. It has been a complete technological overhaul that people are now more comfortable running their everyday transactions or businesses cashless. This is a new realm tech evolution has placed us in. </p>
+                            <p>From a hospitality perspective, keeping up with customers’ expectations in this fast-paced, high-tech world can be tricky. Yet, these customers must be afforded that heightened sense of convenience since they are vital to any business organization’s success. </p>
+                            <p>As technology evolves, so are guest’s expectations. Taking Uber business as an example, their customers can move around without worrying about payment since everything is handled digitally. Therefore, all customers have to do is have their credit card with them or simply make a wire transfer after the experience is complete. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+
+            <!-- content -->
+            <div class="feature-subpage-box wow fadeInUp">
+                <div class="container">
+                    <p>Speaking of the hospitality industry, if business owners or managers can afford the same guest experience, it would afford more convenience and increase their revenue, owing to increased booking. Non-cash payments have been around for a while now, and some countries are already on the front foot. Belgium (93%), France (92%), Canada (90%), and UK &amp; Sweden (89%). Other countries like the Asian nation are adopting this new way of payment, and it is just a matter of time before the whole world realizes how rewarding it is. </p>
+                    <p>This guide will walk you through what online gateways mean, how your hospitality industry can implement seamless online payments, the 5 best practices to keep your online payment secure, and the importance of online payment integrations.</p>
+                </div>
+            </div>
+            <div class="feature-subpage-box wow fadeInUp">
+                <div class="container">
+                    <h2>How Can You Implement Seamlessly Online Payments?</h2>
+                    <p>Since technology evolved to change our aspects of life, most companies’ payment landscape has posed a tricky area to navigate for any business in the hospitality industry. To a greater extent, this problem ensues because hospitality industry payments conceal an incredibly intricate and grossly regulated process that features the whole industry’s distribution channel, which basically includes a channel manager, a PMS, online travel agent (OTA), or booking engine, and a payment gateway. </p>
+                    <p>Each of these distribution chains plays a crucial role in capturing and transferring credit or debit card details before your customers even make their payments. This proves that technology has driven most businesses forward and makes room for the much-needed transition. The following are the three main ways you can ensure your business is prepared for online payment processing. </p>
+
+                    <!-- steps -->
+                    <div class="feature-subpage-step">
+                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-payment-1.jpg" alt="Two-way PMS integration" class="feature-subpage-img__align-left shift-left feature-subpage-box wow fadeInLeft" />
+                        <div class="feature-subpage-step__wrap">
+                            <div class="feature-subpage-step__top">
+                                <span>01</span>
+                                <h3>Two-way PMS integration</h3>
+                            </div>
+                            <p>Property Management System, which has its short form to be PMS, is technically a software application used by property-related businesses, commercial, residential rental owners, logistics, intellectual properties, and many other management-related fields. In a more descriptive sense, we can say the property management system is a digital medium that enhances the management and maintenance of business organizations, legalities, and personnel via a single piece of functional system. </p>
+                            <p>Furthermore, PMS is a system solution built to monitor the day-to-day operations of a hospitality accommodation business, private properties, among others. In modern hospitality, this newly-developed genius has made the paper-based methods antiquated. </p>
+                            <p>Some PMS comes with an in-built channel manager, booking engine, and a payment gateway. It is completely fine if you cannot lay your hands on a PMS of these features. Just make sure the one you are getting offers integration to these systems because they are highly influential for any hospitality business to get more bookings and increase revenue. </p>
+                            <p>With the property management system of these integrations, you can be sure of having all payment information directed from your website or an online travel agent to your front desk for processing. This is as easy as it sounds. </p>
+                        </div>
+                    </div>
+                    <div class="feature-subpage-step">
+                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-payment-2.png" alt="Online Booking Engine" class="feature-subpage-img__align-right shift-right wow fadeInRight" />
+                        <div class="feature-subpage-step__wrap">
+                            <div class="feature-subpage-step__top">
+                                <span>02</span>
+                                <h3>Online Booking Engine </h3>
+                            </div>
+                            <p>A booking engine is a system that is integrated into the business’ main website and social media platforms to ensure that guests can book an online reservation without stress. In other words, a booking engine is a software solution that allows business organizations, particularly the ones in the hospitality realm, to sell their rooms via their website or social media platforms, e.g., Twitter, LinkedIn, Facebook, etc., your hospitality is listed on. </p>
+                            <p>A booking engine is so effective in expanding the customer base since it makes it relatively easier to browse through the available vacancies in the hospitality industry and then make a commission-free direct booking, which is one of the measures taken by renowned business organizations to optimize property’s sales strategy, and ultimately maximize revenue. </p>
+                            <p>Making a booking online means your guests have to make an online payment to complete the process, and this is where the booking system that is integrated with a payment gateway comes into play. This booking engine is like an online terminal, tethered with a payment network that authorizes customers’ credit or debit card information to make an instant reservation on the company’s website. </p>
+                            <p>Like the PMS, some online booking engines come with a payment gateway already integrated with them. That makes it a lot easier for you; all you have to do is buy and use. Also, you can customize it to make it perfectly fit for the purpose. When considering a system like this for your system, make sure it can handle multiple currencies to give more convenience to guests and capture more bookings. </p>
+                        </div>
+                    </div>
+                    <div class="feature-subpage-step">
+                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-payment-3.jpg" alt="Channel Manager" class="feature-subpage-img__align-left shift-left wow fadeInLeft" />
+                        <div class="feature-subpage-step__wrap">
+                            <div class="feature-subpage-step__top">
+                                <span>03</span>
+                                <h3>Channel Manager</h3>
+                            </div>
+                            <p>The channel manager works hand-in-hand with PMS and online booking engines in facilitating online bookings. Online travel agents offer hospitality businesses a different payment structure, which hinges on whether they operate on an agency (pay at check-in) or merchant model (pay upon booking). The merchant method employed by online travel agents features virtual credit cards as the payment method. </p>
+                            <p>Employing a channel manager’s services gives you a better chance at capturing more bookings and affords your guests the much-needed convenience. All you need to do is accept payment from the online travel agent, then the guest’s payment and information will be transferred straight to your front desk for processing. </p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="feature-subpage-box">
+                <div class="container">
+                    <h2>5 best practices to keep your online payment safe and secure</h2>
+                    <ul class="feature-subpage-list feature-payment__list feature-subpage-list__small">
+                        <li>Protect your POS systems</li>
+                        <li>Inform all staff of the company’s policies</li>
+                        <li>Use only systems that can secure your guest’s cards</li>
+                        <li>Vet third parties</li>
+                        <li>Comply with PCI security </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- cards -->
+            <div class="feature-subpage-box">
+                <div class="container">
+                    <h2>The Importance of Payment Gateway Integrations </h2>
+                    <p>A payment gateway is critical to ultimately improving the overall performance of your hospitality industry. With this system, guests are able to make payments online to book their reservations. The following are a few benefits of implementing a payment network.</p>
+                    <div class="feature-subpage-card wow fadeInUp">
+                        <span class="feature-subpage-card__number">01</span>
+                        <div class="feature-subpage-card__top">
+                            <div class="feature-subpage-card__top-icon">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-payment-ico-1.png" />
+                            </div>
+                            <h3>Easy checkout </h3>
+                        </div>
+                        <p>Since the use of payment gateways by most hospitality industries, there has been a history of swift and seamless checkout experience for guests online, and that has remarkably boosted booking rate. These payment systems have been efficient and made the booking as easy as possible for guests. </p>
+                    </div>
+                    <div class="feature-subpage-card wow fadeInUp">
+                        <span class="feature-subpage-card__number">02</span>
+                        <div class="feature-subpage-card__top">
+                            <div class="feature-subpage-card__top-icon">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-payment-ico-2.png" />
+                            </div>
+                            <h3>Security </h3>
+                        </div>
+                        <p>Customers need to feel the assurance of their personal information been kept confidential before dealing, and most of these gateway networks have a history of providing just that. These systems are often compliant with security standards such as PCI DSS to provide safe ad secure transactions across all platforms. </p>
+                    </div>
+                    <div class="feature-subpage-card wow fadeInUp">
+                        <span class="feature-subpage-card__number">03</span>
+                        <div class="feature-subpage-card__top">
+                            <div class="feature-subpage-card__top-icon">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-payment-ico-3.png" />
+                            </div>
+                            <h3>Impulse purchase</h3>
+                        </div>
+                        <p>Most payment gateways stopped making enough sales due to their complexities. At all times, hospitality industries must ensure the measure they are about to take will assure a better customer experience.  Reports have it that over 40% of customers worldwide cancel their purchases or bookings if the checkout/payment method is tedious or complex. Therefore, providing systems that will afford easy payment will not only provide a better customer experience but also boost your sales. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-subpage-box feature-subpage-conclusion wow fadeInUp">
+                <div class="container">
+                    <div class="feature-subpage-conclusion__wrap blue-bg">
+                        <h2>Final Thoughts</h2>
+                        <div class="row align-items-center">
+                            <div class="col-lg-2">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-conclusion.png" />
+                            </div>
+                            <div class="col-lg-10">
+                                <p>In today’s digital world, customers want more personalized service, yet more self-service options afforded them. This must be made possible if achieving greater height remains a goal. With online payments, an exceptional guest’s experience is guaranteed. There are many online payment systems in the market, and most of them can be integrated with the hospitality industry’s online booking engine or property management system (PMS). This payment system increases booking and provides a secure way of making payments online, which means a win for both your company and customers. </p>
+                                <p>The hospitality industry ranks among the business organizations that are leaders in technology deployment to enhance business operations further. From a business standpoint, employing new technologies to boost customer experience and revenue is a strategic move. </p>
+                                <p>Therefore, to reap the benefits that come with the implementation of new technologies, particularly for hospitality industries, it must be ensured that these systems work hand-in-hand. Therefore, a system’s integration adaptability is a crucial factor that must be considered at all times when considering a new technology for your business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

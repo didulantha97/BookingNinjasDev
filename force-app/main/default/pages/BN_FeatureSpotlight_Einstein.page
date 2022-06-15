@@ -1,0 +1,109 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- feature-spotlight -->
+            <div class="feature-spotlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider">
+                                <div class="feature-spotlight__slider-big">
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-1.jpeg" data-fancybox="gallery"><img alt="Einstein Analytics - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-1.jpeg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-2.png" data-fancybox="gallery"><img alt="Einstein Analytics - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-2.png"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-3.jpg" data-fancybox="gallery"><img alt="Einstein Analytics - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-3.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-4.jpg" data-fancybox="gallery"><img alt="Einstein Analytics - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-4.jpg"/></a>
+                                    </div>
+                                </div>
+                                <div class="feature-spotlight__slider-small">
+                                    <div>
+                                        <img alt="Einstein Analytics - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-1.jpeg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Einstein Analytics - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-2.png"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Einstein Analytics - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-3.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Einstein Analytics - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/einstein/einstein-analytics-4.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider-text">
+                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="back">&#x3C; GO BACK</apex:outputLink>
+                                <h1>Einstein Analytics</h1>
+                                <p>Since Booking Ninjas is recognized as an app innovation Salesforce partner, our services (and thus, our customers) have access to Einstein Analytics, an intuitive program meant to connect the dots between data in different sectors of your business. It’s easy for significant data points to slip in between the cracks, especially when you have your mind split thinking about various tasks, so let Einstein do some background research and present solutions to you.</p>
+                                <p>The data that your CRM and PMS collect is endless. Why not utilize one of the most technologically-advanced, artificial intelligence systems and let it handle the details? This business intelligence software outputs performance metrics automatically. It conducts audits on your company’s current system and workflow, and it also determines if there are any insightful results to turn into recommendations for the optimization of your company - whether in a specific section or as a whole.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__2collumn-text">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>While it devotes its time to helping you assess your company’s performance, it also helps you turn data into a usable marketing action. It notices trends and patterns within statistics, and it directs your attention to possible opportunities or situations to take advantage of. Einstein AI does not forget a task, nor does it procrastinate on projects. You can count on this program to bolster your marketing efforts day and night.</p>
+                                <p>Data digging may be enjoyable for you, and Einstein AI will present charts and graphs to aid in your analysis. However, if you don’t particularly take pleasure in reading reports and data charts, Einstein Analytics helps those with less technical knowledge understand the data at hand and know what to do with it. With its visual aids, it presents information and numbers into a reasonably understandable format for your understanding and application. Incredibly user-friendly, its easy-to-use tools and interface will only encourage your confidence.</p>
+                                <p>Customize your experience with Einstein Analytics by making use of the app builders; if you want to organize your dashboard with specific categories, you can create a system that works best for you! You can opt to share these apps with other coworkers, and you can also create your own personal apps to help you manage your teams and data separately. </p>
+                                <p>In a quickly changing world and the ever-moving field of marketing, Einstein Analytics will support you in any dynamic environment. Its stable, accurate, and insightful assistance will provide you with solutions for years to come. Focus your time, efforts, and resources elsewhere with the collaboration of Einstein AI.</p>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="costumer-page__content">
+                        <div class="container">
+                            <div class="costumer-page__view-list">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-11">
+                                        <article>
+                                            <h2>How it Can Help You Now</h2>
+                                            <p>Once Einstein Analytics has access to your data, past and present, it will start creating visualizations to help you better understand where your company is at right now. It will suggest solutions for inventory discrepancies, room rate disparities, team performance, customer satisfaction, and anything else that it notices needing attention. Don’t worry about having to manually input data or reports again; with Einstein Analytics, it will automatically transfer data from CSV files or any other external data records.</p>
+                                            <div class="costumer-page__view-list_section">
+                                               <p>Einstein AI will generate reports as often as you want, providing you with unbiased suggestions and facts from each day’s information haul. Your marketing team, customer service team, and sales team can make great use of the information that this program organizes. You can even customize your own personal dashboard to present you with the data that you specifically need.</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center text_center">
+                                <div class="col-lg-12">
+                                    <h2>How it Can Help You in the Future</h2>
+                                    <p>Since Einstein Analytics takes the data that our systems gather and presents it to you in various forms, it is able to intuitively notice patterns and put together suggestions for possible marketing campaigns. In a way, Einstein Analytics knows your customers better than they know themselves, so take initiative on it!</p>
+                                    <p>The insights that this program provides can be trusted as it generates its solutions from the data at hand. These projections and recommendations can help you navigate your teams into better performance or efficiency, and it can also help you get ahead on marketing strategies with its customer and market predictions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__pager">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Ticket)}" styleClass="feature-spotlight__pager-item">
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_Left-black.png" alt=""/></i>
+                            <b>Ticketing System</b>
+                        </apex:outputLink>
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_BE)}" styleClass="feature-spotlight__pager-item">
+                            <b>Booking Engine</b>
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_right.png" alt=""/></i>
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature-spotlight -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

@@ -1,0 +1,152 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false" controller="BN_GuestPostController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top submission-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-5 order-lg-1  text_center">
+                            <div class="submission-page-top__img text_center">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/submission-top.png" alt="Guest Post Submission Guidelines"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <h1>Guest Post Submission Guidelines</h1>
+                            <p>Thank you for your interest in contributing to our blog! We want to present our clients and potential customers with the latest information on topics within the hospitality industry. Please read the sections below so that we can align your ideas with ours and proceed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="submission-page">
+                <div class="submission-page__content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 text_center">
+                                <article>
+                                    <h2>Who reads our content</h2>
+                                    <p>Booking Ninjas offers its services to property managers in charge of a variety of businesses. For example, we work with hotels, hostels, student housing, senior living centers, restaurants, and other organizations in the hospitality field. If you are unsure as to whether your idea will be appropriate for our readers, please match it to the list of topics in the next section or contact a member of our content writing team.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submission-page__topics">
+                    <div class="container">
+                        <h3>Topics we cover - within the field of Property Management:</h3>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="submission-page__topics-item">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/submission-ico-1.png"/></figure>
+                                    <figcaption>Digital Technology</figcaption>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="submission-page__topics-item">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/submission-ico-2.png"/></figure>
+                                    <figcaption>Artificial Intelligence</figcaption>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="submission-page__topics-item">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/submission-ico-3.png"/></figure>
+                                    <figcaption>Hospitality</figcaption>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="submission-page__topics-item">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/submission-ico-4.png"/></figure>
+                                    <figcaption>Co-working</figcaption>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="submission-page__topics-item">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/submission-ico-5.png"/></figure>
+                                    <figcaption>Marketing Campaign Strategies</figcaption>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="submission-page__topics-item">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/submission-ico-6.png"/></figure>
+                                    <figcaption>Data Security</figcaption>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submission-page__guidelines">
+                    <div class="container">
+                        <h2>Guidelines</h2>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-6"><img class="float_right" src="https://d1b89zc79exfxt.cloudfront.net/img/submission-guidelines.png" alt="Guest Post Submission Guidelines"/></div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Please make sure that your submission is between 800-1000 words. We will match the spacing, font, and other formatting options to our own design layout. It would be best if you sent it in a Word document.</li>
+                                    <li>Be sure to include credible references in your article, and please make sure that your information presented is relevant and accurate.</li>
+                                    <li>Since your article may be published on our blog, please keep in mind our company’s values and standards. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submission-page__instructions">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <article>
+                                    <h2>Submission Instructions</h2>
+                                    <p>In the contact form below, you can either: send in an idea for a blog or submit the article already finished. Either way, we will get back to you and work with you on the possibility of your blog submission being accepted. Again, we appreciate your interest and your potential contribution!</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submission-page__form">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <apex:form styleClass="submission-page__form-box" id="guest-post">
+                                <div class="submission-page__form-item">
+                                    <label for="name">First and Last Name</label>
+                                    <apex:input type="text" value="{!name}" required="true" />
+                                </div>
+                                <div class="submission-page__form-item">
+                                    <label for="email">Email Address</label>
+                                    <apex:input type="email" value="{!email}" required="true" />
+                                </div>
+                                <div class="submission-page__form-item">
+                                    <label for="idea">Pitch idea</label>
+                                    <apex:input type="text" value="{!pitchIdea}" required="true" />
+                                </div>
+                                <div class="submission-page__form-item">
+                                    <label for="message">Message <span>(optional)</span></label>
+                                    <apex:inputTextarea rows="5" cols="25" value="{!message}"/>
+                                </div>
+                                <div class="submission-page__form-item form-item__file text_center">
+                                    <p>Allow for uploading an attachment as well <span>(optional)</span></p>
+                                    <div class="form-item__file-dnd">
+                                        <!-- <p>Drag &#x26; drop a file to attach it, or</p> -->
+                                        <apex:inputFile value="{!fileBody}" filename="{!fileName}" contentType="{!contentType}" />
+                                    </div>
+                                </div>
+                                <div class="submission-page__form-item text_center">
+                                    <apex:commandButton value="Send" action="{!submit}" styleClass="button" />
+                                </div>
+                                <div class="submission-page__form-item text_center">
+                                    <a href="#" target="_blank" class="privacy">Privacy Policy</a>
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

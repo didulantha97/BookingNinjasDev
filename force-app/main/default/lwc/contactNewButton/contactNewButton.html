@@ -1,0 +1,141 @@
+<template>
+    <div class="container contact-new-button-wrapper">
+        <header class="slds-modal__header slds-text-align_left booking-ninjas-brand-header-background">
+            <h2 class="slds-text-heading_medium slds-hyphenate header-text" >New Contact: Client Account</h2>
+        </header>     
+        
+        <div style="margin-bottom: 50px;"> 
+            <div class="slds-modal__content slds-p-horizontal_small booking-ninjas-brand-body-background">
+            
+                <lightning-card>  
+                    <template if:true={isLoading}>   
+                        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+                    </template>  
+  
+                    <lightning-record-edit-form object-api-name="Contact" onsuccess={handleSuccess}>
+                        <lightning-messages>     
+                        </lightning-messages>      
+                        <div class="main-info slds-grid slds-wrap">
+                            <div class="slds-col slds-size_1-of-1 slds-p-around_medium">
+                                <h2 class="caption-text">Main Contact Information</h2>
+                            </div> 
+                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                <lightning-input-field field-name="FirstName"></lightning-input-field>
+                            </div> 
+
+                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                <lightning-input-field field-name="LastName"></lightning-input-field>
+                            </div>
+
+                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                <lightning-input-field field-name="Title"></lightning-input-field>
+                            </div>  
+    
+                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                <lightning-input-field field-name="Email"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                <lightning-input-field field-name="Phone"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                <lightning-input-field field-name="LinkedIN__c"></lightning-input-field>
+                            </div>  
+                            <div class="slds-col slds-size_1-of-1 slds-p-around_medium">
+                                <lightning-accordion allow-multiple-sections-open>
+                                    <lightning-accordion-section name="AddMoreInformation" label="Add More Information">
+                                        <div class="slds-grid slds-wrap">
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="AccountId"></lightning-input-field>
+                                            </div>    
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="X2nd_Phone_Number__c"></lightning-input-field>
+                                            </div>  
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="Email_2__c"></lightning-input-field>
+                                            </div>  
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="Birthdate"></lightning-input-field>
+                                            </div>   
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="Levels__c"></lightning-input-field>
+                                            </div>  
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="Status__c"></lightning-input-field>
+                                            </div> 
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="URL_Link__c"></lightning-input-field>
+                                            </div> 
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="Twitter__c"></lightning-input-field>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="Rating_Contact__c"></lightning-input-field>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="Email_Status_Cleanup__c"></lightning-input-field>
+                                            </div>  
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="Email_Checker_Status__c"></lightning-input-field>
+                                            </div> 
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="Call_Flow__c"></lightning-input-field>
+                                            </div> 
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="X1st_email__c"></lightning-input-field>
+                                            </div> 
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="Call_Request_Date__c"></lightning-input-field>
+                                            </div> 
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-input-field field-name="LeadSource"></lightning-input-field>
+                                            </div> 
+                                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                                <lightning-output-field field-name="OwnerId"></lightning-output-field>
+                                            </div>  
+                                        </div> 
+                                    </lightning-accordion-section>
+        
+                                    <lightning-accordion-section name="addAddressInformation" label="Add Address Information">
+                                        <div class="slds-grid slds-wrap">
+                                            <div class="slds-col slds-size_1-of-1 slds-p-around_medium">
+                                                <lightning-input-field field-name="MailingAddress"></lightning-input-field>
+                                            </div> 
+                                            <div class="slds-col slds-size_1-of-1 slds-p-around_medium">
+                                                <lightning-input-field field-name="OtherAddress"></lightning-input-field>
+                                            </div>  
+                                        </div>  
+                                    </lightning-accordion-section>
+                                </lightning-accordion> 
+                            </div> 
+                        </div> 
+                        <div class="footer booking-ninjas-brand-body-background"> 
+                            <button   
+                                class="slds-button booking-ninjas-button booking-ninjas-button_neutral"
+                                data-name="Cancel" 
+                                onclick={handleCancel}>  
+                                Cancel 
+                            </button> 
+                            <button   
+                                class="slds-button booking-ninjas-button booking-ninjas-button_outline-brand"
+                                type="submit"
+                                data-name="Save & New"
+                                name="save"    
+                                onclick={handleNameButton}>
+                                Save & New
+                            </button>    
+                            <button 
+                                class="slds-button booking-ninjas-button booking-ninjas-button_brand"
+                                type="submit"
+                                data-name="Save" 
+                                name="save"    
+                                onclick={handleNameButton}>
+                                Save
+                            </button>   
+                        </div>
+                    </lightning-record-edit-form>
+                </lightning-card>   
+            </div>
+        </div>
+         
+    </div>
+</template>

@@ -1,0 +1,84 @@
+<apex:page controller="GenerateLeadController" showHeader="false" sidebar="false">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <apex:slds />
+    </head>
+    
+    <body>        
+        <!-- SLDS WRAPPER -->
+        <div class="slds-scope">
+            <!-- Messages -->
+            <apex:outputPanel id="messages">
+                <!-- Error panel -->
+                <apex:outputLabel rendered="{!isFailed}">
+                    <div id="errorPanelmsg" style="z-index: 9999; margin-top:2px; border-radius:5px;" class="slds-notify slds-notify--alert slds-theme--error slds-theme--alert-texture" role="alert">
+                        <h2>
+                            {!responseMessage}
+                        </h2>     
+                    </div>    
+                    <script>
+                    $(document).ready(function(){                            
+                        //error meessage popup fadeout
+                        $('#errorPanelmsg').fadeOut(9000);
+                    });
+                    </script>
+                </apex:outputLabel>
+                <!-- / Error panel -->
+                
+                <!-- Success panel -->
+                <apex:outputLabel rendered="{!isSuccess}">
+                    <div id="successPanelmsg" style="z-index: 9999; margin-top:2px; border-radius:5px;" class="slds-notify slds-notify--alert slds-theme_info slds-theme_alert-texture" role="alert">
+                        {!responseMessage}     
+                    </div>    
+                    <script>
+                    $(document).ready(function(){                            
+                        //error meessage popup fadeout
+                        $('#successPanelmsg').fadeOut(9000);
+                    });
+                    </script>
+                </apex:outputLabel>
+                <!-- / Success panel -->
+                
+            </apex:outputPanel>
+            <!-- / Messages -->
+            <apex:form id="form">
+                <apex:pageBlock id="block" title="Booking Ninjas Information Request">
+                    <apex:pageBlockSection id="blockSection" title="Booking Ninjas Information Request" collapsible="false" >
+                        <apex:outputLabel >First Name *</apex:outputLabel>
+                        <apex:inputText id="firstname" value="{!firstName}" required="true"/>
+                        
+                        <apex:outputLabel >Last Name *</apex:outputLabel>
+                        <apex:inputText id="lastname" value="{!lastName}" required="true"/>
+                        
+                        <apex:outputLabel >Email *</apex:outputLabel>
+                        <apex:inputText id="email" value="{!email}" required="true"/>
+                        
+                        <apex:outputLabel >Phone</apex:outputLabel>
+                        <apex:inputText id="phone" value="{!phone}" required="false"/>
+                        
+                        <apex:outputLabel >Company</apex:outputLabel>
+                        <apex:inputText id="company" value="{!company}" required="false"/>
+                        
+                        <apex:outputLabel >Position</apex:outputLabel>
+                        <apex:inputText id="position" value="{!position}" required="false"/>
+                        
+                        <apex:commandButton value="Submit" action="{!Save}" reRender="messages" status="actStatus" />
+                    </apex:pageBlockSection>
+                </apex:pageBlock>                                
+                
+                <!-- Spinner -->                
+                <apex:actionStatus id="actStatus">
+                    <apex:facet name="start">
+                        <div class="slds-spinner_container">
+                            <div class="slds-spinner--brand slds-spinner slds-spinner--medium" aria-hidden="false" role="alert">
+                                <div class="slds-spinner__dot-a"></div>
+                                <div class="slds-spinner__dot-b"></div>
+                            </div>
+                        </div>
+                    </apex:facet>
+                </apex:actionStatus>
+                <!--/ Spinner -->
+            </apex:form>
+        </div>
+    </body>
+</apex:page>

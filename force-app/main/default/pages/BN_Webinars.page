@@ -1,0 +1,211 @@
+<apex:page controller="BN_WebinarsController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false">
+    
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <div class="page-new-bg">
+                <!-- top -->
+                <div class="webinar-top bnr">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-sm-12 col-md">
+                                <h1>Our Webinars</h1>
+                            </div>
+                            <div class="col-auto">
+                                <a data-src="#webinar-register" class="button fancybox">Save your seat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /top -->
+                <!-- content -->
+                <!-- Upcoming section-->
+                <div class="container webinar-tab-content active">
+                    <!-- Upcoming webinar item -->
+                    <apex:repeat var="webinar" value="{!webinars}">
+                        <div class="webinar-item">
+                            <div class="row no-gutters">
+                                <div class="col-lg-auto col-md-2">
+                                    <div class="webinar-item__date">
+                                        <p>
+                                            <span>
+                                                {!webinar.WebinarMonth}
+                                            </span>
+                                            <strong>
+                                                {!webinar.WebinarDay}
+                                            </strong>
+                                            {!webinar.WebinarTime}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg col-md-10 align-self-center">
+                                    <div class="webinar-item__content">
+                                        <div class="webinar-item__top">
+                                            <div class="row justify-content-center  justify-content-lg-between">
+                                                <div class="col-12 col-lg">
+                                                    <ul class="webinar-item__tags">
+                                                        <li>AMER</li>
+                                                        <li>ENGLISH</li>
+                                                        <li>ASK AN EXPERT</li>
+                                                    </ul>
+                                                    <h3><apex:outputText value="{!webinar.Name}"></apex:outputText></h3>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a data-src="#webinar-register__single" class="button fancybox webinar-register" 
+                                                    data-webinar-id="{!webinar.Id}" 
+                                                    data-webinar-name="{!webinar.Name}" 
+                                                    data-webinar-month="{!webinar.WebinarMonth}"
+                                                    data-webinar-day="{!webinar.WebinarDay}"
+                                                    data-webinar-time="{!webinar.WebinarTime}"> REGISTER</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="webinar-item__text">
+                                            <img align="left" src="{!webinar.WebinarImagePath}" alt="" />
+                                            <p>
+                                                <apex:outputText escape="false" value="{!webinar.LongDescription}"></apex:outputText>
+                                            </p>
+                                        </div>
+                                        <div class="webinar-item__button">
+                                            <apex:outputLink value="{!URLFOR($Page.BN_WebinarSingle, null, [id=webinar.Id])}">Read more</apex:outputLink>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Upcoming webinar item -->
+                    </apex:repeat> 
+                    
+                </div>
+                <!-- /Upcoming section-->
+                <!-- /content -->
+                
+                <!-- Recorder section-->
+                <div class="container webinar-tab-content">
+                    <!-- Recorder webinar item -->
+                    <div class="webinar-item">
+                        <apex:repeat var="recording" value="{!recordings}">
+                            <div class="row no-gutters">
+                                <div class="col-lg-auto col-md-2">
+                                    <div class="webinar-item__date">
+                                        <p>
+                                            <span>
+                                                {!recording.WebinarMonth}
+                                            </span>
+                                            <strong>
+                                                {!recording.WebinarDay}
+                                            </strong>
+                                            {!recording.WebinarTime}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg col-md-10 align-self-center">
+                                    <div class="webinar-item__content">
+                                        <div class="webinar-item__top">
+                                            <div class="row justify-content-center  justify-content-lg-between">
+                                                <div class="col-12 col-lg">
+                                                    <ul class="webinar-item__tags">
+                                                        <li>AMER</li>
+                                                        <li>ENGLISH</li>
+                                                        <li>ASK AN EXPERT</li>
+                                                    </ul>
+                                                    <h3><apex:outputText value="{!recording.Name}"></apex:outputText></h3>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a data-src="#webinar-register__single" class="button fancybox webinar-register" 
+                                                    data-webinar-id="{!recording.Id}" 
+                                                    data-webinar-name="{!recording.Name}" 
+                                                    data-webinar-month="{!recording.WebinarMonth}"
+                                                    data-webinar-day="{!recording.WebinarDay}"
+                                                    data-webinar-time="{!recording.WebinarTime}"> REGISTER</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="webinar-item__text">
+                                            <img align="left" src="{!recording.WebinarImagePath}" alt="" />
+                                            <p>
+                                                <apex:outputText escape="false" value="{!recording.LongDescription}"></apex:outputText>
+                                            </p>
+                                        </div>
+                                        <div class="webinar-item__button">
+                                            <a data-src="{!recording.RecordingURL}" class="button fancybox">WATCH RECORDING</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </apex:repeat>
+                    </div>
+                    <!-- /Recorder webinar item -->
+                    
+                </div>
+                <!--/ Recorder section-->
+                
+                <!-- modal webinar-register-->
+                <div class="modal webinar-form webinar-modal" id="webinar-register">
+                    <h4>Sign up for a webinar</h4>
+                    <apex:form >
+                        <div class="webinar-id">
+                            <apex:inputHidden value="{!webinarId}" id="webinar-id"/>
+                        </div>
+                        <div class="webinar-name">
+                            <apex:inputHidden value="{!webinarName}" id="webinar-name"/>
+                        </div>
+
+                        <div class="webinar-form__item">
+                            <apex:input type="text" html-placeholder="Your name*" required="true" value="{!firstName}" />
+                        </div>
+                        <div class="webinar-form__item">
+                            <apex:input type="email" html-placeholder="Email*" required="true" value="{!email}" />
+                        </div>
+                        <div class="webinar-form__item">
+                            <apex:selectList value="{!selectedWebinar}" size="1" multiselect="false">
+                                <apex:selectOptions value="{!WebinarTopic}"></apex:selectOptions>
+                            </apex:selectList>
+                        </div>
+                        <div class="webinar-form__submit">
+                            <apex:commandButton value="Save Your Seat" action="{!saveYourSeat}" styleClass="button"/>
+                        </div>
+                        <div class="webinar-form__small">
+                            We’ll send you the link to join “The future of the PMS” webinar and share content and updates about BookingNinjas products as you build the fitire of the communications. We use your information according to our <br/>
+                            <a href="#">Privacy Police</a>
+                        </div>
+                    </apex:form>
+                </div>
+                <!-- /modal webinar-register-->
+                <!-- modal webinar-register-->
+                <div class="modal webinar-form webinar-modal" id="webinar-register__single">
+                    <center>
+                        <p>Sign up for a webinar</p>
+                        <h4 class="webinar-display-name"></h4>
+                        <p class="webinar-date"></p>
+                    </center>
+                    <apex:form >
+                        <div class="webinar-id">
+                            <apex:inputHidden value="{!webinarId}" id="webinar-id"/>
+                        </div>
+                        <div class="webinar-name">
+                            <apex:inputHidden value="{!webinarName}" id="webinar-name"/>
+                        </div>
+                        
+                        <div class="webinar-form__item">
+                            <apex:input type="text" html-placeholder="Your name*" required="true" value="{!firstName}" />
+                        </div>
+                        <div class="webinar-form__item">
+                            <apex:input type="email" html-placeholder="Email*" required="true" value="{!email}" />
+                        </div>
+                        <div class="webinar-form__submit">
+                            <apex:commandButton value="Save Your Seat" action="{!saveYourSeat}"  styleClass="button"/>
+                        </div>
+                        <div class="webinar-form__small">
+                            We’ll send you the link to join “The future of the PMS” webinar and share content and updates about BookingNinjas products as you build the fitire of the communications. We use your information according to our <br/>
+                            <a href="#">Privacy Police</a>
+                        </div>
+                    </apex:form>
+                </div>
+                <!-- /modal webinar-register-->
+            </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

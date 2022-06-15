@@ -1,0 +1,85 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- feature-spotlight -->
+            <div class="feature-spotlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider">
+                                <div class="feature-spotlight__slider-big">
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/reporting/reporting.jpg" data-fancybox="gallery"><img alt="Custom Reporting Software" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/reporting/reporting.jpg"/></a>
+                                    </div>
+                                </div>
+                                <div class="feature-spotlight__slider-small">
+                                    <div>
+                                        <img alt="Custom Reporting Software" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/reporting/reporting.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider-text">
+                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="back">&#x3C; GO BACK</apex:outputLink>
+                                <h1>Custom Reporting Software</h1>
+                                <p>Data, useful and relevant data, is an essential part of effective property management. With the right data, managers can analyze what works and what doesn’t, apply necessary changes, and monitor the effects of these changes. For a business with different departments, keeping tabs on these departments, watching what they do, and providing timely and custom reports with the correct data is imperative. Therefore, to make the data gathering and customization process easier, faster, and effective, Booking Ninjas provides users with all the necessary resources.</p> 
+                                <p>Different departments need to have access to various reports that tell them how well they’re doing and the types of changes each department should make. Property managers sometimes find the job of providing necessary data for each department head and members. The multiplicity of departments and their unique data and language can be tasking for managers to handle appropriately. Some managers sometimes mix-up departmental reports. But with Booking Ninjas, these fears and mix-ups are dealt with.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="costumer-page__content">
+                        <div class="container">
+                            <div class="costumer-page__view-list">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-11">
+                                        <article>
+                                            <h2>BENEFITS OF BOOKING NINJAS</h2>
+                                            <p>Create a single source for your entire business’ reports in one easy-to-use application: Booking Ninjas has a user-friendly interface that integrates all the departments, as much as sixteen departments, into one interface. All users have to do is switch from one department to the next with the click of the mouse. Each department, using the Einstein Analytics from Salesforce, will have its select tab with the required data that needs to be gathered and analyzed already set. The analytics tool will collect and analyze the data for each department based on the parameters that the managers set for it. For each department, the overall head or manager in charge of all departments can set the accessibility. The manager can set who has access to what department data and analytics ensuring only authorized people access the data. The easy-to-use interface also makes it easy for users and heads of departments to congregate the customer data for each department and quickly send a customized report to the necessary workers and members of departments. Users don’t have to worry about preparing custom reports for each department. The artificial intelligence of the analytics tool does the analysis, and all users need to do is click on what report they want. They are given the analyzed reports based on the parameters they had set earlier.</p>
+                                            <div class="costumer-page__view-list_section">
+                                               <p>Create new ready to send reports in an instant: Booking Ninjas understand that cumbersome data is a problem many managers struggle with. Preparing reports for each department, analyzing them, and submitting it to the relevant member of staff is time-consuming. Plus, with the truckload of work, many of these managers have, they are prone to make simple mistakes while analyzing the data. Booking Ninjas custom reports enable users and managers alike to have already-made reports with the necessary charts and graphs. These reports, already analyzed based on specific goals and objectives, are only a few clicks away. The manager can select the format the report should be presented to the members of staff. If a chart is what works best for the team, all the user needs to do is define the format the analytics will present the data. The analytics tool will prepare the chart, highlight the crucial parts of the data with different colors, and suggest possible solutions to analyzed problems. The reports can then be forwarded to whoever needs to get it. Instead of users sweating over sending the wrong reports to members of staff and departments, Booking Ninjas custom reports take that burden off managers. With the custom reports, users can monitor how well members of the team are doing with the set goals and objectives. Users can see the data in real-time, helping users to know whether the department heads are implementing the necessary changes.</p>
+                                               <p>Customize reports for your staff, controlling who has access to specific forms: Instead of logging into the analytics account every day, editing and changing data, and then sending to different members of your team, users and property managers can grant certain members of staff access to data. With this, the workers who need access to the custom data will quickly get them and work with the analysis and suggestions given. The property manager still has access to these data and can monitor how the data is being used. For every member, the user sets a password and restricts the types of data the member of staff will have access to. If, for example, the property manager wants the head of marketing to have data on social media campaigns and pay-per-click advertising, the manager sets the required restrictions. The other member of staff will only see and access these data, nothing else. The tool ensures that property managers are hands-on on departmental progress. The data, being available to them to see, will give them a first-hand understanding of how the team is performing.</p>
+    
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center text_center">
+                                <div class="col-lg-12">
+                                    <p>Staying in the loop of things as a property manager is key to ensuring all the teams and departments are working together. The custom reports, coupled with the highly effective Einstein Analytics and among other core features, help managers lead the different teams the correct and only way, thru data driven decisions.</p>
+                                    <p>If you are still wondering whether you need the custom reports, think about preparing reports before every major meeting for every department. Also, think about how stressful it is to analyze all the data each department needs and then send to every one of the department heads with charts and graphs.</p>
+                                    <p>If staying ahead of the game is your game, then getting aboard Booking Ninjas Custom reports is a no-brainer. Let our artificial intelligence and swift data analyzer help make data collation and analysis a walk in the garden. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__pager">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Mobile)}" styleClass="feature-spotlight__pager-item">
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_Left-black.png" alt=""/></i>
+                            <b>Mobile Apps</b>
+                        </apex:outputLink>
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_AccessControl)}" styleClass="feature-spotlight__pager-item">
+                            <b>Access Control</b>
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_right.png" alt=""/></i>
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature-spotlight -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

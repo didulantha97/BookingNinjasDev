@@ -1,0 +1,859 @@
+<!--
+  @description       : 
+  @author            : is.didulantha123@gmail.com
+  @group             : 
+  @last modified on  : 11-23-2020
+  @last modified by  : is.didulantha123@gmail.com
+  Modifications Log 
+  Ver   Date         Author                       Modification
+  2.0   11-06-2022   is.didulantha123@gmail.com   Updated Version
+-->
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" controller="BN_HomeController">
+   
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+			<div class="homepage">
+				<!-- hero -->
+				<div class="homepage-hero">
+					<div class="container">
+						<!-- Hero content -->
+						<div class="homepage-hero__content row align-items-center">
+							<div class="col-lg-9 ">
+								<h1><span class="color-blue">Cloud-Based</span> Property Management System (PMS)</h1>
+								<h2>
+									All-In-One PMS Built <br />
+									On Salesforce To Manage <br />
+									Your Properties In One Interface
+								</h2>
+								<p>Manage all your properties easily on an all-in-one, <br /> single interface built on Salesforce.</p>
+								<apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Meeting</apex:outputLink>
+							</div>
+						</div>
+					</div>		
+				</div>
+				<!-- /hero -->
+
+				<div class="issues-section">
+					<div class="container">
+						<article>
+							<h2 class="text_center">
+								<span class="color-blue">Modernize Your Property Management</span> To Increase Efficiency &amp; Revenue
+							</h2>
+							<p class="text_center">Do you find that your legacy Property Management System has issues like these?</p>
+							<div class="row align-items-center">
+								<div class="col-lg-6">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/homepage-img-1.png" alt="Modernize Your Property Management" class="section-img adaptive-img wow fadeInLeft" />
+								</div>
+								<div class="col-lg-6">
+									<ul class="circled-list">
+										<li>Difficulty setting up email and SMS drip campaigns to maintain guest relationships</li>
+										<li>Difficulty managing your customer data from anywhere to make personalized decisions</li>
+										<li>You find yourself manually calculating fees, payments, and accounting </li>
+										<li>You find yourself sending individual emails to customers or staff on routine issues</li>
+										<li>Payments received and made are still handled manually </li>
+										<li>Too many spreadsheets are made, making it difficult to keep up</li>
+										<li>Minor changes can’t be made on your own</li>
+										<li>Difficulty with consistent communication with everyone in the ecosystem</li>
+										<li>No unification of data between POS and other systems in one centralized place</li>
+										<li>Inability to allow you to make data-driven decisions</li>
+									</ul>
+								</div>
+							</div>
+							<h2 class="text_center">
+								<span class="color-blue">Learn more</span> about why we’re different
+							</h2>
+							<!-- <div class="text_center">
+								<a class="button-orange" href="/why-booking-ninjas">Tune in here to see why</a>
+							</div> -->
+							<p>
+								We’ve spoken to multiple property managers, and we know that you’re concerned about cost, complexity, and difficulty.
+								<br />
+								We know that your experience with previous systems may have left you feeling that it is too time-consuming to get on board, which may even create more problems for you.
+								<br />
+								Booking Ninjas is different from your legacy PMS system.
+							</p>
+							<p>Here’s what you’re getting:</p>
+							<ul class="circled-list">
+								<li>An all-in-one solution, all on one single platform, saving you a lot of time so you can focus on revenue generation</li>
+								<li>Cloud-based means you can access the system and data anywhere and everywhere</li>
+								<li>You save time, effort, and headaches because the system is easy to learn, use and control</li>
+								<li>Your unique needs are seen to with our customization and personalization options</li>
+							</ul>
+						</article>
+						<div class="text_center">
+							<apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Meeting</apex:outputLink>
+						</div>
+					</div>
+				</div>
+				<div class="salesforce-section">
+					<div class="container">
+						<article class="text_center">
+							<h2>
+								<span class="color-blue">First Salesforce Recognized</span>
+								<br />
+								Property Management System
+							</h2>
+							<div class="row justify-content-center">
+								<div class="col-lg-11">
+									<p>We know your focus will be on giving your guests a great experience. So our focus is on giving property managers like you an excellent user experience!</p>
+									<p>At Booking Ninjas, we’re the world’s first to team up with Salesforce, a leading customer relationship management (CRM) platform through the integration of our solution onto the Salesforce platform. </p>
+									<p>Booking Ninja’s technology flows, scalability, and other features are designed to help you achieve a return on your investment as soon as possible. </p>
+									<p>Our system promises an unparalleled CRM platform experience so you can easily and efficiently manage your guest and customers digitally. This way, your staff can focus on what truly matters &ndash; providing exceptional customer service. </p>
+									<p>Be part of our growing community of Booking Ninja members and experience the exceptional Salesforce difference now. </p>
+									<p>Read more about our natively-built <b>Salesforce integration </b>
+										<apex:outputLink value="{!URLFOR($Page.BN_PMS_Salesforce)}" styleClass="color-blue">here.</apex:outputLink>
+									</p>
+								</div>
+							</div>
+							<div class="salesforce-section__images">
+								<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/salesforce-section-icon-1.png" />
+								<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/salesforce-section-icon-2.png" />
+								<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/salesforce-section-icon-3.png" />
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="core-components">
+					<div class="container text_center">
+						<div class="row justify-content-center">
+							<div class="col-lg-9">
+								<h2>
+									<span class="color-blue">Core Components</span> of Booking Ninjas Property Management System
+								</h2>
+							</div>
+						</div>
+						<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/homepage-core.png" alt="Core Components of Booking Ninjas Property Management System" class="core-components__img wow zoomIn" />
+					</div>
+				</div>
+				<div class="reservation-system section-background__right">
+					<div class="container">
+						<div class="row gutters-large align-items-center">
+							<div class="col-lg-6 order-lg-1">
+								<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/homepage-reservation-system.png" alt="Reservation System" class="section-img adaptive-img wow fadeInRight" />
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3>Reservation System</h3>
+									<p>Cloud-Based &amp; Mobile Friendly</p>
+									<ul class="circled-list">
+										<li>Know the real-time status of rooms &amp; reservations made</li>
+										<li>Keep everyone from staff to guests informed </li>
+									</ul>
+									<p class="text-p-bottom">Why a reservation system within the PMS?</p>
+									<p>The standard the Central Reservations System (CRS) sits above the property management level to manage and distribute Availability, Rates, and Inventory (ARI) to guests via various channels. </p>
+									<p>The Property Management System (PMS), meanwhile, manages all of the on-premises management needs, such as housekeeping, POS, guest check-in, and check-out, among others.</p>
+									<p>But Booking Ninjas combines the features of both into one easy, simple application, making access and use simple, efficient, and quick. This saves you time, allowing you to focus on giving your guests a better experience</p>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rooms-availability section-background__left">
+					<div class="container">
+						<div class="row gutters-large align-items-center">
+							<div class="col-lg-6">
+								<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/homepage-rooms-availability.png" alt="Rooms Availability Status Grid" class="section-img adaptive-img wow fadeInLeft" />
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3>Rooms Availability Status Grid</h3>
+									<p>Availability Hour Grid (AHG) to Improve Resource Planning</p>
+									<p class="text-p-bottom">Gain complete oversight of all rooms and reservations with an easy drag and drop interface with our Availability Hour Grid (AHG). Plan resource allocation well in advance and keep a look out for current and future availabilities.</p>
+									<p>Our Reservation Management “Command Center” features:</p>
+									<ul class="circled-list">
+										<li>A drag and drop interface allowing staff to change, re-assign or move rooms</li>
+										<li>Manage property cleaning statuses</li>
+										<li>Reservation management - search, make and look up reservations with simple and advanced filters</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rrc-section">
+					<div class="container">
+						<h3 class="homepage-h2 text_center">
+							<span class="color-blue">Room Rate</span> Controller (RRC)
+						</h3>
+						<div class="row align-items-center gutters-large">
+							<div class="col-lg-6 order-lg-1 align-self-xl-end">
+								<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/homepage-rrc.png" alt="Room Rate Controller (RRC)" class="section-img adaptive-img wow fadeIn" />
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<p>Our AI-Based Yield Management Pricing System helps with:</p>
+									<p>Attempting to coordinate and manage pricing dynamism with legacy PMSes can be slow, unintuitive, and take up a lot of time due to manual work. But that’s no longer an issue with Booking Ninjas’ integrated, AI-powered management pricing system. </p>
+									<p>Experience absolute control over present and future room rates. </p>
+									<p>Our AI algorithm will help you easily identify the best revenue sources with intelligent rule-based pricing strategies &ndash; so you can be assured that you’re not missing out on revenue opportunities.</p>
+									<p>Importantly, it integrates fully and seamlessly with external booking sites such as Agoda or Booking.com &ndash; say goodbye to multiple logins and manual labor!</p>
+									<p>You can also choose to manually or automatically set room rates, and even send mass updates to all your booking channels and engines. </p>
+									<p>Key technical features:</p>
+									<ul class="circled-list">
+										<li>Manage rate restrictions, daily pricing changes, monthly, hourly and minimum pricing.</li>
+										<li>Is fully connected to external booking sites such as Booking.com and Agoda</li>
+										<li>Allows you to set up pricing rules based on occupancy levels and other rule-based pricing strategies</li>
+										<li>Pricing is fully connected to Booking Engine</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accounting-system section-background__left">
+					<div class="container">
+						<div class="row gutters-large align-items-center">
+							<div class="col-lg-6">
+								<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/homepage-accounting.jpg" alt="Integrated Accounting System" class="section-img adaptive-img wow fadeInLeft" />
+							</div>
+							<div class="col-lg-6">
+								<article class="text-wrap">
+									<h3>Integrated Accounting System</h3>
+									<p>Worry-Free Finance &amp; Payment Management</p>
+									<br />
+									<p class="text-p-bottom">We understand the challenges of handling multitudes of operational work &ndash; and how financial management can take up a huge chunk of your time. Booking Ninjas will handle all finances related to your business so you can have peace of mind and focus on strategy and management instead.</p>
+									
+									<p>Features:</p>
+									<br />
+									<ul class="circled-list">
+										<li>Integrates with other parts of the system for automatic transactions</li>
+										<li>This makes the entire process more efficient and less reliant on manual work</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reporting-tool section-background__right">
+					<div class="container">
+						<div class="row gutters-large align-items-center">
+							<div class="col-lg-6 order-lg-1 align-self-xl-end">
+								<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/homepage-reporting-tool.jpg" alt="In-House Reporting and Analytics Tools" class="section-img adaptive-img wow fadeInRight" />
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3>In-House Reporting and Analytics Tools</h3>
+									<p>Helps You Make Data-Driven Business Decisions</p>
+									<p><small>Data is key to understanding and improving businesses &ndash; this is true for businesses across all verticals and industries, including real estate and property management.</small></p>
+									<br />
+									<p class="text-p-bottom"><small>Enjoy higher revenues and better customer satisfaction with our AI-powered, data analytics system. It provides deep insights to help you understand what’s working or not for your business, and your teams can find that evidence-based decision-making can result in more impactful strategies and changes.</small></p>
+									<p>Features:</p>
+									<br />
+									<ul class="circled-list">
+										<li>Collect data from Booking Ninjas’ system (reservation, payment, new/old guests, and more)</li>
+										<li>
+											Our Tableau integration will:
+											<ul class="cheked-list">
+												<li>Visualize data smartly and concisely</li>
+												<li>Give insights through a powerful, fully compatible business intelligence add-on (an SF owned product - better to specify)</li>
+												<li>Generate impressive and useful graphs and visualizations to help you understand all the key analytics quicker and better</li>
+												<li>Share dashboards and change data interpretation </li>
+											</ul>
+										</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="salesforce-app">
+					<div class="container">
+						<h2 class="text_center">
+							<span class="color-blue">Salesforce</span> App Exchange
+						</h2>
+					</div>
+					<div class="salesforce-app__blue-bg">
+						<div class="container">
+							<div class="row gutters-large align-items-center">
+								<div class="col-lg-6 order-lg-1 salesforce-app__img-container">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/homepage-salesforce-app.png" alt="Salesforce App Exchange" class="section-img" />
+								</div>
+								<div class="col-lg-6">
+									<p>Extend the Capabilities of Your PMS</p>
+									<p>Legacy digital systems used to function on a needs-basis, without the capability to expand features without overhauling the entire system. With Booking Ninjas, you can optimize your property management workflow with add-ons in anticipation of scaling up or when new needs arise. </p>
+									<p>There are a plethora of third-party applications on the Salesforce App Exchange. Because our system is fully integrated with Salesforce, you can pick and choose from the many add-ons available &ndash; and they will be easily attached to Booking Ninjas so you can enjoy their features immediately. </p>
+									<p>This future-proofing strategy will save you a lot of time and high costs as compared to staying with your legacy PMS &ndash; because our system is just intelligent and advanced like that.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="salesforce-mobile">
+					<div class="container">
+						<div class="row gutters-large align-items-center align-items-xl-end">
+							<div class="col-lg-6">
+								<div class="salesforce-mobile__img-wrap">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/homepage-phone-1.png" alt="Mobile App" class="section-img salesforce-mobile__img-1 adaptive-img wow fadeIn" />
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/homepage-phone-2.png" alt="Mobile App" class="section-img salesforce-mobile__img-2 adaptive-img wow fadeIn" />
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<article class="text-wrap">
+									<h2>
+										<small>Mobile <span class="color-blue">App</span></small>
+									</h2>
+									<p>For Owners, Staff and Guests</p>
+									<br />
+									<p>Our mobile app is a one-stop destination that allows property managers or owners to conveniently and efficiently control what happens in the backend. </p>
+									<br />
+									<p>Additionally, it features multiple modes with appropriate controls and functions for your staff, housekeeping, travel agents, as well as guests.</p>
+									<br />
+									<p>Here’s a brief breakdown of what you’ll get:</p>
+									
+									<br />
+									<p><b>For Owners</b></p>
+									<br />
+									<p>Real-time information is just a click away. Immediately see information about the management company you’ve hired, on top of occupancy rates, guest profiles, as well as other key property performance information.</p>
+									<p>You can also book or reserve dates for your own personal use, approve work order expenses, or other property improvement budgets that the management company is tasked to oversee. </p>
+									<br />
+									<p><b>For Staff</b></p>
+									<br />
+									<p>Staff will find the system that’s fully synced with the central PMS system easy to navigate and helps them be more efficient with their work.</p>
+									
+									<br />
+									<p>Features:</p>
+									<br />
+									<ul class="cheked-list">
+										<li>Time entry system</li>
+										<li>Manage cleaning schedules</li>
+										<li>See property management task lists</li>
+										<li>Self-management of their own task list</li>
+										<li>Notification for rooms requiring maintenance and cleaning (such as from requests)</li>
+									</ul>
+									
+									<p><b>For Guests</b></p>
+									<br />
+									<p>Residents will find the platform easy and simple to use, with these features:</p>
+									<br />
+									<ul class="cheked-list">
+										<li>Bill payments</li>
+										<li>Agreement viewing</li>
+										<li>Reservation editing</li>
+										<li>Ordering</li>
+										<li>Access rewards points </li>
+										<li>Payment information update</li>
+										<li>Amenities or add-on booking</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="property-types">
+					<div class="container">
+						<article>
+							<h2 class="text_center">
+								Built For <span class="color-blue">Various Types</span> Of Property
+							</h2>
+							<div class="text_center">
+								<p>Booking Ninjas ain’t just for the big players &ndash; not only can our entire system be customized, but it is applicable to virtually any kind of property that needs to be managed.</p>
+								<p>From hotels, resorts, homestays, and Air BnBs, to co-working spaces, and offices &ndash; all types of property management teams can benefit from Booking Ninja’s advanced system.</p>
+							</div>
+						</article>
+						<!-- Slider -->
+						<div class="property-slider">
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-hotel.png" alt="Hotel Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Hotels)}" styleClass="slide__title">Hotels</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-hostels.png" alt="Hostel Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Hostels)}" styleClass="slide__title">Hostels</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-restaurant.png" alt="Restaurant Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Restaurant)}" styleClass="slide__title">Restaurants</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-property-managment.png" alt="Software for Property Managers" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_PropertyManagers)}" styleClass="slide__title">Property Managers</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-country_club.png" alt="Best Online Club Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Club)}" styleClass="slide__title">Country Clubs</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-coworking.png" alt="Coworking Space Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_CoWorking)}" styleClass="slide__title">Coworking</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-self-storage.png" alt="Best Self Storage Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Storage)}" styleClass="slide__title">Self Storage</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-student-housing.png" alt="Best Student Housing Property Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_StudentHousing)}" styleClass="slide__title">Student Housing</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-parking.png" alt="Parking Management System" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Parking)}" styleClass="slide__title">Parking Facilities</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-events.png" alt="Event Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Event)}" styleClass="slide__title">Event</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-seniour-living.png" alt="Cloud-Based Senior &amp; Assisted Living Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Senior)}" styleClass="slide__title">Senior Living</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-vacation.png" alt="Best Vacation Rental Software Online" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Vacation)}" styleClass="slide__title">Vacation Rentals</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-villas.png" alt="Online Villa Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Villa)}" styleClass="slide__title">Villas</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-government.png" alt="Best Government Property Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_Government)}" styleClass="slide__title">Government</apex:outputLink>
+								</div>
+							</div>
+							<!-- slide -->
+							<div class="property-slider__slide">
+								<div class="slide__image">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/property-slide-nonprofit.png" alt="Best Nonprofit Property Management Software" />
+								</div>
+								<div class="slide__title-container">
+									<apex:outputLink value="{!URLFOR($Page.BN_LP_NonProfit)}" styleClass="slide__title">Nonprofit</apex:outputLink>
+								</div>
+							</div>
+						</div>
+						<div class="text_center">
+							<apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Ask Us Now</apex:outputLink>
+						</div>
+					</div>
+				</div>
+				<div class="why-section">
+					<div class="container">
+						<h2 class="text_center">
+							<span class="color-blue">Why</span> Booking Ninjas
+						</h2>
+						<div class="row why-section-tags">
+							<div class="col-md-6">
+								<div class="why-section-tags__item wow fadeInUp">
+									<div class="why-section-tags__icon-container">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/homepage-tag-1.png" class="why-section-tags__icon" />
+									</div>
+									<p class="why-section-tags__description">
+										Seamless integration with a variety of apps, websites and 3rd party API services, increasing the likelihood of direct bookings from your site
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="why-section-tags__item wow fadeInUp">
+									<div class="why-section-tags__icon-container">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/homepage-tag-2.png" class="why-section-tags__icon" />
+									</div>
+									<p class="why-section-tags__description">
+										Easy-to-use mobile platform allowing you to manage your property from anywhere in the world and be more accessible to the younger generation 
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="why-section-tags__item wow fadeInUp">
+									<div class="why-section-tags__icon-container">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/homepage-tag-3.png" class="why-section-tags__icon" />
+									</div>
+									<p class="why-section-tags__description">
+										Top of the line technology to adapt to the 4th Industrial Revolution
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="why-section-tags__item wow fadeInUp">
+									<div class="why-section-tags__icon-container">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/homepage-tag-4.png" class="why-section-tags__icon" />
+									</div>
+									<p class="why-section-tags__description">
+										The Einstein AI difference. Real-time data and analytics to help identify weaknesses of your business. AI powered suggestions on how to fix them. 
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="why-section-tags__item wow fadeInUp">
+									<div class="why-section-tags__icon-container">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/homepage-tag-5.png" class="why-section-tags__icon" />
+									</div>
+									<p class="why-section-tags__description">
+										Unparalleled experience working with Salesforce, the world’s leading CRM. First and only property management company to be an official Salesforce partner. 
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="why-section-tags__item wow fadeInUp">
+									<div class="why-section-tags__icon-container">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/homepage-tag-6.png" class="why-section-tags__icon" />
+									</div>
+									<p class="why-section-tags__description">
+										Consulting services to get the most out of your Salesforce cloud (even if you’re not a PMS user) 
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="why-section-tags__item wow fadeInUp">
+									<div class="why-section-tags__icon-container">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/homepage-tag-7.png" class="why-section-tags__icon" />
+									</div>
+									<p class="why-section-tags__description">
+										Constant and consistent software updates, making sure you have the best technology at your disposal. 
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="why-section-tags__item wow fadeInUp">
+									<div class="why-section-tags__icon-container">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/homepage-tag-8.png" class="why-section-tags__icon" />
+									</div>
+									<p class="why-section-tags__description">
+										Form deeper customer relationships with AI-generated customer preferences. Know what the call is about before even answering the phone.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="why-section-tags__item wow fadeInUp">
+									<div class="why-section-tags__icon-container">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/homepage-tag-9.png" class="why-section-tags__icon" />
+									</div>
+									<p class="why-section-tags__description">
+										Control what members of your staff have access to specific features of your property.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="why-section-tags__item wow fadeInUp">
+									<div class="why-section-tags__icon-container">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/homepage-tag-10.png" class="why-section-tags__icon" />
+									</div>
+									<p class="why-section-tags__description">
+										Form deeper customer relationships with AI-generated customer preferences. Know what the call is about before even answering the phone.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonials-section">
+					<div class="container text_center">
+						<article>
+							<h2>
+								Testimonials
+							</h2>
+							<p>Don’t just take our word for it. </p>
+							<br />
+							<p>Hear it from our satisfied clients who have not just improved their brand’s market share, but also benefited from experienced optimized workflows, increased efficiencies, and most importantly &ndash; improved daily yields</p>
+						</article>
+					</div>	
+					<div class="testimonials-slider">
+						<!-- slide -->
+						<div class="testimonials-slide">
+							<div class="testimonials-slide__container">
+								<div class="testimonials-slide__avatar">
+									<!--avatar photo -->
+									<!-- <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/david.png" class="testimonials-slide__avatar-photo" /> -->
+								
+									<!-- no photo img placeholder  -->
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/user.png" class="testimonials-slide__avatar-img" />
+								</div>
+								<p class="testimonials-slide__name">Yesid Sanchez</p>
+								<p class="testimonials-slide__title">Fantastic Application!</p>
+								<p class="testimonials-slide__testimonial">
+									Love the system and the easy to use Interface. Really helps with organizing my daily tasks, as well as following up with clients. I highly recommend this system to small business owners or anyone interested in taking their business to the next level. Efficient and easy to use!
+								</p>
+							</div>
+						</div>
+						<!-- slide -->
+						<div class="testimonials-slide">
+							<div class="testimonials-slide__container">
+								<div class="testimonials-slide__avatar">
+									<!--avatar photo -->
+									<!-- <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/david.png" class="testimonials-slide__avatar-photo" /> -->
+								
+									<!-- no photo img placeholder  -->
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/user.png" class="testimonials-slide__avatar-img" />
+								</div>
+								<p class="testimonials-slide__name">Zarko Draskovic</p>
+								<p class="testimonials-slide__title">Great application!!!</p>
+								<p class="testimonials-slide__testimonial">
+									Very pleased with our new system - Easy to use, easy to organize, it is very helpful. Easy to integrate with other apps, its in continuous improvement. I like how simple it is to browse through accounts and track information. The overall product is great, very handy for large or small businesses.
+								</p>
+							</div>
+						</div>
+						<!-- slide -->
+						<div class="testimonials-slide">
+							<div class="testimonials-slide__container">
+								<div class="testimonials-slide__avatar">
+									<!--avatar photo -->
+									<!-- <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/david.png" class="testimonials-slide__avatar-photo" /> -->
+								
+									<!-- no photo img placeholder  -->
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/user.png" class="testimonials-slide__avatar-img" />
+								</div>
+								<p class="testimonials-slide__name">Yovanna Rojas</p>
+								<p class="testimonials-slide__title">Best system ever!!!</p>
+								<p class="testimonials-slide__testimonial">
+									Very helpful operating system, easy to navigate and very helpful. Great tool for our day to day tasks as well as our client relationships and follow up methods. Excellent Job!!!
+								</p>
+							</div>
+						</div>
+						<!-- slide -->
+						<div class="testimonials-slide">
+							<div class="testimonials-slide__container">
+								<div class="testimonials-slide__avatar">
+									<!--avatar photo -->
+									<!-- <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/david.png" class="testimonials-slide__avatar-photo" /> -->
+								
+									<!-- no photo img placeholder  -->
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/user.png" class="testimonials-slide__avatar-img" />
+								</div>
+								<p class="testimonials-slide__name">Yesid Sanchez</p>
+								<p class="testimonials-slide__title">Fantastic Application!</p>
+								<p class="testimonials-slide__testimonial">
+									Love the system and the easy to use Interface. Really helps with organizing my daily tasks, as well as following up with clients. I highly recommend this system to small business owners or anyone interested in taking their business to the next level. Efficient and easy to use!
+								</p>
+							</div>
+						</div>
+						<!-- slide -->
+						<div class="testimonials-slide">
+							<div class="testimonials-slide__container">
+								<div class="testimonials-slide__avatar">
+									<!--avatar photo -->
+									<!-- <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/david.png" class="testimonials-slide__avatar-photo" /> -->
+								
+									<!-- no photo img placeholder  -->
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/user.png" class="testimonials-slide__avatar-img" />
+								</div>
+								<p class="testimonials-slide__name">Zarko Draskovic</p>
+								<p class="testimonials-slide__title">Great application!!!</p>
+								<p class="testimonials-slide__testimonial">
+									Very pleased with our new system - Easy to use, easy to organize, it is very helpful. Easy to integrate with other apps, its in continuous improvement. I like how simple it is to browse through accounts and track information. The overall product is great, very handy for large or small businesses.
+								</p>
+							</div>
+						</div>
+						<!-- slide -->
+						<div class="testimonials-slide">
+							<div class="testimonials-slide__container">
+								<div class="testimonials-slide__avatar">
+									<!--avatar photo -->
+									<!-- <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/david.png" class="testimonials-slide__avatar-photo" /> -->
+								
+									<!-- no photo img placeholder  -->
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/user.png" class="testimonials-slide__avatar-img" />
+								</div>
+								<p class="testimonials-slide__name">Yovanna Rojas</p>
+								<p class="testimonials-slide__title">Best system ever!!!</p>
+								<p class="testimonials-slide__testimonial">
+									Very helpful operating system, easy to navigate and very helpful. Great tool for our day to day tasks as well as our client relationships and follow up methods. Excellent Job!!!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="case-studies">
+					<div class="container">
+						<h2 class="text_center">
+							Case Studies
+						</h2>
+						<div class="row justify-content-center align-items-stretch partners-cards wow fadeIn">
+							<!-- card -->
+							<div class="col-md-6 col-lg-4">
+								<div class="partners-card">
+									<div class="partners-card__logo">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo-eleven.png" alt="Eleven Experience"/>
+									</div>
+									<p class="partners-card__name">
+										Eleven Experience
+									</p>
+									<div class="partners-card__text">
+										<p>Eleven Experience is a Home-Adventure Travel destination that sets a new standard in experiential travel. Taking a unique approach to Hospitality, Eleven Experience lodges are ideal venues to focus on outdoor adventure pursuits and escape from the hustle and bustle of daily life</p>
+									</div>
+									<!-- <a class="partners-card__button">
+										Find out more
+									</a> -->
+								</div>
+							</div>
+							<!-- card -->
+							<div class="col-md-6 col-lg-4">
+								<div class="partners-card">
+									<div class="partners-card__logo">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo-easterseals.png" alt="Easter Seals House"/>
+									</div>
+									<p class="partners-card__name">
+										Easter Seals House
+									</p>
+									<div class="partners-card__text">
+										<p>Easter Seals House is a Medical Travel &amp; Respite Accommodation to stay when traveling to Vancouver for medical treatment and appointments. Easter Seals BC is a service of the BC Lions Society For Children With Disabilities.</p>
+									</div>
+									<!-- <a class="partners-card__button">
+										Find out more
+									</a> -->
+								</div>
+							</div>
+							<!-- card -->
+							<div class="col-md-6 col-lg-4">
+								<div class="partners-card">
+									<div class="partners-card__logo">
+										<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo-hftp.png" alt="HFTP South Florida "/>
+									</div>
+									<p class="partners-card__name">
+										HFTP South Florida 
+									</p>
+									<div class="partners-card__text">
+										<p>Established in 1952, Hospitality Financial and Technology Professionals (HFTP &reg;) has been a voice for the financial and technology segments of the hospitality industry, providing solutions to the challenges of stakeholders in the industry</p>
+										<p>HTFP improves systematic engagement, workflow, and operational speed by adopting the Booking Ninjas system.</p>
+									</div>
+									<!-- <a class="partners-card__button">
+										Find out more
+									</a> -->
+								</div>
+							</div>
+						</div>
+						<div class="text_center">
+							<apex:outputLink value="{!URLFOR($Page.BN_Glance)}" styleClass="more-case">More Case Studies</apex:outputLink>
+						</div>
+					</div>
+				</div>
+				<div class="awards">
+					<div class="container">
+						<h2>We are recognized by</h2>
+						<div class="row justify-content-around">
+							<div class="col-6 col-md">
+								<div class="awards__img">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/award-1.png" />
+								</div>
+							</div>
+							<div class="col-6 col-md">
+								<div class="awards__img">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/award-2.png" />
+								</div>
+							</div>
+							<div class="col-6 col-md">
+								<div class="awards__img">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/award-3.png" />
+								</div>
+							</div>
+							<div class="col-6 col-md">
+								<div class="awards__img">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/award-4.png" />
+								</div>
+							</div>
+							<div class="col-6 col-md">
+								<div class="awards__img">
+									<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/award-5.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="demo-section">
+					<div class="container text_center">
+						<h2>
+							Simplify Your Operations &amp;
+							<br />
+							Grow Your Revenue with Booking Ninjas
+						</h2>
+						<apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Meeting</apex:outputLink>
+					</div>
+				</div>
+				<div class="blog">
+					<div class="container">
+						<h2 class="text_center">
+							Hospitality Trends, Tips &amp; Best Practices
+						</h2>
+						<div class="row justify-content-between text_center">
+							<div class="col-md-4">
+								<a href="/blog/covid-19-hotel-safety-security-inspection-checklist" class="blog__item">
+									<img src="https://trello-attachments.s3.amazonaws.com/609003c67476870beeab8e4e/1080x540/dd76efa22639b354b61f93340de6799a/Covid_19_-_Hotel_Safety_main.jpg" class="blog__thumb" />
+									<p class="blog__title">Covid 19 - Hotel Safety &amp; Security Inspection Checklist</p>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="/blog/hotel-room-inspection-checklist" class="blog__item">
+									<img src="https://trello-attachments.s3.amazonaws.com/6075add9872fc9201f333c53/1080x540/623a35b509dc493831cd84f1ec38bc05/Hotel_Room_Inspection_Checklist_main.jpg" class="blog__thumb" />
+									<p class="blog__title">Hotel Room Inspection Checklist</p>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="/blog/8-ways-to-improve-hotel-guest-experience" class="blog__item">
+									<img src="https://trello-attachments.s3.amazonaws.com/60d896f78d4a1c8e92c5d1dd/1080x540/d6fa21d5a7f804c3a154440b59042210/8_ways_to_improve_main.jpg" class="blog__thumb" />
+									<p class="blog__title">8 ways to improve hotel guest experience</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

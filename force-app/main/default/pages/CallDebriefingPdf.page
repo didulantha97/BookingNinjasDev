@@ -1,0 +1,114 @@
+<apex:page standardcontroller="Pre_Call_Planner__c" extensions="PreCallPlanningController" renderas="pdf" applybodytag="false">
+<html>
+      <head>
+         <apex:stylesheet value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+         <apex:stylesheet value="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+         <apex:includeScript value="https://code.jquery.com/jquery-3.1.1.min.js"/>
+         <apex:includeScript value="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"/>
+         <style>
+            html, body { margin: 0px; padding: 0; }
+             .content { background-color:#f4f4f4; border:1px solid #b4b4b4; margin: 0 auto; width:1000px; padding:20px; height:auto; }
+             .clear { clear:both; }
+             tr {padding: 10px;}
+         </style>
+      </head>
+      <body>
+         <apex:form >
+             <div class="content">
+                <h3>Call Debrief Tool</h3>
+                <table border="1" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;">
+                   <tr>
+                      <td colspan="4">
+                         Client Contact: <strong>{!account.Name}</strong>
+                         <br />
+                         Client Organization: <strong>{!account.Name}</strong>
+                      </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           KARE Profile: <strong>{!precall.KARE_Designation__c}</strong>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           <strong> Selling team attendees: </strong>
+                           <br/><br/>
+                           {!precall.Selling_Team_Attendees__c}
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           <strong> New information learned: </strong>
+                           <br/><br/>
+                           {!precall.New_Information_Learned__c}
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           <strong> Next steps planned: </strong>
+                           <br/><br/>
+                           {!precall.Next_Steps_Planned__c}
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           <strong> Red flags/potential problems uncovered: </strong>
+                           <br/><br/>
+                           {!precall.Red_Flags_Potential_Problems_Uncovered__c}
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           <strong> Questions/topics for next contact: </strong> 
+                           <br/><br/>
+                           {!precall.Questions_Topics_For_Next_Contact__c}
+                       </td>
+                   </tr>
+                   <tr>
+                       <th style="width: 25%">
+                           Action Steps:
+                       </th>
+                       <th style="width: 25%">
+                           Who?
+                       </th>
+                       <th style="width: 25%">
+                           When?
+                       </th>
+                       <th style="width: 25%">
+                           Intended Result?
+                       </th>
+                   </tr>
+                   <tr>
+                       <td style="width: 25%">
+                           {!precall.Action_Steps_1__c}
+                       </td>
+                       <td style="width: 25%">
+                           {!precall.Who_1__r.Name}
+                       </td>
+                       <td style="width: 25%">
+                           <apex:outputtext value="{0,date,dd MMM yyyy}"><apex:param value="{!precall.When_1__c}" /></apex:outputtext>
+                       </td>
+                       <td style="width: 25%">
+                           {!precall.Intended_Result_1__c}
+                       </td>
+                   </tr>
+                   <tr>
+                       <td style="width: 25%">
+                           {!precall.Action_Steps_2__c}
+                       </td>
+                       <td style="width: 25%">
+                           {!precall.Who_2__r.Name}
+                       </td>
+                       <td style="width: 25%">
+                           <apex:outputtext value="{0,date,dd MMM yyyy}"><apex:param value="{!precall.When_2__c}" /></apex:outputtext>
+                       </td>
+                       <td style="width: 25%">
+                           {!precall.Intended_Result_2__c}
+                       </td>    
+                   </tr>
+                </table>
+             </div> 
+         </apex:form>
+      </body>
+   </html>
+</apex:page>

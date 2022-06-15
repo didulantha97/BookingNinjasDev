@@ -1,0 +1,276 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+        <div class="about-page-top integration-page-top">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="about-page-top__img"><img alt="Integración PMS" src="https://d1b89zc79exfxt.cloudfront.net/img/integration-top.png"/></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <article>
+                            <h1>Integración PMS</h1>
+                            <p>Ofrecemos soluciones de integración que le permiten obtener la mejor experiencia en tecnología de nube como nunca antes.</p>
+                            <p>Recorra nuestro PMS de integración adicional y vea cómo planeamos convertirle en un gigante digital de la industria hotelera.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /top -->
+        <!-- content -->
+        <div class="about-page-content integration-content">
+            <div class="container">
+                <nav class="integration__nav" id="integration__nav">
+                    <ul>
+                        <li><a href="#integration1"><i><img alt="Salesforce Cloud - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration19.png"/></i><span>Salesforce cloud</span></a></li>
+                        <li><a href="#integration2"><i><img alt="Custom Development - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration18.png"/></i><span>Desarrollo personalizado</span></a></li>
+                        <li><a href="#integration3"><i><img alt="Maintenance and House Keeping - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration17.png"/></i><span>Mantenimiento y tareas domésticas</span></a></li>
+                        <li><a href="#integration4"><i><img alt="All GDAS/OTAs  Distribution Websites - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration16.png"/></i><span style="min-width: 130px;">Todas las<br/>páginas web de distribución GDAS/OTAs</span></a></li>
+                        <li><a href="#integration5"><i><img alt="AppExchange Integrations - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration15.png"/></i><span>Integraciones AppExchange</span></a></li>
+                        <li><a href="#integration6"><i><img alt="Booking Engine System - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration14.png"/></i><span>Sistema del motor de reservas</span></a></li>
+                        <li><a href="#integration7"><i><img alt="Financial Integrations - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration13.png"/></i><span>Integraciones financieras</span></a></li>
+                        <li><a href="#integration8"><i><img alt="POS Systems - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration12.png"/></i><span>Sistemas POS</span></a></li>
+                        <li><a href="#integration9"><i><img alt="Phone Systems - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration11.png"/></i><span>Sistemas telefónicos</span></a></li>
+                        <li><a href="#integration10"><i><img alt="Ticketing Systems - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration10.png"/></i><span>Sistemas de entradas</span></a></li>
+                        <li><a href="#integration11"><i><img alt="Access Control - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration20.png"/></i><span>Control de acceso</span></a></li>
+                        <li><a href="#integration12"><i><img alt="Artificial Intelligence - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration21.png"/></i><span>Inteligencia Artificial</span></a></li>
+                        <li><a href="#integration13"><i><img alt="Mobile Apps - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/integration22.png"/></i><span>Aplicaciones móviles</span></a></li>
+                    </ul>
+                </nav>
+                <div class="integration-wrap">
+                    <div class="integration" id="integration1">
+                        <h2 class="integration__title">Salesforce cloud <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="Salesforce Cloud " src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img13.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p>Estamos construidos en una plataforma Salesforce, y queremos darle la experiencia premium que Salesforce ofrece a sus usuarios. Hablamos de velocidad, seguridad, funciones avanzadas y mayores oportunidades para crecer.</p>
+
+                                <p>Nuestras integraciones en la nube de Salesforce cuentan con las mejores herramientas en la nube que Salesforce puede ofrecer, incluyendo pero no limitando Service cloud, IoT cloud, Analytics Cloud, App Cloud, Community Cloud, y Marketing Cloud.</p>
+                                    
+                                <p>Estos servicios cambiarán su forma de ver la tecnología de la nube. Le ayudarán a trabajar mucho más rápido y también a realizar tareas que puedan requerir expertos altamente remunerados.</p>
+                                    
+                                <p>Le estamos entregando las aplicaciones de Salesforce Cloud para ayudar a impulsar su negocio de una manera productiva. Nunca antes un sistema de gestión de propiedades había ofrecido tanto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration" id="integration2">
+                        <h2 class="integration__title">Desarrollo personalizado <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="Custom Development " src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img12.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                
+                                <p>Entendemos que no tener tecnología puede ser la opción perfecta para todas las necesidades de negocio. Existe la necesidad de adiciones innovadoras e integraciones. Pero no dejamos que eso afecte a nuestra plataforma Booking Ninjas.</p>
+
+                                <p>Ofrecemos herramientas personalizadas para cada organización que necesite una. Tenemos una base de desarrolladores sólida, preparada para crear e implementar cualquier herramienta que necesite su negocio.</p>
+                                    
+                                <p>Creemos que cada problema de negocio tiene una solución digital, y estamos preparados para ayudarle a alcanzar esa solución. ¿Por qué preocuparse de las funciones iniciales de la aplicación cuando nosotros podemos diseñar lo que necesite?</p>
+                                    
+                                <p>Poniendo énfasis en el punto anterior, ofrecemos normalmente la aplicación Booking Ninjas como un sistema mínimo, con sólo funciones básicas incluidas al principio. Cuando lleguemos a conocer las necesidades de su negocio, procederemos a integrar las correspondientes herramientas que puedan satisfacer esas necesidades.</p>
+                                    
+                                <p>Así no tendrá que preocuparse de herramientas voluminosas que no son usadas por su organización.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration3">
+                        <h2 class="integration__title">Mantenimiento y tareas domésticas <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="Maintenance and House Keeping " src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img11.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p>Una de las esencias básicas de nuestro sistema de gestión de propiedades que ofrecemos, es una integración de mantenimiento para su propiedad. Nuestro sistema sincroniza todas las solicitudes de mantenimiento y le dejará saber el estado exacto de sus propiedades en el momento adecuado.</p>
+
+                                <p>Podemos habernos encontrado con situaciones en las que había desperfectos en nuestra propiedad que no fueron comunicados a tiempo. Y puede que le hubiera tomado un tiempo preciado en darse cuenta de ello. Nuestras integraciones le facilitarán a usted y a su plantilla el registro de defectos en su propiedad en vez de tener que ir a través de los distintos niveles para compartir la información.</p>
+                                    
+                                <p>Con dichas funciones, cuando exista un defecto que pueda perjudicar la experiencia de su cliente de cualquier forma, este será reportado a cualquiera que tenga acceso a su sistema. Usted o el equipo de mantenimiento recibirá el mensaje muy pronto y podrá arreglar lo que sea.</p>
+                                    
+                                <p>Esa es una buena calificación en las reseñas de su cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration4">
+                        <h2 class="integration__title">Todas las páginas web de distribución GDAS/OTAs <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="All GDAS/OTAs  Distribution Websites" src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img10.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                
+                                <p>Ofrecemos integraciones que le permitirán controlar sin problemas información en todos sus canales de reservas. No importa qué plataforma use, le ayudaremos a gestionar efectivamente y actualizar información en cada canal conectado de una plataforma.</p>
+
+                                <p>A través de la aplicación Booking Ninjas, puede actualizar fácilmente precios, disponibilidad y requisitos de estancia de su propiedad sin tener que moverse de la página web, o gastar más en herramientas adicionales.</p>
+                                    
+                                <p>Destacamos la importancia de esta función porque sabemos que los cambios manuales en su perfil público y en los precios son una gran pérdida de tiempo y recursos. Un canal de gestión todo en uno le ayudará a deshacerse de las repeticiones triviales, dejándole tiempo para centrarse en estrategias de crecimiento para el futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration5">
+                        <h2 class="integration__title">Integraciones AppExchange <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="AppExchange Integrations    " src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img9.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p>La plataforma AppExchange ofrece aplicaciones que pueden cambiar, potencialmente, la manera en la que dirige su negocio. Desde sencillas tareas de gestión hasta tareas más avanzadas de software computacional, la plataforma AppExchange ha sido un lugar donde obtener aplicaciones innovadoras e implementarlas en su negocio.</p>
+
+                                <p>Nos hemos asociado con Salesforce, y una de las ventajas es la integración de las aplicaciones desde la plataforma AppExchange. Booking Ninjas ofrece funciones únicas que le permiten integrar aplicaciones desde AppExchange y dirigirlas directamente desde la plataforma Booking Ninjas. Esto cambia el límite de sus operaciones Booking Ninjas y las convierte en infinitas - puede hacer cualquier cosa.</p>
+                                    
+                                <p>Ahora puede tener una gran variedad de aplicaciones incorporadas en un sistema, ahorrándole la molestia de buscar una herramienta particular para solucionar un problema. Esto mejorará la productividad de su lugar de trabajo y la eficiencia en general.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration6">
+                        <h2 class="integration__title">Sistema del motor de reservas <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="Booking Engine System" src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img8.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                
+                                <p>Nuestro motor de reservas basado en la web está optimizado para servir mejor a sus huéspedes. Desde velocidad hasta interacción, hemos prestado atención a cada detalle del proceso, simplificándolo para ofrecer una mejor experiencia de reservas para sus huéspedes.</p>
+
+                                <p>Nuestro motor de reservas también actúa en cumplimiento de sus planes para mejorar las capacidades interesadas para sus inquilinos. Sus huéspedes, ahora pueden, sin su ayuda, realizar reservas personalizadas cómo quieran exactamente. Esto también le ahorrará también a usted y a sus huéspedes, ya que pueden hacer reservas rápidamente y pagarlas con sus tarjetas de crédito. Esto significa menos correos electrónicos y llamadas para su plantilla.</p>
+                                    
+                                <p>También obtendrá datos. Nuestra reservas online recopilan información del cliente y las almacenan para usted. Estos datos pueden ser analizados para decidir estrategias y trabajar en los puntos más débiles de su negocio.</p>
+                                    
+                                <p>A través del PMS Booking Ninjas, será capaz de añadir un toque profesional para su flujo de captación de clientes, comparando y actualizado precio en unos pocos clicks. Esto le pondrá por delante de la competencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration7">
+                        <h2 class="integration__title">Integraciones financieras <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="Financial Integrations" src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img7.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p>Nuestro servicio financiero de integración está destinado a ofrecerle la mejor experiencia de contabilidad online. Ofrecemos integraciones perfectas de servicios financieros de alta calidad de los mejores proveedores, garantizando que su negocio realice bien la contabilidad.</p>
+
+                                <p>Con nuestra solución integrada de contabilidad en la nube, puede crear transacciones, gestionarlas, e incluso importar transacciones de proveedores anteriores.</p>
+                                    
+                                <p>Entendemos que la contabilidad es uno de los aspectos más importantes de un sistema de gestión de propiedades y pretendemos ofrecerle la mejor experiencia en ese sector. Con Booking Ninjas, podrá hacer uso de nuestra solución avanzada de contabilidad fácil de usar. Esto le ahorrará tiempo y dinero de formas sorprendentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration8">
+                        <h2 class="integration__title">Sistemas POS <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="POS Systems" src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img6.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                
+                                <p>Tenemos la necesidad de gestionar, procesar y almacenar pagos. Es por esa razón que incluimos los sistemas POS como un paquete de la aplicación Booking Ninjas.</p>
+
+                                <p>Sus clientes pueden procesar sus pagos y usted puede ver los registros. Sus operaciones de comida y bebidas pueden ser fácilmente conectadas a la plataforma Booking Ninjas y los pagos serán procesados con facilidad.</p>
+                                    
+                                <p>En términos de pedidos de habitaciones y solicitudes de servicio, puede hacer las cosas más fáciles para usted y su plantilla, al automatizar completamente el proceso. Su plataforma Booking Ninjas puede gestionar fácilmente solicitudes de habitaciones y puede presentar su organización como proveedor de la calidad de la experiencia del huésped.</p>
+                                    
+                                <p>Poniendo énfasis en el punto anterior, ofrecemos normalmente la aplicación Booking Ninjas como un sistema mínimo, con algunas funciones básicas incluidas, al principio. Cuando conozcamos las necesidades de su negocio, procederemos a integrar las correspondientes herramientas para satisfacer esas necesidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration9">
+                        <h2 class="integration__title">Sistemas telefónicos <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="Phone Systems" src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img5.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p>¿Qué es un buen sistema de gestión de propiedades si no puede usarlo para gestionar mejor sus comunicaciones?</p>
+
+                                <p>Hemos incluido integraciones de sistemas telefónicos porque sabemos lo importante que es para un negocio hotelero. Puede ser un buen medio para comunicarse mejor con sus actuales y potenciales huéspedes que piensen usar su propiedad.</p>
+                                    
+                                <p>Ofrecemos integraciones para sus sistemas Avaya, Cisco, Asterisk, Broadsoft y Mitel Phone de su hotel. Gracias a estas integraciones, podrá hacer y recibir fácilmente llamadas mientras gestiona su propiedad, todo desde una plataforma.</p>
+                                    
+                                <p>Con nuestro sistema telefónico integrado, puede captar llamadas, enviar mensajes, guardar notas de contactos especiales y recordatorios, y, si su organización está dispuesta, escribir programas de automatización personalizados para el sistema.</p>
+                            
+                                <p>Creemos que jugará un rol muy importante en su estrategia de experiencia del cliente y fortalecer su posición como un gran jugador en su terreno.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration10">
+                        <h2 class="integration__title">Sistemas de entradas <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="Ticketing Systems" src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img4.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                
+                                <p>Puede gestionar eventos de forma eficiente en la plataforma Booking Ninjas. Ofrecemos automatización para tareas avanzadas como venta de entradas, gestión de asistentes, y otros.</p>
+                                
+                                <p>Con nuestro sistema de entrada, puede crear fácilmente códigos de barra para entradas, obtener notificaciones, y procesar eventos en tiempo real. También puede crear y gestionar fácilmente campañas que atiendan las necesidades de sus asistentes.</p>
+
+                                <p>Esta integración le quitará mucho trabajo rutinario de las manos, permitiéndole concentrarse en el entorno físico de sus eventos. Esto le ahorrará mucho tiempo y dinero.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration11">
+                        <h2 class="integration__title">Control de acceso <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="Access Control" src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img3.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p>Controle quién entra dónde.</p>
+
+                                <p>Booking Ninjas ofrece integraciones que le permitirán controlar quién accede a lugares específicos de su propiedad. Así, puede aumentar la seguridad y crear una sensación de seguridad en su propiedad. A los huéspedes les encanta esto.</p>
+                                    
+                                <p>Es un requisito para la mayoría de los hoteles reconocer a sus clientes principales. Mediante el control de acceso, puede dar privilegios VIP, dar acceso exclusivo a sus clientes más valorados, rindiéndoles homenaje por su valorado patrocinio.</p>
+                                    
+                                <p>Nuestras integraciones de escáneres biométricos también ofrecen habilitaciones de seguridad de calidad, ofreciendo a sus clientes principales la privacidad que merecen.</p>
+                                
+                                <p>Implementar esto hablará muchísimo de hasta qué punto valora a sus clientes como organización.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration12">
+                        <h2 class="integration__title">Inteligencia Artificial <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="Artificial Intelligence" src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img2.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                
+                                <p>Estamos en un punto en el que la Inteligencia Artificial es vital como parte de las operaciones de los negocios. A medida que nos volvemos más digitales, acumulamos más cantidades de datos, que deben de ser analizados para averiguar las formas de automatizar tareas y obtener más ingresos para su negocio.</p>
+
+                                <p>Entendemos la importancia de la Inteligencia Artificial en su negocio, y se lo ofrecemos como integración del sistema Booking Ninjas. Con la integración de Inteligencia Artificial Einstein de Salesforce, su negocio puede ser analizado cuidadosamente y usado para generar patrones legibles que puedan llevar a soluciones de negocio innovadoras.</p>
+                                    
+                                <p>A través de nuestras integraciones, los usuarios podrán ser notificados sobre tareas que deban hacerse (sin tener que establecer una notificación para ello), estudiar el comportamiento del cliente y obtener información sobre los gustos de los clientes.</p>
+                                    
+                                <p>Esta información le ayudará a destinar sus recursos a empresas más productivas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="integration"  id="integration13">
+                        <h2 class="integration__title">Aplicaciones móviles <a href="#integration__nav" class="totop"><i class="fas fa-chevron-up"></i></a></h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="integration__img"><img alt="Mobile Apps" src="https://d1b89zc79exfxt.cloudfront.net/img/integration-img1.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                <p>Nos movemos rápidamente hacia la tecnología móvil, y usted también debería. Hemos hecho la plataforma Booking Ninjas accesible a través de una plataforma móvil, tanto en IOS como en Android.</p>
+
+                                <p>De esta manera, su sistema estará con usted en todas partes, ofreciéndole la libertad de tomar decisiones para su negocio según le convenga.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

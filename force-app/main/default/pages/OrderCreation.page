@@ -1,0 +1,3 @@
+<apex:page action="{!init}" standardcontroller="Opportunity" extensions="OrderCreationController">
+
+</apex:page>

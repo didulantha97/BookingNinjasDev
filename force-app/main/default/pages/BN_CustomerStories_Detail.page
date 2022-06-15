@@ -1,0 +1,151 @@
+<apex:page controller="CustomerStoriesDetailController"
+           docType="html-5.0"
+           showHeader="false"
+           sidebar="false"
+           standardStylesheets="false"
+           applyBodyTag="false"
+           applyHtmlTag="false"
+           cache="true">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+        
+            <!-- top -->
+            <div class="about-page-top customer-top customer-top-left">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-7 order-lg-1">
+                            <div class="customer-top__img">
+                                <img alt="Success Storie - Industrious Office - 1" src="{!story.MainImage__c}"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <article>
+                                <!-- <div class="customer-top__arrow"><i class="fas fa-arrow-up"></i>HFTP</div> -->
+                                <h1>Success Story: {!story.Description__c}</h1>
+                                <!-- <div class="customer-top__arrow"><i class="fas fa-arrow-down"></i>Industrious</div> -->
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="costumer-page">
+                <div class="costumer-page__bread">
+                    <div class="container">
+                        <ul>
+                            <li><a href="/">Home </a></li> / 
+                            <li><a href="/customer-stories">Stories</a></li>  /  
+                            <li class="active">{!story.Name}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__qoute">
+                            <div class="row align-items-center">
+                                <div class="col-lg">
+                                   <div class="text-center"> <img src="https://d1b89zc79exfxt.cloudfront.net/img/Quote_icon.svg" alt=""/></div>
+                                </div>
+                                <div class="col-lg">
+                                    <hr/>
+                                </div>
+                                <div class="col-lg-7">
+                                   <blockquote>{!story.Quote__c}</blockquote> 
+                                    <strong>David Harroch</strong>
+                                    <small>Founder/CEO, Booking Ninjas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <apex:outputLabel escape="false" value="{!story.LongDescription__c}"/>
+                                
+                            </div>
+                            <div class="col-lg-5">
+                                <aside class="costumer-page__sidebar">
+                                    <div class="costumer-page__sidebar-inner">
+                                    <figure><img src="{!story.Logo__c}" alt=""/></figure>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>Industry:</strong>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            {!story.Industry__c}
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>Location:</strong>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            {!story.Location__c}
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>About:</strong>
+                                        </div>
+                                    </div>
+                                    <p>{!story.About__c}</p>
+                                    
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="costumer-page__content text_center">
+                    <div class="container">
+                        <h2>Read More Customer Stories</h2>
+                        <p>Learn how Booking Ninjas help property businesses improve daily yield</p>
+                        <div class="costumer-page__carousel">
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/HFTP_Logo.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}">HTFP improves systematic engagement, workflow, and operational speed...</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_CTY)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/Logo_CTY_books.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_CTY)}">CTY Books takes initiative in digital hotel management with Booking Ninjas</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_WDS)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/WP_logo.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_WDS)}">Worldwide properties implement the Booking Ninjas system for digital properties management</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_Industrious)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/logo_industrious.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_Industrious)}">How Industrious Office gets better deals and guest satisfaction.</apex:outputLink>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

@@ -1,0 +1,167 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url( https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg9.png)');
+                    $('.wrapper').css('background-image', 'url( https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg9.png)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Parking Management System - 1" src=" https://d1b89zc79exfxt.cloudfront.net/img/Flat_MacBook9.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Sistema de gestión de aparcamientos</h1>
+                                <p>Tenemos el mejor sistema de gestión de aparcamientos del mercado. Es hora de desbloquear el potencial ilimitado de sus instalaciones de aparcamiento y sacar el máximo partido.</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">¿Qué es este sistema?</h2>
+                        <p>¿Alguna vez ha entrado en un edificio y se ha retrasado porque el empleado de la entrada tenía que hacer otra cosa? ¿O ha tenido que formar parte de una cola de coches en la entrada para pagar su ticket, en un día que llegaba tarde a una reunión? Seguro que ha sentido esa frustración. Ahora el sistema de gestión de parking puede eliminar todo lo anterior.</p>
+                        <p>Para empresas, comunidades, y fincas, que requieren ciertos protocolos de aparcamiento, no es una tarea sencilla de gestionar, especialmente cuando involucra a cientos de coches. Docenas de vehículos tratan de abrirse paso en cuestión de minutos, lo que conlleva mucho trabajo y obligaciones para el administrador del parking disponible. Y lo que es aún peor, deja a los trabajadores y a las personas que tratan de acceder al edificio, frustradas y exhaustas. Esta es una de las razones por las que adquirir el sistema de gestión de aparcamientos. Es una de las mejores decisiones que una empresa puede tomar. Cubre dicha área.</p>
+                        <p>¿Y qué hay de los edificios con solo hardware que controlan pagos y acceso al edificio? Seguro que ha estado en uno de esos días en los que no parece funcionar en absoluto o muy lento. No es muy diferente de los sistemas manuales en los que hay un empleado en la entrada. Y esta es otra razón por la que elegir un sistema de gestión de aparcamientos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">Aquí llega el sistema Booking Ninjas</h2>
+                        <p>El sistema Booking Ninjas está especialmente diseñado para propietarios de instalaciones de aparcamiento. Se centra en ayudar a los individuos a gestionar los procedimientos del aparcamiento. Para este propósito, dispone de puertas automáticas que controlan la entrada, sistemas de ticket autónomos, y otras funciones más o añadidos. Este sistema ha sido creado para enfrentarse al sistema disfuncional que conlleva el estilo de aparcamiento tradicional. Sin necesidad de trabajar en las mismas instalaciones y solo a través del software, la capacidad de las empresas de aparcamiento pueden mejorar mucho también.</p>
+                        <p>Nuestro sistema de gestión de aparcamientos no trata solo del aparcamiento, si no también de pagos, comprobaciones, tickets, y otras actividades periféricas inherentes a un aparcamiento como el uso del mismo aparcamiento y la provisión de información del espacio de aparcamiento para sus conductores.</p>
+                        <p>En gran medida, funciona por vía electrónica haciéndolo mucho más eficiente que la media humana. Los sistemas de gestión de aparcamientos son de distintos tipos, y las empresas tienen que elegir de acuerdo con la estructura del edificio, las políticas de oficina, y las necesidades de las personas que harán uso del sistema de gestión de aparcamientos. A diferencia de otros sistemas, este no requiere mucho esfuerzo humano; en vez de eso, los usuarios dependen de sus smartphones para ayudarles con la información necesaria.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">¿Por qué necesita Booking Ninjas para la gestión de su aparcamiento?</h2>
+                        <p>Usar el sistema Booking Ninjas para la gestión de aparcamientos es una de las mejores decisiones que una organización puede tomar. Esto es debido a los muchos beneficios que trae. No solo elimina la ineficiencia de la parte humana, sino que también ayuda a mejorar la experiencia de los usuarios cuando se trata del aparcamiento y utiliza el las plazas disponibles para el aparcamiento.</p>
+                        <p>Usar un sistema moderno de gestión de aparcamientos, que depende del software y smartphones, facilita el acceso a muchas cosas. ¿Aún sigues considerando por qué deberías optar por un sistema de gestión de aparcamientos? Debería saber que ayuda a mejorar el acceso a plazas de aparcamiento mientras las controla adecuadamente.</p>
+                        <p>Además, mejora la eficiencia, ahorra tiempo y energía, y recopila informes fácilmente en comparación con los sistemas manuales o de hardware. Lo que ocasiona retrasos en la entrada o en las plazas de aparcamiento, simplemente, desaparecerá gracias a este sistema moderno de gestión de aparcamiento, que hace uso del software.</p>
+                        <p>Asimismo, también hace el proceso de localización de información para clientes más fácil, ya que tienen que ocuparse de ello por sí mismos. Cualquier usuario que quiera encontrar información que facilite su aparcamiento, tendrá esa información y la proporcionará al instante. Los usuarios o conductores ya no tendrán que esperar a que el gestor les solucione sus problemas.</p>
+                        <p>Con todas estas funciones disponibles, nuestro sistema inteligente de gestión de aparcamientos mejorará y asegurará la experiencia de aparcamiento, haciéndolo de primera. Es importante recordar que optimiza las plazas de aparcamiento sin necesidad de expandir el espacio por sí solo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">Las funciones de un sistema de gestión de aparcamientos</h2>
+                        <p><strong>Sistema de guía de aparcamiento o gestión de las plazas de aparcamiento. </strong>Esta es una función del sistema de gestión de aparcamientos que ayuda a la organización a mantener sus plazas de aparcamiento. Los visitantes o usuarios ya no tendrán que pelearse, obstaculizar, o pegarse unos a otros cuando el software esté listo. Todo el mundo podrá, fácilmente, obtener información sobre la plaza de aparcamiento adecuada, y el espacio disponible será usado eficientemente.</p>
+                        <p><strong>Sistema de pago de aparcamiento o tickets automatizados. </strong>Otra función esencial que encontrará disponible en el sistema automatizado de gestión de aparcamientos, es una opción que permite a sus usuarios pagar sin problema. El estrés de hacer cola para pagar antes de aparcar o entrar es eliminado ya que cada individuo puede pagar fácilmente por su cuenta. La máquina expendedora emitirá simplemente cualquier ticket pedido. Esto lo hace como resultado de un programa.</p>
+                        <p><strong>Integración de mapas. </strong>Además de ayudar con los protocolos de aparcamiento, el sistema inteligente de gestión de aparcamientos también le ayudará con la gestión de mapas, al dirigir y guiar a los usuarios. No tiene que preocuparse de pasar por el estrés de encontrar una plaza de aparcamiento cuando puede hacer uso, fácilmente, del software de su smartphone para mapeo.</p>
+                        <p><strong>Información y soporte. </strong>¿Tiene alguna pregunta sobre aparcamiento o le gustaría hacer una reserva? Tiene esa opción también. No tiene que esperar a que respondamos a sus preguntas. Las puede buscar rápidamente, comprobar a través de las preguntas más frecuentes (FAQs) o llamar a los números disponibles. Esta es una función de soporte que convierte la experiencia de usar el sistema en única.</p>
+                        <p><strong>Funciones de informes estadísticos. </strong>No solo son los usuarios los que pueden obtener ventajas de usar el sistema, sino también los administradores de los aparcamientos. Para ellos, las estadísticas son vitales, y un componente esencial con el que trabajar. El software tiene funciones para soportar esto, ya que puede dar el número de vehículos que fueron capaces de acceder al lugar en una franja de horario particular, el precio, y otras más figuras, que puede ser crucial para la gestión y planificación.</p>
+                        <p><strong>Información personalizada. </strong>No solo el sistema automático de gestión de aparcamientos proporciona información, pero también garantiza que la información y guía proporcionada son personalizadas. Esto es porque es capaz de reconocer cada vehículo como una entidad separada conectada a un smartphone. Ahí, podrá obtener respuestas a sus preguntas y ajustarse a lo que requiera.</p>
+                        <p><strong>Integración de reconocimiento vinculado. </strong>El empleado en la entrada no recordará, normalmente, todos los vehículos que hayan pasado en un día, ¿verdad? El sistema de aparcamientos, no solo puede reconocer los vehículos, sino también vincularlo a sus miembros, matrículas, y cuentas de smartphone. Este es un elemento de seguridad importantísimo.</p>
+                        <p><strong>Reservas y barreras. </strong>Este es un tipo de componente presente en el sistema que le ayudará con el control y regulación de los vehículos con acceso a un lugar particular. Esta función también ayuda con las reservas, pero lo más importante, es que es por seguridad.</p>
+                        <p><strong>Vigilancia. </strong>Otra de las muchas funciones presentes en el mejor sistema de gestión de aparcamientos es la vigilancia. Cuando es aprobada por la empresa o las organización, puede ser usado para vigilar el movimiento de los vehículos desde y hacia el edificio y las plazas de aparcamiento.</p>
+                        <p><strong>Análisis de seguridad. </strong>La función de análisis de seguridad también puede entrar en juego cuando se necesite. Esta función es, por supuesto, añadida y actividad para su uso. También ayuda a analizar situaciones y después recomendar la solución más adecuada. Al final, el objetivo es tener unas instalaciones de aparcamiento seguras.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">¿Cómo funciona el sistema de gestión de aparcamientos?</h2>
+                        <p>El sistema de gestión de aparcamientos funciona haciendo uso de todas las funciones citadas anteriormente. Trata de integrarlas en una sola, normalmente, de acuerdo con las solicitudes de los administradores de aparcamientos. Así, conecta a los usuarios desde el momento en el que encienden el mapa en sus teléfonos, hasta que aparcan con seguridad y abandonan las premisas.</p>
+                        <p>El mapa puede ser usado para encontrar plazas de aparcamiento, y también para usar la opción de entrada automatizada, la guía de aparcamiento y el vínculo de reconocimiento. Finalmente, toda esta información, que cuenta los coches uno a uno, es enviada al administrador cuando sea necesaria para fines oficiales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">¿Qué obtiene del sistema Booking Ninjas de gestión de aparcamientos?</h2>
+                        <p><strong>Servicio al cliente mejorado. </strong>Una empresa con nuestro sistema de gestión de aparcamientos puede servir a sus clientes y trabajadores mejor. Esto es porque pueden reducir el estrés que conlleva el aparcamiento. Los visitantes ya no necesitan preocuparse de buscar aparcamiento. Ahorran gasolina e, incluso, reducen las emisiones contaminantes al existir un lugar destinado para su aparcamiento nada más entrar al edificio.</p>
+                        <p><strong>Seguridad. </strong>Una de las ventajas fundamentales de un sistema de gestión es proporcionar seguridad. Existen funciones de barrera y reserva que controlan los vehículos que pueden acceder al lugar. De esta manera, puede impedir la entrada de algunos vehículos en ciertos momentos, si se programa para ello. También hay cámaras de vigilancia (CCTV) que monitorizan vehículos y que puede ser usado para referencias, si hay necesidad.</p>
+                        <p><strong>Eficiencia. </strong>El sistema de gestión de aparcamientos no depende de un empleado para el trabajo; en cambio, trata con software y smartphones, que tienen menos probabilidades de errar. El empleado en la entrada puede tratar con muchas personas al mismo tiempo; puede cansarse e incluso enfermar o ausentarse de su trabajo. Por otra parte, el software automatizado siempre funciona mientras tenga el teléfono encendido, algo bastante frecuente. Puede decidir cómo quiere pagar o lo que quiere hacer exactamente. Como resultado, el nivel de eficiencia aumenta, y puede tratar con protocolos de aparcamiento sin problemas.</p>
+                        <p><strong>Procesos más rápidos. </strong>Nuestro sistema de control de aparcamientos está adelantado a su tiempo. Tener que estar en la entrada y esperar a que el guardia termine de lidiar con una persona antes de dejarle persona, puede ser desafiante y una pérdida de tiempo. ¿Y si pudieras controlar los protocolos de aparcamiento por sí mismo y pueda decidir entrar en el edificio sin retraso? Una de las ventajas del sistema de gestión de aparcamientos es que puede hacer esto rápidamente. Los empleados pueden evitar las largas colas en las entrada cada mañana y acceder directamente al edificio o asegurarse de que haya una plaza de aparcamiento disponible para ellos.</p>
+                        <p><strong>Información. </strong>Cuando el empleado en la entrada está ocupado, ¿a quién pregunta los protocolos de aparcamiento? O en el caso de un sistema hardware, ¿habla con las máquinas? Para el sistema moderno de gestión de aparcamientos, que hace uso de software, puede hacer preguntas a través de su teléfono. ¿Tiene preguntas sobre plazas de aparcamiento, ocupación, sobre quedarse más tiempo aparcado o aparcamientos ilegales? Todo esto puede ser respondido desde donde se encuentre. Nuestra solución de gestión de aparcamientos le brindará la experiencia que merece.</p>
+                        <p><strong>Informes. </strong>El sistema de software orientado de gestión de aparcamientos también incorpora informes. No solo facilita las cosas a los usuarios, sino que los gestores pueden ver reducido su trabajo de monitorización y gestión de plazas de aparcamientos. Reciben informes sobre los vehículos en el edificio, así como el tiempo de acceso, y cosas automatizadas. Existe incluso la opción de contar uno a uno los vehículos.</p>
+                        <p><strong>Reduce costes. </strong>Instalar el sistema de gestión de aparcamientos supone un único gasto. Sin embargo, otros sistemas requieren pagos regulares. Una empresa que opte por este sistema, reducirá costes en comparación con las otras.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <h3 class="text_center">Tres pasos para empezar</h3>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Parking Management System - 2" class="wow fadeInRight" src=" https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration9.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <dl>
+                                <h3>Ponerse en contacto:</h3>
+                                <dd>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al (907) 600-2345 para agilizar el proceso.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Importe sus datos</h3>
+                                <dd>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Láncese al éxito</h3>
+                                <dd>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url( https://d1b89zc79exfxt.cloudfront.net/img/Parking_Facilities_icon-bg.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Parking Management System Price - icon" src=" https://d1b89zc79exfxt.cloudfront.net/img/Parking_Facilities_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Our parking garage software packages start at </p>
+                                        <p><b>$0.45</b> /parking space/month! </p>
+                                        <p>Click&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" target="_blank">here</apex:outputLink> for pricing info.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">Prueba el piloto hoy</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eSignGenieApp__folderStatus__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Last Folder Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SHARED</fullName>
+                <default>false</default>
+                <label>SHARED</label>
+            </value>
+            <value>
+                <fullName>PARTIALLY SIGNED</fullName>
+                <default>false</default>
+                <label>PARTIALLY SIGNED</label>
+            </value>
+            <value>
+                <fullName>CANCELLED</fullName>
+                <default>false</default>
+                <label>CANCELLED</label>
+            </value>
+            <value>
+                <fullName>EXECUTED</fullName>
+                <default>false</default>
+                <label>EXECUTED</label>
+            </value>
+            <value>
+                <fullName>DRAFT</fullName>
+                <default>false</default>
+                <label>DRAFT</label>
+            </value>
+            <value>
+                <fullName>DELETED</fullName>
+                <default>false</default>
+                <label>DELETED</label>
+            </value>
+            <value>
+                <fullName>EXPIRED</fullName>
+                <default>false</default>
+                <label>EXPIRED</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

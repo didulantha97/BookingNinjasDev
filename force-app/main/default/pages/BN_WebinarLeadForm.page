@@ -1,0 +1,96 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_WebinarController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            <link rel="stylesheet" href="https://eggshell-quoll-1301.twil.io/assets/intlTelInput.css" />
+        
+            <!-- content -->
+            <div class="about-page-content webinar-form-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="webinar-form-text">
+                                <h6>Live webinar - {!webinar.Category__c}</h6>
+                                <h2 class="title">{!webinar.Name}</h2>
+                                <figure class="webinar-form-figure">
+                                    <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/david.png" alt="Bookingninjas Best Property Management System"/></span>
+                                    <figcaption>
+                                        <i class="far fa-clock"></i>
+                                        <strong>
+                                            <apex:outputText value="{0, date, MMMM dd, yyyy}">
+                                                <apex:param value="{!webinar.Date__c}" /> 
+                                            </apex:outputText>
+                                             | {!webinar.Time__c}
+                                             | Hosted by: {!webinar.Hosted_By__c}
+                                        </strong>
+                                    </figcaption>
+                                </figure>
+                                <apex:outputText escape="false" value="{!webinar.Long_Description__c}"></apex:outputText>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <apex:form >
+                                <div class="trial__form trial__form-webinar">
+                                    <h4>Sign up for a webinar</h4>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="trial__form-item">
+                                            <apex:input type="text" html-placeholder="FIRST NAME" required="true" value="{!firstName}" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="trial__form-item">
+                                            <apex:input type="text" html-placeholder="LAST NAME" required="true" value="{!lastName}" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trial__form-item">
+                                        <apex:input type="email" html-placeholder="EMAIL ADDRESS" required="true" value="{!email}" />
+                                    </div>
+                                    <div class="trial__form-item">
+                                        <apex:inputText id="webinar-phone" value="{!phone}" html-placeholder="PHONE NUMBER" required="true" onkeypress="return inputLimiter(event,'Telephone');" maxlength="14" style="padding-left: 115px !important;" />
+                                    </div>
+                                    <div class="trial__form-item">
+                                        <apex:input type="text" html-placeholder="YOUR BUSINESS" required="true" value="{!business}" />
+                                    </div>
+                                    <div class="trial__form-item">
+                                        <apex:input type="text" html-placeholder="YOUR COUNTRY" required="true" value="{!country}" />
+                                    </div>
+                                    <div class="trial__form-item trial__form-btn">
+                                        <apex:commandButton value="Save Your Seat" action="{!saveYourSeat}" styleClass="button"/>
+                                    </div>
+                                    <div class="trial__form-small">
+                                        We’ll send you the link to join “The future of the PMS” webinar and share content and updates about Booking Ninjas products as you build the futre of the communications. We use your information according to our <br/>
+                                        <a href="#">Privacy Policy</a>
+                                    </div>
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+            <script src="https://eggshell-quoll-1301.twil.io/assets/intlTelInput.min.js"></script>
+            <script src="https://eggshell-quoll-1301.twil.io/assets/form-validation.js"></script>
+            <script type="text/javascript">
+                // add dash on phone number
+                $('[id$=webinar-phone]').bind('keyup','keydown', function(e){
+                    //To accomdate for backspacing, we detect which key was pressed - if backspace, do nothing:
+                    if(e.which !== 8) { 
+                        var numChars = $('[id$=webinar-phone]').val().length;
+                        if(numChars === 3 || numChars === 7){
+                            var thisVal = $('[id$=webinar-phone]').val();
+                            thisVal += '-';
+                            $('[id$=webinar-phone]').val(thisVal);
+                        }
+                    }
+                });
+            </script>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

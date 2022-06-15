@@ -1,0 +1,78 @@
+<apex:page controller="BN_WebinarSingle" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <div class="page-new-bg">
+                <!--main-->
+                <div class="main">
+                    <!-- top -->
+                    <div class="webinar-top webinar-single">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg-2 text_left">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Webinars)}" styleClass="button__back">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Back
+                                    </apex:outputLink>
+                                </div>
+                                <div class="col-12 col-lg-8">
+                                    <h1>{!webinar.Name}</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /top -->
+                    <!-- content -->
+                    <div class="container">
+                        <div class="webinar-content">
+                            <div class="webinar-form wow fadeInRight">
+                                <h4>Sign up for a webinar</h4>
+                                <apex:form >                        
+                                    <div class="webinar-form__item">
+                                        <apex:input type="text" html-placeholder="Your name*" required="true" value="{!name}" />
+                                    </div>
+                                    <div class="webinar-form__item">
+                                        <apex:input type="email" html-placeholder="Email*" required="true" value="{!email}" />
+                                    </div>
+                                    <div class="webinar-form__item">
+                                        <apex:input type="tel" html-placeholder="Phone*" required="true" value="{!phone}" />
+                                    </div>
+                                    <div class="webinar-form__item">
+                                        <apex:input type="text" html-placeholder="Linked URL" value="{!linkedURL}" />
+                                    </div>
+                                    <div class="webinar-form__submit">
+                                        <apex:commandButton value="Save Your Seat" action="{!saveYourSeat}" styleClass="button"/>
+                                    </div>
+                                    <div class="webinar-form__small">
+                                        We’ll send you the link to join “The future of the PMS” webinar and share content and updates about BookingNinjas products as you build the fitire of the communications. We use your information according to our <br/>
+                                        <a href="#">Privacy Police</a>
+                                    </div>
+                                </apex:form>      
+                            </div>
+                            <div class="webinar-content__box">
+                                <div class="webinar-content__img text_center">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/webinar-single-content-1.png" alt=""/>
+                                </div>
+                                <figure class="webinar-content__figure wow fadeInUp">
+                                    <span><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/david.jpg" alt=""/></span>
+                                    <figcaption>
+                                        <i class="far fa-clock"></i>
+                                        <strong>{!webinarDate} {!webinarTime}</strong>
+                                    </figcaption>
+                                </figure>
+                                <apex:outputText escape="false" value="{!webinar.Long_Description__c}" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /content -->
+                </div>
+                <!--end-main-->
+
+            </div>
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

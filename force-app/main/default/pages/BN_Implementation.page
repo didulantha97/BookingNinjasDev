@@ -1,0 +1,284 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+            
+            <!-- top -->
+            <div class="about-page-top process-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="about-page-top__img">
+                                <img alt="PMS Implementation - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/Implementation-top.png"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1>Booking Ninjas PMS Implementation</h1>
+                            <p>The Booking Ninjas system implementation is as easy as it gets. At Booking Ninjas, we consider it our responsibility to provide a good transition process (if there is an existing platform), or a smooth fresh implementation process. In this regard, we break down our implementation into phases, to make each process easy to follow and properly managed. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- process -->
+            <div class="implementation-page-process">
+                <div class="container">
+                    <!-- before -->
+                    <div class="process-before">
+                        <div class="process-before__wrapper">
+                            <h2 class="offset-1">The implementation process</h2>
+                            <div class="process-before__content">
+                                <div class="row">
+                                    <div class="col-11 col-md">
+                                        <p>Based on the nature of the solution we are offering, we adopt the phased approach for implementation. This involves breaking down units of the solution into various departments in the organization. We then proceed in a manner as to not cause a massive disruption to the business operations of the client.</p>
+                                        <br/>
+                                        <p>We do not use implementation partners. Having built the system from scratch, we consider it our responsibility to see through the entire implementation process, taking care of any scenarios that might arise.</p>
+                                    </div>
+                                    <div class="col-auto align-self-end">
+                                        <img alt="The Implementation Process" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-process.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /before -->
+                </div>
+            </div>
+            <!-- /process -->
+            <!-- timeline -->
+            <div class="implementation-page-timeline">
+                <div class="container">
+                    <h2>Implementation timeline</h2>
+                    <div class="partners-page__companies-section">
+                        <div class="partners-page__companies-item">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-4">
+                                    <div class="partners-page__companies-left">
+                                        <a href="#" target="_blank" class="partners-page__companies-img">
+                                            <span><img alt="Implementation Timeline - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-timeline-1.png"/></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <article>
+                                        <p class="implementation-page-timeline__item-title">2-4 weeks</p>
+                                        <p>The initial start of the journey would be the migration and formatting of current and future data from the existing system or database to Booking Ninjas (unlimited historical data can be transferred and merged anytime after initial setup).</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners-page__companies-item">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-4 order-lg-1">
+                                    <div class="partners-page__companies-left">
+                                        <a href="#" target="_blank" class="partners-page__companies-img">
+                                        <span><img alt="Implementation Timeline - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-timeline-2.png"/></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <article>
+                                        <p class="implementation-page-timeline__item-title">5-10 days</p>
+                                        <p>The next step would be testing the channel manager, booking engine and payment processing terminals within a sandbox account. Optimizations to the business logic and/or design changes on the Booking Engine can also be done in this phase.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners-page__companies-item">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-4">
+                                    <div class="partners-page__companies-left">
+                                        <a href="#" target="_blank" class="partners-page__companies-img">
+                                        <span><img alt="Implementation Timeline - icon - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-timeline-3.png"/></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <article>
+                                        <p class="implementation-page-timeline__item-title">Ongoing</p>
+                                        <p>When the implementation process is nearly completed, key users will now be trained, educating them on new capabilities and polishing any procedures with their feedback taken into consideration.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="partners-page__companies-item"></div>
+                        <div class="implementation-page-timeline__item">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-lg-2  text_center"><img alt="Implementation Timeline - icon - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-timeline-4.png"/></div>
+                                <div class="col 10 col-lg-7">
+                                    <p>1-2 weeks after the implementation, enjoy the convenience and the power of the application, creating a better customer experience than ever before</p>
+                                </div>
+                                <div class="col-lg-3 align-self-end"><img alt="Implementation Timeline - icon - 5" class="implementation-page-timeline__img-bottom" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-timeline-5.png"/></div>
+                            </div>
+                        </div>
+
+                        <div class="partners-page__companies-item">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-4 order-lg-1">
+                                    <div class="partners-page__companies-left">
+                                        <a href="#" target="_blank" class="partners-page__companies-img">
+                                        <span><img alt="Implementation Timeline - icon - 6" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-timeline-6.png"/></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <article>
+                                        <p class="implementation-page-timeline__item-title">Time to go live</p>
+                                        <p>Channels are activated. EMV (Chip reader terminals) are now connected to the point of sale terminals and check-in platforms located in all properties.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /timeline -->
+            <!-- covers -->
+            <div class="calendly-page__call-types implementation-page__covers">
+                <div class="container">
+                    <div class="implementation-page__covers-top">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <article>
+                                    <h2>What the implementation covers</h2>
+                                    <p>Pretty much everything you want. We will have a session or two with you to understand the specific organizational needs the Booking Ninjas system should meet.</p>
+                                    <p>Below are some of the implementation we offer out of the box. </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure ><img alt="Booking Engine System - icon - 1" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-covers-1.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <div class="call-types__item-text wow slideInUp">
+                                    <h4>Booking Engine System</h4>
+                                    <P>Our booking engine acts as a fulfillment for your plans to improve on self-serving capabilities for your guests. Your guests can now, without your help, make customized reservations exactly how they want it. This also saves you time, and that of your guests, as they can quickly make reservations and pay for them with their credit cards. That means fewer emails and phone calls for your staff.</P>
+                                    <P>You also get data. Our online bookings collect customer data and store them for you. This data can be further analyzed to decide on strategies and work on weak points in the business.</P>
+                                    <P>Through the Booking Ninjas PMS, you can be able to add a professional touch to your customer acquisition flow, comparing and updating rates in simple clicks. This puts you ahead of the competition by a long shot.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure ><img alt="AppExchange Integration Implementation - icon - 1" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-covers-2.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <div class="call-types__item-text wow slideInUp">
+                                    <h4>AppExchange integration implementation</h4>
+                                    <p>We have partnered with Salesforce, and one of the perks that come with it is the integration of apps from the AppExchange platform. Booking Ninjas offers a unique feature that allows you to integrate apps from AppExchange and run them directly from the Booking Ninjas platform. This changes the limit of your Booking Ninjas operations to endless – you can do just about anything on it.</p>
+                                    <p>You can now have a wide array of applications built into one system, saving yourself from the hassle of looking for a particular tool that could solve a problem for you. This will improve productivity in the workplace and efficiency in general.</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure><img alt="Mobile Implementation - icon - 1" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-covers-3.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <div class="call-types__item-text wow slideInUp">
+                                    <h4>Mobile Implementation</h4>
+                                    <p>Aside from the online setup and implementation, we offer the mobile interface of the system, giving you the freedom and opportunity to make some management decisions on the go, and at your convenience.</p>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure><img alt="Phone Systems - icon - 1" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-covers-4.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <div class="call-types__item-text wow slideInUp">
+                                    <h4>Phone Systems</h4>
+                                    <p>Communication is a key aspect of hospitality businesses. Phone systems integrated on the same platform used for management can be a very efficient tool. It can be a good enough medium for you to better communicate with your guests and potential guests thinking of using your property.</p>
+                                    <p>We offer integrations for your Avaya, Cisco, Asterisk, Broadsoft, and Mitel Phone systems within your hotel. With that, you can easily make and receive phone calls while handling your property management, all from one platform.</p>
+                                    <p>With our integrated Phone systems implementation, you can automatically capture calls, send messages, save notes for special contacts and reminders, and so much more.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure><img alt="Accounting systems - icon - 1" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-covers-5.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <div class="call-types__item-text wow slideInUp">
+                                    <h4>Accounting systems</h4>
+                                    <p>Our financial services integration is meant to give you the best accounting experience you can get online. We provide seamless integration of high-end financial services from your top providers, ensuring your business gets it accounting done right.</p>
+                                    <p>With our integrated cloud accounting solution, you can create transactions, manage them, and even import transactions from previous providers.   </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-types__item">
+                        <div class="row">
+                            <div class="col-12 col-md-auto text_center">
+                                <figure><img alt="POS systems - icon - 1" class="call-types__item-logo" src="https://d1b89zc79exfxt.cloudfront.net/img/implementation-covers-6.png"/></figure>
+                            </div>
+                            <div class="col">
+                                <div class="call-types__item-text wow slideInUp">
+                                    <h4>POS systems</h4>
+                                    <p>We implement the POS systems your business requires for efficient payment handling and better customer experience.</p>
+                                    <p>The implementation is considered important so your customers can process their payments and you get to see the records from your end. Your food and beverage operations can also be easily connected to the Booking Ninjas platform and payments can be easily processed.</p>
+                                </div>
+                                <p class="call-types__item-bottom">We implement so much more, and you can <a href="/solutions" class="blue-link" target="_blank">check out our solutions page here.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /covers -->
+            <!-- transitioning -->
+            <div class="implementation-page__transitioning">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 order-lg-2">
+                            <img alt="PMS Implementation - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/Implementation-transitioning.png"/>
+                        </div>
+                        <div class="col-lg-8">
+                            <article>
+                                <h2>What about transitioning?</h2>
+                                <p>Some of our clients come from other management systems, so we are familiar with the reluctance to switch systems. It is seen as an expensive, risky project, and then decide they will be better off sticking to the old systems. Technology advancements changed all that.</p>
+                                <p>Firstly, we offer a demo implementation of the system. The data could be test data or properly migrated from an existing platform. In that way, our clients see how much easier, faster, and more value it brings to the business. </p>
+                                <p>Moreover, we understand there were other systems before us, and if we’re to win clients over, our transition process has to be very easy and less technical. We took care of the time-wasting processes, and by far, reduced the technicalities. Transitioning to Booking Ninjas is now a very simple process, and just to make sure it goes 100% right, we will be around to support clients in that.</p>
+                            </article>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- /transitioning -->
+            <!-- conclusion -->
+            <div class="implementation-page__conclusion text_center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h3>Conclusion</h3>
+                            <p>The Booking Ninjas implementation process is geared towards our clients getting the best value in the market, just as we promised. We are keen on providing the greatest satisfaction in terms of usage and ROI, and one way to get it is to make our implementation a very certain success. </p>
+                            <p>For a long time, we have maintained a quality of service, in terms of product excellence, customer relationship, follow-ups, and maintenance. We are poised to deliver the best in the industry and give our customers the value we promised.</p>
+                            <p class="title">The Best Fit for Your Business</p>
+                            <p>The Booking Ninjas system is designed to help you get to your business goals without the setbacks familiar in most management systems. We offer high-end tools to provide a seamless management process for the staff and a platform to provide exceptional customer service to your guests.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- conclusion -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

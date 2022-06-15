@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Article_Views</fullName>
+    <columns>NAME</columns>
+    <columns>Publish__c</columns>
+    <columns>Is_Main_Article__c</columns>
+    <columns>Category__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Scheduled_Publish_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Article Views</label>
+</ListView>

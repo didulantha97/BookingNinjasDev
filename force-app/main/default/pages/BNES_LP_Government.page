@@ -1,0 +1,309 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top government-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1 text_center">
+                            <div class="text_center">
+                                <img alt="Administración de propiedades del gobierno. Software - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/government-laptop.png"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1>Administración de propiedades del gobierno.</h1>
+                            <p>Gestión de la calidad de las propiedades estatales.</p>
+                            <h2>Todo a su alcance</h2>
+                            <p>Administración exquisita y segura de la propiedad, confiable para una cobertura 24/7 de su propiedad, con la mejor tasa de respuesta del mercado. Con el sistema de Booking Ninjas, se obtiene la mejor gestión de propiedades del mercado. Con un sistema asequible y una excelencia inigualable, usted nunca había tenido una mejor baraja en su mano.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="government-kinds">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text_center">
+                            <article>
+                                <h2>¿Qué tipo de propiedad del gobierno?</h2>
+                                <p>La propiedad gubernamental consiste en tierras o activos que son propiedad del gobierno federal, estatal o local. También pueden incluir agencias gubernamentales u organizaciones patrocinadas por el gobierno tales como bibliotecas, parques, terrenos residenciales, comerciales, industriales, así como otros activos físicos como maquinarias. Los bienes de propiedad del gobierno también pueden ser aquellos bienes administrados por el gobierno federal, como los edificios de los consulados y las embajadas. Por lo tanto, con toda la tarea que ello implica, podría ser necesario el uso de programas informáticos de gestión para el funcionamiento eficiente de estas instalaciones. La propiedad gubernamental se considera a menudo propiedad pública, aunque eso no significa que toda esa propiedad sea de libre acceso para todos los ciudadanos. Por ejemplo, una base o un laboratorio del ejército puede ser propiedad del gobierno, pero con un acceso muy restringido. Un parque infantil público, por otra parte, puede ser propiedad de un gobierno local y de libre acceso para cualquiera.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="government-software">
+                <div class="container">
+                    <h2>Ventajas del Software de gestión para las propiedades gubernamentales.</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <p>El software de gestión ofrece una serie de ventajas importantes. Si se consideran individualmente, estas ventajas son impresionantes, pero si se consideran en conjunto, demuestran la necesidad de considerar seriamente una inversión en programas de gestión.</p>
+                        </div>
+                    </div>
+                    <div class="government-software__items-wrapper">
+                        <div class="row">
+                            <div class="col-md-6 item-padding">
+                                <div class="government-software__item">
+                                    <figure><img alt="Asegurar el cumplimiento de la normativa - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-software-item-1.png"/></figure>
+                                    <h4>Asegurar el cumplimiento de la normativa</h4>
+                                    <p>Si bien es posible que algunos stakeholders no hagan mucho hincapié en el cumplimiento de la normativa, es probable que haya una gran cantidad de reglamentos aplicables a la industria a la cual usted hace parte. El incumplimiento de estas leyes puede dar lugar a importantes multas o incluso a un cierre temporal de las operaciones. El software de gestión puede programarse para comprar los niveles de cumplimiento e incluir las actividades necesarias para garantizar el mismo.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item-padding">
+                                <div class="government-software__item">
+                                    <figure><img alt="Captura información de manera automática - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-software-item-2.png"/></figure>
+                                    <h4>Captura información de manera automática</h4>
+                                    <p>El software de gestión registra la información de manera automática en el transcurso de la jornada laboral. Por ejemplo, si se llena una orden de trabajo para reparar un equipo, el software luego registra esa información y crea un historial que se asocia con ese equipo en particular.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item-padding">
+                                <div class="government-software__item">
+                                    <figure><img alt="Informes rápidos y precisos - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-software-item-3.png"/></figure>
+                                    <h4>Informes rápidos y precisos</h4>
+                                    <p>Una de las mayores ventajas del software de gestión es la capacidad de generar informes con poca o ninguna demora. Los informes proporcionan información en tiempo real a los principales encargados de adoptar decisiones en una organización, lo que les permite tomar decisiones comerciales más informadas.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item-padding">
+                                <div class="government-software__item">
+                                    <figure><img alt="Sincronizar las acciones de mantenimiento preventivo - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-software-item-4.png"/></figure>
+                                    <h4>Sincronizar las acciones de mantenimiento preventivo</h4>
+                                    <p>Combinar órdenes de trabajo de mantenimiento preventivo con el objetivo de sincronizar las acciones del mantenimiento preventivo y gestionar la carga de trabajo de manera más eficiente.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item-padding">
+                                <div class="government-software__item">
+                                    <figure><img alt="Información de los empleados - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-software-item-5.png"/></figure>
+                                    <h4>Información de los empleados</h4>
+                                    <p>Otra ventaja del software de gestión, es que le permite a usted tener una mejor comprensión del rendimiento de sus empleados. Cada empleado es consciente del papel exacto que desempeña en la operación de mantenimiento de las instalaciones, y los principales stakeholders podrán evaluar el rendimiento de cada uno de los empleados en relación con las expectativas que se tengan sobre estos. Podrán supervisar el rendimiento de los empleados con el fin de determinar como estos se desempeñan en el trabajo, medir sus niveles de productividad e identificar las oportunidades de mejora.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item-padding">
+                                <div class="government-software__item">
+                                    <figure><img alt="Procesos exhaustivos y coherentes - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-software-item-6.png"/></figure>
+                                    <h4>Procesos exhaustivos y coherentes</h4>
+                                    <p>El uso de programas informáticos de gestión del flujo de trabajo se traduce en un nivel de eficiencia que de otro modo sería difícil de mantener. El software ayudará a garantizar que las diversas tareas de mantenimiento se describen de forma adecuada y completa, y estos procesos exhaustivos se programaran de forma coherente. La consistencia está asegurada mediante la designación de ciertos campos de formulario según sea necesario y controlando la forma en que los usuarios introducen la información.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item-padding">
+                                <div class="government-software__item">
+                                    <figure><img alt="Capacidades de Integración - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-software-item-7.png"/></figure>
+                                    <h4>Capacidades de Integración</h4>
+                                    <p>Los programas informáticos de gestión pueden integrarse con otros sistemas utilizados en la organización. Para obtener los mejores resultados, decídase por el mejor software de mantenimiento que se haya desarrollado específicamente para ese propósito, pero que se integre fácilmente con otros tipos de software modernos.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item-padding">
+                                <div class="government-software__item">
+                                    <figure><img alt="Movilidad y colaboración - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-software-item-8.png"/></figure>
+                                    <h4>Movilidad y colaboración</h4>
+                                    <p>Particularmente en el caso de las instalaciones múltiples, la capacidad de tener acceso a los datos de las instalaciones a través de un teléfono inteligente, una computadora portátil o una tableta es vital. Esto permite tomar decisiones oportunas e informadas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="government-facilities">
+                <div class="container">
+                    <h2>Ventajas del software de gestión en instalaciones de eventos para las propiedades gubernamentales.</h2>
+                    <div class="government-facilities__integrations">
+                        <p>Organizar un evento puede ser una tarea desalentadora si se tiene poco personal y recursos limitados. La organización exitosa de un evento se debe al esfuerzo combinado de diferentes equipos de trabajo: El equipo de eventos, el equipo de Marketing, el de ventas, el de operaciones y el de productos. Para obtener mejores resultados, es menester que el software de gestión de eventos se integre con las demás aplicaciones y redes sociales, así como también con la contabilidad y con la gestión de clientes en general.</p>
+                        <p>El software de gestión de eventos es un conjunto de herramientas que ayudan a planificar, organizar, y gestionar los eventos. Este software ayuda a automatizar el flujo de trabajo asociado con cada paso de la organización del evento, incluyendo la planificación misma del evento, el registro de los asistentes al evento, la gestión de ingresos, las encuestas de feedback que se realizan posteriores a la finalización del evento y el análisis.</p>
+                        <p>Automatiza muchas de las tareas manuales como la recopilación de los tellates de los participantes, la colaboración, con los equipos de marketing y logística, el mantenimiento de las cuentas de flujo de caja de los eventos, la gestión de viajes, y el análisis que se realiza posterior a la finalización del evento.</p>
+                        <p>A continuación, se presentan las principales características que le ayudarán a comprender los beneficios del uso del software para gestión de eventos en propiedades gubernamentales.</p>
+                        <p>Algunas de las integraciones importantes del software de gestión de eventos incluyen:</p>
+                        <div class="government-facilities__integrations-item">
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <figure><img alt="CRM - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-crm.png"/></figure>
+                                </div>
+                                <div class="col-md">
+                                    <p><strong>CRM:</strong> La integración de una herramienta de gestión de eventos con un software CRM ayuda a compartir y cuidar los detalles. Los clientes potenciales pueden ser importados desde la herramienta de gestión de eventos al sistema CRM y viceversa. También ayuda a registrar los detalles e información recogida durante los eventos para crear una mejor experiencia general en el futuro.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__integrations-item">
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <figure><img alt="Mаrkеtіng - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-marketing.png"/></figure>
+                                </div>
+                                <div class="col-md">
+                                    <p><strong>Mаrkеtіng:</strong> La integración con las herramientas de marketing ayuda a enviar ofertas promocionales relevantes y otros materiales a los participantes. La herramienta de gestión de eventos tendrá que integrarse con varias soluciones de marketing, incluyendo:</p>
+                                    <ul class="diamond-markers">
+                                        <li>Marketing por correo electrónico: Ayuda a mantener correspondencia con los clientes y los posibles asistentes a través del correo electrónico para la venta de entradas en línea, el envío de horarios, etc.</li>
+                                        <li>Marketing por redes sociales: Publicar mensajes por redes sociales para promover el momento y crear buzz.</li>
+                                        <li>Gestión de canales: Gestiona las actividades promocionales en diferentes canales para apoyar la venta de entradas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__integrations-item">
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <figure><img alt="Contabilidad - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-accounting.png"/></figure>
+                                </div>
+                                <div class="col-md">
+                                    <p><strong>Contabilidad:</strong> Ayudar en el registro preciso de los flujos de dinero mediante la obtención de datos de ventas de entradas, gastos del evento y otros costos. La integración con las herramientas de contabilidad ayuda a evitar la doble entrada y reduce los errores.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__integrations-item">
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <figure><img alt="Punto de venta - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-pos.png"/></figure>
+                                </div>
+                                <div class="col-md">
+                                    <p><strong>Punto de venta:</strong> La integración con los sistemas de punto de venta es una tarea importante para apoyar las ventas de entradas en línea. Soportan pagos con tarjetas de débito o crédito, monederos electrónicos y banca en red.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="government-facilities__benefits">
+                        <p>Dirigir un lugar o instalación de un evento es una labor que se hace por amor, ya que la mayoría de los propietarios y gerentes de los lugares de eventos tienen una profunda pasión por ver que estos se lleven a cabo satisfactoriamente, pero los dueños se enfrentan a muchos desafíos en la gestión de sus negocios y en la administración de todas las operaciones de los mismos. Esto incluye cortejar y atender a los clientes, contratar y supervisar a los empleados, coordinar con los proveedores, gestionar los inventarios y gestionar de manera satisfactoria los mil y un detalles involucrados en cualquier evento.<br/>
+                        Cualquiera que sea el tipo de evento que se realice, desde fiestas y bodas hasta cursos y conferencias, siempre es adecuado contar con un software de eventos porque estos:</p>
+                        <ul class="diamond-markers">
+                            <li>Crean eficiencias ayudándoles a establecer nuevos procesos.</li>
+                            <li>Centralizan su información de tal forma que esta no se encuentra dispersa en múltiples aplicaciones ni diferentes hojas de cálculo</li>
+                            <li>Proporcionan acceso instantáneo a datos de gran tamaño para que puedan tomar decisiones informadas sobre la marcha.</li>
+                            <li>Simplifican la forma en que se comunican y colaboran con el personal, clientes, clientes potenciales y proveedores.</li>
+                            <li>Aumentan sus reservas e ingresos a través de todo lo anterior.</li>
+                        </ul>
+                    </div>
+                    <div class="government-facilities__features">
+                        <p>El mercado de Softwares de gestión de sitios de celebración (venue management) es un nicho más pequeño y altamente especializado del amplio mercado de sistemas de gestión de eventos, que ofrece una serie de herramientas que atraen a una amplia gama profesionales que trabajan precisamente en estos lugares, desde gerentes de ventas, gerentes de catering y planificadores de eventos, hasta personal de cocina, chefs, personal de servicio y anfitriones. ¿Cuáles son algunas de las características que tienen en común con los softwares de gestión de eventos?<br/>
+                        Los software de gestión de eventos vienen con muchas características, algunas de estas son:</p>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>1</span></div>
+                                <div class="col">
+                                    <p><strong>Gestión de asistentes:</strong> Mediante esta característica, el sistema recopila y almacena información pertinente sobre las personas que asisten al evento, como por ejemplo, datos personales, datos de inscripción y hasta preferencias culinarias. También ayuda a planificar y compartir la ubicación de los asistentes, los detalles de los acompañantes e información acerca de las encuestas que contienen preguntas que buscan mejorar la experiencia de los asistentes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>2</span></div>
+                                <div class="col">
+                                    <p><strong>Venta de entradas: </strong>Esta característica facilita la venta de entradas para el evento y habilita los formularios de inscripción a través de canales en línea y fuera de línea. También ayuda a recaudar pagos en efectivo o por vía electrónica. Asimismo, puede personalizar los precios de las entradas, establecer límites de cantidad y ofrecer descuentos o paquetes especiales</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>3</span></div>
+                                <div class="col">
+                                    <p><strong>Gestión in situ: </strong>Esto incluye la gestión de las actividades relacionadas con el evento in situ, incluyendo la impresión de las tarjetas de identificación de los asistentes, la aceptación de nuevas inscripciones, la modificación de las mismas, y por último, la integración del sistema de autoservicio en el evento para facilitar el registro</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>4</span></div>
+                                <div class="col">
+                                    <p><strong>Gestión de los expositores: </strong>Esta función le ayuda a asignar stands a los expositores, cobrarles los gastos, gestionar los niveles de patrocinio y las reservas de los stands. Por otro lado, esta herramienta también puede ayudarle a preparar mapas del lugar del evento con los datos de los expositores y número de stands incluidos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>5</span></div>
+                                <div class="col">
+                                    <p><strong>Informes y análisis: </strong>Genera informes de asistencia, informes de gastos y presupuestos y hacer un seguimiento de la participación de los usuarios en las diversas campañas de marketing del evento, tanto online como offline. También, analiza el éxito del evento utilizando las métricas recogidas a lo largo del mismo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>6</span></div>
+                                <div class="col">
+                                    <p><strong>Marketing de eventos: </strong>Las características del sistema que se refieren al marketing de eventos, deberían ser capaces de conectar tanto las actividades online como las offline, actividades tales como el envío de mensajes de correo electrónico, la publicación de posts en redes sociales y la creación de banners y sitios web promocionales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>7</span></div>
+                                <div class="col">
+                                    <p><strong>Gestión del presupuesto: </strong> El sistema cuenta con funciones de gestión de presupuestos e ingresos que le ayudan a gestionar y hacer un seguimiento de los gastos de su evento. También, le ayuda a registrar todas las transacciones del evento, a realizar un seguimiento de los presupuestos y las ofertas, a calcular los costos y a determinar el retorno de la inversión.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="government-facilities__estate">
+                        <article>
+                            <h2>Ventajas del uso del software de gestión inmobiliaria en las propiedades gubernamentales.</h2>
+                            <p>Los negocios inmobiliarios tienen una naturaleza dinámica, en donde hay tantos aspectos a tener en cuenta, que puede llegar a ser un negocio difícil de manejar en el tiempo. Por esta razón, es necesaria la implementación de un software inmobiliario adecuado para facilitar el funcionamiento del negocio. El software para Bienes Raíces está diseñado de tal manera que hace que el proceso sea más fácil y minimiza el esfuerzo que tiene que hacer el empresario. El software es capaz de encontrar el encaje perfecto para las necesidades específicas del usuario, lo que le permite a los mismos personalizar el sistema y por ende, le ayudarán a que su negocio prospere. A continuación se presentan las principales características que le ayudarán a comprender los beneficios del software de bienes raíces.</p>
+                            <p><strong>1. Proporciona integración:</strong> Los negocios inmobiliarios suelen ser llevados a cabo en diversas plataformas y este software proporciona una integración efectiva con todas ellas. Existen diversas áreas en los negocios inmobiliarios en las que se suele trabajar, tales como el manejo de las páginas web, los contactos directos, el manejo de redes sociales, anuncios en línea, entre otros. Tradicionalmente, cada una de estas actividades se realizaba de manera independiente, con cuentas y plataformas diferentes, sin embargo, esto es ineficaz a largo plazo, ya que esto consume mucho tiempo y finalmente, los datos de un negocio es mejor que se encuentren de forma compilada en un mismo lugar. Tener esta información compilada y consolidada facilita la vida de todos. Puede que en un principio resulte manejable, cuando la organización es pequeña, pero, a medida que la empresa crece y los clientes y las necesidades de la organización crecen, no es posible manejar tanta información de forma manual e independiente, por lo tanto, la necesidad de implementar un programa informático se vuelve inevitable. La gestión de la página web de la empresa se vuelve tarea fácil a raíz de esto, y todos los cambios que se deban hacer en cualquier plataforma o portal, pueden hacerse con solo pulsar un botón.</p>
+                            <p><strong>2. Gestiona los contactos:</strong> Gestionar la información de contacto de todos los clientes es otro de los beneficios de usar el Software de Bienes Raíces. Los grupos pueden ser creados para tener un acceso directo. Existe disponibilidad de espacios y diseños para crear un banco de información detallada de los clientes. El software permite configurar comandos para el envío automático de felicitaciones de cumpleaños, aniversarios o cualquier otro día especial que aparezca asociado a un determinado cliente. Mucha gente cree erróneamente que el único objetivo del software de bienes raíces es generar nuevos prospectos y captar nuevos clientes, lo cual no es así. Además de generar nuevos clientes, también el software ayuda a mantener el contacto con los clientes anteriores, lo que permite mantener una relación a largo plazo con los clientes, lo cual es beneficioso para el negocio ya que en un negocio con una naturaleza tan dinámica, donde diariamente surgen necesidades, es conveniente mantener las relaciones vivas durante años.</p>
+                            <p><strong>3. Gestión de empleados:</strong> La gestión de empleados es una tarea que requiere de mucha dedicación y precisión y esto se vuelve fácil con la ayuda del software. Hay facilidades como accesos múltiples, permitiendo una sola cuenta para el acceso de usuarios. La estructura organizacional juega un papel importante y con la ayuda del software esta se puede jerarquizar de manera apropiada. Lo anterior, permite la gestión del rendimiento y la generación de informes diarios con mucha facilidad. Los empleados se benefician de esto asegurándose que no existe duplicidad en el lugar de trabajo, también por allí pueden programar reuniones y recordatorios de tareas, etc.</p>
+                            <p><strong>4. Informes y análisis:</strong> Un software eficaz permite la generación de informes. Estos informes pueden ser diarios, mensuales o anuales. Es necesario revisar el trabajo para analizar lo que ha funcionado bien y lo que debería cambiarse en el futuro. Asimismo, estos informes muestran las tareas pendientes y permiten visualizar los objetivos a alcanzar. También, los informes proporcionan información sobre las estrategias adoptadas con el fin de conocer la eficacia de los medios publicitarios elegidos. Lo anterior ayuda a ser creativo e innovador al promover la variedad, y también ayuda a cambiar aquellas estrategias que quizás no funcionaron tan bien.</p>
+                            <p><strong>5. Gestión de pagos:</strong> El uso de software permite diseñar, mantener y ejecutar los calendarios de pagos. Cualquier información relacionada a las propiedades puede ser registrada y mapeada. La información relativa a la renovación del contrato de arrendamiento, así como de la terminación del mismo y todo el papeleo relacionado a este, puede estar disponible. Ahora nada se perderá, gracias al software. Asimismo, mediante el software se pueden programar recordatorios para tomar decisiones y medidas oportunas, si así se requiere. Cualquier pago que deba ser cobrado o cualquier tasa relacionada con las propiedades deben estar al día con el objetivo de evitar cualquier tipo de penalidades. Además, el software permite enviar recordatorios oportunos a los que necesitan hacer los pagos, lo que permite mantener una buena relación comercial.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="government-about">
+                <div class="container">
+                    <h3 class="text_center">Llevamos un tiempo aquí</h3>
+                    <div class="row justify-content-center text_center">
+                        <div class="col-lg-8">
+                            <p>No se preocupe, no se quedará colgado. Estamos basados completamente en Salesforce, la mejor solución basada en la nube del mercado. Nuestros desarrolladores están preparados para implementar y personalizar todo lo que necesite. Nuestro equipo de atención al cliente está, literalmente, esperando su llamado. ¿Nuestros precios? Totalmente asequibles, y relativos al volumen de unidades. Estamos aquí, maduros, listos, y dispuestos a trabajar con usted.</p>
+                        </div>
+                    </div>
+                    <div class="government-about__cards">
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 item-padding">
+                                <div class="government-about__cards-item">
+                                    <figure><img alt="Streamline Business Processes - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-card-1.png"/>
+                                        <figcaption>Agilice los procesos empresariales</figcaption></figure>
+                                    <p>Basta de gastos. Use el sistema Booking Ninjas para gestionar tareas repetitivas, y centrarse en lo que realmente le aporta su negocio</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item-padding">
+                                <div class="government-about__cards-item">
+                                    <figure><img alt="Céntrese en el cliente - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/government-card-2.png"/>
+                                        <figcaption>Céntrese en el cliente</figcaption></figure>
+                                    <p>Nuestro sistema gira en torno a dos partes: sus ingresos y sus clientes. Aprovéchese de la tecnología en la nube, la Inteligencia Artificial, y las integraciones para ofrecer mejores servicios.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item-padding">
+                                <div class="government-about__cards-item">
+                                    <figure><img alt="Personalizado al 100% - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/government-card-3.png"/>
+                                        <figcaption>Personalizado al 100%</figcaption></figure>
+                                    <p>¿Quiere funcionalidades únicas? Nuestro equipo técnico le atenderá. Su plataforma será diseñada a medida de sus prácticas de negocio. Siempre hay una solución para usted.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text_center">Tres pasos para empezar</h3>
+                    <div class="row ">
+                        <div class="col-lg-6 order-lg-1 text_center">
+                            <img alt="Administración de propiedades del gobierno. Software - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/government-about.png"/>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="government-about__offer-item">
+                                <h5>Ponerse en contacto:</h5>
+                                <p>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al (907) 600-2345 para agilizar el proceso.</p>
+                            </div>
+                            <div class="government-about__offer-item">
+                                <h5>Importe sus datos</h5>
+                                <p>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</p>
+                            </div>
+                            <div class="government-about__offer-item">
+                                <h5>Láncese al éxito</h5>
+                                <p>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

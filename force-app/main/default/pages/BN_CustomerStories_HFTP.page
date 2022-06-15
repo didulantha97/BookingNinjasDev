@@ -1,0 +1,171 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+        
+            <!-- top -->
+            <div class="about-page-top customer-top customer-top-left">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-7 order-lg-1">
+                            <div class="customer-top__img">
+                                <img alt="Success Storie - HFTP" src="https://d1b89zc79exfxt.cloudfront.net/img/HFTP-1.jpg"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <article>
+                                <!-- <div class="customer-top__arrow"><i class="fas fa-arrow-up"></i>HFTP</div> -->
+                                <h1>Success Story: How HFTP Achieves 200% Better Efficiency by Working with Booking Ninjas?</h1>
+                                <!-- <div class="customer-top__arrow"><i class="fas fa-arrow-down"></i>Industrious</div> -->
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="costumer-page">
+                <div class="costumer-page__bread">
+                    <div class="container">
+                        <ul>
+                            <li><a href="/">Home </a></li> / 
+                            <li><a href="/customer-stories">Stories</a></li>  /  
+                            <li class="active">HFTP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__qoute">
+                            <div class="row align-items-center">
+                                <div class="col-lg">
+                                   <div class="text-center"> <img src="https://d1b89zc79exfxt.cloudfront.net/img/Quote_icon.svg" alt=""/></div>
+                                </div>
+                                <div class="col-lg">
+                                    <hr/>
+                                </div>
+                                <div class="col-lg-7">
+                                   <blockquote>A major part of our efforts here at Booking Ninjas is to drive towards creating a solution for hotels and property businesses, one so complete that it performs like a fully 
+                                        functional team of experts. By enabling native integration of unlimited tools onto our 
+                                        platform, we are well on our way there.</blockquote> 
+                                    <strong>David Harroch</strong>
+                                    <small>Founder/CEO, Booking Ninjas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5>How Booking Ninjas came in</h5>
+                                <p>HFTP is an Authoritative Source in Hospitality Finance and Technology which actively supports and develops projects and resources to make them widely available to the hospitality industry. HFTP remains true to its core purpose: To lead and advance the hospitality profession by providing a forum for continuous learning and knowledge sharing.
+                                            A big role HFTP plays in the hospitality industry is bringing together and organizing its expert networks, research, certification programs, information resources and conferences/events such as HITEC.
+                                            The owner of the world&#x27;s only hospitality-specific search engine, PineappleSearch.com®, the organization is dedicated to providing value to the entire hospitality industry worldwide, running its operations from its headquarters in Austin, Texas, USA, with offices in the United Kingdom, Hong Kong, Dubai, and the Netherlands.</p>
+                                <p>HFTP® constantly searches for ways to improve the lives of its members and stakeholders, including exposing them to various important information, introducing systems that could be of help, providing top-level research, as well as organize events and conferences.</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <aside class="costumer-page__sidebar">
+                                    <div class="costumer-page__sidebar-inner">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/HFTP_Logo.png" alt=""/></figure>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>Industry:</strong>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            Hospitality
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>Location:</strong>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            South Florida
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>About:</strong>
+                                        </div>
+                                    </div>
+                                    <p>Established in 1952, Hospitality Financial and Technology Professionals (HFTP®) has been a voice for the financial and technology segments of the hospitality industry, providing solutions to the challenges of stakeholders in the industry.</p>
+                                    
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__view-list">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <article>
+                                        <p>As a result, there is an increasing need for:</p>
+                                        <div class="costumer-page__view-list_section">
+                                            <ul>
+                                                <li>Making hospitality business easier for members and stakeholders,</li>
+                                                <li>Handling of events/conference management,</li>
+                                                <li>Monitoring email marketing,</li>
+                                                <li>Improving engagement with stakeholders,</li>
+                                                <li>Management of members and stakeholders in a single portal, and</li>
+                                                <li>A single platform to take care of everything.</li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="costumer-page__content text_center">
+                    <div class="container">
+                        <h2>Read More Customer Stories</h2>
+                        <p>Learn how Booking Ninjas help property businesses improve daily yield</p>
+                        <div class="costumer-page__carousel">
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_Industrious)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/logo_industrious.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_Industrious)}">How Industrious Office gets better deals and guest satisfaction.</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_WDS)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/WP_logo.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_WDS)}">Worldwide properties implement the Booking Ninjas system for digital properties management</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_CTY)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/Logo_CTY_books.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_CTY)}">CTY Books takes initiative in digital hotel management with Booking Ninjas</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/HFTP_Logo.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}">HTFP improves systematic engagement, workflow, and operational speed...</apex:outputLink>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

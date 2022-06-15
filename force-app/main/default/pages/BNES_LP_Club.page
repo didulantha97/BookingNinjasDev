@@ -1,0 +1,163 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg4.jpg)');
+                    $('.wrapper').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg.jpg)');
+                });
+            </script>
+        
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Software de Gestión de Restaurantes - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/Flat_MacBook4.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Software de gestión de clubes de campo</h1>
+                                <p>Fácil de instalar, fácil de usar, la mejor ROI en el mercado</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <p>Nuestros sistemas de gestión de clubes de campo es una herramienta de gestión todo en uno que le ayudará a eliminar y optimizar tareas administrativas de su carga de trabajo para ahorrarle tiempo y dinero. Normalmente, se compone de un creador de sitios webs, una base de datos de contactos online, un directorio online de miembros, un sistema de comunicación, un sistema de reservas, un sistema de finanzas y pagos, una plataforma de eventos, y mucho más. La mayoría de las soluciones de sistemas de clubes de campo incluyen funcionalidades como:</p>
+                        <p><strong>Página web:</strong> crear y actualizar la página web de su club de campo con poco o ningún conocimiento tecnológico.</p>
+                        <p><strong>Eventos:</strong> crear fácilmente y promocionar lecciones, eventos, y alquileres, con un registro online, seguimiento de asistencia, y un procesamiento de pagos</p>
+                        <p><strong>Pagos:</strong> automatice la renovación de la membresía, registros y pagos.</p>
+                        <p><strong>Base de datos:</strong> mantén registros detallados de miembros, instructores, padres, y registros administrativos en una base de datos online fácil de buscar y de filtrar.</p>
+                        <p><strong>Correos electrónicos:</strong> envíe newsletters profesionales y comunicaciones por correo electrónico a sus miembros.</p>
+                        <p><strong>Iniciar sesión como miembro:</strong> permita a los miembros iniciar sesión en su página web para acceder a recursos exclusivos y pagar a través de la página web.</p>
+                        <p>Si quiere reducir el tiempo que gasta en la oficina administrando su club, los sistemas de gestión de clubes de campo serán la solución. Estos sistemas le proporcionarán una página web excelente, una manera para que sus miembros paguen online, y automatizará su trabajo administrativo mientras se centra en lo realmente importante: sus miembros.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class=" wow fadeInUp">
+                                <h3 class="text_center">¿POR QUÉ BOOKING NINJAS?</h3>
+                                <p>Empezar o gestionar un club es una de las tareas más desafiantes, muchas de las obligaciones que supone dirigir un club como la gestión de la membresía, las facturaciones, la programación del trabajo de la plantilla, gestión de inventario y muchas más, gastan mucho tiempo.</p>
+                                <p>De modo que, si usted es propietario de un club y busca aumentar su número de miembros e incrementar ingresos, es hora de transformar sus métodos tradicionales y hacer un simple cambio en su negocio mediante la adopción de un método automatizado para gestionar las operaciones de su club. Esto le permitirá disponer de más tiempo libre que nunca antes.</p>
+                                <p>Con el aumento de una competencia mejorada, muchos clubes líderes están reflexionando sobre la elección del mejor sistema para gestionar sus crecientes operaciones. Existen muchos sistemas de gestión de clubes automatizados disponibles en el mercado de los que elegir, pero los propietarios deberían buscar un software flexible que se ajuste a las necesidades de sus empresas. Entonces, ¿por qué razón alguien querría un software sólido de gestión de clubes?</p>
+                                <p>Un sistema automatizado ayudaría a los clubes de campo grandes o residenciales con sus actividades diarias sin esfuerzo alguno, reducir los costes generales del funcionamiento del club, y mejorar la comunicación entre departamentos, además de ofrecer una eficiencia general. Enumerados abajo encontrará los beneficios de usar un sistema integrado de gestión de clubes:</p>
+                                <p><strong>Gestión de membresía eficiente.</strong> La función central de un sistema automatizado de gestión de clubes incluye un módulo sólido de gestión de miembros centrado en la importancia de los datos del cliente. Usted puede seguir fácilmente los datos en crecimiento de sus miembros gracias a funciones como nuevos registros, renovaciones, cancelaciones, entrada al club, etc. desde un único lugar. Gestione la membresía mensual y permita invitados directamente desde un panel de control fácil de usar.</p>
+                                <p><strong>Programación de eventos.</strong> Crear y actualizar una programación de eventos requiere tan solo unos minutos en un sistema integrado de gestión de clubes. Ahora puede programar los próximos conciertos, eventos y citas con la misma flexibilidad con la que necesita gestionar facturas, cotizaciones e itinerarios. Puede integrar el sistema óptimamente desde su sitio web o página de Facebook junto con una función de registro online para eventos que le ayudará a mostrar al mundo sus eventos y ganar popularidad sin esfuerzo alguno. También incluye un calendario semanal o mensual que permitirá a su equipo estar al día.</p>
+                                <p><strong>Gestión de hoteles.</strong> La mayoría de las soluciones de sistemas inteligentes también incluyen gestión de hoteles, un módulo de gestión de inventario junto con un poderoso sistema POS y una funcionalidad completamente integrada de gestión diseñada para superar las necesidades de los operadores del club gracias a herramientas para cargos a cuenta, reservas de cena y mucho más.</p>
+                                <p><strong>Sistema online de reservas.</strong> Usted puede ofrecer ahora acceso a los servicios del club a sus miembros los siete días de la semana, las veinticuatro horas del día, gracias a un módulo integrado y receptivo de reservas online, incluido en la solución del sistema de gestión del club. Los miembros pueden ahora reservar cualquier instalación, como pistas, piscinas, comedores, registro de eventos, reservas de habitaciones y más desde cualquier sitio, en cualquier momento.</p>
+                                <p><strong>Pagos online.</strong> Los miembros pueden ahora pagar sobre la marcha gracias a esta web automatizada de gestión del club y también a través de aplicaciones móviles. El sistema permite a los miembros ver y pagar los gastos impagados o facturas. También hay una función de gestión de recordatorios para recordar automáticamente a los miembros de cualquier impago, cualquier evento próximo, para cada renovación, etc. Las alertas y notificaciones automáticas o mensajería en la aplicación se asegurará de que sus miembros nunca se pierdan cualquier balance de pagos o eventos. El sistema incluye contabilidad y facturación, marketing, ventas y relaciones con miembros actuales y potenciales. La solución también ofrece capacidades de redes sociales, complementando a las ya incorporada funcionalidad diseñada, específicamente, para estrategias de marketing eficientes y dirigidas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class=" wow fadeInUp">
+                                <h3 class="text_center">FUNCIONES QUE REALMENTE QUIERE EN UN PMS</h3>
+                                <p>Tanto si diriges un club de campo, un club de golf, un club deportivo u otro tipo de club público o privado, lo más probable es que ya posea un sistema de gestión de membresía para seguir el CRM de sus miembros, directorios, sitios de webs de negocios, facturaciones y cuentas. Pero estas aplicaciones no tienen, en circunstancias normales, funciones que puedan permitirle adecuadamente a gestionar por completo otras fuentes importantes de ingresos - eventos especiales, banquetes y/o ventas del grupo - permitiéndole depender de otras herramientas menos eficientes como hojas de cálculo y correos electrónicos para manejar estos datos.</p>
+                                <p>Hay varios sistemas de gestión que pueden ayudar a clubes como el suyo a optimizar operaciones de gestión de su banquete, unas son más soluciones todo en uno, mientras que otras tienen distintas fortalezas en áreas específicas, entonces, ¿por qué debería elegir Booking Ninjas? Para ayudarle a responder a su pregunta, aquí hay ocho funciones que el sistema Booking Ninjas usa para garantizar que usted consiga las herramientas y funcionalidades que necesita.</p>
+                                <p><strong>Ajustes personalizados y uso flexible.</strong> Algo que debería ser cualquier sistema de gestión de clubes de campos es fácil de usar. La interfaz debería ser intuitiva y no requerir una larga curva de aprendizaje para funcionar. Idealmente, debería estar basado en la nube para que no tenga que instalar o mantenerlo en su ordenador local y para que también pueda usarlo en cualquier dispositivo - incluyendo smartphones y tablets. Asegúrese que la aplicación es completamente compatible con el proveedor, con soporte para clientes a través de correo electrónico, chat y/o teléfono y que ofrece el mismo tipo de programa de incorporación y entrenamiento. También asegúrese que la empresa otorgue prioridad a la seguridad de datos y haya tomado precauciones contra violaciones. Finalmente, la aplicación debería permitirle crear plantillas reutilizables para cosas que use una y otra vez - como paquetes, partidas de alquileres o equipos, proposiciones, facturas, listas de tareas, etc.</p>
+                                <p><strong>CRM y gestor de correo electrónico + seguimiento principal.</strong> Sus esfuerzos de ventas son sólo tan buenos como las ventas CRM que esté usando, así que asegúrese que el sistema de gestión de eventos del club le permita seguir perspectivas y establecer recordatorios para seguimientos. Las plataformas de gestión todo en uno también incluirán algún tipo de herramienta de comunicación a través de correo electrónico que integra sus existentes direcciones de correos electrónicos o plataforma y le permite seguir todos los correos electrónicos relacionados con los eventos de su negocio.</p>
+                                <p><strong>Procesamiento de eventos y órdenes de catering.</strong> Cuando está al teléfono con un potencial cliente, lo última cosa que quiere hacer es luchar por tomar nota de la información. La aplicación de gestión de clubes que elija para administrar sus eventos, debería tener un formulario de ingreso intuitivo así como herramientas para seguir la información de los pedidos de comidas y bebidas y crear propuestas y facturas de los datos que haya almacenado. Funciones adicionales pueden incluir la habilidad para crear planes de distribución de habitaciones para enseñar lo esperado, así como descargar coloridos menús F&amp;B y órdenes de banquetes al vistazo.</p>
+                                <p><strong>Reservas y calendarios de eventos.</strong> Tener un sistema de reserva de localizaciones fiable, quizás sea la función más importante en términos de asegurar que no reserve dos veces eventos, y para que pueda ver fácilmente la disponibilidad de habitaciones y espacios. Los calendarios de eventos no solo siguen las reservas del salón de baile, salas de reuniones, patios y comedores privados, pero también pueden permitirle programar tours, guías, citas, reservas de cenas, y actividad como lecciones y seminarios o clases. </p>
+                                <p><strong>Integraciones con otras aplicaciones.</strong> Ya que los clubes usan normalmente múltiples sistemas para gestionar distintos tipos de datos, usted debería asegurarse de que el sistema de eventos que elija finalmente, pueda integrarse con otras aplicaciones que use.</p>
+                                <p><strong>Gestión de clientes, plantilla y proveedores.</strong> Asignar a su plantilla y proveedores a sus reservas de banquetes y tener la habilidad de gestionar proveedores de eventos y miembros del equipo, es otra capacidad importante que buscar. Idealmente, el sistema de gestión del club le permitirá crear recordatorios y notificaciones para tareas de la plantilla y de los proveedores, y proporcionarle con herramientas de programación para que sepan cuándo y qué deben hacer durante el evento.</p>
+                                <p><strong>Informes y documentos marcados.</strong> Los informes completos y paneles de control le permitirán echar un vistazo fácilmente a las reservas de eventos de su club, así como a los ingresos asociados, listas de clientes y previsiones, y cuentas por pagar. Los documentos marcados como propuestas y facturas con el logo de su club y sus colores tendrán la apariencia de documentos profesionales y vistosos que podrá entregar a sus clientes y que causarán una duradera impresión, llevando a repetir ventas y eventos.</p>
+                                <p>Como propietario de una empresa, ¿obtiene todas estas cosas de su actual sistema de gestión de clubes y compañía de servicios de facturación? Si no es así, quizás sea hora de reevaluar sus herramientas actuales y determinar qué es más importante para el retorno de la inversión y éxito general de su negocio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <h3 class="text_center">Tres pasos para empezar</h3>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Software de Gestión de Restaurantes - 2" class="wow fadeInRight" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration4.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <dl>
+                                <h3>Ponerse en contacto:</h3>
+                                <dd>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al (907) 600-2345 para agilizar el proceso.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Importe sus datos</h3>
+                                <dd>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Láncese al éxito</h3>
+                                <dd>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class=" wow fadeInUp" >
+                        <h3 class="text_center">La mejor opción para su negocio</h3>
+                        <p>El sistema de Booking Ninjas está diseñado para ayudarle a alcanzar sus objetivos empresariales sin los contratiempos familiares a la mayoría de los sistemas de gestión. Nosotros ofrecemos herramientas de alta calidad con el fin de proporcionarles a ustedes un proceso de gestión sin problemas para el personal y una plataforma que proporciona un servicio excepcional de atención al cliente a sus huéspedes.</p>
+                        <p>Nos interesa la productividad, la experiencia del cliente y los beneficios para el usuario. Por esa razón ofrecemos paquetes muy útiles como parte de nuestro proceso de implementación. Nuestra plataforma de desarrollo y personalización le ayuda a usted a incluir paquetes específicos y a eliminar los que actualmente no desee. En otras palabras, usted va a obtener exactamente lo que está buscando, y mejor.</p>
+                        <p>Nosotros hacemos negocios a nivel internacional. Desde Norteamérica, hasta Europa y Asia, estamos interesados en ofrecer excelencia absoluta.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/Country_Clubs_icon-bg.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Software de Gestión de Restaurantes - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/Country_Clubs_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Gestión de clubes fácil. Desde</p>
+                                        <p><b>$10</b> por miembro al mes</p>
+                                        <p>Haga click&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Pricing)}">aquí</apex:outputLink> para información de precios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">Prueba el piloto hoy</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,452 @@
+<apex:page standardController="Financial_Account__c" extensions="AccountingMainController" >
+      <c:common_includes_accounting /> 
+      <style>
+          .clear{
+              clear:both;
+          }
+          .InfoBox{
+          background-color:#fff;
+              width:150px;
+              border: 1px solid #b4b4b4;
+              display: inline-block;
+              margin: 10px;
+              padding:15px;
+              text-align: center;
+          }
+          
+          .itemsToReconcile{
+              font-size:30px;
+              color:#91be0a;
+              text-align: center;
+          }
+          
+          .balance{
+              font-size:20px;
+              color:#91be0a;
+              text-align: center;
+          }
+          
+          /*Tabs*/
+          .activeTab {background-color: #1797C0;font-size:15px; color:#fff; background-image:none}
+          .inactiveTab { background-color: lightgrey; color:#fff;font-size:15px; background-image:none}
+          
+          /*PopUP*/
+          .custPopup{
+            background-color: white;
+            border:2px solid #b4b4b4;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: fixed;
+            height:auto;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 500px;
+            margin-left: -250px;
+            top:10%;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }  
+        
+          
+      </style>   
+      <apex:form >
+
+      <apex:sectionHeader title="Accounting" subtitle="Reconciliation"/>
+      <apex:pageBlock id="PAGE_BLOCK">
+        <apex:pageBlockSection >
+          <a href="YodleeImportData" target="_blank">Import transactions</a>
+
+        </apex:pageBlockSection>
+          <apex:pageMessages id="msgBox"></apex:pageMessages>
+            <apex:repeat var="Account"  value="{!financialAccounts}" id="FinancialAccounts">
+               <div class="InfoBox">
+                   <apex:commandButton action="{!selectFAccount}" value="{!Account.name}" style="width:100%;" reRender="TRANSACTIONS_BLOCK">
+                       <apex:param name="param1" assignTo="{!selectedFAccount}" value="{!Account.Id}"/>
+                   </apex:commandButton>
+                   <apex:outputLabel >Items To Reconcile:</apex:outputLabel>
+                   <apex:outputLabel id="ItemsToReconcileVal" styleClass="itemsToReconcile" value="{!Account.Items_To_Reconcile__c}"></apex:outputLabel>
+                   <apex:outputLabel >Total Balance:</apex:outputLabel>
+                   <apex:outputLabel id="TotalBalanceVal"  styleClass="balance">${!Account.Balance__c}</apex:outputLabel>
+               </div>
+           </apex:repeat>    
+           <apex:outputPanel id="TRANSACTIONS_BLOCK">
+            <apex:pageBlock rendered="{!selectedFAccount != null}">
+            <apex:pageBlockSection columns="2" >
+                  <apex:inputField value="{!booking.Start_Date__c}" required="false"/>
+                  <apex:inputField value="{!booking.End_Date__c}" required="false"/>
+                  <apex:inputField value="{!accountLIDummy.Description__c}" />
+                  <apex:inputField value="{!accountLIDummy.Detailed_Category__c}" />
+                  <apex:inputField value="{!accountLIDummy.Transaction_Amount__c}" />
+                  <apex:inputField value="{!accountLIDummy.Type__c}" />
+            </apex:pageBlockSection>
+              <center>
+                  <apex:commandButton action="{!search}" value="Search" reRender="TAB_PANEL"/>              
+              </center>
+          <apex:pageBlockSection columns="1" >
+                <apex:tabPanel switchType="client" value="{!tabInFocus}" activeTabClass="activeTab" inactiveTabClass="inactiveTab" id="TAB_PANEL">
+                    <apex:tab id="NewTransactionsT" label="New Transactions" >
+                      <apex:outputPanel id="NewTransactions">
+                        <apex:pageBlockTable var="s" value="{!newTransactionList}">
+                            <apex:column headerValue="Name" style="width:100px;">
+                              <a href="/{!s.Id}" target="_blank">{!s.Name}</a>
+                            </apex:column>
+                            <apex:column value="{!s.Date__c}"/>
+                            <apex:column value="{!s.Description__c}" style="width:550px;"/>
+                            <apex:column value="{!s.Status__c}"/>
+                            <apex:column value="{!s.Detailed_Category__c}"/>
+                            <apex:column value="{!s.Transaction_Amount__c}"/>
+                            <apex:column value="{!s.Type__c}"/>
+                            <apex:column >
+                                <apex:commandButton value="Reconcile" action="{!popupSelector}" rerender="ReconcileSalePopUp,ReconcileExpensePopUp">
+                                        <apex:param name="selectedFAccountLineItem" assignTo="{!selectedFAccountLineItem}" value="{!s.id}"/>
+                                </apex:commandButton><br/><br/> 
+                                
+                            </apex:column>
+                         </apex:pageBlockTable>
+                        <br/>
+                        <table width="100%">
+                          <tr> 
+                            <td> 
+                              <apex:outputLabel value="Records amount: {!newTranactionsControl.resultSize}"/><br/>
+                            </td>
+                            <td> 
+                              <apex:commandButton value="Previous" action="{!newTranactionsControl.previous}" reRender="NewTransactions" />
+                            <apex:commandButton value="Next" action="{!newTranactionsControl.next}" reRender="NewTransactions" />
+                            </td>
+                            <td> 
+                              <apex:outputLabel value="Page {!newTranactionsControl.pageNumber} of {!CEILING(newTranactionsControl.resultSize / newTranactionsControl.pageSize)}"/>
+                            </td>
+                          </tr>
+                        </table>
+                  </apex:outputPanel>
+                           
+                    </apex:tab>
+                    <apex:tab id="ReconciledT" label="Reconciled" >
+                      <apex:outputPanel id="RECONCILED_PANEL">                    
+                         <apex:pageBlockTable var="s" value="{!reconciledList}">
+                            <apex:column headerValue="Name" style="width:100px;">
+                              <a href="/{!s.Id}" target="_blank">{!s.Name}</a>
+                            </apex:column>
+                            <apex:column value="{!s.Date__c}"/>
+                            <apex:column value="{!s.Description__c}" style="width:550px;"/>
+                            <apex:column value="{!s.Status__c}"/>
+                            <apex:column value="{!s.Detailed_Category__c}"/>
+                            <apex:column value="{!s.Transaction_Amount__c}"/>
+                            <apex:column >
+                                <apex:commandButton value="Undo" action="{!undoReconciliation}" rerender="TRANSACTIONS_BLOCK,ItemsToReconcileVal,TotalBalanceVal,msgBox">
+                                     <apex:param name="selectedFAccountLineItem" assignTo="{!selectedFAccountLineItem}" value="{!s.id}"/>
+                                </apex:commandButton>  
+                            </apex:column>
+                         </apex:pageBlockTable>
+                        <table width="100%">
+                          <tr> 
+                            <td> 
+                              <apex:outputLabel value="Records amount: {!reconciledControl.resultSize}"/><br/>
+                            </td>
+                            <td> 
+                              <apex:commandButton value="Previous" action="{!reconciledControl.previous}" reRender="RECONCILED_PANEL" />
+                            <apex:commandButton value="Next" action="{!reconciledControl.next}" reRender="RECONCILED_PANEL" />
+                            </td>
+                            <td> 
+                              <apex:outputLabel value="Page {!reconciledControl.pageNumber} of {!CEILING(reconciledControl.resultSize / reconciledControl.pageSize)}"/>
+                            </td>
+                          </tr>
+                        </table>
+                      </apex:outputPanel>
+                    </apex:tab>
+                    <apex:tab id="ExcludedT" label="Excluded" >
+                      <apex:outputPanel id="ExcludedTab">                    
+                         <apex:pageBlockTable var="s" value="{!excludedList}">
+                            <apex:column headerValue="Name" style="width:100px;">
+                              <a href="/{!s.Id}" target="_blank">{!s.Name}</a>
+                            </apex:column>
+                            <apex:column value="{!s.Date__c}"/>
+                            <apex:column value="{!s.Description__c}" style="width:550px;"/>
+                            <apex:column value="{!s.Status__c}"/>
+                            <apex:column value="{!s.Detailed_Category__c}"/>
+                            <apex:column value="{!s.Transaction_Amount__c}"/>
+                            <apex:column >
+                                <apex:commandButton value="Undo" action="{!undoReconciliation}" rerender="TRANSACTIONS_BLOCK,ItemsToReconcileVal,TotalBalanceVal,msgBox">
+                                     <apex:param name="selectedFAccountLineItem" assignTo="{!selectedFAccountLineItem}" value="{!s.id}"/>
+                                </apex:commandButton>     
+                            </apex:column>
+                         </apex:pageBlockTable>
+                        <table width="100%">
+                          <tr> 
+                            <td> 
+                              <apex:outputLabel value="Records amount: {!excludedControl.resultSize}"/><br/>
+                            </td>
+                            <td> 
+                              <apex:commandButton value="Previous" action="{!excludedControl.previous}" reRender="ExcludedTab" />
+                            <apex:commandButton value="Next" action="{!excludedControl.next}" reRender="ExcludedTab" />
+                            </td>
+                            <td> 
+                              <apex:outputLabel value="Page {!excludedControl.pageNumber} of {!CEILING(excludedControl.resultSize / excludedControl.pageSize)}"/>
+                            </td>
+                          </tr>
+                        </table>
+                      </apex:outputPanel>
+                    </apex:tab>
+                
+                </apex:tabPanel>    
+          </apex:pageBlockSection>
+          </apex:pageBlock>
+         </apex:outputPanel>
+            
+            <apex:outputPanel id="ReconcileSalePopUp">
+            <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!salePopUp.displayReconcilePopUp}"/>
+                <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!salePopUp.displayReconcilePopUp}">
+                    <h1>Reconcile Sale Transaction</h1><br/>
+                 
+                    <div class="ReconcileFormBox" style="width:440px;border:1px solid #b4b4b4;padding:20px;margin:10px;">
+                        Reconcile selected item:<br/> 
+                        <div class="GeneralItemInfo" style="float:left;">
+                            <apex:outputLabel value="{!ItemToSplitTemp.Name}" />
+                        </div>
+                        <div class="GeneralItemInfo" style="float:right;">
+                            <apex:outputLabel value="${!ItemToSplitTemp.Transaction_Amount__c}" />
+                        </div>
+                        <div class="clear"/>
+                        <div class="ReconcileFormLeftBox" style="float:left;width: 50%;">
+                            <apex:outputLabel value="Payee Account" />
+                            <apex:inputField value="{!sale.Payee_Account__c}"/>
+                        </div>  
+                        <br/>
+                        <div style="width: 50%;">
+                            <apex:outputLabel value="Payee Contact" />
+                            <apex:inputField value="{!sale.Payee_Contact__c}" />
+                        </div>                          
+                        <div class="ReconcileFormLeftBox2" >
+                            <apex:outputLabel value="Category"/>
+                                <apex:selectList value="{!DetailedCategorySelection}" multiselect="false" size="1" style="width:200px;" >
+                                    <apex:selectOptions value="{!CategoryListDependent}"></apex:selectOptions> 
+                                </apex:selectList>
+                            <br/>
+                        </div>
+                        <div class="clear"/>
+                        <div class="MemoBox">
+                            <apex:outputLabel >Memo:</apex:outputLabel>
+                            <apex:inputTextarea value="{!sale.Description__c}" cols="65"/>
+                        </div>
+                    </div>
+                    <apex:commandButton value="Close" action="{!salePopUp.closeReconcilePopUp}" rerender="ReconcileSalePopUp,NewTransactions"/>
+                    <apex:commandButton value="Reconcile" action="{!reconcileItem}" reRender="msgBox,ReconcileSalePopUp,NewTransactions,RECONCILED_PANEL,ItemsToReconcileVal,TotalBalanceVal"/>
+                    <apex:commandButton value="Exclude" action="{!excludeItem}"  reRender="msgBox,ReconcileSalePopUp,NewTransactions,ExcludedTab,ItemsToReconcileVal,TotalBalanceVal"/> 
+                    <apex:commandButton value="Split Item" action="{!SplitItemPopupControl}" rerender="ReconcileSalePopUp,SplitSaleReconcilePopUp,SplitExpenseReconcilePopUp"/> 
+                </apex:outputPanel>
+            </apex:outputPanel>
+            
+            <apex:outputPanel id="ReconcileExpensePopUp">
+            <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!expensePopUp.displayReconcilePopUp}"/>
+                <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!expensePopUp.displayReconcilePopUp}">
+                    <h1>Reconcile Expense Transaction</h1><br/>
+                 
+                    <div class="ReconcileFormBox" style="width:440px;border:1px solid #b4b4b4;padding:20px;margin:10px;">
+                        Reconcile selected item:<br/> 
+                        <div class="GeneralItemInfo" style="float:left;">
+                            <apex:outputLabel value="{!ItemToSplitTemp.Name}" />
+                        </div>
+                        <div class="GeneralItemInfo" style="float:right;">
+                            <apex:outputLabel value="${!ItemToSplitTemp.Transaction_Amount__c}" />
+                        </div>
+                        <div class="clear"/>
+                        <div class="ReconcileFormLeftBox" >
+                            <apex:outputLabel value="Payee Account" />
+                            <apex:inputField value="{!expense.Payee_Account__c}" />
+                        </div>  
+                        <div class="ReconcileFormLeftBox" >
+                            <apex:outputLabel value="Payee Contact" />
+                            <apex:inputField value="{!expense.Payee_Contact__c}" />
+                        </div>  
+                        <div class="ReconcileFormLeftBox2" >
+                            <apex:outputLabel value="Category"/>
+                                <apex:selectList value="{!DetailedCategorySelection}" multiselect="false" size="1" style="width:200px;" >
+                                    <apex:selectOptions value="{!CategoryListDependent}"></apex:selectOptions> 
+                                </apex:selectList>
+                            <br/>
+                        </div>
+                        <div class="clear"/>
+                        <div class="MemoBox">
+                            <apex:outputLabel >Memo:</apex:outputLabel>
+                            <apex:inputTextarea value="{!expense.Description__c}" cols="65"/>
+                        </div>
+                    </div>
+                    <apex:commandButton value="Close" action="{!expensePopUp.closeReconcilePopUp}" rerender="ReconcileExpensePopUp,NewTransactions"/>
+                    <apex:commandButton value="Reconcile" action="{!reconcileItem}" reRender="msgBox,ReconcileExpensePopUp,NewTransactions,RECONCILED_PANEL,ItemsToReconcileVal,TotalBalanceVal"/>
+                    <apex:commandButton value="Exclude" action="{!excludeItem}" reRender="NewTransactions,ExcludedTab,ReconcileExpensePopUp,ItemsToReconcileVal"/> 
+                    <apex:commandButton value="Split Item" action="{!SplitItemPopupControl}" rerender="ReconcileExpensePopUp,SplitSaleReconcilePopUp,SplitExpenseReconcilePopUp"/> 
+                </apex:outputPanel>
+            </apex:outputPanel>
+            
+            <apex:outputPanel id="SplitSaleReconcilePopUp">
+                <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!SplitSaleItemPopup.displaySplitReconcilePopUp}"/>
+                <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!SplitSaleItemPopup.displaySplitReconcilePopUp}">
+                    <apex:pageMessages id="splitpopupMsg"></apex:pageMessages>
+                    <h1>Split Sale Item</h1>
+                                                          
+                    <div class="ReconcileFormBox" style="width:440px;height:auto; border:1px solid #b4b4b4;padding:20px;margin:10px;">
+                        <div class="GeneralItemInfo" style="float:left;">
+                            <apex:outputLabel value="{!ItemToSplitTemp.Name}" title="Name"/>
+                        </div>
+                        <div style="float:right;">
+                            <apex:outputLabel >Amount left to split:</apex:outputLabel>
+                            <apex:outputLabel id="leftSaleToSplit" value="${!totalLeft}" style="color:#91be0a;font-size:20px;"/>
+                        </div>
+                        <!--Variable tag is added in order to know which item from the splitted list should be removed-->
+                        <apex:outputPanel id="splittedSaleItemsBlock">
+                          <apex:variable value="{!0}" var="rowNumber" />
+                          <apex:pageBlockTable value="{!splittedSaleList}" var="item">
+                              <apex:column >
+                                  <apex:facet name="header">Id</apex:facet>
+                                  <apex:variable var="rowNumber" value="{!rowNumber + 1}" />
+                                  <apex:outputlabel value="{!rowNumber}" /> 
+                              </apex:column>
+                              <apex:column value="{!item.Detailed_Category__c}" />
+                              <apex:column >
+                                  <apex:facet name="header">Desctiption</apex:facet>
+                                  <apex:outputlabel value="{!item.Description__c}" /> 
+                              </apex:column>
+                              <apex:column >
+                                  <apex:facet name="header">Amount</apex:facet>
+                                  <apex:outputlabel value="{!item.Amount__c}" /> 
+                              </apex:column>
+                              <apex:column >
+                                  <apex:commandButton value="X" action="{!RemoveSplittedItem}" reRender="splittedSaleItemsBlock,leftSaleToSplit">
+                                      <apex:param name="p1" value="{!rowNumber}" assignTo="{!numberOfRowToRemove}"/>
+                                  </apex:commandButton>
+                              </apex:column>
+                          </apex:pageBlockTable>    
+                        </apex:outputPanel>            
+                        
+                        <div class="clear"/>
+                         <div class="col-md-12">
+                            <div class="ReconcileFormLeftBox" >
+                                <apex:outputLabel value="Payee Account" />
+                                <apex:inputField value="{!splittedSale.Payee_Account__c}"/> 
+                            </div>  
+                            <div class="ReconcileFormLeftBox" >
+                                <apex:outputLabel value="Payee Contact" />
+                                <apex:inputField value="{!splittedSale.Payee_Contact__c}"/> 
+                            </div>  
+                            <div class="col-md-6 ReconcileFormLeftBox2" style="float:left">
+                                <apex:outputLabel value="Category"/>
+                                    <apex:selectList value="{!DetailedCategorySelection}" multiselect="false" size="1" style="width:200px;" >
+                                        <apex:selectOptions value="{!CategoryListDependent}"></apex:selectOptions> 
+                                    </apex:selectList>
+                                    <!--<apex:outputText id="CategorySelection" value="{!DetailedCategorySelection}"></apex:outputText> -->
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="clear"/>
+                        <div class="col-md-12">
+                            <div class="MemoBox" style="float:right">
+                            <apex:outputLabel >Memo:</apex:outputLabel>
+                            <apex:inputTextarea value="{!splittedSale.Description__c}" cols="65"/>
+                            </div>
+                             <div class="SplitAmount" style="float:left;width:100px">
+                                <apex:outputLabel >Amount:</apex:outputLabel>
+                                <apex:inputText value="{!splittedSale.Amount__c}"  id="splitSaleAmount" /> 
+                            </div>
+                        </div>
+                        <div class="clear"/>
+                        <apex:commandButton value="Split" action="{!AddSplittedItem}" rerender="splittedSaleItemsBlock,leftSaleToSplit"/>
+                    </div>
+                    <apex:commandButton value="Close" action="{!CloseSplitPopup}" rerender="NewTransactions,SplitSaleReconcilePopUp"/>
+                    <apex:commandButton value="Reconcile" action="{!reconcileSplitted}" reRender="NewTransactions,RECONCILED_PANEL,SplitSaleReconcilePopUp,ItemsToReconcileVal,TotalBalanceVal"/>
+                    <!--<apex:commandButton value="Exclude Splitted" action="{!excludeItem}"/>-->
+                </apex:outputPanel>
+            </apex:outputPanel>
+          
+            <apex:outputPanel id="SplitExpenseReconcilePopUp">
+                <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!SplitExpenseItemPopup.displaySplitReconcilePopUp}"/>
+                <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!SplitExpenseItemPopup.displaySplitReconcilePopUp}">
+                    <apex:pageMessages id="splitExpensepopupMsg"></apex:pageMessages>
+                    <h1>Split Expense Item</h1>
+                                                          
+                    <div class="ReconcileFormBox" style="width:440px;height:auto; border:1px solid #b4b4b4;padding:20px;margin:10px;">
+                        <div class="GeneralItemInfo" style="float:left;">
+                            <apex:outputLabel value="{!ItemToSplitTemp.Name}" title="Name"/>
+                        </div>
+                        <div style="float:right;">
+                            <apex:outputLabel >Amount left to split:</apex:outputLabel>
+                            <apex:outputLabel id="leftExpenseToSplit" value="${!totalLeft}" style="color:#91be0a;font-size:20px;"/>
+                        </div>
+                        <!--Variable tag is added in order to know which item from the splitted list should be removed-->
+                        <apex:variable value="{!0}" var="rowNumber" />
+                       
+                        <apex:pageBlockTable id="splittedExpenseItemsTable" value="{!splittedExpenseList}" var="item">
+                            <apex:column >
+                                <apex:facet name="header">Id</apex:facet>
+                                <apex:variable var="rowNumber" value="{!rowNumber + 1}" />
+                                <apex:outputlabel value="{!rowNumber}" /> 
+                            </apex:column>
+                            <apex:column value="{!item.Detailed_Category__c}" />
+                            <apex:column >
+                                <apex:facet name="header">Desctiption</apex:facet>
+                                <apex:outputlabel value="{!item.Description__c}" /> 
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">Amount</apex:facet>
+                                <apex:outputlabel value="{!item.Amount__c}" /> 
+                            </apex:column>
+                            <apex:column >
+                                <apex:commandButton value="X" action="{!RemoveSplittedItem}" reRender="splittedExpenseItemsTable,leftExpenseToSplit">
+                                    <apex:param name="p1" value="{!rowNumber}" assignTo="{!numberOfRowToRemove}"/>
+                                </apex:commandButton>
+                            </apex:column>
+                        </apex:pageBlockTable>                 
+                        <hr/>
+                        <div class="clear"/>
+                         <div class="col-md-12">
+                            <div class="ReconcileFormLeftBox" >
+                                <apex:outputLabel value="Payee Account" />
+                                <apex:inputField value="{!splittedExpense.Payee_Account__c}" /> 
+                            </div>  
+                            <div class="ReconcileFormLeftBox" >
+                                <apex:outputLabel value="Payee Contact" />
+                                <apex:inputField value="{!splittedExpense.Payee_Contact__c}" /> 
+                            </div>  
+                            <div class="ReconcileFormLeftBox2" style="float:left">
+                                <apex:outputLabel value="Category"/>
+                                    <apex:selectList value="{!DetailedCategorySelection}" multiselect="false" size="1" style="width:200px;" >
+                                        <apex:selectOptions value="{!CategoryListDependent}"></apex:selectOptions> 
+                                    </apex:selectList>
+                                    <!--<apex:outputText id="CategorySelection" value="{!DetailedCategorySelection}"></apex:outputText> -->
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="clear"/>
+                        <div class="col-md-12">
+                            <div class="MemoBox" style="float:right">
+                            <apex:outputLabel >Memo:</apex:outputLabel>
+                            <apex:inputTextarea value="{!splittedExpense.Description__c}" cols="65"/>
+                            </div>
+                             <div class="SplitAmount" style="float:left;width:100px">
+                                <apex:outputLabel >Amount:</apex:outputLabel>
+                                <apex:inputText value="{!splittedExpense.Amount__c}"  id="splitExpenseAmount" /> 
+                            </div>
+                        </div>
+                        <div class="clear"/>
+                        <apex:commandButton value="Split" action="{!AddSplittedItem}" reRender="SplitExpenseReconcilePopUp,splittedExpenseItemsTable,leftExpenseToSplit"/>
+                    </div>
+                    <apex:commandButton value="Close" action="{!CloseSplitPopup}" reRender="SplitExpenseReconcilePopUp,NewTransactions"/>
+                    <apex:commandButton value="Reconcile" action="{!reconcileSplitted}" reRender="SplitExpenseReconcilePopUp,NewTransactions,RECONCILED_PANEL,ItemsToReconcileVal,TotalBalanceVal"/>
+                    <!--<apex:commandButton value="Exclude Splitted" action="{!excludeItem}"/>-->
+                </apex:outputPanel> 
+            </apex:outputPanel>
+        </apex:pageBlock>
+      </apex:form>
+          
+</apex:page>

@@ -1,0 +1,219 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <div class="customer-top">
+                <div class="container">
+                    <nav class="customer__nav">
+                        <ul>
+                            <li class="active"><a href="#tab1">Full Service Hotel</a></li>
+                            <li><a href="#tab2">Property Management</a></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </nav>
+                    <div class="customer-top__text active" id="tab1">
+                        <div class="customer-top__left">
+                            <h2>How Norwalk Inn Eliminated Slow Service?</h2>
+                            <h5>And got the tools to  realize their growth potential at the same time. </h5>
+                            <p>
+                                Norwalk Inn and Conference center is less than an hour’s drive from New York City. They offer 116 rooms which include 10 luxury suites, conference center and two restaurants.
+                            </p>
+                            <p>
+                                Their old legacy property management system (PMS) and point of sale (PoS) wasn’t cutting it anymore. They had a thirst for growth - a need for efficiency.
+                            </p>
+                            <p>
+                                Thanks to the slow systems, rush periods saw the lines grow too long. Frustrated customers fill the lobby and some even start to leave. Not great for growth.
+                            </p>
+                            <p>
+                                And lack of modernization frustrated employees, which also had an impact on guest experience and growth.
+                            </p>
+                            <p>
+                                Slow custom reporting (up to three weeks) made quick, important decisions near impossible to get right. And slow and expensive modifications made adapting to to guest and employee demands harder than it should be.
+                            </p>
+                            <p>
+                                For example, they have to login in to multiple systems to receive the gds and OTA bookings. They couldnt set up auto reminders for guests. They didn’t have information on each guests’ preferences and past interactions to tailor experiences.
+                            </p>
+                            <p>
+                                They needed something that would decrease their service time and increase their daily guest capacity. To fill rooms and improve guest experience. And we helped them transition to the perfect system.
+                            </p>
+                        </div>
+                        <div class="customer-top__right">
+                            <table>
+                                <tr>
+                                    <th colspan="2">
+                                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/case.png" alt="Bookingninjas Property Management System"/>
+                                        Company Profile
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Norwalk Inn &amp; Conference Center</td>
+                                </tr>
+                                <tr>
+                                    <td>Company Size</td>
+                                    <td>70 employees</td>
+                                </tr>
+                                <tr>
+                                    <td>Industry</td>
+                                    <td>Hotel/Hospitality</td>
+                                </tr>
+                                <tr>
+                                    <td>Implemented Solutions</td>
+                                    <td>Booking Ninjas PMS and ePOS</td>
+                                </tr>
+                                <tr>
+                                    <td>Integrations</td>
+                                    <td>Channel Manager, EMV Payment Processing, Phone System, Guest Scanner</td>
+                                </tr>
+                                <tr>
+                                    <td>First Active</td>
+                                    <td>December 01, 2017</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <article>
+                            <p>
+                                <b>
+                                    They need something that would decrease their service time and increase the amount of guests they could take in on a given day. So they can increase growth and give the guests a far better experience.
+                                    Not only did they find a system that works for them, but the system carried a lot of extra benefits, as well.
+                                </b>
+                            </p>
+                        </article>
+                        <div class="customer-tags">
+                            <div class="container">
+                                <div class="customer-tags__block">
+                                    <div class="customer-tags__title">Problems Faced</div>
+                                    <ul class="customer-tags-disable">
+                                        <li>Slow and costly development.</li>
+                                        <li>Limited customization options, expensive and time consuming.</li>
+                                        <li>Reporting was a pain (formal request submission had to be made - lead time 2-3 weeks).</li>
+                                        <li>Poor guest experience.</li>
+                                    </ul>
+                                </div>
+                                <div class="customer-tags__block">
+                                    <div class="customer-tags__title">Solutions</div>
+                                    <ul>
+                                        <li>Run there business entirety on the most secure and robust cloud service.</li>
+                                        <li>Modernized and improved procedures through Booking Ninjas PMS.</li>
+                                        <li>Modernized and improved procedures through our PoS system.</li>
+                                        <li>No downtime - seamless transition causing zero disruption to business.</li>
+                                    </ul>
+                                </div>
+                                <div class="customer-tags__block">
+                                    <div class="customer-tags__title">Values/Results</div>
+                                    <ul>
+                                        <li>Improved guest experience leading to quicker growth - more in line with Norwalk Inn and customer expectations.</li>
+                                        <li>Instant reporting, allowing for quicker and more effective decision making.</li>
+                                        <li>Ability to service more guests on a given day, again increasing the growth and potential for growth.</li>
+                                        <li>Cleaner, more efficient system that saves time and money with quick, easy and embedded configuration options.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-top__text" id="tab2">
+                        <div class="customer-top__left">
+                            <h2>How World-Wide Properties capitalized on opportunity</h2>
+                            <h5>while acquiring the tools to maximize daily growth parallelly?</h5>
+                            <p>
+                                Providing over 10 years of first class service, World-Wide Properties is a full-service residential property management company. Located in South Beach’s Chic South of Fifth neighborhood, they represent the most elegant and luxurious private homes, condominiums and commercial projects in South Florida.
+                            </p>
+                            <p>
+                                With a world class sales team, they were struggling with a large number of daily operation requests from work orders, to new leases, new inquiries, within a legacy Property Management System (PMS), is challenging to say the least therefore holding them back from achieving increased growth and efficiency. They had an appetite for improved personal impact on there daily life and of course increased growth.
+                            </p>
+                            <p>
+                                The slow systems helped them in experiencing the feeling of being slow responders. Leads being generated vastly from the high-end customers, fast turnover and response time is critical and not being able to deliver the desired rate of service results in a daily loss of leads.
+                            </p>
+                            <p>
+                                Absence of modernization frustrated and confused employees, resulting in longer time-consuming processes and actions to successfully cater to one lead, affecting the customer satisfaction levels when dealing with them.
+                            </p>
+                            <p>
+                                Important and quick decisions were nearly impossible to be made. Demands and certain types of specific information requested or needed by clients or employees were harder to be met due to complicated processes and the limited access to update information in a single view across the entire company, and most importantly on the go with mobile.
+                            </p>
+                        </div>
+                        <div class="customer-top__right">
+                            <table>
+                                <tr>
+                                    <th colspan="2">
+                                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/case.png" alt="Bookingninjas Property Management System"/>
+                                        Company Profile
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>World-wide Properties</td>
+                                </tr>
+                                <tr>
+                                    <td>Company Size</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>Industry</td>
+                                    <td>Property Management</td>
+                                </tr>
+                                <tr>
+                                    <td>Implemented Solutions</td>
+                                    <td>Booking Ninjas PMS</td>
+                                </tr>
+                                <tr>
+                                    <td>First Active</td>
+                                    <td>November 2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <article>
+                            <p>
+                                <b>
+                                    They needed a software upgrade which would allow them to improve their service and something that would help them capitalize on as much leads as possible every day. This is where we came in and bridged the gap between the short-term vision and reality.
+                                </b>
+                            </p>
+                        </article>
+                        <div class="customer-tags">
+                            <div class="container">
+                                <div class="customer-tags__block">
+                                    <div class="customer-tags__title">Problems Faced</div>
+                                    <ul class="customer-tags-disable">
+                                        <li>Slow and costly development.</li>
+                                        <li>Expensive, time consuming and limited configuration.</li>
+                                        <li>Reporting was a tedious task and sometimes inaccurate.</li>
+                                        <li>Low customer/client satisfaction.</li>
+                                        <li>Longer processes and actions needed.</li>
+                                        <li>Limited access to updated, real time information.</li>
+                                        <li>Information was not portable or easily accessible.</li>
+                                    </ul>
+                                </div>
+                                <div class="customer-tags__block">
+                                    <div class="customer-tags__title">Solutions</div>
+                                    <ul>
+                                        <li>Better organised management of system for improved efficiency and faster lead response time.</li>
+                                        <li>Improved PMS system.</li>
+                                        <li>Stronger communication and relationship with clients.</li>
+                                        <li>Accessibility to updated information and trends.</li>
+                                        <li>Stronger security of information entered to the system regarding sensitive information such as payment information etc.</li>
+                                    </ul>
+                                </div>
+                                <div class="customer-tags__block">
+                                    <div class="customer-tags__title">Values/Results</div>
+                                    <ul>
+                                        <li>Satisfied customers/clients with fulfilled expectations.</li>
+                                        <li>Instant and accurate responses.</li>
+                                        <li>Maximum capitalization of leads as more clients/customers could be responded and catered to daily.</li>
+                                        <li>Reduced processes and easier access of updated information and trends.</li>
+                                        <li>Improved productivity, knowledge and efficiency of employees.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

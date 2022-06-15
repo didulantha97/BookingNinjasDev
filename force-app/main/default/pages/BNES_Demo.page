@@ -1,0 +1,77 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false"
+    applyHtmlTag="false" cache="false" controller="BNES_TemplateController">
+
+    <apex:composition template="BNES_Template">
+        <apex:define name="bn_content">
+            <main class="main">
+                <div class="calendly-main">
+                    <div class="container text_center">
+                        <!-- <h1>Programa una demo personalizada con nosotros</h1> -->
+                        <h1>{!title}</h1>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <!-- <p>Programa una reunión con nosotros para probar la demo y ver cómo Booking Ninjas puede ayudarte a modernizar tu gestión de propiedades para aumentar tus ingresos y tu eficiencia.</p> -->
+                                <h3>{!description}</h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="calendly-inline-widget" data-auto-load="false">
+                            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js">
+                            </script>
+                            <script>
+                                Calendly.initInlineWidget({
+                                    // iframe without left aside
+                                    url: 'https://calendly.com/bookingninjas_meetings/booking-ninjas-spain?hide_event_type_details=1'
+                                });
+                            </script>
+                        </div>
+                        <div class="calendly-tags">
+                            <div class="calendly-tags__item">
+                                <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/calendly-icon-1.png" />
+                                <span>Solo 45 minutos</span>
+                            </div>
+                            <div class="calendly-tags__item">
+                                <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/calendly-icon-2.png" />
+                                <span>Sin compromiso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendly-awards">
+                    <div class="container">
+                        <h2>Somos reconocidos por</h2>
+                        <div class="row justify-content-around">
+                            <div class="col-6 col-md">
+                                <div class="awards__img">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/award-1.png"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md">
+                                <div class="awards__img">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/award-2.png"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md">
+                                <div class="awards__img">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/award-3.png"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md">
+                                <div class="awards__img">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/award-4.png"/>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md">
+                                <div class="awards__img">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/award-5.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

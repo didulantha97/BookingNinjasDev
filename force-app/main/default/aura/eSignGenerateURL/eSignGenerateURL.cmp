@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId">
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="URL" type="String" />
+    <lightning:card title="">
+        <div class="slds-p-horizontal_small">
+            <aura:if isTrue="{!v.URL}">
+                <p><b>URL : </b> {!v.URL} </p>
+            </aura:if>
+            <lightning:button label="Generate URL" onclick="{! c.handleGenerate }"/>   
+        </div>
+    </lightning:card>
+</aura:component>

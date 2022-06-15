@@ -1,0 +1,26 @@
+<apex:page controller="BN_TrialSucceedController" action="{!addSuccessActions}" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+			<div class="trial-payment">
+				<div class="container">
+					<div class="row justify-content-center text_center">
+						<div class="col-md-12 col-lg-12">
+							<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/trial-payment.png" />
+							<h1>Your payment has been successfully processed.</h1><br/><br/>
+							<p style="background-color: transparent; font-size: 13pt;color: #505050;line-height: 1.47;letter-spacing: 0.5px;">Your invoice of $1 has been successfully paid.</p>
+							<p style="background-color: transparent; font-size: 13pt;color: #505050;line-height: 1.47;letter-spacing: 0.5px;">Your Booking Ninjas trial application is currently being set up and will be sent to your email in less than 24 hours.</p>
+							<p style="background-color: transparent; font-size: 13pt;color: #505050;line-height: 1.47;letter-spacing: 0.5px;">In the meantime, be sure to ask any questions you might have, to see how much the application can be of value to your business. Thanks for choosing Booking Ninjas.</p><br/><br/>
+							<div class="col-12"><a href="/" class="button">Go Home</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,157 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_EinsteinFormController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <div class="container einstein-form__container">
+                <div class="einstein-form-title">
+                  Are you ready for the future?
+                </div>
+                <div class="enstein einstein-form-content">
+                  <h6>Einstein is the solution for <br /> your property’s growth.</h6>
+                  <p>
+                    Einstein is a built-in layer  <br />
+                      to the Booking Ninjas platform <br />
+                      which grants opportunities to your <br />
+                      company which is untapped <br />
+                      in the current market situation. <br />
+                      Get in touch with us if you are interested <br />
+                      in making Einstein a part of your journey.
+                  </p>
+                </div>
+                
+                <apex:form >
+                    <div class="einstein-form einstein-form-content">
+                      <div class="form__item">
+                        <div class="form__title">How do you think AI will help you and your company to grow?</div>
+                        <ul>
+                          <li>
+                            <label>
+                            <input type="radio" name="a" />
+                            <span>A small proportion</span> </label>           
+                          </li>
+                          <li>
+                            <label>
+                            <input type="radio" name="a" />
+                            <span>Confused</span></label>
+                          </li>
+                          <li>
+                            <label>
+                            <input type="radio" name="a" />
+                            <span>A great proportion</span></label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="form__item">
+                        <div class="form__title">How and when did you first hear of Einstein AI?</div>
+                        <ul>
+                          <li>
+                            <label>
+                            <input type="radio" name="b" />
+                            <span>Friend</span> </label>           
+                          </li>
+                          <li>
+                            <label>
+                            <input type="radio" name="b" />
+                            <span>Online</span></label>
+                          </li>
+                          <li>
+                            <label>
+                            <input type="radio" name="b" />
+                            <span>Other:</span>
+                      <input type="text"  class="input-text" />
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="form__item">
+                        <div class="form__title">Have you experienced AI in any other situations?</div>
+                        <ul>
+                          <li>
+                            <label>
+                            <input type="radio" name="c" />
+                            <span>No</span> </label>           
+                          </li>
+                          <li>
+                            <label>
+                            <input type="radio" name="c" />
+                            <span>Yes, please mention where:</span>
+                      <input type="text"  class="input-text" />
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="form__item">
+                        <div class="form__title">What is the current system you are using?</div>
+                        <input type="text"  class="input-text white" />
+                      </div>
+                      <div class="form__item">
+                        <div class="form__title">Last but not least, do you trust the fact that AI will be the next big revolution?</div>
+                        <ul>
+                          <li>
+                            <label>
+                            <input type="radio" name="a" />
+                            <span>Not at all</span> </label>           
+                          </li>
+                          <li>
+                            <label>
+                            <input type="radio" name="a" />
+                            <span>Maybe</span></label>
+                          </li>
+                          <li>
+                            <label>
+                            <input type="radio" name="a" />
+                            <span>Absolutely</span></label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="einstein-form-subtitle einstein-form-content">Send us your details <br />and we will get in touch with you</div>
+                  <div class="einstein-form-content">
+                    <div class="form-bottom">
+                      <div class="form-bottom__item">
+                        <label>Name:</label>
+                        <apex:inputText value="{!name}"/>
+                      </div>
+                      <div class="form-bottom__item">
+                        <label>Title:</label>
+                        <apex:inputText value="{!title}"/>
+                        <input type="text" />
+                      </div>
+                      <div class="form-bottom__item">
+                        <label>Company:</label>
+                        <apex:inputText value="{!company}"/>
+                      </div>
+                      <div class="form-bottom__item">
+                        <label>Email:</label>
+                        <apex:inputText value="{!email}"/>
+                      </div>
+                      <div class="form-bottom__item">
+                        <label>Phone:</label>
+                        <apex:inputText value="{!phone}"/>
+                      </div>
+                      <div class="form-bottom__item">
+                        <label>Preferred meeting time:</label>
+                        <apex:inputText value="{!preferredDateTime}" id="datetimepicker"/>
+                      </div>
+                    </div>
+                    <h6 class="bottom-title">Your road to new beginnings starts with above application!</h6>
+                    <div class="button-group">
+                      <apex:commandLink styleClass="button" value="Show me einstein!" action="{!save}" />
+                    </div>
+                  </div>    
+                </apex:form>
+          </div>
+          
+          <script>
+              $(document).ready(function () {
+                  $('#datetimepicker').datetimepicker({ timeFormat: 'hh:mm TT' })
+              });
+          </script>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

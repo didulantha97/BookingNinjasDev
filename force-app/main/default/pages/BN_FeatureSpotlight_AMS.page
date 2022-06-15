@@ -1,0 +1,149 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('feature-bg').css('background-image', 'url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-account-bg.png)');
+                });
+            </script>
+            
+            <!-- hero -->
+            <div class="feature-hero">
+                <div class="container d-flex">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 order-lg-1 align-self-lg-center">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-accounting-hero.png" alt="Accounting Management Services" class="adaptive-img" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h1>Accounting Management Services</h1>
+                            <p>Part of our core features, our highly consulted accounting system takes the lead as one of the features you’ll absolutely love in the Booking Ninjas system.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+
+            <!-- content -->
+            <div class="features-page-grid">
+                <div class="features-page-grid__row">
+                    <div class="row features-page-grid__cells">
+                        <div class="col-lg-6 cell-background"></div>
+                        <div class="col-lg-6 cell-background"></div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-img-placeholder.jpg" alt="Cleaner Financial Statements" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Cleaner Financial Statements</h3>
+                                        <p>Our accounting system gives you a cleaner, minimal interface to generate understandable financial reports for internal and external use. It automatically fetches data from relevant sources and combines the entire data into a relatable format.</p>
+                                        <p>Based on its flexibility, it all remains under your administrative control. You can decide what data to use, parameters for report generation, and many more. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-1">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-img-placeholder.jpg" alt="Effective System for Collaboration" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Effective System for Collaboration</h3>
+                                        <p>One benefit of our interdepartmental approach in feature development is how it facilitates the easy transfer of data and other resources between several departments in the establishment. Our accounting system takes advantage of this and provides a good environment for collaboration between several users of the platform. </p>
+                                        <p>The collaboration extends to making financial budgets and forecasts based on data from the accounting reports. This makes it easy for your entire organization to agree on financial issues and work together towards corporate goals.</p>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-img-placeholder.jpg" alt="Features that Got You Covered" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Features that Got You Covered</h3>
+                                        <p>Our Accounting Feature is highly expressive and customizable, able to provide everything you need in accounting in an ideal scenario. The customization feature enables our team to craft highly specialized tools if needed in a short time.</p>
+                                        <p>We made a comprehensive detail of our idea and implementation of an Accounting Feature in a PMS. You can check it out below.</p>
+                                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_AMS_Details)}" styleClass="button">Learn more</apex:outputLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-2">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-img-placeholder.jpg" alt="Automation Done the Right Way" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Automation Done the Right Way</h3>
+                                        <p>Automation is a central feature of our entire system. The Accounting feature uses the automation interface to independently handle the import and export of data relevant to the generation of financial reports.</p>
+                                        <p>With that, you don’t always have to worry about how to add data for your report generation; it’s always detected and imported. This data comes from several sources within your Booking Ninjas implementation including Reservation Management, payment services, ticketing system, and others.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="features-page-text text_center feature-bottom">
+                <div class="container">
+                    <h2>Try out our system for free</h2>
+                    <apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button">Click here to continue</apex:outputLink>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

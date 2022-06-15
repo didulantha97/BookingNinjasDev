@@ -1,0 +1,25 @@
+<template>
+    <template class="slds-m-left_small" if:true={isSuccess}>
+        <lightning-pill label="Document successfully e-signed! Now you can close the browser tab."  ></lightning-pill>
+    </template>
+    <template if:false={closeModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <lightning-card  title="Please e-sign following document" variant="narrow" style="display:block;border: 0.1px 0.1px 1px solid rgb(101, 153, 205);" >
+                    <lightning-layout vertical-align="center">
+                        <lightning-layout-item size="12" class="iframe" padding="around-small">
+                            <lightning-spinner if:true={showSpinner} alternative-text="Loading" size="medium"></lightning-spinner>
+                            <template class="slds-m-left_small" if:true={error}>
+                                <lightning-pill label={error} onremove={handleRemove} has-error></lightning-pill>
+                            </template>
+                            <iframe id="esignIframe" width="100%" height="100%" scrolling="true" src={embedSessionURL} style="position: absolute;" frameborder="0"></iframe>        
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-card>
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_brand" onclick={handleSubmit} title="OK">OK</button>
+                </footer>
+            </div>
+        </section>
+    </template>
+</template>

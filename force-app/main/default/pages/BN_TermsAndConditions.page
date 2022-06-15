@@ -1,0 +1,158 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="why-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="why-top__img"><img alt="Terms and Conditions" src="https://d1b89zc79exfxt.cloudfront.net/img/why-top.png" class="adaptive-img" /></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Terms and Conditions</h1>
+                                <h2>Welcome to Booking Ninjas!</h2>
+                                <br />
+                                <p>These terms and conditions outline the rules and regulations for the use of Booking Ninjas's Website, located at www.bookingninjas.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use Booking Ninjas if you do not agree to take all of the terms and conditions stated on this page.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="why-page-content ">
+                <div class="container">
+                    <div class="why-page-content__item">
+                        <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company; Booking Ninjas. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance, and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of the provision of the Company’s stated services, in accordance with and subject to, prevailing law of the United States. Any use of the above terminology or other words in the singular, plural, capitalization, and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
+                        <p>Please note that we offer many services. Your use of Booking Ninjas products or services is provided by a Booking Ninjas pursuant to a separate manually or digitally executed agreement. Those additional terms become part of your agreement with us if you use the services provided through this site.</p>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="why-page-content__img"><img alt="License" class="float_right" src="https://d1b89zc79exfxt.cloudfront.net/img/why1.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>License</h2>
+                                    <p>Unless otherwise stated, Booking Ninjas and/or its licensors own the intellectual property rights for all material on Booking Ninjas. All intellectual property rights are reserved. You may access this from Booking Ninjas for your own personal use subjected to restrictions set in these terms and conditions.</p>
+                                    <p>You must not:</p>
+                                    <ul>
+                                        <li>Republish material from Booking Ninjas</li>
+                                        <li>Sell, rent, or sub-license material from Booking Ninjas</li>
+                                        <li>Reproduce, duplicate or copy material from Booking Ninjas</li>
+                                        <li>Redistribute content from Booking Ninjas</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="why-page-content__img"><img alt="Hyperlinking to our Content" src="https://d1b89zc79exfxt.cloudfront.net/img/why2.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Hyperlinking to our Content</h2>
+                                    <p>Organizations may hyperlink to our Website as follows:</p>
+                                    <ul>
+                                        <li>By use of our corporate name; or</li>
+                                        <li>By use of the uniform resource locator being linked to; or</li>
+                                        <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.</li>
+                                    </ul>
+                                    <br />
+                                    <p>No use of Booking Ninjas's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="why-page-content__img"><img alt="Modifications and Termination" class="float_right" src="https://d1b89zc79exfxt.cloudfront.net/img/why3.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Modifications and Termination</h2>
+                                    <p>We reserve the right to modify our Sites at any time, with or without notice to you. For example, we may add or remove functionality or features, and we may suspend or stop a particular feature altogether. We also reserve the right to charge a fee for any of our features at any time. If you don’t like any changes, you may stop using our Site and services at any time.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="why-page-content__img"><img alt="Content Liability" src="https://d1b89zc79exfxt.cloudfront.net/img/why4.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Content Liability</h2>
+                                    <p>We shall not be held responsible for any content that appears on your Website. You agree to protect and defend us against all claims that are rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene, or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <h2>Your Privacy</h2>
+                        <p>Please read &nbsp; <apex:outputLink value="{!URLFOR($Page.BN_PrivacyPolicy)}">Privacy Policy</apex:outputLink></p>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="why-page-content__img"><img alt="Reservation of Rights" src="https://d1b89zc79exfxt.cloudfront.net/img/why6.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Reservation of Rights</h2>
+                                    <p>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amend these terms and conditions and its linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="why-page-content__img"><img alt="Removal of links from our website" class="float_right" src="https://d1b89zc79exfxt.cloudfront.net/img/why3.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Removal of links from our website</h2>
+                                    <p>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us at any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
+                                    <p>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="why-page-content__img"><img alt="Disclaimer" src="https://d1b89zc79exfxt.cloudfront.net/img/why4.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Disclaimer</h2>
+                                    <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties, and conditions relating to our website and the use of this website. Nothing in this disclaimer will:</p>
+                                    <ul>
+                                        <li>limit or exclude our or your liability for death or personal injury;</li>
+                                        <li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+                                        <li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
+                                        <li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+                                    </ul>
+                                    <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: <b>(a)</b> are subject to the preceding paragraph; and <b>(b)</b> govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort, and for breach of statutory duty.As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+         </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,39 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+
+     <!-- Template -->
+    <apex:composition template="BN_Portal_Template">
+        <!-- Define content -->
+        <apex:define name="bn_portal_content">
+        
+            <div class="col-lg-9  col-md-8">
+                <div class="portal__main">
+                    <div class="portal__main-text">
+                        <h1>Check Ticket Status </h1>
+                        <p>Please check your ticket status</p>
+                    </div>
+                    <hr/>
+                    <div class="portal__main-center">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="portal__main-form">
+                                    <div class="portal__main-form-item">
+                                        <input type="text" placeholder="E-mail Address"/>
+                                    </div>
+                                    <div class="portal__main-form-item">
+                                        <input type="text" placeholder="Your ticket number"/>
+                                    </div>
+                                    <div class="portal__main-form-item">
+                                        <input type="submit" class="button small" value="Check ticket status"/>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,270 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/about-img1.png" alt="Booking Ninjas Story"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                    <h1>Learn about Our Journey to Create the PMS</h1>
+                                    <p>Starting operations in 2009 by operating in small vacation homes and hotels, we have carried out a rigorous study of the property industry and come up with an ever-growing body of solutions – the Booking Ninjas PMS application, under a partnership with Salesforce.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content">
+                <div class="about-page-timeline">
+                    <div class="container">
+                        <h2 class="about-page-content__title">
+                            <span>Our Journey in Summary</span>
+                        </h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <section>
+                                    <p>The systems were quite expensive and didn’t get the job done. If anything, they added more workload to what they already had. The team then decided to make their own system themselves and went ahead to come up with one. While it was a commendable project, there was still a lot to be done. The system couldn’t meet up with the ever-changing demands of digital management. And then they discovered Salesforce. <img alt="Our Journey - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico1.png"/></p>
+                                    <div class="about-page-timeline__circle"></div>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-timeline__date">
+                                    <span>2009</span>
+                                </div>
+                                <article>
+                                    <p>Around the year 2009, a team was involved in the management of various properties and had to repeat small tasks to get things done. As a result, they turned to property management systems to ease the workload a bit, but they were in for a disappointment. <img src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico2.png" alt="About Bookingninjas Property Management System"/> </p>
+                                    <a class="video__img wow zoomIn fancybox" data-fancybox="fancybox" href="https://www.youtube.com/watch?v=zpTEZ1MTH5k" >
+                                        <img alt="Video on Bookingninjas Property Management System" src="https://d1b89zc79exfxt.cloudfront.net/img/about-video.png"/>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col-lg-6">
+                                <section>
+                                    <p>On using the completed project, the team thought it would be best to let other hotels and property businesses benefit from it. They had to make it commercial and needed a partner of standing authority. On seeing they agree with the core values and principles of Salesforce, they met with the executives and entered into a partnership. <img alt="Our Journey - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico3.png"/></p>
+                                    <div class="about-page-timeline__circle"></div>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-timeline__date">
+                                    <span>2012</span>
+                                </div>
+                                <article>
+                                    <p>Salesforce had all that was needed to stay on top of digital trends and could perform functions not available for generic property management systems. After a year of much learning and work, the platform was moved to the Salesforce core to integrate its strength.  </p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-timeline__date">
+                                    <span>2016</span>
+                                </div>
+                                <article>
+                                    <p>After a considerable amount of work, more than enough research and analysis, with a <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank">partnership with Salesforce</a>, in 2016, a solution was born – the Booking Ninjas property management system.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-timeline__date">
+                                    <span>{!year(today())}+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-page-content__center">
+                    <div class="container">
+                        <div class="about-page-content__title"><span>No Signs of Slowing Down {!year(today())}+</span></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="about-page-content__center-bubble">
+                                    <article>Today the application has featured 
+                                        a vast number of capabilities and is hosted in the cloud, to ensure security, and facilitate new upgrades and enhancement, as the future may dictate. Our features and advantages are a product of asking ideal clients lots of questions and listening to the needs of the market. 
+                                        </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>We put ourselves in front of the market. We feel what hotels and property businesses feel, giving us a first-hand experience of what is needed and what isn’t. We now have an efficient system suitable for organizations of all sizes with a guaranteed positive outcome.</p>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <img alt="Our Journey - icon - 3" class="about-page-content__center-ico" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico4.png"/>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <p>Our partnership with Salesforce – the only one of its kind in the property industry has opened a new window of opportunities to businesses. We have a lot of clients using our enterprise application for their management, including but not limited to hotels, real estate companies, rental agencies, and property owners, all of which have been positively affected by the solution.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="text_center"><img alt="Our Journey - icon - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico5.png"/></div>
+                                <div class="text_center">
+                                    <p>We stand by our vision, which is to create a new way of working and empowering our clients to surpass their business expectations, increasing time efficiency, boosting revenues and improving customers’ experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-page-content__person">
+                    <div class="container">
+                        <div class="about-page-content__title">The passion behind Booking Ninjas</div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="about-page-content__person-img">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/david.png" alt="About Bookingninjas Property Management System"/>
+                                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="david-m-harroch-booking-ninjas"><a target="_blank" class="LI-simple-link" href='https://www.linkedin.com/in/david-m-harroch-booking-ninjas?trk=profile-badge' style="margin-left:40px;">David M. Harroch</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="about-page-content__person-text">
+                                    <article>
+                                        <p>As the founder and CEO of the world’s first PMS based on Salesforce, David Harroch has been helping businesses manage their properties with the best digital tools in the hospitality and real estate industry and loves finding out ways to make them better.</p>
+                                    </article>
+                                    <article>
+                                        <div class="about-page-content__person-ico"><img alt="About Bookingninjas Property Management System - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico9.png"/></div>
+                                        <p>In 2009, he started a company while completing his MBA in Tel Aviv, Israel to help give travelers a better accommodation experience. While managing a small hotel in Tel Aviv, the way it was marketed and service kept guests coming back - this eventually grew the portfolio and led to the birth of Booking Ninjas.</p>
+                                    </article>
+                                    <article>
+                                        <div class="about-page-content__person-ico"><img alt="About Bookingninjas Property Management System - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico10.png"/></div>
+                                        <p>He enjoys athletics and helping other people; he is also a big proponent of the 1-1-1-model and the concept of Marc Benioff improving the state of the world through business.</p>
+                                    </article>
+                                    <article>
+                                        <div class="about-page-content__person-ico"><img alt="About Bookingninjas Property Management System - icon - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico11.png"/></div>
+                                        <p>After considering existing property management systems, Booking Ninjas came as an automated process to what hotels and property companies have always wanted. David had a goal: to build a system by which hotels will experience quality management control over every aspect of the building while increasing digital engagement and integrating super tools, all on a single platform and without much tech-savviness of users. And so, Booking Ninjas was born.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- news -->
+                <!-- <div class="about-page-news">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="about-page-news__item">
+                                    <div class="row">
+                                        <div class="col-sm-6 order-sm-1">
+                                            <img src="https://d1b89zc79exfxt.cloudfront.net/img/news-about.png" alt="About Bookingninjas Property Management System" class="about-page-news__img"/>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="about-page-news__tag">
+                                                <a href="#">Hospitality</a>
+                                            </div>
+                                            <div class="about-page-news__info">
+                                                    <i class="far fa-eye"></i>    1988      
+                                            </div>
+                                            <div class="about-page-news__info">
+                                                    <i class="far fa-calendar-alt"></i>     4 macrh 2019    
+                                            </div>
+                                            <div class="about-page-news__title">
+                                                <a href="#">The hospitality industry has experienced </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-news__item">
+                                    <div class="row">
+                                        <div class="col-sm-6 order-sm-1">
+                                            <img src="https://d1b89zc79exfxt.cloudfront.net/img/news-about.png" alt="About Bookingninjas Property Management System" class="about-page-news__img"/>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="about-page-news__tag">
+                                                <a href="#">Hospitality</a>
+                                            </div>
+                                            <div class="about-page-news__info">
+                                                    <i class="far fa-eye"></i>    1988      
+                                            </div>
+                                            <div class="about-page-news__info">
+                                                    <i class="far fa-calendar-alt"></i>     4 macrh 2019    
+                                            </div>
+                                            <div class="about-page-news__title">
+                                                <a href="#">The hospitality industry has experienced </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- /news -->
+                <!-- social -->
+                <!-- <nav class="about-page-social">
+                    <div class="container">
+                        <a href="https://www.facebook.com/bookingninjas" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bookingninjas" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCOrcTzmQnmY7DG2nzwfa8zw" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/5346092/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/bookingninjas" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.pinterest.com/bookingninjas" target="_blank"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank"><i class="fab fa-salesforce"></i></a>
+                    </div>
+                </nav> -->
+                <!-- /social -->
+                <div class="about-page-content__dreams">
+                    <div class="container">
+                        <div class="about-page-content__title">Big Dreams, Big Partnerships, Big Steps</div>
+                        <div class="about-page-content__dreams-line">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <figure>
+                                        <div class="about-page-content__dreams-ico"><img alt="About Bookingninjas Property Management System - icon - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico6.png"/></div>
+                                        <figcaption>
+                                                We have come a long way since 2010. From operating small hotels and vacation homes to providing top-level property management solutions to property corporations worldwide, the BookingNinjas team has continued on its vision-driven path to improve the entire hospitality industry.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure>
+                                        <div class="about-page-content__dreams-ico about-page-content__dreams-ico-people"><img alt="About Bookingninjas Property Management System - icon - 5" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico7.png"/></div>
+                                        <figcaption>
+                                                We have attracted the best people to our vision, creating 
+                                                a team that shares the common goal. Our commitment has attracted the best partners we need, who are dedicated to shaping the future of doing business in a digital era.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure>
+                                        <div class="about-page-content__dreams-ico about-page-content__dreams-ico-cloud"><img alt="About Bookingninjas Property Management System - icon - 6" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico8.png"/></div>
+                                        <figcaption>
+                                                Here’s to an era, where we integrate AI for property management and provide the best digital engagement that was ever experienced.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-page-content__big-title">
+                    <div class="container">
+                    <div class="about-page-content__big-title-item">
+                        <strong>And it’s all for you.</strong>
+                    </div>
+                    <article class="text_center">At the heart of our company, we want to see every hotel adopt the right management system for them. While this may be obvious, it is surprising how many hotels and property spaces manage their business the wrong way. We are optimistic about changing the tides in a short time.</article>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

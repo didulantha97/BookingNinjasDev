@@ -1,0 +1,177 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('feature-bg').css('background-image', 'url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-payment-integrations-bg.png)');
+                });
+            </script>
+            
+            <!-- hero -->
+            <div class="feature-hero">
+                <div class="container d-flex">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 order-lg-1 align-self-lg-center">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-payment-integrations-hero.png" alt="Payment Integrations" class="adaptive-img" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h1>Payment Integrations</h1>
+                            <p>Going digital for payments is not new. Our payment integrations feature enables you to add and manage all your payment methods from one location, integrating your payment data with several useful parts of your data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+
+            <!-- content -->
+            <div class="features-page-grid">
+                <div class="features-page-grid__row">
+                    <div class="row features-page-grid__cells">
+                        <div class="col-lg-6 cell-background"></div>
+                        <div class="col-lg-6 cell-background"></div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-img-placeholder.jpg" alt="An Easier Way to Make Payments" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>An Easier Way to Make Payments</h3>
+                                        <p>Make your guests happy through a simple, time-saving payment service that easily connects to all your related digital interfaces. Our several payment platform integrations are made to facilitate easy payment methods for customers and easier payment management methods for your staff.</p>
+                                        <p>From initial booking to extra charges, your organized payment platform will be able to accept and manage guests’ payments from one centralized platform. It’s an easy win for everyone.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-1">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-img-placeholder.jpg" alt="Digital Wallets are Available" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Digital Wallets are Available</h3>
+                                        <p>Customers don’t always have to use cash or credit cards. Simple information about customer details should be enough to facilitate payment and business processes.</p>
+                                        <p>Booking Ninjas incorporates Digital Wallet support for our property software, which adds to the adaptability of our property management system. The digital wallet can be an improvement of the overall customer experience for repeat guests.</p>
+                                        <p>Our Digital Wallet accepts payments from popular services including Visa Checkout, AMEX Express Checkout, Apple Pay, Google Pay, Masterpass, and many more digital payment methods, including mainstays like PayPal, Venmo, and Zelle. One main motivation for this policy is to make the payment/checkout process less stressful and time-consuming for your clients. We are motivated to protect users from handling sensitive payment information, which is the main concern amongst consumers using property software.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-img-placeholder.jpg" alt="Stripe Partnership To Serve You" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Stripe Partnership To Serve You</h3>
+                                        <p>Stripe builds efficient payment infrastructure for businesses around the world to simplify and improve online payment services, so we saw value in a partnership. Stripe is our favored mode of payment implementation for the Booking Ninjas online payment services. With Stripe your business can easily carry out transactions with customers with total security and transparency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-2">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-img-placeholder.jpg" alt="Security Is A Priority" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Security Is A Priority</h3>
+                                        <p>Our Digital Wallets feature encrypted credit card and banking information to safeguard them from hackers. Using state-of-the-art security techniques, your customers’ information is encrypted and safeguarded from unauthorized access.</p>
+                                        <p>Our online payment integration, Stripe, also features high-end security on all their transactions, with all information transfer process occurring in an encrypted format. </p>
+                                        <p>Multiple authentications are also featured to ensure only the owners of the wallet information has the ability to use the digital wallet to authorize payments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-img-placeholder.jpg" alt="Payment Features Covered In Detail" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Payment Features Covered In Detail</h3>
+                                        <p>Our payment features cover every aspect of your payment needs in detail. We want to eliminate the need for third-party dependencies, so we provided a very flexible, customizable system that could serve every need you may have concerning managing and processing payments.</p>
+                                        <p>Convenience is a major factor at play here. Booking Ninjas’ has incorporated digital wallet technology into their property software to provide its users the added convenience and payment adaptability, which digital wallets afford. </p>
+                                        <p>For property businesses, the advancement allows properties to accept various forms of payment, which cuts down on late payments and unnecessary negotiation and communication. Using the encryption options available with digital wallets allows our property management systems to keep customer payment information secure for direct depositing between accounts.</p>
+                                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_PI_Details)}" styleClass="button">Learn more</apex:outputLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="features-page-text text_center feature-bottom">
+                <div class="container">
+                    <h2>Try out our system for free</h2>
+                    <apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button">Click here to continue</apex:outputLink>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

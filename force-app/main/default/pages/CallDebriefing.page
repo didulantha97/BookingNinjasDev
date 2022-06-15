@@ -1,0 +1,120 @@
+<apex:page sidebar="false" showHeader="false" standardController="Pre_Call_Planner__c" extensions="PreCallPlanningController">
+<html>
+      <head>
+         <style>
+            html, body { margin: 0px; padding: 0; }
+            input {font-size:15px;}
+            #section-1 tr td {padding: 10px;}
+             .content { background-color:#f4f4f4; border:1px solid #b4b4b4; margin: 0 auto; width:1000px; padding:20px; height:auto; }
+             .clear { clear:both }
+         </style>
+      </head>
+      <body>
+         <apex:form >
+             <div class="content">
+                <h1 style="font-size:25px;">Call Debrief Tool</h1>
+                <table border="1" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;" id="section-1">
+                   <tr>
+                      <td colspan="4">
+                         Client Contact: <strong>{!account.Name}</strong>
+                         <br />
+                         Client Organization: <strong>{!account.Name}</strong>
+                      </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           KARE Profile: <strong>{!precall.KARE_Designation__c}</strong>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           Selling team attendees:
+                           <apex:inputField value="{!precall.Selling_Team_Attendees__c}" styleclass="form-control" />
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           New information learned:
+                           <apex:inputField value="{!precall.New_Information_Learned__c}" styleclass="form-control" />
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           Next steps planned:
+                           <apex:inputField value="{!precall.Next_Steps_Planned__c}" styleclass="form-control" />
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           Red flags/potential problems uncovered:
+                           <apex:inputField value="{!precall.Red_Flags_Potential_Problems_Uncovered__c}" styleclass="form-control" />
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="4">
+                           Questions/topics for next contact:
+                           <apex:inputField value="{!precall.Questions_Topics_For_Next_Contact__c}" styleclass="form-control" />
+                       </td>
+                   </tr>
+                   <tr>
+                       <th style="width: 25%">
+                           Action Steps:
+                       </th>
+                       <th style="width: 25%">
+                           Who?
+                       </th>
+                       <th style="width: 25%">
+                           When?
+                       </th>
+                       <th style="width: 25%">
+                           Intended Result?
+                       </th>
+                   </tr>
+                   <tr>
+                       <th style="width: 25%">
+                           <apex:inputField value="{!precall.Action_Steps_1__c}" styleclass="form-control" />
+                       </th>
+                       <th style="width: 25%">
+                           <apex:inputField value="{!precall.Who_1__c}" styleclass="form-control" />
+                       </th>
+                       <th style="width: 25%">
+                           <apex:inputField value="{!precall.When_1__c}" styleclass="form-control" />
+                       </th>
+                       <th style="width: 25%">
+                           <apex:inputField value="{!precall.Intended_Result_1__c}" styleclass="form-control" />
+                       </th>
+                   </tr>
+                   <tr>
+                       <th style="width: 25%">
+                           <apex:inputField value="{!precall.Action_Steps_2__c}" styleclass="form-control" />
+                       </th>
+                       <th style="width: 25%">
+                           <apex:inputField value="{!precall.Who_2__c}" styleclass="form-control" />
+                       </th>
+                       <th style="width: 25%">
+                           <apex:inputField value="{!precall.When_2__c}" styleclass="form-control" />
+                       </th>
+                       <th style="width: 25%">
+                           <apex:inputField value="{!precall.Intended_Result_2__c}" styleclass="form-control" />
+                       </th>    
+                   </tr>
+                </table>
+                <br />
+                <table>
+                    <tr>
+                        <th>
+                            <apex:commandbutton action="{!SaveCallDebriefingForm}" value="Submit Call Debriefing Data" />
+                        </th>
+                        <th>
+                            <apex:commandbutton action="{!GenerateCallDebriefingPdf}" value="Generate Call Debriefing Pdf" />
+                        </th>
+                        <th>
+                            <apex:pageMessages />
+                        </th>
+                    </tr>
+                </table>
+             </div> 
+         </apex:form>
+      </body>
+   </html>
+</apex:page>

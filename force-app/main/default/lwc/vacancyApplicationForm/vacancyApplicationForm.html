@@ -1,0 +1,165 @@
+<template>
+  <!-- Loading in progress -->
+  <template if:true={processing}>
+    <div class="career-modal__form">
+      <lightning-spinner
+        alternative-text="Loading"
+        size="medium"
+      ></lightning-spinner>
+    </div>
+  </template>
+
+  <!-- Something went wrong -->
+  <template if:true={_errors}>
+    <div class="py-5 row justify-content-center error-panel">
+      <h1 style="font-size: 40px;">
+        Something went wrong... Please refresh the page.
+      </h1>
+    </div>
+  </template>
+
+  <template if:false={loading}>
+    <div class="col-lg-12 text_center">
+      <a
+        href="#career-modal"
+        class="button fancybox"
+        style="
+          margin-bottom: 40px;
+          margin-bottom: 40px;
+          text-decoration: none;
+          background: #facc04;
+          color: #fff;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        onclick={openModal}
+        >APPLY NOW</a
+      >
+    </div>
+
+    <!--Use template if:true to display/hide popup based on isModalOpen value-->
+    <template if:true={isModalOpen}>
+      <!-- Modal/Popup Box LWC starts here -->
+      <section
+        role="dialog"
+        tabindex="-1"
+        aria-labelledby="modal-heading-01"
+        aria-modal="true"
+        aria-describedby="modal-content-id-1"
+        class="slds-modal slds-fade-in-open"
+      >
+        <div class="slds-modal__container">
+          <!-- Modal/Popup Box LWC header here -->
+          <header class="slds-modal__header">
+            <button
+              class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+              title="Close"
+              onclick={closeModal}
+            >
+              <lightning-icon
+                icon-name="utility:close"
+                alternative-text="close"
+                variant="inverse"
+                size="small"
+              ></lightning-icon>
+              <span class="slds-assistive-text">Close</span>
+            </button>
+            <h2
+              id="modal-heading-01"
+              class="slds-text-heading_medium slds-hyphenate"
+            >
+              Become one of us
+            </h2>
+          </header>
+          <!-- Modal/Popup Box LWC body starts here -->
+          <div
+            class="slds-modal__content slds-p-around_medium"
+            id="modal-content-id-1"
+          >
+            <!-- Something went wrong -->
+            <template if:true={hasSubmissionError}>
+              <div
+                class="py-5 row submission-error-panel"
+                style="
+                  background: #ffb800;
+                  padding: 5px;
+                  width: 100%;
+                  margin-left: auto;
+                  margin-right: auto;
+                  margin-bottom: 10px;
+                "
+              >
+                <h1>Error: {_validationError}</h1>
+              </div>
+            </template>
+            <div class="career-modal__form">
+              <div class="career-modal__form-item">
+                <label>Name <sup>*</sup></label>
+                <input
+                  type="text"
+                  disabled={submitting}
+                  onchange={handleFullNameChange}
+                  value={fullName}
+                />
+              </div>
+              <div class="career-modal__form-item">
+                <label>Phone <sup>*</sup></label>
+                <input
+                  type="text"
+                  disabled={submitting}
+                  onchange={handlePhoneChange}
+                  value={phone}
+                />
+              </div>
+              <div class="career-modal__form-item">
+                <label>Email <sup>*</sup></label>
+                <input
+                  type="text"
+                  disabled={submitting}
+                  onchange={handleEmailChange}
+                  value={email}
+                />
+              </div>
+              <div class="career-modal__form-item">
+                <label>Linkedin URL</label>
+                <input
+                  type="text"
+                  disabled={submitting}
+                  onchange={handleLinkedInChange}
+                  value={linkedin}
+                />
+              </div>
+              <div class="career-modal__form-item">
+                <label>Position</label>
+                <span style="font-weight: 900;">{position}</span>
+              </div>
+            </div>
+          </div>
+          <!-- Modal/Popup Box LWC footer starts here -->
+          <footer class="slds-modal__footer">
+            <div class="career-modal__form-item text_center">
+              <button
+                onclick={handleSubmit}
+                disabled={submitting}
+                class="button"
+                style="padding-top: 3px; padding-bottom: 5px;"
+              >
+                Submit
+              </button>
+            </div>
+            <div
+              class="career-modal__form-item text_center"
+              style="padding-top: 2.5px; padding-bottom: 5px;"
+            >
+              <small
+                ><i class="fas fa-lock"></i> We hate spam and promise to keep
+                your data address safe</small
+              >
+            </div>
+          </footer>
+        </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+  </template>
+</template>

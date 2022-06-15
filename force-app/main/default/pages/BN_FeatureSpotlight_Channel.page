@@ -1,0 +1,120 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- feature-spotlight -->
+            <div class="feature-spotlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider">
+                                <div class="feature-spotlight__slider-big">
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/channelrush/channel-manager-1.PNG" data-fancybox="gallery"><img alt="Hotel Channel Manager - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/channelrush/channel-manager-1.PNG"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/channelrush/channel-manager-2.PNG" data-fancybox="gallery"><img alt="Hotel Channel Manager - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/channelrush/channel-manager-2.PNG"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/channelrush/channel-manager-3.PNG" data-fancybox="gallery"><img alt="Hotel Channel Manager - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/channelrush/channel-manager-3.PNG"/></a>
+                                    </div>
+                                </div>
+                                <div class="feature-spotlight__slider-small">
+                                    <div>
+                                        <img alt="Hotel Channel Manager - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/channelrush/channel-manager-1.PNG"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Hotel Channel Manager - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/channelrush/channel-manager-2.PNG"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Hotel Channel Manager - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/channelrush/channel-manager-3.PNG"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider-text">
+                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="back">&#x3C; GO BACK</apex:outputLink>
+                                <h1>Hotel Channel Manager</h1>
+                                <p>Booking Ninjas offer a way for you to supervise all of your hotel’s reservations, direct bookings, and rates on third-party sites with one simple log-in. With their Channel Manager, your data from hotel booking sites such as Expedia, Airbnb, and Booking.com can be easily organized and controlled by only you.</p>
+                                <p>Having to move back and forth from channel to channel to update your hotel’s reservations, availability, and rates can be exhausting and time-consuming. A channel manager will not only maximize your time efficiently, but it can also boost your profit. With access to direct bookings and consumers themselves, you will have more opportunities to promote your availability and gain more customers. This enterprise-level investment will positively affect your business and connect you with more future clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__2collumn-text">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>Whether you are running several different properties or just a few, the Channel Manager can help you organize and control exactly what you need to oversee. Detailed configuration can be tailored based on property location, size, number of channels, and other parameters that you desire. </p>
+                                <p>This Channel Manager gives you the ability to access your full customer base with one log-in. With our built-in Digital Wallet and payment mechanisms, you will not have to worry about handling sensitive information from your clients. Instead, you can rest easy knowing that you and your customers’ data are safe and protected within this program. This allows your business to have a centralized location that manages payments instead of each booking channel managing it, regardless of where the guest ends of paying or how they prefer to pay. It is also convenient for repeated transactions, as the Digital Wallet can save banking information and passwords. This allows consumers to recognize the reliability and ease of access for future services with you and your hotel.</p>
+                                <p>As mentioned earlier, the Channel Manager is able to organize online distribution channels for your ease and benefit. You can find a more detailed list of the channels that Booking Ninjas is able to integrate into their property management software here. Booking Ninjas even have helpful information to share on hotel booking sites that you may be considering; they offer insight on how third-party site bookings work, what the commission and mark-ups may be, as well as their cancellation policies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <h2>Key Features</h2>
+                                    <p class="text_center"><strong>So what exactly does Booking Ninja’s Channel Manager entail? Let’s look into some specifics.</strong></p>
+                                    <ul>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>1</span></span>
+                                            <small><strong>Real-time Management.</strong> Saving you time (and tabs open) moving between third-party sites is definitely a plus, but the Channel Manager also saves you time with the real-time management function within its system. You are able to see availability and rates update immediately across whichever websites you need to change, and customer bookings will also be updated as soon as a customer books with you on another site. </small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>2</span></span>
+                                            <small><strong>Optimized Booking Engine.</strong> The Channel Manager presents a way for clients to better boost their occupancy and garner more reservations with its ability to help you avoid the risk of double-booking among other channels and overbooking your hotel. This program does the work for you, and it does it with little to no risk at your expense. An organized system such as our Channel Manager makes it so that you can rest easy and focus your time and energy elsewhere.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>3</span></span>
+                                            <small><strong>Customer Focused.</strong> Since our PMS system also works hand-in-hand with the Channel Manager, you can collect data about your guests’ preferences and other information to better serve your customers! You can even use the information gathered to build specific promotions or direct marketing strategies. Our system helps you recognize what is important to guests and what the steps you can take to utilizing that information confidently.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>4</span></span>
+                                            <small><strong>Advance-Payment Setup.</strong> With the use of Booking Ninja’s digital wallet feature, you are able to offer a safe and easy way for your consumers to conduct transactions with you. To access more information about our digital wallet, you can go here. The payment/checkout process should be easy for both you and the consumer, and we’ve made it to where the process is as painless as possible. It can be difficult to handle clients’ private information, but the Channel Manager works to keep everyone’s data protected, as well as conveniently stored for future transactions.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>5</span></span>
+                                            <small><strong>Customization and Reporting Insights.</strong> Using third-party sites, while helpful, can be frustrating; you may want a certain feature promoted or something to be advertised differently. Booking Ninja’s Channel Manager allows you to customize what your guests see as well as tailor it to their specific needs. You control the flow, and you decide what can be seen. This also allows you to set specific parameters and gather more distinct information from your guests, making the data better to analyze and provide more tailored insights. Third-party sites come with presets and general reports, so the Channel Manager helps you optimize your property business to the best it can be.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>6</span></span>
+                                            <small><strong>Integration Availability.</strong> Our channel listing contains a number of third-party sites that we are able to integrate our Channel Manager with. The integration process is smooth, simple, and quick. Once integrated, you can rely on our Channel Manager to be your number one go-to for all of your online booking channels. If a booking site changes or updates information, you will know about it; your Channel Manager makes sure of that.</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center text_center">
+                                <div class="col-lg-9">
+                                    <h2>Why Our Channel Manager?</h2>
+                                    <p>Combined with our other features, the Channel Manager offers clients a powerful command station for managing their properties. You will never have to worry about missing something or being out of the loop regarding third-party sites; as the market changes, our Channel Manager adapts with it. Our booking system ensures that your occupancy grows and the risk of overbooking is lowered. Utilized with our PMS system, you will be able to keep tabs on trending guest preferences and engage with that through marketing techniques. Our Digital Wallet and variety of payment mechanisms make it to where you and your customers can conduct transactions safely and quickly. The Channel Manager is a guaranteed way to maximize your time and your profit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__pager">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_RRC)}" styleClass="feature-spotlight__pager-item">
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_Left-black.png" alt=""/></i>
+                            <b>Room Rates Controller (RRC)</b>
+                        </apex:outputLink>
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Ticket)}" styleClass="feature-spotlight__pager-item">
+                            <b>Ticketing System</b>
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_right.png" alt=""/></i>
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature-spotlight -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

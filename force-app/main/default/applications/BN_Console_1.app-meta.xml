@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <label>BN Console 1</label>
+    <navType>Standard</navType>
+    <setupExperience>all</setupExperience>
+    <tabs>Cook_Book_Report</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>CustomerStories__c</tabs>
+    <tabs>Webinar__c</tabs>
+    <tabs>Webinar_Registration__c</tabs>
+    <tabs>Email_Subscription__c</tabs>
+    <tabs>CurrencyType__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>BN_Console_1_UtilityBar</utilityBar>
+</CustomApplication>

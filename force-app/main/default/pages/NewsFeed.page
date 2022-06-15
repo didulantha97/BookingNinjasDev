@@ -1,0 +1,283 @@
+<apex:page controller="NewsFeedController" applyHtmlTag="false" showHeader="false" applyBodyTag="false" standardStylesheets="false" lightningStylesheets="true">    
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <apex:slds />
+    </head>
+    <body>
+        <!-- SLDS WRAPPER -->
+        <div class="slds-scope">
+            
+            <!--    #########   Headline Section    ##########  -->
+            <article class="slds-card" style="padding : 5px">
+                <header class="slds-card__header slds-grid">
+                    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__body slds-truncate">
+                            <h2>
+                                <span class="slds-text-heading--small">Search Headlines</span>
+                            </h2>
+                        </div>
+                    </div>
+                </header>
+                <!--    Card body Starts    -->
+                <div class="slds-card__body">
+                    <!--    Search Form -->
+                    <apex:form id="formMain">
+                        <!-- Search Key -->
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="search-key">Search key</label>
+                            <div class="slds-form-element__control">
+                                <apex:inputText id="search-key" value="{!headLineSearchKey}" styleClass="slds-input" html-placeholder="Enter word or phrase here..." />
+                            </div>
+                        </div>
+                        <!-- /Search Key    -->
+                        <!-- Country    -->
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="country">Country</label>
+                            <div class="slds-form-element__control">
+                                <div class="slds-select_container">
+                                    <apex:selectList id="selectCountry" size="1" value="{!selectedCountry}" styleClass="slds-select">
+                                        <apex:selectOptions value="{!countries}" />
+                                    </apex:selectList>
+                                </div>                          
+                            </div>
+                        </div>
+                        <!-- /Country   -->
+                        <!-- Category   -->
+                        <div class="slds-form-element" style="margin-bottom: 5px;">
+                            <label class="slds-form-element__label" for="category">Category</label>
+                            <div class="slds-form-element__control">
+                                <div class="slds-select_container">
+                                    <apex:selectList id="selectCategory" size="1" value="{!selectedCategory}" styleClass="slds-select">
+                                        <apex:selectOptions value="{!categories}" />
+                                    </apex:selectList>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Category  -->
+                        <apex:commandButton id="search" value="Search" action="{!headLineSearch}" status="buttonStatus" style="margin-bottom: 5px;"
+                                            reRender="results, news" styleClass="slds-button slds-button--brand"/>
+                        <apex:actionStatus id="buttonStatus" style="align:left;">
+                            <apex:facet name="start">
+                                <p style="color:red;font-family:Tahoma, sans-serif;font-size:14px;"><img src="/img/loading.gif" alt="" />Waiting...</p>
+                            </apex:facet>
+                        </apex:actionStatus>
+                    </apex:form>
+                    <!--    /Search Form    -->
+                
+                    <!--    Results Panel   -->
+                    <apex:outputPanel id="results">
+                        <!--    Results table   -->
+                        <apex:outputPanel id="tblResults" rendered="{!headLines.totalResults != NULL && headLines.totalResults > 0}">
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                                <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th class="slds-text-title_caps" scope="col">
+                                            <div class="slds-truncate" title="Title">Title</div>
+                                        </th>
+                                        <th class="slds-text-title_caps" scope="col">
+                                            <div class="slds-truncate" title="Author">Author</div>
+                                        </th>
+                                        <th class="slds-text-title_caps" scope="col">
+                                            <div class="slds-truncate" title="Published on">Published on</div>
+                                        </th>
+                                        <th class="slds-text-title_caps" scope="col">
+                                            <div class="slds-truncate" title="Description">Description</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <apex:repeat value="{!headLines.articles}" var="article">
+                                        <tr class="slds-hint-parent">
+                                            <td data-label="Title" scope="row">
+                                                <div class="slds-truncate" title="{!article.title}">
+                                                    <a href="{!article.url}" target="_blank" tabindex="-1">{!article.title}</a>
+                                                </div>
+                                            </td>
+                                            <td data-label="Author">
+                                                <div class="slds-truncate" title="{!article.author}">{!article.author}</div>
+                                            </td>
+                                            <td data-label="Published on">
+                                                <div class="slds-truncate" title="{!article.publishedAt}">{!article.publishedAt}</div>
+                                            </td>
+                                            <td data-label="Description">
+                                                <div class="slds-truncate" title="{!article.description}">{!article.description}</div>
+                                            </td>
+                                        </tr>
+                                    </apex:repeat>
+                                </tbody>
+                            </table>
+                        </apex:outputPanel>
+                        <!--    /Results table  -->
+                        <!--    Warning Panel   -->
+                        <apex:outputPanel id="warningPanel" rendered="{!headLines.totalResults != NULL && headLines.totalResults = 0}">
+                            <div id="warningPanelMsg" style="z-index: 9999; position: fixed; width: 97%;" class="slds-notify slds-theme--error slds-notify--alert slds-theme--alert-texture" role="alert">
+                                No results found, please refine your search  
+                                <script>
+                                 $(document).ready(function() { 
+                                    $('#warningPanelMsg').fadeOut(7000);
+                                 });
+                                </script>
+                            </div>
+                        </apex:outputPanel>
+                        <!--    /Warning Panel  -->
+                        <!--    Error Panel -->
+                        <apex:outputPanel id="errorPanel" rendered="{!headLines.status == 'error'}">
+                            <div id="errorPanelMsg" style="z-index: 9999; position: fixed; width: 97%;" class="slds-notify slds-theme--error slds-notify--alert slds-theme--alert-texture" role="alert">
+                                Error occurred. "{!headLines.message}"
+                                <script>
+                                 $(document).ready(function() { 
+                                    $('#errorPanelMsg').fadeOut(7000);
+                                 });
+                                </script>
+                            </div>
+                        </apex:outputPanel>
+                        <!--    /Error Panel    -->                    
+                    </apex:outputPanel>
+                    <!--    /Results Panel  -->
+                </div>
+                <!--    / Card body ends    -->
+            </article>
+            <!--    #########   /Headline Section   ########    -->
+            <!--    ########    News Section        ########    -->
+            <article class="slds-card" style="padding : 5px">
+                <header class="slds-card__header slds-grid">
+                    <div class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__body slds-truncate">
+                            <h2>
+                                <span class="slds-text-heading--small">Search Articles</span>
+                            </h2>
+                        </div>
+                    </div>
+                </header>
+                <!--    Card body Starts    -->
+                <div class="slds-card__body">
+                    <!--    Search Form -->
+                    <apex:form id="formArticle">
+                        <!-- Search Key -->
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="search-key-article">Search key</label>
+                            <div class="slds-form-element__control">
+                                <apex:inputText id="search-key-article" value="{!articleSearchKey}" styleClass="slds-input" html-placeholder="Enter word or phrase here..." />
+                            </div>
+                        </div>
+                        <!-- /Search Key    -->
+                        <!-- Domains    -->
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="domains-article">Domains</label>
+                            <div class="slds-form-element__control">
+                                <apex:inputText id="domains-article" value="{!domains}" styleClass="slds-input" html-placeholder="E.g. bbc.co.uk,techcrunch.com" />
+                            </div>
+                        </div>
+                        <!-- /Domains   -->
+                        <!-- Language   -->
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="country">Language</label>
+                            <div class="slds-form-element__control">
+                                <div class="slds-select_container">
+                                    <apex:selectList id="selectLanguage" size="1" value="{!selectedLanguage}" styleClass="slds-select">
+                                        <apex:selectOptions value="{!languages}" />
+                                    </apex:selectList>
+                                </div>                          
+                            </div>
+                        </div>
+                        <!-- /Language  -->
+                        <!-- Sort Factor    -->
+                        <div class="slds-form-element" style="margin-bottom: 5px;">
+                            <label class="slds-form-element__label" for="country">Sort By</label>
+                            <div class="slds-form-element__control">
+                                <div class="slds-select_container">
+                                    <apex:selectList id="selectSort" size="1" value="{!selectedSortFactor}" styleClass="slds-select">
+                                        <apex:selectOptions value="{!sortFactors}" />
+                                    </apex:selectList>
+                                </div>                          
+                            </div>
+                        </div>
+                        <!-- /Sort Factor   -->
+                        <apex:commandButton id="search-articles" value="Search" action="{!searchArticles}" status="buttonStatus" style="margin-bottom: 5px;"
+                                            reRender="results-articles" styleClass="slds-button slds-button--brand"/>
+                        <apex:actionStatus id="buttonStatus" style="align:left;">
+                            <apex:facet name="start">
+                                <p style="color:red;font-family:Tahoma, sans-serif;font-size:14px;"><img src="/img/loading.gif" alt="" />Waiting...</p>
+                            </apex:facet>
+                        </apex:actionStatus>
+                    </apex:form>
+                    <!--    /Search form    -->
+                    <!--    Results Panel   -->
+                    <apex:outputPanel id="results-articles">
+                        <!--    Results table   -->
+                        <apex:outputPanel id="tblResults-articles" rendered="{!articles.totalResults != NULL && articles.totalResults > 0}">
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                                <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th class="slds-text-title_caps" scope="col">
+                                            <div class="slds-truncate" title="Title">Title</div>
+                                        </th>
+                                        <th class="slds-text-title_caps" scope="col">
+                                            <div class="slds-truncate" title="Author">Author</div>
+                                        </th>
+                                        <th class="slds-text-title_caps" scope="col">
+                                            <div class="slds-truncate" title="Published on">Published on</div>
+                                        </th>
+                                        <th class="slds-text-title_caps" scope="col">
+                                            <div class="slds-truncate" title="Description">Description</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <apex:repeat value="{!articles.articles}" var="article">
+                                        <tr class="slds-hint-parent">
+                                            <td data-label="Title" scope="row">
+                                                <div class="slds-truncate" title="{!article.title}">
+                                                    <a href="{!article.url}" target="_blank" tabindex="-1">{!article.title}</a>
+                                                </div>
+                                            </td>
+                                            <td data-label="Author">
+                                                <div class="slds-truncate" title="{!article.author}">{!article.author}</div>
+                                            </td>
+                                            <td data-label="Published on">
+                                                <div class="slds-truncate" title="{!article.publishedAt}">{!article.publishedAt}</div>
+                                            </td>
+                                            <td data-label="Description">
+                                                <div class="slds-truncate" title="{!article.description}">{!article.description}</div>
+                                            </td>
+                                        </tr>
+                                    </apex:repeat>
+                                </tbody>
+                            </table>
+                        </apex:outputPanel>
+                        <!--    /Results table  -->
+                        <!--    Warning Panel   -->
+                        <apex:outputPanel id="warningPanel-articles" rendered="{!articles.totalResults != NULL && articles.totalResults = 0}">
+                            <div id="warningPanelMsg-articles" style="z-index: 9999; position: fixed; width: 97%;" class="slds-notify slds-theme--error slds-notify--alert slds-theme--alert-texture" role="alert">
+                                No results found, please refine your search  
+                                <script>
+                                 $(document).ready(function() { 
+                                    $('#warningPanelMsg-articles').fadeOut(7000);
+                                 });
+                                </script>
+                            </div>
+                        </apex:outputPanel>
+                        <!--    /Warning Panel  -->
+                        <!--    Error Panel -->
+                        <apex:outputPanel id="errorPanel-articles" rendered="{!articles.status == 'error'}">
+                            <div id="errorPanelMsg-articles" style="z-index: 9999; position: fixed; width: 97%;" class="slds-notify slds-theme--error slds-notify--alert slds-theme--alert-texture" role="alert">
+                                Error occurred. "{!articles.message}"
+                                <script>
+                                 $(document).ready(function() { 
+                                    $('#errorPanelMsg-articles').fadeOut(7000);
+                                 });
+                                </script>
+                            </div>
+                        </apex:outputPanel>
+                        <!--    /Error Panel    -->                    
+                    </apex:outputPanel>
+                    <!--    /Results Panel  -->
+                </div>
+                <!--    /Card body Ends -->
+            </article>
+            <!--    #########   /News Section   ##########  -->
+        </div>
+        <!-- /SLDS WRAPPER -->
+    </body>
+    
+</apex:page>

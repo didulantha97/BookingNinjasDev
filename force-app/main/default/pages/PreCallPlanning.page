@@ -1,0 +1,226 @@
+<apex:page sidebar="false" showHeader="false" standardController="Pre_Call_Planner__c" extensions="PreCallPlanningController" >
+<html>
+      <head>
+         <style>
+            html, body { margin: 0px; padding: 0; }
+            input {font-size:15px;}
+            #section-2 tr td {padding: 10px;}
+             .content { background-color:#f4f4f4; border:1px solid #b4b4b4; margin: 0 auto; width:1000px; padding:20px; height:auto; }
+             .clear { clear:both }
+         </style>
+      </head>
+      <body>
+         <apex:form >
+             <div class="content">
+                <h1 style="font-size:25px;">Pre-Call Planner Tool</h1>
+                <table border="1" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;">
+                   <tr>
+                      <td colspan="3">
+                         Selling Team Attendees: <strong>{!precall.CreatedBy.Name}</strong>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td style="width: 33%">
+                         Account: <strong>{!account.Name}</strong>
+                      </td>
+                      <td style="width: 33%">
+                          Date of call:  &nbsp; <apex:inputField value="{!precall.Date_of_Call__c}" styleclass="form-control" />
+                      </td>
+                      <td style="width: 33%">
+                          KARE Designation: &nbsp; <apex:inputField value="{!precall.KARE_Designation__c}" styleclass="form-control" />
+                      </td>
+                   </tr>
+                </table>
+                <br />
+                <table border="1" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;"  id="section-1">
+                    <tr>
+                        <th colspan="7"> Cast of Characters </th>
+                    </tr>
+                    <tr>
+                        <td> Client Contact </td>
+                        <td> Role </td>
+                        <td> Impact on Ths Deal </td>
+                        <td> Met Before? </td>
+                        <td> LinkedIn Connected? </td>
+                        <td> DISC Style </td>
+                        <td> Existing Relationship </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <apex:inputField value="{!precall.Client_Contact_1__c}" styleclass="form-control" style="width:185px;" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Role_1__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Impact_On_This_Deal_1__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Met_Before_1__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.LinkedIn_Connected_1__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.DISC_Style_1__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Existing_Relationship_1__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <apex:inputField value="{!precall.Client_Contact_2__c}" styleclass="form-control" style="width:185px;" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Role_2__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Impact_On_This_Deal_2__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Met_Before_2__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.LinkedIn_Connected_2__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.DISC_Style_2__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Existing_Relationship_2__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <apex:inputField value="{!precall.Client_Contact_3__c}" styleclass="form-control" style="width:185px;" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Role_3__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Impact_On_This_Deal_3__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Met_Before_3__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.LinkedIn_Connected_3__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.DISC_Style_3__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Existing_Relationship_3__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <apex:inputField value="{!precall.Client_Contact_4__c}" styleclass="form-control" style="width:185px;" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Role_4__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Impact_On_This_Deal_4__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Met_Before_4__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.LinkedIn_Connected_4__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.DISC_Style_4__c}" styleclass="form-control" />
+                        </td>
+                        <td> 
+                            <apex:inputField value="{!precall.Existing_Relationship_4__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table border="1" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;" id="section-2">
+                    <tr>
+                        <td colspan="2">
+                            Bonding and Rapport:
+                            <apex:inputField value="{!precall.Bonding_and_Rapport__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Planned Up-Front Contract:
+                            <apex:inputField value="{!precall.Planned_Up_Front_Contract__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            30 Seconds Commercial:
+                            <apex:inputField value="{!precall.X30_Seconds_Commercial__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Pain:
+                            <apex:inputField value="{!precall.Pain__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Budget:
+                            <apex:inputField value="{!precall.Budget__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Decision:
+                            <apex:inputField value="{!precall.Decision__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Post Sell:
+                            <apex:inputField value="{!precall.Post_Sell__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Questions the buyer may ask you:
+                            <apex:inputField value="{!precall.Questions_The_Buyer_May_Ask_You__c}" styleclass="form-control" />
+                        </td>
+                        <td>    
+                            Your responses to these questions:
+                            <apex:inputField value="{!precall.Your_Responses_To_These_Questions__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Key questions to ask:
+                            <apex:inputField value="{!precall.Key_Questions_To_Ask__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Goals for call:
+                            <apex:inputField value="{!precall.Goals_For_Call__c}" styleclass="form-control" />
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <table>
+                    <tr>
+                        <th>
+                            <apex:commandbutton action="{!SavePreCallPlanningForm}" value="Submit Pre-Call Planning Data" />
+                        </th>
+                        <th>
+                            <apex:commandbutton action="{!GeneratePreCallPdf}" value="Generate Pre-Call Planning Pdf" />
+                        </th>
+                        <th>
+                            <apex:pageMessages />
+                        </th>
+                    </tr>
+                </table>
+             </div> 
+         </apex:form>
+      </body>
+   </html>
+</apex:page>

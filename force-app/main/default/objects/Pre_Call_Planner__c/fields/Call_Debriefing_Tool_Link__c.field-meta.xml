@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Debriefing_Tool_Link__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&apos;https://bookingninjas.my.salesforce.com/apex/CallDebriefing?Id=&apos; + Id , &apos;https://bookingninjas.my.salesforce.com/apex/CallDebriefing?Id=&apos; + Id)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Call Debriefing Tool Link</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

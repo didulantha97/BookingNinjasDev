@@ -1,0 +1,154 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- feature-spotlight -->
+            <div class="feature-spotlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider">
+                                <div class="feature-spotlight__slider-big">
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/esign/esign.jpg" data-fancybox="gallery"><img alt="Electronic Signature Software - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/esign/esign.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/esign/esign2.jpg" data-fancybox="gallery"><img alt="Electronic Signature Software - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/esign/esign2.jpg"/></a>
+                                    </div>  
+                                </div>
+                                <div class="feature-spotlight__slider-small">
+                                    <div>
+                                        <img alt="Electronic Signature Software - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/esign/esign.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Electronic Signature Software - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/esign/esign2.jpg"/>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider-text">
+                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="back">&#x3C; GO BACK</apex:outputLink>
+                                <h1>Electronic Signature Software</h1>
+                                <p>Working out contracts with clients doesn’t have to be stressful for either party. You want your customers to feel comfortable with your mutual agreement, and you want to have one less thing to worry about. We offer Esign as a part of our reservation management system; you can trust us to populate, send, manage, and secure the signatures and agreements that you need for your business.</p>
+                                <p>What makes our service different from other software with Esign capabilities? You can create and send personalized documents directly from our PMS. It doesn’t make sense to switch from your PMS to a separate program, so skip the hassle by completing this task in-house.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <article>
+                                    <p>You can choose which fields you want to be pre-populated for your client’s ease. You can even control auto-reminders to be sent to your customers in order to complete documents in time. Don’t worry about learning another system; our software is user-friendly and simple to use so that you can get through your tasks stress-free.</p>
+                                    <br />
+                                    <p>More and more businesses are switching to reservation management systems with Esign, so clients are more likely to expect it as an option. In fact, some clients may prefer it. Being able to offer Esign adds to your company’s image; it makes you seem eco-friendly and technologically savvy. Starting your working relationship off with a secure, online agreement will enforce your client’s trust in you for future agreements.</p>
+                                    <br />
+                                    <h2>Advantages</h2>
+                                    <br />
+                                    <ul>
+                                        <li>&diams; <strong>Timely</strong></li>
+                                        <p>You save time, and your clients save time. Ultimately, this positively benefits both parties, maximizing time in the most efficient way possible. With agreements signed and signatures documented, you can progress your working relationship to the next stage even faster. In fact, with the rate of deals increased, you can use your extra time to seek out more customers for your business.</p>
+                                        <br />
+                                        <li>&diams; <strong>Easy</strong></li>
+                                        <p>With a system that is already set up to not only save your client’s time but your time as well, you can set up documents on Esign with little to no effort. Since Esign is embedded within our PMS, you can populate documents with your client’s information already integrated, taking one more thing off your plate.</p>
+                                        <br />
+                                        <li>&diams; <strong>Affordable</strong></li>
+                                        <p>Printing and mailing important documents can be expensive, especially if you rely on this method on a daily basis. You can save time and money with Esign since it takes out the physical portion of the task. Moreover, in the event that human error occurs, you do not have to spend even more money to ensure that your documents are correct - however many times it takes to get it right.</p>
+                                    </ul>
+                                    <br />
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="feature-spotlight__2collumn-text">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p><strong>Pellentesque iaculis odio enim, ut imperdiet justo fermentum eu. Sed mattis orci non gravida ultricies. Nullam tristique rhoncus nisi. In dui velit, vestibulum in felis ut, laoreet tempor libero. Proin eget sollicitudin sapien. Aenean ut vehicula nisi, quis dictum turpis. Duis interdum odio vel dui vehicula, et vestibulum dui lacinia. Curabitur libero sem, imperdiet vel nisi in, mattis finibus enim.</strong></p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Vivamus in nisl auctor, placerat justo et, lacinia massa. Suspendisse potenti. Donec nec neque vitae turpis sollicitudin volutpat. Aenean gravida commodo est in rutrum. Vivamus at turpis in libero mollis lacinia fringilla a dui. Pellentesque efficitur ultricies arcu vel congue. Integer a dui magna.</p>
+    
+                                <p>Phasellus gravida ex cursus justo viverra mollis. Sed mi lectus, imperdiet ac ex eu, interdum ultrices mauris. Curabitur nec pellentesque mi. Donec posuere ante mi, ac accumsan mi vestibulum a. Integer eget orci purus. Donec non massa ultricies, tempor magna sit amet, faucibus risus. Maecenas at ornare nibh, non pretium augue. Aliquam varius sit amet ipsum sit amet consectetur. Curabitur mollis nisi id ultricies facilisis. Integer dapibus vestibulum tincidunt. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="feature-spotlight__picture">
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/Image_with_all_screens.jpg" alt=""/>
+                    </figure>
+                    <div class="costumer-page__content">
+                        <div class="container">
+                            <div class="costumer-page__view-list">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-9">
+                                        <article>
+                                            <h2>Maecenas eu neque commodo                                   </h2>
+                                            <p>Nam ac felis meus. Nulla eget nisl in urna poor supit. Nam orci lorem, iet sit amet conat non, venenatis nec dui. Morbi et uller metus. Num vitae enim aliquam, cursus risus a, sodales orci. Ali non libero at tellus ultricies vatis sed sed massa. Duis sed nisi pular laoreet. Mauris malesuada tellus enim, ac fringilla est amet.</p>
+                                            <div class="costumer-page__view-list_section">
+                                               <p>Quisque condimentum massa in mie bibendum. Fusce sit amet quam vel massa tempor commodo sit amet quis magna. Quisque vel lacus nec hendrerit masuada ut et diam. Alam lectus nisl, varius in vehicula a, auctor ac velit. Vestibulum fermum, ante ac hendrerit ultrices, erat purus mattis mi, in scelerisque tellus sttorin ligula. </p>
+                                               <p>Pellentesque ac tempus magna, in blandit risus. Donec mie lorem metus, id alit tortor suscipit at. Nunc quis imiet sem, sed feugiat lacus. Maecenas sagittis libero ut malesuada. Nulla commodo, urna id laoreet facilisis, mi nisi ulorper metus, non intem nibh lorem eget magna. Integer et ex ut mattis. In hac hea dictumst. Sed tincidunt tempor dui malesuada aliquet. Aliquam erat volutpat.</p>
+                                                <p> Donec sed elit quis augue idiet gravida nec et nulla. Pesque vira odio ac urna vehicula suscipit. Morbi sit sapien non lorem finibus iaculis. Nulla tincidunt pinar ex eget volutpat. In ac sceque lacus. Nunc sodales, neque sed frila sollicitudin, ips tempor magna, et facilisis felis odio non mauris. Integer nec augue blandit, feiat leo id, codo quam. Donec contum nec erat et laoreet. Quisque in lacinia sapien.</p>
+    
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <h2>Title </h2>
+                                    <p class="text_center"><strong>Secure profits today with the storage management software of tomorrow.</strong></p>
+                                    <ul>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>1</span></span>
+                                            <small>Proin sagittis lacus pharetra, dignissim quam ut, ultricies mauris. In maximus porttitor justo sit amet lobortis. Nunc eget ligula ante. Fusce ac fringilla sem, eget ullamcorper arcu. Phasellus laoreet consectetur cursus.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>2</span></span>
+                                            <small>Proin sagittis lacus pharetra, dignissim quam ut, ultricies mauris. In maximus porttitor justo sit amet lobortis. Nunc eget ligula ante. Fusce ac fringilla sem, eget ullamcorper arcu. Phasellus laoreet consectetur cursus.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>3</span></span>
+                                            <small>Proin sagittis lacus pharetra, dignissim quam ut, ultricies mauris. In maximus porttitor justo sit amet lobortis. Nunc eget ligula ante. Fusce ac fringilla sem, eget ullamcorper arcu. Phasellus laoreet consectetur cursus.</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center text_center">
+                                <div class="col-lg-9">
+                                    <h2>Phasellus id malesuada augue </h2>
+                                    <p>Cur pharetra facilisis nunc euismod tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hios. Sed tempus ex nulla, ut ser quam gida ac. Proin vel enim sit amet neque eud cotur nec id justo. Proin quis ligula suscipit, ornare odio ac, convallis lectus. Nunc massa magna, finibus a felis faucibus, convallis cue nisi. In hac hase platea dictumst. Em elit lacus, finibus coe augue id, vulputate sodales ipsum. Vius feugiat nisl ut eleifend tempus. Phasus eget enim eget est herit conuat. Nam orci lectus, euismod id ipsum vitae, porta felis. Fusce mollis at diam sit amet lobortis. In non tellus vitae leo malesuada faucibus. </p>
+                                    <p><strong>Secure profits today with the storage management software of tomorrow.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="feature-spotlight__pager">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_POS)}" styleClass="feature-spotlight__pager-item">
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_Left-black.png" alt=""/></i>
+                            <b>Point of Sales (POS)</b>
+                        </apex:outputLink>
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Payment)}" styleClass="feature-spotlight__pager-item">
+                            <b>Advanced Payment Features</b>
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_right.png" alt=""/></i>
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature-spotlight -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

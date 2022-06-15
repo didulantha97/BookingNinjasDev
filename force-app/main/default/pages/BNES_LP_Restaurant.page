@@ -1,0 +1,172 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg8.png)');
+                    $('.wrapper').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg8.jpg)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Software de Gestión de Restaurantes - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/Flat_MacBook8.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Software de Gestión de Restaurantes</h1>
+                                <p>Bienvenido al mejor restaurante de la ciudad.</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>Según nuestros usuarios...</h2>
+                        <p>El sistema de Booking Ninjas es lo mejor que le ha pasado a la industria de la hospitalidad. En esta era, los restaurantes necesitan brindar un mejor nivel de servicio, con prácticas saludables y mucho más. ¿Qué es mejor que usar el sistema digital diseñado específicamente para estos propósitos?</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>Lo digital está de moda</h2>
+                        <p>Control de inventario, contabilidad y  la gestión del pago de los clientes. ¿Te suena conocido? Todos estos son aspectos importantes en la gestión de un negocio. Tal vez a usted le resulte tedioso encargarse de todas esas operaciones manualmente. Bueno, para eso está el software de administración de restaurantes. Y con nuestro propio servicio de gestión, puedes quitarte algunas de las cargas del trabajo.</p>
+                        <p>Nosotros no le estamos recomendando que usted use un software de gestión, no es una recomendación, es una necesidad. El mundo se ha vuelto digital, y usted no le puede dejar el tren. Implementar un software de administración de restaurantes no solo facilita tu trabajo sino que también enriquece la experiencia del cliente y te ayuda a tomar decisiones para maximizar los beneficios. Sin embargo, no esperes que mejore la calidad de tu comida. Eso es algo que es mejor dejar a los buenos y viejos seres humanos.</p>
+                    </div>   
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">¿Qué ofrecemos?</h2>
+                        <h2>Control de inventario</h2>
+                        <p>Ningún restaurante puede sobrevivir sin un manejo adecuado del inventario. No querrás quedarte varado y encontrarte con que tienes pocos ingredientes en hora pico, o encontrarte con que la mitad de tus ingredientes están caducados.</p>
+                        <p>Un sistema de gestión de restaurantes puede ayudarle en el registro del inventario y a hacer un seguimiento de los productos de su negocio. Puedes monitorear cuando tienes cada ingrediente y la fecha estimada de cuando se agotaran. Con un sistema de gestión de Restaurantes, también es posible establecer una fecha fija en el calendario incorporado para que el reabastecimiento sea automático. Incluso, el sistema puede ayudarle a determinar los productos que ya han caducado, para evitar posibles problemas con los inspectores de salud y los comensales.</p>
+                        <p>También se pueden generar estadísticas sobre los platos más y menos demandados por los comensales, para llevar un registro. Con el control de inventario, puedes ahorrar en comida y en dinero.</p>
+                        <br/>
+                        <h2>Seguimiento de las ventas</h2>
+                        <p>Cada software inteligente de gestión de restaurantes registra todas y cada una de las transacciones que se realizan y proporciona datos que pueden mejorar su negocio. Por ejemplo, conocer sus platos de mejor y peor rendimiento y los periodos más lucrativos puede ayudarle a tomar las decisiones correctas en la gestión de su negocio, al abastecerse de recursos para dichos periodos y aumentar la disponibilidad de los platos.</p>
+                        <br/>
+                        <h2>Preparación de los estados financieros</h2>
+                        <p>Un software de gestión sin la capacidad de crear estados financieros es un software bastante inutil. Después de todo, estás dirigiendo un negocio. A intervalos específicos, un software de gestión de restaurantes calculará todas las transacciones y gastos y preparará un estado financiero. Los impuestos, los salarios, las ventas y el inventario son aspectos que se deben tener en cuenta para realizar un estado de cuenta impecable. No hay necesidad de calcular manualmente las finanzas con variables siempre cambiantes, lo que aumenta la posibilidad de que se acumulen errores. Un software de administración puede manejar eso fácilmente.</p>
+                        <p>Por supuesto, esto no significa que debas adoptar un enfoque completamente automatizado en donde usted no participa ni interviene, todavía se espera que usted revise las cosas de vez en cuando.</p>
+                        <br/>
+                        <h2>Administración del personal</h2>
+                        <p>Llevar un registro de la asistencia y el rendimiento de su personal puede ser una tarea dantesca si se realiza con hojas de cálculo. Afortunadamente, con el software de administración, esto se convierte en un asunto trivial.</p>
+                        <p>Los trabajadores también podrán solicitar licencias y permisos a través del sistema, ya sea por vacaciones o por motivos de salud.</p>
+                        <p>Los exámenes de desempeño profesional del personal también pueden realizarse a través del sistema. Mediante el sistema los empleadores pueden verificar que sus trabajadores están cumpliendo con las expectativas. Los empleadores podrán identificar fácilmente a aquellos trabajadores de mayor rendimiento, gracias al registro de estadísticas de estos, lo cual permite recompensarlos en consecuencia.</p>
+                        <p>Un software de gestión de restaurantes no solo le ayuda a administrar su negocio, sino también a su personal.</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">¿Qué hay de los clientes?</h2>
+                        <p>Ya basta de hablar de aspectos administrativos. Centrémonos en tu prioridad número uno: los clientes. Todo buen servicio de gestión de restaurantes también ofrece una interfaz que permite a los clientes acceder a funciones que les ayudan a satisfacer sus necesidades.</p>
+                        <br/>
+                        <h2>Reservas en línea</h2>
+                        <p>Con un sistema en línea, los clientes podrán hacer reservas por adelantado desde la comodidad de sus casas. Adiós a los conflictos de horarios. Un software de gestión de restaurantes asegura que los asientos no disponibles se marquen como tal, e incluso envía un recordatorio a los clientes de su reserva para reducir los casos de no asistencia. Esta facilidad de uso animará a más clientes a frecuentar su negocio.</p>
+                        <br/>
+                        <h2>Pedidos en línea</h2>
+                        <p>Si la montaña no va a Mahoma, Mahoma va a la montaña. Si sus clientes no vienen a usted, el software de gestión de restaurante les permite a estos realizar pedidos que les llega a la comodidad de sus hogares.</p>
+                        <p>Esto también facilita el seguimiento de sus clientes y la generación de datos sobre las ventas realizadas.</p>
+                        <p>El hecho de tener una opción de pedido en línea también otorga mayor acceso a aquellos clientes que son físicamente incapaces de salir de sus casas.</p>
+                        <p>Otra ventaja de los pedidos en línea para su empresa es la reducción del overbooking. Correrá un menor riesgo de quedarse sin mesas en su restaurante.</p>
+                        <br/>
+                        <h2>Integración del punto de venta</h2>
+                        <p><strong>No cash? No problem. </strong>Nuestro software de gestión de restaurantes se integra con su sistema de puntos de venta para gestionar los pagos. Con la tecnología Einstein basada en inteligencia artificial, los números se reducen desde el momento de la compra. Todo lo que se requiere es que sus clientes posean una tarjeta de crédito para el pago. También puede integrar las plataformas de domicilios más populares. Haga de su servicio un punto de acceso fácil a través de las mejores plataformas de domicilio que existen, dependiendo de las necesidades de sus clientes. Con nosotros, usted podrá integrarse con Ubereats, Deliveroo, DoorDash, Glovo, Takeaway, y mucho más. Es lo que se espera de su negocio.</p>
+                        <p>You also get the integration of popular delivery channels. Make your service an easy point of access through the best channels out there, depending on your customers’ needs. With us, you get integrations with Uber Eats, Deliveroo, DoorDash, Glovo, Takeaway, and much more. It’s expected from your business.</p>
+                        <br/>
+                        <h2>Mobile Payment</h2>
+                        <p>There’s no need for customers to walk around with cash, or even a card, in hand. With our mobile integration, they can conveniently make payments with their smartphones. This allows them to save money otherwise billed on credit card fees.</p>
+                        <p>Mobile technology simply isn’t going anywhere. In fact, just under 30% of Americans exclusively use mobile transactions, and that number is only going to increase.  A lot of your customers will certainly have preference for mobile payment so it’s your duty to ensure it’s available.</p>
+                        <br/>
+                        <h2>More Effective Communication</h2>
+                        <p>No good business can thrive without feedback from its audience. Through our management software, diners can easily give feedback about their experience at your restaurant, and also advise you on areas to improve, be it the food, service, or aesthetics.</p>
+                        <p>This will help you get in sync with your patrons and gear your service to be more customer-friendly, which in turn will bolster your reputation in circles. You’ll be sure to see your reviews become more positive and receive a whole lot more customers.</p>
+                    </div> 
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <h3 class="text_center">Tres pasos para empezar</h3>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Software de Gestión de Restaurantes - 2" class="wow fadeInRight" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration8.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <dl>
+                                <h3>Ponerse en contacto:</h3>
+                                <dd>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al (907) 600-2345 para agilizar el proceso.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Importe sus datos</h3>
+                                <dd>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Láncese al éxito</h3>
+                                <dd>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h3 class="text_center">La mejor opción para su negocio</h3>
+                        <p>El sistema de Booking Ninjas está diseñado para ayudarle a alcanzar sus objetivos empresariales sin los contratiempos familiares a la mayoría de los sistemas de gestión. Nosotros ofrecemos herramientas de alta calidad con el fin de proporcionarles a ustedes un proceso de gestión sin problemas para el personal y una plataforma que proporciona un servicio excepcional de atención al cliente a sus huéspedes.</p>
+                        <p>Nos interesa la productividad, la experiencia del cliente y los beneficios para el usuario. Por esa razón ofrecemos paquetes muy útiles como parte de nuestro proceso de implementación. Nuestra plataforma de desarrollo y personalización le ayuda a usted a incluir paquetes específicos y a eliminar los que actualmente no desee. En otras palabras, usted va a obtener exactamente lo que está buscando, y mejor.</p>
+                        <p>Nosotros hacemos negocios a nivel internacional. Desde Norteamérica, hasta Europa y Asia, estamos interesados en ofrecer excelencia absoluta.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/Restaurant_icon-bg.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Software de Gestión de Restaurantes - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/Restaurant_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Our restaurant software packages start </p>
+                                        <p><b>$150</b> / Terminal / month! </p>
+                                        <p>Click&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Pricing)}">here</apex:outputLink> for pricing info.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">Prueba el piloto hoy</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

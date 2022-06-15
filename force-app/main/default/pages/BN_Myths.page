@@ -1,0 +1,118 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+            
+            <div class="myth-truth">
+                <div class="container">
+                    <h1><strong>4 Myths</strong> about Changing your Current Property Management System</h1>
+                </div>
+                <div class="list-myth">
+                    <!--block-->
+                    <div class="myth-truth__block">
+                        <div class="myth" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/myth1.jpg);background-color: #3ca5bb;">
+                            <div class="container">
+                                <div class="myth-truth__item">
+                                    <h3>Myth #1</h3>
+                                    <h5>You&#x27;re happy with your current property management software</h5>
+                                    <a class="button truth__btn"><span>Know your truth</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="truth" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/truth1.jpg);background-color: #6bd9b4;">
+                            <div class="container">
+                                <div class="myth-truth__item">
+                                    <h3>Truth #1</h3>
+                                    <p>Are you really, though? Can you easily set up email and SMS drip campaigns to maintain the guest relationship? Do you depend on third-party booking agents to manage your customer data instead of managing it yourself? Wouldn't you like to have an in-house online marketing and hotel management system? Without a real all-property management system, it is broken – so let's fix it.</p>
+                                    <a class="button myth__btn"><span>Back to myth</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-block-->
+                    <!--block-->
+                    <div class="myth-truth__block roll">
+                        <div class="myth" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/myth2.jpg);background-color: #cde9f7;">
+                            <div class="container">
+                                <div class="myth-truth__item right blue">
+                                    <h3>Myth #2</h3>
+                                    <h5>A new property management app will be too hard to use</h5>
+                                    <a class="button truth__btn"><span>Know your truth</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="truth" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/truth2.jpg);background-color: #d5f9f9;">
+                            <div class="container">
+                                <div class="myth-truth__item right blue">
+                                    <h3>Truth #2</h3>
+                                    <p>Don't worry – we'll help you through it. From interactive tours to video tutorials and 24/7 customer and technical support, Booking Ninjas will make your transition into the digital era as seamless as possible. And if that weren't enough, we have the full backing of the Salesforce engineering and expertise to create custom property management solutions for all your business needs.</p>
+                                    <a class="button myth__btn"><span>Back to myth</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-block-->
+                    <!--block-->
+                    <div class="myth-truth__block zoom">
+                        <div class="myth" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/myth3.jpg);background-color: #0f848d;">
+                            <div class="container">
+                                <div class="myth-truth__item center">
+                                    <h3>Myth #3</h3>
+                                    <h5>Our solution costs too much</h5>
+                                    <a class="button truth__btn"><span>Know your truth</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="truth" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/truth3.jpg);background-color: #0f848d;">
+                            <div class="container">
+                                <div class="myth-truth__item center">
+                                    <h3>Truth #3</h3>
+                                    <p>
+                                        Knowledge is power – and so is data. The cost of owning, learning, and manipulating your data directly is invaluable. But if you want to put a price on it, Booking Ninjas offers several dynamic pricing options to match the size of your property management needs. You can even enjoy custom pricing based on AI and advanced analytics that constantly learns your business and adapts its business logic. We&#x27;ll work with you.
+                                    </p>
+                                    <a class="button myth__btn"><span>Back to myth</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-block-->
+                    <!--block-->
+                    <div class="myth-truth__block flip">
+                        <div class="myth" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/myth4.jpg);background-color: #84c2d1;">
+                            <div class="container">
+                                <div class="myth-truth__item">
+                                    <h3>Myth #4</h3>
+                                    <h5>We&#x27;re in hospitality. You&#x27;re in technology. You don&#x27;t get what we do.</h5>
+                                    <a class="button truth__btn"><span>Know your truth</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="truth" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/truth4.jpg);background-color: #83d6de;">
+                            <div class="container">
+                                <div class="myth-truth__item blue">
+                                    <h3>Truth #4</h3>
+                                    <p>
+                                        Booking Ninjas was created and is run by lifelong hospitality and property management guru David M. Harroch. He&#x27;s designed this system personally to address inefficiencies he&#x27;s experienced in the real estate asset management industry. If anyone would know what you need in an all-in-one, A-plus property management application, it&#x27;s us.
+                                    </p>
+                                    <a class="button myth__btn"><span>Back to myth</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end-block-->
+                </div>
+            </div>
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

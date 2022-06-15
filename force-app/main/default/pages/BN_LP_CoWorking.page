@@ -1,0 +1,882 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false"
+    applyHtmlTag="false" cache="true" controller="BN_TemplateController">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <!-- hero -->
+            <div class="coworking-page__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking-notebook.png"
+                                alt="" class="adaptive-img" />
+                        </div>
+                        <div class="col-lg-6">
+                            <article class="segment__hero-txt">
+                                <h1>Get the Prime out of your
+                                    space with our Best
+                                    Coworking Management
+                                    Software
+                                </h1>
+                                <h2>All-In-One Coworking Space Software To Manage Your
+                                    Shared Space Rentals, Vacancies &amp; Daily Operations
+                                </h2>
+                                <apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Call</apex:outputLink>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+            <!-- text -->
+            <div class="coworking-page__center-text">
+                <div class="container">
+                    <h2>Like family, our modernized coworking
+                        management system is connected in a single network!</h2>
+                    <p><strong>You no longer need different systems to connect to each other before
+                            maximizing your space.</strong></p>
+
+                    <p><strong>We have integrated the various features into a single system that breaks down
+                            the silos.</strong></p>
+
+                    <p>Booking Ninjas supports multi-location reservation/booking, making it easy to monitor
+                        and manage your shared rental spaces from any location in a single dashboard. </p>
+                    <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">Plan
+                        &amp; Pricing</apex:outputLink>
+                </div>
+            </div>
+            <!-- /text -->
+            <!-- title -->
+            <div class="coworking-page__main-title">
+                <div class="container">
+                    <h2>Here’s How Our Coworking Space Booking System works</h2>
+                    <p>With Booking Ninjas PMS, easily create an inventory for clients to choose features
+                        they want to rent and book on your coworking space. This helps increase cash flow as
+                        they pay for services they want. We ensure a speedy and accurate coworking space
+                        booking system that guarantees easy monitoring, enables quick access to clients
+                        concerns, helps handle reservations for different room types and stressless
+                        navigations.</p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="coworking-page__articles">
+                <div class="container">
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking19.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Seat &amp; Desk Booking</h3>
+                                    <section>
+                                        <p>This allows you to create individual seats &amp; desks and
+                                            enables reservations to be done on the booking engine.
+                                        </p>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking18.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Private &amp; Meeting Room Booking</h3>
+                                    <section>
+                                        <p>Our PMS has features for room booking where your tenants or
+                                            guests can book rooms for different purposes. This provides the
+                                            needed privacy and exclusivity they deserve.
+
+                                        </p>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking17.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Resource &amp; Equipment Booking</h3>
+                                    <section>
+                                        <ul>
+                                            <li>Simply add available resources and equipment to the system
+                                                to allow easier reservation by users and management.</li>
+
+                                            <li>This helps to make life easier for members who would no
+                                                longer need to outsource the needed equipment.</li>
+
+                                            <li>Helps keep track of the usage and condition of booked
+                                                equipment. </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="coworking-page__main-title">
+                <div class="container">
+                    <h2>Why You Should Opt for Our Coworking Member
+                        Management Software</h2>
+                    <p>Easily manage your coworking space with our software which makes for easy support.
+                        Create profile of your members to keep track of their data.
+                    </p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="coworking-page__articles">
+                <div class="container">
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking16.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Membership Management</h3>
+                                    <section>
+                                        <p>Have flexible and fully customizable membership support which
+                                            enables you to create membership that suits your users and your
+                                            space.
+
+                                        </p>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking15.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Team Membership Support
+                                    </h3>
+                                    <section>
+                                        <ul>
+                                            <li>Team membership gives room for consolidated payment under
+                                                one account for a whole team/company. </li>
+                                            <li>It also allows your users to sign up in bulk and helps
+                                                simplify billing.</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking14.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Increase Your Space Revenue Using
+                                        Drop-ins &amp; Day Pass Users </h3>
+                                    <section>
+                                        <ul>
+                                            <li>Not all users will sign up on the first count. This allows
+                                                your users to rent your space without membership tags and
+                                                helps with on-the-spot payments.</li>
+
+                                            <li>Many people will easily subscribe to a pay-as-you-go service
+                                                using the on-the-spot payments thereby increasing sales.
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6  order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking13.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Get Your Members Hooked Using
+                                        Coworking Member App &amp; Member
+                                        Portal</h3>
+                                    <section>
+                                        <ul>
+                                            <li>Allow users to manage their membership/reservation, make
+                                                payments, and even purchases through the member app, giving
+                                                them control over their membership. </li>
+
+                                            <li>We all love being in control. With the owner app, both you
+                                                and your staff can manage your operations, members and
+                                                bookings.
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking12.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Guest &amp; Visitor Management
+                                    </h3>
+                                    <section>
+                                        <ul>
+                                            <li>It is an inevitable fact that guests come with visitors.
+                                                Manage member’s guests and visitors to ensure proper
+                                                documentation, profiling and accounting of users. This helps
+                                                with solving security concerns and ensures the safety of
+                                                lives and property.</li>
+
+                                            <li>By having a guests and visitors registration tab, proper
+                                                accountability is promised.
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6  order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking11.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Front Desk Concierge &amp; Member
+                                        Help Desk</h3>
+                                    <section>
+                                        <ul>
+                                            <li>This interface will speedily help the community manager to
+                                                welcome visitors, schedule appointments and manage daily
+                                                check-ins/check-outs.
+                                                <br />
+                                                <br />
+                                                It will also help with basic information capturing and
+                                                scheduling appointments for prospective member tours.
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="coworking-page__main-title">
+                <div class="container">
+                    <h2>Inventory Management
+                    </h2>
+                    <p>Easily manage an inventory of spaces, rooms, equipment and resources from the app.
+                    </p>
+                    <br />
+                    <p>Our system also integrates all necessary information into one dashboard to help track
+                        all inventory-concerned matters.
+                    </p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="coworking-page__articles">
+                <div class="container">
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking10.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">It Does Not Matter if You Have Both
+                                        Small &amp; Big Space Coworking Space
+                                    </h3>
+                                    <section>
+                                        <ul>
+                                            <li>The system supports coworking spaces of all sizes. </li>
+
+                                            <li>Whatever capacity your coworking space operates in, we
+                                                provide top-notch support for your business.
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking9.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Multiple Locations</h3>
+                                    <section>
+                                        <p>As business blooms, new locations are opened. The platform gives
+                                            you the opportunity to grow your conglomerate without signing up
+                                            for a new system. Simply add the new location to your dashboard
+                                            and it is business as usual.</p>
+                                        <br />
+                                        <p>Monitor your space from multiple locations in one dashboard and
+                                            have an instant ready-to-use system in the new location. </p>
+                                        <br />
+                                        <p><strong>You can also track real-time users and understand peak
+                                                periods for each location which helps you plan properly for
+                                                these periods.</strong> </p>
+
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking8.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Occupancy Dashboards To Helps
+                                        Measure &amp; Plan</h3>
+                                    <section>
+                                        <ul>
+                                            <li>This helps you keep track and understand how occupied your
+                                                space is, at any given point.
+                                            </li>
+
+                                            <li>Make use of your occupancy data to measure the health of
+                                                your business. </li>
+
+                                            <li>Get utilization report for all inventories ranging from
+                                                desk, room, resource and equipment, to membership
+                                                utilization report which provides useful insights for better
+                                                membership planning
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="coworking-page__main-title">
+                <div class="container">
+                    <h2>Automated Billing &amp; Invoicing
+                    </h2>
+                    <p>The Automated Billing &amp; Invoicing was built with your coworking space in mind,
+                        helping sort out your billing needs. You’re seconds away from improving your billing
+                        process. </p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="coworking-page__articles">
+                <div class="container">
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking7.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Custom Recurring &amp; One-Off Plans</h3>
+                                    <section>
+                                        <ul>
+                                            <li>You get the opportunity to customize recurring membership
+                                                which spans weekly, monthly, quarterly or annually.</li>
+
+                                            <li>Also provide support for one-off plans like drop-ins and day
+                                                passes. Everybody wins, here.
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking6.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Multi-Site Billing Support</h3>
+                                    <section>
+                                        <ul>
+                                            <li>We see your need for a system that enables multi-site
+                                                billing support across locations.</li>
+
+                                            <li>Through this feature, you can have different tax rates,
+                                                billing requirements, language and more per location.
+                                            </li>
+                                        </ul>
+
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking5.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Payment Gateway</h3>
+                                    <section>
+                                        <ul>
+                                            <li>Do not be worried about integrating payment gateways into
+                                                your system. </li>
+
+                                            <li>Our system integrates well with platforms like Stripe and
+                                                other popular payment gateways.
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="coworking-page__main-title">
+                <div class="container">
+                    <h2>Additional Features
+                    </h2>
+                    <p>The Booking Ninjas coworking space system helps you maximize your coworking space to
+                        generate more revenue.
+                    </p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="coworking-page__articles">
+                <div class="container">
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking4.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Events Management</h3>
+                                    <section>
+                                        <ul>
+                                            <li>You can easily rent out your space for events complete with
+                                                tools to help with event management.</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking3.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Catering / UberEats</h3>
+                                    <section>
+                                        <ul>
+                                            <li>Your community can utilize the catering services of
+                                                registered vendors in your space. </li>
+
+                                            <li>Ubereats can be ordered, food delivered and all coordinated
+                                                from the member app/portal without having them change
+                                                interfaces.</li>
+
+                                            <li>Having a connected POS system even makes it
+                                                merrier...because, what is a billing system without an easy
+                                                outlet to pay for them?
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking2.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Business &amp; Usage Analytics</h3>
+                                    <section>
+                                        <ul>
+                                            <li>Maximize the potential of your business by optimizing your
+                                                space performance. You can achieve this by monitoring room
+                                                usage, track member check-ins, measure conversions, gain
+                                                insights into inventories and member behaviour. Our
+                                                integrated tracking and data collection process makes this
+                                                easy for you.
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coworking-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/coworking1.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Whitelabel</h3>
+                                    <section>
+                                        <ul>
+                                            <li>
+                                                Because the brand image is captured in the little things,
+                                                you can build your brand by setting up the member app and
+                                                portal with your logo. Let your community identify you
+                                                through the sparkle of your image and brand. Unify your
+                                                presence by optimizing your image!
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+
+            <!-- prices -->
+            <div class="segment__prices">
+                <div class="container">
+                    <h2 class="text_center section-title">Booking Ninjas Coworking Space Software Price</h2>
+                    <h3>Core Coworking PMS (Starts from <span>
+                            <apex:outputText value="{0, number, currency}">
+                                <apex:param value="{!lowest_monthly_price}" />
+                            </apex:outputText>/month
+                        </span>)</h3>
+                    <div class="text_center pricing-support__btn wow fadeIn">
+                        <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">Plan
+                            &amp; Pricing</apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /prices -->
+
+            <div class="segment__addons">
+                <div class="container">
+                    <h2 class="text_center section-title">
+                        Coworking Space Management <span class="color-blue">System Add-Ons</span>
+                    </h2>
+                    <p class="section-subtitle">Booking Ninjas Coworking Space System comes with amazing
+                        add-ons that further beautify your space management experience. </p>
+                    <!-- Slider -->
+                    <div class="pricing-addons__slider">
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-be.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Booking Engine</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-channel-manager.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Channel Manager</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-data-analytics.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Data Analytics</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-pos.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">POS</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-cash-register.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Cash Register</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-portal.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Portal</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-email-app.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Email App</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-membership-module.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Membership Module</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-esign.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Esign (Additional Api's)</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-communications.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Communications (paid by usage)</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn-more-center">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}">More add-ons
+                            available soon</apex:outputLink>
+                    </div>
+                </div>
+            </div>
+
+            <div class="segment__faq">
+                <div class="container">
+                    <h2 class="text_center section-title">FAQ</h2>
+                    <div class="segment-accordion">
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>What is coworking management software?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>A coworking management software is a solution that helps coworking
+                                    businesses to organize the space, manage the reservation process, and
+                                    control the membership management. From inventory management to customer
+                                    service tickets and more, coworking management software is designed to
+                                    track and automate your coworking spaces operations.</p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>How to set up a coworking management system?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>To set up a coworking management system, the first thing you need to do
+                                    is book an introductory demo with us - &nbsp; <apex:outputLink value="{!URLFOR($Page.BNCalendly)}">schedule an appointment </apex:outputLink>
+                                </p>
+                                <p>During this demo, you get to see all the features that could be utilized
+                                    in your coworking space. This process is unique for each business and
+                                    the requirements for setting up your personalized coworking management
+                                    system are determined during this call.</p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>Can you install this coworking management system into an existing
+                                    Salesforce organization?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Yes, you can install this system into your existing Salesforce
+                                    organization.</p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>Can I get a demo of your coworking management system?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Yes, you can schedule a demo of our coworking management system. With a
+                                    demo, you see how the coworking space system helps deliver a great
+                                    digital experience to your community by automating the administrative
+                                    process. </p>
+                                <p>Schedule a demo today! You can choose any day or time convenient for you.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>Can you connect my inventories to a channel manager?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Yes, you can connect your inventories to your current channel manager. If
+                                    you don’t have a channel manager, we provide the channel management
+                                    feature as well (at a discounted price for co-working spaces using our
+                                    PMS!)</p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>Do you support online booking for seats, desks, private offices via
+                                    booking engine/app?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Yes, Booking Ninjas PMS provides a booking engine that supports online
+                                    booking for your community. Members and guests can book online, pay and
+                                    manage their meeting room reservations in any of your centres. Also
+                                    ensures availability of Private &amp; Meeting Room Booking. Available
+                                    both on desktop and mobile platforms.</p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>Do You Support Resource &amp; Equipment Booking?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Yes. Users can do resource &amp; Equipment booking by adding available
+                                    resources and equipment to the system for easy reservation and
+                                    management.</p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>Do you connect with the POS (snacks shop)?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Yes. Whether your POS operates in a snack shop, restaurant, bursary or
+                                    cafe, our PMS connects the POS to the rest of the PMS. If you already
+                                    have a POS system, we can connect it to the rest of your instance. If
+                                    you don’t have an existing POS system, we will provide the POS system
+                                    which is automatically synced with the rest of the PMS.</p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>Do you have a member portal for the member to manage their account?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Yes, we do. For the member portal, you can do the following: Status
+                                    booking, etc (day pass/monthly member), upgrade plan, referrer program,
+                                    etc. You can also include custom options you’d like your members to see
+                                    on their portal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn-more-center">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FAQs)}">More FAQs about Booking Ninjas
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

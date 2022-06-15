@@ -1,0 +1,111 @@
+<apex:page standardController="Opportunity" extensions="CreateQuoteController" showHeader="false" sidebar="false"  >
+
+<apex:form id="theForm">
+            
+   <apex:pagemessages id="pnlMessages" />
+
+   <center>
+       <apex:commandButton rendered="{!NOT(quoteExists)}" value="Create New Quote" action="{!showBlockCreate}" onComplete="" rerender="quote,theForm">
+           <apex:param name="nameQ" assignTo="{!showQuoteBlock}" value="TRUE"/>
+       </apex:commandButton>
+       <apex:commandButton rendered="{!quoteExists}" value="Update Existing Quote" action="{!showBlockUpdate}" onComplete="" rerender="quote,theForm">
+            <apex:param name="nameQ" assignTo="{!showQuoteBlock}" value="TRUE"/>
+        </apex:commandButton>
+   </center>
+    
+    <apex:outputPanel id="noQuote" rendered="{!AND(NOT(isProductFieldPopulated),showQuoteBlock)}"><h3>Product Item 1 field is empty. Please populate appropriate value</h3></apex:outputPanel>
+ 
+    <apex:pageBlock id="quote" rendered="{!AND(showQuoteBlock,isProductFieldPopulated)}">
+
+            <apex:outputPanel layout="block" style="overflow:auto; height:150px;margin: 0 2px" >
+    
+                  <apex:OutputPanel id="message2" rendered="{!noStandardPrice}">
+                      <h6> <p>There are no associated prices for listed product items</p></h6> 
+                  </apex:outputPanel> 
+    
+                  <apex:pageBlockTable id="table" value="{!standardPrices}" var="item" columns="5" rows="5" width="100%">
+            
+                      <apex:column headerValue="Product">
+                          <apex:outputText id="Product" value="{!item.Product2.Name}" />
+                      </apex:column>
+                      
+                      <apex:column headerValue="Quantity">
+                          <apex:outputText id="Quantity" value="{!item.product2.Quantity__c}" />
+                      </apex:column>
+                               
+                      <apex:column headerValue="Base Price">
+                         <apex:outputText id="Base" value="$ {0, number, #,##0.00}">
+                             <apex:param value="{!item.unitprice}" />
+                         </apex:outputText>
+                      </apex:column>
+                      
+                      <apex:column headerValue="Total">
+                         <apex:outputText id="Total" value="$ {0, number, #,##0.00}">
+                             <apex:param value="{!item.unitprice * item.product2.Quantity__c}" />
+                         </apex:outputText>
+                      </apex:column>
+        
+                  </apex:pageBlockTable>
+
+            </apex:outputPanel>
+
+           <apex:outputPanel id="PricingAttribute">
+                <apex:outputLabel value="Total Price: $"/><apex:inputText id="TotalPrice" value="{!TotalPrice}" style="width:70px;" html-readonly="true"/>&nbsp;&nbsp;
+                <apex:outputLabel value="Total Price (with discount): $"/><apex:inputText id="TotalPriceWithDiscount" value="{!IncludedPriceForDiscount}" style="width:70px;" html-readonly="true"/>&nbsp;&nbsp;
+                <apex:outputLabel value="Discount (%): "/><apex:inputText id="Discount" value="{!Discount}" style="width:40px;" onchange="validate('{!$Component.TotalPrice}','{!$Component.Discount}','{!$Component.PriceAfterDiscount}',null,'{!$Component.TotalPriceAfterDiscount}');"/> &nbsp;&nbsp;
+                <apex:outputLabel value="Total Price after Discount: $"/><apex:inputText id="TotalPriceAfterDiscount" value="{!TotalPriceAfterDiscount}" style="width:70px;" html-readonly="true"/>&nbsp;&nbsp;
+                <br/><br/>
+                <apex:outputLabel value="One-Time Payment: $"/><apex:inputText id="GrandTotal" value="{!GrandTotal}" style="width:70px;" html-readonly="true" onchange="validate('{!$Component.TotalPrice}','{!$Component.Discount}','{!$Component.TotalPriceAfterDiscount}','{!$Component.Discount}',null);"/> &nbsp;&nbsp;
+                <apex:outputLabel value="Monthly Dues: $"/><apex:inputText id="MonthlyDues" value="{!MonthlyDues}" style="width:70px;" html-readonly="true" /> &nbsp;&nbsp;
+            </apex:outputPanel>
+            &nbsp; | &nbsp;&nbsp;&nbsp;
+            <apex:outputPanel >
+                <apex:commandbutton action="{!CalcTotalPrice}" value="Calculate Totals" rerender="PricingAttribute" status="status"/>
+                <apex:commandbutton action="{!ClearAll}"  value="Clear All" rerender="PricingAttribute" status="status" />
+                <apex:commandbutton action="{!BuildQuote}" value="Send Quote" disabled="{!if(TotalPriceAfterDiscount < 1, true, false)}" /> 
+            </apex:outputPanel>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <apex:outputPanel style="align:right;color:green;font-weight:bold;">
+                <apex:actionStatus startText=" Please Wait..." id="status" >
+                </apex:actionStatus> 
+            </apex:outputPanel>
+            <br /> <hr />
+     </apex:pageBlock>
+     <apex:actionFunction name="calculate" action="{!calcTotalPrice}" status="status" rerender="PricingAttribute"/>     
+ 
+</apex:form>
+
+<script>
+    $('#TotalPrice').attr('readOnly', true); 
+    $('#TotalPriceAfterDiscount').attr('readOnly', true); 
+
+    function validate(PriceID,DiscountID,PriceAfterDiscountID,val1,val2) {
+        var price = document.getElementById(PriceID).value;
+        var discount = document.getElementById(DiscountID).value;
+        var priceAfterDiscount = document.getElementById(PriceAfterDiscountID).value;
+        if (price < priceAfterDiscount) {
+            alert('After Discount Price cannot be greater than Total Price');
+            document.getElementById(PriceAfterDiscountID).value=0;
+            //return true;
+        } else if (discount > 99 ) {
+            alert('Invalid discount. It should be in between 0 - 99');
+            document.getElementById(DiscountID).value = 0.0;
+            //return true; 
+        }
+        else {
+            cal(val1,val2);
+        }       
+    }
+
+    function cal(priceAfterDiscount,discount) {
+        if (priceAfterDiscount == null) {
+            document.getElementById(Discount).value = null;
+        }
+        if (discount == null) {
+            document.getElementById(TotalPriceAfterDiscount).value = null;
+            calculate();
+        }
+    } 
+</script>
+         
+</apex:page>

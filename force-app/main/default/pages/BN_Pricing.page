@@ -1,0 +1,541 @@
+<apex:page controller="BN_PricingController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <div class="pricing-hero">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-4 col-lg-2 align-self-center align-self-lg-start order-md-1">
+							<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-hero-img.png" alt="Booking Ninjas Property Management Software Cost" class="pricing-hero-img"/>
+						</div>
+						<div class="col-12 col-md-8 col-lg-10">
+							<h1>
+								Booking Ninjas Property Management <span class="color-blue">Software Cost</span>
+							</h1>
+							<h2>All-In-One PMS Designed To Grow With Your Business</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-10">
+							<!-- Company size selector -->
+							<div id="pricing-plans"></div>
+							<ul class="pricing-size">
+								<apex:repeat value="{!products}" var="product" id="products">
+									<li class="pricing-size__item {!IF(product.primary,'active','')}" data-slide="{!product.order}">
+										<i class="pricing-size__icon"></i>
+										<p>
+											<span>{!product.name}</span>
+											{!product.size} units
+										</p>
+									</li>
+								</apex:repeat>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-plans">
+				<div class="container">
+					<!-- Pricing filter -->
+					
+
+					<div class="pricing-filter row align-items-end justify-content-center">
+						<div class="col-12 col-md">
+							<ul class="pricing-filter__period-tab">
+								<li class="subscription-length active" data-length="monthly">Monthly</li>
+								<li class="subscription-length" data-length="annualy">Annualy</li>
+							</ul>
+						</div>
+						<div class="col-auto">
+							<div class="pricing-filter__currency">
+								<apex:repeat value="{!Currency}" var="cur">
+									<figure class="currency {!if(cur.code == 'USD', 'active', '')}" data-name="{!cur.code}" data-rate="{!cur.rate}" data-sym="{!cur.symbol}">
+										<figcaption>{!cur.cname}</figcaption>
+										<b>{!cur.symbol}</b>
+									</figure>
+								</apex:repeat>
+							</div>
+						</div>
+					</div>
+					<!-- /Pricing filter -->
+					<!-- Pricing Slider -->
+					<div class="pricing-slider">
+						<apex:repeat value="{!products}" var="product" id="productList">
+							<div class="pricing-slider__slide" data-id="{!product.id}" data-mode="{!product.annualDiscount}">
+								<div class="pricing-slider__slide-container">
+									<div class="pricing-slider__slide-name">
+										<p class="uppercase">{!product.name}</p>
+										<p>({!product.size} units)</p>
+									</div>
+									<div class="pricing-slider__slide-amount">
+										<div class="d-flex justify-content-center">
+											<span class="pricing-slider__slide-price package-price">
+												<span class="pkg-subs-price">${!product.monthlyFee}</span>
+												<span class="pkg-subs-price-ori" style="display:none;">{!product.monthlyFee}</span>
+												<span class="pkg-subs-price-discount" style="display:none;">{!product.monthlyFeeAfterDiscount}</span>
+											</span>
+											<span class="pricing-slider__slide-period">per<br/>month</span>
+										</div>
+										<div class="pricing-slider__slide-fee">
+											<i>+</i>
+											<p>One-Time Implementation Fee </p>
+											<big class="package-price">
+												<span class="pkg-impl-price">${!product.implementationFee}</span>
+												<span class="pkg-impl-price-ori" style="display:none;">{!product.implementationFee}</span>
+												<span class="pkg-impl-price-discount" style="display:none;">{!product.implementationFeeAfterDiscount}</span>
+											</big>
+										</div>
+										<button onclick="goCheckout({!product.order})" class="button-orange submit-btn" data-order="{!product.order}">Start NOW</button>
+										<div class="pricing-slider__slide-deposit">
+											Start with <big>{!product.implementationDeposit}%</big> deposit of the implementation fee
+											<span class="list-tooltip">
+												<div class="list-tooltip-icon"><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/list-tooltip-icon.png"/></div>
+												<span class="list-tooltip-text">
+													You only pay a {!product.implementationDeposit}% deposit of the implementation fee to start an account. Once the implementation is done and you're happy, pay the balance and start the subscription.
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="pricing-slider__slide-list">
+										<p>
+											Get Full Access To Our <br/> Core Features
+											<a href="#core-modal" data-fancybox="" class="pricing-slider__popup-btn fancybox"><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/lamp-icon.png"/></a>
+										</p>
+										<ul>
+											<apex:repeat value="{!product.features}" var="feature">
+												<li>
+													<span>{!feature.name}</span>
+													<div class="list-tooltip">
+														<div class="list-tooltip-icon"><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/list-tooltip-icon.png"/></div>
+														<span class="list-tooltip-text">{!feature.description}.</span>
+													</div>
+												</li>
+											</apex:repeat>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</apex:repeat>
+					</div>
+					<!-- /Pricing Slider -->
+				</div>
+			</div>
+			<div class="homepage awards">
+				<div class="container">
+					<h2>We are recognized by</h2>
+					<div class="row justify-content-around">
+						<div class="col-6 col-md">
+							<div class="awards__img">
+								<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/award-1.png"/>
+							</div>
+						</div>
+						<div class="col-6 col-md">
+							<div class="awards__img">
+								<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/award-2.png"/>
+							</div>
+						</div>
+						<div class="col-6 col-md">
+							<div class="awards__img">
+								<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/award-3.png"/>
+							</div>
+						</div>
+						<div class="col-6 col-md">
+							<div class="awards__img">
+								<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/award-4.png"/>
+							</div>
+						</div>
+						<div class="col-6 col-md">
+							<div class="awards__img">
+								<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/award-5.png"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-support pricing-section">
+				<div class="container">
+					<h2 class="text_center">
+						<span class="color-blue">Training</span> &amp; Support
+					</h2>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="pricing-support__item wow fadeInUp">
+								<div class="pricing-support__icon-container">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/pricing-tag-1.png" class="pricing-support__icon" />
+								</div>
+								<div class="pricing-support__description">
+									<h3>Onboarding Calls</h3>
+									<p>To ensure a smooth and seamless transition into our PMS, we have curated a quick onboarding process for you through onboarding calls and how-to guides. Our support calls are always available even after your onboarding process.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="pricing-support__item wow fadeInUp">
+								<div class="pricing-support__icon-container">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/pricing-tag-2.png" class="pricing-support__icon" />
+								</div>
+								<div class="pricing-support__description">
+									<h3>Data Migration</h3>
+									<p>We move all your data, applications and all important business elements from your current on-premise data center to the cloud. This process reduces media and storage costs with significant improvements in ROI and so much more.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="pricing-support__item wow fadeInUp">
+								<div class="pricing-support__icon-container">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/pricing-tag-3.png" class="pricing-support__icon" />
+								</div>
+								<div class="pricing-support__description">
+									<h3>Requirement Analysis</h3>
+									<p>We work with you to identify and categorize your PMS system needs and requirements. This process ensures we have a shared vision and lays a foundation of progress for our collaboration.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="pricing-support__item wow fadeInUp">
+								<div class="pricing-support__icon-container">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/icons/pricing-tag-4.png" class="pricing-support__icon" />
+								</div>
+								<div class="pricing-support__description">
+									<h3>Other Customizations</h3>
+									<p>Need some extra customization that’s not yet included in your package? No worries. Once you let our support team know, we’re equipped with all the latest technology we need to create an even more customized instance for you.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text_center pricing-support__btn wow fadeIn">
+						<a href="#pricing-plans" class="button-orange">Get Started</a>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-addons pricing-section">
+				<div class="container">
+					<h2 class="text_center">
+						Add-on <span class="color-blue">Feature</span>
+					</h2>
+					<!-- Slider -->
+					<div class="pricing-addons__slider">
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-be.png"/>
+								</div>
+								<h3 class="pricing-addons__slide-title">Booking Engine</h3>
+								<p class="pricing-addons__slide-text">Maximize reservations and provide a simple booking process to your customers. Customized to suit your property flow with full website migration on Salesforce Lightning as well as built-in SEO optimization features.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-channel-manager.png"/>
+								</div>
+								<h3 class="pricing-addons__slide-title">Channel Manager</h3>
+								<p class="pricing-addons__slide-text">List and manage your inventory on a variety of booking channels and OTAs. Always stay automatically updated on the availability of your properties and services.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-data-analytics.png"/>
+								</div>
+								<h3 class="pricing-addons__slide-title">Data Analytics</h3>
+								<p class="pricing-addons__slide-text">Collect and interpret meaningful patterns in data with advanced Salesforce Lightning technology.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-pos.png"/>
+								</div>
+								<h3 class="pricing-addons__slide-title">POS</h3>
+								<p class="pricing-addons__slide-text">Manage all your financial interactions in one central unit. Our POS system allows your business to accept payments from customers and keep track of sales effortlessly.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-cash-register.png"/>
+								</div>
+								<h3 class="pricing-addons__slide-title">Cash Register</h3>
+								<p class="pricing-addons__slide-text">Transact sales from different POS terminals and run your business in the cloud from any device.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-portal.png"/>
+								</div>
+								<h3 class="pricing-addons__slide-title">Portal</h3>
+								<p class="pricing-addons__slide-text">Provide single access points to a select group whether employees, guests, or exclusive members. Offer exclusivity and privacy to select members.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-email-app.png"/>
+								</div>
+								<h3 class="pricing-addons__slide-title">Email App</h3>
+								<p class="pricing-addons__slide-text">Lightning speed, advanced security, and proper management of sending and receiving emails in batches.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-membership-module.png"/>
+								</div>
+								<h3 class="pricing-addons__slide-title">Membership Module</h3>
+								<p class="pricing-addons__slide-text">Create exclusive access to special offers and sections of your business website available to members only. Create customized customer's journey.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-esign.png"/>
+								</div>
+								<h3 class="pricing-addons__slide-title">Esign (Additional Api's)</h3>
+								<p class="pricing-addons__slide-text">Send and sign agreements from anywhere from the comfort of your devices.</p>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-communications.png"/>
+								</div>
+								<h3 class="pricing-addons__slide-title">Communications (paid by usage)</h3>
+								<p class="pricing-addons__slide-text">Outsource your communications tasks from content creation, web, and graphic design, social media management, and more to our team of communications experts.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-faq pricing-section">
+				<div class="container">
+					<h2 class="text_center">Frequently <span class="color-blue">Asked Questions</span></h2>
+					<div class="pricing-accordion">
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>What currency are your prices in?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>Our prices are in US dollars. There is a conversion in Euros, British pounds and Brazilian real as well.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>Do you offer discounts or free trials?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>We offer discounts on some features. We can determine if a free trial is required after your demo. Schedule a demo <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button" target="_blank">here</apex:outputLink>.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>Will there be an automatic charge after the POC stage?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>No, we won’t charge you automatically after the POC stage until you decide to activate your account.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>What type of payments do you accept?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>We accept card payments (debit or credit) and mobile payments and electronic bank transfers.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>Can I cancel my account at any time?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>Yes, you can cancel your subscription at any time. To cancel your subscription, you are required to give a 60 days notice.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>Are there any contracts, setup fees, or hidden fees?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>No hidden fees. All fees and prices are listed and our pricing and payment procedure are completely transparent.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>Can I add additional rooms or properties?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>You may add additional units or properties to your package at any time. Upgrade your plan to increase units and properties which will be coterminous with the initial term or the renewal term, as the case may be.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>What is your refund policy?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>At Booking Ninjas we strive to create quality software that you enjoy using for easy management of your business. You have a number of choices and we appreciate you giving us your business.</p>
+								<p>Once you activate your account after the POC and are fully subscribed, if at any time during your first month you are dissatisfied, please contact us. We will do our best to address your issue, provide a workaround or give a timeline for a solution that will meet your needs.  If you are not satisfied, we will gladly cancel your subscription at the end of that month and downgrade your account.</p>
+								<p>The POC fees are non-refundable as you are not yet subscribed to our services.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>How long does Implementation take?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>With the client’s full cooperation, it usually takes 3 to 8 weeks.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>How do I activate my account?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>Once the POC phase is over, you will have the option to activate your account. An email will be sent to you and all you have to do is click the ‘ Activate’  button and you can begin your journey as a fully subscribed user of Booking Ninjas PMS.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>Can I skip the POC and go straight to Activation (full subscription)?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>Yes, if after your demo, you’d like to activate your account without a POC - you can do that. However, we always encourage our customers to follow our POC to Activation procedure as it is tested and trusted for optimum satisfaction with our product.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>Is the full subscription a monthly or annual subscription?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>Your subscription is an annual subscription. Payment can be made installmentally (split into 3 or 6 or 12) or paid at once based on what is preferable for you.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>Does the system adapt to my local tax laws? Is it customizable?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>Yes, the system is adaptable to your tax laws in different states/countries. Reporting features are also included to show records to respective local authorities if needed.</p>
+							</div>
+						</div>
+						<div class="pricing-accordion__item">
+							<div class="pricing-accordion__trigger">
+								<h3>What languages does Booking Ninjas support?</h3>
+								<div class="pricing-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="pricing-accordion__content">
+								<p>We support Dutch, English, Finnish, French, Danish, Italian, Japanese, Korean, Portuguese, Russian, Simplified Chinese, Spanish, Swedish, Thai, Traditional Chinese. The system can be translated to other languages for your users.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-meeting pricing-section">
+				<div class="container text_center">
+					<h2>Have <span class="color-blue">More Questions?</span></h2>
+					<p>Talk with one of our specialist and find out how you can benefit from our system.</p>
+					<apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Meeting</apex:outputLink>
+				</div>
+			</div>
+
+			<!-- Modal window -->
+			<div class="modal core-modal" id="core-modal">
+				<div class="core-modal__header">
+					<p>Get Full Access To Our Core Features</p>
+				</div>
+				<div class="core-modal__content">
+					<p>We believe our core features can give you the edge you need to win, no matter your size.</p>
+					<br/>
+					<p>Thus, you’ll get full access to our core features even if you have only 1 unit/room</p>
+					<br/>
+					<a data-fancybox-close="true">Close</a>
+				</div>
+			</div>
+			<!-- /Modal window -->
+            
+			<script src="https://raw.githubusercontent.com/openexchangerates/accounting.js/master/accounting.min.js" />
+			<script>
+
+				const usdISO = $('.currency.active').data('rate');
+				
+				// Monthly - Annually change
+				$('.subscription-length').click(function () {
+					$('.subscription-length').removeClass('active');
+					$(this).addClass('active');
+
+					const subsLength = $(this).data('length');
+					let currCurrencyISO = $('.currency.active').data('name');
+					currCurrencyISO = currCurrencyISO !== undefined ? currCurrencyISO : 'USD';
+					let currCurrencySymbol = $('.currency.active').data('sym');
+					currCurrencySymbol = currCurrencySymbol !== undefined ? currCurrencySymbol : '$';
+					
+					let isUSD = currCurrencyISO === 'USD';
+					
+					$('.pkg-subs-price').each(function(i, obj) {
+						let amount = subsLength === 'monthly' ? $(this).next().html() : $(this).next().next().html();
+						amount =  isUSD ? amount : amount * usdISO;
+						$(this).html(`${currCurrencySymbol}${amount}`);
+					});
+					$('.pkg-impl-price').each(function(i, obj) {
+						let amount = subsLength === 'monthly' ? $(this).next().html() : $(this).next().next().html();
+						amount = isUSD ? amount : amount * usdISO;
+						$(this).html(`${currCurrencySymbol}${amount}`);
+					});
+				});
+
+				// Currency change
+				$('.currency').click(function () {
+					let prevCurrency = $('.currency.active').data("name");
+					prevCurrency = prevCurrency !== undefined ? prevCurrency : 'USD';
+					$('.currency').removeClass('active');
+					$(this).addClass('active');
+					let currCurrency = $(this).data("name");
+					currCurrency = currCurrency !== undefined ? currCurrency : 'USD';
+					let isUSD = currCurrency === 'USD';
+					let crate =  $('.currency.active').data('rate');
+					
+					const subsLength = $('.subscription-length.active').data('length');
+					const currCode = $('.currency.active').data('sym');
+
+					$('.pkg-subs-price').each(function(i, obj) {
+						const usdAmount = subsLength === 'monthly' ? $(this).next().html() : $(this).next().next().html();
+						let currAmount = usdAmount * crate;
+						currAmount = currAmount.toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+						$(this).html(`${currCode}${currAmount}`);
+					});
+					$('.pkg-impl-price').each(function(i, obj) {
+						const usdAmount = subsLength === 'monthly' ? $(this).next().html() : $(this).next().next().html();
+						let currAmount = usdAmount * crate;
+						currAmount = currAmount.toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+						$(this).html(`${currCode}${currAmount}`);
+					});
+				});
+
+				function goCheckout(order) {
+					if ($('.slick-slide.slick-current.slick-center button').data('order') === order) {
+						const subsLength = $('.subscription-length.active').data('length');
+						let currency = $('.currency.active').data("name");
+						currency = currency !== undefined ? currency : 'usd';
+						window.location.href = `/checkout?order=${order}&length=${subsLength}&currency=${currency.toLowerCase()}`;
+					}
+				}
+			</script>
+        </apex:define>
+    </apex:composition>
+</apex:page>

@@ -1,0 +1,65 @@
+<template>
+  <!-- Loading in progress -->
+  <template if:true={loading}>
+    <div
+      class="py-5 row justify-content-center loading-panel"
+      style="min-width: 70vw; min-height: 80vh;"
+    >
+      <h1 style="font-size: 40px;">Loading.. please waiting...</h1>
+      <lightning-spinner
+        alternative-text="Loading"
+        size="large"
+      ></lightning-spinner>
+    </div>
+  </template>
+
+  <!-- Something went wrong -->
+  <template if:true={_errors}>
+    <div class="py-5 row justify-content-center error-panel">
+      <h1 style="font-size: 40px;">
+        Something went wrong... Please refresh the page.
+      </h1>
+    </div>
+  </template>
+
+  <!-- A vacancy has been selected -->
+  <template if:true={vacancySelected}>
+    <c-vacancy-application-form
+      vacancy-id={vacancyId}
+      thankyou-page-url={thankyouPageUrl}
+    ></c-vacancy-application-form>
+  </template>
+
+  <!-- Loading has been completed -->
+  <template if:false={vacancySelected}>
+    <template if:false={loading}>
+      <div class="py-5 row justify-content-center">
+        <template if:true={noVacancies}>
+          <template if:false={_errors}>
+            <div class="jumbotron no-vacancies" style="font-size: xxx-large;">
+              There are no vacancies at this time. Check back later.
+            </div>
+          </template>
+        </template>
+
+        <template for:each={vacancies} for:item="vacancy">
+          <div key={vacancy.Id} class="col-lg-4 vacancy-item">
+            <div class="career-page-interest__item">
+              <figure>
+                <a href={vacancy.detail_page_url} data-id={vacancy.Id} onclick={handleVacancyClick}>
+                  <img alt="Growth Hackers - icon" src={vacancy.IconArt__c} />
+                </a>
+              </figure>
+              <article>
+                <p class="job-title">
+                  <a href={vacancy.detail_page_url}>{vacancy.Name}</a>
+                </p>
+                <p>{vacancy.Intro__c}</p>
+              </article>
+            </div>
+          </div>
+        </template>
+      </div>
+    </template>
+  </template>
+</template>

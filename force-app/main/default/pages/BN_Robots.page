@@ -1,0 +1,7 @@
+<apex:page contentType="text/plain" showHeader="false">
+User-agent: *
+Allow: /
+
+Host: https://www.bookingninjas.com/
+Sitemap: https://www.bookingninjas.com/sitemap
+</apex:page>

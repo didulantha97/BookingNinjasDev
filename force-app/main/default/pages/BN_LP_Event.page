@@ -1,0 +1,217 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_EmailSubscribeController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg10.png)');
+                    $('.wrapper').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg10.png)');
+                });
+            </script>
+        
+            <!-- banner -->
+            <div class="landing__hero" style="padding: 80px 0 80px 0;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Event Management Software - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/flat-landing-illustration10.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Top Online Event Management Software</h1>
+                                <h2>All-In-One Event Management Solution To Plan, Create &amp; Coordinate Memorable Events</h2>
+                                <br />
+                            </article>
+                            
+                            <div class="text_center">
+                                <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button">SCHEDULE A MEETING</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>A new standard for event management</h2>
+                        <p>You have noticed massive changes in the way events are held. We have studied it at Booking Ninjas. And we have just the right tools to help you create the simple, organized, and memorable event you want to create for your customers.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- /content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center"> Booking Ninjas, and the way we see events</h3>
+                                <p>Our everyday lives see different forms of events, ranging from small to widely-celebrated. There is a need to use some efficient systems or employ the services of a company that majors in event planning to make these events well-planned. In this web page, we are going to discuss what event management system means, the classification and types of events, the features to look for in an event management system, and the benefits of employing these systems in planning your event.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA button -->
+            <div class="text_center">
+                <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button">SCHEDULE A MEETING</apex:outputLink>
+            </div>
+            <!-- /CTA button -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center"> What is an Event Management System?</h3>
+                                <p>Event management systems are the type of systems that are employed in the planning, creation, and coordination of various events that range for small-scale, e.g., Continuing Professional Development meetings to large- scale events like festivals, formal parties, concerts, conferences, convention, ceremonies, weddings, trade exhibitions, and many more can be well-planned using event management systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">What are our Classifications and Types of Events?</h3>
+                                <p><strong>1. Private Events: </strong>One of the three events that we manage for our clients is called private events. Just as the name says, these events are chiefly for ‘private’ use and occasions. Here, we use our proficient event management systems to help individuals manage their expected large number of guests. Events in this category include weddings, birthday parties, wedding receptions, festival gatherings, and so on. </p>
+                                <p>More so, some private sectors will want a well-monitored event that will feature some certain guests on their guest list and not be open to the public. Additionally, some clients might want to search for a secure venue for their events, which can be so stressful and time-consuming, but entrusting this service in the hands of agencies like us can be very rewarding and for a relatively friendly rate.</p>
+                                <p><strong>2. Corporate Events: </strong>This is the type of event that is organized by business organizations to promote their products and brands. These events include business dinners, networking events, conferences, product launches, seminars, ensuring team-building exercises, and meetings. Corporate events don’t go beyond the scope of business since its sole purpose is to target brand and product marketing. All these events must be managed appropriately to ensure specific goals, which also involves building a professional relationship between employees, are actualized.</p>
+                                <p><strong>3. Charity/Fundraising: </strong>Fundraising events are organized to help individuals or groups of individuals to raise money for charity. This type of event includes sports events, society balls, charitable auctions, and many more. Unlike the private event that is not diverse, a fundraising event is an open one because just anyone can go to a charity venue. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Why use our event management system?</h3>
+                                <p>Making a well-planned event of any kind can be tedious. Still, it is undoubtedly an effective marketing tactic for any business organization to promote its brand and products for a better return. A well-tailored event allows individuals and business investors to get face-to-face with their target audience, and it also does well to give a good reputation. For a business organization to showcase their position, knowledge, and generate a good source of positive content, they need to employ the services of a proficient event management company. </p>
+                                <p>All individuals and business organizations want their events to run smoothly; therefore, employing the services of an event management company can be all pleasing. So, should you decide to use an event management system, what are the benefits there for you and your brand?</p>
+                                <p><strong>1. It is cost and time effective. </strong>Just like a machine reduces the work done by an individual, so does an event management system. When it comes to planning an event, many things are embedded to make it a success. Most processes that are meant to be carried out manually are automated with the help of these systems. Keeping an event within the outline budget can be a daunting task, particularly when you have to do everything manually, and even small-scale events can take up lots of time and resources. </p>
+                                <p>An excellent event management system offers features like payment processing, registration tracking, and tools that can help with better customers’ experience. More so, in no time, you will be able to get a snapshot of the proceedings. People who registered for the event, people who paid, and even those who attended will be reviewed with just a few clicks. </p>
+                                <p>Additionally, an event management system saves considerable time for communication sequences. Instead of going to your intended guests one-by-one to pass some detailed information, with just a few click, you will be able to send a well-tailored message which includes a gratitude message like, ‘thank you for coming’ to those that made the event, and ‘sorry, we missed you’ to those that missed due to one reason or the other. </p>
+                                <p><strong>2. Increases Engagement. </strong>Customer engagement is one of the critical tactics used in brand and product marketing. Before the commencement of a scheduled event, it should be preceded by a well-organized engagement. A sound event management system allows you to see and analyze the overall picture of global engagement levels. </p>
+                                <p><strong>3. It promotes professional and overall experience. </strong>Events are planned for a particular purpose and target. Making use of event management systems makes the management of events look much more professional than when handled manually. Many people expect an event to run smoothly with nothing missed out at all. Since the use of these systems can guarantee the effective management of payments, then the management of multiple events can be easy.</p>
+                                <p><strong>4. It makes management easier. </strong>One of the salient benefits of making use of event management systems is their ability to help individuals and business organizations maximize clients’ registrations. At the same time, resources that may be needed are checked too. Trusting an event management company with the burden of running a smooth event for you might be worth all the money. All you will have to do from your end, aside from paying for the services, is to do nothing. This means that you are putting your money where it is worth it. </p>
+                                <p><strong>5. Supports targeted activities. </strong>Economics says that the sole purpose of making production is consumption, i.e., these events are organized because some targeted individuals must be reached to make the expected revenue. One of the key strategies to making this happen is effective marketing, which can come in many forms; event planning is one. Specialists can manage this form of marketing tactic for a better outcome. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA button -->
+            <div class="text_center">
+                <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button">SCHEDULE A MEETING</apex:outputLink>
+            </div>
+            <!-- /CTA button -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Key features to look out for when picking an Event Planning System.</h3>
+                                <p>In choosing the best event management system, it is imperative to think about all the critical aspects of the event before choosing the system that will be the best fit for smooth management. To make things easier on you, we have put together a list of must-have features for an excellent event management system. </p>
+                                <p><strong>1. </strong>The system must be able to be integrated with existing systems: It is no secret that customer engagement is very vital when having a large customer base, and ultimately huge revenue is the prime target. Customers always want to get involved, feel relevant, and their complaints attended to in no time. Therefore, if you are looking to use a system for an event, you must be sure the things the system will need to work perfectly well with your Customer Relationship Management (CRM) systems, and what information may need to be shared. </p>
+                                <p><strong>2. </strong>Collect needed information with customizable registration forms: There won’t be a point for planning an event if there won’t be any attendees. Therefore, the registration feature must be one of the first things to look out for when choosing an event management system.</p>
+                                <p>It is possible that not most of the potential attendees are tech-savvy; therefore, there is a need to make sure the system is as easy-to-use as it can be. This way, they will be able to have an easy registration process. More so, for the organizer of the event, the event system must present you with an option to customize the type of data collected from the attendees and provide a unique ID for each one of them. This is so vital for corporate type of event, which only sees expected guests. </p>
+                                <p><strong>3. </strong>The maker of the event management system must have excellent customer service: Products with excellent customer service tend to rank high in sales than most with poor. There may be an issue, bug, or sometimes there may be a needed improvement to add to the technology, so you must be very sure you can contact the company to make your complaints and have them settled in no time. </p>
+                                <p>Therefore, to be sure if the company of the system is highly responsive, check how they respond to mentions and comments on social media platforms from their previous customers.</p>
+                                <p><strong>4. </strong>Create and monitor the event budget: Yes, staying within the planned budget can be very difficult, but having a system that can help create and monitor the event budget with the help of budgeting tools and financial reports can be pleasing and relieving. A robust event management system helps the event planner to track available venues, the cost of them, and also provide tools to determine the Return on Investment (ROI).</p>
+                                <p>An excellent event management system enables planners to outline a budget based on the fixed cost and variable cost per attendee. This way, you can be able to determine the cost per head. Therefore, it is advisable to pick systems that will enable you to calculate the unit’s cost individually.</p>
+                                <p>From the above-listed features, we described the Booking Ninjas system, and how it helps you get the organization you want. </p>
+                                <p>Just as stated on this page, using a robust event management system is well benefitting. Our company can offer the service for friendly rates that goes with the number of events you are planning. Contact us today to enjoy the smooth management of your event.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Event Management Software - 2" class="wow fadeInRight" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration10.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <h2>3-point steps to get started</h2>
+                            <div class="landing-illustration-list">
+                                <dl>
+                                    <h3>Get in Touch</h3>
+                                    <dd>To begin, simply schedule a brief intro call&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}" target="_blank">here</apex:outputLink>. Our support team will be in touch at your desired date and time to answer all your questions and address any concerns you may have about our Property Management System. Ready now? Call (917) 600-2345 to expedite the process.</dd>
+                                </dl>
+                                <dl>
+                                    <h3>Import Your Data</h3>
+                                    <dd>Our support team will assist you in transferring your hotel’s data into the application. Data migration takes just a few clicks.</dd>
+                                </dl>
+                                <dl>
+                                    <h3>Launch for Success</h3>
+                                    <dd>Good news! You just made a major improvement to your hotel. Open the Booking Ninjas app and start exploring all the tools that Booking Ninjas and Salesforce have to offer. Our 24hr live support team will always be there to answer any questions you encounter on the app. Want to know how to get the most out of our Property Management System features or your Salesforce cloud? We offer&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Consulting)}" target="_blank">Salesforce consultations</apex:outputLink> with our team of experts!</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center"> The Best Fit for Your Business</h3>
+                                <p>The Booking Ninjas system is designed to help you get to your business goals without the setbacks familiar in most management systems. We offer high-end tools to provide a seamless management process for the staff, and a platform to provide exceptional customer service to your guests.</p>
+                                <p>We are all about productivity, customer experience, and user benefits. That’s why we offer highly useful packages as part of our core implementation process. Our developers and customization platform helps you include specific packages and remove currently unwanted ones. In other words, you will get exactly what you are looking for, and better.</p>
+                                <p>We engage in business internationally. From North America to Europe and Asia, we are keen on delivering absolute excellence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h3>Go Digital To Stay One Step Ahead Of Your Competitors
+                        </h3>
+                        <p>As more and more members of the traditional workforce start to understand and appreciate the gig economy, the number of startups and freelancers are expected to continuously grow in the next few years. With this trend, coworking facilities will definitely be more in demand. Only the best coworking management software will set you apart from your competition and make sure you get a good percentage of this increasing demand.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/Event_management_icon-gray.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Event Management Software Price - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/Event_management_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Event management made easy. Starting at</p>
+                                        <p><b>$25</b> per space / per month </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button" target="_blank">Take a Pilot Today</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content --> 
+        
+        </apex:define>
+    </apex:composition>
+        
+</apex:page>

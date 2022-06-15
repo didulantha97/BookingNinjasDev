@@ -1,0 +1,6 @@
+.THIS .baseDefault.forceChatterBasePublisher.forceChatterLightningComponent,
+.THIS .baseDefault.forceChatterBasePublisher.forceChatterLightningComponent > div,
+.THIS .container.activeState,
+.THIS .cuf-content{
+    height: 100%;
+}

@@ -1,0 +1,148 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_PreActivationPMSController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top wait-list-page-top activation-form-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/activation-form-image.png" alt="Bookingninjas Property Management System"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Thank you for getting in touch with us regarding our cloud-based Property Management Software!  </h1>
+                                <p>You’re one step closer towards optimal efficiency for your property and staff. </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content wait-list-content">
+                <div class="container">
+                    <p>In 2015, we became the first and only PMS to become an official Salesforce partner through their app innovation program. Through this partnership, we have exclusive access to the CRM’s world class technology, making Booking Ninjas the most advanced PMS on the software market today! 
+                    </p>
+                    <div class="row justify-content-center activation-form">
+                        <div class="col-lg-10">
+                            <div class="career-lead-form__section">
+                                <h2 class="career-lead-form__title">Before we get started on activating your PMS, please let us know the following information:  </h2>
+                                <apex:form >
+                                    <div class="career-lead-form__box">
+                                        <div class="career-lead-form__item">
+                                            <label>Organization Name <sup>*</sup></label>
+                                            <apex:input type="text" value="{!organizationName}" required="true"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>How many units do you need covered under the PMS? <sup>*</sup></label>
+                                            <apex:input type="text" value="{!numberOfUnits}" required="true"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Number of authorized users wanted?<sup>*</sup></label>
+                                            <apex:input type="text" value="{!numberOfUsers}" required="true"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Your property’s address 1<sup>*</sup></label>
+                                            <apex:input type="text" value="{!propertyAddress}" required="true"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Your property’s address 2<sup>*</sup></label>
+                                            <apex:input type="text" value="{!propertyAddress2}" required="true"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Your property’s address 3<sup>*</sup></label>
+                                            <apex:input type="text" value="{!propertyAddress3}" required="true"/>
+                                        </div>
+                                        <div class="row align-items-end">
+                                            <div class="col-lg-5">
+                                                <div class="career-lead-form__item">
+                                                    <label>Authorized Admin/User #1:<sup>*</sup></label>
+                                                    <apex:input type="text" value="{!contact1Name}" html-placeholder="Name" required="true"/>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="career-lead-form__item">
+                                                    <apex:input type="tel" value="{!contact1Phone}" html-placeholder="Phone" required="true"/>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="career-lead-form__item">
+                                                    <apex:input type="email" value="{!contact1Email}" html-placeholder="Email" required="true"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-end">
+                                            <div class="col-lg-5">
+                                                <div class="career-lead-form__item">
+                                                    <label>Authorized User #2</label>
+                                                    <apex:input type="text" value="{!contact2Name}" html-placeholder="Name" required="false"/>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="career-lead-form__item">
+                                                    <apex:input type="tel" value="{!contact2Phone}" html-placeholder="Phone" required="false"/>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="career-lead-form__item">
+                                                    <apex:input type="email" value="{!contact2Email}" html-placeholder="Email" required="false"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-end">
+                                            <div class="col-lg-5">
+                                                <div class="career-lead-form__item">
+                                                    <label>Authorized User #3</label>
+                                                    <apex:input type="text" value="{!contact3Name}" html-placeholder="Name" required="false"/>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="career-lead-form__item">
+                                                    <apex:input type="tel" value="{!contact3Phone}" html-placeholder="Phone" required="false"/>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="career-lead-form__item">
+                                                    <apex:input type="email" value="{!contact3Email}" html-placeholder="Email" required="false"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>What are you looking for out of the PMS? </label>
+                                            <apex:inputTextarea value="{!pmsRequirements}" />
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Any questions about our product? </label>
+                                            <apex:inputTextarea value="{!questionsAboutProduct }" />
+                                        </div>
+                                        <div class="career-lead-form__item text_center">
+                                            <apex:commandButton value="Submit" action="{!register}" styleClass="button" />
+                                            <small><i class="fas fa-lock"></i> We hate spam and promise to keep your data address safe</small>
+                                        </div>
+                                    </div>
+                                </apex:form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="about__content text_center">
+                        <p>We look forward to hearing from you and taking care of all your PMS needs</p>
+    
+                        <p>To expedite the process, feel free to give us a call during business hours Monday-Friday 
+                            at (917)-600-2345 or schedule a call <a href="https://www.bookingninjas.com/calendly" target="_blank">here</a></p>
+                            
+                        <h3><strong>Have a wonderful day!</strong></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,152 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('feature-bg').css('background-image', 'url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-booking-engine-bg.png)');
+                });
+            </script>
+            
+            <!-- hero -->
+            <div class="feature-hero">
+                <div class="container d-flex">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 order-lg-1 align-self-lg-center">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-booking-engine-hero.png" alt="Room Rate Controller (RRC) Services" class="adaptive-img" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h1>Room Rate Controller (RRC) Services</h1>
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <p>Usually coupled with Yield Management, our Room Rate Controller bridges the gap between tech capabilities of various establishments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+            <!-- content -->
+            <div class="features-page-grid">
+                <div class="features-page-grid__row">
+                    <div class="row features-page-grid__cells">
+                        <div class="col-lg-6 cell-background"></div>
+                        <div class="col-lg-6 cell-background"></div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-rrc-1.jpg" alt="Room Rate Controller (RRC) Services" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Set Once, Reflect Everywhere</h3>
+                                        <p>The RRC feature gives you a single platform to set room rates which will be reflected on dependent interfaces. These changes can be seen in the channel manager services, booking engines, web and mobile apps, and many more.</p>
+                                        <p>This provides a convenient way to update rates and set prices responsive to demands and seasons. The data is also updated in real-time, without any need for delays or data reloading.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-1">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-rrc-2.jpg" alt="Room Rate Controller (RRC) Services" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Manual, Automatic or Both</h3>
+                                        <p>While you can absolutely set rates manually, it can also be automated. You could decide what rates should be at particular times of the day, week, month, or year. This takes a significant amount of the work off your hands and lets you focus on more important tasks.</p>
+                                        <p>You could edit the automatic rates, or override them with your manual settings. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-rrc-3.jpg" alt="Room Rate Controller (RRC) Services" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Everything you Wanted in an RRC</h3>
+                                        <p>We provide a very detailed RRC feature with additional concepts like Data Analytics, Yield Management, and Artificial Intelligence. Despite its sophisticated capabilities, it is very minimal and provides only the features you need at the time.</p>
+                                        <p>You can take a look at our idea and implementation of an RRC to get a good feel of what we are offering. The link is provided below.</p>
+                                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_RRC_Details)}" styleClass="button">Learn more</apex:outputLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-2">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-rrc-4.jpg" alt="Room Rate Controller (RRC) Services" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Yield Management</h3>
+                                        <p>Our RRC’s yield management feature helps you maintain control over the marketing of your rooms and pick the right rates at the right times. With a system that takes yield management into consideration, you can not only optimize your experience as a property manager but your guests’ experiences as well.</p>
+                                        <p>In order to capture the attention of potential clients or guests, taking advantage of the yield management feature that we offer will be of great benefit. You want to be able to offer the best price at the right time for a specific customer, and our software can achieve this - and much more. Our RRC can determine the best, most personalized way to influence or suggest your establishment to someone, with the rates that they need.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="features-page-text text_center feature-bottom">
+                <div class="container">
+                    <h2>Try out our system for free</h2>
+                    <apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button">Click here to continue</apex:outputLink>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

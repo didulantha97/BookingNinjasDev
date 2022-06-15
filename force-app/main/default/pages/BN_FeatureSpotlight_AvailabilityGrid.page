@@ -1,0 +1,122 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('feature-bg').css('background-image', 'url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-booking-engine-bg.png)');
+                });
+            </script>
+            
+            <!-- hero -->
+            <div class="feature-hero">
+                <div class="container d-flex">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 order-lg-1 align-self-lg-center">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-reservation-management-hero.png" alt="Reservations Management" class="adaptive-img" />
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h1>Reservations Management</h1>
+                            <p>Be two steps ahead with the specialized Reservations Management feature. Organize and monitor guest onboardings in the most efficient way possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+
+            <!-- content -->
+            <div class="features-page-grid">
+                <div class="features-page-grid__row">
+                    <div class="row features-page-grid__cells">
+                        <div class="col-lg-6 cell-background"></div>
+                        <div class="col-lg-6 cell-background"></div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-reservation-management-1.jpg" alt="Wide View Management" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Wide View Management</h3>
+                                        <p>The reservations management platform handles the admin side of bookings. It gives you a wide overview of reservations made in your establishment while giving you the ability to handle and process bookings data.</p>
+                                        <p>With our high-end cloud deployment features, you can get 24/7 management control and oversight of your entire bookings and reservations process.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-1">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-reservation-management-2.jpg" alt="The Big Picture" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>The Big Picture</h3>
+                                        <p>Hidden under layers of data is a gold mine of patterns, reflecting past performances and future opportunities, giving you a complete, big picture understanding of your business process.</p>
+                                        <p>Our reservations system leaves no data to chance and presents you with a big picture view of everything related to your guests’ reservation activities. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-reservation-management-3.jpg" alt="Extensive system" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Extensive system</h3>
+                                        <p>We want you to have everything you’ll ever need concerning reservations management and our system does just that. We offer an extensive array of features within our reservation system that could cover everything most businesses need and beyond. </p>
+                                        <p>Linked below is an expansive review of Reservation Management features. Use it to get a full understanding of what we offer in our Reservation Management features.</p>
+                                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_AvailabilityGrid_Det)}" styleClass="button">Learn more</apex:outputLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-page-text text_center feature-bottom">
+                <div class="container">
+                    <h2>Try out our system for free</h2>
+                    <apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button">Click here to continue</apex:outputLink>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,93 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_ExpressionInterestController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top expression-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/expression-top.png" alt=""/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Expression of interest form </h1>
+                                <p>Thank you for expressing interest in the Booking Ninjas Property Management System!                             </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content ">
+                <div class="container">
+                    <div class="about__content">
+                        <p>Booking Ninjas has over a decade of experience in the property management software industry. In 2015, we became the first and only PMS company to be accepted as an official app innovation partner of Salesforce, the world’s largest CRM. The following year Booking Ninjas was released through Salesforce’s Appexchange marketplace. Through the use of state-of-the-art technology such as Einstein AI and features like POS integration, Event Ticketing Systems, and Direct Room Service, Booking Ninjas provides everything your property could ever need all on a single, easy-to-use mobile platform.    </p>
+                    </div>
+                </div>
+                <div class="expression-page-form">
+                    <div class="container">
+                        <h2 class="title">We are more than happy to assist you in finding a PMS solution for your property.                     </h2>
+                        <div class="career-lead-form__section">
+                            <h2 class="career-lead-form__title">Below is a list of questions to get you started towards implementing our PMS to your property: </h2>
+                            <apex:form >
+                                <div class="career-lead-form__box">
+                                    <div class="career-lead-form__item">
+                                        <label>Your Name<sup>*</sup></label>
+                                        <apex:input type="text" value="{!name}" required="true" />
+                                    </div>
+                                    <div class="career-lead-form__item">
+                                        <label>Your Email<sup>*</sup></label>
+                                        <apex:input type="text" value="{!email}" required="true" />
+                                    </div>
+                                    <div class="career-lead-form__item">
+                                        <label>Property Name<sup>*</sup></label>
+                                        <apex:input type="text" value="{!propertyName}" required="true" />
+                                    </div>
+                                    <div class="career-lead-form__item">
+                                        <label>Number of Rooms/Units?<sup>*</sup></label>
+                                        <apex:input type="text" value="{!numberOfRooms }" required="true" />
+                                    </div>
+                                    <div class="career-lead-form__item">
+                                        <label>What are you looking to get out of your PMS?</label>
+                                        <apex:inputTextArea value="{!pmsText}" required="true" />
+                                    </div>
+                                    <div class="career-lead-form__item">
+                                        <label>Target Date of Activation</label>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <apex:input type="date" value="{!targetDateOfActivation}" styleClass="consulting-date" required="true" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="career-lead-form__item text_center">
+                                        <apex:commandButton value="Submit" action="{!register}" styleClass="button" />
+                                        <small><i class="fas fa-lock"></i> We hate spam and promise to keep your data address safe</small>
+                                    </div>
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="about__content text_center">
+                        <p>We look forward to hearing from you and taking care of all your PMS needs.  </p>
+    
+                        <p>To expedite the process, feel free to give us a call during business hours Monday-Friday at (917)-600-2345 <br/>
+                            or schedule a call here </p>
+                            
+                        <h4>Have a wonderful day!  </h4>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

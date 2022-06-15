@@ -1,0 +1,372 @@
+<apex:page controller="BNConsultationController" showHeader="false" sidebar="false" standardStylesheets="false">
+  <html>
+       <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <meta name="description" content=""/>
+            <meta name="keywords" content=""/>
+            <meta name="viewport" content="initial-scale=1"/>
+            <title>Booking Ninjas: Combined Property Management/ Salesforce Solution Application</title>
+            <!--Favicon-->
+                <link rel="icon" type="image/png" href="favicon.ico"/>
+            <!--End Favicon-->
+            <!-- CSS -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" media="screen" />
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+                <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/jquery-ui-timepicker-addon.min.css" media="screen" /> 
+                <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/bootstrap-grid.css" media="screen" /> 
+                <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/fa-svg-with-js.css" media="screen" />
+                <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/jquery.fancybox.css" media="screen" />
+                <link media="screen" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/screen.css" rel="stylesheet" />
+                <link media="screen" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/style.css" rel="stylesheet"/>
+            <!-- END OF CSS -->
+            <!--SCRIPT -->
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/jquery.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/jquery-ui-timepicker-addon.min.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/jquery.fancybox.pack.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/modernizr.custom.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/jquery.bxslider.min.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/fontawesome-all.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/wow.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/common.js"></script>
+                <script src="https://media.twiliocdn.com/sdk/js/flex-webchat/releases/1.1.0/twilio-flex-webchat.min.js"></script>
+                <script>
+                    const appConfig = {
+                        accountSid:"AC9f8502ccd4a41283e0c8037a25586d49",
+                        flexFlowSid:"FOe2bee542b2e19d1f7a5f9092a814174e"
+                    };
+                    Twilio.Flex.createWebChat(appConfig);
+                </script>
+                <!--[if IE]>  
+                    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+                <![endif]--> 
+            <!-- END OF SCRIPT -->
+        </head>
+        <body class="home">
+            <div class="wrapper">
+            <!--header-->
+            <header class="header">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 col-8">
+                      <a href="/BNConsult" class="logo"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/logo.png" alt=""/></a>
+                    </div>
+                    <div class="col-md-8 col-4">
+                      <div class="nav-trigger"><i class="fas fa-bars"></i></div>
+                      <ul class="navigation">
+                        <li><a href="/BNConsult/BNCServices">SERVICES</a></li>
+                        <li><a href="/BNConsult/BNCSolutions">SOLUTIONS</a></li>
+                        <li><a href="/BNConsult/BNCSocial">SOCIAL</a></li>
+                        <li><a href="/BNConsult/BNCGetInTouch">GET IN TOUCH</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </header>
+            <!--end-header-->
+            <!--menu-->
+            <div class="mobile-menu"></div>
+                <div class="mobile-menu__block">
+                    <a href="/" class="logo"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/logo.png" alt=""/></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="active"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/menu-icon1.png" alt=""/>process</a></li>
+                            <li><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/menu-icon2.png" alt=""/>Solution</a></li>
+                            <li><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/menu-icon3.png" alt=""/>Integrations</a></li>
+                            <li><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/menu-icon4.png" alt=""/>Advantages</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+            <!--end-menu-->
+            <!--main-->
+            <div class="main">
+                
+                <div class="social">
+                <!-- top -->
+                <div class="social__top">
+                  <div class="container">
+                    <div class="row justify-content-end">
+                      <div class="col-lg-8">
+                        <section>
+                        <p>Businesses help do good the best! Improve the business of business by being a pledge <strong> 1% </strong> company.</p>
+                        <h2>Join us</h2>
+                        for a cause greater than ourselves!
+                        </section>
+                      </div>
+                    </div>
+                    <div class="social__top-percent">
+                      <p>A percentage for the greater good,    <span class="social__round"><i><em>1%</em></i></span>    one at a time.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end-top -->
+                <!-- pledge -->
+                <div class="social__pledge">
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col-lg-5">
+                        <figure class="social__pledge-img">
+                          <img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/social-img1.png" alt=""/>
+                        </figure>
+                      </div>
+                      <div class="col-lg-7">
+                        <section>
+                          <p>At Booking Ninjas, </p>
+                          <span>we pledge
+                          <b>1%</b></span>
+                          <p>of the profits and  our time in contributing to our next generation for a better. tomorrow. </p>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end-pledge -->
+            
+                <!-- social-tags -->
+                <div class="social-tags">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="social-tags__item">
+                          <section>
+                            <p>Nearly half of our global population, more than 3 billion people earn</p>
+                          </section>
+                          <div class="social-tags__info">
+                             <span class="social__round"><i><em>
+                               <strong>>$2.50</strong>
+                               <small>a day</small>
+                             </em></i></span>  
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="social-tags__item">
+                          <section>
+                            <p>More than 1 billion of the population (1/6th of the global population) lives in extreme poverty, earning</p>
+                          </section>
+                          <div class="social-tags__info">
+                             <span class="social__round"><i><em>
+                              <small>less that</small>
+                               <strong>$1.25</strong>
+                               <small>a day</small>
+                             </em></i></span>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end-social-tags -->
+                <!-- social-text -->
+                <div class="container social__text">
+                  <p>The world is filled across with solvable issues, poverty is one of many problems, which is also increasing in rate. Polluted oceans, exceeding amounts of waste, spreading of diseases are some of the other largely growing problems around the world. It is time we make a stand in order to minimise it. At the end of the day, we need to look at the bigger picture and take a step to help solve the solvable and move on from the fact of accumulating and ignoring factors which are above us.</p>
+            
+                  <p>Lets help our future’s future be brighter and lighter today, tomorrow and forever so that they would do the same in time to come.</p>
+                </div>
+                <!-- end-social-text -->
+                
+                <!-- banner -->
+                <div class="prospective-bnr">
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col-md-6">
+                        <q>You are either for the homeless or youre for yourself
+                          <img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/qoute2.png" alt=""/>
+                        </q>
+                      </div>
+                      <div class="col-md-6 align-self-end">
+                        <h4>-Marc Benioff</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="prospective-bnr__arrow">
+                      <img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/prospective-arrow.png" alt=""/>
+                    </div>
+                </div>
+                <div class="prospective-btn">
+                  <div class="container">
+                    <h6>Take the pledge and be a part of the helping age</h6>
+                  </div>
+                </div>
+                <!-- end-banner -->
+            
+              </div>
+                
+            </div>
+            <!--end-main-->
+            <!--footer-->
+            <footer class="footer">
+              <div class="foot_top container">
+                <div class="foot_left">
+                  <a href="#" class="logo_foot"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/logo_foot.png" alt=""/></a>
+                  <p>1815 Purdy Avenue <br/>Miami Beach, FL 33139</p>
+                  <p>sales@bookingninjas.com</p>
+                  <p><strong>+1 305 428 2421</strong></p>
+                  <p><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/partner.png" alt=""/></a></p>
+                </div>
+                <div class="foot_center">
+                  <div class="foot_list">
+                    <h6>Connect with us:</h6>
+                    <ul>
+                      <li><a href="https://www.facebook.com/bookingninjas" target="_blank">Facebook</a></li>
+                      <li><a href="https://www.youtube.com/channel/UCOrcTzmQnmY7DG2nzwfa8zw" target="_blank">YouTube</a></li>
+                      <li><a href="https://www.linkedin.com/company-beta/5346092/" target="_blank">LinkedIn</a></li>
+                      <li><a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank">Appexchange</a></li>
+                    </ul>
+                  </div>
+                  <div class="clear"></div>
+                  <h6>Bookingninjas</h6>
+                  <p>Enhance the quality of guest services, increasing staff productivity and streamlining operations. Make your business a lot simpler and a lot more effective with Booking Ninjas.</p>
+                </div>
+                <div class="foot_right">
+                  <h6>Contact us</h6>
+                  <apex:form id="contactForm">
+                    <div><apex:inputText value="{!name}" html-placeholder="Name" required="true"/></div>
+                    <div><apex:inputText value="{!email}" html-placeholder="Email" required="true"/></div>
+                    <div><apex:inputText value="{!phone}" html-placeholder="Phone" required="true"/></div>
+                    <div><apex:inputTextArea value="{!message}" html-placeholder="Message" required="true"/></div>
+                    <div><apex:commandButton action="{!SaveWithoutRedirect}" value="Send Message" styleClass="button" rerender="contactResult"/></div>
+                    <apex:outputPanel id="contactResult">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Error panel -->
+                                <apex:outputLabel rendered="{!isFailed}">
+                                    <div id="errorPanelmsg" class="alert alert-danger" role="alert">
+                                        <h2>
+                                            {!responseMessage}
+                                        </h2>     
+                                    </div>    
+                                    <script>
+                                    $(document).ready(function(){                            
+                                        //error meessage popup fadeout
+                                        $('#errorPanelmsg').fadeOut(9000);
+                                    });
+                                    </script>
+                                </apex:outputLabel>
+                                <!-- / Error panel -->
+                
+                                <!-- Success panel -->
+                                <apex:outputLabel rendered="{!isSuccess}">
+                                    <div id="successPanelmsg" class="alert alert-success" role="alert">
+                                        {!responseMessage}     
+                                    </div>    
+                                    <script>
+                                    $(document).ready(function(){  
+                                        // clear form
+                                        $('#contactForm')[0].reset();                          
+                                        //error meessage popup fadeout
+                                        $('#successPanelmsg').fadeOut(9000);
+                                    });
+                                    </script>
+                                </apex:outputLabel>
+                                <!-- / Success panel -->
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                  </apex:form>
+                </div>
+              </div>
+              <div class="foot_bottom">
+                <div class="container">
+                  <address class="float_left">
+                    All rights reserved © 2016 - Booking Ninjas
+                  </address>
+                  <nav class="float_right">
+                    <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/visa.png" alt=""/></a>
+                    <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/maestro.png" alt=""/></a>
+                    <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/ae.png" alt=""/></a>
+                    <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/paypal.png" alt=""/></a>
+                  </nav>
+                </div>
+              </div>
+            </footer>
+            <!--end-footer-->
+            </div>
+            
+            <!-- modals -->
+            <div class="floating_form">
+                <div class="floating_form_title">Request a demo</div>
+                <div class="floating_form_block">
+                    <apex:form id="demoForm">
+                        <div>
+                            <label>Name</label>
+                            <apex:inputText value="{!name}" required="true"/>
+                        </div>
+                        <div>
+                            <label>Email Address</label>
+                            <apex:inputText value="{!email}" required="true"/>
+                        </div>
+                        <div>
+                            <label>Phone</label>
+                            <apex:inputText value="{!phone}" required="true"/>
+                        </div>
+                        <div>
+                            <label>Preferred Date and Time (EST) *</label>
+                            <apex:inputText value="{!selectedDate}" id="selected-date" required="true"/>
+                        </div>
+                        <div>
+                            <label>Message *</label>
+                            <apex:inputTextArea value="{!message}" required="true"/>
+                        </div>
+                        <div><apex:commandButton action="{!SaveWithoutRedirect}" value="Submit request demo form" styleClass="button" rerender="requestDemoResult" /></div>
+                        <apex:outputPanel id="requestDemoResult">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- Error panel -->
+                                    <apex:outputLabel rendered="{!isFailed}">
+                                        <div id="errorPanelmsg" class="alert alert-danger" role="alert">
+                                            <h2>
+                                                {!responseMessage}
+                                            </h2>     
+                                        </div>    
+                                        <script>
+                                        $(document).ready(function(){                            
+                                            //error meessage popup fadeout
+                                            $('#errorPanelmsg').fadeOut(9000);
+                                        });
+                                        </script>
+                                    </apex:outputLabel>
+                                    <!-- / Error panel -->
+                    
+                                    <!-- Success panel -->
+                                    <apex:outputLabel rendered="{!isSuccess}">
+                                        <div id="successPanelmsg" class="alert alert-success" role="alert">
+                                            {!responseMessage}     
+                                        </div>    
+                                        <script>
+                                        $(document).ready(function(){  
+                                            // clear form
+                                            $('#demoForm')[0].reset();                          
+                                            //error meessage popup fadeout
+                                            $('#successPanelmsg').fadeOut(9000);
+                                        });
+                                        </script>
+                                    </apex:outputLabel>
+                                    <!-- / Success panel -->
+                                </div>
+                            </div>
+                        </apex:outputPanel>
+                        <input type="hidden" name="currentvfpage" value="{!$CurrentPage.Name}"/>
+                    </apex:form>
+                </div>
+            </div>
+            <!-- end-modals -->
+            <script>
+                $(document).ready(function($) {
+                    $('[id$=selected-date]').datetimepicker({ timeFormat: 'hh:mm TT' })
+                });
+            </script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script src="https://www.googletagmanager.com/gtag/js?id=UA-70673409-7"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+            
+                gtag('config', 'UA-70673409-7');
+            </script>
+        </body>
+    </html>
+</apex:page>

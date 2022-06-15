@@ -1,0 +1,204 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg.jpg)');
+                    $('.wrapper').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg.jpg)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Coworking Space Management Software - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/Flat_MacBook.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Software de gestión cooperativo</h1>
+                                <p>Clientes nuevos suban a bordo. Gestione alquileres y vacantes. Un sistema fácil de usar para la gestión de su negocio, todo en un solo lugar.</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text_center wow fadeInUp">
+                            <h3>El momento es ahora</h3>
+                            <p>Existe una gran demanda por los servicios cooperativos. Empresas emergentes y freelancers continúan creciendo con servicios bajo demanda en esta economía de trabajos esporádicos (gig economy). Ahora las grandes empresas buscan una experiencia de trabajo más flexible para su personal interno y sus empleados a distancia. Solo los mejores y más eficientes softwares de cooperación le permitirán explotar al máximo este espacio de oficina.</p>
+                            <p><strong>Asegure los beneficios de hoy con el software de gestión cooperativo de mañana.</strong></p>
+                            <apex:outputLink styleClass="button" value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">GESTIONE LA DEMANDA</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <h3 class="text_center">Ahora responderemos a algunas de sus preguntas</h3>
+                            <div class="wow fadeInUp">
+                                <h3>¿Por qué necesita un sistema de gestión?</h3>
+                                <p>En organizaciones con numerosos empleados, suele existir la necesidad de colaborar, trabajar juntos, discutir, hacer planes y recibir feedback. Todas estas tareas, por supuesto, tienen lugar en diferentes momentos, lo que significa que, en la ausencia de automatización, existirá mucho estrés.</p>
+                                <p>¿Sienten vuestros empleados a día de hoy estrés para contactar entre ellos individualmente y comunicar cierta información? ¿O tal vez necesite una manera más natural de asegurar que su negocio esté dirigido fluidamente para que las comunicaciones y el trabajo conjunto, a pesar de la distancia, no se convierta en un problema? Considere embarcar a los miembros de su equipo en el sistema de gestión.</p>
+                                
+                                <h3>¿Qué es un sistema de gestión cooperativo?</h3>
+                                <p>Un sistema de gestión cooperativo es un tipo de software o plataforma diseñado para comprometerse y comunicarse entre los empleados, propietarios del negocio, miembros del personal y equipos más accesible y más práctico. Contiene información sobre la empresa y ayuda a seguir el flujo de las operaciones, además también puede sincronizarse para ejecutar otras muchas funciones..</p>
+                                <p>Normalmente, hay varios sistemas —iOS, Windows y Android—, que soportan la gestión cooperativa. Sin embargo, esta es una aplicación en nube compatible con todos los sistemas.</p>
+                                <p>Este tipo de software es entonces descargado o recibido para que los miembros de la empresa puedan inscribirse y agruparse según sus departamentos, designaciones de trabajo y puesto. El control y acceso en la plataforma puede ser verificado mediante la jerarquía en la empresa. </p>
+                                <p>Cada empresa tiene sus propias metas, objetivos y cultura. De modo que, lo más probable, sea que dos empresas, aunque distintas, tengan necesidades similares.</p>
+                                <p>Es por esta razón que los directores o administradores deben de tener cuidado a la hora de escoger el sistema más adecuado para ellos. Estos deben escoger un sistema flexible que acomode a los miembros de su equipo y también uno que sirva a sus objetivos.</p>
+                                <p>Se pueden realizar pruebas de las condiciones de trabajo del sistema antes de llegar a una conclusión; esto es para garantizar que no se cometa ninguna interrupción en el trabajo. En caso de que ninguna de las soluciones existentes resuelva los problemas de la organización, se puede buscar ayuda externa para escoger un software que funcione.</p>
+                                
+                                <h3>¿Qué puede proporcionar una gestión cooperativa a su organización?</h3>
+                                <p><strong>Facilitar las comunicaciones y el flujo de las operaciones</strong></p>
+                                <p>Una de las primeras ventajas de usar un sistema de gestión cooperativo es la facilidad de las comunicaciones. ¿Quiere mandar un mensaje a todos los miembros de su equipo sin dificultad? El software de administración le ayudará. Puede hablar con todos a la vez mientras recibes feedback y reconocimiento. Sí, sus redes sociales disponen de estas funciones, pero, ¿y si pudiera tener una aplicación que ayude a sus trabajadores a concentrarse únicamente en su trabajo? No solo puede comunicarse, si no también llevar el seguimiento de la situación al mismo tiempo. En cada etapa de un proyecto, puede asignar las distintas partes partes y qué es lo que deben hacer. Implementar un software de gestión cooperativa ayuda a crear una estructura y seguirla mientras trabajan. Puede ver los comentarios en cada etapa del proyecto, pues aquellos con acceso podrán dejar sus opiniones o ideas. Cada miembro trabajará codo con codo aunque, esta vez, a distancia y cómodamente.</p>
+                                <p><strong>Un mejorado análisis de datos</strong></p>
+                                <p>Una de las herramientas más importantes de una empresa es la información. Los sistemas de gestión cooperativa están diseñados no solo para comunicarse, si no para mantener registros de datos. Siempre y cuando trabaje en un proyecto específico en el software, es muy probable que encuentre información sobre él en el software. ¿Necesita consultarlo? ¡Puede hacerlo! ¿Desea usar un modelo y una plantilla? ¿Quiere revisar un comentario realizado por un miembro del equipo? Puede verlo. ¿Quiere saber quién trabajó en qué y cómo lo hizo? También puede saberlo. Aunque haya cambiado  su plantilla o sus recursos, seguirá teniendo acceso a un amplio registro que le ayudará a crecer. Mientras use un medio adecuado de almacenamiento, no tendrá nada que temer en lo referido a registros en el software, algo que ofrece este software de gestión cooperativo para su empresa.</p>
+                                <p><strong>Ahorre tiempo y energía</strong></p>
+                                <p>¿Alguna vez ha hablado con su plantilla acerca de lo agotador que resulta moverse de un departamento a otro, o de una oficina a otra? Puede ser realmente extenuante. ¿Y si pudiera ahorrar a su plantilla el estrés de este ir y venir, y concentrar esta energía en otros aspectos de su empresa? Eso sería genial, ¿verdad? No se preocupe, el software de gestión cooperativa le ayudará en esto. Todo el ir y venir ya no tiene que ser algo físico. Una vez que las notificaciones se activen, los mensajes serán recibidos al instante y sin dificultad alguna. Independientemente de su tipo de organización, un software de gestión cooperativa adecuado para su negocio funcionará para usted y le ahorrará muchísima energía y tiempo. Los departamentos podrán cooperar entre ellos e, incluso, ser separados en el mismo software; todo depende del trabajo que deban hacer.</p>
+                                <p><strong>Gestión y la ventaja de una interfaz de usuario</strong></p>
+                                <p>Los sistemas de gestión cooperativa funcionan de acuerdo con el tipo de funciones que vaya a utilizar. Es por esa razón que debe asegurarse de obtener el más adecuado para su negocio. Si ha elegido uno que encaje para su negocio, entonces la gestión será mucho más fácil. Puede añadir un calendario, lo que le ayudará a fijar plazos o reuniones. Sus empleados podrán comprobar calendarios para corregir fácilmente las reuniones. ¿Y si la aplicación notebook puede ser también sincronizada y tomar notas se convierte en algo más sencillo que antes? Eso también puede conseguirse.</p>
+                                <p>Por supuesto, para hacer uso de un software de gestión cooperativa, no son necesarias lecciones individuales. Cada empleado puede usar el software fácilmente para su trabajo y cumplir en plazo.  Con el sistema de gestión cooperativa, podrá hacer del trabajo algo divertido y activo.</p>
+                                <p>¿Quiere realizar pagos desde su sistema de gestión? Puede hacerlos. ¿Quiere llamar a sus clientes? Se puede añadir esta función. ¿Una conferencia con audio, vídeo y con las ventajas de una presentación? ¡Muy fácil! Si desea integrar otras aplicaciones en el software, puede hacerlo. Esto es también fundamental para un sistema de gestión.</p>
+                                <p>Con un sistema de gestión cooperativa, podrá trazar fácilmente estrategias para que puedan ser seguidas por todos a la vez que monitorizadas. Para que los miembros del equipo puedan hacer uso del sistema, lo único que necesitan hacer, según el tipo de software y sus requisitos, es inscribirse. Entonces todos podrán participar.</p>
+                                <p>¿Es tu negocio unipersonal? Un sistema de gestión eficiente le será de gran ayuda. Puede disponer de uno que le ayudará a llevar el seguimiento de todo. Así, la gestión será eficiente.</p>
+                                <p>¿Quiere una forma eficiente de administrar un espacio cooperativo? Booking Ninjas le ofrece una gran variedad de funciones que harán su gestión cooperativa mucho más productiva que nunca. Sea bienvenido a probar nuestra aplicación y preguntar a nuestros usuarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                    <h2>Las funciones que necesita para gestionar un espacio de trabajo compartido</h2>
+                    <p>Ahorre tiempo. Sea más productivo. Haga más dinero. Disfrute de las ventajas de las herramientas digitales y obtenga resultados excepcionales.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="landing__workspace-item wow fadeInLeft">
+                                <div class="landing__workspace-icon"><i><img alt="Una gestión de clientes sofisticada - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-workspace-icon1.png"/></i></div>
+                                <h3>Una gestión de clientes sofisticada</h3>
+                                <p>Herramientas incorporadas de marketing y comunicación para crear y mantener las relaciones con su cliente.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="landing__workspace-item wow fadeInUp" >
+                                <div class="landing__workspace-icon violet"><i><img alt="Un único control de la aplicación - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-workspace-icon2.png"/></i></div>
+                                <h3 class="violet">Un único control de la aplicación</h3>
+                                <p>Gestione diversas localizaciones desde una única plataforma mientras mantiene calidad del servicio.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="landing__workspace-item wow fadeInRight"  >
+                                <div class="landing__workspace-icon"><i><img alt="Una experiencia más enriquecedora para todos - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-workspace-icon3.png"/></i></div>
+                                <h3>Una experiencia más enriquecedora para todos</h3>
+                                <p>Sus inquilinos y empleados disfrutarán de un mejorado ambiente de trabajo gracias a una gestión más flexible y eficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <h3 class="text_center">Tres pasos para empezar</h3>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Coworking Space Management Software - 2" class="wow fadeInRight" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <dl>
+                                <h3>Ponerse en contacto:</h3>
+                                <dd>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al (907) 600-2345 para agilizar el proceso.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Importe sus datos</h3>
+                                <dd>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Láncese al éxito</h3>
+                                <dd>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <h3 class="text_center">Ejemplo de un (estudio de) caso</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="landing__story-box">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5 col-md-6">
+                                        <img alt="Industrious Office - icon" class="landing__story-img" src="https://d1b89zc79exfxt.cloudfront.net/img/landing_photo.jpg"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <article>
+                                            <h5>Cómo Industrious Office consigue mejores acuerdos y satisfacción del cliente</h5>
+                                            <p>Debido a la escasez de espacios de oficinas de servicios, una gestión eficiente de propiedades es más importante que nunca para asegurar el mejor servicio al cliente, acuerdos, y ocupación constante. Aquí descubrirá cómo Booking Ninjas trabajó con Industrious para hacer posible su éxito.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="landing__story-link"><apex:outputLink value="{!URLFOR($Page.BNES_CustomerStories_Industrious)}">LEA LA HISTORIA</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img src="https://d1b89zc79exfxt.cloudfront.net/img/landing__сoworking.png" alt="Bookingninjas Property Management System"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Trabajo cooperativo fácil. Desde</p>
+                                        <p><b>$10</b> por miembro al mes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">Prueba el piloto hoy</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

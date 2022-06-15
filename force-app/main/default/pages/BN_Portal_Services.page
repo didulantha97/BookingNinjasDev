@@ -1,0 +1,79 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" controller="BN_Portal_Services_Controller">
+
+     <!-- Template -->
+    <apex:composition template="BN_Portal_Template">
+        <!-- Define content -->
+        <apex:define name="bn_portal_content">
+             
+            <div class="col-lg-9  col-md-8">
+                <apex:outputPanel styleClass="portal__main" id="portal-services">
+                    <div class="portal__main-text">
+                        <h1>Add services </h1>
+                        <apex:form >
+                            <apex:outputPanel styleClass="portal__main-form" id="productPanel">
+                                <div class="portal__main-form-item">
+                                    <apex:selectList size="1" value="{!productId}" id="product" required="true">
+                                        <apex:selectOptions value="{!productsAndServices}" />
+                                        <apex:actionSupport event="onchange" action="{!getProduct}" reRender="productPanel"></apex:actionSupport>
+                                    </apex:selectList>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="portal__main-form-item">
+                                            Amount: 
+                                            <apex:input type="text" html-placeholder="Amount" value="{!price}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="portal__main-form-item">
+                                                Description: 
+                                            <apex:input type="text" html-placeholder="Description" value="{!description}" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="portal__main-form-item">
+                                            Quantity: 
+                                            <apex:input type="text" html-placeholder="Quantity *" value="{!quantity}" required="true" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portal__main-form-item">
+                                    <apex:commandButton styleClass="button small" value="Request new service" action="{!addServiceRequest}" rerender="portal-services"/>
+                                </div>
+                                <div class="portal__main-form-item">
+                                    <apex:messages style="color: red;"/>
+                                </div>
+                            </apex:outputPanel>
+                        </apex:form>
+                    </div>
+                    <div class="portal__main-history">
+                        <table>
+                            <tr>
+                                <th>Request No.</th>
+                                <th>Service</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Requested Date</th>
+                            </tr>
+                            <apex:repeat var="service" value="{!services}">
+                                <tr>
+                                    <td>{!service.Name}</td>
+                                    <td>{!service.Service_Request__c}</td>
+                                    <td>{!service.Price__c}</td>
+                                    <td>{!service.Quantity__c}</td>
+                                    <td>
+                                        <apex:outputText value="{0, date, MMMM dd',' yyyy}">
+                                            <apex:param value="{!service.CreatedDate}" /> 
+                                        </apex:outputText>
+                                    </td>
+                                </tr>
+                            </apex:repeat>
+                        </table>
+                    </div>
+                </apex:outputPanel>
+            </div>
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

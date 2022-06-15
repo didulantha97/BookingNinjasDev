@@ -1,0 +1,70 @@
+<template>
+<div class="slds-scrollable_y container">
+    <lightning-spinner if:true={isLoading} alternative-text="Loading" size="medium"></lightning-spinner>
+
+    <table if:true={details} class="slds-table slds-p-horizontal_small">
+        <thead class="">
+            <tr class="slds-line-height_reset">
+                <th class="" scope="col">
+                    <div class="slds-truncate">#</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate">Login Time</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate">Country</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate">City</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate">Browser</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate">ApiType</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate">Status</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={details} for:item="detail" for:index="index">
+            <tr key={detail.Id} class="slds-hint-parent">
+                <td>
+                    <div class="slds-truncate">{index}</div>
+                </td>
+                <td>
+                    <div class="slds-truncate">
+                        <lightning-formatted-date-time value={detail.LoginTime}
+                                                       year="numeric"
+                                                       month="numeric"
+                                                       day="numeric"
+                                                       hour="2-digit"
+                                                       minute="2-digit"
+                                                       hour12="false">
+                        </lightning-formatted-date-time>
+                    </div>
+                </td>
+                <td>
+                    <div class="slds-truncate">{detail.LoginGeo.Country}</div>
+                </td>
+                <td>
+                    <div class="slds-truncate">{detail.LoginGeo.City}</div>
+                </td>
+                <td>
+                    <div class="slds-truncate">{detail.Browser}</div>
+                </td>
+                <td>
+                    <div class="slds-truncate">{detail.ApiType}</div>
+                </td>
+                <td>
+                    <div class="slds-truncate">{detail.Status}</div>
+                </td>
+            </tr>
+        </template>
+        </tbody>
+    </table>
+</div>
+
+</template>

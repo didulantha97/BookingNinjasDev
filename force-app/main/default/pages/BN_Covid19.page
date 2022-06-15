@@ -1,0 +1,150 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top covid-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img alt="COVID 19 Resource Page - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/coronavirus-top.png"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Сovid-19:  <br/>
+                                    What it means for Booking Ninjas </h1>
+                                <p>Here is our ongoing resource page for how the coronavirus pandemic has impacted us, what we plan to do about it, and how this may be the beginning of a new era for us.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content integration-content">
+                <div class="container">
+                    <div class="integration-wrap covid-wrap">
+                        <h6>Latest update: 4th April 2020</h6>
+                        <div class="integration" >
+                            <div class="integration__title text_center">Our current position </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>Where we stand now is a bit hard to express. Over a million people worldwide have been infected, thousands dead, states in lock-down, organizations temporarily shutdown, the global economy is being threatened, and a few more bad cases. It is a sad time for us.</p>
+                                    <p>We mostly feel for those who lost family and friends to the pandemic, and those in critical condition. This has been a very depressing period for a lot of us, and the best we can do is figure out how to scale through this.</p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="integration" >
+                            <div class="integration__title">How are we faring? </div>
+                            <div class="row">
+                                <div class="col-lg-4 order-lg-1">
+                                    <div class="integration__img"><img alt="COVID 19 Resource Page - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/covid-ico1.png"/></div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <p>Right now, we are working remotely. We have been doing so for a while before the pandemic so it was pretty easy to continue that way. We are currently ensuring the entire staff stays motivated and try to avoid feeling too bad or depressed about the situation. We understand it is a fairly normal response due to the world’s situation and the lock-downs, but we realize we have a duty to perform to the industry.</p>
+                                    <p>We will do our best to ensure order, health and mental stability are maintained across our entire staff. We are crucial to the development and advancement of the hospitality industry, and we will do our best to ensure that end is achieved.</p>
+                                    <p>Our developers are still on board; working to secure and improve the platform and our content creators creating engaging copy for our customers. Our executives are revisiting strategies to align with the current situation. We are still putting in required work; albeit remotely.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="covid-hidden">
+                            <div class="integration" >
+                                <div class="integration__title">What are we doing for our customers?                        </div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="integration__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/covid-ico3.png" alt=""/></div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p>This is the best time for our customers to get informed about the activities of the industry. We see this phase as one we should do as much as possible to get out of.</p>
+                                        
+                                        <p>As part of our customer engagement strategy, we plan to provide valuable information and medium of interactions for our customers. We believe it is the best way to keep hopes up, provide the latest information about the pandemic, and give tips on how to make a remarkable comeback once this is over.</p>
+                                        
+                                        <p>We provide our services to businesses. This means that all our customers have been experiencing some form of setback due to the pandemic. The responsibility is therefore on us to ensure they get the best information on they can make it through this situation, and set themselves up for better things once this is over.</p>
+                                    </div>
+                                </div>
+                                <p>One way of providing valuable information to our customers is through the use of webinars. We have a degree of understanding of the industry in terms of digital technology and we will make sure to share the information we have through weekly webinars. This will help our customers find the right footing with their IT strategy and launch successful campaigns. Our webinars will consist of practical tips on topics such as your administration software, social media, search engine optimization (SEO), integration of cutting-edge tools that can give an advantage, and best of all, exclusive gist and tips in taking charge in your sector of the industry.</p>
+                            </div>
+                            <div class="integration" >
+                                <div class="row">
+                                    <div class="col-lg-4 order-lg-1">
+                                        <div class="integration__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/covid-ico4.png" alt=""/></div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p>We are also taking our blog releases to a whole new level. It is a good time to publish information on how organizations could be of high relevance in an increasingly digital world. It will help inform readers of the importance of some tools you may not have heard of, and how they could set up apart from the competition by a mile. We are believers of the 80/20 rule, and we know what the 20% could be.</p>
+                                        
+                                        <p>Our infographics will get released soon. This features visual aids in explaining where we are now, and where we could be if we decide to go make use of the tools present to us today. They will compare risks and benefits, and tell you how implementation processes are. We will use the opportunity to debunk some myths about the industry and expound on the opportunities available today.</p>
+                                        
+                                        <p>We are taking to social media to give you consistent updates on what is happening within Booking Ninjas and the hospitality industry. We will include important details in brief fashion, and provide tips and industry news. We will make our social media engagement higher, and convince you to do the same.</p>
+                                        
+                                        <p>Our YouTube page currently features some videos you might want to take a look at. We will be uploading more videos soon; to provide visual information and share stories with you. We believe it is the right time to focus on these, as the best way to pass information across is to share stories that are relevant to the viewers.</p>
+                                        
+                                        <p>Our customer engagement will be increased over the course of this period. We want to share hope and information. It is our responsibility and we will do all we can to get on top of it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="integration" >
+                                <div class="integration__title">How are we helping with the threat?</div>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="integration__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/covid-ico5.png" alt=""/></div>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <p>We are doing all we can, to the best of our ability. As a business organization, we have taken measures to ensure our staff stays safe and isolated. Our priority is the health and safety of our staff and customers and we are doing the best that we can to ensure it remains safe.</p>
+                                        
+                                        <p>Our social media team is sending out new information about the coronavirus pandemic, as seen on authority websites. It is a sensitive time for most parts of the planet and we are trying to make things easier for those within our reach.</p>
+                                        
+                                        <p>We are involving ourselves with our communities and those of our staff, to make sure adequate information goes round in all regions. Everywhere our influence is recognized, we do our best to pass information and a message of hope across.</p>
+                                        
+                                        <p>We have begun sending out relevant information to our customers, health-wise and business-wise, and we hope they prove useful in due time. Research work still goes on, as this is the best time to plan for a comeback; both for us and our clients.</p>
+                                        
+                                        <p>We sincerely send out our heartfelt condolences to those affected directly and indirectly. We wish for a speedy recovery of the planet and we hope to keep giving our best to the hospitality industry.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="integration" >
+                                <div class="integration__title">What are we going to do?</div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="integration__img"><img alt="COVID 19 Resource Page - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/covid-ico1.png"/></div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p>We understand the impact of the coronavirus pandemic beyond the hospitality industry. In some ways, other industries affect ours and the best way to go through this is to establish procedures and plans to ensure we all come out strong.</p>
+                                        
+                                        <p>One way we plan to do that is to reduce costs. Due to the pandemic, business operations have been relatively slower, and it is best we reduce how much we spend on running the business. We have come up with some aspects of the business we need to prioritize over others; ones which we believe should be given more consideration at this time and a few expenses we should cut back on. This will give us the required financial focus to be of impact for the hopefully short duration of this pandemic.</p>
+                                        
+                                        <p>Another way is to strengthen industrial ties. It is a fact that we cannot do this alone, We will need to work together with some sectors in the hospitality industry. We plan to make use of our established contacts to get into needed partnerships with hotels and co-working spaces establishments, property managers, resorts and other stakeholders of the industry.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="integration" >
+                                <div class="row">
+                                    <div class="col-lg-4 order-lg-1">
+                                        <div class="integration__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/covid-ico2.png" alt=""/></div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p>On forming such alliances, we will go ahead to make plans on how to be ahead of the market, and how we can brace ourselves for a rapid comeback after this phase is over. We see this action as very crucial to our survival, as we could easily be lost in the surge of industrial disturbance we are currently facing. Interoperability is practically essential at this point to enable the easy flow of industry news and opportunities that should be taken advantage of.</p>
+                                        
+                                        <p>Our engagement with customers is also a priority right now. We understand at this point that customers should be fully involved in our survival and recovery process and be assured that their platform is in perfect state. We see the need to maintain trust and to send a message of hope. There is no better time to be closer to our customers than now. Due to the cloud deployment of the Booking Ninjas platform, we understand it will be a very convenient platform for our existing customers to work remotely. We have to be there to ensure the entire process goes smoothly as it was designed to.</p>
+                                        
+                                        <p>We are also reducing our workload across the entire company. This comes in connection with our plan to reduce expenses in running the business. We believe it is the time to focus more on improvement and customer engagement and less on relatively unnecessary tasks (as of this time).</p>
+                                        
+                                        <p>Moreover, our productivity derived from remote work should be improved, as it is all we have at this moment. We are putting things in place to ensure the workflow is way better than it is now. We have intensive work to do, and it will be better if we can get things done in a much more productive way.</p>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="covid-more">
+                            <button class="button">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

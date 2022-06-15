@@ -1,0 +1,184 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+            
+            <!-- top -->
+            <div class="review-page__top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Leave Your Feedback" src="https://d1b89zc79exfxt.cloudfront.net/img/reviews_main_illustration.png" class="adaptive-img"/>
+                        </div>
+                        <div class="col-lg-5">
+                            <article>
+                                <h1>Nos encantaría saber lo que piensa de Booking Ninjas</h1>
+                                <p>Ayude a los demás a conocer su experiencia con Booking Ninjas</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="review-page__content">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <figure class="review-page__content-img">
+                                <figcaption>
+                                    <a data-fancybox="fancybox" href="https://www.youtube.com/watch?v=gsJyAV8RTxI" class="video__img wow zoomIn fancybox">
+                                        <img class="adaptive-img" src="https://d1b89zc79exfxt.cloudfront.net/img/reviews_edition.png" alt="Review video on Bookingninjas Property Management System"/>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h3>Ayúdenos a informar a los demás</h3>
+                                <p>Hemos estado escuchando algunas buenas opiniones e historias de nuestros clientes actuales. Mientras que han resultado útiles para conocer la calidad de nuestro sistema en manos de usuarios reales, creemos que sería mejor si se corriera la voz sobre nuestro sistema. En webs de opiniones reales.</p>
+    
+                                <p>Es una buena forma para que las personas que aún estén considerando Booking Ninjas, puedan saber qué esperar cuando implementen nuestro sistema. Es un paso en la dirección correcta, y nos encantaría si pudiéramos conseguir que todos subieran a bordo.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- leave -->
+            <div class="review-page__leave">
+                <div class="container">
+                    <div class="review-page__leave-top">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2"><strong>?</strong></div>
+                            <div class="col-lg-10">
+                                <section>
+                                    <h5>Dónde puede dejar su opinión</h5>
+                                    <p>Puede dejar su opinión en una de las plataformas enumeradas a continuación. Haga click en la plataforma de su elección para ver cómo puede dejar su opinión allí.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <figure class="review-page__leave-logo">
+                                <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000DvKtaUAF"><img alt="App Exchange - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/reviews_App_Exchange_logo.png"/></a>
+                                <figcaption><a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000DvKtaUAF">App Exchange</a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <figure class="review-page__leave-logo">
+                                <a href="https://www.capterra.com/p/144189/Booking-Ninjas/#reviews"><img alt="Capterra - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/reviews_Capterra_logo.png"/></a>
+                                <figcaption><a href="https://www.capterra.com/p/144189/Booking-Ninjas/#reviews">Capterra</a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <figure class="review-page__leave-logo">
+                                <a href="https://hoteltechreport.com/operations/property-management-systems/booking-ninjas"><img alt="Hotel Tech Report - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/reviews_hoteltech.png"/></a>
+                                <figcaption><a href="https://hoteltechreport.com/operations/property-management-systems/booking-ninjas">Hotel Tech Report</a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <figure class="review-page__leave-logo">
+                                <a href="https://www.g2.com/products/booking-ninjas/reviews"><img alt="G2 - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/reviews_G2_logo.png"/></a>
+                                <figcaption><a href="https://www.g2.com/products/booking-ninjas/reviews">G2</a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <figure class="review-page__leave-logo">
+                                <a href="#"><img src="https://d1b89zc79exfxt.cloudfront.net/img/reviews_Google_My_Business_logo.png" alt=""/></a>
+                                <figcaption><a href="#">Google My Business</a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <figure class="review-page__leave-logo">
+                                <a href="https://www.trustpilot.com/review/bookingninjas.com"><img src="https://d1b89zc79exfxt.cloudfront.net/img/reviews_Trust_Pilot_logo.png" alt=""/></a>
+                                <figcaption><a href="https://www.trustpilot.com/review/bookingninjas.com">Trust Pilot</a></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /leave -->
+            <!-- help -->
+            <div class="review-page__help">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 text_center">
+                            <h2>¿Necesita ayuda para crear su opinión/reseña?</h2>
+                            <p>Tenemos un sistema simple para usted. Puede escribir una reseña basándose en sus respuestas a las preguntas enumeradas abajo, o puede copiar una de nuestras plantillas, situadas al final de la página.</p>
+    
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="https://d1b89zc79exfxt.cloudfront.net/img/reviews_Need_help_illustration.png" class="float_right adaptive-img" alt=""/>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h4>Preguntas para guiarle</h4>
+                                <ul>
+                                    <li>¿Qué le hizo probar Booking Ninjas?</li>
+                                    <li>¿Cuál fue su primera experiencia con nuestro sistema?</li>
+                                    <li>¿Qué pretendía conseguir con nuestro sistema? ¿Tuvo éxito?</li>
+                                    <li>¿Qué le gustó o le disgustó?</li>
+                                    <li>¿Cómo usó el sistema, específicamente?</li>
+                                    <li>¿Recomendaría nuestro sistema a un amigo?</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /help -->
+            <!-- sample -->
+            <div class="review-page__sample">
+                <div class="container">
+                    <div class="review-page__sample-box">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h2>Ejemplo de reseña</h2>
+                                <p>De acuerdo con las preguntas mencionadas anteriormente, aquí tiene un ejemplo de reseña que puede usar. Puede elegir entre una versión larga y una corta.</p>
+                            </div>
+                        </div>
+                        <div class="review-page__sample-versions">
+                            <div class="review-page__sample-item">
+                                <div class="review-page__sample-title">
+                                    Versión larga
+                                </div>
+                                <div class="review-page__sample-text">
+                                    <p>Oí hablar de Booking Ninjas a través de _________ (un amigo, Internet, etc.), y de acuerdo con las funciones del sistema, parecía una buena opción para mi negocio y decidí probarlo.</p>
+    
+                                    <p>El sistema era fácil de navegar, así que mi primera experiencia fue bastante impresionante. Hice uso de todas las funciones y las rellené con los datos de prueba para ver cómo funcionaban. Mi plan para implementar el sistema Booking Ninjas era transformar, de forma efectiva, nuestro sistema de operaciones y avanzar, así, hacia la dirección digital. Fue un éxito.</p>
+                                        
+                                    <p>Me encantó que el sistema fuera fácil de usar, con funciones autoexplicativas que reducían la necesidad de llamar a su servicio al cliente todo el tiempo. Y cada vez que llamaba, obtenía una impresionante guía de los representantes del servicio al cliente. Fue una magnífica experiencia.</p>
+                                        
+                                    <p>Definitivamente recomendaría Booking Ninjas a un amigo. ¡Buen trabajo!</p>
+                                </div>
+                            </div>
+                            <div class="review-page__sample-item">
+                                <div class="review-page__sample-title">
+                                    Versión corta
+                                </div>
+                                <div class="review-page__sample-text">
+                                    <p>Booking Ninjas realizó un excelente trabajo con su sistema. Era fácil de usar y funcionó perfectamente, para el plan que tenía en mente cuando realicé la compra. Definitivamente recomendaría Booking Ninjas a cualquiera que preguntara.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /sample -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

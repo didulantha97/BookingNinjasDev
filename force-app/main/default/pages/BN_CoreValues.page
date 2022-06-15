@@ -1,0 +1,152 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img alt="Our Core Beliefs" src="https://d1b89zc79exfxt.cloudfront.net/img/core-img.png"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                    <h1>Our Core Beliefs</h1>
+                                    <p>We are a family at Booking Ninjas. And that family extends to teammates, clients, partners, and the entire industry. All we do is for the good of the entire group, and our beliefs and mode of operation covers every aspect of the family.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content core-page-content">
+                <div class="core-page-timeline">
+                    <div class="container core-page-timeline__item-big text_center">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <article>
+                                    <h2 class="about-page-content__title"><span>Our Commitment</span></h2>
+                                    <p>Booking Ninjas is committed to high standards of integrity and excellence. Our every action is defined by our core values - values that ensure we provide the best experience at any time, without sparing our time and resources. We are committing ourselves to the growth of our customers through our easy to use property management software and we will continue to take action that contributes to their success.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container core-page-timeline__item-big">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <article>
+                                    <h2 class="about-page-content__title"><span>Core values</span></h2>
+                                    <p>At Booking Ninjas, we have 4 core values that govern our business attitude. We believe these values are essential to every member of the team, and can also be a source of inspiration to other SaaS startups in the industry.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container core-page-video">
+                        <div class="row justify-content-center">
+                            <div class="col-md-7">
+                                <a class="video__img wow zoomIn fancybox" data-fancybox="fancybox" href="https://www.youtube.com/watch?v=rbR85czmMIA&feature=youtu.be" style="visibility: visible; animation-name: zoomIn;">
+                                    <img alt="Video" src="https://d1b89zc79exfxt.cloudfront.net/img/video-core1.png"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2 class="about-page-content__title"><span>Booking Ninjas consists of four main areas which serves as the backbone of value addition.</span></h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="core-page-timeline__item">
+                                    <figure>
+                                        <span><img alt="Trust - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/core1.png"/></span>
+                                        <h3>Trust</h3>
+                                    </figure>
+                                    <p>We believe Trust is the most important factor in business, and we sincerely put efforts into gaining and giving it out. As teammates, partners, and clients, we consider ourselves part of a family that needs trust to function properly.<br/><br/></p>
+                                    <p>We engage in honest, transparent business, making sure everyone goes home happy.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="core-page-timeline__item">
+                                    <figure>
+                                        <span><img alt="Equality - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/core2.png"/></span>
+                                        <h3>Equality</h3>
+                                    </figure>
+                                    <p>We believe in the importance of equality, and we make it happen in the workplace. All our employees, partners, clients - everyone - gets equal treatment regardless of any form of difference. Everyone deserves a shot at taking their lives and businesses to a better position, and at Booking Ninjas, we make sure they all get it.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="core-page-timeline__line"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="core-page-timeline__item">
+                                    <figure>
+                                        <span><img alt="Innovation - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/core3.png"/></span>
+                                        <h3>Innovation</h3>
+                                    </figure>
+                                    <p>There’s nothing as empowering as innovation, and we Ninjas make sure it is part of our routine. Ideas are evaluated, and positive changes take effect regularly. We are consistently evolving, and the best way we believe we can stay ahead of the curve is by making our business models and services as flexible and updated as possible.<br/><br/></p>
+                                    <p>So far, it’s been working for us, and others who make innovation a priority.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="core-page-timeline__item">
+                                    <figure>
+                                        <span><img alt="Success - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/core4.png"/></span>
+                                        <h3>Success</h3>
+                                    </figure>
+                                    <p>More than an objective, we take success as a value we must maintain at Booking Ninjas. We see it as a way of life, and something we should use as a measure of our commitment regularly.<br/><br/></p>
+                                    <p>How we handle setbacks? Setbacks lead to us having new experiences when we need to the situation. In the end, our clients are happy and satisfied than before. It’s a win for us.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2 class="about-page-content__title"><span>Our Decision-Making Process</span></h2>
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="core-page-timeline__item text_center">
+                                    <h3 class="core-page-timeline__item-title">Strategic planning</h3>
+                                    <p>We take planning very seriously. Research, existing data, past experiences, and raw ideas go into every plan we make. Priorities are evaluated, consequences and benefits are weighed - we make sure every decision is properly thought out.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="core-page-timeline__item text_center">
+                                    <h3 class="core-page-timeline__item-title">The Customers’ Point Of View</h3>
+                                    <p>The customer is always right. We put ourselves in the customer’s shoes to decide what’s best for them. We do so by simply asking, sending out a survey, conducting appropriate research, and other informal ways.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="core-page-timeline__item text_center">
+                                    <h3 class="core-page-timeline__item-title">Act &amp; Improve</h3>
+                                    <p>Time for work. We implement the decision while closing watching outcomes, improving parameters as we go along. Our flexible approach to innovation ensures we can effect small changes as fast as possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container core-page-timeline__item-big">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <article>
+                                    <h2 class="about-page-content__title"><span>Our Mentality</span></h2>
+                                    <p>We believe in Winning. Winning for our teammates, clients, partners, investors - for everyone. Every member of the Booking Ninjas family sees winning as a part of our core structure, and we consistently push towards maintaining that culture.<br/><br/></p>
+                                    <p>Our winning mentality leads us to prioritize:<br/><br/></p>
+                                    <p><strong>Top Talent.</strong> We understand an organization is as good as its team, and we put great efforts into hiring top talent in related fields.<br/><br/></p>
+                                    <p><strong>Discipline.</strong> Consistency is necessary for winning, and it is a value we instill in every member of the Booking Ninjas team. Day in, day out, we are always giving our best.<br/><br/></p>
+                                    <p><strong>Giving back.</strong> We are products of society, and we must give back. The 1-1-1 model is one such way we do that. We pledge 1% of our revenue to improve the state of the world.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <a href="https://pledge1percent.org/" class="button" style="margin:0 0 50px 0;" target="_blank" rel="noindex">PLEDGE 1%</a>
+                </div>                  
+            </div> 
+            <!-- /content -->
+
+       </apex:define>
+    </apex:composition>
+
+
+</apex:page>

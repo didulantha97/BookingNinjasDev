@@ -1,0 +1,16 @@
+<apex:component access="public">
+    <apex:attribute type="Decimal" name="value" description="currency" access="public"/>
+
+    <apex:outputPanel rendered = "{! IF(value > 10000, true, false) }">
+        <apex:outputText value="${0, number, #,##0}" >
+            <apex:param value="{!value}" />     
+        </apex:outputText> 
+    </apex:outputPanel>  
+
+    <apex:outputPanel rendered="{! IF(value < 10000, true, false) }">
+        <apex:outputText value="${0, number, #,##0.00}" >  
+            <apex:param value="{!value}" />
+        </apex:outputText>
+    </apex:outputPanel> 
+         
+</apex:component>

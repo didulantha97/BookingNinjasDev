@@ -1,0 +1,795 @@
+<apex:page controller="TwilioClientController" showHeader="false" lightningStylesheets="true" >  
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>   
+            <meta charset="utf-8" />
+            <meta http-equiv="x-ua-compatible" content="ie=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <script type="text/javascript" src="//media.twiliocdn.com/sdk/js/client/v1.4/twilio.min.js"></script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+ <script type="text/javascript" src="/support/api/38.0/lightning/opencti.js"></script>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>    
+
+    <style>
+        .color-toggle{      
+            background-color :red!important;  
+            border-color : red!important; 
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-size: 100%;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: none;
+            font-family: 'Roboto', sans-serif;
+        }
+        input, textarea{
+            outline:none;
+        }
+        p
+        {
+            margin: 0;
+            padding: 0 0 10px 0;
+            line-height: 20px;
+        }
+        .dialer_wrapper{
+            width:320px;
+            margin:0 auto;                
+        }
+        .span4
+        {
+            width:60px;            
+            margin: 0 auto 10px;
+        }
+        
+        .phone
+        {
+            margin-top:2px;
+            background: #fff;
+            padding: 0;
+        }
+        .tel
+        {        
+            margin-top: 10px;
+            border: 1px solid #9e9e9e;
+            border-radius: 0px;
+        }
+        .num-pad
+        {        
+            margin:0 auto;
+            display:block;
+            width:300px;
+        }        
+        .inner_wrap{
+            width:100%;
+            float:left;        
+        }
+        .span_wrap{
+            width:100px;
+            float:left;        
+        }
+        input#telNumber {
+            width:70%;
+            float:left;
+            background-color:none;
+            border:none;
+            box-shadow:none;
+            outline:none;
+            padding-left:5px;
+            color : dodgerblue;
+            font-size : 30px;
+            margin-left : 10px;
+        }
+        .back_btn{
+            width:10%;
+            float:left;
+            text-align: center;
+            vertical-align: middle;
+            padding-top:5px;        
+        }
+        .mute{
+            width:10%;
+            float:left;
+            text-align: center;
+            vertical-align: middle;
+            padding-top:4px;        
+        }
+        .phone .btn-success{
+            padding: 20px;
+            font-weight: 600;
+            font-size: 20px;
+            margin:6px 0;
+            width:100%;
+            color: #fff;
+            background-color: #398439;
+            border-color: #255625;
+            text-align:center;
+        }
+        .phone .btn-success{
+            float:right;
+        }
+        .status{
+            width:100%;
+            float:left;
+            color:#fff;
+            font-weight: bold;
+            padding-bottom: 20px;
+            text-align: center
+        }
+        .top-blank{
+            float:left;
+            width:100%;
+            background-color: #fff;
+            border-bottom: 1px solid #0000FF;
+            margin: 10px 0;        
+        }
+        .extra-digit{
+            line-height:45px !important;
+        }
+        .txt  p{
+            font-size:20px;    line-height: 0;
+            padding: 0;
+        }
+        .num
+        {        
+            -webkit-border-radius: 999px;
+            border-radius: 999px;
+            -moz-border-radius: 999px;
+            height:60px;
+            border: solid 1px deepskyblue;
+            color: #333;
+            cursor: pointer;
+        }
+        .num:hover
+        {        
+            color: #fff;
+            transition-property: background-color .2s linear 0s;
+            -moz-transition: background-color .2s linear 0s;
+            -webkit-transition: background-color .2s linear 0s;
+            -o-transition: background-color .2s linear 0s;
+        }
+        .txt
+        {
+            font-size: 30px;
+            text-align: center;
+            line-height:60px;
+            color: #666666;
+        }
+        .small
+        {
+            font-size: 15px;
+        }
+        
+        .btn
+        {  
+            width:100%;  
+            color: #fff;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+            font-weight: bold;
+            -webkit-transition: .1s ease-in background-color;
+            -webkit-font-smoothing: antialiased;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding:10px 0px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .btn:hover
+        {
+            transition-property: background-color .2s linear 0s;
+            -moz-transition: background-color .2s linear 0s;
+            -webkit-transition: background-color .2s linear 0s;
+            -o-transition: background-color .2s linear 0s;
+        }
+        .textarea_wraper{
+            float:left;
+            width:100%;
+            padding-top:10px;        
+        }
+        textarea#notes {
+            width: 100%;
+        }
+        .textarea_wraper label{
+            color:#fff;
+        }
+        .active
+        {
+            color: #3498db;
+        }
+        .oncall{
+            background-color:#00cd00
+        }
+        .endcall{
+            background-color:#ff0000
+        }
+        
+    </style>
+ <script type="text/javascript">
+    Twilio.Device.setup("{! token }");
+    var callSid;    //  hold the Twilio generated CallSid unique to this call
+    var parentId;   //  hold the parent record being called in order to associate as the parent of task being logged for the call
+    var newTaskId;  // hold the id of newly created task
+    var sfdcRecordType; // hold the object type of the record that initiated the click 2 dial
+    var call_direction; // hold the direction of the call
+    var call_method = 'Incoming'    // hold the method of calling ; dialpad or click2dial
+    var connection; // hold the current connection
+    var cleanednumber;  //  hold the dialed number
+    
+    //  function to fire when click 2 dial executes
+    var startCall = function (payload) {
+        $('.callbtn').hide();
+        $('.endbtn').show();
+        sfdcRecordType = payload.objectType;
+        sforce.opencti.setSoftphonePanelVisibility({visible: true});  //pop up CTI softphone
+        parentId = payload.recordId;    //  the record that the phone number being called belongs to
+        
+        call_method = 'Click2Dial';
+        cleanednumber = cleanFormatting(payload.number);        
+        params = {"PhoneNumber": cleanednumber, "parentCBId" : parentId};   //{"PhoneNumber": cleanednumber};
+        console.log('phone number : ', cleanednumber);
+        $(".tel").val(cleanednumber);
+        connection = Twilio.Device.connect(params);        
+    };
+    
+    // connection register
+    Twilio.Device.connect(function(response) {
+        callSid = response.parameters;  //  track the unique Twilio CallSid
+        call_direction = (response._direction == 'OUTGOING') ? 'Outbound' : 'Inbound';
+        $('[id$=hidden_number]').val(cleanednumber);
+        $('[id$=hidden_parentId]').val(parentId);
+        $("#btn_mute").prop('disabled', false);
+        saveLog();  //  save the call information in a Task record
+    });
+    
+    Twilio.Device.disconnect(function(response) {
+        updateLog();    // update the log with notes and any other updated info
+        popupSMSPanel();    // let user send quick sms to the call recipient
+    });
+    
+    function popupSMSPanel() {
+        if (confirm('Wanna send quick SMS ?')){
+            $('.main_page').hide();
+            $('.message_panel').show();            
+        }
+    }
+            
+    function returnHome() {
+        $('.message_panel').hide();
+        $('.main_page').show();               
+    }
+            
+    //  toggle mute/unmute disabling
+    function toggleDisable(btn) {
+        if(btn == 'mute') {
+            $("#btn_mute").prop('disabled', true);
+            $("#btn_unmute").prop('disabled', false);
+        } else if(btn == 'unmute') {
+            $("#btn_unmute").prop('disabled', true);
+            $("#btn_mute").prop('disabled', false);
+        }
+    }
+    
+    //OpenCTI!!
+    sforce.opencti.enableClickToDial();
+    sforce.opencti.onClickToDial({listener : startCall});   //  click 2 dial
+    
+    //  function for handling direct dialing from softphone
+    function call() {
+        $('dial-button').removeClass('oncall').addClass('endcall');
+        $('.callbtn').hide();
+        $('.endbtn').show();        
+        cleanednumber = $("#telNumber").val();
+        params = {"PhoneNumber": $("#telNumber").val()};
+        //params = cleanFormatting($("#number").val());
+        call_method = 'Dialpad';
+        //Twilio.Device.connect(params);
+        connection = Twilio.Device.connect(params);
+        console.log('dial : ', JSON.stringify(connection));
+    }
+    
+    //  function for handling call hang up
+    function hangup() {
+        $('dial-button').removeClass('endcall').addClass('oncall');
+        $('.callbtn').show();
+        $('.endbtn').hide();
+        var resp = Twilio.Device.disconnectAll();        
+    }
+    
+    //  mute the mic of this device
+    function mute() {
+        Twilio.Device.activeConnection().mute(true);  
+        toggleDisable('mute');
+    }
+    
+    //  unmute the mic of this device
+    function unmute() {
+        Twilio.Device.activeConnection().mute(false);
+        toggleDisable('unmute');
+    }
+    
+    // Handle incoming calls from Twilio
+    Twilio.Device.incoming(function (conn) {
+        connection = conn;
+        console.log('incoming : ', connection);
+        if (confirm('Accept incoming call from ' + conn.parameters.From + '?')){
+            connection.accept();
+            sforce.opencti.setSoftphonePanelVisibility({visible: true});  //pop up CTI softphone
+            callSid = conn.parameters;  //  track the unique Twilio CallSid
+        }
+    });            
+    
+    function cleanFormatting(number) { 
+        //changes a SFDC formatted US number, which would be 415-555-1212  into a twilio understanble number 4155551212      
+        //return number.replace(' ','').replace('-','').replace('(','').replace(')','').replace('+','');
+        if(number.includes('x'))
+            number = number.split('x')[0];
+        return number.replace(/\D/g, "");   
+    }
+    
+    //  save the call information in a Task record
+    function saveLog() {
+        var objectType;
+        var log;
+        var taskSubject = 'Call log : ' + new Date();
+        
+        if(parentId != null) {
+            objectType = parentId.slice(0,3);
+        }
+        if(sfdcRecordType != null) {
+            taskSubject = sfdcRecordType + ' call log : ' + new Date();
+        }
+        if(objectType != null && objectType == 'a1V') {
+            log = {Cook_Book__c:parentId, Twilio_Call_Id__c: callSid.CallSid, entityApiName: "Call_Log__c"};
+            sforce.opencti.saveLog({value:log, callback: saveLogCallBack});
+        }
+        else if(objectType != null && objectType == '003') {
+            log = {Contact__c:parentId, Twilio_Call_Id__c: callSid.CallSid, entityApiName: "Call_Log__c"};
+            sforce.opencti.saveLog({value:log, callback: saveLogCallBack});
+        }                        
+    }
+    
+    //  update the call information in the created Task record
+    function updateLog() {
+        if(newTaskId != null) {
+            var log = {Id:newTaskId, Notes__c:$("#notes").val()};
+            sforce.opencti.saveLog({value:log, callback: updateLogCallBack});
+        }
+    }
+    
+    //  call back function for refreshing the view after the Task being updated
+    var refreshCallBack = function(response) {
+        if(response.success) {
+            console.log('refresh successfully! : ' , response.returnValue);    
+        } else {
+            console.error('Error saving : ', response.errors); 
+        }
+    }
+    
+    //  call back function for saving the call information in a Task record
+    var saveLogCallBack = function(response) {
+        if(response.success) {
+            newTaskId = response.returnValue.recordId;
+            console.log('save success! : ', newTaskId);
+        } else {
+            console.error('Error saving : ', response.errors);   
+        }
+    }
+    
+    //  call back function for updating the call information in the Call Log record
+    var updateLogCallBack = function(response) {
+        if(response.success) {
+            console.log('update success! : ', response.returnValue);
+            var param = {};
+            param.callback = refreshCallBack;
+            sforce.opencti.refreshView(param);
+            $("#notes").val('');    //  clearing the notes box
+            
+            //  open the newly created task in a new tab            
+            sforce.opencti.screenPop({
+                 type: sforce.opencti.SCREENPOP_TYPE.SOBJECT, //Review the arguments section.
+                 params: { recordId: newTaskId } //Depends on the SCREENPOP_TYPE. Review the arguments section.
+            });            
+        } else {
+            console.error('Error saving : ', response.errors);   
+        }
+    }
+    
+    //  Send DTMF
+    var sendDtmf = function(key) {
+        if(connection._status == 'open') {
+            connection.sendDigits(key);    
+            
+        }
+    }
+    function sendDigit(numberPressed){
+        if(connection._status == 'open'){
+            console.log(numberPressed);
+            connection.sendDigits(numberPressed);
+        }    
+    }  
+    function sendDigitFromKey(evt){
+        if(connection._status == 'open'){
+            connection.sendDigits(String.fromCharCode(evt.keyCode));
+        }    
+    }
+    
+    $(document).ready(function () {
+        var telNumber;
+        $('.num').click(function () {
+            var num = $(this);
+            var text = $.trim(num.find('.txt').clone().children().remove().end().text());
+            telNumber = $('#telNumber');
+            $(telNumber).val(telNumber.val() + text);
+            //sendDtmf(text);
+        });
+        
+        //$('.btn').click(function(){
+        //    if(telNumber.val())
+        //    alert('You dialed number '+telNumber.val());
+        //});
+        color= '';
+        $('.btn-mute').click(function(){
+            //$(this).text($(this).text() == 'Mute' ? 'Unmute' : 'Mute');
+            var x = $(this).css('background-color');
+            $(this).toggleClass("color-toggle");
+        });
+        $('.btn-call').click(function(){
+            //$(this).text($(this).text() == 'CALL' ? 'End' : 'CALL');
+            var x = $(this).css('background-color');
+            $(this).toggleClass("color-toggle");
+        });
+    });
+    function hexc(colorval) {
+        var parts = colorval.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+        delete(parts[0]);
+        for (var i = 1; i <= 3; ++i) {
+            parts[i] = parseInt(parts[i]).toString(16);
+            if (parts[i].length == 1) parts[i] = '0' + parts[i];
+        }
+        color = '#' + parts.join('');
+    }
+    function toggle() {
+        var x = document.getElementById('contentToToggle');
+        var y = document.getElementById('contentToToggle2');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+            y.style.display = 'none';
+            unmute();
+        } else {
+            x.style.display = 'none';
+            y.style.display = 'block';
+            mute();
+        }
+    }
+    
+    function reset() {
+        document.getElementById("telNumber").value =document.getElementById("telNumber").value.slice(0, -1);
+        
+    }
+    </script>
+            <apex:slds />
+        </head>
+    <!--<div>
+      <input type="text" id="number" name="number"
+      placeholder="Enter a phone number to call"/>
+    </div>
+
+    <button class="call" onclick="call();">
+      Call
+    </button>
+    
+    <button class="call" id="btn_mute" onclick="mute();">
+      Mute
+    </button>
+    
+    <button class="call" id="btn_unmute" onclick="unmute();">
+      Unmute
+    </button>
+  
+    <button class="hangup" onclick="hangup();">
+      Hangup
+    </button>-->
+<!--<div id="theLead"></div> -->
+    <!--<div style ="Width:100px;height=400px">
+   Add Call Log Notes : <textarea rows="4" cols="50" id="notes" name="notes">
+    </textarea>
+    
+         <!--<input type="textarea" id="notes" name="notes" rows="4" cols="50" style ="Width:400px;height=800px"/>-->
+    <!--</div>-->
+  
+    <!--New Html -->
+    <body>        
+        <div class="dialer_wrapper main_page">
+            <div class="top-blank">
+                <input type="tel" name="name" id="telNumber" class="form-control tel" value="" onkeypress="sendDigitFromKey(event)"/>
+                <apex:outputpanel id="contentPanel">
+                    <div class="back_btn">
+                        <apex:image id="imgBackBtn" url="{!URLFOR($Resource.Twilio_CTI_Images,'backbutn.png')}" onclick="reset()" width="30" height="30" alt="remove" > 
+                            <apex:actionSupport event="onclick" reRender="contentPanel">
+                            </apex:actionSupport>
+                        </apex:image>
+                    </div>
+                    
+                    <div id="contentToToggle" class="mute">
+                        <apex:image id="imgUnmute" url="{!URLFOR($Resource.Twilio_CTI_Images,'Unmute.png')}" onclick="toggle()" width="30" height="30" alt="Unmute" > 
+                            <apex:actionSupport event="onclick" reRender="contentPanel">
+                            </apex:actionSupport>
+                        </apex:image>
+                    </div>
+                    <div style="display: none" id="contentToToggle2" class="mute">
+                        <apex:image id="imgMute" url="{!URLFOR($Resource.Twilio_CTI_Images,'mute.png')}" onclick="toggle()" width="30" height="30" alt="mute" > 
+                            <apex:actionSupport event="onclick" reRender="contentPanel">
+                            </apex:actionSupport>
+                        </apex:image>
+                    </div>
+                </apex:outputpanel>
+            </div>
+            
+            <div class="num-pad">
+                <div class="inner_wrap">
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('1');">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('2');">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('3');">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_wrap">
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('4');">
+                                    4
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('5');">
+                                    5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('6');">
+                                    6
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_wrap">
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('7');">
+                                    7
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('8');">
+                                    8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('9');">
+                                    9
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_wrap">
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('#');">
+                                    #
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('0');">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt" onclick="sendDigit('*');">
+                                    *
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_wrap">
+                    <div class="span_wrap" style="visibility:hidden">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span_wrap">
+                        <div class="span4">
+                            <div class="num dial-button oncall">
+                                <div class="txt callbtn" onclick="call();">
+                                    <span class="slds-icon_container slds-icon-utility-call">
+                                        <svg class="slds-icon slds-icon-text-light slds-icon_large" aria-hidden="true">
+                                            <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#call')}"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <!--    End Call    -->
+                                <div class="txt endbtn" onclick="hangup();" style="display:none;">
+                                    <span class="slds-icon_container slds-icon-utility-call">
+                                        <svg class="slds-icon slds-icon-text-light slds-icon_large" aria-hidden="true">
+                                            <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#call')}"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <!--    /End Call   -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span_wrap" style="visibility:hidden">
+                        <div class="span4">
+                            <div class="num">
+                                <div class="txt">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_wrap">
+                    
+                    
+                    <div class="btn " onclick="call()" style="display:none;">CALL</div> 
+                    <div class="btn " onclick="hangup()"  style="display:none;">End call</div> 
+                                        
+                </div>                                
+                <div class="inner_wrap">                                             
+                    <div class="textarea_wraper">
+                        <textarea class="form-control" id="notes" rows="4" placeholder="Call Log Notes"></textarea>                        
+                    </div>
+                </div>                               
+            </div>
+        </div>
+        <div id="message_panel" class="message_panel dialer_wrapper" style="display:none;">
+            <div class="top-blank">
+                <!-- Messages -->
+                <apex:outputPanel id="messages">
+                    <!-- Error panel -->
+                    <apex:outputLabel rendered="{!showError}">
+                        <div id="errorPanelmsg" style="z-index: 9999; margin-top:2px; border-radius:5px;" class="slds-notify slds-notify--alert slds-theme--error slds-theme--alert-texture" role="alert">
+                            <h2>
+                                {!responseMessage}
+                            </h2>     
+                        </div>    
+                        <script>
+                        $(document).ready(function(){                            
+                            //error meessage popup fadeout
+                            $('#errorPanelmsg').fadeOut(9000);
+                        });
+                        </script>
+                    </apex:outputLabel>
+                    <!-- / Error panel -->
+                    
+                    <!-- Success panel -->
+                    <apex:outputLabel rendered="{!showSuccess}">
+                        <div id="successPanelmsg" style="z-index: 9999; margin-top:2px; border-radius:5px;" class="slds-notify slds-notify--alert slds-theme_info slds-theme_alert-texture" role="alert">
+                            {!responseMessage}     
+                        </div>    
+                        <script>
+                        $(document).ready(function(){                            
+                            //error meessage popup fadeout
+                            $('#successPanelmsg').fadeOut(9000);
+                        });
+                        </script>
+                    </apex:outputLabel>
+                    <!-- / Success panel -->
+                    
+                </apex:outputPanel>
+                <!-- / Messages -->
+                <apex:form id="form_sms">
+                    <apex:inputHidden id="hidden_number" value="{!recipientMobile}"/>
+                    <apex:inputHidden id="hidden_parentId" value="{!parentRecordId}"/>
+                    <apex:pageBlock id="block" title="">
+                        <apex:pageBlockSection id="blockSection" title="Send Message" collapsible="false" >
+                            <apex:outputLabel >Template</apex:outputLabel>
+                            <apex:selectList id="selectTemplate" value="{!selectedTemplate}" size="1" multiselect="false">
+                                <apex:selectOptions value="{!templates}" />
+                                <apex:actionSupport action="{!onChangeTemplate}" event="onchange" reRender="inpMessage"/>
+                            </apex:selectList>
+                            <apex:outputLabel >Message</apex:outputLabel>
+                            <apex:inputTextarea id="inpMessage" value="{!message}"/>
+                            <apex:commandButton value="Send SMS" action="{!triggerMessage}" oncomplete="returnHome();" reRender="messages" status="actStatus" >
+                                <apex:param assignTo="{!isSMS}" value="true"/>
+                            </apex:commandButton>
+                            <apex:commandButton value="Send WhatsApp" action="{!triggerMessage}" oncomplete="returnHome();" reRender="messages" status="actStatus" >
+                                <apex:param assignTo="{!isSMS}" value="false"/>
+                            </apex:commandButton>
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>                                
+                    
+                    <!-- Spinner -->                
+                    <apex:actionStatus id="actStatus">
+                        <apex:facet name="start">
+                            <div class="slds-spinner_container">
+                                <div class="slds-spinner--brand slds-spinner slds-spinner--medium" aria-hidden="false" role="alert">
+                                    <div class="slds-spinner__dot-a"></div>
+                                    <div class="slds-spinner__dot-b"></div>
+                                </div>
+                            </div>
+                        </apex:facet>
+                    </apex:actionStatus>
+                    <!--/ Spinner -->
+                </apex:form>
+            </div>
+        </div>
+    </body>
+    <!--    /New HTML   -->
+    <script>
+        $("#btn_unmute").prop('disabled', true);
+        $("#btn_mute").prop('disabled', true);
+    </script>
+    </html>
+ </apex:page>

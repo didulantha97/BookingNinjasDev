@@ -1,0 +1,511 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('old-bg');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="bnr bnr-matrix">
+                <div class="container">
+                    <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                            <img alt="Comparison of Popular Property Management Software" class="wow fadeInRight" src="https://d1b89zc79exfxt.cloudfront.net/img/competitive-matrix-bg.png"/>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Find and Compare Popular Property Management Software</h1>
+                                <p>Your goal is to put smiles on the faces of your guests, tenants, and employees. You need the right software for this mission—technology that juggles a diverse set of capabilities seamlessly. Today’s users also expect their property management systems to:                         </p>
+                                
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            
+            <!-- tags -->
+            <div class="matrix-tags">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <figure>
+                                <span><i><img alt="Be Cloud and Mobile Accessible - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-ico1.png"/></i></span>
+                                <figcaption>Be cloud and 
+                                    mobile accessible</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <span><i><img alt="AI-Infused - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-ico2.png"/></i></span>
+                                <figcaption>AI-infused</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <span><i><img alt="Run Without Friction - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-ico3.png"/></i></span>
+                                <figcaption>Run without 
+                                    friction</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="matrix-tags__text">
+                        <p>Below is a comparison matrix that evaluates several of the popular property management solutions in today’s marketplace. 
+                            The capabilities have strong, medium, and weak ratings based on interpretations of data and reviews listed on <a href="https://www.capterra.com/hospitality-property-management-software/" target="_blank">Capterra</a> and <a href="https://hoteltechreport.com/operations/property-management-systems/booking-ninjas" target="_blank">Hoteltechreport.com</a>. </p>
+                            
+                        <h2>Check out the following grid to see how today’s solutions stack up against each other. </h2>
+                    </div>
+                    <div class="matrix-tags__info">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="matrix-tags__info-item">
+                                    <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/>- Weak</span>
+                                    <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/>- Medium</span>
+                                    <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/>- Strong</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 text_right">
+                                <!-- <a href="#" class="button"><i class="fas fa-envelope"></i>Send me this grid to email</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /tags -->
+            <!-- table -->
+            <div class="matrix-table">
+                <div class="container">
+                    <div class="matrix-table__section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Your <br/>
+                                    PMS</th>
+                                <th>Affordable 
+                                    Pricing 
+                                    Structure</th>
+                                <th>Integration
+                                    Capabilities</th>
+                                <th>Ease-
+                                    of-use</th>
+                                <th>Responsive 
+                                    customer/
+                                    tech support</th>
+                                <th>Ease-of 
+                                    Installation</th>
+                                <th>Clear user 
+                                    interface</th>
+                                <th>Clear user 
+                                    interface</th>
+                                <th>Available 
+                                    training 
+                                    options</th>
+                                <th>Artificial
+                                    intelligence
+                                    capabilities</th>
+                                <th>Cloud 
+                                    infrastructure</th>
+                                <th>Mobile apps 
+                                    and 
+                                    infrastructure</th>
+                                <th>All-in-one 
+                                    Capabilities </th>
+                                <th>Security</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img alt="Oracle - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table1.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/> </td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="BookingNinjas - icon-1" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table2.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="Clock - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table3.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/> </td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="Infor - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table4.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/> </td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="StayNTouch - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table5.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="Propel - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table6.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="Mews - icon-1" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table7.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="Maestro - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table8.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/> </td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="SMS - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table9.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/> </td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="Guestling - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table10.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="Cloudbeds - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table11.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="Amadeus - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table12.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="Agilysys - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table13.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="innRoad - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table14.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                            <tr>
+                                <td><img alt="RoomKeyPMS - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-table15.png"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/> </td>
+                                <td><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/><img src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-check.png" alt="Bookingninjas Property Management System" class="matrix-table__check"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <!-- /table -->
+            <!-- text -->
+            <div class="matrix-functionality">
+                <div class="container">
+                    <p>Users today want their pms systems to be the equivalent of a Swiss Army knife. Some of the expected functionalities include:</p>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="matrix-functionality__item">
+                                <figure><figcaption><img alt="Rent Collection, Payment Processing, and Reservation Management - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-ico7.png"/></figcaption></figure>
+                                <strong>
+                                    Rent collection,
+                                    payment processing,
+                                    and reservation 
+                                    management.
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="matrix-functionality__item">
+                                <figure><figcaption><img alt="Repair and Maintenance Service Monitoring - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-ico8.png"/></figcaption></figure>
+                                <strong>
+                                    Repair and 
+                                    maintenance service
+                                    monitoring, as well 
+                                    as mortgage and 
+                                    utility payments.
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="matrix-functionality__item">
+                                <figure><figcaption><img alt="Accounting and Reporting - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-ico9.png"/></figcaption></figure>
+                                <strong>
+                                    Accounting and reporting. 
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Of course, the right solution also needs to fulfill base-level expectations of being intuitive, user-friendly, affordable, and device-agnostic—accessible at any time on any platform. Users need to find a software that checks all of the boxes.</p>
+                </div>
+            </div>
+            <div class="matrix-opera">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="matrix-opera__gray">
+                                <div class="row align-items-center">
+                                    <div class="col-md-5">
+                                        <img alt="Oracle Opera - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/opera.png"/>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h5>The biggest name on the grid is Oracle, for its ‘Opera’ Property Management System. </h5>
+                                    </div>
+                                </div>
+                                <h4>But it’s worth noting that a famous name doesn’t always equal customer satisfaction. </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li>
+                                    Opera earned a collective <strong>1-star rating (out of 5 stars) </strong>          from over 50 reviewers on Hoteltechreport.com. </li>
+                                
+                                <li>On Capterra, reviewers complained about the                 poor-quality tech support and outdated design and           functionality. </li>
+                            
+                                <li>One reviewer flat-out stated, <strong><em>“My primary goal is to get        both our hotels off the platform and never use another      Oracle product again. Good riddance to bad rubbish!”</em></strong> </li>
+                            </ul>
+                            <p>Though Oracle is well-known for its own database and enterprise products, Opera is likely a lower-priority product for the company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /text -->
+            <!-- news -->
+            <div class="matrix-news">
+                <div class="container">
+                    <div class="matrix-opera__gray">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <a href="/" class="matrix-news__logo"><img alt="Mews - icon-2" src="https://d1b89zc79exfxt.cloudfront.net/img/mews.png"/></a>
+                                <div class="matrix-news__stars">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <h4>Then there are newer solutions like Mews, which generally scored high across the board and received a 5/5 rating on Capterra. </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="matrix-news__list">
+                        <ul>
+                            <li>However, its newness may work against it, as customers note its lack of integration capabilities and their struggle to keep up with constant updates. </li>
+        
+                            <li>Other solutions like Cloudbeds may have a number of capabilities but no mobile app or compatibility with iOs and/or Android devices, which significantly reduces customer reach. </li>
+                                
+                            <li>Additionally, the systems where users complained about frequent crashing earned low ratings for security. </li>
+                                
+                            <li>One positive trend was that most of these solutions had plenty of software training options available for independent learning. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /news -->
+            <!-- software -->
+            <div class="matrix-software">
+                <div class="container">
+                    <div class="matrix-software__title">
+                        However, nearly all of these solutions are missing a key component: 
+                        <strong>an underlying Salesforce platform. </strong>
+                        Which software has it?
+                        <div><img alt="BookingNinjas - icon-2" src="https://d1b89zc79exfxt.cloudfront.net/img/logo.png"/></div>
+                    </div>
+                    <div class="matrix-software__info">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <div class="matrix-software__item">
+                                    <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank" style="text-decoration:none;">
+                                        <figure><img alt="Salesforce - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-software1.png"/></figure>
+                                        <p>BookingNinjas is the only Salesforce property management system in the marketplace, which means the ability to manage data with one of the most powerful technical platforms available. </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="matrix-software__item">
+                                    <figure><img alt="Newest Salesforce Platform Updates - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/matrix-software2.png"/></figure>
+                                    <p>Since BookingNinjas is a Salesforce partner, it has access to the newest platform updates first and use it to innovate the customer experience. The software is also able to leverage Salesforce’s Einstein AI to provide the best customer insight possible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section>
+                        So which software is right for you? Ultimately, you’ll need to determine what meets the unique needs of your business. Are you working with a tight budget or do you have some runway? Is your company a lean operation or a large enterprise? Do you need a tool with a significant number of integration capabilities? Well-known, long-standing market incumbents might not cut it—newer, more agile solutions may have what you need to satisfy the consumers of today.
+                    </section>
+                </div>
+            </div>
+            <!-- /software -->
+
+       </apex:define>
+    </apex:composition>
+
+
+</apex:page>

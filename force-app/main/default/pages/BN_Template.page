@@ -1,0 +1,444 @@
+<!--
+  @description       : 
+  @author            : 
+  @group             : 
+  @last modified on  : 12-13-2020
+  @last modified by  : teguh@bookingninjas.com
+-->
+<apex:page controller="BN_TemplateController" docType="html-5.0" showHeader="false" sidebar="false"
+    standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="title" content="{!title}" />
+        <meta name="description" content="{!description}" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="p:domain_verify" content="2053f77bff71fd1688a932c54e2e4ecc" />
+        <title>{!title}</title>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
+        <link rel="icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/favicon.ico" />
+        <link rel="stylesheet"
+            href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/fontawesome.css" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/slick.css" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/bootstrap-grid.css" />
+        <link href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/screen.css" rel="stylesheet"
+            media="screen" />
+        <link href="https://www.bookingninjas.com/{!IF(page = 'software-for-property-managers', '', page)}"
+            rel="canonical" />
+
+        <meta property="og:title" content="{!title}" />
+        <meta property="og:site_name" content="Booking Ninjas" />
+        <meta property="og:url" content="https://www.bookingninjas.com/{!page}" />
+        <meta property="og:description" content="{!description}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="{!ogImage}" />
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-PQ4V7BZ');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Structured Data -->
+        <apex:outputText value="{!structuredData}" escape="false" />
+        <!-- End Structured Data -->
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/jquery.js"></script>
+        <script src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.5.0/twilio-flex-webchat.min.js"></script>
+        <script src="https://carmine-dhole-7132.twil.io/assets/appConfig.js"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+    </head>
+
+    <body>
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ4V7BZ" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div class="wrapper">
+            <!--header-->
+            <header class="header">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col col-xl-auto logo-wrap">
+                        <a class="logo" href="/">
+                            <img alt="Booking Ninjas Logo"
+                                src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo.png" />
+                        </a>
+                    </div>
+                    <!-- CTA buttons -->
+                    <div class="col-auto cta-buttons order-xl-last">
+						<apex:outputLink styleClass="button-orange desktop-button" value="{!URLFOR($Page.BN_Demo)}">SCHEDULE A CALL</apex:outputLink>
+						<!-- <apex:outputLink styleClass="button-orange mobile-button" value="tel:+19176002345">Call</apex:outputLink> -->
+                        <!--<apex:outputLink styleClass="button desktop-button" value="{!URLFOR($Page.BN_Register)}">Take a Pilot</apex:outputLink>-->
+					</div>
+					<!-- // CTA buttons -->
+                    <div class="col-auto col-xl">
+                        <button class="navigation__button">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <nav class="navigation">
+                            <ul>
+                                <li>
+                                    <apex:outputLink value="/">HOME</apex:outputLink>
+                                </li>
+                                <li>
+                                    <a class="navigation-dropdown__click">FEATURES</a>
+                                    <span class="navigation-dropdown__trigger">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </span>
+                                    <div class="navigation-dropdown">
+                                        <ul>
+                                            <li>
+                                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Core)}">CORE
+                                                    FEATURES</apex:outputLink>
+                                            </li>
+                                            <li>
+                                                <apex:outputLink value="{!URLFOR($Page.BN_ArtificialIntelligence)}">
+                                                    ARTIFICIAL INTELLIGENCE</apex:outputLink>
+                                            </li>
+                                            <li>
+                                                <apex:outputLink value="{!URLFOR($Page.BN_Integrations)}">PMS
+                                                    INTEGRATION</apex:outputLink>
+                                            </li>
+                                            <li>
+                                                <apex:outputLink value="{!URLFOR($Page.BN_Data)}">AUTOMATIC DATA
+                                                    PROCESSING</apex:outputLink>
+                                            </li>
+                                            <li>
+                                                <apex:outputLink value="{!URLFOR($Page.BN_PMS_Salesforce)}">PMS on
+                                                    SALESFORCE</apex:outputLink>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="navigation-dropdown__click">SOLUTIONS</a>
+                                    <span class="navigation-dropdown__trigger">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </span>
+                                    <div class="navigation-dropdown">
+                                        <ul>
+                                            <li>
+                                                <a href="/hotels">HOTELS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/hostels">HOSTELS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/restaurants">RESTAURANTS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/club-management-software">CLUBS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/coworking">COWORKING SPACE</a>
+                                            </li>
+                                            <li>
+                                                <a href="/storage">SELF STORAGE</a>
+                                            </li>
+                                            <li>
+                                                <a href="/student-housing">STUDENT HOUSING</a>
+                                            </li>
+                                            <li>
+                                                <a href="/parking-facilities">PARKING FACILITIES</a>
+                                            </li>
+                                            <li>
+                                                <a href="/events">EVENTS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/senior-living">SENIOR LIVING</a>
+                                            </li>
+                                            <li>
+                                                <a href="/vacation-rentals">VACATION RENTALS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/villas-management-software">VILLAS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/government">GOVERNMENT</a>
+                                            </li>
+                                            <li>
+                                                <a href="/non-profit">NONPROFIT</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}">PRICING</apex:outputLink>
+                                </li>
+                                <li>
+                                    <a class="navigation-dropdown__click">RESOURCES</a>
+                                    <span class="navigation-dropdown__trigger">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </span>
+                                    <div class="navigation-dropdown">
+                                        <ul>
+                                            <li>
+                                                <a href="/blog">BLOG</a>
+                                            </li>
+                                            <li>
+                                                <a href="/faqs">FAQS</a>
+                                            </li>
+                                            <li>
+                                                <a href="/customer-stories">CUSTOMER
+                                                    STORIES</a>
+                                            </li>
+                                            <li>
+                                                <a href="/webinar">WEBINARS</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="/about-us">ABOUT US</a>
+                                </li>
+                                <li class="navigation__lang">
+                                    <a class="navigation-dropdown__click"><i class="flag flag-united-states"></i><span>English</span></a>
+                                    <span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+                                    <div class="navigation-dropdown">
+                                        <ul>
+                                            <li><a href="/"><i class="flag flag-united-states"></i>English</a></li>
+                                            <li><a href="/es"><i class="flag flag-spain"></i>Espanol</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- CTA buttons in mobile menu -->
+                            <div class="col-sm-auto buttons">
+                                <apex:outputLink styleClass="button-orange" value="{!URLFOR($Page.BN_Demo)}">SCHEDULE A CALL</apex:outputLink>
+                                <apex:outputLink styleClass="button-orange" value="{!URLFOR($Page.BN_Register)}">Take a Pilot</apex:outputLink>
+                            </div>
+                            <!-- // CTA buttons in mobile menu -->
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="navigation__overlay"></div>
+            <!--end-header-->
+            <!--main-->
+            <main class="main" id="main-section">
+
+                <!-- <apex:define name="title">{!title}</apex:define>
+                <apex:define name="title">{!description}</apex:define> -->
+                <apex:insert name="bn_content" />
+
+            </main>
+            <!--end-main-->
+            <!--footer-->
+            <footer class="footer">
+                <div class="footer__top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <a href="/" class="logo">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo-footer.png"
+                                        alt="Booking Ninjas Logo" />
+                                </a>
+                                <address>
+                                    <p>
+                                        1815 Purdy Avenue
+                                        <br /> Miami Beach, FL 33139
+                                    </p>
+                                    <p>
+                                        <a href="mailto:sales@bookingninjas.com">
+                                            <small>sales@bookingninjas.com</small>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+19176002345">
+                                            <small>+1 (917) 600 2345</small>
+                                        </a>
+                                    </p>
+                                </address>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="footer__title">Company:</div>
+                                        <nav class="footer__list">
+                                            <ul>
+                                                <li>
+                                                    <apex:outputLink value="{!URLFOR($Page.BN_About)}">About Us
+                                                    </apex:outputLink>
+                                                </li>
+                                                <li>
+                                                    <apex:outputLink value="{!URLFOR($Page.BN_CoreValues)}">Core Values
+                                                    </apex:outputLink>
+                                                </li>
+                                                <li>
+                                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners)}">Partners
+                                                    </apex:outputLink>
+                                                </li>
+                                                <li>
+                                                    <apex:outputLink value="{!URLFOR($Page.BN_Career)}">Careers
+                                                    </apex:outputLink>
+                                                </li>
+                                                <li>
+                                                    <apex:outputLink value="{!URLFOR($Page.BN_Reviews)}">Reviews
+                                                    </apex:outputLink>
+                                                </li>
+                                                <li>
+                                                    <apex:outputLink value="{!URLFOR($Page.BN_TermsAndConditions)}">
+                                                        Terms of Use</apex:outputLink>
+                                                </li>
+                                                <li>
+                                                    <apex:outputLink value="{!URLFOR($Page.BN_PrivacyPolicy)}">Privacy
+                                                        Policy</apex:outputLink>
+                                                </li>
+                                                <li>
+                                                    <apex:outputLink value="{!URLFOR($Page.BN_Register)}">Take a Pilot
+                                                    </apex:outputLink>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- <div class="col-lg-12 order-lg-1">
+                                <div class="footer__title">BOOKINGNINJAS</div>
+                                <p>Enhance the quality of guest services, increasing staff productivity and streamlining operations. Make your business a lot simpler and a lot more effective with Booking Ninjas.</p>
+                            </div> -->
+                                    <div class="col-lg-9">
+                                        <nav class="footer__social">
+                                            <a href="https://www.facebook.com/bookingninjas" target="_blank">
+                                                <i class="fab fa-facebook"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/bookingninjas" target="_blank">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                            <a href="https://www.youtube.com/channel/UCOrcTzmQnmY7DG2nzwfa8zw"
+                                                target="_blank">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/5346092/" target="_blank">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                            <a href="https://twitter.com/bookingninjas" target="_blank">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="https://www.pinterest.com/bookingninjas" target="_blank">
+                                                <i class="fab fa-pinterest"></i>
+                                            </a>
+                                            <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF"
+                                                target="_blank">
+                                                <i class="fab fa-salesforce"></i>
+                                            </a>
+                                        </nav>
+                                        <apex:form id="footer-form" styleClass="footer__form">
+                                            <apex:inputText value="{!email}" html-placeholder="Enter Your Email"
+                                                required="true" />
+                                            <apex:commandButton styleClass="button footer-btn-submit" value="Subscribe"
+                                                action="{!subscribe}" rerender="footer-form" />
+                                        </apex:form>
+                                        <div class="modal modal__success" id="modal-thanks">
+                                            <div class="modal__success-icon">
+                                                <i class="far fa-check-circle"></i>
+                                            </div>
+                                            <p>Thanks</p>
+                                            <p>We send a monthly email with announcements, tips, news, feature updates,
+                                                and
+                                                important info. We'll only e-mail you if it's important.</p>
+                                        </div>
+                                        <p class="footer__form-text">We send a monthly email with announcements, tips,
+                                            news, feature updates, and important
+                                            info. We'll only e-mail you if it's important.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">All rights reserved © {!year(today())} - Booking Ninjas</div>
+                            <div class="col-md-6">
+                                <!-- <nav class="payments">
+                            <a href="#"><img src="img/visa.png" alt=""></a>
+                            <a href="#"><img src="img/mc.png" alt=""></a>
+                            <a href="#"><img src="img/ae.png" alt=""></a>
+                            <a href="#"><img src="img/paypal.png" alt=""></a>
+                            </nav> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--end-footer-->
+        </div>
+
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/jquery.fancybox.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/slick.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/wow.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/common.js"></script>
+
+        <script>
+            Twilio.FlexWebChat.createWebChat(appConfig).then(
+                webChat => {
+                    const { manager } = webChat;
+
+                    webChat.init();
+
+                    if (webChat.manager.store.getState().flex.session.isEntryPointExpanded) {
+                        Twilio.FlexWebChat.Actions.invokeAction('MinimizeChat'); // minimize chat as default
+                    }
+
+                    Twilio.FlexWebChat.Actions.on("afterStartEngagement", (payload) => {
+                        // play audio chat
+                        manager.chatClient.on("messageAdded", (e) => {
+                            if (!webChat.manager.store.getState().flex.session.isEntryPointExpanded) {
+                                Twilio.FlexWebChat.Actions.invokeAction('ToggleChatVisibility'); // if new message, maximize chat
+                            }
+                            let currentUser = webChat.manager.store.getState().flex.session.tokenPayload.identity;
+                            if (e.author !== currentUser) { // play audio if receive new message
+                                const mediaId = Twilio.FlexWebChat.AudioPlayerManager.play({
+                                    url: "https://carmine-dhole-7132.twil.io/assets/chat.mp3",
+                                    repeatable: false
+                                });
+                            }
+                        });
+                    });
+
+                }
+            );
+        </script>
+
+        <script>
+            var _mfq = _mfq || [];
+            (function () {
+                var mf = document.createElement("script");
+                mf.type = "text/javascript"; mf.async = true;
+                mf.src = "//s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/6defcb08-eb86-45f4-aca3-66c1425e4139.js";
+                document.getElementsByTagName("head")[0].appendChild(mf);
+            })();
+        </script>
+        <script type="application/ld+json">
+                [ {
+                    "@context" : "http://schema.org",
+                    "@type" : "LocalBusiness",
+                    "name" : "Booking Ninjas",
+                    "image" : "https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo-footer.png",
+                    "email" : "sales@bookingninjas.com",
+                    "address" : {
+                    "@type" : "PostalAddress",
+                    "streetAddress" : "1815 Purdy Avenue Miami Beach, FL 33139",
+                    "telephone" : "+19176002345"
+                    },
+                    "url" : "https://www.bookingninjas.com"
+                } ]
+            </script>
+
+    </body>
+
+    </html>
+
+</apex:page>

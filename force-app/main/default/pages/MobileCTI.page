@@ -1,0 +1,71 @@
+<apex:page controller="TwilioClientController" showHeader="false" lightningStylesheets="true">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>   
+            <meta charset="utf-8" />
+            <meta http-equiv="x-ua-compatible" content="ie=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <script type="text/javascript" src="//media.twiliocdn.com/sdk/js/client/v1.4/twilio.min.js"></script>
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+            <script type="text/javascript" src="/support/api/38.0/lightning/opencti.js"></script>
+            <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+            
+            <script type="text/javascript">
+            Twilio.Device.setup("{! token }");
+            var callSid;    //  hold the Twilio generated CallSid unique to this call
+            var parentId;   //  hold the parent record being called in order to associate as the parent of task being logged for the call
+            var newTaskId;  // hold the id of newly created task
+            var sfdcRecordType; // hold the object type of the record that initiated the click 2 dial
+            var call_direction; // hold the direction of the call
+            var call_method = 'Incoming'    // hold the method of calling ; dialpad or click2dial
+            var connection; // hold the current connection
+            var cleanednumber;  //  hold the dialed number
+            
+            // connection register
+            Twilio.Device.connect(function(response) {
+                callSid = response.parameters;  //  track the unique Twilio CallSid
+                call_direction = (response._direction == 'OUTGOING') ? 'Outbound' : 'Inbound';
+                //$('[id$=hidden_number]').val(cleanednumber);
+                //$('[id$=hidden_parentId]').val(parentId);
+                //$("#btn_mute").prop('disabled', false);
+                //saveLog();  //  save the call information in a Task record
+                console.log('callSid : ', callSid);
+            });
+            
+            Twilio.Device.disconnect(function(response) {
+                //updateLog();    // update the log with notes and any other updated info
+                //popupSMSPanel();    // let user send quick sms to the call recipient
+                console.log('dis res : ', response);
+            });
+            
+            //  function for handling direct dialing from softphone
+            function call() {
+                //$('dial-button').removeClass('oncall').addClass('endcall');
+                //$('.callbtn').hide();
+                //$('.endbtn').show();        
+                //cleanednumber = $("#telNumber").val();
+                params = {"PhoneNumber": "+94712677102", "parentCBId" : '003g000001jViWk'};
+                //params = cleanFormatting($("#number").val());
+                call_method = 'Dialpad';
+                //Twilio.Device.connect(params);
+                connection = Twilio.Device.connect(params);
+                console.log('dial : ', JSON.stringify(connection));
+            }
+            
+            //  function for handling call hang up
+            function hangup() {
+                //$('dial-button').removeClass('endcall').addClass('oncall');
+                //$('.callbtn').show();
+                //$('.endbtn').hide();
+                var resp = Twilio.Device.disconnectAll();        
+                console.log('resp disconnect : ', resp);
+            }
+            </script>
+        </head>
+        
+        <div>
+            <label>Call : </label>
+            <a href="#" onclick="call();">Click and Call</a>
+            <button value="Call Me" onclick="call();"></button>
+        </div>
+    </html>
+</apex:page>

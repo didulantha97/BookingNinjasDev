@@ -1,0 +1,29 @@
+<apex:page controller="BN_CheckoutSucceedController" action="{!addSuccessActions}" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+			<div class="trial-payment">
+				<div class="container">
+					<div class="row justify-content-center text_center">
+						<div class="col-md-12 col-lg-12">
+							<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/trial-payment.png" />
+							<h1>Your Deposit Has Been Successfully Processed</h1><br/><br/>
+							<p style="background-color: transparent; font-size: 13pt;color: #505050;line-height: 1.47;letter-spacing: 0.5px;">
+								Your&nbsp;<apex:outputText value="${0, number, ###,##0.00}"><apex:param value="{!amountPaid}" /></apex:outputText> deposit of the implementation fee has been received. Kindly check your email for a confirmation email and message from our implementation team.
+							</p><br/>
+							<p style="background-color: transparent; font-size: 13pt;color: #505050;line-height: 1.47;letter-spacing: 0.5px;">
+								Thank you for choosing Booking Ninjas.
+							</p><br/><br/>
+							<div class="col-12"><a href="/" class="button">Go Home</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

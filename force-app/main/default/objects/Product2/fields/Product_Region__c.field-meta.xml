@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Region__c</fullName>
+    <description>Choose product language/region</description>
+    <externalId>false</externalId>
+    <label>Product Region</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(BR) Brazil</fullName>
+                <default>false</default>
+                <label>(BR) Brazil</label>
+            </value>
+            <value>
+                <fullName>(EN) English</fullName>
+                <default>true</default>
+                <label>(EN) English</label>
+            </value>
+            <value>
+                <fullName>(FR) France</fullName>
+                <default>false</default>
+                <label>(FR) France</label>
+            </value>
+            <value>
+                <fullName>(DE) Germany</fullName>
+                <default>false</default>
+                <label>(DE) Germany</label>
+            </value>
+            <value>
+                <fullName>(PT) Portugal</fullName>
+                <default>false</default>
+                <label>(PT) Portugal</label>
+            </value>
+            <value>
+                <fullName>(ES) Spain</fullName>
+                <default>false</default>
+                <label>(ES) Spain</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

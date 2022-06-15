@@ -1,0 +1,117 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- feature-spotlight -->
+            <div class="feature-spotlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider">
+                                <div class="feature-spotlight__slider-big">
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/payment/reservation_check_in.jpg" data-fancybox="gallery"><img alt="Advanced Payment Features - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/payment/reservation_check_in.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/payment/reservation_create_invoice.jpg" data-fancybox="gallery"><img alt="Advanced Payment Features - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/payment/reservation_create_invoice.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/payment/room_units.jpg" data-fancybox="gallery"><img alt="Advanced Payment Features - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/payment/room_units.jpg"/></a>
+                                    </div>
+                                </div>
+                                <div class="feature-spotlight__slider-small">
+                                    <div>
+                                        <img alt="Advanced Payment Features - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/payment/reservation_check_in.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Advanced Payment Features - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/payment/reservation_create_invoice.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Advanced Payment Features - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/payment/room_units.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider-text">
+                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="back">&#x3C; GO BACK</apex:outputLink>
+                                <h1>Advanced Payment Features</h1>
+                                <p>Booking Ninjas is committed to incorporating easy-to-use digital payment methods so our  property software can create fast, customer-friendly payment experiences for all users.</p>
+                                <p>Booking Ninjas incorporates Digital Wallet support for our property software, which adds to the adaptability of our property management system. A digital wallet is a payment system that protects users’ banking information and passwords, allowing consumers to make safe transactions without using cash or credit cards.</p>
+                                <p>Our Digital Wallet accepts payments from Apple Pay, Google Pay, Masterpass, Visa Checkout, AMEX Express Checkout, and many more digital payment methods, including mainstays like PayPal, Venmo, and Zelle. One main motivation for this policy is to make the payment/checkout process less stressful and time consuming for your clients. We are motivated to protect users from handling sensitive payment information, a main concern amongst consumers using property software.</p>
+                                <p>We also prefer to use the services provided by Stripe. Stripe builds economic infrastructure for the internet. Millions of remote businesses around the world use Stripe to manage transactions between customers and their company. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer-page__content">
+                        <div class="container">
+                            <div class="costumer-page__view-list">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10">
+                                        <article>
+                                            <h2>BENEFITS OF DIGITAL WALLET</h2>
+                                            <p>As previously alluded to, additional security and convenience are key benefits of using a digital wallet. Making payments becomes vastly simplified when you eliminate the need to carry cash or credit cards. Digital Wallets are also known as electronic wallets or e-wallets.</p>
+                                            
+                                            <h2>ENCRYPTION</h2>
+                                            <p>Digital Wallets feature encrypted credit card and banking information to safeguard them from hackers. A thief could steal your wallet and have your cash and credit card information within seconds, but digital wallets feature encrypted credit card and banking information to protect customers and prevent theft. Even if your phone were stolen, you are protected by a passcode or biometric authentication, which would still be needed to gain access to the information in a digital wallet.</p>
+                                            
+                                            <h2>MOBILE WALLET versus DIGITAL WALLET</h2>
+                                            <p>Though these two distinctions are often used interchangeably, there is an important difference to consider. A mobile wallet is an app that is stored on your smartphone, while a digital wallet can be found on a desktop, laptop and on your mobile device.</p>
+                                            
+                                            <h2>CONVENIENCE</h2>
+                                            <p>A major benefit of using a digital wallet is additional convenience. We’ve all experienced the inconvenience of dividing checks during group dinners or gathering cash for a pay-per-view-event, March Madness bracket, Super Bowl party game of squares, or countless other situations where groups needed to pool money. A digital wallet easily remedies this issue by allowing a user to log onto their app and electronically send money to whoever is owed. The money transfers directly from your bank account to the account of the person you wish to receive your money.</p>
+                                            
+                                            <div class="costumer-page__view-list_section">
+                                               <p>The physical element of simply carrying a wallet presents varying degrees of inconvenience, depending on your situation. For a mother with young children, carrying all of your children’s necessities, plus remembering to carry your own could be seen as frustrating and unnecessary. It is certainly the latter with the option of digital wallets. Customers knowing they’ve got a payment method on their phone eases their burden with one less thing to carry and worry about. If they are to lose a credit card or debit card, they are looking at a minimum of a few days to replace it and sometimes upwards of a full-week. Digital Wallets are password protected on their phone and laptop/desktop, so they’ll never be left without the ability to access their preferred payment method again. In other words, there’s less of a chance for your customers to be late on payments even in emergency situations.</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <h2>BENEFITS OF DIGITAL WALLET TECHNOLOGY INFUSED INTO PROPERTY MANAGEMENT SOFTWARE</h2>
+                                    <ul>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>1</span></span>
+                                            <small>Booking Ninjas’ has incorporated digital wallet technology into their property software to provide its users the added convenience and payment adaptability, which digital wallets afford. The advancement allows properties to accept various forms of payment, which cuts down on late payments and unnecessary negotiation and communication. Using the encryption options available with digital wallets allows our property management systems to keep customer payment information secure for direct depositing between accounts. No more need to make rent payments days in advance or have a ‘stay-period’ between when rent is collected versus when it is actually passed along to the owed property. The days of placing a “rent-check” in the mail or entrusting it to a building manager are now gone.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>2</span></span>
+                                            <small>Booking Ninjas’ PMS systems are incorporated at rental properties, hotel chains (large and small), commercial properties and other businesses where payment is collected from a variety of customers/renters and must be organized to go to one place or property owner. Providing advanced payment features such as digital wallets creates convenience, savings, and flexibility for owner/operators and user/renters alike. The feature is just one of many that separates Booking Ninjas’ property management system from our competition.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>3</span></span>
+                                            <small>Easily check out from our pricing page and be on your way to making payments easier for you and your customers! </small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__pager">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_ESign)}" styleClass="feature-spotlight__pager-item">
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_Left-black.png" alt=""/></i>
+                            <b>ESign</b>
+                        </apex:outputLink>
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Mobile)}" styleClass="feature-spotlight__pager-item">
+                            <b>Mobile Apps</b>
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_right.png" alt=""/></i>
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature-spotlight -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

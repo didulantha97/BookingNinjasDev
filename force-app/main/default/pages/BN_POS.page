@@ -1,0 +1,103 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- checkout -->
+            <div class="pos-page">
+                <div class="container">
+                    <h2>POS Terminal Hardware</h2>
+                    <section class="pos-page__section">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <figure class="pos-page__img">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-picture1.png" alt=""/>
+                                    <div class="pos-page__img-price">
+                                        <span>$59</span>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-lg-7">
+                                <article class="pos-page__text">
+                                    <h5>BBPOS Chipper 2x BT</h5>
+                                    <div class="pos-page__add-to-cart">
+                                        <a href="#" class="button">Add to cart</a>
+                                        <input type="text" value="1" />
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <h6>In the box</h6>
+                                    <ul>
+                                        <li><img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-ico1.png" alt=""/>BBPOS chipper</li>
+                                        <li><img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-ico2.png" alt=""/>USB-A to USB-B cable</li>
+                                        <li><img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-ico3.png" alt=""/>Lanyard</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pos-page__section">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <figure class="pos-page__img">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-picture2.png" alt=""/>
+                                    <div class="pos-page__img-price">
+                                        <span>$299</span>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-lg-7">
+                                <article class="pos-page__text">
+                                    <h5>Verifone p4 card reader</h5>
+                                    <div class="pos-page__add-to-cart">
+                                        <a href="#" class="button">Add to cart</a>
+                                        <input type="text" value="1" />
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <h6>In the box</h6>
+                                    <ul>
+                                        <li><img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-ico1.png" alt=""/>BBPOS chipper</li>
+                                        <li><img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-ico2.png" alt=""/>USB-A to USB-B cable</li>
+                                        <li><img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-ico3.png" alt=""/>Lanyard</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pos-page__section">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <figure class="pos-page__img">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-picture3.png" alt=""/>
+                                    <div class="pos-page__img-price">
+                                        <span>$299</span>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-lg-7">
+                                <article class="pos-page__text">
+                                    <h5>Verifone p4 card reader</h5>
+                                    <div class="pos-page__add-to-cart">
+                                        <a href="#" class="button">Add to cart</a>
+                                        <input type="text" value="1" />
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <h6>In the box</h6>
+                                    <ul>
+                                        <li><img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-ico1.png" alt=""/>BBPOS chipper</li>
+                                        <li><img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-ico2.png" alt=""/>USB-A to USB-B cable</li>
+                                        <li><img src="https://d1b89zc79exfxt.cloudfront.net/img/pos-ico3.png" alt=""/>Lanyard</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- /checkout -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

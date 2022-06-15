@@ -1,0 +1,218 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+        
+            <!-- top -->
+            <div class="about-page-top government-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1 text_center">
+                            <div class="text_center">
+                                <img alt="Privacy Policy" src="https://d1b89zc79exfxt.cloudfront.net/img/government-laptop.png"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1>Privacy Policy</h1>
+                            <p>This is a summary of our new privacy policy which takes effect on 3 Aug 2021. This Privacy Policy describes Our policies and procedures on the collection, use, and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+                            <p>We use Your data to provide and improve our Services. By using the Service, You agree to the collection and use of information under this Privacy Policy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="government-facilities">
+                <div class="container">
+                    <h2>Important Information we Collect</h2>
+                    <div class="government-facilities__benefits">
+                        <p><strong>Personal Data</strong></p>
+                        <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally, identifiable information may include, but is not limited to:</p>
+                        <ul class="diamond-markers">
+                            <li>Email address</li>
+                            <li>First name and last name</li>
+                            <li>Phone number</li>
+                        </ul>
+                    </div>
+                    <div class="government-facilities__features">
+                        <p><strong>What we do with your information</strong></p>
+                        <p>We may use Personal Data for the following purposes:</p>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>*</span></div>
+                                <div class="col">
+                                    <p><strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>*</span></div>
+                                <div class="col">
+                                    <p><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>*</span></div>
+                                <div class="col">
+                                    <p><strong>For the performance of a contract:</strong> the development, compliance, and undertaking of the purchase contract for the products, items, or services You have purchased or of any other contract with Us through the Service.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>*</span></div>
+                                <div class="col">
+                                    <p><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>*</span></div>
+                                <div class="col">
+                                    <p><strong>To provide You with news,</strong> special offers, and general information about other goods, services, and events that we offer are similar to those you have already purchased or enquired about unless You have opted not to receive such information.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>*</span></div>
+                                <div class="col">
+                                    <p><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>*</span></div>
+                                <div class="col">
+                                    <p><strong>For business transfers:</strong> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or another sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="government-facilities__features-item">
+                            <div class="row">
+                                <div class="col-md-auto"><span>*</span></div>
+                                <div class="col">
+                                    <p><strong>For other purposes:</strong> We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns, and to evaluate and improve our Service, products, services, marketing, and experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="government-facilities__estate">
+                        <article>
+                            <h2>What information do we share?</h2>
+                            <p>We may share Your personal information in the following situations:</p>
+                            <ul class="diamond-markers">
+                                <li><strong>With Service Providers:</strong> We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.</li>
+                                <li><strong>For business transfers:</strong> We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of Our business to another company.</li>
+                                <li><strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners, or other companies that We control or that are under common control with Us.</li>
+                                <li><strong>With business partners:</strong> We may share Your information with Our business partners to offer You certain products, services, or promotions.</li>
+                                <li><strong>With other users:</strong> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.</li>
+                                <li><strong>With Your Consent:</strong> We may disclose Your personal information for any other purpose with Your consent.</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="government-facilities__estate">
+                        <article>
+                            <h2>Transfer of Your Personal Data</h2>
+                            <p>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country, or other governmental jurisdiction where the data protection laws may differ from those from Your jurisdiction.</p>
+                            <p>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
+                            <p>The Company will take all steps reasonably necessary to ensure that Your data is treated securely and following this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="government-software">
+                <div class="container">
+                    <h2>Disclosure of Your Personal Data</h2>
+                    <div class="government-software__items-wrapper">
+                        <div class="row">
+                            <div class="col-md-6 item-padding">
+                                <div class="government-software__item">
+                                    <figure><img alt="Business Transactions - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-software-item-2.png"/></figure>
+                                    <h4>Business Transactions</h4>
+                                    <p>If the Company is involved in a merger, acquisition, or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 item-padding">
+                                <div class="government-software__item">
+                                    <figure><img alt="Law enforcement - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/government-software-item-1.png"/></figure>
+                                    <h4>Law enforcement</h4>
+                                    <p>Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="government-facilities">
+                <div class="container">
+                    <div class="government-facilities__estate">
+                        <article>
+                            <h2>Security of Your Personal Data</h2>
+                            <p>We work hard to protect your information and keep you in control. We take several measures with regard to data security to ensure that your information is safe and secure.</p>
+                        </article>
+                    </div>
+                    <div class="government-facilities__estate">
+                        <article>
+                            <h2>Your rights relating to your personal data</h2>
+                            <p>You have certain rights relating to your Personal Data, subject to local data protection laws. These rights may include:</p>
+                            <p><strong>Right to access:</strong> You have the right to access your Personal Data held by us</p>
+                            <p><strong>Right to rectification:</strong> You have the right to rectify inaccurate Personal Data and, taking into account the purpose of processing the Personal Data, ensure it is complete</p>
+                            <p><strong>Right to be forgotten:</strong> You have the right to erase/delete your Personal Data, to the extent permitted by applicable data protection laws</p>
+                            <p><strong>Right to restriction of processing:</strong> To restrict our processing of your Personal Data to the extent permitted by law</p>
+                            <p><strong>Right to data portability:</strong> To transfer your Personal Data to another controller, to the extent possible</p>
+                            <p><strong>Right to object:</strong> You have the right to object to any processing of your Personal Data carried out based on our legitimate interests. You can exercise your right to object at any time to such processing without having to provide any specific reason for such objection.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="government-facilities">
+                <div class="container">
+                    <h2>Changes to this Privacy Policy</h2>
+                    <div class="government-facilities__integrations">
+                        <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
+                        <p>We will let You know via email before the change becomes effective and update the "Last Updated" date at the top of this Privacy Policy.</p>
+                        <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="government-about">
+                <div class="container">
+                    <h3 class="text_center">Contact Us</h3>
+                    <div class="row ">
+                        <div class="col-lg-6 order-lg-1 text_center">
+                            <img alt="Government Property Management Software - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/government-about.png"/>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="government-about__offer-item">
+                                <h5>Get in Touch</h5>
+                                <p>If you have any questions about this Privacy Policy, You can contact us:</p>
+                                <ul class="diamond-markers">
+                                    <li>By email: <a href="mailto:admin@bookingninjas.com">admin@bookingninjas.com</a></li>
+                                    <li>By visiting this page on our website: <a href="https://www.bookingninjas.com">bookingninjas.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

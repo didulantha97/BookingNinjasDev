@@ -1,0 +1,233 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg feature-subpage');
+                    $('div.wrapper').css('background', 'url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-bg-1.png) no-repeat 50vw 750px');
+                });
+            </script>
+            
+            <!-- hero -->
+            <div class="feature-subpage-hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-5 order-lg-1">
+                            <div class="feature-subpage-hero__img wow fadeInRight">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-hero.png" alt="Reservation Management Systems" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 wow fadeIn">
+                            <h1>Reservation Management Systems Explained</h1>
+                            <p>No sector in the hospitality industry can realise its goals and objectives without the guests. Customer base plays a crucial role in running a hospitality business successfully, which means they must be taken seriously to go places. Reservation systems are critical to capturing and keeping the much-needed guests, who have a better chance at assured accommodation on arrival.</p>
+                            <p>A reservation system is highly effective in selling rooms and appealing to the global audience. While the registration is ongoing, data are being collected to be channelled onto a back-end system that hospitality managers can access to manage bookings. </p>
+                            <p>This guide will discuss what reservation management system means, the benefits you should expect from a sound reservation management system, who uses a reservation system, and must-have features of a reservation management system.  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+
+            <!-- content -->
+            <div class="feature-subpage-box text_center wow fadeInUp">
+                <div class="container">
+                    <h2>What is a Reservation Management System? </h2>
+                    <p>A reservation management system is a complex software solution used by hospitality industries to improve guests’ convenience in making secure online reservations. Also, this application works effectively to schedules the date and duration of stay of guests.</p>
+                    <p>An excellent reservation management tool is so useful in allowing guests to choose their preferred room when booking. Some sophisticated versions of reservation management systems enable guests to select extras like flowers, wines, fruits, and many more that they would want in the rooms they booked a reservation for online.  </p>
+                    <p>More interestingly, these reservation management systems are not resourceful to only your guests online, but also provide your hospitality industry operators with additional resources.  For instance, a channel manager, which will be later discussed comprehensively in the next article, can be incorporated into a reservation system. What this channel manager does for hospitality operators is to enable them to distribute hospitality brands to the entire network of online agents.</p>
+                <br />
+                </div>
+            </div>
+            <div class="feature-subpage-box">
+                <div class="container">
+                    <h2>Benefits of Reservation Management Systems</h2>
+                    <p>An excellent reservation management system is critical to any hospitality industry’s success, both small and large. Yes, we are in a digital world where you should expect most travellers to rely on reservation systems to heavily book their accommodation. Without this injecting of technology, you can be sure of losing a significant amount of business. </p>
+                    <p>A quality reservation system, one expected to be flexible enough to handle travellers’ desires, should hand your hospitality industry several benefits, which include the following: </p>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="feature-subpage-box feature-subpage-benefit">
+                <div class="container">
+                    <div class="feature-subpage-benefit__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="feature-subpage-box__img wow fadeInLeft">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-1.png" alt="Simplifies front office tasks" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="feature-subpage-benefit__wrap">
+                                    <h3>Simplifies front office tasks</h3>
+                                    <p>An excellent reservation management tool is built to provide the status of rooms in real-time. This tells the travellers about the available rooms and the front desk staff, who can draw up bookings directly on their front desk console and provide an update to these bookings with the utmost ease. </p>
+                                    <p>Guests use the software solution to make their bookings online, then the responsibility of managing the booking status now rests on the hospitality industry operators. Here, the reservation pops up on the organisation’s PMS with all details intact, which can then be used to prepare for the guest’s arrival. </p>
+                                    <p>Some reservation systems are so sophisticated that they can automatically allocate rooms to travellers by simply accessing various parameters that include availability, cleanliness, occupancy, and many more. More so, this tool affords the reception staff time to focus on more pressing issues.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-subpage-benefit__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 order-lg-1">
+                                <div class="feature-subpage-box__img wow fadeInRight">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-2.png" alt="Centralizes hotel management" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="feature-subpage-benefit__wrap">
+                                    <h3>Centralizes hotel management </h3>
+                                    <p>Reservation systems are built to keep everyone, from the housekeepers to the guest, informed. This ensures complete transparency, and significantly reduces the risk of losing crucial information due to lack of communication. </p>
+                                    <p>Reservation management systems are user-friendly and completely easy to operate. It so simplifies the day-to-day operations in the hotel, B&amp;B, resorts, etc., and ultimately makes the business organisation more money.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-subpage-benefit__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="feature-subpage-box__img wow fadeInLeft">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-3.png" alt="Easily gathered data" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="feature-subpage-benefit__wrap">
+                                    <h3>Easily gathered data</h3>
+                                    <p>This software solution is perfect for storing enormous guests’ data to ensure that their reservation request is not mistaken. Data like the number of guests travelling, the amenities they would like to have, the arrival time, and many more are kept safe and secure in the right system. This is also one of the critical reasons it is advisable to use this tool alongside a sound property management system (PMS).</p>
+                                    <p>This management system keeps you up to speed with travellers’ requests and ultimately improves customer services and marketing. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-subpage-benefit__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 order-lg-1">
+                                <div class="feature-subpage-box__img wow fadeInRight">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-4.png" alt="Improves guests reservation" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="feature-subpage-benefit__wrap">
+                                    <h3>Improves guests reservation</h3>
+                                    <p>At all times, improving customer experience should be a top priority, which is one of the significant reasons why their requests must be taken seriously. Hospitality business features many day-to-day operations that cannot be all managed manually, which means some tools can be employed to get some work done while focusing on other things. </p>
+                                    <p>Guests would rather book their reservations online than be in a long queue. Therefore, utmost convenience must be ensured at all times. Speaking of convenience, hotels, restaurants, and other hospitality industries should offer free cancellations or changes in the booking on their websites up to a specific date. </p>
+                                    <p>Free cancellation and booking changes are among the issues most hospitality industries do not have their booking system face. The reservation management system allows all information to be synced through all systems, which means any reservation cancellation or changes made by the guests will be updated in real-time. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-subpage-benefit__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="feature-subpage-box__img wow fadeInLeft">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-5.png" alt="Increase multi-tasking" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="feature-subpage-benefit__wrap">
+                                    <h3>Increase multi-tasking</h3>
+                                    <p>Hospitality industry with a reservation management system can effectively manage several tasks simultaneously, even when they have minimal staff. Tasks like group check-ins, check out of other guests, reservation confirmation, and many more can be managed simultaneously. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-subpage-benefit__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 order-lg-1">
+                                <div class="feature-subpage-box__img wow fadeInRight">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-6.png" alt="Improves guests reservation" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="feature-subpage-benefit__wrap">
+                                    <h3>Enables distribution</h3>
+                                    <p>The reservation management system is an excellent software solution that enables hotels, restaurants, and many more to maintain a world marketplace presence. The level of competition in the hospitality industry is on the high side, and you should expect a travelling guest to have numerous options to pick from. </p>
+                                    <p>Therefore, to have a competitive edge over other hospitality industries, you must employ measures to enable your business organisation to be as visible as possible. This is where an excellent reservation management system comes into play. </p>
+                                    <p>When reservation management systems are integrated with a user-friendly website, they maximise bookings and affords your business organisation a continuous presence in various online channels like OTAs and GDS. </p>
+                                    <p>More so, this software solution is useful in allowing your hotel industry to manage all channels from a single user interface, therefore uniformly maintaining your room inventory and parity rate across all channels. You can also be sure of having no risk of double or overbooking, which can pose a severe problem for your hotel industry. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-subpage-box text_center">
+                <div class="container">
+                    <h2>Who Uses a Reservation Management System?</h2>
+                    <p>A reservation management system is more than what you can think of as a mere tool used at the reception desk. Hospitality industries use this technology to afford their guests convenience by enabling them to book their stay online and make a swift and safe payment via a secure portal from the comfort of their offices or homes.</p>
+                </div>
+            </div>
+            <div class="feature-subpage-box text_center">
+                <div class="container">
+                    <h2>Must-Have Features of a Reservation Management System</h2>
+                    <p>A reservation management system is a must-have for hospitality industries. It is no news that they are sometimes overwhelmed by the available options, leaving them with a choice to make. Therefore, it is imperative to be acquainted with the essential features for you and your guests. </p>
+                    <p>The following are critical features that you and your customers need from a sound reservation management system.</p>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6 d-flex">
+                            <div class="feature-subpage-card grid-card text_center wow fadeInLeft">
+                                <div class="feature-subpage-card__icon">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-ico-1.png"/>
+                                </div>
+                                <h4>Channel Management System</h4>
+                                <p>Online channels such as OTAs and GDS are more than just a luxury; they are a necessity. They are useful in improving your distribution and online booking by displaying your live inventory and current rates across all platforms simultaneously, which is a potent measure used to prevent overbooking. This is enough a reason why channel managers must be sought at all times. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="feature-subpage-card grid-card text_center wow fadeInRight">
+                                <div class="feature-subpage-card__icon">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-ico-2.png"/>
+                                </div>
+                                <h4>Online Payment processing</h4>
+                                <p>We now live in a digital world where credit cards are continuously used for payments, and that is because it is secure and comfortable for people. This means an excellent reservation management system must feature a secure online payment portal that integrates seamlessly into your website.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="feature-subpage-card grid-card text_center wow fadeInLeft">
+                                <div class="feature-subpage-card__icon">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-ico-3.png"/>
+                                </div>
+                                <h4>Advanced Reportin</h4>
+                                <p>As a hospitality industry looking to have a reservation management system, you must always look to select the type that allows you to create customised reports that are easy to create, generate, process, and speak volumes about your property. These reports are valuable is making the best decisions for your hospitality business.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="feature-subpage-card grid-card text_center wow fadeInRight">
+                                <div class="feature-subpage-card__icon">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-reservation-ico-4.png"/>
+                                </div>
+                                <h4>Third-Party Integration</h4>
+                                <p>Leveraging social media is one of the decisions you must make at all times since we now live in a digital realm. People in the hotel sector should look to harness social media platforms to promote their brand effectively, widen the customer base, announce promotions, and tweet about new updates. </p>
+                                <p>Other third-party applications like Google Map is also very useful in guiding waffling online agents to the property they booked a reservation. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-subpage-box feature-subpage-conclusion wow fadeInUp">
+                <div class="container">
+                    <div class="feature-subpage-conclusion__wrap">
+                        <h2>Conclusion</h2>
+                        <div class="row align-items-center">
+                            <div class="col-lg-2">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-conclusion.png" />
+                            </div>
+                            <div class="col-lg-10">
+                                <p>The hospitality sector is a highly competitive one, which means a reservation management system must be sophisticated more than ever. This will make room for easy day-to-day operations. </p>
+                                <p>The demand for these systems shows how much hospitality owners have recognized the importance of technology in growing their business and significantly increasing their booking overtime. Online booking so increases customer base, and, ultimately, income. If you have an inquiry in this context, you can contact us directly via our website, where our support team will be waiting to give an instant response. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

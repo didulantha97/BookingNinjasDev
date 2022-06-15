@@ -1,0 +1,242 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg feature-subpage');
+                    $('div.wrapper').css('background', 'url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-bg-1.png) no-repeat 50vw 850px;');
+                });
+            </script>
+            
+            <!-- hero -->
+            <div class="feature-subpage-hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-5 order-lg-1">
+                            <div class="feature-subpage-hero__img wow fadeInRight">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-hero.png" alt="Accounting Management System" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 wow fadeIn">
+                            <h1>Accounting Management System: Full Explanation</h1>
+                            <p>Gone are the days when figures are recorded in a paper ledger to record essential financial data and maintain the books. Technology has since evolved to make things easier for any business organization. Businesses of all sizes and scope now use accounting management systems to track their revenues, as well as forecast sales and manage inventory. </p><br />
+                            <p>In this digital age, there is a wide range of accounting management system that your business organization can use to reduce human errors in your calculations and also gain insight, e.g., generating sales forecast, pinpointing your least profitable services, determining which items are overstocked, etc., that you couldn’t see in paper form of accounting. </p><br />
+                            <p>Given the plethora of benefits that come with accounting management systems, it has quickly become an essential system for the hospitality sector. This guide will discuss concisely what an accounting management system means, its benefits, and how you can choose a sound system for your business organization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+
+            <!-- content -->
+            <div class="feature-subpage-box text_center wow fadeInUp">
+                <div class="container">
+                    <h2>What is an Accounting Management System?</h2>
+                    <p>In simple terms, accounting management systems are software solutions that provide bookkeeping and auditing for every type of business organization through invoicing, financial reporting, expenses tracking, billing, and many more. This accounting system is designed to greatly improve the effectiveness of any business organization’s accounting operations and satisfy the auditor’s requirements.</p>
+                </div>
+            </div>
+            <div class="feature-subpage-box wow fadeIn">
+                <div class="container">
+                    <h2>7 Benefits of Using Accounting Management Systems for Hospitality</h2>
+                    <div class="row">
+                        <div class="col-lg-5 order-lg-1">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-1.png" alt="Accounting Management System" class="feature-subpage-img__align-left wow fadeInRight" />
+                        </div>
+                        <div class="col-lg-7">
+                            <p>Irrespective of the business organization, accounting is one of the critical areas of management that must be taken seriously, and that is because it is a phenomenon that plays a significant role in decision making, as well as knowing the monetary health of your business </p><br />
+                            <p>Technological evolution has grown so wide that accounting has moved away from the traditional ways of using spreadsheets to a contemporary method of using management systems, which saves a lot of time. </p><br />
+                            <p>As an investor who looks to operate a business in the hospitality sector, you must adopt this new way of automating the accounting process with the modern accounting management system. This modern tool helps to streamline the accounting aspect of the business effectively.</p><br />
+                            <p>An excellent accounting management system provides error-free and accurate results for the following activities:</p>
+                            <ul class="feature-subpage-list">
+                                <li>Financial Statements</li>
+                                <li>Profits Comparison</li>
+                                <li>Budget</li>
+                                <li>Balance Sheets</li>
+                                <li>Business Planning</li>
+                                <li>Payroll Management</li>
+                                <li>Cash-flow Statements and many more</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Therefore, as a business owner or management, leveraging this automation and intelligence provides you with impeccable functionality and actionable insights that place you at a competitive advantage in the hospitality industry. Let’s take a look at the benefits that are making this technology a necessity.</p>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="feature-subpage-box">
+                <div class="container">
+                    <div class="feature-subpage-card wow fadeInUp">
+                        <span class="feature-subpage-card__number">01</span>
+                        <div class="feature-subpage-card__top">
+                            <div class="feature-subpage-card__top-icon">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-1.png" />
+                            </div>
+                            <h3>Specific Reporting for Financial Success </h3>
+                        </div>
+                            <p>It is quite excruciating and time-consuming to generate reports manually. A sound accounting management system provides seamless access to several reports to give financial position snapshots and run smooth operations. At the same time, you can bid your time on other aspects of the industry.</p><br />
+                            <p>This tool is equally effective to full-service and limited-service hospitality industry, making accounts and finances to be tracked in just a matter of minutes, a benefit that is not provided by the manual method.</p>
+                    </div>
+                    <div class="feature-subpage-card wow fadeInUp">
+                        <span class="feature-subpage-card__number">02</span>
+                        <div class="feature-subpage-card__top">
+                            <div class="feature-subpage-card__top-icon">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-2.png" />
+                            </div>
+                            <h3>Cost Saving </h3>
+                        </div>
+                        <p>All forms of business must look to maximize profit while also cutting costs. This gem of technology is highly effective in saving operational costs that are associated with hospitality management. More so, this software solution saves you some money and the complexities attributed to the traditional way of accounting, which features the use of spreadsheets.</p>
+                    </div>
+                    <div class="feature-subpage-card wow fadeInUp">
+                        <span class="feature-subpage-card__number">03</span>
+                        <div class="feature-subpage-card__top">
+                            <div class="feature-subpage-card__top-icon">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-3.png" />
+                            </div>
+                            <h3>Ease-of-use</h3>
+                        </div>
+                            <p>An excellent accounting management system makes data entry simple and stress-free. When it comes to accounting, some specific users like the managers, accountants, and some employees must be given privileges and access, and this software just makes that easy.</p><br />
+                            <p>More so, with a simple and user-friendly interface, navigating through financial and accounting information becomes ever hassle-free. Some of these software are well designed so that their usability can be customized with just a few clicks.</p>
+                    </div>
+                    <div class="feature-subpage-card wow fadeInUp">
+                        <span class="feature-subpage-card__number">04</span>
+                        <div class="feature-subpage-card__top">
+                            <div class="feature-subpage-card__top-icon">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-4.png" />
+                            </div>
+                            <h3>Automation and Accuracy</h3>
+                        </div>
+                            <p>The manual entry and tracking of daily sales during an audit are not only intimidating but takes a whole lot of time and effort from you. It was a displeasing ordeal when accountants would have to juggle between spreadsheets to verify the books.</p><br />
+                            <p>Using an automated accounting management system makes analyzing expenses, generating invoices, estimating budget &amp; forecast, producing balance sheets, daily sales tracking, and many more easier.</p><br />
+                            <p>Just by merely integrating your accounting management system with a sound PMS, you can automate your routine task without having to worry about the errors that may arise from the use of the manual method. With this software solution, a high degree of accuracy is ensured during calculations.</p>
+                    </div>
+                    <div class="feature-subpage-card wow fadeInUp">
+                        <span class="feature-subpage-card__number">05</span>
+                        <div class="feature-subpage-card__top">
+                            <div class="feature-subpage-card__top-icon">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-5.png" />
+                            </div>
+                            <h3>Real-time Information</h3>
+                        </div>
+                        <p>An accounting management software is designed to provide financial and operational data useful in enabling a real-time view of your current assets and cash flow. The timely access to this information makes streamlining your business operations grossly effective.
+                        </p>
+                    </div>
+                    <div class="feature-subpage-card wow fadeInUp">
+                        <span class="feature-subpage-card__number">06</span>
+                        <div class="feature-subpage-card__top">
+                            <div class="feature-subpage-card__top-icon">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-6.png" />
+                            </div>
+                            <h3>Speed and Efficiency in the Entire Back Office</h3>
+                        </div>
+                        <p>A sound accounting management system comes with the perk of making the end-to-end accounting processes of your hospitality industry run faster and smoother when compared to the old ways. This software is so efficient in cutting down on time in handling bookkeeping, affording more time to your accountants and managers to attend to guests.
+                        </p>
+                    </div>
+                    <div class="feature-subpage-card wow fadeInUp">
+                        <span class="feature-subpage-card__number">07</span>
+                        <div class="feature-subpage-card__top">
+                            <div class="feature-subpage-card__top-icon">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-7.png" />
+                            </div>
+                            <h3>Revenue Enhancement </h3>
+                        </div>
+                        <p>Economics has it that the sole purpose of production, either goods or services, is profit maximization. Therefore, there is no point in devising a measure that will not satisfy this theory. This management system allows you to make more money by analyzing profits, forecasting expenses, revenue, and budget, which, when put together, contributes to cash flow optimization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-subpage-box wow fadeIn">
+                <div class="container">
+                    <h2>5 Must-Have Features of Accounting Management System for Hospitality</h2>
+                    <p>Unlike other industries, companies in the hospitality sector face unique challenges and specific requirements, particularly in their accounting management system choice. The accounting software for hospitality is different from those of other industries, which means it must feature industry-specific functions like strong reporting capabilities that can pinpoint the specific areas generating the most revenue and the services that are no longer profitable for the business organization. </p>
+                    <br />
+                    <p>The accounting department is a critical one that ensures the hospitality business doesn’t go astray, become less efficient, or mismanaged. Therefore, this sector of the organization needs automation to eliminate contrasting, fragmented information effectively. Below are features that an accounting management system for hospitality must comprise. </p>
+
+                </div>
+            </div>
+            <!-- cards -->
+            <div class="feature-subpage-box container">
+                <div class="feature-subpage-card wow fadeInUp">
+                    <span class="feature-subpage-card__number">01</span>
+                    <div class="feature-subpage-card__top">
+                        <div class="feature-subpage-card__top-icon">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-data.png" />
+                        </div>
+                        <h3>Automated Data Integration and Consolidation</h3>
+                    </div>
+                        <p>Some hospitality industries feature many business units and must be managed through standardized, integrated reports. If this is anything to go by, then a system that will ensure these units are effectively managed to focus on more mission-critical tasks must be chosen.</p><br />
+                        <p>More so, an accounting management system that can be used to flawlessly communicate with third-party applications like POS system, asset management system, housekeeping function, and many more so empower you to make better decisions based on accurate data.</p>
+                </div>
+                <div class="feature-subpage-card wow fadeInUp">
+                    <span class="feature-subpage-card__number">02</span>
+                    <div class="feature-subpage-card__top">
+                        <div class="feature-subpage-card__top-icon">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-dashboard.png" />
+                        </div>
+                        <h3>Dashboard and Reporting</h3>
+                    </div>
+                    <p>All forms of business must look to maximize profit while also cutting costs. This gem of technology is highly effective in saving operational costs that are associated with hospitality management. More so, this software solution saves you some money and the complexities attributed to the traditional way of accounting, which features the use of spreadsheets.
+                    </p>
+                </div>
+                <div class="feature-subpage-card wow fadeInUp">
+                    <span class="feature-subpage-card__number">03</span>
+                    <div class="feature-subpage-card__top">
+                        <div class="feature-subpage-card__top-icon">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-crm.png" />
+                        </div>
+                        <h3>Customer Relationship Management </h3>
+                    </div>
+                    <p>
+                        It is always a smart move to turn the slightest lead into a sale. When an accounting management system comes with a function that can handle your relationship with both current customers and potential ones, providing more quality services becomes easier.
+                    </p>
+                </div>
+                <div class="feature-subpage-card wow fadeInUp">
+                    <span class="feature-subpage-card__number">04</span>
+                    <div class="feature-subpage-card__top">
+                        <div class="feature-subpage-card__top-icon">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-checklist.png" />
+                        </div>
+                        <h3>Business Planning </h3>
+                    </div>
+                    <p>This business planning feature enables the accounting departments to compare data using variables like time, cost, and many more to plan for the future in detail. This is also a key feature that is essential for a business forecast.
+                    </p>
+                </div>
+                <div class="feature-subpage-card wow fadeInUp">
+                    <span class="feature-subpage-card__number">05</span>
+                    <div class="feature-subpage-card__top">
+                        <div class="feature-subpage-card__top-icon">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-accounting-ico-team.png" />
+                        </div>
+                        <h3>Collaboration Tool</h3>
+                    </div>
+                    <p>
+                        Forecasting and annual budget plan is a must for any hospitality industry, and this cannot be made a total success without cross-departmental communication. Therefore, an accounting management system that enables simultaneous connections across the business organization effectively reduces the time and effort of sending documents back and forth. Checking out for this collaboration tool when buying an accounting management system wouldn’t be a stretch.
+                    </p>
+                </div>
+            </div>
+            <div class="feature-subpage-box feature-subpage-conclusion wow fadeInUp">
+                <div class="container">
+                    <div class="feature-subpage-conclusion__wrap blue-bg">
+                        <h2>Conclusion</h2>
+                        <div class="row align-items-center">
+                            <div class="col-lg-2">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-conclusion.png" />
+                            </div>
+                            <div class="col-lg-10">
+                                <p>The hospitality industry has proven to be one of the world’s diverse business organizations, which means it takes extra effort to manage one effectively. Thankfully, technology is evolving every day to make travel business operations less excruciating.</p><br />
+                                <p>True, you may not actually find ‘the perfect online booking engine.’ All you need to do is access your needs, what specific purpose you want the software solution to render, and carefully choose which one would best serve your guests.</p><br />
+                                <p>This guide has provided you with the essential information on an online booking engine and its significance to achieving greater heights with your hospitality industry. If you have any questions in this context, you can reach out to us via our website, where our response team will be on standby to see to your inquiries.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

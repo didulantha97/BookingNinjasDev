@@ -1,0 +1,84 @@
+<apex:page standardController="Card__c" extensions="StripeAuthorizeCardExtension" sidebar="false" showHeader="false">
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-1.8.2.js"></script>
+    
+    
+    <apex:pageblock id="block1">
+        <apex:pageMessages ></apex:pageMessages>
+        <apex:pageBlockSection >                        
+            <apex:form id="main_form" >
+                <apex:actionFunction action="{!createCustomer}" name="createCustomer" reRender="block1">
+                    <apex:param name="token" value="" />
+                </apex:actionFunction>                           
+                
+                <apex:outputLabel >Guest :</apex:outputLabel>
+                <apex:outputPanel id="details">
+                    <apex:outputLabel >Email :</apex:outputLabel>
+                    <apex:outputField id="con_email" value="{!con.Email}"/> <br /><br />
+                    <apex:outputLabel >Mobile :</apex:outputLabel>
+                    <apex:outputField id="con_phone" value="{!con.MobilePhone}"/> <br /><br />
+                    <apex:outputLabel >Stripe Id :</apex:outputLabel>
+                    <apex:outputField id="con_stripe" value="{!con.Stripe_Id__c}"/>
+                    
+                    <br /><br />
+                    
+                    <!--    New Card    -->
+                    <apex:outputPanel id="new_card_section">
+                        <button id="authorize_card">Authorize Card</button>
+                        <br />
+                    </apex:outputPanel>
+                    <!--    /New Card   -->
+                    
+                </apex:outputPanel>
+            </apex:form>            
+        </apex:pageBlockSection>
+    </apex:pageblock>
+    
+    
+    <script>
+        if(window.addEventListener)
+            window.addEventListener('load',init,true);
+        else
+            window.attachEvent('onload',init);
+        
+        var handler;
+        function init() {
+            var j$ = jQuery.noConflict();
+            handler = StripeCheckout.configure({
+                key: 'pk_live_jX0HeMWsekaEmgRdAPX4jsFl',
+                image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+                locale: 'auto',
+                token: function(token) {
+                    console.log('token ', token.id);
+                    console.log('obj ', token);
+                    var stripe_id = j$("[id*='con_stripe']").text();
+                    console.log('stripe id ', stripe_id);
+                    createCustomer(token.id);
+                    // You can access the token ID with `token.id`.
+                    // Get the token ID to your server-side code for use.
+                }
+            });
+        }        
+        
+        document.getElementById('authorize_card').addEventListener('click', function(e) {
+            var j$ = jQuery.noConflict();
+            var amount = j$("[id*='hidden_amount']").val() + '00';
+            var email = j$("[id*='con_email']").text();
+            console.log('email : ', email);
+            // Open Checkout with further options:
+            handler.open({
+                name: 'Corporate Rentals Inc DBA Booking Ninjas',
+                description: 'Authorize Card',
+                amount: amount,
+                email: email
+                // card: '4802138007631708'
+            });
+            e.preventDefault();
+        });
+        
+        // Close Checkout on page navigation:
+        window.addEventListener('popstate', function() {
+            handler.close();
+        });
+    </script>
+</apex:page>

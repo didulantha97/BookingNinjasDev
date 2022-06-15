@@ -1,0 +1,431 @@
+<apex:page controller="BNConsultationController" showHeader="false" sidebar="false" standardStylesheets="false">
+  <html>
+       <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <meta name="description" content=""/>
+            <meta name="keywords" content=""/>
+            <meta name="viewport" content="initial-scale=1"/>
+            <title>Booking Ninjas: Combined Property Management/ Salesforce Solution Application</title>
+            <!--Favicon-->
+                <link rel="icon" type="image/png" href="favicon.ico"/>
+            <!--End Favicon-->
+            <!-- CSS -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" media="screen" />
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+                <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/jquery-ui-timepicker-addon.min.css" media="screen" /> 
+                <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/bootstrap-grid.css" media="screen" /> 
+                <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/fa-svg-with-js.css" media="screen" />
+                <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/jquery.fancybox.css" media="screen" />
+                <link media="screen" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/screen.css" rel="stylesheet" />
+                <link media="screen" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/style.css" rel="stylesheet"/>
+            <!-- END OF CSS -->
+            <!--SCRIPT -->
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/jquery.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/jquery-ui-timepicker-addon.min.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/jquery.fancybox.pack.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/modernizr.custom.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/jquery.bxslider.min.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/fontawesome-all.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/wow.js"></script>
+                <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/common.js"></script>
+                <script src="https://media.twiliocdn.com/sdk/js/flex-webchat/releases/1.1.0/twilio-flex-webchat.min.js"></script>
+                <script>
+                    const appConfig = {
+                        accountSid:"AC9f8502ccd4a41283e0c8037a25586d49",
+                        flexFlowSid:"FOe2bee542b2e19d1f7a5f9092a814174e"
+                    };
+                    Twilio.Flex.createWebChat(appConfig);
+                </script>
+                <!--[if IE]>  
+                    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+                <![endif]--> 
+            <!-- END OF SCRIPT -->
+        </head>
+        <body class="home">
+            <div class="wrapper">
+            <!--header-->
+            <header class="header">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 col-8">
+                      <a href="/BNConsult" class="logo"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/logo.png" alt=""/></a>
+                    </div>
+                    <div class="col-md-8 col-4">
+                      <div class="nav-trigger"><i class="fas fa-bars"></i></div>
+                      <ul class="navigation">
+                        <li><a href="/BNConsult/BNCServices">SERVICES</a></li>
+                        <li><a href="/BNConsult/BNCSolutions">SOLUTIONS</a></li>
+                        <li><a href="/BNConsult/BNCSocial">SOCIAL</a></li>
+                        <li><a href="/BNConsult/BNCGetInTouch">GET IN TOUCH</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </header>
+            <!--end-header-->
+            <!--menu-->
+            <div class="mobile-menu"></div>
+                <div class="mobile-menu__block">
+                    <a href="/" class="logo"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/logo.png" alt=""/></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="active"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/menu-icon1.png" alt=""/>process</a></li>
+                            <li><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/menu-icon2.png" alt=""/>Solution</a></li>
+                            <li><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/menu-icon3.png" alt=""/>Integrations</a></li>
+                            <li><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/menu-icon4.png" alt=""/>Advantages</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+            <!--end-menu-->
+            <!--main-->
+            <div class="main solution-main">
+    
+    
+                <div class="solution-title">
+                    <div class="container">
+                        <div class="solution-title__hidden">solutions</div>
+                        <div class="title">Manage all operations from one place</div>
+                    </div>
+                </div>
+            
+                <div class="solutions_wrap">
+                    <div class="solutions_block">
+                        <figure class="solution1">
+                            <figcaption>Custom Objects</figcaption>
+                        </figure>
+                        <figure class="solution2">
+                            <figcaption>Apps from app Exchange</figcaption>
+                        </figure>
+                        <figure class="solution3">
+                            <figcaption>Website  (booking system)</figcaption>
+                        </figure>
+                        <figure class="solution4">
+                            <figcaption>Financial Integrations</figcaption>
+                        </figure>
+                        <figure class="solution9">
+                            <figcaption>Ticketing  Systems</figcaption>
+                        </figure>
+                        <figure class="solution5">
+                            <figcaption>Salesforce Clouds</figcaption>
+                        </figure>
+                        <figure class="solution6">
+                            <figcaption>All GDS /OTA distribution websites</figcaption>
+                        </figure>
+                        <figure class="solution7">
+                            <figcaption>POS systems</figcaption>
+                        </figure>
+                        <figure class="solution8">
+                            <figcaption>Phone Systems</figcaption>
+                        </figure>
+                        <figure class="solution10">
+                            <figcaption>Maintenance  and housekeeping</figcaption>
+                        </figure>
+                        <figure class="solution11">
+                            <figcaption>Access Controls</figcaption>
+                        </figure>
+                        <figure class="solution12">
+                            <figcaption>Artificial Intelligence</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            
+                <div class="product_slider ">
+                    <div class="container">
+                        <div class="title">Product Features</div>
+                        <div class="product_slider_block">
+                            <div class="product_slider_nav">
+                                <a data-slide-index="0" href="" >Centralised control</a>
+                                <a data-slide-index="1" href="">360 analysis</a>
+                                <a data-slide-index="2" href="">Partnership which exceeds boundaries</a>
+                                <a data-slide-index="3" href="">Artificial Intelligence</a>
+                                <a data-slide-index="4" href="">Voice control</a>
+                            </div>
+                            <ul class="product_slider_item">
+                                <li>
+                                    <div class="product_slider_inner">
+                                        <a href="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-slider5.png" class="fancybox product_solution_item_first" rel="gallery"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-slider5.png" alt=""/></a>
+                                        <div class="product_slider_txt">
+                                                Many properties?  <br/>
+                                                Many tasks? <br/>
+                                                You just need one  <br/>
+                                                platform!
+                                                <p>Handle more than you were meant to handle! 
+                                                        By advanced task handling technology which integrates Artificial Intelligence and the power of your own voice. Waste less time doing your own routine work and let technology do it for you! An assistant to delegate your day-to-day task with minimal instruction. Combine everything you do in one platform.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product_slider_inner product_slider_inner-center">
+                                        <a href="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-slider5.png" class="fancybox" rel="gallery"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-slider4.png" alt=""/></a>
+                                        <div class="product_slider_txt">
+                                                Get to know all about your guest!
+                                                <p>His/her preferences, favorite sights, favorite activities, room preferences and many more. Everything your guest experiences and likes to experience, we make sure he/she experiences the same or much of the related when he/she visits your property the next time. It is like he is a member of your property and not a guest anymore.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product_slider_inner">
+                                        <div class="product_slider_txt text_left">
+                                                You become a Salesforce 
+                                                partner by default!
+                                                <p>That’s right. Upon getting onboard with Booking Ninjas, you are automatically in partnership with Salesforce as an exclusive advantage. This also means integration with over 1000s of apps on the Salesforce AppExchange, which are only available to Salesforce platform. along being the first to take advantage of platform upgrade that you cannot stop like the seasons.</p>
+                                        </div>
+                                        <a href="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-slider3.png" class="fancybox" rel="gallery"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-slider3.png" alt=""/></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product_slider_inner">
+                                        <div class="product_slider_txt text_left">
+                                                Artificial Intelligence
+                                                <p>This piece of technology is not new in the market anymore, most people are familiar with the capabilities and what Artificial Intelligence can bring onto the table, but what they are not aware of is that Artificial Intelligence is now combined with software/hardware in order to be able to exceed capabilities that were once thought to be the limit. And the reason for this wonderful paragraph of AI is to let you know that Booking Ninjas is a platform that has incorporated Cloud computing and Artificial Intelligence. Yes, what you are thinking to yourself is absolutely right. Getting on board with booing Ninjas means that you will also be onboard with the benefits that Artificial Intelligence has to offer. If you were ever in doubt as to how we are able to achieve the benefits mentioned above, well! Now you have the complete answer..</p>
+                                        </div>
+                                        <a href="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-slider2.png" class="fancybox" rel="gallery"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-slider2.png" alt=""/></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product_slider_inner">
+                                        <div class="product_slider_txt text_left">
+                                                Voice control
+                                                <p>Once again, voice recognition and control has been in the market for quite some time now. But, it has not been put to it’s ultimate use yet. Booking Ninjas allows you to experience the power of your own voice! The power to do more while already doing more! That is what you will experience with Booking Ninjas. We help you make a difference and help you in becoming a part of this up and coming trend of working.</p>
+                                        </div>
+                                        <a href="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-slider1.png" class="fancybox" rel="gallery"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-slider1.png" alt=""/></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bridge_wrap ">
+                <div class="container">
+                    <div class="title">Booking ninjas is the bridge to the future</div>
+                    <div class="bridge_block">
+                        <div class="float_left">
+                            <figure>
+                                <img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-company.png" alt=""/>
+                                <figcaption>Your company</figcaption>
+                            </figure>
+                            <section>
+                                <strong> 1<sup>%</sup> </strong>
+                                <small>Of guests data <br/>has been analyzed</small>
+                            </section>
+                        </div>
+                        <div class="float_right">
+                            <section>
+                                <strong>77<sup>%</sup> </strong>
+                                <small>Of guests are not <br/> engaged with companies</small>
+                            </section>
+                            <figure>
+                                <img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-support.png" alt=""/>
+                                <figcaption>Your quests</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            
+                <div class="solution_steps container">
+                    <div class="solution_steps_block">
+                    <figure>
+                        <figcaption>
+                            Our business model is focused on customer success 
+                        </figcaption>
+                        <div><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-man.png" alt=""/></div>
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            We make sure we bring you to future fast
+                        </figcaption>
+                        <div><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-totop.png" alt=""/></div>
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            Сapture value in record time with our expertise 
+                        </figcaption>
+                        <div><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/solution-timer.png" alt=""/></div>
+                    </figure>
+                    </div>
+                    <div class="solution_steps_button">
+                        <a href="#" class="button-secondary">Start here</a>
+                    </div>
+                </div>
+                
+            </div>
+            <!--end-main-->
+            <!--footer-->
+            <footer class="footer">
+              <div class="foot_top container">
+                <div class="foot_left">
+                  <a href="#" class="logo_foot"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/logo_foot.png" alt=""/></a>
+                  <p>1815 Purdy Avenue <br/>Miami Beach, FL 33139</p>
+                  <p>sales@bookingninjas.com</p>
+                  <p><strong>+1 305 428 2421</strong></p>
+                  <p><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/partner.png" alt=""/></a></p>
+                </div>
+                <div class="foot_center">
+                  <div class="foot_list">
+                    <h6>Connect with us:</h6>
+                    <ul>
+                      <li><a href="https://www.facebook.com/bookingninjas" target="_blank">Facebook</a></li>
+                      <li><a href="https://www.youtube.com/channel/UCOrcTzmQnmY7DG2nzwfa8zw" target="_blank">YouTube</a></li>
+                      <li><a href="https://www.linkedin.com/company-beta/5346092/" target="_blank">LinkedIn</a></li>
+                      <li><a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank">Appexchange</a></li>
+                    </ul>
+                  </div>
+                  <div class="clear"></div>
+                  <h6>Bookingninjas</h6>
+                  <p>Enhance the quality of guest services, increasing staff productivity and streamlining operations. Make your business a lot simpler and a lot more effective with Booking Ninjas.</p>
+                </div>
+                <div class="foot_right">
+                  <h6>Contact us</h6>
+                  <apex:form id="contactForm">
+                    <div><apex:inputText value="{!name}" html-placeholder="Name" required="true"/></div>
+                    <div><apex:inputText value="{!email}" html-placeholder="Email" required="true"/></div>
+                    <div><apex:inputText value="{!phone}" html-placeholder="Phone" required="true"/></div>
+                    <div><apex:inputTextArea value="{!message}" html-placeholder="Message" required="true"/></div>
+                    <div><apex:commandButton action="{!SaveWithoutRedirect}" value="Send Message" styleClass="button" rerender="contactResult"/></div>
+                    <apex:outputPanel id="contactResult">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Error panel -->
+                                <apex:outputLabel rendered="{!isFailed}">
+                                    <div id="errorPanelmsg" class="alert alert-danger" role="alert">
+                                        <h2>
+                                            {!responseMessage}
+                                        </h2>     
+                                    </div>    
+                                    <script>
+                                    $(document).ready(function(){                            
+                                        //error meessage popup fadeout
+                                        $('#errorPanelmsg').fadeOut(9000);
+                                    });
+                                    </script>
+                                </apex:outputLabel>
+                                <!-- / Error panel -->
+                
+                                <!-- Success panel -->
+                                <apex:outputLabel rendered="{!isSuccess}">
+                                    <div id="successPanelmsg" class="alert alert-success" role="alert">
+                                        {!responseMessage}     
+                                    </div>    
+                                    <script>
+                                    $(document).ready(function(){  
+                                        // clear form
+                                        $('#contactForm')[0].reset();                          
+                                        //error meessage popup fadeout
+                                        $('#successPanelmsg').fadeOut(9000);
+                                    });
+                                    </script>
+                                </apex:outputLabel>
+                                <!-- / Success panel -->
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                  </apex:form>
+                </div>
+              </div>
+              <div class="foot_bottom">
+                <div class="container">
+                  <address class="float_left">
+                    All rights reserved © 2016 - Booking Ninjas
+                  </address>
+                  <nav class="float_right">
+                    <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/visa.png" alt=""/></a>
+                    <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/maestro.png" alt=""/></a>
+                    <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/ae.png" alt=""/></a>
+                    <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/paypal.png" alt=""/></a>
+                  </nav>
+                </div>
+              </div>
+            </footer>
+            <!--end-footer-->
+            </div>
+            
+            <!-- modals -->
+            <div class="floating_form">
+                <div class="floating_form_title">Request a demo</div>
+                <div class="floating_form_block">
+                    <apex:form id="demoForm">
+                        <div>
+                            <label>Name</label>
+                            <apex:inputText value="{!name}" required="true"/>
+                        </div>
+                        <div>
+                            <label>Email Address</label>
+                            <apex:inputText value="{!email}" required="true"/>
+                        </div>
+                        <div>
+                            <label>Phone</label>
+                            <apex:inputText value="{!phone}" required="true"/>
+                        </div>
+                        <div>
+                            <label>Preferred Date and Time (EST) *</label>
+                            <apex:inputText value="{!selectedDate}" id="selected-date" required="true"/>
+                        </div>
+                        <div>
+                            <label>Message *</label>
+                            <apex:inputTextArea value="{!message}" required="true"/>
+                        </div>
+                        <div><apex:commandButton action="{!SaveWithoutRedirect}" value="Submit request demo form" styleClass="button" rerender="requestDemoResult" /></div>
+                        <apex:outputPanel id="requestDemoResult">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- Error panel -->
+                                    <apex:outputLabel rendered="{!isFailed}">
+                                        <div id="errorPanelmsg" class="alert alert-danger" role="alert">
+                                            <h2>
+                                                {!responseMessage}
+                                            </h2>     
+                                        </div>    
+                                        <script>
+                                        $(document).ready(function(){                            
+                                            //error meessage popup fadeout
+                                            $('#errorPanelmsg').fadeOut(9000);
+                                        });
+                                        </script>
+                                    </apex:outputLabel>
+                                    <!-- / Error panel -->
+                    
+                                    <!-- Success panel -->
+                                    <apex:outputLabel rendered="{!isSuccess}">
+                                        <div id="successPanelmsg" class="alert alert-success" role="alert">
+                                            {!responseMessage}     
+                                        </div>    
+                                        <script>
+                                        $(document).ready(function(){  
+                                            // clear form
+                                            $('#demoForm')[0].reset();                          
+                                            //error meessage popup fadeout
+                                            $('#successPanelmsg').fadeOut(9000);
+                                        });
+                                        </script>
+                                    </apex:outputLabel>
+                                    <!-- / Success panel -->
+                                </div>
+                            </div>
+                        </apex:outputPanel>
+                        <input type="hidden" name="currentvfpage" value="{!$CurrentPage.Name}"/>
+                    </apex:form>
+                </div>
+            </div>
+            <!-- end-modals -->
+            <script>
+                $(document).ready(function($) {
+                    $('[id$=selected-date]').datetimepicker({ timeFormat: 'hh:mm TT' })
+                });
+            </script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script src="https://www.googletagmanager.com/gtag/js?id=UA-70673409-7"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+            
+                gtag('config', 'UA-70673409-7');
+            </script>
+        </body>
+    </html>
+</apex:page>

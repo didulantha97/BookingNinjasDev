@@ -1,0 +1,91 @@
+<apex:page controller="BN_WebinarSendCalendarController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <div class="page-new-bg">
+                <!--main-->
+                <div class="main">
+                    <!-- top -->
+                    <div class="webinar-top webinar-single">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg-2 text_left">
+                                    <apex:outputLink value="{!backtoWebinarPage}" styleClass="button__back">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Back
+                                    </apex:outputLink>
+                                </div>
+                                <div class="col-12 col-lg-8">
+                                    <h1>Thanks for your activity. 
+                                        <br />Save your spot on our webinar</h1>
+                                </div>
+                            </div>
+                            <div class="webinar-top__cta">
+                                <!-- <a data-src="#webinar-quick-register" class="button fancybox">Quick register</a> -->
+                                <a data-src="#webinar-add-to-call" class="button fancybox">Add to Calendar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /top -->
+                    <!-- content -->
+                    <div class="webinar-thank-you__img">
+                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/webinar-thank-you-page.png" alt="Thanks for your activity"/>
+                    </div>
+                    <!-- /content -->
+                    
+                    <!-- modal quick register -->
+                    <div class="modal webinar-form webinar-modal" id="webinar-quick-register">
+                        <h4>Sign up for a webinar</h4>
+                        <apex:form >                        
+                            <div class="webinar-form__item">
+                                <apex:input type="text" html-placeholder="Your name*" required="true" value="{!firstName}" />
+                            </div>
+                            <div class="webinar-form__item">
+                                <apex:input type="email" html-placeholder="Email*" required="true" value="{!email}" />
+                            </div>
+                            <div class="webinar-form__item">
+                                <apex:selectList value="{!selectedWebinar}" size="1" multiselect="false">
+                                    <apex:selectOptions value="{!WebinarTopic}"></apex:selectOptions>
+                                </apex:selectList>
+                            </div>
+                            <div class="webinar-form__submit">
+                                <apex:commandButton value="Save Your Seat" action="{!saveYourSeat}" styleClass="button"/>
+                            </div>
+                            <div class="webinar-form__small">
+                                We’ll send you the link to join “The future of the PMS” webinar and share content and updates about BookingNinjas products as you build the fitire of the communications. We use your information according to our <br/>
+                                <a href="#">Privacy Police</a>
+                            </div>
+                        </apex:form>
+                    </div>
+                    <!-- /modal quick register-->
+                    <!-- modal add to calL-->
+                    <div class="modal webinar-form webinar-modal" id="webinar-add-to-call">
+                        <h4>Thank you</h4>
+                        
+                        <apex:form >
+                            <div class="webinar-form__button webinar-form__button-google">
+                                <apex:outputLink target="_blank" value="{!googleURL}">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/google-icon-2.png" />
+                                    Add to Google Calendar
+                                </apex:outputLink>
+                            </div>
+                            <div class="webinar-form__button webinar-form__button-outlook">
+                                <apex:outputLink target="_blank" value="{!outlookURL }">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/outlook-icon.png" />
+                                    Add to Microsft Outlook
+                                </apex:outputLink>
+                            </div>
+                        </apex:form>
+                    </div>
+                </div>
+            <!-- /modal add to calL-->
+
+        </div>
+        </apex:define>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/common.js"></script>
+    </apex:composition>
+
+</apex:page>

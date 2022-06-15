@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Calls</fullName>
+                <default>false</default>
+                <label>Calls</label>
+            </value>
+            <value>
+                <fullName>Linkedin Requests</fullName>
+                <default>false</default>
+                <label>Linkedin Requests</label>
+            </value>
+            <value>
+                <fullName>Emails</fullName>
+                <default>false</default>
+                <label>Emails</label>
+            </value>
+            <value>
+                <fullName>Drips</fullName>
+                <default>false</default>
+                <label>Drips</label>
+            </value>
+            <value>
+                <fullName>Touch Calls</fullName>
+                <default>false</default>
+                <label>Touch Calls</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

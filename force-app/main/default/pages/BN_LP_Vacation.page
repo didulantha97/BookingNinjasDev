@@ -1,0 +1,526 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false"
+    applyHtmlTag="false" cache="true" controller="BN_TemplateController">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+        <div class="segment">
+            <!-- hero -->
+            <div class="vacation-page__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/vacation_rental-notebook.png"
+                                alt="" class="adaptive-img" />
+                        </div>
+                        <div class="col-lg-6">
+                            <article class="segment__hero-txt">
+                                <h1>When You Deploy Our Cloud-Based Vacation Rental Software, You Worry Less
+                                    About Your Rental Space!</h1>
+                                <h2>Cloud-Based Vacation Rental Management Software with
+                                    Booking Engine, Channel Manager, Accounting,
+                                    Online Portal &amp; More
+                                </h2>
+                                <apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Call</apex:outputLink>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+            <!-- text -->
+            <div class="vacation-page__center-text">
+                <div class="container">
+                    <h2> Here Are The Benefits of Our Vacation Rental Management Software to Your Business
+                    </h2>
+                    <p>The Booking Ninjas PMS breaks down silos into a unified system that enables automatic
+                        data collection for your Vacation Rental Service. With the incorporated AI, our
+                        property management system helps You enjoy autonomous collation and analysis of data
+                        that was previously discarded. A big relief for you!</p>
+
+                    <p>Our management system incorporates Partnership with Salesforce to scale up your work
+                        and is extensible through the Salesforce app exchange to help your vacation rental
+                        property thrive.</p>
+                    <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">Plan
+                        &amp;
+                        Pricing</apex:outputLink>
+                </div>
+            </div>
+            <!-- /text -->
+            <!-- title -->
+            <div class="vacation-page__main-title">
+                <div class="container">
+                    <h2>How Our Vacation Rental Reservation <br />
+                        Software Serves You</h2>
+                    <p>The Booking Ninjas vacation rental PMS includes Availability Hour Grid (AHG) to
+                        Improve Resource Planning for your execution, making it easy to plan ahead and have
+                        a healthy financial forecast for your business.</p>
+                    <p>Imagine having a complete view of all reservations from all of your channels, in one
+                        place. How cool can that get?</p>
+                    <p>The AHG does different channels in different colours, making it easier to visualize
+                        bookings from different channels. </p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="vacation-page__articles">
+                <div class="container">
+                    <div class="vacation-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/vacation_rental1.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>Our Vacation Rental Booking Software
+                                        Is Such A Big Deal. Here’s Why!
+                                    </h2>
+                                    <section>
+                                        <p>You'll have direct booking capabilities on your website rather
+                                            than relying on third-party platforms that charge a commission.
+                                        </p>
+
+                                        <p>With our booking engine, your direct booking is commission free,
+                                            thereby saving you tons of money! Just Imagine the extra savings
+                                            you'll get.</p>
+
+                                        <p>Guests can easily select choice rooms and dates of stay, and
+                                            directly place the booking on your vacation rental website. </p>
+
+                                        <p>This makes for a simplified booking experience for you and your
+                                            guests.</p>
+
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacation-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/vacation_rental2.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>What's a Business Without Visibility?
+                                        Our Vacation Rental Channel Manager
+                                        Provides You The Needed Exposure
+                                        for Expansion</h2>
+                                    <section>
+                                        <p>We know just how important exposure is to your business. Our
+                                            Vacation Rental Channel Manager allows you to list your property
+                                            on third party booking sites like AirBnB and more in order to
+                                            gain additional visibility.</p>
+                                        <p>Our Channel Manager also manages the listing on these external
+                                            platforms and syncs the bookings into a single dashboard.
+                                            Automatically sync calendars, rates and reservations across
+                                            these sites.</p>
+                                        <p>Our unified inbox allows messages/notifications from different
+                                            channels to be received in a single inbox, thereby simplifying
+                                            your life. How easy can your life get with this? </p>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacation-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/vacation_rental3.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>You Need the Goodness of Our AI
+                                        Rental Yield &amp; Rate Management</h2>
+                                    <section>
+                                        <P>Increase your yield and revenue with our Room Rate Controller
+                                            (RRC) module, an AI-Based Yield Management Pricing System that
+                                            automatically sets the price based on various conditions. This
+                                            takes off the stress and time required to manually monitor
+                                            trends and input needed prices. Time saved is money gained!</P>
+                                        <P>It adjusts your prices as the market demand and supply changes,
+                                            tracks seasonal trends and special events.</P>
+                                        <P>Save time on adjusting your rates each time and monetize your
+                                            business.</P>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacation-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/vacation_rental4.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>Stay Updated On Your Guests Data
+                                        and Needs With Our Guest
+                                        Management Feature</h2>
+                                    <section>
+                                        <P>We know how rowdy it can get in managing guests, especially at
+                                            peak periods. Use our Vacation Rental Booking Software to manage
+                                            your guests, stay updated on their data and be responsive to
+                                            their ever-growing demands.</P>
+                                        <ul>
+                                            <li>Get real time data analytics of your guests full details
+                                                (including data from connected third-party platforms).</li>
+                                            <li>Help plan and customize your services to suit your guests'
+                                                very basic needs.</li>
+                                            <li>Helps your staff understand your client’s history to assist
+                                                guests and provide better customer service. </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacation-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/vacation_rental5.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>Payment Processing (POS)
+                                    </h2>
+                                    <section>
+                                        <P>The Booking Ninjas’ PMS has an Integrated POS system that
+                                            captures data into your vacation rental PMS.</P>
+                                        <P>This helps with Improved analysis and decision making skills that
+                                            your business needs to scale up.</P>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacation-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/vacation_rental6.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2> Be The Boss! Manage Your Space Anywhere Through Our Vacation Rental
+                                        Management App &amp; Owner Portal</h2>
+                                    <section>
+                                        <p>With our PMS, we provide the app, you own it!. Your staff can
+                                            fully check and manage various tasks assigned to them. </p>
+                                        <p>Owner portal allows you to oversee everything, get real-time
+                                            insights and manage your business online. Being in control is
+                                            very important. We know and that’s why we’ve got you covered!
+                                        </p>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="vacation-page__main-title">
+                <div class="container">
+                    <h2>How the Task Management for Vacation Rentals
+                        System Works</h2>
+                    <p>Our PMS assists your team to handle various tasks and easily syncs data back to your
+                        vacation rental software </p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="vacation-page__articles">
+                <div class="container">
+                    <div class="vacation-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/vacation_rental7.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Vacation Rental Accounting Software</h3>
+                                    <section>
+                                        <ul>
+                                            <li>Solve your billing and accounting needs with which you can
+                                                prepare automated billing &amp; Invoicing to reduce clutter.
+                                            </li>
+
+                                            <li>Our software autocollects data, thus reducing
+                                                bookkeeping and errors from clutter and manual data
+                                                collation.</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacation-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/vacation_rental8.png"
+                                        alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">Vacation Rental Housekeeping
+                                        Software</h3>
+                                    <section>
+                                        <ul>
+                                            <li>Our vacation rental software has a centralized housekeeping
+                                                system that enables notification to staff through the app.
+                                                Manage your team's communications needs without logging
+                                                outside the app.</li>
+
+                                            <li>This feature guarantees an Improvement of operational
+                                                efficiency &amp; accuracy, helping save time and cost and
+                                                meeting the exact needs of your clients.
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="vacation-page__main-title">
+                <div class="container">
+                    <h2>You’ll Embrace Our Reporting &amp; Analytics Feature if You’re Tired of Losing Real
+                        Time Data of Your Guests</h2>
+                    <p>Get accurate reports and data analytics of your guests and business through our
+                        Tableau integration. Helps visualize data for easier-to-read insights.</p>
+                    <p>If you need a more tailor-made report, we can support it with our customized report
+                        template to accommodate your exact needs.</p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- prices -->
+            <div class="segment__prices vacation-page__prices">
+                <div class="container">
+                    <section>
+                        <h2 class="text_center section-title">Booking Ninjas Vacation Rental Software
+                            Pricing</h2>
+                        <h3>Our price range reflects the exquisite value we bring to your business. You
+                            determine what value you get. </h3>
+                    </section>
+                    <h3>Core Vacation Rental PMS (Starts from <span>
+                            <apex:outputText value="{0, number, currency}">
+                                <apex:param value="{!lowest_monthly_price}" />
+                            </apex:outputText>/month
+                        </span>)</h3>
+                    <!-- <p>The core Vacation Rental PMS provides you with all the basic features that assist your daily hostel operations. Includes hostel reservation system, hostel analytics, security management, inventory management and employee management app.</p> -->
+                    <div class="text_center pricing-support__btn wow fadeIn">
+                        <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
+                            PLANS
+                            &amp; PRICING</apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /prices -->
+
+            <div class="segment__addons vacation-page__addons">
+                <div class="container">
+                    <h2 class="text_center section-title">
+                        Add-Ons For Your Vacation Rental <br />
+                        Property Management Software
+                    </h2>
+                    <p class="section-subtitle">We know you have tailor-made needs. This is why Booking
+                        Ninjas vacation rental software comes with amazing add-ons that further extend the
+                        functionality of your system. </p>
+                    <!-- Slider -->
+                    <div class="pricing-addons__slider">
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-be.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Booking Engine</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-channel-manager.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Channel Manager</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-data-analytics.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Data Analytics</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-pos.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">POS</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-cash-register.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Cash Register</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-portal.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Portal</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-email-app.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Email App</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-membership-module.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Membership Module</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-esign.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Esign (Additional Api's)</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img
+                                        src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-communications.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Communications (paid by usage)</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn-more-center">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}">More add-ons
+                            available
+                            soon</apex:outputLink>
+                    </div>
+                </div>
+            </div>
+
+            <div class="segment__faq vacation-page__faq">
+                <div class="container">
+                    <h2 class="text_center section-title">FAQ</h2>
+                    <div class="segment-accordion">
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>What is vacation rental software?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>A vacation rental software is a solution that helps owners of vacation
+                                    rental spaces to organise their space by building a website and merging
+                                    information about the property therein.</p>
+                                <p>First off, the direct booking software allows onpne payment, connects the
+                                    site to major third-party channels for visibipty, and generates guest
+                                    communication data from one user-friendly hub on the system.</p>
+                                <p>It comes with a booking engine, channel manager, accounting onpne portal
+                                    and more to control your business and keep it running smoothly.</p>
+                                <p>Also, it is designed to give vacation lovers a good experience.</p>
+                                <p>It helps manage a single or dozens of vacation rentals, easy-to-use
+                                    automated features, and a loaded management system so you don't have to
+                                    worry about anything when your head hits the pillow at night.</p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>How to set up a vacation rental property management system?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <ul class="segment__pst segment-accordion__pst">
+                                    <p>There are different aspects of setting up a rental property
+                                        management system.</p>
+                                    <p>You’ll need to estabpsh an open-plan office with designated desks,
+                                        meeting rooms, and break areas.</p>
+                                    <p>You can set up your coworking management system to create smaller
+                                        units of inventories in the form of seats and desks.</p>
+                                    <p>You’ll also need to set up your membership system where users can pay
+                                        a monthly fee and get access to all the amenities of the workspace
+                                        such as the internet, printing services, conference rooms, etc.</p>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>Can you install this vacation rental management system into an existing
+                                    Salesforce organization?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <ul class="segment__pst segment-accordion__pst">
+                                    <p>Yes, you can. </p>
+                                    <p>The Booking Ninjas Coworking Space System works very well with other
+                                        platforms pke Google Calendar, Quickbooks, Stripe and KISI.</p>
+                                    <p>Determine which salesforce organization you would pke to install and
+                                        follow the promptings.</p>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="learn-more-center">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FAQs)}">
+                            More FAQs about Booking Ninjas
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

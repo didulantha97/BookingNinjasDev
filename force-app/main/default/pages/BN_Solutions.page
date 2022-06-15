@@ -1,0 +1,248 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top solution-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img alt="Advanced Solution for Property Management - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-bnr.png"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                    <h1>A Better Property Management Solution</h1>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content">
+                <div class="solution-page-target">
+                    <div class="container">
+                        <h2 class="about-page-content__title"><span>Hospitality business requires a multilayer approach</span></h2>
+                        <div class="solution-page-target__img"><img alt="Multilayer Approach - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-target.png"/></div>
+                        <p>Our&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_PMS)}" target="_blank">online commercial property management system</apex:outputLink> is your one-stop point for everything you ever needed for success. With our software, we provide hoteliers and other property owners the most comprehensive property management solutions available on the market today.</p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="solution-page-target__item">
+                                    <figure><span><img alt="Continuous Engagement- icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-innovation.png"/></span></figure>
+                                    <h6>Scalable integration</h6>
+                                    <div class="solution-page-target__hr"></div>
+                                    <p>Our top-notch solutions do all the work for you, freeing you from wasting time repeating actions every day. Booking Ninjas’&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Channel)}" target="_blank">awesome PMS integration feature</apex:outputLink> and leverage APIs is something you would love. We promise.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="solution-page-target__item">
+                                    <figure><span><img alt="Continuous Engagement- icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-innovation.png"/></span></figure>
+                                    <h6>Up-To-Date PMS solutions</h6>
+                                    <div class="solution-page-target__hr"></div>
+                                    <p>We give you just the right solutions you need in the workspace. No more tools that don’t provide the results you need. With constant software updates, our property management system continually searches for and adds the most contemporary technology to our software. We strive to deliver&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_CoreValues)}" target="_blank">excellence in innovation as one of our core values</apex:outputLink>. If there’s a hot new piece of technology out there, it won’t be long before it’s integrated in our system.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="solution-page-target__item">
+                                    <figure><span><img alt="Continuous Engagement- icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-innovation.png"/></span></figure>
+                                    <h6>Continuous Engagement</h6>
+                                    <div class="solution-page-target__hr"></div>
+                                    <p>Say goodbye to figuring things out on your own. Our multi-property management software consistently aligns you with digital standards and secures your spot at the top.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-page-integration">
+                    <div class="container">
+                        <h2>Integrative s<span><img src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-eye.png" alt="Solutions on Bookingninjas Property Management System"/></span>lutions</h2>
+                        <div class="about-page-content__title"><span>to ensure your success </span></div>
+                        <div class="solution-page-integration__section">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Centralized Channel Manager- icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon1.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Centralized Channel Manager</h6>
+                                            <p>Manage all your online distributions and booking channels from one platform.&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_RRC)}" target="_blank">Update your rates, availability, and property stay requirements</apex:outputLink> from the Booking Ninjas platform and see how your changes are reflected in all channels.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Online Booking Solutions - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon3.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Online Booking Solutions</h6>
+                                            <p>An&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_BE)}" target="_blank">integrated booking engine</apex:outputLink> to make and manage reservations, update rates and so much more. Possibly the most powerful booking engine yet. This gives your client a secure and efficient environment to book reservations.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Salesforce Tools - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon5.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Salesforce Tools</h6>
+                                            <p>We are based on Salesforce, so using Booking Ninjas puts you in the Salesforce world. You can integrate and make use of Salesforce’s cloud-based products that can help your business in ways too lengthy to describe. <a href="https://www.salesforce.com/products/" target="_blank">Learn more about this</a>.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Direct Room Service System - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon7.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Direct Room Service System</h6>
+                                            <p>We offer the feature of integrating your room services with Booking Ninjas to handle orders and payments directly and faster. In the case of staff being busy or orders coming at unexpected periods, you can rest assured of Booking Ninjas handling room orders efficiently.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Tickets integrations - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon9.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Tickets integrations</h6>
+                                            <p>You run events that require ticketing? We have an integrated ticket system that enables you to generate barcode featured tickets for easy printing and use by attendees.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Maintenance - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon10.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Maintenance</h6>
+                                            <p>You don’t have to worry about property maintenance again. For any work to be done on the property, you can issue out work orders remotely and track the performance to completion. This eliminates inefficiency and makes sure your property is in good shape all the time.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Artificial Intelligence - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon12.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Artificial Intelligence</h6>
+                                            <p>We saved the coolest for the last. Do you feel AI is a long way ahead in the future? Think again. Booking Ninjas integrates Einstein AI for your intelligent data analysis. No need to worry about missing out on trends or observing patterns from business data to figure out weak points and opportunities, Booking Ninjas has you covered.&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_ArtificialIntelligence)}" target="_blank">Learn more about Einstein AI</apex:outputLink>.</p>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="AppExchange Integrations - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon2.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>AppExchange Integrations</h6>
+                                            <p>Does your business use tools from <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank">AppExchange</a>? We like that. Booking Ninjas offers a unique feature that allows you to integrate apps from AppExchange and run them directly from the Booking Ninjas platform. What this means for you is that the limit of your Booking Ninjas platform is well, endless.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Accounting System - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon4.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Accounting System</h6>
+                                            <p>We provide an&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Report)}" target="_blank">efficient property accounting system for the management and analysis of your transactions</apex:outputLink>. Our accounting system handles all your financial concerns like a pro and saves you the cost and time of manually processing your transactions. You’re welcome.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Custom Flows - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon6.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Custom Flows</h6>
+                                            <p>Choose the way you handle your communication flows with your staff and customers. When you choose, bring it over and integrate with Booking Ninjas. We want your flow decision to be as much of your choice as possible, and we want to give you an avenue to incorporate it as a whole big platform.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Phone System Integrations - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon8.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Phone System Integrations</h6>
+                                            <p>Phone systems such as Avaya, Cisco, Asterik, Broadsoft, and many more can be integrated into your BN platform. This means through our cloud phone systems, you can now handle your phone communications and logs from the same place where you manage your customer info, giving you more room for customer engagement and establishing you as a leader in your niche.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Access Control - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon11.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <h6>Access Control</h6>
+                                            <p>Control who has access to what. Our Salesforce platform makes your guests feel special when giving special access features to exclusive details of your organization. Biometric access alerts you of the resource used by the guest, as well as the provision of reasonable information about the guest.</p>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-page-smart">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-lg-1">
+                                <img alt="Advanced Solution for Property Management - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-img.png"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h5>Smart hotel management at your fingertips                                    </h5>
+                                    <h3>No need to choose. <br/>
+                                            How about having it all?</h3>
+                                    <p>We are giving you all the property management business solutions served in one platform. From centralized control to 360 analysis, from Artificial Intelligence to high accuracy voice control, from high-end integrations to large scale property management solutions, we have brought about a new type of integrated property management software you have never seen before.</p>
+                                </article>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="about-page-content__big-title">
+                    <div class="container">
+                    <div class="about-page-content__big-title-item">
+                        <strong>And it’s all for you.</strong>
+                    </div>
+                    <article class="text_center">
+                            <p>We have streamlined the entire&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Implementation)}" target="_blank">implementation process</apex:outputLink> to get you up and running in no time. Open your browser, make a few clicks, and boom! You’re all set. We pride ourselves on our&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Data)}" target="_blank">top-of-the-line data migration process</apex:outputLink>. Once you provide your business’ data to us, our system does all the work for you, instantly crunching the numbers and opening up your property to world class technology such as Einstein AI and analytics.</p>
+                                    <br/>
+                           <p>Import data like you are saving a contact, ensure some security checks, and <b>manage your property like a pro.</b></p>
+                    </article>
+                    </div>
+                </div>
+                <div class="solution-page-works">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-6">
+                                <div class="about-page-content__title">Want to see how it works?</div>
+                                <p>Here you go. Use the demo version</p>
+    
+    
+    
+                                <div class="solution-page-works__circle">
+                                        for up to 
+                                        <strong>14</strong> 
+                                        days 
+                                </div>
+    
+    
+    
+    
+                                <p> and see for yourself. </p>
+                                
+                                <p>You can decide to use any data you want -  <br/>
+                                        test data or your business data, your choice.
+                                   <br/>
+                                   With a 2 week trial of our pms, you’ll be able to see firsthand how our property management solutions can greatly benefit your hospitality businesses. Whether you own a hotel, motel, parking garage, co-working facility, country club, restaurant, or self-storage units, our cloud-based software offers improvements to EVERY aspect of your business.         
+                                </p>
+                                <apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button">($1) 14-DAY TRIAL VERSION</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

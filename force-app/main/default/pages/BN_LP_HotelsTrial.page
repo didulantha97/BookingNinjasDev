@@ -1,0 +1,288 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_EmailSubscribeController">
+
+     <!-- Template -->
+    <apex:composition template="BN_LP_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- banner -->
+            <div class="landing__hero landing__hero-light text_center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="wow fadeIn">
+                                <article>
+                                    <h1>How To Get [RESULT] Without [Problem/Objection]</h1>
+                                    <p>This is the universal headline formula to grab their attention. The
+                                        point of this section it’s NOT to try to explain the product as
+                                        much as possible but to create curiosity to keep scrolling
+                                    </p>
+                                </article>
+                                <div class="landing__hero-cta">
+                                    <strong>Reduce the commitment of your CTA</strong>
+                                    <a href="#" class="button">Explain your CTA here </a>
+                                    <small>Provide an alternative here</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="landing__hero-img wow bounceInUp"><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/Flat_MacBook6.png" alt="" /></div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- clients -->
+            <div class="landing__clients wow fadeInUp">
+                <div class="container">
+                    <h3>We are recognized by</h3>
+                    <div class="landing__clients-row row align-items-center">
+                        <div class="col">
+                            <img alt="Software Suggest User Recommended award logo" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/award-1.png" />
+                        </div>
+                        <div class="col">
+                            <img alt="Capterra award logo" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/award-2.png" />
+                        </div>
+                        <div class="col">
+                            <img alt="GetApp award logo" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/award-3.png" />
+                        </div>
+                        <div class="col">
+                            <img alt="Software Advice award logo" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/award-4.png" />
+                        </div>
+                        <div class="col">
+                            <img alt="Software Suggest Best Support award logo" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/award-5.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /clients -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp">
+                        <h3>Honestly Now, Is This The Way To [Fix Problem/Get Result]?
+                        </h3>
+                        <p>The only reason we are starting with the problem is to trigger an investment mindset <strong>BEFORE</strong> you even show your product. This will remind your visitors of how painful the problem is and why  they want to fix it asap</p>
+                        <p><strong>Show them they can try your product instead</strong></p>
+                        <a href="#" class="button">Explain your CTA here </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 text_center">
+                            <img src="https://via.placeholder.com/450" alt="" class="wow fadeInLeft" />
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <h4>Critique Their Current Way of Doing Things</h4>
+                            <p>They might be using google drive, dropbox or worse, 
+                                manually from their mac/desktop drive
+                                show them why that’s not the way to do it.
+                                </p>
+                            <ul class="landing__wrong-list">
+                                <li>Reason why this SUCKS! </li>
+                                <li>Reason why this SUCKS! </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 order-lg-1 text_center">
+                            <img src="https://via.placeholder.com/450" alt="" class="wow fadeInRight" />
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <h4>Critique The Other Solutions On The Market</h4>
+                            <p>Your product is not the only solution they are considering 
+                                so make sure they understand why your competitors are also not ideal.
+                                </p>
+                            <ul class="landing__wrong-list">
+                                <li>Reason why this SUCKS! </li>
+                                <li>Reason why this SUCKS! </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box" style="background-color: #f9f9f9;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 text_center">
+                            <img src="https://via.placeholder.com/300" alt="" class="wow fadeIn" />
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <h4>Critique The Other Solutions On The Market</h4>
+                            <p>Your product is not the only solution they are considering 
+                                so make sure they understand why your competitors are also not ideal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center">
+                        <h3>This Is How Booking Ninjas Can Fix All Of The Problems</h3>
+                        <p>We don’t want to explain the entire product because that overwhelms people and raises unnecessary objections. Instead, show them how they can use your product to get the result they  want (this is all they care about anyway).
+                        </p>
+                        <p><strong>Only explain how they can get the result in 3-5 steps  (or in a short period of time)</strong></p>
+                        <a href="#" class="button">Explain your CTA here </a>
+                        <p><small>Provide an alternative here</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="landing__workspace-item text_left wow fadeInLeft">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1 text_center">
+                                <img src="https://via.placeholder.com/400x300" alt="" />
+                            </div>
+                            <div class="col-lg-6 wow fadeIn">
+                                <h3>Step 1</h3>
+                                <h4>Explain How They Can Get The Result (In Order)</h4>
+                                <p>How does this step work? Why is this way of doing things better?
+                                </p>
+                                <p>
+                                    <span class="landing-info"><i class="fas fa-info-circle "></i></span>
+                                    "What if they have a question about this?"</p>
+                                <p>Make sure to answer it (if it’s an objection)
+                                    otherwise some people might not convert.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="landing__workspace-item text_left wow fadeInRight">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 text_center">
+                                <img src="https://via.placeholder.com/400x300" alt="" />
+                            </div>
+                            <div class="col-lg-6 wow fadeIn">
+                                <h3>Step 2</h3>
+                                <h4>Explain How They Can Get The Result (In Order)</h4>
+                                <p>How does this step work? Why is this way of doing things better?
+                                </p>
+                                <p>
+                                    <span class="landing-info"><i class="fas fa-info-circle "></i></span>
+                                    "What if they have a question about this?"</p>
+                                <p>Make sure to answer it (if it’s an objection)
+                                    otherwise some people might not convert.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="landing__workspace-item text_left wow fadeInLeft">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1 text_center">
+                                <img src="https://via.placeholder.com/400x300" alt="" />
+                            </div>
+                            <div class="col-lg-6 wow fadeIn">
+                                <h3>Step 3</h3>
+                                <h4>Explain How They Can Get The Result (In Order)</h4>
+                                <p>How does this step work? Why is this way of doing things better?
+                                </p>
+                                <p>
+                                    <span class="landing-info"><i class="fas fa-info-circle "></i></span>
+                                    "What if they have a question about this?"</p>
+                                <p>Make sure to answer it (if it’s an objection)
+                                    otherwise some people might not convert.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <div class="landing__box wow fadeIn">
+                <div class="container">
+                    <div class="text_center">
+                        <h3>This is Why Our Customers Love BookingNInjas</h3>
+                        <p>The point of this section is to show your visitors that people like THEM are already getting the results they want.</p>
+                        <img src="https://via.placeholder.com/1100x400" alt="" />
+
+                        <p>We’ve Improved X Metric By 120% In [Short Period Of Time] </p>
+
+                        <p>Name + Logo</p>  
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Booking Ninjas Partners - 1" class="adaptive-img" src="https://d1b89zc79exfxt.cloudfront.net/img/partners-Logos.png" />
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Booking Ninjas Partners </h3>
+                            <p>We couldn’t do it without the support of our generous partners who aid in our quest to provide digital transformation to your property business. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- partners -->
+            <div class="landing__partners wow fadeInUp">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-3 landing__partners-item">
+                            <a href="#"><img src="https://via.placeholder.com/250x100" alt="" /></a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 landing__partners-item">
+                            <a href="#"><img src="https://via.placeholder.com/250x100" alt="" /></a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 landing__partners-item">
+                            <a href="#"><img src="https://via.placeholder.com/250x100" alt="" /></a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 landing__partners-item">
+                            <a href="#"><img src="https://via.placeholder.com/250x100" alt="" /></a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 landing__partners-item">
+                            <a href="#"><img src="https://via.placeholder.com/250x100" alt="" /></a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 landing__partners-item">
+                            <a href="#"><img src="https://via.placeholder.com/250x100" alt="" /></a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 landing__partners-item">
+                            <a href="#"><img src="https://via.placeholder.com/250x100" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /partners -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeIn">
+                        <h3>These Companies Are Already Getting [RESULT] When Will You?</h3>
+                        <p>We use this headline to create urgency. Other companies (maybe
+                            their competitors) are already getting the result they want and they don’t want to miss out, do they?
+                            </p>
+                        <p><strong>Break down what the next steps are/ Apply Risk  Reversal</strong></p>
+                        <div class="landing__checked wow fadeIn">
+                            <ul class="landing__checked-list">
+                                <li>i.e. Monthly contracts, Cancel at any time</li>
+                                <li>i.e. Book a FREE demo with our team</li>
+                                <li>i.e. We’ll do the setup for you</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="button">Explain your CTA here </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

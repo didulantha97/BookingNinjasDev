@@ -1,0 +1,627 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false"
+    applyHtmlTag="false" cache="true" controller="BN_TemplateController">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            <div class="segment">
+                <div class="section-intro">
+                    <div class="container">
+                        <div class="row flex-column-reverse flex-lg-row">
+                            <div
+                                class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <div class="text-holder">
+                                    <h1 class="h1">Online Hostel <br /> Management System</h1>
+                                    <h2 class="h2">All-In-One Hostel Property Management System (PMS) <br /> To
+                                        Manage
+                                        Your Hostel In The Cloud</h2>
+                                        <apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Call</apex:outputLink>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="img-holder">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-1.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="decoration">
+                    </div>
+                </div>
+                <section class="text-section">
+                    <div class="container">
+                        <h2 class="h2">Modernize Hostel Management</h2>
+                        <div class="text-holder">
+                            <p>From Multi-property configuration with a centralized Guest Profile table to
+                                Centralized
+                                Accounting configuration, the Booking Ninjas PMS is equipped with all the
+                                features
+                                to
+                                automate your daily operations.</p>
+                            <p>Booking Ninjas can be packaged with existing Salesforce integrations, reducing
+                                friction
+                                in
+                                accessing multiple parts of your <br /> current Salesforce system.</p>
+                        </div>
+                        <div class="btn-holder">
+                            <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">Plan
+                                &amp;
+                                Pricing</apex:outputLink>
+                        </div>
+                    </div>
+                </section><!-- .text-section -->
+                <section class="section-illustrations">
+                    <div class="container">
+                        <div class="section-header">
+                            <h3 class="h2">Features of Our Hostel Management System</h3>
+                            <p>Features That Increase Your Hostel Revenues</p>
+                        </div>
+                        <div class="row item-row">
+                            <div class="col-lg-6">
+                                <div class="img-holder left-holder w-lines-1">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-2.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h3 class="h4 title-border">Online Hostel Booking Software</h3>
+                                        <ul class="list style1">
+                                            <li>You can now handle reservations of varying room types including
+                                                group
+                                                bookings.</li>
+                                            <li>What's more, our booking engine is commission-free! You can
+                                                scale
+                                                your
+                                                online bookings without worry.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item-row flex-column-reverse flex-lg-row">
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h3 class="h4 title-border">Channel Manager for Hostel</h3>
+                                        <p>Manage all channels going in and out of your business digitally with
+                                            our
+                                            channel
+                                            manager. From reservation management to guest information
+                                            management,
+                                            pushing
+                                            out rates, our channel manager ensures you’re always up to date
+                                            without
+                                            discrepancies or human errors.</p>
+                                        <p>Get access to multiple distribution channels and manage them all in a
+                                            single
+                                            dashboard efficiently to get the best out of the exposure.</p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul class="list style1">
+                                                    <li>Siteminder</li>
+                                                    <li>Booking.com</li>
+                                                    <li>Hostelworld</li>
+                                                    <li>HIHostels</li>
+                                                    <li>Dorms.com</li>
+                                                    <li>Expedia</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="list style1">
+                                                    <li>CTrip</li>
+                                                    <li>Hostelss club</li>
+                                                    <li>HostelGalaxy</li>
+                                                    <li>Hostels247</li>
+                                                    <li>And more</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="img-holder right-holder w-lines-2 custom-mq">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-3.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item-row">
+                            <div class="col-lg-6">
+                                <div class="img-holder left-holder">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-4.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h3 class="h4 title-border">Hostel Rate &amp; Yield Management</h3>
+                                        <ul class="list style1">
+                                            <li>See a boost in your revenue when you implement yield management
+                                                strategies.
+                                                Easily adjust your room rates based on room type, group
+                                                occupancy or
+                                                current
+                                                market trends.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-header style2">
+                            <h2 class="h2">Features That Improves Your Hostel Guest Experience</h2>
+                        </div>
+                        <div class="row item-row">
+                            <div class="col-lg-6">
+                                <div class="img-holder left-holder w-lines-1">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-5.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h3 class="h4 title-border">Hostel Reservation Software</h3>
+                                        <p>Our Central Reservation System (CRS) manages and oversees your room
+                                            availability,
+                                            rates, guest information, payment processing, and hostel
+                                            information.
+                                            Tailored
+                                            to sell beds and private rooms, you can keep track of the number of
+                                            students
+                                            and
+                                            room availability for efficient hostel reservations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item-row flex-column-reverse flex-lg-row">
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h4 class="h4 title-border">Centralized Guest Profiles &amp; <br />
+                                            Booking
+                                            Data
+                                        </h4>
+                                        <p>Our Guest management tools retrieve and organize all the information
+                                            about
+                                            your
+                                            guests that help you understand them better and create personalized
+                                            experiences
+                                            for them.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="img-holder right-holder w-lines-2">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-6.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item-row">
+                            <div class="col-lg-6">
+                                <div class="img-holder left-holder">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-7.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h4 class="h4 title-border">Integrations with On-Premise <br /> Hardware
+                                        </h4>
+                                        <p>Increase overall productivity and create an easier workplace by
+                                            integrating
+                                            your
+                                            hostel with on-premise hardware commonly used in hostels. This
+                                            includes
+                                            Door
+                                            Locking Systems, EMV payment hardware, Cash Drawer Kicking and more.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-header style2">
+                            <h2 class="h2">Features That Assist Your Hostel Daily Operations</h2>
+                        </div>
+                        <div class="row item-row">
+                            <div class="col-lg-6">
+                                <div class="img-holder left-holder w-lines-1">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-8.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h3 class="h4 title-border">Hostel Room Allocation System</h3>
+                                        <p>Attain higher guest satisfaction by assigning rooms digitally before
+                                            their
+                                            arrival based on their preferences, budget and/or the number of
+                                            available
+                                            rooms
+                                            in each hostel.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item-row flex-column-reverse flex-lg-row">
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h3 class="h4 title-border">Hostel Housekeeping Software</h3>
+                                        <p>Track and assign rooms’ housekeeping, making operations more
+                                            efficient
+                                            and
+                                            accurate. Guests can make housekeeping demands through the app and
+                                            get
+                                            notified
+                                            when their room is ready. The housekeeping manager is always
+                                            up-to-date
+                                            on
+                                            housekeeping duties through the app.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="img-holder right-holder w-lines-2">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-9.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item-row">
+                            <div class="col-lg-6">
+                                <div class="img-holder left-holder w-lines-1">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-10.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h3 class="h4 title-border">Built-in POS Functionality</h3>
+                                        <p>Records transactions, process payments, and collects guest
+                                            information
+                                            for
+                                            their
+                                            booking. Our POS system is integrated with the central PMS to make
+                                            marketing,
+                                            accounting, and other tasks smoother. You can even sell sundries
+                                            over
+                                            the
+                                            counter and handle daily charges at the time of booking.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item-row flex-column-reverse flex-lg-row">
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h3 class="h4 title-border">Integrated &amp; Centralized Accounting
+                                            Software
+                                        </h3>
+                                        <p>Handle your accounting tasks in-house with our integrated accounting
+                                            software.
+                                        </p>
+                                        <ul class="list style1">
+                                            <li>Tax Handling (different location-based tax)</li>
+                                            <li>Accrual basis accounting (End-of-day accounting process, Post
+                                                accommodation,
+                                                Fixed accounting periods)</li>
+                                            <li>Accounts Receivable / Corporate Customers (Direct Bill
+                                                functionality,
+                                                Charge
+                                                routing to company master accounts)</li>
+                                            <li>OTA Deposit handling - the system records commissions that are
+                                                prepaid
+                                                by
+                                                the guest to the OTA</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="img-holder right-holder w-lines-2 custom-mq">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-11.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item-row flex-column-reverse flex-lg-row">
+                            <div class="col-lg-6">
+                                <div class="img-holder left-holder w-lines-1 custom-mq">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-12.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h4 class="h4 title-border">Security Management</h4>
+                                        <p>Stay on top of your system security by utilizing our built-in
+                                            security
+                                            management
+                                            tools..</p>
+                                        <ul class="list style1">
+                                            <li>Role-Based Security for users (profiles, role hierarchy)</li>
+                                            <li>User-level permissions for access to each location (private
+                                                model
+                                                for
+                                                certain records)</li>
+                                            <li>Access restrictions - Login only from Whitelisted IPs for front
+                                                line
+                                                staff,
+                                                access from anywhere for managers/admins</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item-row">
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h4 class="h4 title-border">Hostel Performance Reports</h4>
+                                        <p>Enjoy the benefits of performance reports such as improved
+                                            decision-making
+                                            process and increased team members accountability. Performance
+                                            report
+                                            summary
+                                            includes all details relating to the hostel fees, mess bills,
+                                            inventory
+                                            management and more.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="img-holder right-holder">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-13.svg"
+                                        alt="image description" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- .section-illustrations -->
+                <section class="section-pricing">
+                    <div class="container">
+                        <div class="section-header style2">
+                            <h2 class="h2">Booking Ninjas Hostel Management Software Price</h2>
+                            <p>Choose your preferred features and add-ons to build your ideal hostel management
+                                software.
+                            </p>
+                        </div>
+                        <div class="section-header">
+                            <span class="prices-title">Core Hostel PMS (Starts from
+                                <span>
+                                    <apex:outputText value="{0, number, currency}">
+                                        <apex:param value="{!lowest_monthly_price}" />
+                                    </apex:outputText>/month
+                                </span>)</span>
+                                <p>The core Hostel PMS provides you with all the basic features that assist your daily hostel operations. Includes hostel reservation system, hostel analytics, security management, inventory management and employee management app.</p>
+                            <div class="btn-holder">
+                                <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
+                                    PLANS
+                                    &amp; PRICING</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- .section-pricing -->
+                <section class="segment__addons">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2 class="h2">Hostel Management System Add-Ons</h2>
+                            <p>Personalize your Hostel PMS by purchasing affordable add-ons to build an instance
+                                peculiar to your establishment.</p>
+                        </div>
+                        <!-- Slider -->
+                        <div class="pricing-addons__slider">
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-be.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Booking Engine</h3>
+
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-channel-manager.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Channel Manager</h3>
+
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-data-analytics.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Data Analytics</h3>
+
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-pos.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">POS</h3>
+
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-cash-register.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Cash Register</h3>
+
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-portal.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Portal</h3>
+
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-email-app.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Email App</h3>
+
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-membership-module.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Membership Module</h3>
+
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-esign.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Esign (Additional Api's)</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-communications.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Communications (paid by usage)</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learn-more-center">
+                            <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="g-more">
+                                And
+                                more
+                                add-ons available soon</apex:outputLink>
+                        </div>
+                    </div>
+                </section><!-- .section-managment -->
+                <section class="segment__faq">
+                    <div class="container">
+                        <h2 class="text_center section-title">FAQ</h2>
+                        <div class="segment-accordion">
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>What is an online hostel management system</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>A hostel management system is software developed for managing various
+                                        activities
+                                        in
+                                        the hostel. It manages activities including the student information,
+                                        room
+                                        information, mess bills, room allocation details, fee details and
+                                        tracking
+                                        of
+                                        the
+                                        number of students and availability of students.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3> Can I integrate my current booking engine/channel manager into your
+                                        hostel
+                                        management software?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Yes, our hostel management system integrates easily with a third party
+                                        booking
+                                        engine/channel manager.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Will your hostel PMS support different regional taxes from different
+                                        countries?
+                                    </h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Yes, our hostel PMS supports regional taxes from different countries and
+                                        is
+                                        available
+                                        worldwide</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Can your hostel PMS manage the extra services we offer?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Our core hostel PMS can manage a handful of services from food services
+                                        to
+                                        rental
+                                        services, events and more. Explore our full segments list&nbsp;<apex:outputlink value="{!URLFOR($Page.BN_Index)}">here</apex:outputlink>.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3> Can I get a demo of this hostel management system?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Yes, you can get a demo of our hostel management system by&nbsp;<apex:outputlink value="{!URLFOR($Page.BNCalendly)}">scheduling
+                                            a
+                                            demo</apex:outputlink> . We recommend you take our <a
+                                            href="https://forms.gle/so8XiqCj6C67Pz6CA">Pre-demo survey</a> to
+                                        get
+                                        the
+                                        best
+                                        out of your demo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learn-more-center">
+                            <apex:outputLink value="{!URLFOR($Page.BN_FAQs)}">More FAQs about Hostel Managment
+                            </apex:outputLink>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

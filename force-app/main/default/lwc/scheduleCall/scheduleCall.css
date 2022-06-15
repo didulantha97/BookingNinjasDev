@@ -1,0 +1,8 @@
+.set-colour {
+    color: white;
+    font-weight: bold;
+}   
+
+.schedule-call-wrapper .slds-listbox.slds-listbox_vertical.slds-dropdown.slds-dropdown_fluid.slds-dropdown_left {
+    max-height: 120px;
+}

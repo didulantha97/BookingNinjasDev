@@ -1,0 +1,213 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg7.jpg)');
+                    $('.wrapper').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg7.jpg)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Software para Gestión de Propiedades - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/Flat_MacBook7.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Software para Gestión de Propiedades</h1>
+                                <p>Damos a los gestores de propiedades una plataforma para maximizar su negocio - al precio más asequible.</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>Mejores y mejoradas técnicas de gestión</h2>
+                        <p>El Booking Ninjas PMS hace el trabajo pesado de la gestión de la propiedad por usted. Consigue un sistema de gestión de propiedades libre de estrés, eficiente y fiable. Nuestro sistema presenta una plataforma única para hacer la gestión de su propiedad en unos pocos clics. Nuestra aplicación de gran escala proporciona flexibilidad para empresas de todos los tamaños, independientemente del número de unidades. Es hora de aceptar los cambios y hacer su trabajo de la manera más fácil y rápida.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>La mejor experiencia con Booking Ninjas</h2>
+                        <p>Ser un gestor de propiedades conlleva mucho trabajo y requiere llevar registros de muchas y diferentes cosas. Tiene que llevar el registro de las vacantes, de las reparaciones y de que cada inquilino haya pagado. También tiene que inscribir tus propiedades en varias páginas webs de alquiler y hacer otras tareas relacionadas con la contabilidad. Este es un trabajo de gran envergadura, pero elegir un software de gestión de propiedades facilitará estas tareas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>¿Qué es un Software de Gestión de Propiedades?</h2>
+                        <p>Un Software de Gestión de Propiedades ayuda a los propietarios de inmuebles y a los agentes inmobiliarios a buscar arrendamientos, residentes y tareas de mantenimiento, además de cobrar el alquiler y administrar finanzas para reducir costes y optimizar operaciones.</p>
+                        <p>Es una forma moderna de operar su negocio inmobiliario al automatizar tareas cruciales relacionadas con arrendamientos de funciones, gestión de inquilinos, administración de instalaciones y contabilidad. Algunos softwares pueden optimizar las comunicaciones entre propietario y arrendatario. Los softwares de gestión de propiedades pueden soportar una gran variedad de tipos de propiedad, desde propiedades residenciales hasta comerciales o industriales. Están diseñados para acomodar las necesidades de varios usuarios. Tanto si es propietario de un inmueble con algunas inversiones en propiedades o gestor de propiedades de una firma, administrando cientos de localizaciones, hay muchas opciones que considerar.</p>
+                        <p>Sin este software, la gestión de propiedades requiere mucho más esfuerzo manual e incluso responsabilidades presenciales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">VENTAJAS DE USAR UN SOFTWARE DE GESTIÓN DE PROPIEDADES</h2>
+                        <p>El uso de un software de gestión de propiedades conlleva una serie de ventajas fundamentales, que incluyen:</p>
+                        <p><strong>• Contabilidad:</strong> el software puede llevar el seguimiento de todos los beneficios de su empresa, cuánto dinero se paga a los vendedores, contratistas y propietarios de inmuebles. Esta información puede introducirse en informes para ayudar a la empresa con el mantenimiento de registros y efectos fiscales.</p>
+                        <p><strong>• Seguimiento de alquiler:</strong> el software puede ser utilizado para llevar el seguimiento de la renta debida, de las cantidades pagadas y de la morosidad. Cualquier discrepancia puede ser rápidamente abordada</p>
+                        <p><strong>• Registro de vacantes:</strong> algunos softwares pueden ayudarte a enumerar las unidades de alquiler al instante. Algunos incluso pueden crear sitios webs personalizados para facilitar la tarea de los motores de búsqueda.</p>
+                        <p><strong>• Servicios de inquilinos:</strong> el software de gestión de propiedades no es solo útil para la empresa. La mayoría de los softwares disponibles también tienen utilidades para los inquilinos. Los arrendatarios pueden pagar sus alquileres online incluso usando tarjetas de crédito. Pueden declarar fácilmente daños a la unidad y pedir reparaciones desde la comodidad de sus portátiles o teléfonos móviles.</p>
+                        <p><strong>• Servicios del propietario:</strong> el software puede proporcionar herramientas útiles para que los propietarios puedan estar al día de la información que necesiten. Un propietario puede ver fácilmente las propiedades vacantes, si el alquiler ha sido pagado o no, y si se ha realizado el mantenimiento. Estas utilidades pueden introducirse en informes para los registros del propietario. Esto puede ser muy útil durante la temporada fiscal.</p>
+                        <p><strong>• Destacar frente a la competencia:</strong> todas estas ventajas le asegurarán destacar frente a la competencia tan pronto como elija un PMS. Sus competidores quizás no puedan seguir controlando sus gastos. Quizás no puedan realizar cheques de créditos a tiempo o incluso saber qué unidades han sido asignadas a quién. Usted podrá mantener actualizada su situación en todo momento y, así, representar un negocio más atractivo para potenciales inquilinos.</p>
+                        <p>La información de marketing recogida de los análisis de información también le ayudará a saber dónde necesita centrar sus esfuerzos publicitarios. Si quiere destacar frente a su competencia, entonces tendrá que conocer qué caminos están fallando. Una vez que haya realizado algunos cambios, será capaz de comparar la información reciente con la anterior y será capaz de apreciar si se ha producido un cambio positivo o no.</p>
+                        <p>Como puede ver, el software de gestión de propiedades puede hacer mucho más que una simple hoja de cálculo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">EL USO DEL SOFTWARE DE GESTIÓN DE PROPIEDADES SEGÚN EL TAMAÑO DE SU EMPRESA</h2>
+                        <p>Los gestores de propiedades tienen distintos requisitos según el tamaño y tipo de su portfolio. Los mejores y más asequibles desarrolladores como LDG Development y Dominium ofrecen opciones de propiedades para varios usos, de los que la mayoría son cubiertos por sistemas de gestión de propiedades. Los softwares modernos ofrecen funcionalidades para ayudar a cualquier tipo:</p>
+                        <p><strong>• Compradores individuales y multifamiliares:</strong> Quizás el tipo más común de gestión de propiedad, estos compradores disfrutan de una gran variedad de sistemas que ayudan a administrar apartamentos (condos) y casas, incluyendo funcionalidades de contabilidad y seguimiento de inquilinos junto a portales y vacantes de marketing.</p>
+                        <p><strong>• Compradores de nicho de mercado:</strong> mientras que la mayoría de los sistemas de gestión de propiedades realizan las mismas funciones, muchas se centran en ciertos segmentos de propiedades. También ofrecen características adicionales para seguir las actas de las reuniones, los estatutos y las elecciones necesarias para dirigir una asociación.</p>
+                        <p>• Los softwares de viviendas más asequibles incluyen funcionalidades para manejar programas de financiación, controlar los cumplimientos y generar informes de auditoría.</p>
+                        <p><strong>• Viviendas militares:</strong> bases flexibles para uso militar, incluyendo campamentos, instalaciones temporales de entrenamiento, almacenamiento de equipamiento y registros militares y mucho más.</p>
+                        <p>• El software de alquiler de propiedades vacacionales se centra en la administración de reservas online y herramientas de marketing para dar a sus propietarios un amplio alcance para potenciales arrendatarios.</p>
+                        <p><strong>• Compradores de nivel empresarial.</strong> Aquellos que gestionan varias propiedades de una empresa comercial pueden optar por un sistema que muestre un resumen de su portfolio completo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">Guía de las características: una lista de las características más comunes de la gestión de propiedades</h2>
+                        <p>Para hacer una comparación entre los distintos tipos de softwares de gestión de propiedades es importante entender las funcionalidades que incluyen cada uno de ellos. Las funciones más comunes de estos sistemas son:</p>
+                        <p><strong>• Contabilidad:</strong> administración del libro de contabilidad general, las cuentas por pagar y los pagos del alquiler. La mayoría de los sistemas ayudan con la conciliación bancaria y generan informes financieros.</p>
+                        <p><strong>• Seguimiento del inquilino y el alquiler:</strong> asistencia en el proceso de alquiler por completo, incluyendo informes de inquilinos, la administración de mudanzas y rentas y pagos por utilidades.</p>
+                        <p><strong>• Presupuesto y previsiones:</strong> desarrollo de presupuestos precisos e informes y previsiones de futuros costes y valores, así como cuentas del índice de precios del consumidor (CPI), cambios, inflación y tipo del mercado.</p>
+                        <p><strong>• Mantenimiento de edificios:</strong> presentación y seguimiento de órdenes de trabajo, ya sea de los empleados o inquilinos y asignación tareas para los trabajadores de mantenimiento.</p>
+                        <p><strong>• Portal del inquilino:</strong> permite a los inquilinos pagar la renta y honorarios, presentar solicitudes de mantenimiento y empezar canales de comunicación entre residentes y el personal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">DETALLES DE FUNCIONES Y EJEMPLOS</h2>
+                        <p><strong>Contabilidad:</strong> las funciones de contabilidad en sistemas de gestión de propiedades funcionan como contabilidad financiera en otros sistemas; estas ayudan a mantener tus números de una forma exacta y actualizada, con un libro de contabilidad general, previsiones y una pantalla principal que ofrece una vista de tus gastos y beneficios.</p>
+                        <p><strong>Seguimiento del inquilino y el alquiler:</strong> esta función es la clave de cualquier sistema de administración de propiedades al ayudarte en la organización y seguimiento de la información más importante de tus residentes y contratos de arrendamiento. Estos incluyen: vencimiento de pagos, fechas claves del alquiler, información del contrato y más. La mayoría de los sistemas también ofrecen al inquilino herramientas de evaluación como parte del seguimiento del arrendatario.</p>
+                        <p><strong>Presupuesto y previsiones:</strong> estas funciones son de gran valor para los gestores de propiedades al centralizar toda la información financiera de una forma actualizada y un historial detallado de los alquileres para producir proyecciones exactas y pronosticar futuros costes. Las funciones de registros o informes también pueden ser usadas para generar informes personalizados cuya información puede ser compartida fácilmente con los accionistas.</p>
+                        <p><strong>Mantenimiento de edificios:</strong> las funciones de gestión de mantenimiento permiten que tanto residentes como el personal puedan presentar, seguir y asignar tareas de trabajo para cualquier tipo de solicitud, desde problemas estructurales hasta plagas, a través de un portal online. La mayoría de los sistemas pueden asignar tareas automáticamente para que los trabajadores de mantenimiento puedan responder rápidamente.</p>
+                        <p><strong>Portal del inquilino:</strong> como se mencionaba anteriormente, un portal online ofrece a los residentes varias formas de comunicarse con sus dueños y el personal de oficina, accesible a cualquier hora del día. Los inquilinos pueden actualizar su información de contacto, pagar rentas y otros honorarios, además de presentar solicitudes de mantenimiento, ver documentos de alquileres y comunicarse con el personal de oficina.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">VENTAJAS COMPETITIVAS DE USAR UN SOFTWARE DE GESTIÓN DE PROPIEDADES</h2>
+                        <p>Tanto si gestionas un único complejo de apartamentos o una docena de instalaciones comerciales, el software de gestión de propiedades puede proporcionarle las funciones que necesita para sus trabajo diario, permitiendo que se centre en su negocio en otras formas:</p>
+                        <p><strong>• Mayor comodidad:</strong> con un portal online de inquilinos, los residentes pueden pagar sus rentas en cualquier momento del día, siendo más cómodo para ellos y más fácil para que usted pueda cobrar el alquiler. Además, un portal online abre una línea de comunicación entre inquilinos, la oficina y el personal de mantenimiento, de modo que todos puedan ser rápidamente notificados sobre los anuncios más importantes.</p>
+                        <p><strong>• Supervisión financiera:</strong> las herramientas de informes y análisis le ayudarán a recoger información financiera, de sus inquilinos y de marketing para identificar las tendencias que puedan ser perjudiciales para su negocio y las oportunidades para hacer mejoras.</p>
+                        <p><strong>• Haga crecer su negocio:</strong> la automatización ganada del software permitirá a los gestores de propiedades pasar más tiempo comercializando (marketing) sus propiedades y administrando solicitudes para encontrar a los mejores residentes o arrendatarios. Las herramientas de marketing le darán la habilidad de publicar las vacantes en varios sitios, como Craiglist o Apartments.com, en tan solo unos clicks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h2 class="text_center">LAS FUNCIONES QUE REALMENTE NECESITAS DEL SOFTWARE DE GESTIÓN DE PROPIEDADES</h2>
+                        <p>El software de gestión de propiedades suele ser lo suficientemente flexible para combinar sus necesidades y escalas específicas con el crecimiento de su negocio. Sin embargo, hay algunas aplicaciones cruciales para ciertos tipos o etapas de la administración de la propiedad:</p>
+                        <p><strong>• Pequeños complejos de apartamentos o viviendas unifamiliares. Seguimiento del inquilino y el alquiler:</strong> para gestores de propiedades con un portfolio más pequeño, llevar el seguimiento del pago de los alquileres y los contratos de arrendamientos ahora puede centralizarse para obtener rápidamente la información, como cuándo vence el alquiler.</p>
+                        <p><strong>• Complejos múltiples, alquileres o una Asociación de Propietarios (HOA). Portal del inquilino:</strong> cuando dispone de varios edificios o alquileres que mantener, permitir que los inquilinos contacten con usted a través de un portal online le ayudará a mantenerse al mando de los problemas que vayan surgiendo y que, de otra forma, hubiera ignorado.</p>
+                        <p><strong>• Comprador de negocios. Contabilidad e informes:</strong> los profesionales del sector inmobiliario necesitan herramientas más sólidas de contabilidad e informes para hacer decisiones estratégicas de coste más bajo. Algunos pueden tomar en cuenta un software de gestión de instalaciones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>Booking Ninja y su Negocio</h2>
+                        <p>Las características y funciones mencionadas anteriormente describen el sistema Booking Ninjas. Nuestro sistema está adaptado para proporcionarle una experiencia incomparable y una eficiencia diaria en su operación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>La forma más fácil de empezar con Booking Ninjas</h2>
+                        <p>Para empezar con nuestro proceso de implementación,&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Register)}" target="_blank">concierte una llamada</apex:outputLink> con nosotros. Podemos hablar de sus necesidades específicas de negocio, y cómo Booking Ninjas puede satisfacerlas (nosotros personalizamos nuestro sistema para diferentes necesidades).</p>
+                        <p>Usted también puede ir directamente y probar el demo en nuestro sistema. Use este&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Register)}" target="_blank">link</apex:outputLink> para conseguir su versión de prueba de nuestro sistema. Recuerde que tendrá que añadir su tarjeta para obtener acceso.</p>
+                        <p>Estamos disponibles para responder cualquier pregunta que tenga. Para enviarnos un correo electrónico, puede contactanos en <a href="mailto:sales@bookingninjas.com">sales@bookingninjas.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <h3 class="text_center">Tres pasos para empezar</h3>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Software para Gestión de Propiedades - 2" class="wow fadeInRight" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration7.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <dl>
+                                <h3>Ponerse en contacto:</h3>
+                                <dd>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al (907) 600-2345 para agilizar el proceso.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Importe sus datos</h3>
+                                <dd>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Láncese al éxito</h3>
+                                <dd>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/Property_managers_icon-1.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Software para Gestión de Propiedades - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/Property_managers_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>We are focused on making property management easier for everyone. Whether you own the property yourself, or you get the chance to manage for someone, then this opportunity is for you.  Get a chance to reduce expenses and stress that comes with properties. With our system, you get to reduce stress and improve the efficiency of your property business significantly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">Prueba el piloto hoy</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

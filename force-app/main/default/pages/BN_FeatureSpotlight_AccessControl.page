@@ -1,0 +1,143 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+            
+            <!-- feature-spotlight -->
+            <div class="feature-spotlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider">
+                                <div class="feature-spotlight__slider-big">
+                                    <div>
+                                        <a href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control.jpg" data-fancybox="gallery"><img alt="Hotel Door Access Control System - 1" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control2.jpg" data-fancybox="gallery"><img alt="Hotel Door Access Control System - 2" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control2.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control3.jpg" data-fancybox="gallery"><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control3.jpg" alt="Features on Bookingninjas Property Management System"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control4.jpg" data-fancybox="gallery"><img alt="Hotel Door Access Control System - 4" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control4.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control5.jpg" data-fancybox="gallery"><img alt="Hotel Door Access Control System - 5" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control5.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control6.jpg" data-fancybox="gallery"><img alt="Hotel Door Access Control System - 6" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control6.jpg"/></a>
+                                    </div>
+                                </div>
+                                <div class="feature-spotlight__slider-small">
+                                    <div>
+                                        <img alt="Hotel Door Access Control System - 1" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Hotel Door Access Control System - 2" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control2.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Hotel Door Access Control System - 3" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control3.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Hotel Door Access Control System - 4" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control4.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Hotel Door Access Control System - 5" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control5.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Hotel Door Access Control System - 6" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/access_control6.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider-text">
+                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="back">&#x3C; GO BACK</apex:outputLink>
+                                <h1>Access Control</h1>
+                                <p>In an increasingly digital society, guests are more likely to remember their phones rather than their hotel key card. Booking Ninjas has a way to update your hotel door locks for the convenience of your guests and your employees. </p>
+                                <p>As a part of the software solutions that Booking Ninjas presents, access control locks that work with our system will allow you to control your PMS and who accesses your rooms from one online location with one login. We recognize that third-party systems can stack up and make your property management more difficult than it should be. That’s why we offer access control as another facet to our service for you.</p>
+                                <p>There are a couple of different options for keyless entry systems. Each one is accessible and manageable by you and whomever you allow to access it as well. This can work for your cleaning service, front desk assistants, and even guests themselves. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__2collumn-text">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>Keycards, while somewhat reliable, can be easily misplaced and regularly malfunction. The time it takes for a guest to look for a keycard, call the front desk for assistance, and wait for a new keycard can be detrimental to that guest’s stay at your hotel. Unfortunately, it can also take essential time away from your employees who could be performing other functions. </p>
+                                <p>Keyless entry with a pin code, fingerprint, or RFID scanner is much more dependable as well as timely, considering it cannot be lost or physically demand an employee’s time or presence. No matter what time of day that a guest may need to get in their room, they should be able to do it without the assistance of one of your employees.</p>
+                                <p>In addition to saving time, keyless entry can actually ensure greater security for your business and safety for your guests. With advanced digital encryption and secure communication channels, your access control information is safe within our software. Information gathered and transferred via our system is only accessible by you.</p>
+                                <p>Not only will your information be safe, but your guests will be safe as well. Property managers can add another layer of security from intruders remotely and securely. With our quick access-denial options, you will never have to worry about adapting to different scenarios; Booking Ninja’s access control system helps you prepare for ultimate security in a dynamic environment.</p>
+                                <p>There are so many benefits to having your access control system online; it certainly makes it simpler for your guests and easier for your employees. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <h2>Guest Benefits</h2>
+                                    <ul>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>1</span></span>
+                                            <small><strong>Remote Check-in.</strong> Guests coming to stay with you potentially have extensive travel plans, planned meetings, or other reasons for missing check-in time or arriving late to check-in. You don’t want to add to their schedule, but you still want to be able to confirm that they are coming or have arrived. With this access control system, you can allow guests to check-in remotely and grant access to their room without them having to stop by the front desk with one of your employees.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>2</span></span>
+                                            <small><strong>No More Card Keys.</strong> Lowering the number of things that guests need to remember to keep track of will positively impact your guests’ experience. It will be a relief for them to have one less object to constantly check for in their pocket or remember to transfer from their jacket to their purse. This will make the transition from using card keys to understanding keyless entry; they will need only what they already had with them when they walked on your property.</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <h2>Your Benefits</h2>
+                                    <ul>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>1</span></span>
+                                            <small><strong>Advanced Digital Encryptions.</strong> Since this is a digital and online service, we had taken steps to ensure that this technology keeps your information and access private. Constantly updated in real-time, any changes you or your guests make will be safely modified. Real-time access changes apply to this as well; if one of your employees inputs a key-cancellation, that will be quickly and securely transmitted to the correct door. If you have a specific security measure in mind, our access control service will let you implement it.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>2</span></span>
+                                            <small><strong>Employee Efficiency Increased.</strong> As stated earlier, time can be spent and wasted on lost or damaged keycards; with the ability for guests to gain access through keyless entry, your employees will not have to take care of this type of issue any further. Similarly, with remote check-ins, guests will not necessarily need to interact with the front desk to get into their room, letting your employees interact with guests on more pressing matters.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>3</span></span>
+                                            <small><strong>One Point of Access.</strong> Booking Ninjas allows you to control multiple services from one login. In this case, you can seamlessly switch from our PMS system or Channel Manager to the Access Control instead of having to switch tabs or remember another login and password. Equally important, only you have access to our portal, and you can decide whether you would like to grant access to your employees and how much.</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__pager">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Report)}" styleClass="feature-spotlight__pager-item">
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_Left-black.png" alt=""/></i>
+                            <b>Custom Reporting Software</b>
+                        </apex:outputLink>
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Appexchange)}" styleClass="feature-spotlight__pager-item">
+                            <b>AppExchange</b>
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_right.png" alt=""/></i>
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature-spotlight -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

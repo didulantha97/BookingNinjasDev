@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Card__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicate if this card is supposed to be used as the default card for charges</description>
+    <externalId>false</externalId>
+    <label>Default Card</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,44 @@
+<apex:page controller="YodleeImportDataController">
+    <apex:pageBlock id="PAGE">
+        <apex:form >
+        <apex:pageBlockSection columns="1" rendered="{! NOT(isLogged)}">
+            <apex:inputText value="{!username}" label="User Name" />
+            <apex:inputSecret value="{!password}" label="Password" />
+            <apex:commandButton value="Login" action="{!clickLogin}" reRender="PAGE" />
+        </apex:pageBlockSection>
+        </apex:form>
+        <apex:pageMessages id="MESSAGES"/>
+
+        <apex:outputPanel rendered="{!isLogged}">
+	        <apex:pageMessage summary="{!lastImportDateMessage}" severity="info" strength="2" />
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    <form action="https://node.developer.yodlee.com/authenticate/restserver/" method="POST" target="_blank">
+                        <input type="hidden" name="app" value="10003600" />
+                        <input type="hidden" name="rsession" value="{!userSession}"/>
+                        <input type="hidden" name="token" value="{!accessToken}"/> 
+                        <input type="hidden" name="redirectReq" value="true"/> 
+                        <input type="submit" class="btn" name="submit" value="Link Accounts" /> 
+                    </form>
+                </apex:pageBlockSectionItem>
+
+            </apex:pageBlockSection>
+        </apex:outputPanel>
+        <apex:form >
+        <apex:outputPanel rendered="{!isLogged}">
+            <apex:pageBlockSection columns="1" id="LOAD_ACCOUNTS">
+                <apex:inputField value="{!booking.Start_Date__c}" style="width: 130px;"/>
+                <apex:inputField value="{!booking.End_Date__c}" style="width: 130px;"/>
+                <apex:commandButton value="Load Accounts" action="{!clickLoadAccounts}" rerender="LOAD_ACCOUNTS,MESSAGES"/>
+
+                <apex:pageBlockTable value="{!filteredAccounts}" var="acc" rendered="{! NOT(filteredAccounts.empty)}">
+                    <apex:column value="{!acc.providerName}" headerValue="Bank" />
+                    <apex:column value="{!acc.accountName}" headerValue="Account Name" />
+                </apex:pageBlockTable>
+
+                <apex:commandButton value="Import Transactions" action="{!clickConnect}" rendered="{!NOT(filteredAccounts.empty)}" rerender="MESSAGES"/>
+            </apex:pageBlockSection>
+        </apex:outputPanel>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

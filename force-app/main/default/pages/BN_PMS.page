@@ -1,0 +1,163 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+            
+            <!-- top -->
+            <div class="about-page-top pms-page-top">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <article>
+                                    <h1>PMS Software: What Are the Most Important Advantages?</h1>
+                                    <p>A property management system (PMS) is a software application for the operation of hospitality businesses such as hotels and commercial or residential rental properties. It is a centralized computer system designed to organize, schedule, and perform the day-to-day functions and transactions involved in rental and hospitality accommodations businesses. They’re also used in manufacturing industries and local governments. They are the ultimate organizers for businesses in these industries, automating workforce tasks and maximizing efficiency.</p>
+                                </article>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-top__img"><img alt="PMS Software" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-page-top.png"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><a class="blue-link" href="#" target="_blank">PMS systems</a> are customized for the needs of the hospitality industry to further increase ease of operations. Computer record keeping and PMS systems have increased the efficiency of hospitality industries significantly by making it possible to update and consult centralized records from multiple computers and devices.</p>
+                    <p>Most professional property management depends on a PMS solution to maximize their business’ functionality. If you’re a property manager, business owner, or hotelier you most likely depend on one to streamline your day-to-day business.</p>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="pms-page-content">
+                <!-- functions -->
+                <div class="pms-page-functions">
+                    <div class="container">
+                        <h2 class="about-page-content__title">What is a property management system’s function?</h2>
+                        <p>Professional property management is nearly impossible in today’s day and age without a PMS system in place. For starters, to not have one puts your business at a huge disadvantage. That’s because they increase functionality exponentially. Daily tasks such as: bookings, check-in/check-out, telephone system integration, point-of-sale (POS) integration, event planning, food/ beverage costing, inventory supply management and security all become
+                            automated, operating through a centralized computer database.</p>
+                    </div>
+                </div>
+                <!-- /functions -->
+                <!-- benefits -->
+                <div class="pms-page-benefits">
+                    <div class="container">
+                        <h2 class="about-page-content__title">Why is pms important? <br/>How will it benefit my hospitality business?</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <img alt="Why Is PMS Software Important?" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-page-1.png"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>When we say PMS systems increase functionality and make business run smoother, we are referring to all of the previously mentioned tasks that operate under a single software system. But how does that translate to guests and employees? Reduced workload for staff and improved guest experience for customers is the simplest answer. A domino effect of functionality is created within your company’s database. By completing one task, you can rest assured that several others are automatically taken care of as well, which helps employees accomplish much more in a day’s work.</p>
+                            </div>
+                        </div>
+                        <p>These systems maintain the financial health of your business by securely storing sensitive payment information for guests and making the booking/reservation process, as well as check-in/check-out much easier and more user friendly. They also provide transparency on business operations like maintenance. Employee scheduling, payroll and operations are organized within a single, secure system. Keeping track of your staff and holding them accountable to their responsibilities is made quite simple.</p>
+                    </div>
+                </div>
+                <!-- /benefits -->
+                <!-- industries -->
+                <div class="pms-page-industries">
+                    <div class="container">
+                        <h2 class="about-page-content__title">What industries use property management systems?</h2>
+                        <div class="row pms-page-industries__box">
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="pms-page-industries__item">
+                                    <figure>
+                                        <img alt="PMS for Real estate - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-skyline.png"/>
+                                        <figcaption>Real estate</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="pms-page-industries__item">
+                                    <figure>
+                                        <img alt="PMS for Manufacturing - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-factory.png"/>
+                                        <figcaption>Manufacturing</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="pms-page-industries__item">
+                                    <figure>
+                                        <img alt="PMS for Intellectual property - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-brain.png"/>
+                                        <figcaption>Intellectual property</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="pms-page-industries__item">
+                                    <figure>
+                                        <img alt="PMS for Government - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-government.png"/>
+                                        <figcaption>Government</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="pms-page-industries__item">
+                                    <figure>
+                                        <img alt="PMS for Logistics - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-truck.png"/>
+                                        <figcaption>Logistics</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text_center">
+                                <div class="pms-page-industries__item-last">
+                                    <p> ...all use and benefit from these systems.</p>
+                                    <figure>
+                                        <img alt="PMS Benefits - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-project-management.png"/>
+                                    </figure>
+                                    <p>Of course, the industry that uses them more than any other is hospitality accommodation management businesses like hotels.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /industries -->
+                <!-- future -->
+                <div class="pms-page-future">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <h2 class="about-page-content__title">What does the future of property management look like?</h2>
+                                <p>According to Forbes, “Property managers have been using software to assist with managing their properties for years… Artificial Intelligence (AI) apps will just be a natural extension of this wave of adoption… they won’t replace current software solutions, they will compliment them.” AI bots can do everything from communicating with tenants to turning data into emails. AI will surely be a fundamental component in PMS solutions in the near future.</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img alt="Future of PMS Software" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-page-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /future -->
+                <!-- conclusion -->
+                <div class="pms-page-conclusion process-conclusion">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text_center">
+                                <h3>Conclusion</h3>
+                                <p>Mobile accessibility demand has never been higher and continues to grow. Therefore, cloud and AI-driven technology stand to increase. Enter Booking Ninjas. In 2016, Booking Ninjas arrived as an all-in-one solution built with an underlying Salesforce platform. To satisfy the consumers of today, the platform is cloud-hosted, mobile accessible, and equipped with Salesforce’s technology for real-time data, communication and insights.</p>
+                                <p>Booking Ninjas set out to give hotels and property businesses a digital advantage. They provide the most comprehensive property management solutions available on the market today. By continuing to update their software with the most advanced technology available, Booking Ninjas strives to keep excellence in innovation is a top priority and a core company value.</p>
+                                <p>Booking Ninjas offers a unique feature that allows you to integrate apps from AppExchange and connect them directly to the Booking Ninjas platform. Basically, within their platform, you’re constantly evolving with the most advanced technology in the industry and never be left with a dated operating system.</p>
+                                <p>With Booking Ninjas PMS systems, you’ll have the most professional property management possible. That’s because all of your property management business solutions will be served on one platform. From centralized control to 360-analysis, from AI to high accuracy voice control, from cutting edge integrations to large-scale property management solutions, Booking Ninjas has created the most comprehensive PMS systems available on the market.</p>
+                                <p>Implementing the Booking Ninjas system can be done in a matter of seconds. One of the staples of the company is their migration process. All you have to do is provide them with your business’ data and their development team does the rest, instantly crunching numbers and introducing your property to elite technology. Importing your data will be as easy as saving a contact on your phone. Install your security preferences and that’s it! You’ll be managing your property like the pro you are in no time.</p>
+                                <p>To get started on your digital transformation:</p>
+                                <a href="/calendly" class="button" target="_blank">Schedule a Meeting</a> &nbsp;
+                                <a href="/trial" class="button" target="_blank">Take a Pilot Today</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- conclusion -->
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

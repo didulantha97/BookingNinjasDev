@@ -1,0 +1,68 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" controller="BN_Portal_PaymentHistory_Controller">
+
+     <!-- Template -->
+    <apex:composition template="BN_Portal_Template">
+        <!-- Define content -->
+        <apex:define name="bn_portal_content">
+        
+            <div class="col-lg-9  col-md-8">
+                <div class="portal__main">
+                    <div class="portal__main-text">
+                        <apex:form id="paymentPanel">
+                            <div class="portal__main-form">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="portal__main-form-item">
+                                            <apex:input type="date" value="{!startDate}" html-placeholder="Start Date" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="portal__main-form-item">
+                                            <apex:input type="date" value="{!endDate}" html-placeholder="End Date" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="portal__main-form-item">
+                                            <apex:selectList size="1" value="{!status}">
+                                                <apex:selectOptions value="{!statusList}"/>
+                                            </apex:selectList>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="portal__main-form-item">
+                                            <apex:commandButton styleClass="button small" value="Search" action="{!search}" rerender="paymentPanel"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portal__main-history">
+                                <table>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Description</th>
+                                        <th>Amount &amp; Status</th>
+                                        <th>Transaction Receipt</th>
+                                    </tr>
+                                    <apex:repeat var="trans" value="{!stripeTransactions}">
+                                        <tr>
+                                            <td>
+                                                <apex:outputText value="{0, date, MMMM dd',' yyyy}">
+                                                    <apex:param value="{!trans.CreatedDate}" /> 
+                                                </apex:outputText>
+                                            </td>
+                                            <td>{!trans.Description__c}</td>
+                                            <td><b>{!trans.Total_Amount__c}</b> - {!trans.Status__c} </td>
+                                            <td><a href="{!trans.Receipt_URL__c}" target="_blank">{!trans.Stripe_Transaction_Id__c}</a></td>
+                                        </tr>
+                                    </apex:repeat>
+                                </table>
+                            </div>
+                        </apex:form>
+                    </div>
+                </div>
+            </div>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,81 @@
+<apex:page controller="BN_CareerController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false"  cache="false">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- form -->
+            <div class="career-lead-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1>We want you in our Family</h1>
+                            <div class="title">Be a part of something big</div>
+                            <p>Booking Ninjas empowers people to express themselves by connecting them with a platform that caters to real business needs. We’re on a mission to change the way the world views property management and improve it on a daily basis.</p>
+                            <p>Join our team and help bring smiles to millions around the world</p>
+                            <figure>
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/career-form-img.png" alt="Bookingninjas Property Management System"/>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <apex:form >
+                                <div class="career-lead-form__section">
+                                    <div class="career-lead-form__title">Become one of us</div>
+                                    <div class="career-lead-form__box">
+                                        <div class="career-lead-form__item">
+                                            <label>Name<sup>*</sup></label>
+                                            <apex:inputText value="{!name}"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Phone<sup>*</sup></label>
+                                            <apex:inputText value="{!phone}"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Email<sup>*</sup></label>
+                                            <apex:inputText value="{!email}"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Linkedin URL</label>
+                                            <apex:inputText value="{!linkedin}"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Position</label>
+                                            <apex:selectList size="1" value="{!position}">
+                                                <apex:selectOptions value="{!positionList}"/>
+                                            </apex:selectList>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>We are in the hospitality business. Tell us a time you used 
+                                                good customer service to solve a work problem?</label>
+                                            <input type="text"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Tell us about a time when you came up with a creative solution
+                                                on your own to solve an issue at work.</label>
+                                            <input type="text"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>We&#x27;ve told you about our expectations for this job. What do 
+                                                you want to get from working at this position with 
+                                                Booking Ninjas?</label>
+                                            <input type="text"/>
+                                        </div>
+                                        <div class="career-lead-form__item text_center">
+                                            <apex:commandButton action="{!register}" value="Submit" styleClass="button"/>
+                                            <small><i class="fas fa-lock"></i> We hate spam and promise to keep your data address safe</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /form -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

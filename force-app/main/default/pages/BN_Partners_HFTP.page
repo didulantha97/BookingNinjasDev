@@ -1,0 +1,167 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top customer-top customer-top-left">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1">
+                            <a href="https://www.hftpsfl.com" class="partners-page__companies-img" target="_blank">
+                                <span><img alt="HFTP - Partner - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/HFTP_Logo-big.png"/></span>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Hospitality Financial and Technology Professionals (HFTP®)</h1>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <div class="partners-page">
+                <div class="container">
+                    <div class="costumer-page__bread">
+                            <ul>
+                                <li><a href="/">Homepage </a></li> / 
+                                <li><a href="/partners">Partners</a></li>  /  
+                                <li class="active">HFTP</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="costumer-page__img float_left">
+                                    <figure><img alt="partners" src="https://d1b89zc79exfxt.cloudfront.net/img/partners-img.png"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>We’re Thrilled to be a Part of HFTP</h2>
+                                    <p>BOOKING NINJAS is proud to be partners with <a href="https://www.hftp.org/" target="_blank">HFTP</a>, which stands for ‘Hospitality Financial and Technology Professionals.’ It is the world’s largest and longest tenured global networking association for professionals working in the financial and technological sectors of the hospitality industry.</p>
+                                    <br/>
+                                    <h2>The HFTP Impact</h2>
+                                    <p>Founded in 1952, HFTP provides first-class educational opportunities, networking, and resources to its members worldwide. It is an international, non-profit association headquartered in Austin, Texas, U.S.A., with offices in Hong Kong, the United Kingdom, and the Netherlands. HFTP is recognized as the spokes group for the finance and technology segments of the hospitality industry, with members and stakeholders across the globe.</p>
+                                    <p>HFTP understands the industry’s pressing issues and assists its stakeholders in finding solutions to challenges more efficiently than any other organization of its kind. HFTP makes this possible through its networks of experts, research, certification programs, information resources, and conferences/ events such as HITEC (Hospitality Industry Technology Exposition and Conference). Booking Ninjas aims to benefit greatly from its membership, while contributing its expertise in&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Why)}" target="_blank">property management software</apex:outputLink> (PMS) solutions to HFTP and its members.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-12">
+                                <article>
+                                    <p>HFTP owns the world’s only hospitality-specific search engine, PineappleSearch.com, which serves the global hospitality industry as a search platform for hospitality-specific industry information and intelligence. HFTP partners with industry organizations to provide comprehensive programs for its members by collaborating on scholarships, conferences and research to support common hospitality industry educational goals and deliver increased member value.</p>
+                                    <p>Some of the organizations providing HFTP with additional resources include: ‘American Hotel &amp; Lodging Association’ (AHLA), The Board Room Magazine, British Hospitality Association, Club Managers Association of America (CMAA), European Hotel Managers Association, Hospitality Professionals Association (HOSPA), IHG Owners Association (IHGOA), International Hotel &amp; Restaurant Association, and many others.</p>
+                                    <p>HFTP hosts bi-monthly events across the United States as well as tri-annual events internationally, which are free to all members and feature guest speakers ranging from hospitality industry leaders, to financial and technology sector experts, and even celebrities of the business and political worlds. The annual HFTP Convention is held each October and is the largest, most-attended hospitality event of the year.</p>
+                                    <p>The HFTP also hosts monthly online seminars featuring guest speakers, interactive networking opportunities, educational resources, and priceless feedback from industry leaders. HFTP hosts the exclusive ‘HFTP Career Center,’ which posts job opportunities available from and for all members and recommended non-members as well, free of charge. Having access to the best, brightest, and most connected young minds in the hospitality industry is a perk that Booking Ninjas aims to take full advantage of through our membership. We trust the HFTP Career Center will do wonders for our expanding workforce.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-5">
+                                <div class="costumer-page__img float_right">
+                                    <figure><img alt="partners" src="https://d1b89zc79exfxt.cloudfront.net/img/costumer-photo.png"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>HFTP Helps us Maintain our Position on Top</h2>
+                                    <p>Booking Ninjas is thrilled to be a part of the HFTP association to ensure our connection to the best and brightest minds in hospitality. This partnership is sure to broaden our network in the technology sector and provide us valuable new connections in the financial sector of the hospitality industry as well.</p>
+                                    <p>Staying up-to-date on the latest news and developments in the hospitality industry is a huge priority for Booking Ninjas. Therefore, we’re thrilled to be included in the most respected and exclusive hospitality networking society in the world. As a relatively young company founded in 2009 and made up of motivated professionals with growth mindsets, Booking Ninjas is committed to doing anything and everything possible to make our company thrive to its full potential. That includes learning from fellow hospitality industry professionals who have worked in&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_PMS)}" target="_blank">professional property management</apex:outputLink> a great deal longer than us. We are committed to constant evolution and improvement.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-12">
+                                <article>
+                                    <p>Partnering with HFTP, the most reputable non-profit association in the hospitality industry, provides Booking Ninjas with enhanced credibility and the ability to influence our changing industry by being on the cutting edge of revolutionizing professional property management across the hospitality industry on a global scale.</p>
+                                    <p>Booking Ninjas aims to take full advantage of this opportunity to connect with a much broader scope of contemporaries across the globe. Many of our domestic clients in the U.S.A. have affiliates abroad that aren’t familiar with our property management software (PMS) solutions. HFTP membership gives us access to exclusive resources and connections that would not otherwise be available to Booking Ninjas through basic advertising and word-of-mouth. The hospitality industry is global and HFTP possesses the relationships, expertise and reputation to help Booking Ninja’s&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Solutions)}" target="_blank">PMS solutions</apex:outputLink> be seen and experienced by powerful decision makers and influencers that could elevate our brand to new heights.</p>
+                                    <p>As a hospitality industry leader and influencer, Booking Ninjas has led the way in PMS solutions over the last eleven years and has much to offer the technology sector of our industry. Through HFTP’s financial sector networking opportunities, Booking Ninjas aims to broaden our global scope and profitability, specifically in the global chain hotel markets. We have the revolutionary technology and tireless, brilliant minds capable of changing the entire industry. Partnering with HFTP puts Booking Ninjas in connection with the hospitality industry experts capable of accelerating our ascent. It is our honor and privilege to be included as HFTP members.</p>
+                                    <br/>
+                                    <h2>Digitally Transform your Property Today</h2>
+                                    <p>Let us create the best digital solution for your property by&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}" target="_blank">scheduling a call with us</apex:outputLink>! </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="partners-page__other">
+                    <div class="container">
+                        <h3>Learn More About Other Partners</h3>
+                        <p>Learn how Booking Ninjas help property businesses improve daily yield                    </p>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Salesforce)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/logocolor1.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Salesforce)}">Salesforce</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Twilio)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/twilio_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Twilio)}">Twilio</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_ChannelRush)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/channelrush_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_ChannelRush)}">ChannelRUSH</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_YieldPlanet)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/yieldPlanet.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_YieldPlanet)}">YieldPlanet</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Esign)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/eSign_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Esign)}">eSign Genie</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Latino)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/Latino_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Latino)}">Latino Hotel Association</apex:outputLink></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

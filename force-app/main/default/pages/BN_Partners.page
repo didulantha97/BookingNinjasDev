@@ -1,0 +1,220 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+            
+            <div class="partners-page">
+                <div class="partners-page__top">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <img alt="Booking Ninjas Partners - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/partners-Logos.png" class="adaptive-img" />
+                            </div>
+                            <div class="col-lg-6">
+                                <h1>Booking Ninjas Partners                            </h1>
+                                <p>We couldn’t do it without the support of our generous partners who aid in our quest to provide digital transformation to your property business. </p>
+                                <!-- <a href="#" class="button">Learn More</a> -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="container">
+                    <div class="partners-page__happy">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/partners-Happy_illustration.png" alt=""/>
+                            </div>
+                            <div class="col-lg-8">
+                                <p>Below is a list of great companies that we are happy to call proud partners of Booking Ninjas. Our partners give us unrelenting support and vice versa. In addition, our business partners give us the validation that our years of hard work is paying off. This is what helps make Booking Ninjas the most efficient PMS in the world today. We couldn’t do it without the support of our generous partners who aid in our quest to provide digital transformation to your property business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="partners-page__companies">
+                    <div class="container">
+                        <h2>Learn more about our relationship with each of these companies by scrolling through our interactive graphic below. </h2>
+                        <div class="partners-page__companies-section">
+                            <div class="partners-page__companies-item">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-lg-4">
+                                        <div class="partners-page__companies-left">
+                                            <div class="partners-page__companies-name">
+                                                <span>Salesforce</span>
+                                            </div>
+                                            <apex:outputLink value="{!URLFOR($Page.BN_Partners_Salesforce)}" styleClass="partners-page__companies-img" target="_blank">
+                                                <span><img alt="SALESFORCE - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/logocolor1.png"/></span>
+                                            </apex:outputLink>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <article>
+                                            <p>Our closest partner, Salesforce provides valuable technological solutions to businesses in every industry. Consolidates departments of your business operation into a single, easy-to-use platform.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partners-page__companies-item">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-lg-4 order-lg-1">
+                                        <div class="partners-page__companies-left">
+                                            <div class="partners-page__companies-name">
+                                                <span>HFTP</span>
+                                            </div>
+                                            <apex:outputLink value="{!URLFOR($Page.BN_Partners_HFTP)}" styleClass="partners-page__companies-img" target="_blank">
+                                                <span><img alt="HFTP - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/logocolor2.png"/></span>
+                                            </apex:outputLink>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <article>
+                                            <p>An international nonprofit dealing with the financial and technological aspects of the hospitality industry. Founders of the Pineapple Search website, a search engine.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partners-page__companies-item">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-lg-4">
+                                        <div class="partners-page__companies-left">
+                                            <div class="partners-page__companies-name">
+                                                <span>Twilio</span>
+                                            </div>
+                                            <apex:outputLink value="{!URLFOR($Page.BN_Partners_Twilio)}" styleClass="partners-page__companies-img" target="_blank">
+                                                <span><img alt="TWILIO - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/twilio_logo.png"/></span>
+                                            </apex:outputLink>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <article>
+                                            <p>This company has developed a communication software that utilizes APIs in order for you to engage with your customers on one platform through multiple mediums.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partners-page__companies-item">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-lg-4 order-lg-1">
+                                        <div class="partners-page__companies-left">
+                                            <div class="partners-page__companies-name">
+                                                <span>Channel Rush</span>
+                                            </div>
+                                            <apex:outputLink value="{!URLFOR($Page.BN_Partners_ChannelRush)}" styleClass="partners-page__companies-img" target="_blank">
+                                                <span><img alt="CHANNEL RUSH - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/channelrush_logo.png"/></span>
+                                            </apex:outputLink>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <article>
+                                            <p>A distribution channel software company based in Colorado, ChannelRUSH seeks to supply hotel managers with the ability to best maximize their channel listings and room rates from one source.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partners-page__companies-item">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-lg-4">
+                                        <div class="partners-page__companies-left">
+                                            <div class="partners-page__companies-name">
+                                                <span>Yieldplanet</span>
+                                            </div>
+                                            <apex:outputLink value="{!URLFOR($Page.BN_Partners_YieldPlanet)}" styleClass="partners-page__companies-img" target="_blank">
+                                                <span><img alt="YIELDPLANET - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/yieldPlanet.png"/></span>
+                                            </apex:outputLink>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <article>
+                                            <p>SaaS provider in the business of developing digital solutions for you and your company; they work primarily in the field of software delivery and licensing.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partners-page__companies-item">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-lg-4 order-lg-1">
+                                        <div class="partners-page__companies-left">
+                                            <div class="partners-page__companies-name">
+                                                <span>eSign Genie</span>
+                                            </div>
+                                            <apex:outputLink value="{!URLFOR($Page.BN_Partners_Esign)}" styleClass="partners-page__companies-img" target="_blank">
+                                                <span><img alt="ESIGN GENIE - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/eSign_logo.png"/></span>
+                                            </apex:outputLink>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <article>
+                                            <p>The most comprehensive electronic signature solution on the market. Makes it fast and easy for your business to sign and send documents.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partners-page__companies-item">
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-lg-4 ">
+                                        <div class="partners-page__companies-left">
+                                            <div class="partners-page__companies-name">
+                                                <span>Nabhood</span>
+                                            </div>
+                                            <apex:outputLink value="{!URLFOR($Page.BN_Partners_Nabhood)}" styleClass="partners-page__companies-img" target="_blank">
+                                                <span><img alt="NABHOOD - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/Nabhood_logo.png"/></span>
+                                            </apex:outputLink>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <article>
+                                            <p>Promoting the growth of African American hotel professionals with an emphasis on growing wealth in the community.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-page__pms">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure class="float_right">
+                                    <img alt="Booking Ninjas Partners - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/partners-illustration.png" class="adaptive-img" />
+                                </figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3>Partner With Our Property Management System</h3>
+                                    <p>If you’d like to become an official partner of Booking Ninjas, the best property management software on the market, simply schedule a brief intro call&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}" target="_blank">here</apex:outputLink>. Our support team will be in touch at your desired date and time to answer all your questions.</p>
+                                    <h4>Ready now? <br/>
+                                        Call <strong>(917) 600-2345</strong> to expedite the process.</h4>
+                                    <p>Our cloud-based Property Management Software is equipped with the game-changing Salesforce technology, making us the best system to&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_IndustrialRevolution)}" target="_blank">digitally transform</apex:outputLink> your property business to the 4th Industrial Revolution. Take a look at some of our&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" target="_blank">PMS features</apex:outputLink> including a streamlined Booking Engine, POS Integration Capabilities, and an All-in-One Availability Grid. 
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-page__pricing">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7">
+                                <p>Looking to implement a Property Management system to your hotel? We have packages starting at just $17/room/month! Inquire now. Depending on your situation, you may be eligible for bundle discounts.</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button" target="_blank">Pricing Info</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

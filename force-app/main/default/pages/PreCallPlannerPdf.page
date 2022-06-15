@@ -1,0 +1,225 @@
+<apex:page standardcontroller="Pre_Call_Planner__c" extensions="PreCallPlanningController" renderas="pdf" applybodytag="false" standardStylesheets="false">
+    <html>
+      <head>
+         <apex:stylesheet value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+         <apex:stylesheet value="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+         <apex:includeScript value="https://code.jquery.com/jquery-3.1.1.min.js"/>
+         <apex:includeScript value="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"/>
+         <style>
+            html, body { margin: 0px; padding: 0; }
+             .content { background-color:#f4f4f4; border:1px solid #b4b4b4; margin: 0 auto; width:1000px; padding:20px; height:auto; }
+             .clear { clear:both }
+         </style>
+      </head>
+      <body>
+         <apex:form >
+             <div class="content">
+                <h3>Pre-Call Planner Tool</h3>
+                <table border="1" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;">
+                   <tr>
+                      <td colspan="3">
+                         Selling Team Attendees: <strong>{!precall.CreatedBy.Name}</strong>
+                      </td>
+                   </tr>
+                   <tr>
+                      <td style="width: 33%">
+                         Account: <strong>{!account.Name}</strong>
+                      </td>
+                      <td style="width: 33%">
+                          Date of call:  <strong><apex:outputtext value="{0,date,dd MMM yyyy}"><apex:param value="{!precall.Date_of_Call__c}" /></apex:outputtext></strong>
+                      </td>
+                      <td style="width: 33%">
+                          KARE Designation: <strong>{!precall.KARE_Designation__c}</strong>
+                      </td>
+                   </tr>
+                </table>
+                <br />
+                <table border="1" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;">
+                    <tr>
+                        <th colspan="7"> Cast of Characters </th>
+                    </tr>
+                    <tr>
+                        <td> Client Contact </td>
+                        <td> Role </td>
+                        <td> Impact on Ths Deal </td>
+                        <td> Met Before? </td>
+                        <td> LinkedIn Connected? </td>
+                        <td> DISC Style </td>
+                        <td> Existing Relationship </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            {!precall.Client_Contact_1__r.Name}
+                        </td>
+                        <td> 
+                            {!precall.Role_1__c}
+                        </td>
+                        <td> 
+                            {!precall.Impact_On_This_Deal_1__c}
+                        </td>
+                        <td> 
+                            {!precall.Met_Before_1__c}
+                        </td>
+                        <td> 
+                            {!precall.LinkedIn_Connected_1__c}
+                        </td>
+                        <td> 
+                            {!precall.DISC_Style_1__c}
+                        </td>
+                        <td> 
+                            {!precall.Existing_Relationship_1__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            {!precall.Client_Contact_2__r.Name}
+                        </td>
+                        <td> 
+                            {!precall.Role_2__c}
+                        </td>
+                        <td> 
+                            {!precall.Impact_On_This_Deal_2__c}
+                        </td>
+                        <td> 
+                            {!precall.Met_Before_2__c}
+                        </td>
+                        <td> 
+                            {!precall.LinkedIn_Connected_2__c}
+                        </td>
+                        <td> 
+                            {!precall.DISC_Style_2__c}
+                        </td>
+                        <td> 
+                            {!precall.Existing_Relationship_2__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            {!precall.Client_Contact_3__r.Name}
+                        </td>
+                        <td> 
+                            {!precall.Role_3__c}
+                        </td>
+                        <td> 
+                            {!precall.Impact_On_This_Deal_3__c}
+                        </td>
+                        <td> 
+                            {!precall.Met_Before_3__c}
+                        </td>
+                        <td> 
+                            {!precall.LinkedIn_Connected_3__c}
+                        </td>
+                        <td> 
+                            {!precall.DISC_Style_3__c}
+                        </td>
+                        <td> 
+                            {!precall.Existing_Relationship_3__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            {!precall.Client_Contact_4__r.Name}
+                        </td>
+                        <td> 
+                            {!precall.Role_4__c}
+                        </td>
+                        <td> 
+                            {!precall.Impact_On_This_Deal_4__c}
+                        </td>
+                        <td> 
+                            {!precall.Met_Before_4__c}
+                        </td>
+                        <td> 
+                            {!precall.LinkedIn_Connected_4__c}
+                        </td>
+                        <td> 
+                            {!precall.DISC_Style_4__c}
+                        </td>
+                        <td> 
+                            {!precall.Existing_Relationship_4__c}
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table border="1" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;">
+                    <tr>
+                        <td colspan="2">
+                            <strong> Bonding and Rapport: </strong>
+                            <br/><br/>
+                            {!precall.Bonding_and_Rapport__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <strong> Planned Up-Front Contract: </strong>
+                            <br/><br/>
+                            {!precall.Planned_Up_Front_Contract__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <strong> 30 Seconds Commercial: </strong>
+                            <br/><br/>
+                            {!precall.X30_Seconds_Commercial__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <strong> Pain: </strong>
+                            <br/><br/>
+                            {!precall.Pain__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <strong> Budget: </strong>
+                            <br/><br/>
+                            {!precall.Budget__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <strong> Decision: </strong>
+                            <br/><br/>
+                            {!precall.Decision__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <strong> Post Sell: </strong>
+                            <br/><br/>
+                            {!precall.Post_Sell__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong> Questions the buyer may ask you: </strong>
+                            <br/><br/>
+                            {!precall.Questions_The_Buyer_May_Ask_You__c}
+                        </td>
+                        <td>    
+                            <strong> Your responses to these questions: </strong>
+                            <br/><br/>
+                            {!precall.Your_Responses_To_These_Questions__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <strong> Key questions to ask: </strong>
+                            <br/><br/>
+                            {!precall.Key_Questions_To_Ask__c}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <strong> Goals for call: </strong>
+                            <br/><br/>
+                            {!precall.Goals_For_Call__c}
+                        </td>
+                    </tr>
+                </table>
+             </div> 
+         </apex:form>
+      </body>
+   </html>
+</apex:page>

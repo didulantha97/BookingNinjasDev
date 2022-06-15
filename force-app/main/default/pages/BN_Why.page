@@ -1,0 +1,290 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="why-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="why-top__img"><img alt="Reasons to Choose BookingNinjas Property Management Software - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/why-top.png" class="adaptive-img" /></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Top Reasons to Choose Our Property Management Software</h1>
+                                <p>There are hundreds of commercial property management software systems in the world. So why choose Booking Ninjas? Our clients come to us from all over the globe because we are able to integrate more apps and other 3rd party services into your PMS than any other software due to our close partnership with Salesforce. This strengthens the power and capabilities of our PMS which is better than starting from scratch on a PMS that doesn’t have the same implementation ability. So simply put, our biggest strength is our unparalleled access to the best technology on the software market.                                 </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="why-page-content ">
+                <div class="container">
+                    <div class="why-page-content__item">
+                        <p>Technology has had a larger impact on society than any other industry in the world. It has changed the way we interact with each other and more importantly, how we do business. And the business that cares most about satisfying members of society? The hospitality industry. As we've explained in some of the <a href="https://www.youtube.com/bookingninjas" class="blue" target="_blank">previous videos</a> on our YouTube channel, property managers need to be open to the idea of fully integrating technology into their business operations in order for their company to adapt to the 4th Industrial Revolution. </p>
+                        <p>Here are some of the reasons why Booking Ninjas is considered the best property management software in the hospitality business. </p>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="why-page-content__img"><img alt="Mobility" class="float_right" src="https://d1b89zc79exfxt.cloudfront.net/img/why1.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Mobility</h2>
+                                    <p>As the baby boomer generation grows older, it has become paramount for any property management company to offer an efficient mobile interface to serve their customer base. Booking Ninjas’ property management software is the best way for hoteliers and other commercial property managers to consolidate the various aspects of running their business and optimize their company to better serve their clientele. 
+                                    </p>
+                                    <p> All you have to do is go to any public place and you'll see more than half of the people you encounter looking at their phones. For better or worse, mobile technology is here to stay and as a property manager, you need to have a business model that fits the time we're living in. Some neat features that PMS mobility offers include mobile keys, faster check-in, management flexibility, smart guest experiences, and many more. Having a strong mobile platform also allows you to reach more customers and increase direct bookings. 
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="why-page-content__img"><img alt="Einstein AI" src="https://d1b89zc79exfxt.cloudfront.net/img/why2.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Einstein AI</h2>
+                                    <p>Something that is becoming more frequent each year is the use of artificial intelligence in the hospitality industry. At some hotels, robots act as your concierge, delivering towels, toiletries, and even food and beverages directly to your room. A lot of people have a fear and paranoia of AI, but the truth is, it can be very beneficial to your property and the growth of your business. 
+    
+                                        </p>
+                                    <p>Case and point: Salesforce’s Einstein AI analytics. Einstein was built specifically for a Customer Relationship Management (CRM) system, so it is able to personalize its data and analytic reports to your property. Einstein AI can identify significant patterns and trends that you can act on. This helps you see the weaknesses and potential threats to your business. By utilizing Einstein AI to its fullest capabilities, there will be no excuse for you not to better your company moving forward. By having unlimited access to the proprietary, easy-to-use Salesforce Einstein AI, Booking Ninjas is the only PMS solution that delivers out of the box apps, point-and-click solutions, programmatic services,and machine learning to help better serve your staff and guests.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="why-page-content__img"><img alt="Salesforce Experience" class="float_right" src="https://d1b89zc79exfxt.cloudfront.net/img/why3.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Salesforce Experience</h2>
+                                    <p>In 2015, Booking Ninjas became the first and only property management business to become a Salesforce partner through its app innovation program, resulting in a large influx of new customers. They are offering to reach out a hand to those in the property business who’ve had trouble adapting to the technological revolution we’re living in now. With a firsthand perspective of how to drive business on a mobile platform, the Salesforce consultants at Booking Ninjas offer the advice property managers need to grow their business. 
+                                    </p>
+                                    <p>The consulting team at Booking Ninjas has gathered its intel from working alongside Salesforce developers and their executive team for the past several years. Since then, they’ve encouraged property managers to utilize their PMS on a cloud-based platform. By implementing the cloud, businesses can be assured that their company data is secure rather than risking storing it on a single hard drive. </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <p>With Booking Ninjas’ expertise, users will receive guided marketing training to better manage customer campaigns and relationships, sales and service cloud training, Einstein AI tutorials, and app integrations through the Salesforce AppExchange. App integrations provide numerous benefits to a company including more direct bookings, faster room service, and much more. 
+                        </p>
+                        <p>Click&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Consulting)}" target="_blank">here</apex:outputLink> to talk to us about a possible Salesforce consultation. Even if you don’t intend to integrate Salesforce with a PMS, our Salesforce experts can still help you get the most out of your Salesforce clouds. </p>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="why-page-content__img"><img alt="Software Updates" src="https://d1b89zc79exfxt.cloudfront.net/img/why4.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Software Updates</h2>
+                                    <p>Just like your iPhone, the Booking Ninjas PMS system also frequently updates their software so you never fall behind on the latest technological trends in the industry. New features are being developed all the time by Salesforce, and Booking Ninjas finds the best way to implement them to work directly with your property management software. 
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="why-page-content__img"><img alt="Deeper Customer Engagements" class="float_right" src="https://d1b89zc79exfxt.cloudfront.net/img/why5.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Deeper Customer Engagements</h2>
+                                    <p>Getting feedback from your guests has never been more convenient. Instead of scrambling through third party travel sites, because of Booking Ninjas’ capacity for integration, you can now see whenever anyone leaves a review of your property in an instant. </p>
+    
+                                    <p>   Furthermore, you can encourage direct feedback from your mobile-friendly cloud-based platform. More importantly, taking advantage of Salesforce Einstein AI, you can view in-depth customer preferences before they arrive at your hotel. The AI can also help improve your customer service by bringing up customer interaction history when a particular customer calls the property, so the agent has a better understanding of what call may pertain to. 
+                                        </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="why-page-content__img"><img alt="Access Control" src="https://d1b89zc79exfxt.cloudfront.net/img/why6.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <h2>Access Control</h2>
+                                    <p>Since all of your property’s information is on one system, property managers may be a tad insecure about other staff members using it. Luckily, we're one step ahead of you. With a Booking Ninjas PMS property, you can control which accounts have access to specific  data on the platform. Make newly promoted staff members feel extra empowered by giving them unlimited access to the software and limit the access capability of those you don’t feel are ready to view the information. 
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__section">
+                       <div class="row">
+                           <div class="col-lg-4">
+                                <div class="why-page-content__tag">
+                                    <div class="why-page-content__tag-top">
+                                        <figure><figcaption><img alt="UTILIZING THE CLOUD - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/why-ico1.png"/></figcaption></figure>
+                                        <h4>   UTILIZING  <br/>
+                                        THE CLOUD </h4>
+                                    </div>
+                                    <p>Booking Ninjas offers a cloud-based, mobile solution that can be accessed by any smartphone, tablet, or laptop from anywhere in the world. The Salesforce cloud is the most reliable place to store your most confidential company data. The last place you want to store your company data is on a single hard drive. If that drive is compromised, then you just lost the most important information possible which could potentially ruin your business. Cyber security is no joke. Keep your data safe with a cloud-based PMS. </p>
+                                </div>
+                           </div>
+                           <div class="col-lg-4">
+                                <div class="why-page-content__tag">
+                                    <div class="why-page-content__tag-top">
+                                    <figure><figcaption><img alt="EVENTS - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/why-ico2.png"/></figcaption></figure>
+                                    <h4>   EVENTS </h4>
+                                    </div>
+                                    <p>Does your hotel or resort book events? Included in our property management system is a fully integrated event ticketing system. The system creates custom barcodes for tickets to sell at your hotel or online. Save yourself time by simply scanning the barcode rather than searching through a lengthy guest list.        
+                                    </p>
+                                </div>
+                           </div>
+                           <div class="col-lg-4">
+                                <div class="why-page-content__tag">
+                                    <div class="why-page-content__tag-top">
+                                    <figure><figcaption><img alt="COMBINING MULTIPLE BOOKING ENGINES - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/why-ico3.png"/></figcaption></figure>
+                                    <h4>        COMBINING  <br/>
+                                        MULTIPLE BOOKING   <br/>
+                                     ENGINES </h4>
+                                    </div>
+                                    <p>If your property includes a spa, restaurant, or other facility, our all-in-one reservation management system allows you to manage bookings and reservations at any of your facilities from one singular, streamlined location. 
+                                    </p>
+                                </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="why-page-gray">
+                    <div class="container">
+                        <h2>SO TO RECAP….       <span>?</span>      WHY BOOKING NINJAS?</h2>
+                        <div class="solution-page-integration__section">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Reason to Choose BookingNinjas Property Management Software  - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/why-recap1.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p> Seamless integration with a variety of apps, websites and 3rd party API services, increasing the likelihood of direct bookings from your site</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Reason to Choose BookingNinjas Property Management Software  - icon - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/why-recap2.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>Top of the line technology to adapt to the 4th Industrial Revolution</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Reason to Choose BookingNinjas Property Management Software  - icon - 5" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon5.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>Unparalleled experience working with Salesforce, the world’s leading CRM. First and only property management company to be an official Salesforce partner. 
+                                            </p>    
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Reason to Choose BookingNinjas Property Management Software  - icon - 7" src="https://d1b89zc79exfxt.cloudfront.net/img/why-recap5.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>Constant and consistent software updates, making sure you have the best technology at your disposal.  </p>    
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Reason to Choose BookingNinjas Property Management Software  - icon - 9" src="https://d1b89zc79exfxt.cloudfront.net/img/why-recap7.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>Control what members of your staff have access to specific features of your property. 
+                                            </p>
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Reason to Choose BookingNinjas Property Management Software  - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon2.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>Easy-to-use mobile platform allowing you to manage your property from anywhere in the world and be more accessible to the younger generation </p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Reason to Choose BookingNinjas Property Management Software  - icon - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/why-recap3.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>The Einstein AI difference. Real-time data and analytics to help identify weaknesses of your business. AI powered suggestions on how to fix them.  </p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Reason to Choose BookingNinjas Property Management Software  - icon - 6" src="https://d1b89zc79exfxt.cloudfront.net/img/why-recap4.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>Consulting services to get the most out of your Salesforce cloud (even if you’re not a PMS user) </p>    
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Reason to Choose BookingNinjas Property Management Software  - icon - 8" src="https://d1b89zc79exfxt.cloudfront.net/img/why-recap6.png"/></figure>
+                                        </div>
+                                        <section>
+                                            
+                                            <p>Form deeper customer relationships with AI-generated customer preferences. Know what the call is about before even answering the phone.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Reason to Choose BookingNinjas Property Management Software  - icon - 10" src="https://d1b89zc79exfxt.cloudfront.net/img/why-recap8.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>By being a cloud-based software, Booking Ninjas allows you to store your confidential data in the safest, most reliable platform. </p>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-page-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-lg-1">
+                                <img alt="Reasons to Choose BookingNinjas Property Management Software - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/why-bottom.png"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>WHAT IS THE MOST VALUABLE PURCHASE A PROPERTY MANAGER CAN MAKE?                            </h3>
+                                <h2>The answer is simple: A Modernized Property Management Software!</h2>
+                                <p> 
+                                    Having a PMS implemented property is becoming more and more vital every year. With the rapid advancement of technology, hotel/property owners feel the urge to connect effectively to their guests on a frequent basis. Streamline the guest experience and you’ll be amazed as your customer retention rate skyrockets! We live in a mobile world and your business must be accessible to the younger generation. With a cloud-based property management system installed, all your property data can be controlled from one device, meaning you can manage your property from anywhere in the world.
+                                    
+                                    </p>
+                            </div>
+                        </div>
+                        <p>With over a decade in the property management software business and our deep Salesforce partnership, Booking Ninjas has the most advanced, knowledgeable, customizable PMS system on the market today. Don’t believe us? Try a demo today and let us show you why industry experts refer to us as the best property management software in the world! </p>
+    
+                        <p>To subscribe to our email list and be notified of any new blogs, tips, feature updates, and videos, click here, or scroll to the bottom of any page on the Booking Ninjas website and enter your email where it says to do so. </p>  
+                            
+                        <p>To subscribe to our YouTube channel for weekly informative property management videos, <a href="https://www.youtube.com/channel/UCOrcTzmQnmY7DG2nzwfa8zw" target="_blank">click here. </a>
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+         </apex:define>
+    </apex:composition>
+
+</apex:page>

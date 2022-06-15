@@ -1,0 +1,88 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+
+     <!-- Template -->
+    <apex:composition template="BN_Portal_Template">
+        <!-- Define content -->
+        <apex:define name="bn_portal_content">
+        
+            
+            <div class="col-lg-9  col-md-8">
+                <div class="portal__main">
+                    <!-- <nav class="portal__video-years">
+                        <ul>
+                            <li><a href="#">2019</a></li>
+                            <li><a href="#" class="active">2020</a></li>
+                            <li><a href="#">2021</a></li>
+                            <li><a href="#">2022</a></li>
+                        </ul>
+                    </nav>
+                    <div class="portal__video-filter">
+                       <div class="row">
+                           <div class="col-lg-5 col-sm-6">
+                                <strong>Filter by:</strong>
+                                <select>
+                                    <option>Date</option>
+                                    <option>Date</option>
+                                    <option>Date</option>
+                                </select>
+                           </div>
+                           <div class="col-lg-4  col-sm-6">
+                                <select>
+                                    <option>Video length</option>
+                                    <option>Date</option>
+                                    <option>Date</option>
+                                </select>
+                           </div>
+                       </div>
+                    </div> -->
+                    <div class="portal__video">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="https://youtu.be/yQpdTN5ocks" class="portal__video-item" data-fancybox="fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_Case_Study.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="https://youtu.be/yQpdTN5ocks" class="portal__video-item" data-fancybox="fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_Case_Study.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="https://youtu.be/yQpdTN5ocks" class="portal__video-item" data-fancybox="fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_Case_Study.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="https://youtu.be/yQpdTN5ocks" class="portal__video-item" data-fancybox="fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_Case_Study.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="https://youtu.be/yQpdTN5ocks" class="portal__video-item" data-fancybox="fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_Case_Study.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="https://youtu.be/yQpdTN5ocks" class="portal__video-item" data-fancybox="fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_Case_Study.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="https://youtu.be/yQpdTN5ocks" class="portal__video-item" data-fancybox="fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_Case_Study.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="https://youtu.be/yQpdTN5ocks" class="portal__video-item" data-fancybox="fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_Case_Study.jpg" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

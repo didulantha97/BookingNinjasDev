@@ -1,0 +1,527 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+        
+            <!-- top -->
+            <div class="about-page-top about-page-top-noline">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img alt="Capabilities of Booking Ninjas Product - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-bnr.png"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                    <h1>Capabilities of Booking Ninjas Product</h1>
+                                    <p>Booking Ninjas is the property management solution (PMS) of the future. It’s an all-in-one platform packed with essential components such as booking and point-of-sale systems, but also has features like artificial intelligence (AI) and cloud and mobile accessibility for today’s users. Backed with Salesforce cloud technology, it is sure to make life and business easier for property managers and hoteliers.
+                                    </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="dotted-bg">
+                <div class="glance-today">
+                    <div class="container">
+                        <div class="glance__title"><span>Today’s digital users want</span></div> 
+                        <div class="glance-today__timeline">
+                            <figure>
+                                <span><img alt="Flag - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico6.png"/></span>
+                                <figcaption>A reliable platform</figcaption>
+                            </figure>
+                            <figure>
+                                <span><img alt="Flag - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico6.png"/></span>
+                                <figcaption>A trustworthy experience</figcaption>
+                            </figure>
+                            <figure>
+                                <span><img alt="Flag - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico6.png"/></span>
+                                <figcaption>Instant operability</figcaption>
+                            </figure>
+                            <figure>
+                                <span><img alt="Flag - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico6.png"/></span>
+                                <figcaption>A clear 
+                                    interface</figcaption>
+                            </figure>
+                            <figure>
+                                <span><img alt="Flag - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico6.png"/></span>
+                                <figcaption>Accessibility 
+                                    on any device</figcaption>
+                            </figure>
+                            <figure>
+                                <span><img alt="Flag - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico6.png"/></span>
+                                <figcaption>Frictionless functionality</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="glance-capabilities">
+                    <div class="container">
+                        <img alt="Capabilities of Booking Ninjas Product - 2" class="glance-capabilities__img" src="https://d1b89zc79exfxt.cloudfront.net/img/product_capabilities.png"/>
+                        <div  class="glance-capabilities__list" >
+                            <div class="glance__title"><span>Product capabilities</span></div> 
+                            <ul>
+                                <li>Property Management 
+                                    System (PMS)</li>
+                                <li>Booking Engine</li>
+                                <li>Digital booking</li>
+                                <li>Phone system integrations</li>
+                                <li>Financial integrations  </li>
+                                <li>Housekeeping management</li>
+                                <li>Ticketing systems  </li>
+                                <li>Point of sale(PoS)
+                                    systems</li>
+                                <li>Einstein Analytics 
+                                    (business intelligence/ 
+                                    Artificial intelligence)</li>
+                                <li>Channel Manager</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="glance-features">
+                    <div class="container">
+                        <div class="glance__title">Other innovative features:</div>
+                        <div class="glance-features__row">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <figure class="glance-features__item">
+                                        <span><img alt="AI Capabilities - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico1.png"/></span>
+                                        <figcaption>AI capabilities</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <figure class="glance-features__item">
+                                        <span><img alt="A Salesforce Cloud Foundation - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico2.png"/></span>
+                                        <figcaption>A Salesforce cloud foundation</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <figure class="glance-features__item">
+                                        <span><img alt="Over 50 Integrations - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico3.png"/></span>
+                                        <figcaption>Over 50 integrations</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <figure class="glance-features__item">
+                                        <span><img alt="Multiple Customization Options - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico4.png"/></span>
+                                        <figcaption>Multiple customization options</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <figure class="glance-features__item">
+                                        <span><img alt="Automatic Updates - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico5.png"/></span>
+                                        <figcaption>Automatic updates</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <figure class="glance-features__item">
+                                        <span><img alt="Constant Upgrades - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico6.png"/></span>
+                                        <figcaption>Constant upgrades</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glance-segments">
+                    <div class="container">
+                        <div class="glance__title"><span>Customer segments:                </span></div> 
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="glance-segments__item">
+                                    <figure>
+                                        <span><img alt="Hotels Segment - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico7.png"/></span>
+                                        <figcaption>Hotels:</figcaption>
+                                    </figure>
+                                    <article>
+                                        Manage everything from reservations to housekeeping.
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="glance-segments__item">
+                                    <figure>
+                                        <span><img alt="Restaurants Segment - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico8.png"/></span>
+                                        <figcaption>Restaurants:</figcaption>
+                                    </figure>
+                                    <article>
+                                        Oversee the guest experience and operations.
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="glance-segments__item">
+                                    <figure>
+                                        <span><img alt="Property Managers Segment - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico9.png"/></span>
+                                        <figcaption>Property managers:</figcaption>
+                                    </figure>
+                                    <article>
+                                        Service tenants and process invoices and payments.
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="glance-segments__item">
+                                    <figure>
+                                        <span><img alt="Country Clubs Segment - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico10.png"/></span>
+                                        <figcaption>Country clubs:</figcaption>
+                                    </figure>
+                                    <article>
+                                        Keep facilities running smoothly, from staff operations to customer satisfaction.
+    
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="glance-segments__item">
+                                    <figure>
+                                        <span><img alt="Coworking Segment - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico11.png"/></span>
+                                        <figcaption>Coworking:</figcaption>
+                                    </figure>
+                                    <article>
+                                        Cater to businesses of all sizes to deliver excellent workplace experiences.
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="glance-segments__item">
+                                    <figure>
+                                        <span><img alt="Self-Storage Segment - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico12.png"/></span>
+                                        <figcaption>Self-storage:</figcaption>
+                                    </figure>
+                                    <article>
+                                        Keep amenities up-to-date and track reservations.
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="glance-segments__item">
+                                    <figure>
+                                        <span><img alt="Student Housing Segment - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico13.png"/></span>
+                                        <figcaption>Student housing:</figcaption>
+                                    </figure>
+                                    <article>
+                                        Ensure facilities are clean and maintained well with no damage. 
+    
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="glance-segments__item">
+                                    <figure>
+                                        <span><img alt="Parking Facilities Segment - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico14.png"/></span>
+                                        <figcaption>Parking facilities:</figcaption>
+                                    </figure>
+                                    <article>
+                                        Manage enforcement, payment collection, validation, and guest passes.
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glance-business glance-gray">
+                    <div class="container">
+                        <div class="glance__title"><span>Business Challenges:</span></div> 
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="glance-business__item">
+                                    <figure>
+                                        <figcaption><img alt="Business Challenges - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico15.png"/></figcaption>
+                                    </figure>
+                                    <section>
+                                        As the number of digital channels multiply, so do customer expectations. They want personalized, instant, and efficient experiences.
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="glance-business__item">
+                                    <figure>
+                                        <figcaption><img alt="Business Challenges - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico16.png"/></figcaption>
+                                    </figure>
+                                    <section>
+                                        Legacy systems can’t scale with business growth and consumer demands.
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="glance-business__item">
+                                    <figure>
+                                        <figcaption><img alt="Business Challenges - icon - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico17.png"/></figcaption>
+                                    </figure>
+                                    <section>
+                                        Software solutions need to be compatible across multiple devices, like iOs and Android phones.
+    
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="glance-business__item">
+                                    <figure>
+                                        <figcaption><img alt="Business Challenges - icon - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico18.png"/></figcaption>
+                                    </figure>
+                                    <section>
+                                        As the number of digital channels multiply, so do customer expectations. They want personalized, instant, and efficient experiences.
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glance-how-help">
+                    <div class="container">
+                        <div class="row align-items-end">
+                            <div class="col-lg-3">
+                                <div class="glance-how-help__left">
+                                    <h4>How 
+                                        <strong>we</strong>
+                                        help</h4>
+                                    <img alt="How We Help - icon - 1" class="glance-how-help__img" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico19.png"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <section>
+                                    <p> Booking Ninjas is an all-in-one solution that streamlines property management and hospitality operations. We take the guesswork out of tasks like analyzing guest data, managing finances, and improving guest and tenant experiences with our intuitive technology.</p>
+                                    <h5>What we listen for:</h5>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="glance-how-help__ico"><img alt="How We Help - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico20.png"/></div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <ul>
+                                                <li>We need a new PMS       </li>
+                                                <li> Property management software   </li>                   
+                                                <li> Hotel management software</li>
+                                                <li> We want to get out of our legacy platform</li>
+                                                <li>Cloud based property management solution</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glance-key">
+                    <div class="container">
+                        <div class="glance__title"><span>Key Sales Plays</span></div> 
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="glance-key__item">
+                                    <div class="glance-key__title"><span>Target Industries:</span></div>
+                                    <p>A need to access property information in any location, 
+                                        at any time. </p>
+                                    <div class="glance-key__title"><span>Key Buyer:</span></div>
+                                    <p> Sales, Operations, Management</p>
+                                    <div class="glance-key__title"><span>Target Industries:</span></div>
+                                    <p>Coworking and hospitality spaces, commercial real estate.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="glance-key__item">
+                                    <div class="glance-key__title"><span>Target Industries:</span></div>
+                                    <p>Managing diverse business needs from a centralized application.</p>
+                                    <div class="glance-key__title"><span>Key Buyer:</span></div>
+                                    <p>Management, Operations, Sales</p>
+                                    <div class="glance-key__title"><span>Target Industries:</span></div>
+                                    <p>Hotels, resorts
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="glance-key__item">
+                                    <div class="glance-key__title"><span>Target Industries:</span></div>
+                                    <p>Needing customization and easy reporting.</p>
+                                    <div class="glance-key__title"><span>Key Buyer:</span></div>
+                                    <p>Management, Operation, Sales</p>
+                                    <div class="glance-key__title"><span>Target Industries:</span></div>
+                                    <p>Hotels, Resorts, Student housing, Storage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glance-story">
+                    <div class="container">
+                        <div class="glance__title"><span>Customer success story:</span></div> 
+                        <div class="glance-story__section">
+                            <div class="row no-gutters">
+                                <div class="col-lg-2 col-md-3">
+                                    <figure class="glance-story__img">
+                                        <figcaption><img alt="CTY Books - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico21.png"/></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-10 col-md-9">
+                                    <div class="glance-story__text">
+                                        <a href="https://www.worldwideproperties.com/" target="_blank" rel="noindex" style="text-decoration:none;">
+                                            <figure>
+                                                <span><i><img alt="Worldwide Properties - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/wp.png"/></i></span>
+                                                <figcaption>Worldwide Properties</figcaption>
+                                            </figure>
+                                        </a>
+                                        <p>Worldwide Properties group in Miami was struggling with their old legacy property management system (PMS) and point of sale (PoS) system. Their technology had limited customization options and reporting was frustrating. Overall, they felt this contributed to a poor guest experience. By turning to the Booking Ninjas platform, they were able to:
+                                        </p>
+                                        <ul>
+                                            <li>Run their business entirely on a secure cloud service</li>
+                                            <li>Deliver a modernized and improved booking experiences</li>
+                                            <li>Be in control and have more time to grow their business without any scalability worries. </li>
+                                            <li>Be more efficient: use staff time which improves the bottom line</li>
+                                            <li>Better visibility of their data to deliver better experiences</li>
+                                            <li>Reduce customer churn and abandonment rates</li>
+                                            <li>Generate a higher return on investment and increase revenue </li>
+                                        </ul>
+                                        <h2>The results?</h2>
+                                        <p>They could access instant reporting and improve their guest service processes. Working with a more efficient system helped them service their guests better and more quickly, and deliver outstanding guest experiences.</p>
+                                        <div class="glance-story__ico">
+                                            <i><img alt="Result - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico22.png"/></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glance-story__section">
+                            <div class="row no-gutters">
+                                <div class="col-lg-2 col-md-3">
+                                    <figure class="glance-story__img">
+                                        <figcaption><img alt="CTY Books - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico21.png"/></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-10 col-md-9">
+                                    <div class="glance-story__text">
+                                        <a href="https://www.industriousoffice.com/" target="_blank" rel="noindex" style="text-decoration:none;">
+                                            <figure>
+                                                <span><i><img alt="Industrious - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/industrious-logo.png"/></i></span>
+                                                <figcaption>Industrious</figcaption>
+                                            </figure>
+                                        </a>
+                                        <p>Industrious, a leading US-based co-working space, had a variety of needs to fulfill. Industrious, with a company size of over 200, provides coworking spaces and manages events nationwide, which means managing several properties all at once. They also wanted the ability to access their property information in any location at any time of the day.     Industrious turned to Booking Ninjas to help them incorporate digital solutions. Booking Ninjas’ platform had cloud capabilities, which was a perfect way to access several properties at once. Industrious could also integrate several applications from Salesforce AppExchange, the leading provider of business tools. Thanks to partnering with Booking Ninjas, Industrious could
+                                          </p>
+                                        <ul>
+                                            <li>Easily manage bookings and event</li>
+                                            <li>Enable them to have full control of invoicing, as well as reservation management and payment</li>
+                                            <li>Have greater control of their contract/eSign management processes</li>
+                                            <li>Use the Booking Engine</li>
+                                        </ul>
+                                        <h2>The results?</h2>
+                                        <p>A Additionally, Industrious was able to access cutting-edge data analytics and forecasting methods thanks to Salesforce’s Einstein AI feature in the Booking Ninjas PMS. Industrious is making plans for the near future to include it as part of their business solutions structure. By working with Booking Ninjas, Industrious was able to deliver a great working experience to their guests and tenant.</p>
+                                        <div class="glance-story__ico">
+                                            <i><img alt="Result - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico22.png"/></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glance-story__section">
+                            <div class="row no-gutters">
+                                <div class="col-lg-2 col-md-3">
+                                    <figure class="glance-story__img">
+                                        <figcaption><img alt="CTY Books - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico21.png"/></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-10 col-md-9">
+                                    <div class="glance-story__text">
+                                        <a href="https://www.ctybooks.nl/" target="_blank" rel="noindex" style="text-decoration:none;">
+                                            <figure>
+                                                <span><i><img alt="CTY Books - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/cty.png"/></i></span>
+                                                <figcaption>CTY Books</figcaption>
+                                            </figure>
+                                        </a>
+                                        <p>CTY Books were looking to manage all of their operations digitally to get tasks done more quickly and efficiently. They also wanted to run their businesses run from a centralized application, and so they turned to the cloud-based Booking Ninjas. The results of the partnership were:</p>
+                                        <ul>
+                                            <li>More QR code locks feature</li>
+                                            <li>Improved staff and guest communication, via Twili</li>
+                                            <li>Integration with Uber for guest transportation</li>
+                                            <li>Integrate a Channel Manager for centralized control of room availabilit</li>
+                                            <li>An advanced Booking Ninjas</li>
+                                            <li>A digital portal for agents, guests, staff, and vendors</li>
+                                            <li>POS integrations for seamless payments and transaction recording</li>
+                                        </ul>
+                                        <h2>The results?</h2>
+                                        <p>With the help of the Booking Ninjas PMS, CTY Books will continue improving its  digital advantage and achieve tremendous growth</p>
+                                        <div class="glance-story__ico">
+                                            <i><img alt="Result - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico22.png"/></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glance-business">
+                    <div class="container">
+                        <div class="glance__title"><span>Our core values</span></div> 
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="glance-business__item">
+                                    <figure>
+                                        <figcaption><img alt="Trust - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico23.png"/></figcaption>
+                                    </figure>
+                                    <section>
+                                        <h4>Trust</h4>
+                                        We work tirelessly for the success of both our client and ourselves and don’t settle for anything less.
+    
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="glance-business__item">
+                                    <figure>
+                                        <figcaption><img alt="Equality - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico24.png"/></figcaption>
+                                    </figure>
+                                    <section>
+                                        <h4>Equality</h4>
+                                        We deliver unmatched attention to detail and the highest quality service for all of our partners.
+    
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="glance-business__item">
+                                    <figure>
+                                        <figcaption><img alt="Innovation - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico25.png"/></figcaption>
+                                    </figure>
+                                    <section>
+                                        <h4>Innovation</h4>
+                                        We use two of the latest technological capabilities on the market today, Artificial Intelligence and cloud computing.
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="glance-business__item">
+                                    <figure>
+                                        <figcaption><img alt="Success - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/glance-ico26.png"/></figcaption>
+                                    </figure>
+                                    <section>
+                                        <h4>Success: </h4>
+                                        We set the bar for success high and work hard to maintain that level of achievement. 
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

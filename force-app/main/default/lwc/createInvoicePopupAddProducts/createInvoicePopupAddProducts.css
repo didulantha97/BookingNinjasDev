@@ -1,0 +1,38 @@
+/**
+ * Styles for the createInvoicePopupAddProducts component
+ * @author Alex Tsytsiura
+ * @date July 10, 2020
+ * @link https://trello.com/c/YOC3AXrD/186-opportunity-pbo-design
+ */
+
+.checkbox-input-wrapper {
+    width: 35pt;
+}
+
+div.slds-text-heading_medium {
+    color: #4d5465;
+    font-weight: bold;
+}
+
+.slds-wrap {
+    width: 100%;
+}
+
+label.slds-form-element__label {
+    color: #5b616f;
+    font-weight: bold;
+    width: calc(100% - 35pt);
+}
+
+.info-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 90pt;
+    background: #fafafa;
+    border: 1px solid #eee;
+}
+
+.info-section .info-field {
+    border-bottom: 1px solid #d9d9d9;
+}

@@ -1,0 +1,200 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/about-img1.png" alt="Booking Ninjas Story"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                    <h1>Aprende sobre nuestro viaje para crear el sistema de gestión de propiedades (PMS)</h1>
+                                    <p>Iniciamos operaciones en 2009, operando en pequeñas casas de estadía y pequeños hoteles. Hemos realizado un riguroso estudio de la industria inmobiliaria y hemos creado un conjunto de soluciones que no para de crecer, lo llamamos: Booking Ninjas PMS, en asociación con Salesforce.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content">
+                <div class="about-page-timeline">
+                    <div class="container">
+                        <h2 class="about-page-content__title">
+                            <span>Nuestro viaje en resumen</span>
+                        </h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <section>
+                                    <p>Alrededor del año 2009, un equipo de trabajo se involucró en la administración de varias propiedades y constantemente tenía que repetir pequeñas tareas tediosas. Como resultado, recurrieron a los sistemas de gestión de propiedades para aliviar un poco la carga de trabajo, pero se llevaron una decepción. <img alt="Nuestro viaje - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico1.png"/></p>
+                                    <div class="about-page-timeline__circle"></div>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-timeline__date">
+                                    <span>2009</span>
+                                </div>
+                                <article>
+                                    <p>Los sistemas eran bastante caros, y no lograron realizar el trabajo. En todo caso, añadieron más carga de trabajo a la que ya tenían. El equipo decidió entonces crear su propio sistema. Aunque era un proyecto encomiable, aún quedaba mucho por hacer. El sistema no lograba cumplir con las expectativas y demandas siempre cambiantes que tiene el mundo de la gestión digital. Y entonces descubrieron Salesforce. <img src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico2.png" alt="About Bookingninjas Property Management System"/> </p>
+                                    <a class="video__img wow zoomIn fancybox" data-fancybox="fancybox" href="https://www.youtube.com/watch?v=zpTEZ1MTH5k" >
+                                        <img alt="Video on Bookingninjas Property Management System" src="https://d1b89zc79exfxt.cloudfront.net/img/about-video.png"/>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col-lg-6">
+                                <section>
+                                    <p>Salesforce tenía todo lo necesario para mantenerse al día con las tendencias digitales y podía desempeñar funciones que no estaban disponibles para los sistemas genéricos de administración de bienes. Después de un año de mucho aprendizaje y trabajo, la plataforma se trasladó al núcleo de Salesforce para integrar su fuerza. <img alt="Our Journey - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico3.png"/></p>
+                                    <div class="about-page-timeline__circle"></div>
+                                </section>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-timeline__date">
+                                    <span>2012</span>
+                                </div>
+                                <article>
+                                    <p>Al utilizar el proyecto terminado, el equipo pensó que sería mejor dejar que otros hoteles y negocios mobiliarios se beneficiaran de este. El producto tenía que ser comercial y necesitaban un socio con autoridad permanente. Al ver que estaban de acuerdo con los valores y principios centrales de Salesforce, se reunieron con los ejecutivos y se asociaron.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-timeline__date">
+                                    <span>2016</span>
+                                </div>
+                                <article>
+                                    <p>Después de una considerable cantidad de trabajo, más horas de investigación y análisis y con una <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank">asociación con Salesforce</a>, en 2016, nació una solución - el sistema de gestión de propiedades de Booking Ninjas.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-timeline__date">
+                                    <span>2020+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-page-content__center">
+                    <div class="container">
+                        <div class="about-page-content__title"><span>No hay signos de ralentización en el 2020+</span></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="about-page-content__center-bubble">
+                                    <article>Nos pusimos al frente del mercado. Sentimos lo que sienten los hoteles y los negocios inmobiliarios, dándonos una experiencia de primera mano de lo que se necesita y lo que no. Ahora tenemos un sistema eficiente que es adecuado para las organizaciones de todos los tamaños con un resultado positivo garantizado.</article>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Hoy en día, la aplicación cuenta con un gran número de características y funciones y está alojada en la nube, para garantizar la seguridad y facilitar nuevas actualizaciones y mejoras, según así lo dicte el futuro. Nuestras características y ventajas son producto de hacer muchas preguntas a nuestros clientes ideales y escuchando las necesidades del mercado.</p>
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <img alt="Our Journey - icon - 3" class="about-page-content__center-ico" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico4.png"/>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <p>Nuestra asociación con Salesforce, la única de este tipo en la industria inmobiliaria, ha abierto una nueva ventana de oportunidades para las empresas. Tenemos muchos clientes que utilizan nuestra aplicación empresarial para su gestión, incluyendo pero no limitado a hoteles, compañías, inmobiliarias, agencias de alquiler y propietarios, todos los cuales se han visto positivamente afectados por la solución.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="text_center"><img alt="Our Journey - icon - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico5.png"/></div>
+                                <div class="text_center">
+                                    <p>Mantenemos nuestra visión, que consiste en crear una nueva forma de trabajar y capacitar a nuestros clientes para que superen sus propias expectativas de negocio, aumentando el uso eficiente del tiempo, impulsando los ingresos y mejorando la experiencia de los clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-page-content__person">
+                    <div class="container">
+                        <div class="about-page-content__title">La pasión detrás de Booking Ninjas</div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="about-page-content__person-img">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/david.png" alt="About Bookingninjas Property Management System"/>
+                                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="david-m-harroch-booking-ninjas"><a target="_blank" class="LI-simple-link" href='https://www.linkedin.com/in/david-m-harroch-booking-ninjas?trk=profile-badge' style="margin-left:40px;">David M. Harroch</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="about-page-content__person-text">
+                                    <article>
+                                        <p>Como fundador y director general (CEO) del primer sistema de gestión de propiedades (PMS) del mundo basado en Salesforce, David Harroch ha estado ayudando a las empresas a gestionar sus propiedades con las mejores herramientas digitales de la industria hotelera e inmobiliaria y le encanta encontrar formas de mejorarlas.</p>
+                                    </article>
+                                    <article>
+                                        <div class="about-page-content__person-ico"><img alt="About Bookingninjas Property Management System - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico9.png"/></div>
+                                        <p>En 2009, fundó una empresa mientras completaba su MBA en Tel Aviv (Israel), para ayudar a dar a los viajeros una mejor experiencia de alojamiento. Mientras dirigía un pequeño hotel en Tel Aviv, la forma en que se comercializaba y el servicio hacia que los huéspedes volvieran, lo que finalmente hizo crecer la cartera y dio lugar a la concepción de Booking Ninjas.</p>
+                                    </article>
+                                    <article>
+                                        <div class="about-page-content__person-ico"><img alt="About Bookingninjas Property Management System - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico10.png"/></div>
+                                        <p>David disfruta del deporte y de ayudar a otras personas; también es un gran defensor del modelo 1-1-1- y del concepto de Marc Benioff de mejorar el estado del mundo a través de los negocios.</p>
+                                    </article>
+                                    <article>
+                                        <div class="about-page-content__person-ico"><img alt="About Bookingninjas Property Management System - icon - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico11.png"/></div>
+                                        <p>Después de considerar los sistemas de Gestión de Propiedades existentes, Booking Ninjas fue concebido para ayudar a las organizaciones a automatizar sus procesos, algo que los hoteles y las empresas inmobiliarias siempre han querido. David tenía un objetivo: construir un sistema el cual le permitiera a los propietarios de los hoteles experimentar un control de gestión de calidad sobre cada aspecto del edificio, al mismo tiempo que aumentan el compromiso digital e integrarán herramientas que facilitaran el trabajo, todo esto en una única plataforma y tech-friendly para los usuarios. Y así nació Booking Ninjas.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-page-content__dreams">
+                    <div class="container">
+                        <div class="about-page-content__title">Grandes sueños, grandes sociedades, grandes pasos.</div>
+                        <div class="about-page-content__dreams-line">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <figure>
+                                        <div class="about-page-content__dreams-ico"><img alt="About Bookingninjas Property Management System - icon - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico6.png"/></div>
+                                        <figcaption>
+                                            Hemos recorrido un largo camino desde 2010. Desde la gestión de pequeños hoteles y pequeñas casas para vacacionar, hasta la provisión de soluciones de gestión de propiedades de alto nivel a corporaciones inmobiliarias de todo el mundo, el equipo de booking Ninjas ha continuado con su visión de futuro para mejorar toda la industria de la hostelería.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure>
+                                        <div class="about-page-content__dreams-ico about-page-content__dreams-ico-people"><img alt="About Bookingninjas Property Management System - icon - 5" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico7.png"/></div>
+                                        <figcaption>
+                                            Hemos conformado el mejor equipo de profesionales con un objetivo en común. Nuestro compromiso ha atraído a los mejores socios posibles, que se dedican a dar forma al futuro de los negocios en la era digital.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure>
+                                        <div class="about-page-content__dreams-ico about-page-content__dreams-ico-cloud"><img alt="About Bookingninjas Property Management System - icon - 6" src="https://d1b89zc79exfxt.cloudfront.net/img/about-ico8.png"/></div>
+                                        <figcaption>
+                                            Brindamos por una era en la que integramos la IA para la administración de propiedades y proporcionamos el mejor compromiso digital que jamás se haya experimentado.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-page-content__big-title">
+                    <div class="container">
+                    <div class="about-page-content__big-title-item">
+                        <strong>Y ES TODO PARA TI.</strong>
+                    </div>
+                    <article class="text_center">En el corazón de nuestra compañía, queremos ver que cada hotel adopte el sistema de gestión adecuado para ellos. Aunque esto suene obvio, es sorprendente la gran cantidad de hoteles y propiedades que manejan sus negocios de manera incorrecta. Somos optimistas sobre el cambio de esta tendencia en poco tiempo.</article>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

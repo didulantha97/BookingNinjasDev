@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Date__c</fullName>
+    <description>No need to set this, it&apos;s only for email integrator to determine when is the email campaign date</description>
+    <externalId>false</externalId>
+    <label>Campaign Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

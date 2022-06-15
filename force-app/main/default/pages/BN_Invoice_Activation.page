@@ -1,0 +1,808 @@
+<apex:page controller="BN_InvoiceController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false">
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="title" content="{!title}" />
+        <meta name="description" content="" />
+        <meta name="robots" content="noindex" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="p:domain_verify" content="2053f77bff71fd1688a932c54e2e4ecc" />
+        <title>{!title}</title>
+
+        <link rel="icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/favicon.ico" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/fontawesome.css" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/slick.css" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/bootstrap-grid.css" />
+        <link href="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/css/screen.css" rel="stylesheet" media="screen" />
+        <link href="https://www.bookingninjas.com/{!page}" rel="canonical" />
+
+        <meta property="og:title" content="{!title}" />
+        <meta property="og:site_name" content="Booking Ninjas" />
+        <meta property="og:url" content="https://www.bookingninjas.com/{!page}" />
+        <meta property="og:description" content="{!description}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="{!ogImage}" />
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-PQ4V7BZ');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/jquery.js"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+    </head>
+
+    <body class="invoice-page">
+        <div class="wrapper">
+            <!--header-->
+            <header class="invoice-header">
+                <div class="container">
+                    <div class="row flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between">
+                        <div class="col-auto">
+                            <a class="logo" href="/"><img alt="Booking Ninjas Logo" src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/booking-ninjas.png" /></a>
+                        </div>
+                        <div class="col-auto">
+                            <p class="invoice-header__company-name">Booking Ninjas</p>
+                            <div class="row no-gutters flex-nowrap">
+                                <div class="col-auto col-gutter">
+                                    <p>Website:</p>
+                                    <p>Phone:</p>
+                                    <p>Email:</p>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="https://www.bookingninjas.com/" class="header__site-link" target="_blank">www.bookingninjas.com</a>
+                                    <a href="tel:+19176002345" class="header__tel-link">+1 917 600 2345</a>
+                                    <a href="mailto:billing@bookingninjas.com" target="_blank">billing@bookingninjas.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--end-header-->
+            <!--main-->
+            <main class="main">
+                <div class="container">
+                    <h1 class="activation-title">
+                        Purchase order #{!item.quoteNumber}
+                    </h1>
+                    <div class="activation-info-block">
+                        <p class="activation-info-block__title">Welcome to Booking Ninjas, {!item.contactFirstName}!</p>
+                        <p>You’re about to redefine your property business and give both you and your customers an entirely new experience.</p>
+                        <p>Now you can better manage your bookings, easily collect payments and see the growth of your business through a robust reporting and analytics tool, all in one place.</p>
+                        <p>We are available 24/7 to help you with anything. Please check your email for further guides.</p>
+                        <p>Have any questions? We are happy to help at <a href="mailto:ceo@bookingninjas.com">ceo@bookingninjas.com</a></p>
+                    </div>
+                    <apex:form id="activationForm">
+                        <!-- Cards -->
+                        <div class="row">
+                            <!-- Plan Card -->
+                            <div class="col-lg-6">
+                                <div class="activation-card">
+                                    <div class="activation-card__header">
+                                        <span>Your plan</span>
+                                    </div>
+                                    <div class="activation-card__body">
+                                        <p class="activation-card__plan">
+                                            <span>{!item.productName}</span> ({!item.productSize} units)
+                                        </p>
+                                        <p class="activation-card__plan-price">
+                                            <apex:outputText value="{0, number, $##,##0.00}">
+                                                <apex:param value="{!item.subsPayment}" />
+                                            </apex:outputText> <span>{!item.billingPeriod}</span>
+                                        </p>
+                                        <div class="row justify-content-center">
+                                            <div class="col-sm-auto">
+                                                <ul>
+                                                    <apex:repeat value="{!item.productFeatures}" var="feature">
+                                                        <li>{!feature}</li>
+                                                    </apex:repeat>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Payment method Card -->
+                            <div class="col-lg-6">
+                                <div class="activation-card">
+                                    <div class="activation-card__header">
+                                        <span>Payment method</span>
+                                    </div>
+                                    <div class="activation-card__body">
+                                        <div class="payment-wrap">
+                                            <div class="payment-method">
+                                                <p class="payment-method__title">Payment method</p>
+                                                <div class="radio__item">
+                                                    Credit card
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm payment-info__item">
+                                                    <p class="payment-info__label">Card Number</p>
+                                                    <p class="payment-info__value">**** **** **** {!item.cardNumber}</p>
+                                                </div>
+                                                <div class="col-sm payment-info__item">
+                                                    <p class="payment-info__label">Expiration Date</p>
+                                                    <p class="payment-info__value">{!item.cardExpiredDate}</p>
+                                                </div>
+                                                <div class="col-12 payment-info__item">
+                                                    <p class="payment-info__label">Card Holder Name</p>
+                                                    <p class="payment-info__value">{!item.cardName}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Payment tab -->
+                                        <div class="payment-tab">
+                                            <div class="payment-tab__nav">
+                                                <div class="payment-tab__nav-item active">Single payment</div>
+                                                <div class="payment-tab__nav-item">Split payment</div>
+                                            </div>
+                                            <!-- Single payment content -->
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="payment-tab__content single-payment-content active">
+                                                        <p>
+                                                            <span class="price-red">
+                                                                <apex:outputText value="{0, number, $##,##0.00}">
+                                                                    <apex:param value="{!item.subsPayment}" />
+                                                                </apex:outputText>
+                                                            </span>
+                                                            <span style="{!IF(item.subsFeeDiscountable, '', 'display:none;')}">
+                                                                instead of&nbsp;<apex:outputText value="{0, number, $##,##0.00}"><apex:param value="{!item.subsPaymentOriginal}" /></apex:outputText>
+                                                            </span>
+                                                        </p>
+                                                        <p>
+                                                            <small>
+                                                                Billed {!item.billingPeriod}
+                                                                <br/>
+                                                                1st payment on <apex:outputText value="{0, date, MMMM d',' yyyy}"><apex:param value="{!item.dueDate}" /></apex:outputText>
+                                                            </small>
+                                                        </p>
+                                                        <p class="total-amount">
+                                                            Total: 
+                                                            <b>
+                                                                <apex:outputText value="{0, number, $##,##0.00}">
+                                                                    <apex:param value="{!item.subsPayment}" />
+                                                                </apex:outputText>
+                                                            </b>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="payment-tab__content split-payment-content">
+                                                        <div class="radio__item">
+                                                            <input type="radio" id="three-payments" class="radio__input" name="split-payment" value="" checked="" disabled=""/>
+                                                            <label for="three-payments">3 payments <b>by&nbsp;<apex:outputText value="{0, number, $##,##0.00}"><apex:param value="{!item.subsPaymentThree}" /></apex:outputText></b></label>
+                                                        </div>
+                                                        <div class="radio__item">
+                                                            <input type="radio" id="six-payments" class="radio__input" name="split-payment" value="" disabled=""/>
+                                                            <label for="six-payments">6 payments <b>by&nbsp;<apex:outputText value="{0, number, $##,##0.00}"><apex:param value="{!item.subsPaymentSix}" /></apex:outputText></b></label>
+                                                        </div>
+                                                        <div class="radio__item">
+                                                            <input type="radio" id="twelve-payments" class="radio__input" name="split-payment" value="" disabled=""/>
+                                                            <label for="twelve-payments">12 payments <b>by&nbsp;<apex:outputText value="{0, number, $##,##0.00}"><apex:param value="{!item.subsPaymentTwelve}" /></apex:outputText></b></label>
+                                                        </div>
+                                                        <small>Billed on <apex:outputText value="{0, date, MMMM d',' yyyy}"><apex:param value="{!item.dueDate}" /></apex:outputText></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Terms and Conditions -->
+                        <div class="activation-terms">
+                            <div class="terms-checkbox">
+                                <label>
+                                    <input type="checkbox" required="true" />
+                                    <p>
+                                    I have read and agree to <a href="#SFDC-Service-Agreement" class="fancybox">SFDC Service Agreement</a> and <a href="#Booking-Ninjas-Subscription-and-License-Agreement" class="fancybox">Booking Ninjas Subscription and License Agreement</a>
+                                    </p>
+                                </label>
+                            </div>
+                            <div class="terms-checkbox">
+                                <label>
+                                    <input type="checkbox" required="true" />
+                                    <p>I have read and agree to <a href="#Purchase-Order" class="fancybox">Purchase Order No. #{!item.quoteNumber}</a></p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="activation-section">
+                            <apex:commandButton value="Activate" action="{!activateQuote}" styleClass="activation-btn" />
+                        </div>
+                    </apex:form>
+                </div>
+
+                <!-- Modal window -->
+                <!-- SFDC Service Agreement Modal -->
+                <div class="modal terms-modal" id="SFDC-Service-Agreement">
+                    <div class="terms-modal__header">
+                        <p>SFDC Service Agreement</p>
+                    </div>
+                    <article class="terms-modal__content">
+                        <div class="row align-items-center justify-content-between">
+                            <!-- <div class="col-12 col-sm-auto text_center order-sm-1 button-section">
+                                <a href="#" class="button-orange button-orange__small">Download PDF version</a>
+                            </div> -->
+                            <div class="col-auto">
+                                <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/ninja-logo.png"></img>
+                            </div>
+                        </div>
+                        <h2>SFDC Service Agreement</h2>
+                        
+                        <p><strong>&ldquo;AppExchange&rdquo;</strong> means the online directory of on-demand applications that work with the SFDC Service, located at <a href="http://www.appexchange.com">http://www.appexchange.com</a> or at any successor websites.</p>				
+                        <br/>
+                        <p><strong>&ldquo;Platform&rdquo;</strong>means the online, Web-based platform service provided by SFDC to Reseller in connection with Reseller&rsquo;s provision of the Reseller Application to You.</p>				
+                        <br/>
+                        <p><strong>&ldquo;Reseller&rdquo;</strong> means Corporate Rentals Inc. dba Booking Ninjas.</p>				
+                        <br/>
+                        <p><strong>&ldquo;Reseller Application&rdquo;</strong> means Booking Ninjas.</p>				
+                        <br/>
+                        <p><strong>&ldquo;SFDC Service&rdquo;</strong> means the online, Web-based service generally made available to the public via http://www.salesforce.com and/or other designated websites, including associated offline components but excluding Third-Party Applications. For purposes of this SFDC Service Agreement, the SFDC Service does not include the Platform.</p>				
+                        <br/>
+                        <p><strong>&ldquo;SFDC&rdquo;</strong> means salesforce.com.</p>				
+                        <br/>
+                        <p><strong>&ldquo;Third-Party Applications&rdquo;</strong> means online, Web-based applications and offline software products that are provided by third parties and are identified as third-party applications, including but not limited to those listed on the AppExchange and the Reseller Application.</p>
+                        <br/>
+                        <p><strong>&ldquo;Users&rdquo;</strong>means Your employees, representatives, consultants, contractors, agents and third parties with whom You conduct business who are authorized to use the Platform subject to the terms of this SFDC Service Agreement as a result of a subscription to the Reseller Application having been purchased for such User, and have been supplied user identifications and passwords by You (or by SFDC or Reseller at Your request).</p>				
+                        <br/>
+                        <p><strong>&ldquo;You&rdquo;</strong> and <strong>&ldquo;Your&rdquo;</strong> means the customer entity which has contracted to purchase subscriptions to use the Reseller Application subject to the conditions of this SFDC Service Agreement, together with any other terms required by Reseller.</p>				
+                        <br/>
+                        <p><strong>&ldquo;Your Data&rdquo;</strong> means all electronic data or information submitted by You as and to the extent it resides in the Platform or SFDC Service.</p>				
+                        <br/>
+                        <ol class="list__decimal">
+                            <li><strong>Use of Platform.</strong></li>
+                                <ol class="list__latin">
+                                    <li>
+                                        Each User subscription to the Reseller Application shall entitle one User to use the Platform via the Reseller Application, subject to the terms of this SFDC Service Agreement, together with any other terms required by Reseller. User subscriptions cannot be shared or used by more than one User (but may be reassigned from time to time to new Users who are replacing former Users who have terminated employment with You or otherwise changed job status or function and no longer require use of the Platform). For clarity, Your subscription to use the Platform hereunder does not include a subscription to use the SFDC Service generally or to use it in connection with applications other than the Reseller Application. If You wish to use the SFDC Service or any of its functionalities or services other than those included in the Reseller Application, or to create or use additional custom objects beyond those which appear in the Reseller Application in the form that it has been provided to You by Your Reseller, visit www.salesforce.com to contract directly with SFDC for such services. In the event Your access to the Reseller Application provides You with access to the SFDC Service generally or access to any Platform or SFDC Service functionality within it that is in excess of the functionality described in the Reseller Application&rsquo;s user guide, and You have not separately subscribed under a written contract with SFDC for such access, then You agree to not access or use such functionality, and You agree that Your use of such functionality, or Your creation or use of additional custom objects in the Reseller Application beyond that which appears in the Reseller Application in the form that it has been provided to You by your Reseller, would be a material breach of this Agreement.
+                                    </li>
+                                    <li>
+                                        If Your subscription to use the Platform hereunder includes Salesforce Mobile, You understand that prior to purchasing Salesforce Mobile, You should refer to the Mobile Device list located at <a href="http://www.salesforce.com/mobile/devices/">http://www.salesforce.com/mobile/devices/</a> for information on mobile devices that are supported by <a href="http://salesforce.com">SFDC</a>. You agree that <a href="http://salesforce.com">SFDC</a> will not provide any refunds, credits or other compensation or remedies in connection with Your purchase of Salesforce Mobile for any mobile devices that are not supported by <a href="http://salesforce.com">SFDC</a>. Third party mobile device, operating system and network connectivity providers may, at any time, cease distribution of, interrupt, deinstall and/or prevent use of Salesforce Mobile clients on supported mobile devices without entitling You to any refund, credit or other compensation or remedies.
+                                    </li>
+                                    <li>
+                                        Notwithstanding any access You may have to the Platform or the SFDC Service via the Reseller Application, Reseller is the sole provider of the Reseller Application and You are entering into a contractual relationship solely with Reseller. In the event that Reseller ceases operations or otherwise ceases or fails to provide the Reseller Application, SFDC has no obligation to provide the Reseller Application or to refund You any fees paid by You to Reseller.
+                                    </li>
+                                    <li>
+                                        You (i) are responsible for all activities occurring under Your User accounts; (ii) are responsible for the content of all Your Data; (iii) shall use commercially reasonable efforts to prevent unauthorized access to, or use of, the Platform and the SFDC Service, and shall notify Reseller or SFDC promptly of any such unauthorized use You become aware of; and (iv) shall comply with all applicable local, state, federal and foreign laws and regulations in using the Platform.
+                                    </li>
+                                    <li>
+                                        You shall use the Platform and the SFDC Service solely for Your internal business purposes and shall not: (i) license, sublicense, sell, resell, rent, lease, transfer, assign, distribute, time share or otherwise commercially exploit or make the Platform or the SFDC Service available to any third party, other than to Users or as otherwise contemplated by this SFDC Service Agreement; (ii) send spam or otherwise duplicative or unsolicited messages in violation of applicable laws; (iii) send or store infringing, obscene, threatening, libelous, or otherwise unlawful or tortious material, including material that is harmful to children or violates third party privacy rights; (iv) send or store viruses, worms, time bombs, Trojan horses and other harmful or malicious code, files, scripts, agents or programs; (v) interfere with or disrupt the integrity or performance of the Platform or the SFDC Service or the data contained therein; or (vi) attempt to gain unauthorized access to the Platform or the SFDC Service or its related systems or networks.
+                                    </li>
+                                    <li>
+                                        You shall not (i) modify, copy or create derivative works based on the Platform or the SFDC Service; (ii) frame or mirror any content forming part of the Platform or the SFDC Service, other than on Your own intranets or otherwise for Your own internal business purposes; (iii) reverse engineer the Platform or the SFDC Service; or (iv) access the Platform or the SFDC Service in order to (a) build a competitive product or service, or (b) copy any ideas, features, functions or graphics of the Platform or the SFDC Service.
+                                    </li>
+                                </ol>
+                            <li>
+                                <strong class="text_underline">Third-Party Providers.</strong> Reseller and other third-party providers, some of which may be listed on pages within SFDC&rsquo;s website and including providers of Third-Party Applications, offer products and services related to the Platform, the SFDC Service, and/or the Reseller Application, including implementation, customization and other consulting services related to customers&rsquo; use of the Platform and/or the SFDC Service, and applications (both offline and online) that interoperate with the Platform and/or the SFDC Service such as by exchanging data with the Platform and/or the SFDC Service or by offering additional functionality within the user interface of the Platform and/or the SFDC Service through use of the Platform and/or SFDC Service's application programming interface. SFDC does not warrant any such third-party providers or any of their products or services, including but not limited to the Reseller Application or any other product or service of Reseller, whether or not such products or services are designated by SFDC as &ldquo;certified,&rdquo; &ldquo;validated&rdquo; or otherwise. Any exchange of data or other interaction between You and a third-party provider, including but not limited to the Reseller Application, and any purchase by You of any product or service offered by such third-party provider, including but not limited to the Reseller Application, is solely between You and such third-party provider. In addition, from time to time, certain additional functionality (not defined as part of the Platform or SFDC Service) may be offered by SFDC or Reseller to You, for an additional fee, on a pass-through or OEM basis pursuant to terms specified by the licensor and agreed to by You in connection with a separate purchase by You of such additional functionality. Your use of any such additional functionality shall be governed by such terms, which shall prevail in the event of any inconsistency with the terms of this SFDC Service Agreement.
+                            </li>
+                            <li>
+                                <strong class="text_underline">Integration with Third-Party Applications.</strong> If You install or enable Third-Party Applications for use with the Platform or SFDC Service, You acknowledge that SFDC may allow providers of those Third-Party Applications to access Your Data as required for the interoperation of such Third Party Applications with the Platform or SFDC Service.  SFDC shall not be responsible for any disclosure, modification or deletion of Your Data resulting from any such access by Third-Party Application providers. In addition, the Platform and SFDC Service may contain features designed to interoperate with Third-Party Applications (e.g., Google, Facebook or Twitter applications). To use such features, You may be required to obtain access to such Third-Party Applications from their providers. If the provider of any such Third-Party Application ceases to make the Third-Party Application available for interoperation with the corresponding Platform or SFDC Service features on reasonable terms, SFDC may cease providing such Platform or SFDC Service features without entitling You to any refund, credit, or other compensation.
+                            </li>
+                            <li>
+                                <strong class="text_underline">Access by Reseller.</strong>To the extent Reseller serves as the administrator of the Reseller Application for You, You acknowledge that your use of the Reseller Application may be monitored by Reseller and Reseller may access Your Data submitted to the SFDC Service or Reseller Application. By agreeing to this SFDC Service Agreement, you are consenting to such monitoring and access by Reseller.
+                            </li>
+                            <li>
+                                <strong class="text_underline">Return of Your Data.</strong> You have thirty (30) days from the date of termination your Reseller Application subscription term in which to request a copy of Your Data, which will be made available to You in a .csv format. Any modifications to such Your Data made by the Reseller Application outside of the Platform (if any) will not be captured in Your Data as returned and the return of any such modified data shall be the responsibility of Reseller.
+                            </li>
+                            <li>
+                                <strong class="text_underline">Proprietary Rights. </strong>Subject to the limited rights expressly granted hereunder, SFDC reserves all rights, title and interest in and to the Platform and the SFDC Service, including all related intellectual property rights. No rights are granted to You hereunder other than as expressly set forth in this SFDC Service Agreement. The Platform and the SFDC Service is deemed SFDC confidential information, and You will not use it or disclose it to any third party except as permitted in this SFDC Service Agreement.
+                            </li>
+                            <li>
+                                <strong class="text_underline">Compelled Disclosure.</strong> If either You or SFDC is compelled by law to disclose confidential information of the other party, it shall provide the other party with prior notice of such compelled disclosure (to the extent legally permitted) and reasonable assistance, at the other party&rsquo;s cost, if the other party wishes to contest the disclosure.
+                            </li>
+                            <li><strong class="text_underline">Suggestions.</strong> You agree that SFDC shall have a royalty-free, worldwide, transferable, sublicenseable, irrevocable, perpetual license to use or incorporate into any SFDC products or services any suggestions, enhancement requests, recommendations or other feedback provided by You or Your Users relating to the operation of the Platform and/or the SFDC Service.
+                            </li>
+                            <li>
+                                <strong class="text_underline">Suspension and Termination.</strong>  Your use of the Platform and the SFDC Service may be immediately terminated and/or suspended upon notice due to (a) a breach of the terms of this SFDC Service Agreement by You or any User, (b) the termination or expiration of Reseller&rsquo;s agreement with SFDC pursuant to which Reseller is providing the Platform as part of the Reseller Application to You, and/or (c) a breach by Reseller of its obligations to SFDC with respect to the subscriptions it is providing to You in connection with this SFDC Service Agreement.  If You use the Reseller Application in combination with a SFDC Service Org other than the Org provisioned solely for use with the Reseller Application (a &ldquo;Shared org&rdquo;) You acknowledge and understand that (i) access to such Org, including the Reseller Application used in connection with such Org, may be suspended due to Your non-payment to SFDC or other breach of Your Agreement with SFDC, and (ii) in the event Your relationship with SFDC is terminated as a result of non-payment or other material breach of Your agreement with SFDC, Your Platform subscriptions would also be terminated. In no case will any such termination or suspension give rise to any liability of SFDC to You for a refund or other compensation.
+                            </li>
+                            <li>
+                                <strong class="text_underline">Subscriptions Non-Cancelable.</strong> Subscriptions for the Platform are non-cancelable during a subscription term, unless otherwise specified in Your agreement with Reseller.
+                            </li>
+                            <li>
+                                <strong class="text_underline">No Warranty.</strong> SFDC MAKES NO WARRANTIES OF ANY KIND, INCLUDING BUT NOT LIMITED TO WITH RESPECT TO THE PLATFORM, THE SFDC SERVICE, AND/OR THE RESELLER APPLICATION, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE.  TO THE MAXIMUM EXTENT PERMITTED BY LAW, SFDC DISCLAIMS ALL CONDITIONS, REPRESENTATIONS AND WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, WITH RESPECT TO THE PLATFORM, THE SFDC SERVICE, AND/OR THE RESELLER APPLICATION, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT OF THIRD PARTY RIGHTS.
+                            </li>
+                            <li>
+                                <strong class="text_underline">No Liability.</strong> IN NO EVENT SHALL SFDC HAVE ANY LIABILITY TO YOU OR ANY USER FOR ANY DAMAGES WHATSOEVER, INCLUDING BUT NOT LIMITED TO DIRECT, INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES, OR DAMAGES BASED ON LOST PROFITS, HOWEVER CAUSED AND, WHETHER IN CONTRACT, TORT OR UNDER ANY OTHER THEORY OF LIABILITY, WHETHER OR NOT YOU HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+                            </li>
+                            <li>
+                                <strong class="text_underline">Further Contact. </strong>SFDC maycontact You regarding new Platform and SFDC Service features and offerings.
+                            </li>
+                            <li>
+                                <strong class="text_underline">Third Party Beneficiary.</strong> SFDC shall be a third party beneficiary to the agreement between You and Reseller solely as it relates to this SFDC Service Agreement.
+                            </li>
+                            <li>
+                                <strong class="text_underline">Applicability.</strong> The terms of this SFDC Service Agreement govern the Platform provided to You by Reseller in connection with Reseller&rsquo;s provision of the Reseller Application to You. For clarity, the terms of this SFDC Service Agreement do not supersede any agreement between SFDC and You with respect to SFDC Services purchased by You directly from SFDC.
+                            </li>
+                        </ol>
+
+                        <!-- <p>Read and Agreed to By:</p>				 -->
+                        <!-- <div align="left">
+                            <table>
+                                <colgroup>
+                                    <col width="456" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td><br /><br /><br />
+                                            <p>BY: ________________________________</p>									<p>Name:  Mark Melief</p>									<p>Title:   President</p>									<p>Date:</p>								</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> -->
+
+                    </article>
+                </div>
+                <!-- Booking Ninjas Subscription and License Agreement Modal -->
+                <div class="modal terms-modal" id="Booking-Ninjas-Subscription-and-License-Agreement">
+                    <div class="terms-modal__header">
+                        <p>Booking Ninjas Subscription and License Agreement</p>
+                    </div>
+                    <article class="terms-modal__content">
+                        <div class="row align-items-center justify-content-between">
+                            <!-- <div class="col-12 col-sm-auto text_center order-sm-1 button-section">
+                                <a href="#" class="button-orange button-orange__small">Download PDF version</a>
+                            </div> -->
+                            <div class="col-auto">
+                                <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/ninja-logo.png"></img>
+                            </div>
+                        </div>
+                        <h2>BOOKING NINJAS SUBSCRIPTION AND LICENSE AGREEMENT</h2>
+                        <p>This Subscription and License Agreement (the <strong>&ldquo;Agreement&rdquo;</strong>), dated as of <apex:outputText value="{0, date, MMMM d',' yyyy}"><apex:param value="{!item.effectiveDate}" /></apex:outputText> (the <strong>&ldquo;Effective Date&rdquo;</strong>), is entered into by and between Corporate Rentals Inc. d/b/a Booking Ninjas, a New York corporation (<strong>&ldquo;Licensor&rdquo;</strong> or <strong>&ldquo;We&rdquo;</strong>), and {!item.contactAccountName} (the <strong>&ldquo;Customer&rdquo;</strong> or <strong>&ldquo;you&rdquo;</strong>) (Licensor and Customer may be referred to individually as a <strong>&ldquo;Party&rdquo;</strong>, and collectively as the <strong>&ldquo;Parties&rdquo;</strong>).</p>
+                        <br />
+                        <p>This Agreement consists of (a) Subscription and License Agreement, (b) Purchase Order No.{!item.quoteNumber} (the <strong>&ldquo;Purchase Order&rdquo;</strong>) and its Addendum A, and (c) the SFDC Service Agreement.</p>
+                        <br />
+                        <p>This Agreement governs your use of the Booking Ninjas Comprehensive Property Management Application (the <strong>&ldquo;Application&rdquo;</strong>). By using, downloading, or subscribing to use the Application, you agree to be bound by this Agreement. If you refuse to accept any of the terms and conditions herein, you will not be able to use the Application. Capitalized terms will have the meaning set forth herein, or, if not defined, as set forth in the SFDC Service Agreement.</p>
+                        <br /><br />
+                        <p><strong>1. Subscription.</strong> The Application is only available to individuals or organizations who have purchased an annual subscription from the Licensor (<strong>&ldquo;Subscription&rdquo;</strong>). A Subscription includes permission for one user to use the Application, subject to the terms of this Agreement. The Customer may purchase multiple Subscriptions to enable multiple users under its control to use the Application (each, an <strong>&ldquo;Authorized User&rdquo;</strong>) subject to the terms of this Agreement. The following terms apply to a Subscription:</p>
+                        <br />
+                        <ol class="list__latin">
+                            <li><span class="text_underline">Term of Subscription.</span> The initial term of a Subscription is for a period of one year, commencing on the date specified in the Purchase Order, unless terminated earlier pursuant to this Agreement (the <strong>&ldquo;Initial Term&rdquo;</strong>). The Subscription Term will automatically renew for additional successive one-year terms (each a <strong>&ldquo;Renewal Term&rdquo;</strong>) unless Customer terminates or cancels its Subscription at least sixty (60) days prior to the end of the Initial Term or the Renewal Term, as the case may be, by contacting Licensor&rsquo;s customer service team at <a href="mailto:admin@bookingninjas.com">admin@bookingninjas.com</a>, or following Licensor&rsquo;s other written instructions for cancellation (the Initial Term and any Renewal Term(s) will be collectively referred to as the <strong>&ldquo;Term&rdquo;</strong>).
+                        </li>
+                            <li><span class="text_underline">Subscription Fee.</span> Customer will pay the fees set forth in the Purchase Order and any applicable add-on purchase orders that are agreed to during the Term, including without limitation the recurring annual subscription fee, and other charges and fees incurred in order to access and use the Application (such as increasing the number of Authorized Users) (the <strong>&ldquo;Subscription Fee&rdquo;</strong>). The Subscription Fee for a Renewal Term will be the same as the prior term, unless otherwise stated on the Purchase Order or if Licensor notifies Customer of a change to the Subscription Fee at least sixty (60) days before the commencement of the Renewal Term. All fees charged hereunder, including Subscription Fees, are final and non-refundable.
+                        </li>
+                            <li><span class="text_underline">Payment of Subscription Fee.</span> The Subscription Fee will be paid with a valid credit card or wire transfer of immediately available funds. Licensor will automatically charge Customer&rsquo;s credit card or debit Customer&rsquo;s account at the start of the Initial Term and at the start of each Renewal Term. If Customer and Licensor have agreed to installment payments, Customer will be charged or debited at the rate stated in the Purchase Order. If Licensor is unable to collect the Subscription Fee, Licensor may suspend or terminate Customer&rsquo;s Subscription and access to the Application without notice.
+                        </li>
+                            <li><span class="text_underline">Subscription Data.</span> Customer agrees to provide Licensor with certain information related to billing, the Application, the Subscription, or any Authorized User(s), including the names and contract information of all Authorized Users, and the Customer&rsquo;s name, address, telephone number, email address, and up-to-date billing information (<strong>&ldquo;Subscription Data&rdquo;</strong>). Customer represents and warrants that all Subscription is true, accurate, and complete. Customer understands and acknowledges that Licensor may share its Subscription Data with third parties for the purpose of verifying the information and collecting the Subscription Fee. Customer agrees to maintain and update the Subscription Data, as well as any other information provided to Licensor. Without limiting any other provision of this Agreement, if Customer provides Licensor with information that is untrue, inaccurate, or incomplete, or Licensor has reasonable grounds to suspect that such is the case, in addition to any rights Licensor may have under applicable law, Licensor may suspend or terminate Customer&rsquo;s Subscription and access to the Application without notice.
+                        </li>
+                            <li><span class="text_underline">Taxes and Ancillary Fees.</span> In addition to the Subscription Fee, Customer is responsible for all charges and fees associated with connecting to and using the Application, including without limitation all internet service provider fees, computer equipment, sales taxes, and any other fees necessary to access and use the Application.
+                        </li>
+                        </ol>
+                        <br />
+                        <p><strong>2. License to Application.</strong> </p>
+                        <br />
+                        <ol class="list__latin">
+                            <li><span class="text_underline">License and Ownership of Intellectual Property.</span> Subject to and conditioned on Customer&rsquo;s payment of the Subscription Fee and compliance with the terms and conditions of this Agreement, Licensor hereby grants to Customer a non-exclusive, non-sublicensable, and non-transferable (except in compliance with <strong>Section 14</strong>) license during the Term to use the Application and the services provided by the Application, and any upgrades to the Application that replace or supplement the Application, in each case solely for the Customer&rsquo;s internal business purposes and up to the number of Authorized Users set forth in the Purchase Order (<strong>&ldquo;License&rdquo;</strong>). The License does not include Customizations (as that term is defined in Section 3(C)). Customer acknowledges that Licensor is, and will remain, the sole and exclusive owner of all right, title, and interest in and to any documents, specifications, data, know-how, methodologies, software, proprietary content, and all intellectual property rights (including all copyright, patent rights, trademark rights, and trade secret rights) in and to the Application and all other materials provided to the Customer by the Licensor in connection with the License (<strong>&ldquo;Licensor Materials&rdquo;</strong>). Customer may only use the Application on a device that it owns or controls. Customer agrees and understands that it has no right or license to: (i) rent, lease, lend, sell, redistribute or sublicense the Application or Subscription, or distribute or make the Application or Subscription available over a network where it could be used by multiple devices at the same time, (ii) copy the Application, decompile, reverse engineer, disassemble, attempt to derive the source code of, modify, or create derivative works based in whole or in part on the Application, or any updates to the Application, (iii) send spam or otherwise duplicative or unsolicited messages in violation of applicable laws; (iv) send or store infringing, obscene, threatening, libelous, or otherwise unlawful or tortious material, including material that is harmful to children or violates third party privacy rights; (v) send or store viruses, worms, time bombs, Trojan horses and other harmful or malicious code, files, scripts, agents or programs; (vi) interfere with or disrupt the integrity or performance of the Application or the data contained therein; (vii) attempt to gain unauthorized access to the Application; (viii) frame or mirror any content forming part of the Application, other than for Customer&rsquo;s own internal business purposes; or (ix) access the Application in order to (a) build a competitive product or service, or (b) copy any ideas, features, functions or graphics of the Application (collectively, <strong>&ldquo;Prohibited Activities&rdquo;</strong>). If Customer engages in any Prohibited Activities, Licensor may terminate this Agreement immediately, including suspending or terminating Customer&rsquo;s access to the Application without notice, and seek all rights and remedies available to it under applicable law.
+                        </li>
+                            <li><span class="text_underline">Customer Responsibilities.</span> Customer understands and agrees that it: (i) is responsible for all activities of its Authorized Users; (ii) is responsible for the content of all of its data; (iii) will use commercially reasonable efforts to prevent unauthorized access to, or use of, the Application, and will notify Licensor promptly in writing of any unauthorized access or use that it becomes aware of; and (iv) will comply with all applicable local, state, federal and foreign laws and regulations in its use of the Application.
+                        </li>
+                            <li><span class="text_underline">Reservation of Rights.</span> Licensor reserves all rights not expressly granted to Customer in this Agreement. Except for the limited rights and licenses expressly granted under this Agreement, nothing in this Agreement grants, by implication, waiver, estoppel, or otherwise, to Customer or any third party any intellectual property rights or other right, title, or interest in or to the Application.
+                        </li>
+                        </ol>
+                        <br />
+                        <p><strong>3. Admin Subscriptions/Plus Objects and Apps/Customization.</strong></p>
+                        <br />
+                        <ol class="list__latin">
+                            <li><span class="text_underline">Administrative Users.</span> Customer understands and agrees that it must purchase an administrative user subscription to configure and administer the SFDC Platform in support of its use of the Application (<strong>&ldquo;Admin User Subscription&rdquo;</strong>), as further set forth in the Purchase Order. Customer must purchase additional Admin User Subscriptions for every fifty (50) Authorized Users. Customer understands and agrees that the Admin User Subscription will not be used to access, distribute, or use any CRM functionality, such as campaigns, leads, opportunities, cases, solutions and forecasts.
+                        </li>
+                            <li><span class="text_underline">Custom Objects and Additional Apps.</span> Customer may create or commission from Licensor up to five (5) custom objects within the Application (each of which is subject to Licensor&rsquo;s written approval) for use solely in connection with the Application. In addition, the Subscription includes permission for Customer to install and use up to five (5) additional applications listed on the AppExchange, subject to any terms applicable to the use of such applications and subject to <strong>Section 4</strong>.
+                        </li>
+                            <li><span class="text_underline">Customization of Application and Grant of License.</span> Licensor may develop or customize the Application for Customer, subject to an additional fee, as set forth in the Purchase Order (<strong>&ldquo;Customizations&rdquo;</strong>). Except as otherwise provided in the Purchase Order, Licensor will own all right, title, and interest in and to all materials, developments, and results arising in the course of, or resulting from, Customizations, including all intellectual property rights therein; provided, however, Licensor grants Customer an exclusive, non-sublicensable, and non-transferable license during the Term to use the Customizations in connection with the Application (<strong>&ldquo;Customization License&rdquo;</strong>). Notwithstanding <strong>Section 14</strong>, Customer may assign, transfer, and sublicense the Customization License to third-parties only with Licensor&rsquo;s written consent, which consent will not be unreasonably withheld, subject to such third-parties obtaining a subscription to the Application. Customer understands and acknowledges that Customizations are subject to security review by SFDC and Customizations containing material changes to the Application must be approved in writing by SFDC, and Licensor makes no guarantees, representations, or warranties that SFDC will approve material changes to the Application. Customer further understands that security reviews by SFDC may cause downtime or other adverse effects on the Application and Licensor will bear no responsibility for such adverse effects.
+                        </li>
+                            <li><span class="text_underline">Consulting and Site Visits.</span> In addition to the fees and charges described herein, Customer agrees that it will reimburse Licensor for reasonable and actual travel and other out-of-pocket expenses incurred by Licensor in connection with its performance of the Agreement, including any consulting or site visits conducted pursuant to this Agreement or in connection with Customizations (<strong>&ldquo;Expenses&rdquo;</strong>). Licensor will seek Customer&rsquo;s prior written approval prior to incurring Expenses greater than USD $500.00 and will provide reasonable documentation of such Expenses if requested in writing by Customer.
+                        </li>
+                        </ol>
+                        <br />
+                        <p><strong>4. Third Party Materials.</strong> Customer understands and acknowledges that other third-party providers offer products and services related to the Application and SFDC Platform. Such third-party products and services are subject to their own individual terms and conditions. Customer should not install or use such third-party products or services if it does not agree to abide by the applicable terms and conditions for such third-party product and services. Licensor makes no representations or warranties concerning any third-party providers, any third-party products or services, and the interoperability of any third-party products or services with the Application. Any exchange of data or other interaction between Customer and a third-party provider and any purchase by Customer of any product or service offered by such third-party provider is solely between Customer and such third-party provider. Customer understands and agrees that if it installs or uses a third-party product or service in conjunction with the Application, Licensor may allow the third-party provider of such product or service to access your data as required for the interoperation of such product or service with the Application.</p>
+                        <p><strong>5. Data.</strong> Licensor may access Customer&rsquo;s data and account to administer or configure the Application and Subscription. Customer acknowledges and agrees that Licensor may collect and use technical data and related non-personally identifiable information, including but not limited to technical information about the device, system, and application software used by Customer and its Authorized Users to access the Application in order to facilitate the provision of updates and product support related to the Application. Such data may also be used to improve the Application offered to Customer.</p>
+                        <br />
+                        <p><strong>6. Feedback. </strong>If Customer or any of its Authorized Users, employees, contractors, or agents sends or transmits any communications or materials to Licensor by mail, email, telephone, or otherwise, suggesting or recommending changes to the Application, including without limitation, new features or functionality relating thereto, or any comments, questions, suggestions, or the like ("Feedback"). Licensor is free to use such Feedback irrespective of any other obligation or limitation between the Parties governing such Feedback. Customer hereby assigns to Licensor on Customer&rsquo;s behalf, and on behalf of its Authorized Users, employees, contractors, and agents, all right, title, and interest in, and Licensor is free to use, without any attribution or compensation to any party, any ideas, know-how, concepts, techniques, or other intellectual property rights contained in the Feedback, for any purpose whatsoever, although Licensor is not required to use any Feedback.</p>
+                        <br />
+                        <p><strong>7. Termination.</strong> Except as otherwise provided herein, this Agreement is effective until the expiration or termination of the Initial Term or the Renewal Term, as the case may be. Therefore, if you terminate or cancel the Agreement before the expiration of the Initial Term or the Renewal Term, as the case may be, your access and use of the Application, and your obligation to pay any applicable fees, will continue until the expiration of the Initial Term or the Renewal Term. Upon expiration or termination of this Agreement, the license(s) granted hereunder will terminate, and Customer will not be able to use or access the Application.</p>
+                        <br />
+                        <p><strong>8. Representations and Warranties.</strong> Each Party hereby represents and warrants to the other Party that: (i) it has the full right, power, and authority to enter into this Agreement and to perform its obligations hereunder; and (ii) the execution of this Agreement by its representative whose signature is set forth on the cover page hereof has been duly authorized by all necessary corporate action. Additionally, Customer represents and warrants that: (i) it is not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a &ldquo;terrorist supporting&rdquo; country; and (ii) it is not listed on any U.S. Government list of prohibited or restricted parties.</p>
+                        <br />
+                        <p><strong>9. Disclaimer of Warranties and Representations. </strong>THE APPLICATION IS PROVIDED <strong>&ldquo;AS-IS&rdquo;</strong> AND LICENSOR HEREBY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. LICENSOR SPECIFICALLY DISCLAIMS ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, AND ALL WARRANTIES ARISING FROM COURSE OF DEALING, USAGE, OR TRADE PRACTICE. LICENSOR MAKES NO WARRANTY OF ANY KIND THAT THE APPLICATION OR ANY PRODUCTS OR RESULTS OF THE USE THEREOF, WILL MEET CUSTOMER&rsquo;S OR ANY OTHER PERSON'S REQUIREMENTS, OPERATE WITHOUT INTERRUPTION, ACHIEVE ANY INTENDED RESULT, BE COMPATIBLE OR WORK WITH ANY SOFTWARE, SYSTEM OR OTHER SERVICES, OR BE SECURE, ACCURATE, COMPLETE, FREE OF HARMFUL CODE, OR ERROR FREE.</p>
+                        <br />
+                        <p><strong>10. Limitation of Liability.</strong> TO THE FULLEST EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL LICENSOR BE LIABLE UNDER OR IN CONNECTION WITH THIS AGREEMENT UNDER ANY LEGAL OR EQUITABLE THEORY, INCLUDING BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, AND OTHERWISE, FOR ANY: (a) CONSEQUENTIAL, INCIDENTAL, INDIRECT, EXEMPLARY, SPECIAL, ENHANCED, OR PUNITIVE DAMAGES; (b) INCREASED COSTS, DIMINUTION IN VALUE OR LOST BUSINESS, PRODUCTION, REVENUES, OR PROFITS; (c) LOSS OF GOODWILL OR REPUTATION; (d) USE, INABILITY TO USE, LOSS, INTERRUPTION, DELAY OR RECOVERY OF ANY DATA, OR BREACH OF DATA OR SYSTEM SECURITY; OR (e) COST OF REPLACEMENT GOODS OR SERVICES, IN EACH CASE REGARDLESS OF WHETHER CUSTOMER WAS ADVISED OF THE POSSIBILITY OF SUCH LOSSES OR DAMAGES OR SUCH LOSSES OR DAMAGES WERE OTHERWISE FORESEEABLE. IN NO EVENT WILL LICENSOR'S AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT UNDER ANY LEGAL OR EQUITABLE THEORY, INCLUDING BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, AND OTHERWISE EXCEED $10.00.</p>
+                        <br />
+                        <p><strong>11. Notices.</strong> All notices, requests, consents, claims, demands, waivers, and other communications hereunder (each, a "Notice") must be in writing and addressed to the Parties at the addresses set forth on the signature page of this Agreement (or to such other address that may be designated by the Party giving Notice from time to time in accordance with this Section). All Notices must be delivered by personal delivery, nationally recognized overnight courier (with all fees pre-paid), facsimile, or email (with confirmation of transmission) or certified or registered mail (in each case, return receipt requested, postage pre-paid). Except as otherwise provided in this Agreement, a Notice is effective only: (i) upon receipt by the receiving Party, and (ii) if the Party giving the Notice has complied with the requirements of this Section</p>
+                        <br />
+                        <p><strong>12. Choice of Law.</strong> This Agreement, and all matters arising out of or relating to this Agreement, are governed by, interpreted, and construed in accordance with the laws of the State of New York, without regard to conflicts of law principles. Any action or proceeding by the parties to enforce this Agreement will be brought exclusively in the state or federal courts located in New York City, New York, USA. The parties hereby irrevocably submit to the exclusive jurisdiction of these courts and irrevocably waive the defense of inconvenient forum to the maintenance of any action or proceeding in such venue. In the event that any legal proceeding is instituted or commenced by either party hereto against the other party arising out of or related to this Agreement, the prevailing party is entitled to recover its reasonable attorneys' fees and court costs from the non-prevailing party.</p>
+                        <br />
+                        <p><strong>13. Equitable Relief. </strong>Customer acknowledges and agrees that the commission of a Prohibited Activity, or threatened commission of a Prohibited Activity by Customer, would cause the Licensor irreparable harm for which monetary damages would not be an adequate remedy. Customer agrees that in the event of a Prohibited Activity or threatened Prohibited Activity, the Licensor will be entitled to equitable relief, including a restraining order, an injunction, specific performance, and any other relief that may be available from any court, without any requirement to post a bond or other security, or to prove actual damages or that monetary damages are not an adequate remedy. Such remedies are not exclusive and are in addition to all other remedies that may be available at law, in equity, or otherwise.</p>
+                        <br />
+                        <p><strong>14. Assignment.</strong> Customer may not assign or transfer any of its rights or delegate any of its obligations hereunder, in each case whether voluntarily, involuntarily, by operation of law or otherwise, without the prior written consent of Licensor, which consent will not be unreasonably withheld. Any purported assignment, transfer, or delegation in violation of this Section is null and void. No assignment, transfer, or delegation will relieve the assigning or delegating Party of any of its obligations hereunder. This Agreement is binding upon and inures to the benefit of the Parties hereto and their respective permitted successors and assigns.</p>
+                        <br />
+                        <p><strong>15. Force Majeure.</strong> In no event will either Party be liable to the other Party, or be deemed to have breached this Agreement, for any failure or delay in performing its obligations under this Agreement, (except for any obligations to make payments), if and to the extent such failure or delay is caused by any circumstances beyond such Party&rsquo;s reasonable control, including but not limited to acts of God, flood, fire, earthquake, explosion, war, terrorism, invasion, riot or other civil unrest, strikes, labor stoppages or slowdowns or other industrial disturbances, or passage of law or any action taken by a governmental or public authority, including imposing an embargo.</p>
+                        <br />
+                        <p><strong>16. Miscellaneous.</strong> The headings used in this Agreement are for convenience only and will not affect the meaning or interpretation of this Agreement. Nothing contained in this Agreement will be construed to create a partnership or joint venture between the Parties. Any provisions which by their terms contemplate survival will survive termination of this Agreement. This Agreement, together with the SFDC Service Agreement, Purchase Order, and any attachments, exhibits or appendices, defines the entire agreement between the parties in connection with the subject matter hereof and supersedes all prior agreements, understandings, negotiations, and discussions, whether oral or written with respect to the subject matter hereof. Each party acknowledges that it has not been induced to enter into this Agreement by any representations or promises not specifically stated herein. If any term or provision of this Agreement is invalid, illegal, or unenforceable in any jurisdiction, such invalidity, illegality, or unenforceability will not affect any other term or provision of this Agreement or invalidate or render unenforceable such term or provision in any other jurisdiction. Upon such determination that any term or other provision is invalid, illegal, or unenforceable, the parties hereto will negotiate in good faith to modify this Agreement so as to effect the original intent of the parties as closely as possible in a mutually acceptable manner in order that the transactions contemplated hereby be consummated as originally contemplated to the greatest extent possible. No modification to any provision of this Agreement will be binding unless in writing and signed by both parties. No waiver of any rights under this Agreement will be effective unless in writing signed by the party to be charged. All of the terms and provisions of this Agreement will be binding upon and inure to the benefit of and be enforceable by the respective heirs, executors, administrators, legal representatives, successors, and assigns of the parties hereto. This Agreement may be executed electronically through an e-signature software, or in multiple counterparts and by facsimile signature, each of which will be deemed an original and all of which together will constitute one instrument.</p>
+                        <br />
+                        <!-- <p class="text_center"><b>[Signature page follows]</b></p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p>IN WITNESS WHEREOF, the Parties hereto have executed this Agreement as of the Effective Date.</p>
+                        <br />
+                        <div align="left">
+                            <table>
+                                <colgroup>
+                                    <col width="336" />
+                                    <col width="336" />
+                                    <col width="336" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>BOOKING NINJAS</p>
+                                        </td>
+                                        <td>
+                                            <p> Quinn&rsquo;s Hot Springs Resort</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><br />
+                                            <p>By:_____________________</p>
+                                            <p>Name: David M. Harroch</p>
+                                            <p>Title: CEO</p>
+                                            <p>Address: ________________</p>
+                                            <p>________________________</p>
+                                            <p>________________________</p>
+                                        </td>
+                                        <td><br />
+                                            <p>By:_____________________</p>
+                                            <p>Name: Mark Melief</p>
+                                            <p>Title: President</p>
+                                            <p>Address: ________________</p>
+                                            <p>________________________</p>
+                                            <p>________________________</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> -->
+                        
+                    </article>
+                </div>
+                <!-- Purchase Order Modal -->
+                <div class="modal terms-modal" id="Purchase-Order">
+                    <div class="terms-modal__header">
+                        <p>PURCHASE ORDER NO. {!item.quoteNumber}</p>
+                    </div>
+                    <article class="terms-modal__content">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-12 col-sm-auto text_center order-sm-1 button-section">
+                                <a href="#" class="button-orange button-orange__small">Download PDF version</a>
+                            </div>
+                            <div class="col-auto">
+                                <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/ninja-logo.png"></img>
+                            </div>
+                        </div>
+                        <h2>PURCHASE ORDER NO. {!item.quoteNumber}</h2>
+                        <br/>
+                        <ol class="list__decimal">
+                            <li><strong> Name of Application: </strong>Booking Ninjas Comprehensive Property Management</li>
+                            <li><strong>License Details:</strong>
+                                <br/>
+                                <br/>
+                                <ol class="list__latin">
+                                    <li>
+                                        <p><strong>Subscription Term: </strong> Annual &amp; Automatically Renewing. The Subscription will commence on 5th November 2021 and automatically renew on 5th November 2022 (the &ldquo;Renewal Date&rdquo;), unless Licensor receives written notice of your intent to cancel the subscription at least sixty (60) prior to the Renewal Date 5th November 2022 in compliance with Section 1(A) of the Agreement.</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Number of Authorized Users:</strong> (10). Authorized Users are subject to a Subscription Fee of USD $95 per user/per month.
+                                            <br/>
+                                            <br/>
+                                            <em>At any one instance in time, the maximum number of users accessing and using the Software shall be equal to this aggregate number of User Licenses.  To the extent you wish to add on additional users, each additional user will be subject to an additional fee of [$95 per user/per month] as set forth in an add-on Purchase Order, which will be co-terminous with the Subscription Term set forth herein.</em>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <strong>Number of Managed Property Units:  83  (&ldquo;MaximumManaged Units&rdquo;). </strong>
+                                            <br/>
+                                            <br/>
+                                            <em>At any one instance in time, the maximum number of units that can be managed subject to this Agreement may not exceed the Maximum Managed Units. Customer may increase the number of Maximum Managed Units subject to an per unit fee of USD 19 per unit/per month, which will be coterminous with the Initial Term or the Renewal Term, as the case may be. </em>
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <strong>Data Migration/ Implementation/ Setup Fees: </strong> 
+                                <br/>
+                                <br/>
+                                <ol class="list__latin">
+                                    <li>
+                                        <p><strong>Implementation and Setup Fees</strong></p>
+                                        <table class="simple-table">
+                                            <colgroup>
+                                                <col width="168" />
+                                                <col width="168" />
+                                                <col width="168" />
+                                                <col width="168" />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>Implementation step</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Payment type</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Amount</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Estimated time</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Data Migration/ Cleansing</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>One-time</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>$7,000.00</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>4-6 weeks</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Custom Development/</p>
+                                                        <p>Configuration/ Workflows/ Onboarding</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>One-time</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>$20,000.00</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>10-14 Weeks</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Access Control Integration</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>One-time</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>$17,000.00</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>10-14 weeks</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="simple-table">
+                                            <colgroup>
+                                                <col width="224" />
+                                                <col width="224" />
+                                                <col width="224" />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>Total Implementation</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>  One-time</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>  $44,000</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <p><strong>Annual User Subscription Fees: </strong> Calculated as the Subscription Fees for (10) Authorized Users. The annual subscription fee excludes any other fees that may apply to the Customer.</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Managed Resources: </strong>  Calculated by the number of managed units per annum </p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Payment of Subscription Fees: </strong> The Subscription Fees will be payable in one payment, due on the Effective Date of the Agreement. To the extent Customer becomes a monthly payment users, Customer agrees and understands that it will be responsible for a transaction processing fee which is the greater of: (i) 3.5% of the total sum of the monthly payment amount or (ii) the total amount charged by Licensor&rsquo;s third-party payment processor). Licensor reserves the right to change the transaction processing fee upon written notice to you, in which event you may elect to pay the remainder of the Subscription Fee in a lump sum. </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li><strong>Custom Objects and Additional Apps: (TBD) </strong>
+                                <br/>
+                                <br/>
+                                <ol class="list__latin">
+                                    <li>
+                                        <p><strong>Requested Custom Objects Description: (TBD) </strong></p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Requested additional applications listed on the SFDC AppExchange: (TBD) </strong></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <strong>Customization Services:</strong> Below are functional and technical specifications and standards for all Customizations to be provided by Licensor to Customer and the associated fees. Any requests made by Customer beyond the scope of requirements, specifications, or functionality set forth below may be subject to additional fees and Licensor is under no obligation to provide such additional Customizations unless agreed to in writing, as set forth in Changes to Scope section below. 
+                            </li>
+                        </ol>
+                        <br/>
+                        <strong>Additional Add-ons:</strong>
+                        <br/>
+                        <ol class="list__latin">
+                            <li>
+                                <span class="text_underline">Booking Engine:</span>
+                                <ul>
+                                    <li>
+                                        Description: Native Booking Engine
+                                    </li>
+                                    <li>
+                                        Customization Fees: Customer agrees to pay Licensor the following Customization fees:
+                                        <ul>
+                                            <li>
+                                                Initial Set-Up: Included in the Phase 1 implementation fee identified in Section 3(A)(i) for the one-time configuration of the booking engine system.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="text_underline">Additional Customization Services: </span> Any additional Customizations agreed to by Licensor in writing will be subject to an hourly rate of USD $110.00/Developer and USD $75.00/Data System/Business Analyst/ Salesforce Data Administration services, unless otherwise agreed fixed price to in writing by the Parties. 
+                            </li>
+                            <li>
+                                <span class="text_underline">Point of Sale: </span> Access to our Point of Sale module and Apps with native data connection to PMS and guest data.
+                            </li>
+                            <li>
+                                <span class="text_underline">Support: </span> Premium access to 24/7 communication by phone or chat to designated in-house admins/software developers. 
+                            </li>
+                        </ol>
+                        <table class="simple-table">
+                            <colgroup>
+                                <col width="224" />
+                                <col width="224" />
+                                <col width="224" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>Application</p>
+                                    </td>
+                                    <td>
+                                        <p>Payment Type</p>
+                                    </td>
+                                    <td>
+                                        <p>Total</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Booking Engine (based on 83 units)</p>
+                                    </td>
+                                    <td>
+                                        <p>Annual</p>
+                                    </td>
+                                    <td>
+                                        <p>$7,968.00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>POS (based on 4 terminals)</p>
+                                    </td>
+                                    <td>
+                                        <p>Annual</p>
+                                    </td>
+                                    <td>
+                                        <p>$13,200.00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Support</p>
+                                    </td>
+                                    <td>
+                                        <p>Annual</p>
+                                    </td>
+                                    <td>
+                                        <p>$12,000.00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>User Fee  (based on 10 Users)</p>
+                                    </td>
+                                    <td>
+                                        <p>Annual</p>
+                                    </td>
+                                    <td>
+                                        <p>$11,400.00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Rooms  (based on 83 units)</p>
+                                    </td>
+                                    <td>
+                                        <p>Annual</p>
+                                    </td>
+                                    <td>
+                                        <p>$18,924.00</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="simple-table">
+                            <colgroup>
+                                <col width="208" />
+                                <col width="208" />
+                                <col width="208" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>  Total Annual</p>
+                                    </td>
+                                    <td> </td>
+                                    <td>
+                                        <p>  $50,292</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><strong>Customer Cooperation.</strong> Customer acknowledges and agrees that its timely provision of facilities, equipment, assistance, feedback, cooperation, and complete and accurate information and data as is reasonably requested by Licensor (collectively,<strong> &ldquo;Cooperation&rdquo;</strong>) is essential to the performance of the Customizations, and Licensor will not be liable for any deficiency, delay, or failure in performing the Customizations if such deficiency, delay, or failure results from your failure to provide full Cooperation. Delays in providing Cooperation will cause a day-for-day delay of any dependent deliverable by Licensor.</p>
+                        <br />
+                        <p><strong>Changes to Scope.</strong> Customer may request in writing changes the Customizations. Such requests will include sufficient details regarding the requested changes to allow Licensor to evaluate such requested changes. Licensor will notify Customer in writing if there will be an adjustment to any fees under the Agreement and provide details on the associated delivery schedule as a result of the requested or suggested changes. If the Parties agree on such changes and any resulting changes to the fees and/or delivery schedule, the Parties will document such agreement in writing to reflect such agreed changes. Changes to the scope of Customizations will not be effective until set forth in writing acknowledged and agreed to by both Parties.</p>
+                        <br />
+                        <p><strong>Payment:</strong> Licensor will invoice Customer for the Customizations and any applicable expenses due in connection therewith. Licensor will automatically charge Customer&rsquo;s credit card or debit Customer&rsquo;s account for such invoiced amounts. If Licensor is unable to collect the invoiced amounts for Customizations, Licensor may suspend or terminate Customer&rsquo;s Subscription and access to the Application without notice.</p>
+                    </article>
+                </div>
+                <!-- /Modal window -->
+            </main>
+            <!--end-main-->
+        </div>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/jquery.fancybox.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/slick.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/wow.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/common.js"></script>
+        <script>
+            var _mfq = _mfq || [];
+            (function () {
+                var mf = document.createElement("script");
+                mf.type = "text/javascript"; mf.async = true;
+                mf.src = "//s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/6defcb08-eb86-45f4-aca3-66c1425e4139.js";
+                document.getElementsByTagName("head")[0].appendChild(mf);
+            })();
+        </script>
+        <script type="application/ld+json">
+            [ {
+                "@context" : "http://schema.org",
+                "@type" : "LocalBusiness",
+                "name" : "Booking Ninjas",
+                "image" : "https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo-footer.png",
+                "email" : "sales@bookingninjas.com",
+                "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "1815 Purdy Avenue Miami Beach, FL 33139",
+                "telephone" : "+19176002345"
+                },
+                "url" : "https://www.bookingninjas.com"
+            } ]
+        </script>
+    </body>
+    </html>
+</apex:page>

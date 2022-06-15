@@ -1,0 +1,130 @@
+/* brand colors */
+.booking-ninjas-brand-header-background {
+    background-color: #0883ed;
+}
+
+.booking-ninjas-brand-body-background {
+    background-color: #f0f7ff;
+}
+
+/* brand buttons */
+.booking-ninjas-button {
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    border-radius: 15pt;
+    width: 100pt;
+    height: 25pt;
+}
+
+.booking-ninjas-button_neutral {
+    background-color: white;
+    border-color: #7e8599;
+    color: #7e8599;
+}
+
+.booking-ninjas-button_neutral:hover {
+    background-color: #f4f6f9;
+    color: #353535;
+}
+
+.booking-ninjas-button_brand {
+    background-color: #0883ed;
+    border-color: #0883ed;
+    color: white;
+}
+
+.booking-ninjas-button_brand:hover {
+    background-color: #005FB2;
+    color: white;
+}
+
+.booking-ninjas-button_inverse {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+.booking-ninjas-button_inverse:focus {
+    color: white;
+}
+
+.booking-ninjas-button_inverse:hover {
+    background-color: #005FB2;
+    border-color: #005FB2;
+    color: white;
+}
+
+.booking-ninjas-button_outline-brand {
+    background-color: white;
+    border-color: #459df2;
+    color: #459df2;
+}
+
+.booking-ninjas-button_outline-brand:hover {
+    background-color: #f4f6f9;
+    color: #7e8599;
+}
+
+/* brand inputs */
+.booking-ninjas-underscored-input .slds-input {
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+}
+
+
+.booking-ninjas-checkbox-input .slds-checkbox_add-button [type=checkbox]:checked~.slds-checkbox_faux {
+    border-color: transparent;
+    background: #4bcb80;
+}
+ 
+.schedule-call-wrapper .slds-listbox.slds-listbox_vertical.slds-dropdown.slds-dropdown_fluid.slds-dropdown_left {
+    max-height: 120px;
+}
+
+.cook-book-wrapper .fa.fa-search {
+    margin-right: -45px;
+    color: white; 
+    z-index: 999;
+}     
+
+.cook-book-wrapper .slds-modal__header.slds-text-align_left {
+    border-bottom: 0;
+    background: #f0f7ff;
+}    
+
+.cook-book-wrapper .slds-checkbox_faux {
+    margin-top: 26px;
+    transform: scale(1.5);
+}  
+
+.cook-book-wrapper .slds-card {
+    margin-top: 10px;
+}      
+
+.booking-ninjas-brand-body-background > .slds-grid {
+    max-height: calc(100vh - 200px);
+    overflow: auto;  
+}
+
+/*.booking-ninjas-brand-body-background .slds-card,*/
+.contact-new-button-wrapper .main-info.slds-grid.slds-wrap,
+.opportunity-new-button-wrapper .main-info.slds-grid.slds-wrap{
+    max-height: calc(100vh - 350px);
+    overflow: auto;     
+}  
+
+/*
+.opportunity-new-button-wrapper .slds-card {
+    border: none;
+    box-shadow: none;
+}*/
+  
+.contact-new-button-wrapper .section-control.slds-button.slds-button_reset.slds-accordion__summary-action {
+    color: black; 
+    font-weight: bold;
+    font-size: 18px; 
+}

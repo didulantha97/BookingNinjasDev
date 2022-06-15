@@ -1,0 +1,152 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img alt="Nuestras creencias centrales" src="https://d1b89zc79exfxt.cloudfront.net/img/core-img.png"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                    <h1>Nuestras creencias centrales</h1>
+                                    <p>Somos una familia en Booking Ninjas. Y esta familia se extiende a compañeros de trabajo, clientes, socios, y toda la industria. Todo lo que hacemos es por el bien de todo el grupo, y nuestras creencias y nuestro modo de funcionamiento cubren cada aspecto de la familia.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content core-page-content">
+                <div class="core-page-timeline">
+                    <div class="container core-page-timeline__item-big text_center">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <article>
+                                    <h2 class="about-page-content__title"><span>Nuestro compromiso</span></h2>
+                                    <p>Booking Ninjas está comprometido con altos niveles de integridad y excelencia. Cada acción que realizamos está definida por nuestros valores centrales, valores que garantizan que proporcionamos la mejor experiencia en cualquier momento, sin escatimar en tiempo y recursos. Nos comprometemos con el crecimiento de nuestros clientes a través de nuestro software de gestión de propiedades fácil de usar y seguiremos adoptando medidas para contribuir a su éxito.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container core-page-timeline__item-big">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <article>
+                                    <h2 class="about-page-content__title"><span>Valores centrales</span></h2>
+                                    <p>En Booking Ninjas, tenemos 4 cuatro valores centrales que rigen nuestra actitud empresarial. Creemos que estos valores son esenciales para cada miembro de nuestro equipo, y que pueden ser una fuente de inspiración para otras empresas emergentes SaaS de la industria.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container core-page-video">
+                        <div class="row justify-content-center">
+                            <div class="col-md-7">
+                                <a class="video__img wow zoomIn fancybox" data-fancybox="fancybox" href="https://www.youtube.com/watch?v=rbR85czmMIA&feature=youtu.be" style="visibility: visible; animation-name: zoomIn;">
+                                    <img alt="Video" src="https://d1b89zc79exfxt.cloudfront.net/img/video-core1.png"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2 class="about-page-content__title"><span>Booking Ninjas consta de cuatro áreas principales que sirven como la columna vertebral del valor añadido.</span></h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="core-page-timeline__item">
+                                    <figure>
+                                        <span><img alt="Confianza - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/core1.png"/></span>
+                                        <h3>Confianza</h3>
+                                    </figure>
+                                    <p>Creemos que la confianza es el factor más importante en los negocios, nos esforzamos sinceramente en ganar y repartir. Como compañeros de trabajo, socios, y clientes, nos consideramos como parte de una familia que necesita la confianza para funcionar correctamente.<br/><br/></p>
+                                    <p>Nos involucramos en negocios honestos y transparentes, asegurándonos que todos se vayan a casa contentos.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="core-page-timeline__item">
+                                    <figure>
+                                        <span><img alt="Igualdad - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/core2.png"/></span>
+                                        <h3>Igualdad</h3>
+                                    </figure>
+                                    <p>Creemos en la importancia de la igualdad, y lo hacemos realidad en nuestro lugar de trabajo. Todos nuestros empleados, socios y clientes reciben igualdad de trato, sin tener en cuenta las diferencias. Todos merecen una oportunidad para hacer mejores sus vidas y sus negocios, y en Booking Ninjas, nos aseguramos de que todos la obtengan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="core-page-timeline__line"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="core-page-timeline__item">
+                                    <figure>
+                                        <span><img alt="Innovación - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/core3.png"/></span>
+                                        <h3>Innovación</h3>
+                                    </figure>
+                                    <p>No hay nada más poderoso como la innovación, y en Booking Ninjas nos aseguramos de que sea parte de nuestra rutina. Evaluamos ideas, y los cambios positivos surten efecto regularmente. Evolucionamos de manera constante, y creemos que la mejor forma de ir por delante de la curva, es haciendo nuestros modelos de negocio y servicios tan flexibles y actualizados como sea posible.<br/><br/></p>
+                                    <p>Hasta ahora, ha funcionado para nosotros, y aquellos que hacen de la innovación una prioridad.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="core-page-timeline__item">
+                                    <figure>
+                                        <span><img alt="Éxito - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/core4.png"/></span>
+                                        <h3>Éxito</h3>
+                                    </figure>
+                                    <p>Más que un objetivo, consideramos el éxito como un valor que debemos mantener en Booking Ninjas. Lo vemos como una forma de vida, y algo que deberíamos usar regularmente como medida de nuestro compromiso.<br/><br/></p>
+                                    <p>¿Cómo gestionamos los contratiempos? Los contratiempos nos llevan a tener nuevas experiencias cuando lo necesitamos. Al final, nuestros clientes están más contentos y satisfechos que antes. Es una victoria para nosotros.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2 class="about-page-content__title"><span>Nuestro proceso de toma de decisiones</span></h2>
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="core-page-timeline__item text_center">
+                                    <h3 class="core-page-timeline__item-title">Planificación estratégica</h3>
+                                    <p>Nos tomamos la planificación muy en serio. Las investigaciones, los datos existentes, las experiencias previas, y las nuevas ideas forman parte de cada plan que hacemos. Evaluamos prioridades y sopesamos las consecuencias y los beneficios, asegurándonos de que cada decisión haya sido meditada propiamente.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="core-page-timeline__item text_center">
+                                    <h3 class="core-page-timeline__item-title">Punto de vista del cliente</h3>
+                                    <p>El cliente siempre tiene la razón. Nos ponemos en la piel del cliente para decidir qué es lo mejor para ellos. Hacemos esto a través de preguntas, enviando encuestas, realizando investigaciones apropiadas, y otras maneras informales.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="core-page-timeline__item text_center">
+                                    <h3 class="core-page-timeline__item-title">Actuar e improvisar</h3>
+                                    <p>Es hora de trabajar. Implementamos la decisión mientras vigilamos de cerca los resultados, mejorando los parámetros a medida que avanzamos. Nuestro enfoque flexible de la innovación, asegura que podamos producir pequeños cambios tan rápido como sea posible.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container core-page-timeline__item-big">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <article>
+                                    <h2 class="about-page-content__title"><span>Nuestra mentalidad</span></h2>
+                                    <p>Creemos en ganar. Ganar para nuestros compañeros de trabajo, clientes, socios, inversores - para todos. Cada miembro de la familia de Booking Ninjas ve ganar como parte de nuestra estructura central, y nos esforzamos en mantener esa cultura.<br/><br/></p>
+                                    <p>Nuestra mentalidad ganadora nos lleva a priorizar:<br/><br/></p>
+                                    <p><strong>Los mejores talentos.</strong> Entendemos que una organización es tan buena como su equipo, y nos esforzamos muchísimo en contratar a los mejores talentos en campos relacionados.<br/><br/></p>
+                                    <p><strong>La disciplina.</strong> La regularidad es necesaria para ganar, y es un valor que inculcamos en cada miembro del equipo de Booking Ninjas. Día a día nos esforzamos para dar lo mejor.<br/><br/></p>
+                                    <p><strong>Devolver.</strong> Somos productos de la sociedad, y debemos devolver algo. El modelo 1-1-1 es una forma de hacerlo. Destinamos un 1% de nuestros ingresos para mejorar el estado del mundo.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <a href="https://pledge1percent.org/" class="button" style="margin:0 0 50px 0;" target="_blank" rel="noindex">DESTINAR UN 1%</a>
+                </div>                  
+            </div> 
+            <!-- /content -->
+
+       </apex:define>
+    </apex:composition>
+
+
+</apex:page>

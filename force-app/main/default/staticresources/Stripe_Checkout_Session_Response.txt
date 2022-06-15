@@ -1,0 +1,36 @@
+{
+    "id": "cs_test_3uGq6fKCe5XrHPXxGCHzu2Y9CqV8ieJcDjFwNzYw6d7CfXVFuwMcFFLk",
+    "object": "checkout.session",
+    "billing_address_collection": null,
+    "cancel_url": "https://example.com/cancel",
+    "client_reference_id": null,
+    "customer": null,
+    "customer_email": null,
+    "display_items": [
+        {
+            "amount": 50000,
+            "currency": "usd",
+            "custom": {
+                "description": "Comfortable cotton",
+                "images": null,
+                "name": "T-shirt"
+            },
+            "quantity": 2,
+            "type": "custom"
+        }
+    ],
+    "livemode": false,
+    "locale": null,
+    "metadata": {},
+    "mode": "payment",
+    "payment_intent": "pi_1GhFGdLJXa2cEwUA2QU7ccIQ",
+    "payment_method_types": [
+        "card"
+    ],
+    "setup_intent": null,
+    "shipping": null,
+    "shipping_address_collection": null,
+    "submit_type": null,
+    "subscription": null,
+    "success_url": "https://bookingninjas--pbosandbox--c.cs43.visual.force.com/apex/StripeCheckout?session_id={CHECKOUT_SESSION_ID}"
+}

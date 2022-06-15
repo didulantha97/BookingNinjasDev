@@ -1,0 +1,98 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top gdpr-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-top.png" alt="PMS GDPR Data Compliance"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>GDPR Compliance Software </h1>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content ">
+                <div class="container">
+                    <div class="gdpr__content">
+                        <p>As we mentioned in our&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Data)}" target="_blank">Data Page</apex:outputLink>, data analysis is more important now than ever before. As it becomes more valuable, Fortune 500 companies will be increasingly looking to monetize data, through offering DaaS (Data-as-a-Service) - essentially charging you a subscription fee for access to advanced data and analytics. Data and analytics is what we do best. Our Booking Ninjas PMS has the backing of the industry leading CRM and solution finder, Salesforce. Our property management technology includes&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_ArtificialIntelligence)}" target="_blank">Einstein AI</apex:outputLink> which gives you real-time data and analytics as well as smart suggestions for your hospitality business. But truthfully, because General Data Protection Regulation (GDPR) laws are still relatively new, many of these money-hungry conglomerates don’t follow the guidelines to keep you and your company's data safe. And the exposure of your company’s private data could lead to the downfall of your business. This is why it is best to trust us with your sensitive data, a GDPR compliant company.                 </p>
+                    </div>
+                    <div class="gdpr__content">
+                        <h2>Our hotel PMS is GDPR data compliant</h2>
+                        <div class="row">
+                            <div class="col-lg-6 order-lg-1">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-data-img.png" alt="GDPR Data Compliant"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>There are seven guiding principles the GDPR works by; lawfulness, purpose limitation, data minimisation, accuracy, storage limitation, confidentiality, and accountability. GDPR requires data controllers (companies that handle your sensitive data) not only abide by these regulations, but also demonstrate how they do. These regulations originated in the EU, which coincidentally is where a lot of our clientele is based. So we’ve been aware and abidant by GDPR policies since the regulation passed in May of 2018. Our hard-working team of software developers made sure that our PMS has built-in GDPR compliance, maintaining that our company can never abuse our power when handling your private data. And it’s not just protection for you, it’s protection for your clients. If your data is breached, so is there's. Trust is the leading component of running a successful hospitality business. Once you alleviate trust, you can expect to see your business suffer greatly.                             </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdpr__content ">
+                        <h2>Why GDPR is important</h2>
+                        <div class="row career-page-interest">
+                            <div class="col-lg-12">
+                                <div class="career-page-interest__item">
+                                    <figure><a href="#"><img alt="Why GDPR is important? - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-insurance.png"/></a></figure>
+                                    <article>
+                                        <p>Several security experts have predicted that GDPR policies, or something similar to them, will soon spread to USA, Brazil, South Korea, Japan, Thailand, and Australia as quickly as by the end of 2020. The U.S. has already seen data mayhem recently with Facebook’s exposure of data, causing unrest in much of the population. </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="career-page-interest__item">
+                                    <figure><a href="#"><img alt="Why GDPR is important? - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-secure-data.png"/></a></figure>
+                                    <article>
+                                        <p>The U.S. has already started to take data compliance more seriously with the enactment of the California Consumer Privacy Act (CCPA). The CCPA acts similarly in California to the way GDPR does to the EU. Experts predict at least 10 more states will soon follow suit in adopting their own data privacy laws. </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="career-page-interest__item">
+                                    <figure><a href="#"><img alt="Why GDPR is important? - icon - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-customers.png"/></a></figure>
+                                    <article>
+                                        <p>An increasing number of EU based customers in America and vice versa makes it a priority for companies to get familiarised with the new policy and act accordingly. If you are a company that deals with European clientele often, it is imperative that you make the switch to GDPR compliance immediately. </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="career-page-interest__item">
+                                    <figure><a href="#"><img alt="Why GDPR is important? - icon - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-house.png"/></a></figure>
+                                    <article>
+                                        <p>The best method of complying with GDPR regulations is to keep all your sensitive data in one  secure location - A&nbsp;<apex:outputLink style="font-size:16px;" value="{!URLFOR($Page.BN_PMS)}">property management system</apex:outputLink>. Salesforce is one of the most trusted companies when it comes to this, because their platform is built specifically to help companies and boost their revenue. Booking Ninjas shares this use case and we have a genuine, vested interest in the success of our customers, and safety is paramount to that success.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdpr__content">
+                        <h3>Our commitment</h3>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img alt="GDPR Data Compliant - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-bottom.png"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>With more states and countries getting close to signing updated privacy laws, compliance from data companies has immeasurable value. Booking Ninjas’ cloud-based PMS has the experience with GDPR to ensure you and your customer’s safety as well as the advanced technology of Salesforce to give your hospitality business an edge over the competition.     </p>
+    
+                                <p> Learn more about our cloud-based PMS&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Why)}">here</apex:outputLink>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+        
+</apex:page>

@@ -1,0 +1,20 @@
+<apex:page sidebar="false" showHeader="false">
+    <apex:includeLightning />
+
+    <div id="component-div">
+    </div>
+    <script>
+        $Lightning.use("c:eSignGenieEmbedApp",    
+            function() {                 
+                $Lightning.createComponent(
+                    "c:embedESignPopup", 
+                    { },                 
+                    "component-div",   
+                    function(cmp) {
+                    }
+                );
+            },
+            'https://dev6-bookingninjas-pbo.cs19.force.com/eSignGenieEmbed'
+        );
+    </script>
+</apex:page>

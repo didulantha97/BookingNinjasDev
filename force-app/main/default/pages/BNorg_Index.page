@@ -1,0 +1,305 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" >
+    
+    <html>
+
+        <head>
+            <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+            <meta content="initial-scale=1" name="viewport" />
+            <title>Best Property Management System Software For Business</title>
+            <!--Favicon-->
+            <link href="http://d1w0s0vp1lssdb.cloudfront.net/img/favicon.ico" rel="icon" type="image/x-icon" />
+            <!--End Favicon-->
+            <!-- CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+            <link href="http://d1w0s0vp1lssdb.cloudfront.net/css/fontawesome.css" rel="stylesheet" />
+            <link href="http://d1w0s0vp1lssdb.cloudfront.net/css/bootstrap-grid.css" rel="stylesheet" />
+            <link href="http://d1w0s0vp1lssdb.cloudfront.net/css/styles.css" media="screen" rel="stylesheet" />
+            <!-- END OF CSS -->
+            <!--SCRIPTS -->
+            <script src="https://d1b89zc79exfxt.cloudfront.net/js/jquery.js"></script>
+            <!-- END OF SCRIPTS -->
+        </head>
+        
+        <body>
+            <!-- Header -->
+            <header class="header">
+                <div class="container">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-3 col-7">
+                            <a class="logo" href="/"><img alt="Booking Ninjas Logo" src="http://d1w0s0vp1lssdb.cloudfront.net/img/logo.png" /></a>
+                        </div>
+                        <div class="col-lg-9 col-5">
+                            <button class="navigation__button"><i class="fas fa-bars"></i></button>
+                            <nav class="navigation">
+                                <ul>
+                                    <!-- <li><a href="#">Learn BN</a></li>
+                                    <li><a href="#">Education</a></li>
+                                    <li><a href="#">Resources</a></li>
+                                    <li><a href="#">Giving Back</a></li>
+                                    <li><a href="#">About Us</a></li> -->
+                                    <li><a href="#contact-modal" data-fancybox="contact-us-modal" ata-small-btn="false" class="nav-button">Get started</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Header end -->
+            <!-- Main -->
+            <div class="main">
+                <!-- bnr -->
+                <div class="bnr bnr__bg">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <img class="" src="http://d1w0s0vp1lssdb.cloudfront.net/img/main-bnr.png"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h1>Standing together with our BookingNinjas family.</h1>
+                                    <p>We’re here for you during the global COVID-19 pandemic.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bnr end -->
+                <div class="solutions">
+                    <div class="container">
+                        <h2 class="title">Booking Ninjas Stands with:</h2>
+                        <div class="solutions-item">
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <div class="solutions-item__img">
+                                        <img src="http://d1w0s0vp1lssdb.cloudfront.net/img/solutions-item-1.png"/>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <article>
+                                        <h3>Communities</h3>
+                                        <p>We recognize that goals and successes have been pushed off indefinitely for some communities with the advent of COVID-19. We want to make sure that you get the online capabilities that you need in order for your business to continue to progress digitally. Partner with us to ensure that you have access to our reliable team members, unparalleled online property management resources, and the latest technologies we have available. You shouldn’t have to manage any crises or obstacles alone, and we want to assist you in what we do best: technology.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="solutions-item">
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <div class="solutions-item__img">
+                                        <img src="http://d1w0s0vp1lssdb.cloudfront.net/img/solutions-item-2.png"/>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <article>
+                                        <h3>Schools</h3>
+                                        <p>Now more than ever, schools must be primed and ready for the next school year with better online systems and structures. We can provide a way for you to streamline processes, organize virtual materials, and help with other administrative duties, getting you the foundation you need in order to be prepared for the next online implementation phase this year. We realize that you may already have online resources, so that’s why we offer seamless integration with our systems in order to make the transition easier for you and your employees. With the current dynamic environment, curriculum needs to be updated to reflect changes. Our partner, Salesforce, has created an online resource to help you better understand the technology that we have to offer, called Trailhead. This platform covers a diverse array of topics; young adults can utilize this resource to refresh an old skill or acquire a completely new one. Our business economy is changing, and students should learn the most that they can about sales, marketing, and digital business solutions while they are still in school.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="solutions-item">
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <div class="solutions-item__img">
+                                        <img src="http://d1w0s0vp1lssdb.cloudfront.net/img/solutions-item-3.png"/>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <article>
+                                        <h3>Nonprofits</h3>
+                                        <p>We want to help ensure that your mission has not been indefinitely delayed or put off due to COVID-19 or any other complications. The technological assistance that Booking Ninjas offers may be just what you need in order to reengage (or reassure) constituents and any potential partners. With our help, you can reach out with even more marketing campaigns and analyze the outcomes. During this time of uncertainty and displacement, we want to provide programs that can promote efficiency and productivity that can carry you through and help you thrive even more after.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="solutions-item">
+                            <div class="row">
+                                <div class="col-md-auto">
+                                    <div class="solutions-item__img">
+                                        <img src="http://d1w0s0vp1lssdb.cloudfront.net/img/solutions-item-4.png"/>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <article>
+                                        <h3>Higher Education</h3>
+                                        <p>University campuses across the nation have had to adapt to the current digital requirements made mandatory by stay-at-home orders and other coronavirus-related directives. Your campus will want the best technological tools and support available in order to get ready for the upcoming semesters, especially with the increased need for remote accessibility. The move from physical to virtual classes because of the global pandemic was a necessary one, but it points to what the future of education looks like. You will want to have access to the newest standardization of online technology; we can provide it and maintain it for you. Booking Ninjas believes that education is the best course to achieve progress and advancement; we want to help make success possible for all of your students. </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="values">
+                    <div class="container">
+                        <h2 class="title">Our Values</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <p>At Booking Ninjas, we are led by our values. Our company makes it a priority to help our partners reach their goals with the support of our top-of-the-line technology and online assistance services. Listed below are the core components that form our foundation as an organization.</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-stretch">
+                            <div class="col-md-6">
+                                <div class="values-item">
+                                    <figure><img src="http://d1w0s0vp1lssdb.cloudfront.net/img/values-item-1.png"/><h4>Trust</h4></figure>
+                                    <p>We only offer a professional relationship based on integrity and honesty. Your alliance with us is more than just a contract; we count our partners as members of our team. We intend to maintain and develop our mutual trust as time progresses, and we will always endeavor to work towards the benefit and prosperity of both of our companies - together.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="values-item">
+                                    <figure><img src="http://d1w0s0vp1lssdb.cloudfront.net/img/values-item-2.png"/><h4>Equality</h4></figure>
+                                    <p>Each and every person who decides to work with Booking Ninjas will receive the same treatment as other clients: the highest standard of technology and the best quality of service. Those who partner with us can expect to experience the same exceptional resources and guidance as other partners or clients. We appreciate all of our associates, and we will do whatever we can to support each of them.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="values-item">
+                                    <figure><img src="http://d1w0s0vp1lssdb.cloudfront.net/img/values-item-3.png"/><h4>Innovation</h4></figure>
+                                    <p>Booking Ninjas strives to make sure that the products we offer are not only the best but also state-of-the-art. You can trust that our technology has the most updated system or software; however, we aspire to continue thinking up new concepts or designs as well. We understand that innovation is key, especially in our increasingly digital world. You can expect our development teams to pursue new ideas and creations in order to keep our company evolving.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="values-item">
+                                    <figure><img src="http://d1w0s0vp1lssdb.cloudfront.net/img/values-item-4.png"/><h4>Success</h4></figure>
+                                    <p>We are passionate about progress. Because we hold success as a value, our partners can expect Booking Ninjas to help them reach their goals efficiently and effectively. We want our partners’ missions and objectives to come to fruition, so we will do anything in our power to assist. Whether it is upgrading your online systems, integrating software, or developing a product that works for you, we will put our all into it to ensure your organization’s success.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pledge">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6"><img src="http://d1w0s0vp1lssdb.cloudfront.net/img/pledge.png" class="float_right"/></div>
+                            <div class="col-md-6">
+                                <h2 class="title">Pledge 1%</h2>
+                                <p>Booking Ninjas is a 1-1-1 organization, meaning that we have committed 1% of our time, 1% of our product, and 1% of our profit to help make an impact in places in need of support around the world. We are part of a community of businesses that have decided to devote 1% of their resources to the betterment of other communities worldwide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resources">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <h2 class="title">Other Booking Ninjas Resources</h2>
+                                <p>You can find a more detailed list of our products and services on our commercial domain here. Also, please feel free to peruse our assortment of blogs and commentaries on topics within the hospitality industry, property management field, and many other related areas of interest. You can access our blogs here. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="get-started">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6"><img src="http://d1w0s0vp1lssdb.cloudfront.net/img/get-started.png" class="get-started__img"/></div>
+                            <div class="col-md-6">
+                                <h2 class="title">Ready to learn how BookingNinjas can help you do more?</h2>
+                                <a href="#contact-modal" data-fancybox="contact-modal" class="button">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- contact-modal -->
+                <div class="modal contact-modal" id="contact-modal">
+                    <h5>Contact us</h5>
+                    <p>Booking Ninjas helps their partners reach goals and achieve missions. Complete the contact form below in order to partner with us. We look forward to working with you!</p>
+                    <div class="contact-modal__form">
+                        <form action="">
+                            <div class="contact-modal__form-item">
+                                <input type="text" name="" required="required" placeholder="First Name*"/>
+                            </div>
+                            <div class="contact-modal__form-item">
+                                <input type="text" name="" required="required" placeholder="Last Name*"/>
+                            </div>
+                            <div class="contact-modal__form-item">
+                                <input type="text" name="" required="required" placeholder="Company*"/>
+                            </div>
+                            <div class="contact-modal__form-item">
+                                <input type="email" name="" required="required" placeholder="Email*"/>
+                            </div>
+                            <div class="contact-modal__form-item">
+                                <input type="text" name="" required="required" placeholder="Phone number*"/>
+                            </div>
+                            <span>Continent/Region*</span>
+                            <div class="contact-modal__form-item">
+                                <select name="" size="1">
+                                    <option value="" selected="selected">USA</option>
+                                    <option value="">Europe</option>
+                                    <option value="">Asia &amp; Australia</option>
+                                </select>
+                            </div>
+                            <div class="contact-modal__form-item">
+                                <select name="" size="1">
+                                    <option value="" selected="selected">Your role*</option>
+                                    <option value="">Administrator</option>
+                                    <option value="">Technical</option>
+                                    <option value="">Sales &amp; Marketing</option>
+                                    <option value="">Operations</option>
+                                </select>
+                            </div>
+                            <div class="contact-modal__form-item">
+                                <select name="" size="1">
+                                    <option value="" selected="selected"># of Sales Reps in your Company</option>
+                                    <option value="">1-10</option>
+                                    <option value="">21-50</option>
+                                    <option value="">51-100</option>
+                                    <option value="">100+</option>
+                                </select>
+                            </div>
+                            <div class="contact-modal__form-item">
+                                <input class="button" id="" name="" value="Request Non Profit Benefits" type="submit"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- contact-modal end -->
+            </div>
+            <!-- Main end -->
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <a href="/" class="logo"><img src="http://d1w0s0vp1lssdb.cloudfront.net/img/logo-footer.png" alt="Booking Ninjas Logo"/></a>
+                            <p class="footer-copyright">Copyright 2000-2020, Bookingninjas.org </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-7">
+                                    <p class="footer-title">Follow Us</p>
+                                    <nav class="footer-social">
+                                        <a href="https://www.facebook.com/bookingninjas" target="_blank"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/bookingninjas" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.youtube.com/channel/UCOrcTzmQnmY7DG2nzwfa8zw" target="_blank"><i class="fab fa-youtube"></i></a>
+                                        <a href="https://www.linkedin.com/company/5346092/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="https://twitter.com/bookingninjas" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.pinterest.com/bookingninjas" target="_blank"><i class="fab fa-pinterest"></i></a>
+                                        <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank"><i class="fab fa-salesforce"></i></a>
+                                    </nav>
+                                </div>
+                                <div class="col-lg-5 align-self-end">
+                                    <a href="#" class="button">join us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="footer-list">
+                        <!-- <ul>
+                             <li><a href="#">Careers</a></li>
+                             <li><a href="#">Impressum</a></li>
+                             <li><a href="#">Email Preferences</a></li>
+                             <li><a href="#">Privacy</a></li>
+                             <li><a href="#">Terms of Service</a></li>
+                             <li><a href="#">Cookie Preferences</a></li>
+                        </ul> -->
+                    </nav>
+                </div>
+            </footer>
+            <!-- Footer end -->
+        
+            <!-- Scripts -->
+            <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+            <script src="http://d1w0s0vp1lssdb.cloudfront.net/js/common.js"></script>
+            <!-- Scripts end -->
+        </body>
+    </html>
+    
+</apex:page>

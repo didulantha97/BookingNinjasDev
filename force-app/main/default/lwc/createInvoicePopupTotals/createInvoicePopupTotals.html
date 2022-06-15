@@ -1,0 +1,98 @@
+<template>
+    <lightning-layout class="slds-p-horizontal_large" multiple-rows>
+        <template if:true={quote}>
+            <lightning-layout-item size="9">
+                <p>Due Now</p>
+            </lightning-layout-item>
+            <lightning-layout-item size="3">
+                <lightning-formatted-number
+                    value={dueNow}
+                    format-style="currency"
+                    currency-code="USD"
+                ></lightning-formatted-number>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="9">
+                <p class="slds-text-title_bold">Total Payment</p>
+            </lightning-layout-item>
+            <lightning-layout-item size="3">
+                <lightning-formatted-number
+                    value={oneTimePayment}
+                    format-style="currency"
+                    currency-code="USD"
+                    class="slds-text-title_bold"
+                ></lightning-formatted-number>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12">
+                <div class="slds-p-horizontal_medium slds-border_bottom"></div>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="9">
+                <p>One Time Payment</p>
+            </lightning-layout-item>
+            <lightning-layout-item size="3">
+                <lightning-formatted-number
+                    value={oneTimePayment}
+                    format-style="currency"
+                    currency-code="USD"
+                ></lightning-formatted-number>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="9">
+                <p>Monthly Payment</p>
+            </lightning-layout-item>
+            <lightning-layout-item size="3">
+                <lightning-formatted-number
+                    value={monthlyPayment}
+                    format-style="currency"
+                    currency-code="USD"
+                ></lightning-formatted-number>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="9">
+                <p>Annualy Payment</p>
+            </lightning-layout-item>
+            <lightning-layout-item size="3">
+                <lightning-formatted-number
+                    value={annualPayment}
+                    format-style="currency"
+                    currency-code="USD"
+                ></lightning-formatted-number>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12">
+                <p class="slds-p-top_medium">Custom Down Payment</p>
+            </lightning-layout-item>
+            <lightning-layout-item size="12">
+                <lightning-input
+                    type="number"
+                    name="Downpayment__c"
+                    variant="label-hidden"
+                    formatter="percent-fixed"
+                    step="0.01"
+                    min="0"
+                    max="100"
+                    class="slds-p-vertical_xxx-small"
+                    onchange={setCustomDownPayment}
+                >
+                </lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12">
+                <p>Notes</p>
+            </lightning-layout-item>
+            <lightning-layout-item size="12">
+                <lightning-textarea
+                    name="Notes__c"
+                    variant="label-hidden"
+                    label={label.PBO_FieldLabel_Notes}
+                    value={quote.Notes__c}
+                    class="booking-ninjas-underscored-input"
+                    max-length="131072"
+                >
+                </lightning-textarea>
+            </lightning-layout-item>
+        </template>
+    </lightning-layout>
+</template>

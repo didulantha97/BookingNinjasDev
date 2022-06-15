@@ -1,0 +1,85 @@
+<apex:component controller="ScheduleCallService" allowDML="true">
+    
+    <apex:attribute name="contact_id" type="String" assignTo="{!contactId}" description="the record id where the cook book should get associated to" />
+           
+    <!-- SLDS WRAPPER -->
+    <div class="slds-scope">
+        <!-- Messages -->
+        <apex:outputPanel id="messages">
+            <script>
+                var j$ = jQuery.noConflict();
+                j$(document).ready(function($) {
+                    j$('[id$=schedule-date]').datepicker({ dateFormat: 'm/dd/yy', changeMonth: true, changeYear: true });
+                    j$('[id$=schedule-time]').timepicker({ timeFormat: 'H:i', step : '30' });
+                    
+                    //error meessage popup fadeout
+                    $('#errorPanelmsg').fadeOut(10000);
+                    
+                    //error meessage popup fadeout
+                    $('#successPanelmsg').fadeOut(10000);
+                });
+            </script>
+            <!-- Error panel -->
+            <apex:outputLabel rendered="{!showError}">
+                <div id="errorPanelmsg" style="z-index: 9999; margin-top:2px; border-radius:5px;" class="slds-notify slds-notify--alert slds-theme--error slds-theme--alert-texture" role="alert">
+                    <h2>
+                        {!responseMessage}
+                    </h2>     
+                </div>    
+            </apex:outputLabel>
+            <!-- / Error panel -->
+            
+            <!-- Success panel -->
+            <apex:outputLabel rendered="{!showSuccess}">
+                <div id="successPanelmsg" style="z-index: 9999; margin-top:2px; border-radius:5px;" class="slds-notify slds-notify--alert slds-theme--success slds-theme--alert-texture" role="alert">
+                    {!responseMessage}     
+                </div>    
+            </apex:outputLabel>
+            <!-- / Success panel -->
+            
+        </apex:outputPanel>
+        <!-- / Messages -->
+        <apex:form id="form">
+            <apex:pageBlock id="block" title="Schedule Call">
+                <apex:pageBlockSection id="blockSection" title="Schedule Call and Create Cook Book Record" collapsible="false" >
+                    
+                    <apex:outputLabel >Assign To: </apex:outputLabel>
+                    <apex:selectList value="{!UserId}" multiselect="false" size="1">
+                        <apex:selectOptions value="{!ListOfUsers}"/>
+                    </apex:selectList>
+                    
+                    <apex:outputLabel >Select Date: </apex:outputLabel>
+                    <apex:inputText id="schedule-date" value="{!scheduledDate}" onchange="isContactHasSchedule();" />
+                    
+                    <!-- <apex:outputLabel >Select Time: </apex:outputLabel>
+                    <apex:inputText id="schedule-time" value="{!scheduledTime}" /> -->
+                    
+                    <apex:outputLabel >Notes: </apex:outputLabel>
+                    <apex:inputTextArea id="notes" value="{!notes}" />
+                    
+                    <apex:outputLabel >Interest Level: </apex:outputLabel>
+                    <apex:selectList value="{!interestLevel}" multiselect="false" size="1">
+                        <apex:selectOptions value="{!ListInterestLevel}"/>
+                    </apex:selectList>
+                    
+                    <apex:commandbutton action="{!createTask}" value="Schedule Call & Create CB" reRender="messages" status="actStatus" />
+                    
+                </apex:pageBlockSection>
+            </apex:pageBlock>                                
+            
+            <!-- Spinner -->                
+            <apex:actionStatus id="actStatus">
+                <apex:facet name="start">
+                    <div class="slds-spinner_container">
+                        <div class="slds-spinner--brand slds-spinner slds-spinner--medium" aria-hidden="false" role="alert">
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div>
+                </apex:facet>
+            </apex:actionStatus>
+            <!--/ Spinner -->
+            <apex:actionFunction action="{!isContactHasSchedule}" name="isContactHasSchedule" reRender="messages"  status="actStatus"/>
+        </apex:form>
+    </div>
+</apex:component>

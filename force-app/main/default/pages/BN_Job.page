@@ -1,0 +1,94 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top job-listing-single-bnr">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-bnr.png" alt=""/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Salesforce Admin</h1>
+                                <p>We are a Salesforce partner with an App Exchange application looking to expand our team with new Salesforce admins.                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content job-listing-single">
+                <div class="container">
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-6">
+                            <div class="job-listing-single__section">
+                                <div class="job-listing-single__icon"><img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon1.png" alt=""/></div>
+                                <h3>The position will entail:</h3>
+                                <ul>
+                                    <li>Data imports, exporting and formatting data from other
+                                        systems.</li>
+                                    <li> Advanced Salesforce reporting</li>
+                                    <li>Data Migration</li>
+                                    <li>Record Layout Customization on different organizations</li>
+                                    <li>Other functions like setup using clicks</li>
+                                    <li>All around Excel skills are important as well to arrange 
+                                    data before new imports</li>
+                                    <li>Onboarding new clients</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="job-listing-single__section float_right">
+                                <div class="job-listing-single__icon"><img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon2.png" alt=""/></div>
+                                <h3>Qualifications                            </h3>
+                                <ul>
+                                    <li>Experience with Salesforce (non-coding)</li>
+                                    <li>Client onboarding</li>
+                                    <li>Data migration expertise</li>
+                                    <li>Apex coding is a bonus but not required</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12">
+                            <div class="job-listing-single__section float_right">
+                                <div class="job-listing-single__icon"><img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon3.png" alt=""/></div>
+                                <h3>About Us                            </h3>
+                                <p>We are a software company based in Miami called Booking Ninjas.
+                                    BookingNinjas is an all-inclusive digital solution, a Property Management System (PMS) native to the Salesforce platform. We consist of a team of dedicated people who are interested in solving problems of businesses around them, particularly in the hospitality field.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12">
+                            <div class="job-listing-single__section float_right">
+                                <div class="job-listing-single__icon"><img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon4.png" alt=""/></div>
+                                <h3>Bonus/Extra Credit                            </h3>
+                                <p>The top applicants will want to record a quick, two-minute max video introduction with a fun fact about themselves, experience working remotely if any, and what one quality they have that will push the Booking Ninjas team to the top. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12 text_center">
+                            <h4>Thanks for your time. Looking forward to hearing from you.</h4>
+                            <p><em>For more information about hotel PMS visit <a href="#">here.</a> </em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+       </apex:define>
+    </apex:composition>
+
+
+</apex:page>

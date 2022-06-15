@@ -1,0 +1,202 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top advantage-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img alt="Advantages of BookingNinjas Property Management System" src="https://d1b89zc79exfxt.cloudfront.net/img/advantage-top.png"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Advantages of Our Property Management System</h1>
+                                <div class="advantage-top__video">
+                                    <div class="container">
+                                        <a class="video__img" data-fancybox="fancybox" href="https://www.youtube.com/watch?v=4QXOUYagnbQ">
+                                            <img alt="Bookingninjas Property Management System" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-video.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content advantage-content">
+               <div class="container">
+                   <div class="advantage-page__text">
+                        <article>
+                            <p>Get acquainted with the advantages of working with Booking Ninjas…</p>
+                            <p>The Booking Ninjas property management software is for property managers who need to organize their workflow and adapt their business to the digital age. Our cloud-based software provides digital transformation for your property business in a way that’s incomparable to other PMS systems. Our Salesforce PMS provides your company with the most up-to-date, advanced technology on the software market and makes improvements to EVERY department of your property.</p>
+                        </article>
+                    </div>
+                   <div class="advantage-page__tags">
+                       <div class="row">
+                           <div class="col-lg-4">
+                               <div class="advantage-page__tag">
+                                   <figure>
+                                       <span><img alt="Optimal Organization - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantage-img1.png"/></span>
+                                       <figcaption class="text_center">Optimal <br/>
+                                        Organization</figcaption>
+                                   </figure>
+                                <section> <p>Booking Ninjas provides optimal organization for all of our clients. Keep all of your property’s data and important documents together on a singular, easy-to-use platform for instant access. </p></section> 
+                               </div>
+                           </div>
+                           <div class="col-lg-4">
+                               <div class="advantage-page__tag">
+                                   <figure>
+                                       <span><img alt="Mobility - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantage-img2.png"/></span>
+                                       <figcaption>Mobility</figcaption>
+                                   </figure>
+                                  <section> <p>One of the biggest benefits of the Booking Ninjas PMS is the fact that we’re built on a fully mobile, cloud-based platform. This makes it easier for property managers to manage their properties on any smart device from anywhere in the world. <a href="https://www.bookingninjas.com/tour/mobile-apps" target="_blank">Mobile applications offer a large amount of improvements</a> for your property.</p></section> 
+                               </div>
+                           </div>
+                           <div class="col-lg-4">
+                               <div class="advantage-page__tag">
+                                   <figure>
+                                       <span><img alt="Customization - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantage-img3.png"/></span>
+                                       <figcaption>Customization</figcaption>
+                                   </figure>
+                                    <section><p>Our hotel software is fully integratable and highly scalable, meaning it can be easily customized to fit your property’s needs. Align your property management software with your company goals. </p></section> 
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="advantage-page__text">
+                       <article class="text_center">
+                            <h2>Advantages of Our Property Management System</h2>
+                            <h6>Technological:</h6>
+                            <figure><img alt="Technological - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantage-img-center.png"/></figure>
+                       </article>
+                       <p>Since its inception, the Booking Ninjas property management system has put an emphasis on giving its clients the most advanced technology to help grow their property business. Our technology was strengthened through an official partnership with tech giant, Salesforce. For five years, we’ve been recognized as a Salesforce PMS.</p>
+                       <p>Perhaps our biggest technological advantage is our unlimited access to <a href="https://www.bookingninjas.com/artificial-intelligence" target="_blank">Einstein Analytics</a>, the premier data analysis kit on the software market today. Einstein gives a property manager tools to grow every department of their business.</p>
+                       <p>Once we migrate your property’s big data onto our cloud-based PMS, Einstein AI instantly crunches the numbers and provides your property with loads of smart suggestions to improve your company. Here is how Booking Ninjas and Salesforce technology can enhance every department of your property:</p>
+                   </div>
+                   <div class="advantage-page__list">
+                       <div class="row">
+                           <div class="col-lg-6">
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Sales - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon1.png"/></i>
+                                       <figcaption>Sales</figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Einstein is able to generate optimal price points for your products and services to save you time on manually pricing each item </li>
+                                       <li>Get an accurate percentage on the chance each lead will convert to a sale</li>
+                                       <li>Predict how long an account will take to close</li>
+                                       <li>Send timely recommendations to reps regarding communication with clients</li>
+                                       <li>Take notes on each lead, so your entire team will know that status of each new deal </li>
+                                       <li>Record and send daily briefings to your team before work so employees will better understand what to focus on </li>
+                                       <li>Automatically prioritize the most important emails in your inbox  </li>
+                                       <li>Can smartly predict revenue forecasts for individual AE’s or from any part of the office</li>
+                                       <li>Avoid overstaffing by analyzing your property’s historical data to accurately suggest how many employees are needed to maintain revenue</li>
+                                   </ul>
+                               </div>
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Finance - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon2.png"/></i>
+                                       <figcaption>Finance</figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Identify which customers have a history of late payments or cancellations so you better communicate with them ahead of time</li>
+                                       <li>Let Einstein read emails from prospective customers to determine how likely it is they will potentially buy into your product or service</li>
+                                       <li>Accurate forecasts of how much you can expect to make from collections</li>
+                                       <li>AI provided recommendations to suggest the easiest way to go about receiving collections from past due clients</li>
+                                       <li>Budget allocation tools allow property managers to see the recommended distribution for each department of their company</li>
+                                       <li>Formulate predictions for different sales’ teams commissions so you know how much budget to put aside for each</li>
+                                       <li>Handle billing inquiries by chatbot. Allow your customers to have 24/7 support for all their questions and concerns</li>
+                                   </ul>
+                               </div>
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Commerce - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon3.png"/></i>
+                                       <figcaption>Commerce                                </figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Accurately predict which room types will perform well during a specific season or time of year</li>
+                                       <li>Add incentives for guests to book directly from your website</li>
+                                       <li>Manage discounts and discount rates as well as which customers to offer discounts to</li>
+                                       <li>Automatically deliver search results that align with a particular customer’s budget</li>
+                                       <li>Have your website recommend upsell offers to customers booking online</li>
+                                       <li>Set incentives for customers to spread the word about your company and refer new customers to your property</li>
+                                       <li>Forecast the demand for your rooms to avoid overbooking</li>
+                                       <li>Let Einstein Vision pick for you the best photos that will attract customers to your website</li>
+                                   </ul>
+                               </div>
+                           </div>
+                           <div class="col-lg-6">
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Marketing - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon4.png"/></i>
+                                       <figcaption>Marketing</figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Accurately predict how many leads each marketing tactic will generate, allowing you to focus on the ones that will most likely lead to conversions</li>
+                                       <li>Analyze your lead’s buying habits to better appeal your property to them</li>
+                                       <li>Compare prospective customers to your most dedicated consumers, sorting leads by how closely they compare</li>
+                                       <li>Forecast the success rate of new marketing campaigns to see if they’re worth investing in or not</li>
+                                       <li>AI suggestions to help improve and optimize existing campaigns</li>
+                                       <li>Automatically tag all your photos with your desired keywords helping you easily find the most relevant image at all times</li>
+                                       <li>Predict when the best time is to communicate with a customer based on their engagement habits</li>
+                                       <li>Know which form of communication (email, social media, phone call, etc..) is the best way to get in touch with a customer</li>
+                                       <li>Anticipate your customer’s preferences through analyzing their prior purchasing habits</li>
+                                   </ul>
+                               </div>
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Customer Service - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon5.png"/></i>
+                                       <figcaption>Customer Service</figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Easily predict how satisfied a customer is with your service using a standardized score</li>
+                                       <li>Keep logs from all prior communications with a particular client, making it easier for your customer service rep to know how to proceed with the call</li>
+                                       <li>Let AI analyze any damaged products to assess if they need maintenance or not</li>
+                                       <li>Predict how long it will take a particular agent to resolve a case</li>
+                                       <li>Categorize calls based on level of difficulty and route them to specific agents</li>
+                                       <li>Automated chatbot answering for calls to direct them to appropriate department</li>
+                                       <li>Estimate customer retention rates based on chat and purchase history</li>
+                                       <li>Identify unhappy customers and generate recommendations for customer service reps to help them smoothen those relationships</li>
+                                       <li>More cross-selling opportunities by analyzing customers’ past purchase history</li>
+                                   </ul>
+                               </div>
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Human Resources - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon6.png"/></i>
+                                       <figcaption>Human Resources                                </figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Predict what yearly goals your employees have for themselves and be able to align those to your company’s goals</li>
+                                       <li>Identify which positions at your property have a high turnover rate</li>
+                                       <li>Let Einstein Prediction Builder filter through incoming resumes to determine the leading candidates for your open positions</li>
+                                       <li>Collect job candidate’s info through Chatbot</li>
+                                       <li>Rank importance of jobs to better understand which open positions are most important to fill</li>
+                                       <li>Keep track of an employee’s assortment of work to help balance tough and fun projects</li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="advantage-page__text">
+                       <article class="text_center">
+                            <h2>Why this Hospitality Property Management System is Better than the Rest?</h2>
+                       </article>
+                       <p>Booking Ninjas can digitally transform your property business to be prepared for the 4th Industrial Revolution. The move to digitizing will become less and less of an option, and we do not want to see companies die as a result of a failure to adapt to the digital era.</p>
+    
+                        <p>Interested in implementing our Salesforce PMS to your property? Just&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button desktop-button">schedule</apex:outputLink>&nbsp;a call with us and we'll find the best solution for your property!</p>
+                   </div>
+               </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

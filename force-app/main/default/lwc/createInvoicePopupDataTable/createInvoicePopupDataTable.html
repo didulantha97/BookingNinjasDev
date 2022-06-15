@@ -1,0 +1,160 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="slds-scrollable_y slds-p-horizontal_large slds-m-top_large" style="height: 100%">
+        <table class="slds-table slds-table_cell-buffer slds-table_edit slds-table--header-fixed">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th scope="col" style="width: 15%">
+                        <div class="slds-truncate slds-cell-fixed" title="Product Name">Name</div>
+                    </th>
+                    <th scope="col" style="width: 14%">
+                        <div class="slds-truncate slds-cell-fixed" title="Handling Fee">Handling Fee</div>
+                    </th>
+                    <th scope="col" style="width: 14%">
+                        <div class="slds-truncate slds-cell-fixed" title="Payment Deposit">Deposit</div>
+                    </th>
+                    <th scope="col" style="width: 14%">
+                        <div class="slds-truncate slds-cell-fixed" title="Recurring Fee">Recurring Fee</div>
+                    </th>
+                    <th scope="col" style="width: 15%">
+                        <div class="slds-truncate slds-cell-fixed" title="Subscription Type">Billing Cycle</div>
+                    </th>
+                    <th scope="col">
+                        <div class="slds-truncate slds-cell-fixed" title="Notes">Notes</div>
+                    </th>
+                    <th scope="col" style="width: 3%">
+                        <div class="slds-cell-fixed">&nbsp;</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={items} for:item="item" for:index="itemIndex">
+                    <template if:false={item.removed}>
+                        <tr class="slds-hint-parent" key={item.Id}>
+                            <td scope="row">
+                                <div class="slds-truncate slds-text-title_bold" title={item.productName}>
+                                    <a href={item.productUrl} target="_blank" class="break-word">{item.productName}</a>
+                                </div>
+                            </td>
+                            <td class="slds-p-left_none" role="gridcell">
+                                <span class="output-value slds-grid slds-grid_align-spread">
+                                    <lightning-formatted-number
+                                        value={item.implFee}
+                                        format-style="currency"
+                                        currency-code="USD"
+                                    ></lightning-formatted-number>
+                                </span>
+                            </td>
+                            <td class="slds-p-left_none" role="gridcell">
+                                <span class="output-value">
+                                    <lightning-formatted-number
+                                        value={item.implDeposit}
+                                        maximum-fraction-digits="2"
+                                    ></lightning-formatted-number
+                                    >%
+                                </span>
+                            </td>
+                            <td class="slds-p-left_none" role="gridcell">
+                                <span class="output-value slds-grid slds-grid_align-spread">
+                                    <lightning-formatted-number
+                                        value={item.subsFee}
+                                        format-style="currency"
+                                        currency-code="USD"
+                                    ></lightning-formatted-number>
+                                </span>
+                            </td>
+                            <td
+                                class="slds-p-left_none"
+                                role="gridcell"
+                                data-target-index={itemIndex}
+                                data-target-field="billingCycle"
+                            >
+                                <select
+                                    name="billingCycle"
+                                    class="slds-input c-pointer"
+                                    onchange={onValueChangeHandle}
+                                    data-target-index={itemIndex}
+                                    data-target-field="billingCycle"
+                                >
+                                    <option value="Monthly" selected="selected">Monthly</option>
+                                    <option value="Annualy">Annualy</option>
+                                </select>
+                            </td>
+                            <td
+                                class="slds-p-left_none"
+                                role="gridcell"
+                                onclick={onCellClick}
+                                data-target-index={itemIndex}
+                                data-target-field="notes"
+                            >
+                                <lightning-input
+                                    type="text"
+                                    value={item.notes}
+                                    variant="label-hidden"
+                                    data-target-index={itemIndex}
+                                    data-target-field="notes"
+                                    onchange={onValueChangeHandle}
+                                >
+                                </lightning-input>
+                            </td>
+                            <td>
+                                <button class="slds-button slds-button_icon" value={itemIndex} onclick={deleteItem}>
+                                    <lightning-icon
+                                        icon-name="utility:delete"
+                                        size="x-small"
+                                        alternative-text="Delete"
+                                        title="Delete"
+                                    >
+                                    </lightning-icon>
+                                </button>
+                            </td>
+                        </tr>
+                    </template>
+                </template>
+                <!-- <tr>
+                    <td>
+                        <div>
+                            <lightning-input type="text" onchange={handlePName}></lightning-input>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <lightning-input type="text" onchange={handlePImplFee}></lightning-input>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <lightning-input type="text" onchange={handlePImplDep}></lightning-input>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <lightning-input type="text" onchange={handlePMonFee}></lightning-input>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <lightning-input type="text" onchange={handlePBilling}></lightning-input>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <lightning-input type="text" onchange={handlePNotes}></lightning-input>
+                        </div>
+                    </td>
+                    <td>
+                        <button class="slds-button slds-button_icon" onclick={addProducts}>
+                            <lightning-icon
+                                icon-name="utility:add"
+                                size="x-small"
+                                alternative-text="Add"
+                                title="Add"
+                            >
+                            </lightning-icon>
+                        </button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+</template>

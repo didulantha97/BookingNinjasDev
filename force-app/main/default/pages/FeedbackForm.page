@@ -1,0 +1,107 @@
+<apex:page sidebar="false" showHeader="false" standardController="Contact" extensions="FeedbackController" standardStylesheets="false" docType="html-5.0">
+    <html>
+      <head>
+         <apex:stylesheet value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+         <apex:stylesheet value="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+         <apex:includeScript value="https://code.jquery.com/jquery-3.1.1.min.js"/>
+         <apex:includeScript value="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"/>
+         <style>
+              html, body { margin: 0px; padding: 0; }
+             .content { background-color:#f4f4f4; border:1px solid #b4b4b4; margin: 0 auto; width: 750px; padding:20px; height: auto; }
+             .clear { clear:both }
+             .propertyInfo { padding-right:30px; }
+             .row { margin-left: 0 }
+         </style>
+      </head>
+      <body>
+         <apex:form >
+             <div class="content">
+                <table border="0" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;border-bottom:2px dotted #b4b4b4;margin-bottom:25px;">
+                   <tr>
+                      <td style="width:150px;">
+                         <img src="https://bookingninjas--c.na30.content.force.com/servlet/servlet.ImageServer?id=01536000001zhPu&oid=00D36000001H4E9&lastMod=1469499705000" alt="Logo" width="200px"/>
+                      </td>
+                      <td style="padding-left:50px;">
+                          <apex:outputPanel rendered="{!IF(IsAnswered == false,TRUE,FALSE)}">
+                             <h3 style="color:#39b510;">You have new Feedback Form!</h3>
+                          </apex:OutputPanel>
+                          <apex:outputPanel rendered="{!IF(IsAnswered == true,TRUE,FALSE)}">
+                             <h3 style="color:#39b510;">You have already answered this form.</h3>
+                          </apex:OutputPanel>
+                      </td>
+                   </tr>
+                </table>
+                <h4>Hello {!contact.Name} </h4><br/><br/>
+                    <p>Please refer to the information below for the feedback form.</p><br/>
+                    <div class="propertyInfo">
+                        Email: <i>{!contact.Email}</i> <br/>
+                        Phone: <i>{!contact.Phone}</i> <br/>
+                    </div><br/><br/>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>How would you grade your current PMS supplier? *</label>
+                             <apex:input type="range" html-min="0" html-max="100" html-step="1" id="grade_range" html-name="grade_range" value="{!Feedback1}" html-oninput="slider_output.value=grade_range.value" onchange="slider_output.value=value"/>
+                             <output name="slider_output" id="slider_output" for="form_slider1">0</output>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>If there is just one or two things that can be better, what would they be? *</label>
+                             <apex:inputTextArea value="{!Feedback2}" styleclass="form-control" richtext="true" rows="10" required="true"/>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>What are the key takeaways from the call? *</label>
+                             <apex:inputTextArea value="{!Feedback3}" styleclass="form-control" richtext="true" rows="10" required="true"/>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>Is changing your system part of your 3 priorities? *</label>
+                             <apex:selectList value="{!Feedback4}" multiselect="false" size="1" styleclass="form-control" required="true">
+                                <apex:selectOptions value="{!items}"/>
+                             </apex:selectList>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>What are your biggest concerns about implementing a new system for your company? *</label>
+                             <apex:inputTextArea value="{!Feedback5}" styleclass="form-control" richtext="true" rows="10" required="true"/>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>Is there anything that did not meet your expectations? *</label>
+                             <apex:inputTextArea value="{!Feedback6}" styleclass="form-control" richtext="true" rows="10" required="true"/>
+                             </div>
+                         </div>
+                    </div>
+                    
+                    <br/>
+                    <apex:outputPanel rendered="{!IF(IsAnswered == false,TRUE,FALSE)}">
+                         <div class="row">
+                             <div class="col-md-12">
+                                 <div class="form-group">
+                                     <apex:commandbutton action="{!SaveForm}" value="Submit Feedback Form" styleclass="btn btn-success"/>
+                                 </div>
+                             </div>
+                        </div>
+                    </apex:OutputPanel>
+             </div>   
+         </apex:form>
+      </body>
+   </html>
+</apex:page>

@@ -1,0 +1,75 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" controller="BN_Portal_Users_Controller">
+
+     <!-- Template -->
+    <apex:composition template="BN_Portal_Template">
+        <!-- Define content -->
+        <apex:define name="bn_portal_content">
+
+            <div class="col-lg-9  col-md-8">
+                <apex:outputPanel styleClass="portal__main" id="portal-users">
+                    <div class="portal__main-text">
+                        <h1>Add user </h1>
+                        <apex:form >
+                            <div class="portal__main-form">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4">
+                                        <div class="portal__main-form-item">
+                                            <apex:input type="text" html-placeholder="Name" value="{!name}" required="true" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="portal__main-form-item">
+                                            <apex:input type="text" html-placeholder="Email" value="{!email}" required="true" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="portal__main-form-item">
+                                            <apex:input type="text" html-placeholder="Phone" value="{!phone}" required="true" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="portal__main-form-item">
+                                            <apex:input type="date" html-placeholder="Date of activation" value="{!dateOfActivation}" required="true" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="portal__main-form-item">
+                                            <apex:commandButton styleClass="button small" value="Request new user" action="{!addUserRequest}"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="portal__main-form-item">
+                                    <apex:messages style="color: red;"/>
+                                </div>
+                            </div>
+                            <div class="portal__main-history">
+                                <table>
+                                    <tr>
+                                        <th>Request No.</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Activation Date</th>
+                                    </tr>
+                                    <apex:repeat var="user" value="{!users}">
+                                        <tr>
+                                            <td>{!user.Name}</td>
+                                            <td>{!user.Name__c}</td>
+                                            <td>{!user.Email__c}</td>
+                                            <td>
+                                                <apex:outputText value="{0, date, MMMM dd',' yyyy}">
+                                                    <apex:param value="{!user.Date_of_Activation__c}" /> 
+                                                </apex:outputText>
+                                            </td>
+                                        </tr>
+                                    </apex:repeat>
+                                </table>
+                            </div>
+                        </apex:form>
+                    </div>
+                </apex:outputPanel>
+            </div>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

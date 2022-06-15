@@ -1,0 +1,282 @@
+<template>
+    <div style="background-color: #FFFFFF; border-radius: 0.25rem" class="slds-p-around_large">
+        <template if:true={fAccounts}>
+            <div class="container-wrap slds-is-relative slds-m-horizontal_large">
+                <!-- Header -->
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-12 slds-align_absolute-center">
+                        <a onclick={previousPage}>
+                            <div data-direction="1" class="noselect">
+                                <span class="slds-icon_container carousel-button">
+                                    <svg class="slds-icon">
+                                        <use
+                                                xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#chevronleft">
+                                        </use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slds-col slds-size_10-of-12">
+                        <div class="slds-carousel">
+                            <div class="slds-carousel__stage">
+                                <div class="slds-carousel__panels" style={carouselPanelsStyle}>
+                                    <template for:each={fAccounts}
+                                              for:item="container"
+                                              for:index="containerIndex">
+                                        <div class="slds-carousel__panel"
+                                             key={container}>
+                                            <div class="slds-grid">
+                                                <template for:each={container}
+                                                          for:item="fAccount"
+                                                          for:index="index">
+                                                    <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-12 slds-large-size_2-of-12 slds-grid slds-wrap slds-p-bottom_large"
+                                                         key={fAccount.Id}>
+                                                        <lightning-card class="slds-m-horizontal_small card-carousel">
+                                                            <button style={fAccount.SelectedStyle}
+                                                                    class="slds-button slds-button_neutral card-title-button slds-m-horizontal_xx-small"
+                                                                    data-id={fAccount.Id}
+                                                                    onclick={selectFAccount}>
+                                                                {fAccount.Name}
+                                                            </button>
+
+                                                            <center>
+                                                                <p class="slds-p-horizontal_small">Items To Reconcile:</p>
+                                                                <h1><p class="slds-p-horizontal_small green-font">{fAccount.Items_To_Reconcile__c}</p></h1>
+                                                                <p class="slds-p-horizontal_small">Total Balance:</p>
+                                                                <p class="slds-p-horizontal_small green-font">
+                                                                    <lightning-formatted-number value={fAccount.Balance__c} format-style="currency" currency-code="USD"></lightning-formatted-number>
+                                                                </p>
+                                                            </center>
+                                                        </lightning-card>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-12 slds-align_absolute-center">
+                        <a onclick={nextPage}>
+                            <div data-direction="-1" class="noselect">
+                            <span class="slds-icon_container carousel-button">
+                                <svg class="slds-icon">
+                                    <use
+                                            xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#chevronright">
+                                    </use>
+                                </svg>
+                            </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template if:true={showFilterForm}>
+            <lightning-record-edit-form object-api-name="Financial_Account_LineItem__c" onsubmit={searchRelatedItems}>
+                <div class="slds-m-around_medium">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input type="date" name="StartDate" label="Start Date"
+                                value={searchDateData.StartDate} class="slds-p-horizontal_xx-small"
+                                onchange={handleTimeIntervalChange}></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input type="date" name="EndDate" label="End Date" value={searchDateData.EndDate}
+                                class="slds-p-horizontal_xx-small" onchange={handleTimeIntervalChange}>
+                            </lightning-input>
+                        </div>
+                    </div>
+                    <div class=" slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name='Description__c'></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name='Detailed_Category__c'></lightning-input-field>
+                        </div>
+                    </div>
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name='Transaction_Amount__c'></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name='Type__c'></lightning-input-field>
+                        </div>
+                    </div>
+
+                    <div class="slds-m-top_medium slds-align_absolute-center">
+                        <lightning-button variant="brand" type="submit" name="save" label="Search"></lightning-button>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+
+            <lightning-tabset class="slds-m-around_medium">
+                <lightning-tab label="New Transactions" onactive={handleActive}>
+                    <template if:true={relatedItems.newTransactions}>
+                        <div class="slds-grid slds-grid_vertical-align-center slds-p-bottom_xx-small">
+                            <p class="">Records Amount: {relatedItems.newTransactions.length}</p>
+                            <div class="slds-m-left_small">
+                                <lightning-button class="slds-m-horizontal_xx-small" variant="brand" onclick={handleReconcileSelected} label="Reconcile Selected" disabled={disableMassButton}></lightning-button>
+                            </div> 
+                        </div>
+                    </template>
+
+                    <lightning-datatable key-field="Id" data={relatedItems.newTransactions} columns={newListColumns}
+                        onrowaction={handleRowAction} onrowselection={handleRowSelection}
+                        selected-rows={selectedNewItems} column-widths-mode="auto">
+                    </lightning-datatable>
+                </lightning-tab>
+
+                <lightning-tab label="Reconciled" onactive={handleActive}>
+                    <template if:true={relatedItems.reconciled}>
+                        <div class="slds-grid slds-grid_vertical-align-center slds-p-bottom_xx-small">
+                            <p class="">Records Amount: {relatedItems.reconciled.length}</p>
+                            <div class="slds-m-left_small">
+                                <lightning-button class="slds-m-horizontal_xx-small" variant="brand"
+                                    onclick={submitUndo} label="Undo Selected" disabled={disableMassButton}></lightning-button>
+                            </div>
+                        </div>
+                        </template>
+
+                    <lightning-datatable key-field="Id" data={relatedItems.reconciled}
+                        columns={reconciledOrExcludedListColumns} onrowaction={handleRowAction}
+                        onrowselection={handleRowSelection} selected-rows={selectedReconciledItems} column-widths-mode="auto">
+                    </lightning-datatable>
+                </lightning-tab>
+
+                <lightning-tab label="Excluded" onactive={handleActive}>
+                    <template if:true={relatedItems.excluded}>
+                        <div class="slds-grid slds-grid_vertical-align-center slds-p-bottom_xx-small">
+                            <p class="">Records Amount: {relatedItems.excluded.length}</p>
+                            <div class="slds-m-left_small">
+                                <lightning-button class="slds-m-horizontal_xx-small" variant="brand" onclick={submitUndo}
+                                label="Undo Selected" disabled={disableMassButton}></lightning-button>
+                            </div>
+                        </div>
+                    </template>
+
+                    <lightning-datatable key-field="Id" data={relatedItems.excluded}
+                        columns={reconciledOrExcludedListColumns} onrowaction={handleRowAction}
+                        onrowselection={handleRowSelection} selected-rows={selectedExcludedItems} column-widths-mode="auto">
+                    </lightning-datatable>
+                </lightning-tab>
+
+            </lightning-tabset>
+        </template>
+
+        <template if:true={showSpinner}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+    </div>
+
+    <template if:true={isModalOpen}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                        <lightning-icon icon-name="utility:close"
+                                        alternative-text="close"
+                                        variant="inverse"
+                                        size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{modalTitle}</h2>
+                </header>
+                <lightning-record-edit-form object-api-name={sObjectTypeForReconcile} onsubmit={submitReconcile} onload={handleModalLoad}>
+
+                    <div class="slds-modal__content slds-p-around_medium slds-grid slds-wrap" id="modal-content-id-1">
+                        <template if:false={modalSplitMode}>
+                            <div class="sfdx-col slds-size_1-of-1">
+                                <lightning-datatable key-field="Id"
+                                                    max-row-selection="1"
+                                                    hide-checkbox-column={hideCheckboxReconcileList}
+                                                     data={selectedItemList}
+                                                     columns={reconcileViewListColumns}
+                                                     onrowselection={handleSplitRow}
+                                                     wrap-text-max-lines="1"
+                                >
+                                </lightning-datatable>
+                            </div>
+                        </template>
+                        
+                        <template if:true={modalSplitMode}>
+                            <div class="sfdx-col slds-size_1-of-2 slds-p-bottom--x-small"> Reconcile selected item: {selectedItem.Name}</div>
+                            <div class="sfdx-col slds-size_1-of-2 slds-grid slds-grid_align-end">
+                                <lightning-formatted-number value={modalTotalAmount} format-style="currency" currency-code="USD"></lightning-formatted-number>
+                            </div>
+                            <div class="sfdx-col slds-size_2-of-2 slds-p-bottom--medium slds-truncate"> Description: {selectedItem.Description__c}</div>
+                        </template>
+                       
+                        <template if:true={modalSplitMode}>
+                            <div class="sfdx-col slds-size_1-of-1">
+                                <lightning-datatable key-field="Id"
+                                                     hide-checkbox-column
+                                                     show-row-number-column
+                                                     data={splitRecords}
+                                                     columns={modalSplitViewListColumns}
+                                                     onrowaction={removeSplitItem}
+                                >
+                                </lightning-datatable>
+                            </div>
+                        </template>
+
+                        <div class="sfdx-col slds-size_1-of-1">
+                            <lightning-input-field field-name="Payee_Account__c"></lightning-input-field>
+                            <lightning-input-field field-name="Payee_Contact__c"></lightning-input-field>
+                            <!--<lightning-input-field field-name="Detailed_Category__c"></lightning-input-field>-->
+                            <lightning-combobox
+                                    name="detailedCategory"
+                                    label="Detailed Category"
+                                    placeholder="Select Category"
+                                    class="slds-p-horizontal_xx-small"
+                                    options={detailedCategoryOptions}
+                                    data-id="detailedCategory"
+                                     ></lightning-combobox>
+                            <lightning-input-field field-name="Description__c"></lightning-input-field>
+
+                            <template if:true={modalSplitMode}>
+                                <lightning-input-field field-name="Amount__c" required="true"></lightning-input-field>
+                            </template>
+                            <template if:false={modalSplitMode}>
+                                <lightning-input-field field-name="Amount__c" value={selectedItem.Transaction_Amount__c} class="slds-hide"></lightning-input-field>
+                            </template>
+
+                            <lightning-input-field field-name="Name" value={selectedItem.Name} class="slds-hide"></lightning-input-field>
+                            <lightning-input-field field-name="Related_FA_LineItem__c" value={selectedItem.Id} class="slds-hide"></lightning-input-field>
+
+                            <lightning-input-field field-name="Date__c" value={selectedItem.Date__c} class="slds-hide"></lightning-input-field>
+                        </div>
+
+                        <template if:true={modalSplitMode}>
+                            <div class="sfdx-col slds-size_1-of-1 slds-grid slds-grid_align-center">
+                                <lightning-button class="slds-m-horizontal_xx-small" type="submit" variant="brand" label="Split"></lightning-button>
+                            </div>
+                        </template>
+                    </div>
+
+                    <footer class="slds-modal__footer">
+                        <lightning-button class="slds-m-horizontal_xx-small" onclick={closeModal} label="Cancel"></lightning-button>
+                        <template if:true={modalSplitMode}>
+                            <lightning-button class="slds-m-horizontal_xx-small" variant="brand" onclick={submitSplitListReconcile} label="Reconcile"></lightning-button>
+                        </template>
+                        <template if:false={modalSplitMode}>
+                            <lightning-button class="slds-m-horizontal_xx-small" variant="brand" type="submit" label="Reconcile"></lightning-button>
+                        </template>
+                        <template if:false={modalSplitMode}>
+                            <lightning-button class="slds-m-horizontal_xx-small" variant="brand" onclick={submitExclude} label="Exclude"></lightning-button>
+                            <lightning-button class="slds-m-horizontal_xx-small" variant="brand" onclick={enableSplitMode} label="Split Item" disabled={disableSplitButton}></lightning-button>
+                        </template>
+                    </footer>
+                </lightning-record-edit-form>
+                <template if:true={showModalSpinner}>
+                    <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+                </template>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+</template>

@@ -1,0 +1,173 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url( https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg12.png)');
+                    $('.wrapper').css('background-image', 'url( https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg12.png)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Gestión inmobiliaria de alquileres vacacionales Software - 1" src=" https://d1b89zc79exfxt.cloudfront.net/img/flat-landing-illustration12.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Gestión inmobiliaria de alquileres vacacionales</h1>
+                                <p>Gestión a la manera Booking Ninjas.</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introduzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            <div class="landing__box landing__vacation">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h3>Estamos obsesionados con unas vacaciones llenas de diversión</h3>
+                        <p>Uno de nuestros mayores impulsos es la habilidad de nuestros clientes de proporcionar maravillosas experiencias vacacionales. Queremos lo mejor para <strong>usted, sus clientes y sus potenciales clientes.</strong></p>
+                        <p>Nuestro sistema de gestión está diseñado para que los grupos mencionados anteriormente tengan la mejor y más tranquila de las experiencias. Desde la incorporación de nuevos clientes hasta nuestra excepcional atención al cliente, hasta el servicio de ventas y servicio postventa, proporcionamos el mejor sistema para hacer su trabajo más fácil. Es nuestra filosofía</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box landing__vacation">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h3>Nuestra solución</h3>
+                        <p>Administrar una cadena hotelera siempre ha sido una tarea abrumadora, pero efectivamente gestionar locales de alquiler vacacional puede llegar a ser aún más desafiante. Diferentes localizaciones, grandes consultas, múltiples tipos de unidades, mantenimiento regular de la propiedad, y diversas cuentas son algunas de las cosas que hacen del alquiler vacacional una tarea más complicada que la gestión hotelera.</p>
+                        <p>No ser el dueño de la propiedad puede acarrearle estar respondiendo diariamente preguntas del inversor de la propiedad acerca de reservas, informes y calendarios.  Estas preguntas quizás no sean fáciles de responder, en gran parte, porque tendrá numerosas propiedades que supervisar.</p>
+                        <p>Tanto si estás buscando gestionar un único o una docena de locales de alquiler vacacional, un sistema de gestión fácil de usar y con las ya funciones incorporadas, que no es barato, podrá serle útil para dirigir un negocio eficiente y rentable.</p>
+                        <p>Para gran ayuda de los novatos y aquellos anfitriones que busquen ahorrar costes, este artículo les ayudará a encontrar algunas respuestas y les garantizará el mejor de los sistemas de alquileres vacaciones para obtener máxima rentabilidad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box landing__vacation">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <h3 class="text_center">Preguntas que quizás pueda tener</h3>
+                        <p class="text_center"><strong>¿Qué es un sistema de alquileres vacacionales?</strong></p>
+                        <p>En breves términos, un sistema de alquileres vacacionales es una herramienta imprescindible basado en la nube que permite a los gestores de propiedad crear su página web, juntar información sobre propiedad, aceptar directamente reservas con la opción de ser pagadas online, conectar la página con canales de distribución de terceros, iniciar comunicaciones con invitados, y administrar reservas de invitados, todo desde un eje central fácil de usar en el sistema.</p>
+                        <br/>
+                        <p class="text_center"><strong>¿Por qué necesita un sistema de alquileres vacacionales?</strong></p>
+                        <p>En la introducción, tratamos de informarle acerca de los beneficios que cosecharía de hacer uso del sistema de alquileres vacacionales para su propiedad, pero aquí encontrará algunos detalles que, quizás, deba tener en cuenta a la hora de utilizar este sistema. Un sistema de alquileres vacaciones robusto y excelente le ofrecerá los siguientes beneficios y muchos más:</p>
+                        <p><strong>1. La creación de una página web profesional y de alta conversión al instante</strong></p>
+                        <p>Se pueden usar numerosas herramientas y estrategias para crear rápidamente una página web funcional, pero es más cómodo y profesional usar sistemas diseñados para dar a empresas hoteleras páginas webs bien optimizadas para sus propiedades. Como se mencionaba anteriormente en la descripción de sistemas de alquileres vacacionales, un sitio web optimizado ayudará a las reservas directas, pagos online, y mucho más. Estos sistemas de alquileres vacacionales incorporan funciones tan cruciales y útiles como certificación SSL, dominios personalizados y alojamiento ilimitado, que hará de su gestión de propiedades algo mucho más sencillo que la supervisión manual.</p>
+                        <p><strong>2. El ahorro de una gran cantidad de tiempo</strong></p>
+                        <p>Como se mencionaba anteriormente, gestionar locales de alquileres vacaciones es una tarea abrumadora que puede ser facilitada con el uso de algunos sistemas para mejores resultados. Como gestor de propiedades, responder a preguntas como, ¿proporcionan servicios de facturación o registro tempranero?, ¿puedo llevar a mi mascota? o ¿cuál es la hora de salida?, son parte de la rutina. Desafortunadamente, tener que responder a estas preguntas una a una cada día puede resultar tan agotador que, quizás, piense en dejar su trabajo en el sector hostelero.</p>
+                        <p>Por lo tanto, con este sistema de hostelería, puede hacer uso de una plantilla de correo electrónico que le ahorrará muchísimo tiempo. Estos sistemas le permiten automatizar la mayoría de las tareas entre las que se encuentran las tareas domésticas y calificaciones con un solo click desde una sencilla página web. Además, mientras centras tu atención en otros trabajos esenciales, el sistema ejecutará las reglas y restricciones que haya establecido</p>
+                        <p><strong>3. Reservas más directas</strong></p>
+                        <p>La mayoría de los sistemas de alquileres vacacionales ofrecen fragmentos de códigos y plugins fáciles de usar, que harán más cómodas y fluidas las reservas directas en la página web. Por esa razón, es siempre aconsejable asegurar que el sistema que quiera comprar para le gestión de alquileres vacacionales acepte reservas directas a través de la página web.</p>
+                        <p>Antes de hacer las reservas, la mayoría de los visitantes buscarán primero las mejores ofertas, de modo que un sistema automatizado de comunicación para estos, asegurará a los gestores de propiedad más reservas online que nunca, facilitando, así, las ventas.</p>
+                        <p><strong>4. Sincronice todas sus propiedades y cuentas desde una unidad central fácil de usar</strong></p>
+                        <p>La sincronización de la propiedad a través de plataformas digitales ha sido facilitada por estos sistemas. Desde una única unidad (hub), los gestores de propiedad podrán reunir tareas, aceptar o cancelar solicitudes de reservas, echar un vistazo al perfil de los visitantes, conocer las preocupaciones y quejas de los visitantes, y mucho más. Además, estos sistemas han sido programados para actualizarse por sí solos en una unidad de información, la disponibilidad de todas sus propiedades, y también la actualización de tarifas.</p>
+                        <p><strong>5. Una conexión sencilla y eficiente con otras aplicaciones esenciales</strong></p>
+                        <p>No es algo nuevo que los negocios entren en las redes sociales para concienciar, y, finalmente, para hacer más ventas. Lo mismo se aplica a los negocios de alquileres que emplean las redes sociales y el marketing por correo electrónico para conocer las estadísticas de sus páginas webs y los cambios en las reservas, gracias al uso de herramientas como Google analytics.</p>
+                        <p>Herramientas tan esenciales como Google analytics son una de las razones por la que los sistemas de alquileres vacacionales deben proporcionarle con este tipo de aplicaciones externas, que harán que su negocio de alquiler no se quede un paso atrás de la cambiante tecnología.</p>
+                        <p>Además, la integración de estas aplicaciones externas deben ser aseguradas ya que, los clientes hacen uso de las redes sociales para averiguar más sobre los destinos y alojamientos potenciales; esto impulsará automáticamente las reservas directas online.</p>
+                        <br/>
+                        <p class="text_center"><strong>¿Qué debe considerar a la hora de elegir un sistema de alquileres vacacionales?</strong></p>
+                        <p>Las ventajas de un robusto sistema de alquileres vacacionales están ahí para que pueda verlas, pero ahora debe elegir el más adecuado para exprimir todos sus beneficios y mejorar su empresa hostelera. Con una gran variedad de opciones online de las que escoger, puede ser una tarea desafiante elegir el sistema más adecuado para su negocio. De modo que, para hacer una elección fundada, hemos recopilado algunas y muy importantes cosas que deberá tener en cuenta antes de elegir.</p>
+                        <p><strong>1. Creador de páginas webs de reservas</strong></p>
+                        <p>La página de reservas es la base de todos los esfuerzos de marketing, lo que convierte al creador de páginas webs en una función indispensable para cualquier sistema de alquileres para que sea considerado excelente. Aunque tengas un nivel medio con la tecnología, tendrás que asegurarte que esta función sea incorporada a su sistema, y esto se debe a que, ahí, las reservas podrán ser procesadas independientemente de las agencias de viaje online.</p>
+                        <p>Este sistema muestra el listado de clientes y sus admisiones sacado de la base de datos y, directamente, a la página web de reservas directas. Más importante, estos sistemas no tienen por qué ser complicados; no todos los usuarios tienen conocimientos profundos de tecnología; de modo que, hacerlo fácil y funcional es vital.</p>
+                        <p><strong>2. Motor de reservas</strong></p>
+                        <p>Los informes estiman que los turistas de EE.UU. han gastado cerca de 189 billones de dólares en reservas de viajes online tan solo este año. De modo que, está claro que, tener un motor de reservas incorporado que acepte reservas online y pagos, en su sistema de alquileres vacacionales es tan crucial como tener página web. Hoy en día, las personas están cada vez más cómodas con pagar online a través de tarjetas de débito, quizás la manera más segura de hacer pagos. Si su sistema hotelero no incluye esta opción, lo más probable es que pierda clientes potenciales.</p>
+                        <p><strong>3. Administrador de canales</strong></p>
+                        <p>Un administrador de canales es indispensable para cualquier gestor de propiedades que maneje múltiples admisiones y listados de clientes, pero en la mayoría de sistemas de alquileres vacacionales, esta función no es común; de modo que, quizás, debería indagar un poco para averiguarlo. La función del administrador de canales es ayudar a los gestores de propiedades a sincronizar reservas de admisiones externas en una única unidad (hub) fácil de usar.</p>
+                        <p>Además, un administrador de canales permite a los administradores de alquileres a actualizar algunos aspectos de las listas y admisiones, que pueden incluir trasladar ese listado de una agencia de reservas a otra para mejor publicidad e ingresos, y una actualización simultánea en el listado de precios y descripciones. Todo esto convierte a la administración de canales en algo crucial para su sistema de alquileres vacacionales.</p>
+                        <p><strong>4. Bandeja de entrada unificada</strong></p>
+                        <p>Una bandeja de entrada unificada es una función del sistema de alquileres vacacionales que facilita las comunicaciones entre el administrador de propiedades y sus visitantes mediante la centralización de todos sus mensajes en una única plataforma digital, la bandeja de entrada. Desde esta unidad (hub), puede responder a muchas de las quejas de los visitantes, sus aportaciones y solicitudes sin esfuerzo.</p>
+                        <p><strong>5. Portal del propietario</strong></p>
+                        <p>Un robusto sistema de alquileres vacacionales debe tener un portal independiente donde el propietario pueda acceder a información vital sobre la gestión de sus propiedades, que incluya calendarios de reservas. Esto facilitará al gestor la supervisión de varias propiedades desde un solo portal.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <div class="costumer-page__content">
+                <div class="container">
+                    <div class="row  justify-content-between align-items-center">
+                        <div class="col-lg-5">
+                            <div class="costumer-page__img float_right">
+                                <figure><img alt="Gestión inmobiliaria de alquileres vacacionales Software - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/vacation-image.png"/></figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h2>Booking Ninjas - la mejor elección</h2>
+                                <br/>
+                                <p>En general, un sistema de alquileres vacacionales excelente puede ser tan útil para los propietarios que puedan crear una página web genial y funcional, ahorrar mucho tiempo, ahorrar dinero, ahorrar en empleados, tomar más reservas online, gestionar todo desde una única unidad (hub), y también incorporar otras aplicación tan útiles como Google analytics, como se mencionaba anteriormente.</p>
+                                <p>Estas ventajas van más allá de las mencionadas en este artículo y son razones clave para utilizar una de ellas. Nuestra empresa está siempre disponible para lo que necesite y, también, disponemos de un servicio al cliente excelente.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Gestión inmobiliaria de alquileres vacacionales Software - 3" class="wow fadeInRight" src=" https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration6.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <h2>Empecemos</h2>
+                            <p>Nuestros tres pasos del proceso de implementación son los más fáciles que vas a encontrar ahí afuera. Le guiaremos a través de cada uno de ellos para que pueda obtener su sistema en poco tiempo.</p>
+                            <dl>
+                                <h3>Una llamada rápida</h3>
+                                <dd>Le hablaremos de los detalles de la implementación, y qué tipo de proceso es el más adecuado para usted (* con tipo de proceso nos referimos al modo de implementar su copia de Booking Ninjas, todo dependiendo de la forma de sus operaciones comerciales).</dd>
+                            </dl>
+                            <dl>
+                                <h3>Una implementación rápida y estable</h3>
+                                <dd>Es hora de implementar aquello por lo que nos llamaste. Nosotros nos encargaremos de las transferencias de datos (rápidamente), y haremos pequeños cambios en el manejo de sus operaciones comerciales. Este proceso será aún más rápido si ha usado algún tipo de sistema de gestión anteriormente.</dd>
+                            </dl>
+                            <dl>
+                                <h3>¡Vamos, vamos, vamos!</h3>
+                                <dd>Es hora de trabajar. Le dejaremos utilizar el sistema (tan fácil como buscar) mientras analizamos su uso, y le ofrecemos consejos para aumentar sus resultados mucho más. Esta es una victoria garantizada.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/Vacation_Rentals_icon-gray.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Gestión inmobiliaria de alquileres vacacionales Software Price - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/Vacation_Rentals_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>¡Estamos dispuestos a trabajar con usted! Dependiendo de su situación, podrá ser elegible para paquetes de descuentos. Haga click &nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" target="_blank">aquí</apex:outputLink> para información de precios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">Toma un piloto</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

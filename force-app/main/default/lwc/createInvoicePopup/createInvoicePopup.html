@@ -1,0 +1,110 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <!-- Modal/Popup Box LWC header here -->
+    <header class="slds-modal__header slds-text-align_left booking-ninjas-brand-header-background">
+        <h2 class="slds-text-heading_medium slds-hyphenate">{label.PBO_Popup_HeaderText}</h2>
+
+        <button
+            class="slds-button slds-button_icon slds-modal__close closeIcon slds-button_icon-bare"
+            tabindex="0"
+            onclick={closeModal}
+        >
+            <lightning-icon
+                icon-name="utility:close"
+                size="small"
+                variant="inverse"
+                alternative-text="Close"
+                title="Close"
+            >
+            </lightning-icon>
+        </button>
+    </header>
+
+    <!-- Modal/Popup Box LWC body starts here -->
+    <div class="container">
+        <div class="slds-modal__content slds-p-horizontal_small booking-ninjas-brand-body-background">
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading"></lightning-spinner>
+            </template>
+
+            <lightning-layout>
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-card>
+                        <div class="search-layout" onkeyup={handleSearch}>
+                            <lightning-input
+                                variant="label-hidden"
+                                type="text"
+                                name="search"
+                                placeholder="Search Product..."
+                            ></lightning-input>
+                        </div>
+                        <div style="height: 500pt">
+                            <c-create-invoice-popup-add-products
+                                onproductselect={productSelectHandle}
+                                onupdatetotals={updateTotalsHandle}
+                            >
+                            </c-create-invoice-popup-add-products>
+                        </div>
+                    </lightning-card>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="8">
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="12" padding="around-small">
+                            <lightning-card>
+                                <div style="height: 245pt">
+                                    <c-create-invoice-popup-data-table
+                                        onproductunselect={productUnselectHandler}
+                                        onupdatetotals={updateTotalsHandle}
+                                    >
+                                    </c-create-invoice-popup-data-table>
+                                </div>
+                            </lightning-card>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item size="12" padding="horizontal-small">
+                            <lightning-card>
+                                <div style="height: 220pt">
+                                    <c-create-invoice-popup-totals></c-create-invoice-popup-totals>
+                                </div>
+                            </lightning-card>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-layout-item>
+            </lightning-layout>
+            <div class="slds-modal__footer footer booking-ninjas-brand-body-background">
+                <button
+                    class="slds-button booking-ninjas-button booking-ninjas-button_neutral"
+                    onclick={closeModal}
+                    title={label.PBO_ButtonLabel_Cancel}
+                >
+                    {label.PBO_ButtonLabel_Cancel}
+                </button>
+
+                <button
+                    class="slds-button booking-ninjas-button booking-ninjas-button_outline-brand"
+                    onclick={clearAll}
+                    title={label.PBO_ButtonLabel_ClearAll}
+                >
+                    {label.PBO_ButtonLabel_ClearAll}
+                </button>
+
+                <button
+                    class="slds-button booking-ninjas-button booking-ninjas-button_brand"
+                    onclick={saveProducts}
+                    title={label.PBO_ButtonLabel_Save}
+                >
+                    {label.PBO_ButtonLabel_Save}
+                </button>
+
+                <button
+                    class="slds-button booking-ninjas-button booking-ninjas-button_brand"
+                    onclick={sendQuote}
+                    title={label.PBO_ButtonLabel_SendQuote}
+                >
+                    {label.PBO_ButtonLabel_SendQuote}
+                </button>
+            </div>
+        </div>
+    </div>
+</template>

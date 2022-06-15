@@ -1,0 +1,74 @@
+<apex:page cache="false" sidebar="false" showHeader="false" standardController="Lead" extensions="RequestDemoAccountController" standardStylesheets="false" docType="HTML-5.0">
+<html>
+      <head>
+         <apex:stylesheet value="{!URLFOR($Resource.bootstrap, 'bootstrap/css/bootstrap.min.css')}" />
+         <style>
+              html, body { margin: 0px; padding: 0; }
+             .content { background-color:#f4f4f4; border:1px solid #b4b4b4; margin: 0 auto; width: 750px; padding:20px; height: 750px; }
+             .clear { clear:both }
+             .propertyInfo { padding-right:30px; }
+             .row { margin-left: 0 }
+         </style>
+      </head>
+      <body>
+         <apex:form >
+             <div class="content">
+                <table border="0" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;border-bottom:2px dotted #b4b4b4;margin-bottom:25px;">
+                   <tr>
+                      <td style="width:150px;">
+                         <img src="https://bookingninjas--c.na30.content.force.com/servlet/servlet.ImageServer?id=01536000001zhPu&oid=00D36000001H4E9&lastMod=1469499705000" alt="Logo" width="200px"/>
+                      </td>
+                      <td style="padding-left:50px;">
+                         <h3 style="color:#39b510;">You have new request demo account form.</h3>
+                      </td>
+                   </tr>
+                </table>
+                    <div class="row">
+                        <div class="col-md-6">
+                             <div class="form-group">
+                             <label>First Name *</label>
+                             <apex:inputText value="{!FirstName}" styleclass="form-control" required="true"/>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="form-group">
+                             <label>Last Name *</label>
+                             <apex:inputText value="{!LastName}" styleclass="form-control" required="true"/>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                             <div class="form-group">
+                             <label>Email Address *</label>
+                             <apex:inputText value="{!Email}" styleclass="form-control" required="true"/>
+                             </div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="form-group">
+                             <label>Phone *</label>
+                             <apex:inputText value="{!Phone}" styleclass="form-control" required="true"/>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>Message *</label>
+                             <apex:inputTextArea value="{!Message}" styleclass="form-control" rows="5" required="true"/>
+                             </div>
+                         </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                         <div class="col-md-12">
+                             <div class="form-group">
+                                 <apex:commandbutton action="{!SaveForm}" value="Submit Request Demo Account Form" styleclass="btn btn-success"/>
+                             </div>
+                         </div>
+                    </div>
+             </div>   
+         </apex:form>
+      </body>
+   </html>
+</apex:page>

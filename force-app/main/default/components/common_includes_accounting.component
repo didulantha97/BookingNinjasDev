@@ -1,0 +1,83 @@
+<apex:component >
+
+ <link href="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/css/new.css')}" rel="stylesheet" media="screen"/ >
+ <link href="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/css/datepicker.css')}" rel="stylesheet" media="screen"/>
+ <link href="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/css/bootstrap-responsive.css')}" rel="stylesheet" media="screen"/>
+    <!-- Fav and touch icons -->
+ <link href="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/ico/apple-touch-icon-144-precomposed.png')}" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+ <link href="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/ico/apple-touch-icon-114-precomposed.png')}" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+ <link href="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/ico/apple-touch-icon-72-precomposed.png')}" rel="apple-touch-icon-precomposed" sizes="72x72"/>
+ <link href="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/ico/apple-touch-icon-57-precomposed.png')}" rel="apple-touch-icon-precomposed"/>
+ <link href="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/ico/favicon.png')}" rel="shortcut icon"/>
+ <link href="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-select.css')}"/>
+    <style>
+      .divDemoBody  {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      }
+      .divDemoBody p {
+      font-size: 12px;
+      line-height: 140%;
+      padding-top: 12px;
+      }
+      .divButton {
+      padding-top: 12px;
+      }
+    
+    .yellowBG{
+        background-color: #33CC00!important;
+        border-left:1px dotted #dddddd!important;
+    }
+    .goldenBG{
+        background-color: #DAA520!important;
+        border-left:1px dotted #dddddd!important;   
+    }
+    .darkGreenBG{
+        background-color: #32B232!important;
+        border-left:1px dotted #dddddd!important;   
+    }
+    .lightOrangeBG{
+        background-color: #F58E0B!important;
+        border-left:1px dotted #dddddd!important;   
+    }
+    .univ{
+        white-space: nowrap;
+    }
+    .lightYellowBG{
+        background-color: rrgb(252, 252, 194)!important;
+        border-left:1px dotted #dddddd!important;
+    }
+    .lightGoldenBG{
+        background-color: #FFC125!important;
+        border-left:1px dotted #dddddd!important;   
+    }
+    .lightGreenBG{
+        background-color: #00CCFF!important;
+        border-left:1px dotted #dddddd!important;
+    }
+    .errorBG{
+        background-color: #CC6600!important;
+        border-left:1px dotted #dddddd!important;
+    
+    }
+    </style>
+    
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap.min.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-transition.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-modal.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-tooltip.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-popover.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-alert.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-dropdown.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-scrollspy.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-button.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-collapse.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-carousel.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-typeahead.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/prettify.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-contextmenu.js')}"/>
+     <apex:includeScript value="{!URLFOR($Resource.TwitterBootstrap, 'MSS_DEMO/bootstrap/js/bootstrap-select.js')}"/>
+     
+</apex:component>

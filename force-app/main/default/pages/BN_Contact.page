@@ -1,0 +1,82 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_ContactUsController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <div class="contacts_page " style="margin-top:50px;">
+                <div class="container">
+                    <div class="contact_img">
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/contact_img.png" alt=""/>
+                    </div>
+                    <div class="contact_side">
+                        <div class="contact_top">
+                            <div class="title">
+                                Contact Us
+                            </div>
+                            <div class="contact_txt">
+                                <a href="#" class="tel">+1 917-600-2345</a>
+                                <a href="#" class="email">sales@bookingninjas.com</a>
+                            </div>
+                        </div>
+                        <div class="contact_form">
+                            <apex:form >
+                                <div>
+                                    <apex:input type="text" html-placeholder="First Name *" styleClass="small" value="{!firstName}" required="true" />
+                                    <apex:input type="text" html-placeholder="Last Name *" styleClass="small" value="{!lastName}" required="true" />
+                                </div>
+                                <div>
+                                    <apex:input type="email" html-placeholder="Email *" styleClass="small" value="{!email}" required="true" />
+                                    <apex:input type="tel" html-placeholder="Phone *" styleClass="small" value="{!phone}" required="true" />
+                                </div>
+                                <div>
+                                    <apex:input type="text" html-placeholder="Company *" value="{!company}" required="true" />
+                                </div>
+                                <div>
+                                    <apex:inputTextarea html-placeholder="Comments" value="{!comment}" required="true" />
+                                </div>
+                                <div>
+                                    <small>Additional Questions (not required)</small>
+                                    <label>
+                                        Current PMS used:
+                                        <apex:input type="text" value="{!pms}" />
+                                    </label>
+                                    <label>
+                                        # of rooms/units    
+                                        <apex:input type="text" value="{!noOfUnits}" />
+                                    </label>
+                                </div>
+                                <div class="text_center">
+                                    <apex:commandButton value="Submit Request" styleClass="button" action="{!save}"/>
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>   
+            </div>
+            
+            <div class="advantage_wrap container">
+                <div class="title">Booking Ninjas Advantage</div>
+                <div class="advantage_block">
+                    <figure>
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/advantage1.png" alt=""/>
+                        <figcaption>Our Business Model is built on a partnership with our customers.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/advantage2.png" alt=""/>
+                        <figcaption>Highly accelerated go-to market and value with our expertise</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/advantage3.png" alt=""/>
+                        <figcaption>We act as trusted adviser to help utilize and adopt all the latest technologies for your business.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,124 @@
+<!--
+  @description       : 
+  @author            : 
+  @group             : 
+  @last modified on  : 12-13-2020
+  @last modified by  : teguh@bookingninjas.com
+-->
+<apex:page controller="BNES_RegisterController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+    <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            <link rel="stylesheet" href="https://eggshell-quoll-1301.twil.io/assets/intlTelInput.css" />
+            
+            <div class="trial">
+				<div class="trial__bg">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 trial__col-padding">
+								<h4>El programa de prueba piloto Booking Ninjas</h4>
+								<h2>Para la prueba piloto, dispondrá de una demostración de lo que le ofreceremos. Las funciones de nuestra prueba piloto incluye:</h2>
+								<ul class="trial__advantage">
+									<li>Análisis inteligente de clientes/invitados</li>
+									<li>Aceptar pagos online al instante</li>
+									<li>Gestión virtual de propiedades físicas e instalaciones</li>
+									<li>Plataforma digital de gestión de marketing</li>
+									<li>Un canal de gestión todo en uno</li>
+									<li>Integración de servicios de terceros (opcional)</li>
+									<li>Personalización a petición</li>
+									<li>Puede encontrar más información&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Integrations)}" target="_blank">aquí</apex:outputLink> y&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Solutions)}" target="_blank">aquí</apex:outputLink>.</li>
+								</ul>
+							</div>
+							<div class="col-lg-6 trial__col-bg">
+                                <div id="gif" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;width:100%;background: rgba(0,0,0,0.75) url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/loading.gif) no-repeat center center;z-index: 10000;" />
+                                <apex:form id="trial-form">
+                                    <div class="trial__form">
+                                        <h3>Regístrese para su acceso de prueba durante 14 días.</h3>
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="trial__form-item">
+                                                    <apex:inputText value="{!firstName}" html-placeholder="Nombre" id="first_name" required="true" />
+                                                </div>
+											</div>
+											<div class="col-lg-6">
+												<div class="trial__form-item">
+                                                    <apex:inputText value="{!lastName}" html-placeholder="Apellidos" id="last_name" required="true" />
+                                                </div>
+											</div>
+										</div>
+										<div class="trial__form-item">
+                                            <apex:inputText value="{!businessName}" html-placeholder="Nombre de la empresa" required="true" />
+                                        </div>
+										<div class="trial__form-item">
+                                            <apex:inputText value="{!email}" html-placeholder="Correo electrónico del trabajo" required="true" />
+                                        </div>
+										<div class="trial__form-item">
+                                            <apex:inputText id="trial-phone" value="{!phone}" html-placeholder="123-456-7890" required="true" onkeypress="return inputLimiter(event,'Telephone');" maxlength="14" style="padding-left: 115px !important;" />
+                                        </div>
+										<div class="trial__form-item-check">
+											<label>
+												<input class="trial__form-checkbox" type="checkbox" required="required" />
+												Acepto los <a href="#">Términos</a> &amp; <a href="#">Política de Privacidad</a> y entiendo que esta es una suscripción recurrente. Me cobrarán automáticamente de manera recurrente a menos que cancele.
+											</label>
+										</div>
+										<div class="trial__form-btn">
+                                            <apex:commandButton id="submit-trial" styleClass="button" action="{!register}" value="CONTINUAR AL PAGO" onclick="showLoadeder()" oncomplete="checkout('{!contactId}', '{!email}');" rerender="trial-form" />
+										</div>
+									</div>
+                                </apex:form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <script src="https://eggshell-quoll-1301.twil.io/assets/intlTelInput.min.js"></script>
+            <script type="text/javascript">
+                // add dash on phone number
+                $('[id$=trial-phone]').bind('keyup','keydown', function(e){
+                    //To accomdate for backspacing, we detect which key was pressed - if backspace, do nothing:
+                    if(e.which !== 8) { 
+                        var numChars = $('[id$=trial-phone]').val().length;
+                        if(numChars === 3 || numChars === 7){
+                            var thisVal = $('[id$=trial-phone]').val();
+                            thisVal += '-';
+                            $('[id$=trial-phone]').val(thisVal);
+                        }
+                    }
+                });
+
+                // Show a loader on payment submission
+                function showLoadeder() {
+                    let formObj = document.querySelector("[id$=trial-form]")
+                    if (formObj.checkValidity() === true) {
+                        $('#gif').show();
+                    }
+                }
+
+                checkout = function(contactId, email) {
+                    stripe = Stripe('pk_live_jX0HeMWsekaEmgRdAPX4jsFl');
+                    stripe
+                        .redirectToCheckout({
+                            clientReferenceId: contactId,
+                            customerEmail: email,
+                            lineItems: [
+                                {price: 'price_1HxqVsLJXa2cEwUA2JOblBv2', quantity: 1},
+                            ],
+                            mode: 'payment',
+                            successUrl: 'https://bookingninjas.com/thank-you',
+                            cancelUrl: 'https://bookingninjas.com/trial',
+                        })
+                        .then(function(result) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer
+                            // using `result.error.message`.
+                        });
+                }
+            </script>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

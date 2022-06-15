@@ -1,0 +1,89 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="resource-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="why-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/resource-bnr.png" alt="Bookingninjas Property Management System Price"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Booking Ninjas Resource Center </h1>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="resource-center ">
+                <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <nav class="resource-center__tabs-links">
+                        <ul>
+                            <li><a data-href=".data-all" class="active">All</a></li>
+                            <li><a data-href=".data-video">Video</a></li>
+                            <li><a data-href=".data-documentation">Documentation</a></li>
+                            <li><a data-href=".data-other">Other Resources</a></li>
+                        </ul>
+                    </nav>
+                    <div class="resource-center__tabs">
+                        <div class="resource-center__tabs-box">
+                        <div class="row">
+                            <div class="col-lg-4 active data-all data-video">
+                                <a href="https://www.youtube.com/watch?v=McPpqbG4yUY" data-fancybox="fancybox" class="resource-center__tabs-item fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_Case_Study.jpg" alt="Bookingninjas Property Management System Price"/>
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 active data-all data-documentation">
+                                <a href="https://www.youtube.com/watch?v=McPpqbG4yUY" data-fancybox="fancybox" class="resource-center__tabs-item fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_Reports.jpg" alt="Bookingninjas Property Management System Price"/>
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 active data-all data-video">
+                                <a href="https://www.youtube.com/watch?v=McPpqbG4yUY" data-fancybox="fancybox" class="resource-center__tabs-item fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Booking_Ninjas_trailer.jpg" alt="Bookingninjas Property Management System Price"/>
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 active data-all data-other">
+                                <a href="https://www.youtube.com/watch?v=McPpqbG4yUY" data-fancybox="fancybox" class="resource-center__tabs-item fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/how_to_improve.jpg" alt="Bookingninjas Property Management System Price"/>
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 active data-all data-video">
+                                <a href="https://www.youtube.com/watch?v=McPpqbG4yUY" data-fancybox="fancybox" class="resource-center__tabs-item fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/How_Hoteliers.jpg" alt="Bookingninjas Property Management System Price"/>
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 active data-all data-other">
+                                <a href="https://www.youtube.com/watch?v=McPpqbG4yUY" data-fancybox="fancybox" class="resource-center__tabs-item fancybox">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/Einstein_for_Hotel_Management.jpg" alt="Bookingninjas Property Management System Price"/>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- <div class="resource-center__more">
+                        <a href="#">See all</a>
+                    </div> -->
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

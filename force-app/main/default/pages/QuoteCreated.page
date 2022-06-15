@@ -1,0 +1,6 @@
+<apex:page standardController="Opportunity" sidebar="false" showHeader="false">
+Opportunity Created and sent to Contact.
+<script>
+      window.top.location = '/{!Opportunity.Id}';
+   </script>
+</apex:page>

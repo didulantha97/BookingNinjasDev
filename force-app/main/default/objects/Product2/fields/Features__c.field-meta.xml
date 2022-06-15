@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Features__c</fullName>
+    <externalId>false</externalId>
+    <label>Features</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Guest Management</fullName>
+                <default>false</default>
+                <label>Gain full control of managing your guests by leveraging our mobile and desktop app.</label>
+            </value>
+            <value>
+                <fullName>Reservation Management</fullName>
+                <default>false</default>
+                <label>Save up on operational costs by digitizing your reservation calendar for real-time online booking.</label>
+            </value>
+            <value>
+                <fullName>Housekeeping Management</fullName>
+                <default>false</default>
+                <label>Monitor your staff, assign tasks, systematically handle checklists all from the comfort of your room, office, or wherever.</label>
+            </value>
+            <value>
+                <fullName>User Management</fullName>
+                <default>false</default>
+                <label>Save money on software license purchases by getting multiple user access, total control, and integration of your whole establishment.</label>
+            </value>
+            <value>
+                <fullName>Inventory Management</fullName>
+                <default>false</default>
+                <label>Never have an inventory out of place with automated tracking of inventory across multiple channels and devices.</label>
+            </value>
+            <value>
+                <fullName>Availability Hour Grid</fullName>
+                <default>false</default>
+                <label>Improve room efficiency by managing the availability of your rooms or properties with this powerful and dynamic interface.</label>
+            </value>
+            <value>
+                <fullName>Invoicing + Payment API</fullName>
+                <default>false</default>
+                <label>Create, send out your invoices, and receive payments without worrying about manual bookkeeping anymore.</label>
+            </value>
+            <value>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+                <label>Monitor your business statistics online, collect and analyze data to be used to develop future forecasts, marketing plans, and track progress with the latest technology.</label>
+            </value>
+            <value>
+                <fullName>Mobile Apps</fullName>
+                <default>false</default>
+                <label>Get push notification, instant updates, and instant online access with the Booking Ninjas mobile apps available across android and ios platforms.</label>
+            </value>
+            <value>
+                <fullName>Add-On Features*</fullName>
+                <default>false</default>
+                <label>Add extensions to the Booking Ninjas core PMS to create an even more customized instance for your business.</label>
+            </value>
+            <value>
+                <fullName>Gestión de Huéspedes</fullName>
+                <default>false</default>
+                <label>Obtén el control total de la gestión de tus huéspedes sacando provecho de nuestra aplicación para móviles y ordenadores.</label>
+            </value>
+            <value>
+                <fullName>Gestión de Reservas</fullName>
+                <default>false</default>
+                <label>Ahorra gastos de funcionamiento mediante la digitalización de tu calendario de reservas. Esto incorporará en tiempo real las reservas realizadas de forma online.</label>
+            </value>
+            <value>
+                <fullName>Gestión del Servicio de Limpieza</fullName>
+                <default>false</default>
+                <label>Controla a tu plantilla, asigna tareas y gestiona las listas de comprobación desde la comodidad de tu habitación, tu oficina o cualquier otro lugar.</label>
+            </value>
+            <value>
+                <fullName>Gestión de Usuarios</fullName>
+                <default>false</default>
+                <label>Olvídate de comprar licencias de softwares mediante la obtención de acceso para varios usuarios, control total e integración de todo tu establecimiento.</label>
+            </value>
+            <value>
+                <fullName>Gestión del Inventario</fullName>
+                <default>false</default>
+                <label>Olvídate de tener inventario fuera de lugar gracias al seguimiento automatizado del inventario, a través de varios canales y dispositivos.</label>
+            </value>
+            <value>
+                <fullName>Cuadrícula con Horario de Disponibilidad</fullName>
+                <default>false</default>
+                <label>Mejora el rendimiento de las habitaciones mediante la gestión de la disponibilidad de tus habitaciones o propiedades y gracias a este interfaz potente y dinámica.</label>
+            </value>
+            <value>
+                <fullName>Facturación + API de Pagos</fullName>
+                <default>false</default>
+                <label>Crea, envía tus facturas y recibe pagos sin tener que preocuparte más de hacer la contabilidad de forma manual.</label>
+            </value>
+            <value>
+                <fullName>Informes</fullName>
+                <default>false</default>
+                <label>Monitoriza de forma online las estadísticas de tu negocio, recopila y analiza datos para crear pronósticos, planes de marketing y haz seguimientos con la última tecnología.</label>
+            </value>
+            <value>
+                <fullName>Aplicaciones Móviles</fullName>
+                <default>false</default>
+                <label>Obtén notificaciones emergentes, actualizaciones de inmediato y acceso online instantáneo con las aplicaciones móviles de Booking Ninjas disponibles en plataformas iOS y Android.</label>
+            </value>
+            <value>
+                <fullName>Complementos *</fullName>
+                <default>false</default>
+                <label>Añade complementos al PMS central de Booking Ninjas para crear un negocio todavía más personalizado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

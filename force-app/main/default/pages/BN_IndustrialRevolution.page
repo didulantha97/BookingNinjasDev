@@ -1,0 +1,131 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <div class="industrial_revolution">
+                <div class="title">
+                    <!-- <h6>Industrial revolution 4.0</h6> -->
+                    <h1 style="font-size:54px;">Industrial Revolution 4.0</h1>
+                </div>
+                <div class="industrial_revolution__top">
+                    <div class="container">
+                        <div class="industrial_revolution__top-text">
+                            <h3>Want to be a part of the <br/> era of intelligence? </h3>
+                            <p>
+                                As we embark upon a new revolution in technology and a much different methodology of working, what steps have you taken to prepare for this revolution?
+                                Change is just a few clicks away…. <br/>
+                                See the history of the industrial revolutions below:
+                            </p>
+                        </div>
+                        <div class="industrial_revolution__tags">
+                            <div class="industrial_revolution__tags-item">
+                                <div class="industrial_revolution__tags-img"><img alt="The Fourth Industrial Revolution - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/industrial1.png"/></div>
+                                <section>
+                                    <h6>1st </h6>
+                                    <p>Industrial Revolution</p>
+                                    <strong>Steam </strong>
+                                </section>
+                                <figure>
+                                    <figcaption><img alt="The Fourth Industrial Revolution - icon - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/industrial-ico1.png"/></figcaption>
+                                </figure>
+                                <div class="industrial_revolution__tags-date">1700s</div>
+                            </div>
+                            <div class="industrial_revolution__tags-item">
+                                <div class="industrial_revolution__tags-img"><img alt="The Fourth Industrial Revolution - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/industrial2.png"/></div>
+                                <section>
+                                    <h6>2nd  </h6>
+                                    <p>Industrial Revolution</p>
+                                    <strong>Electricity </strong>
+                                </section>
+                                <figure>
+                                    <figcaption><img alt="The Fourth Industrial Revolution - icon - 5" src="https://d1b89zc79exfxt.cloudfront.net/img/industrial-ico2.png"/></figcaption>
+                                </figure>
+                                <div class="industrial_revolution__tags-date">1800s</div>
+                            </div>
+                            <div class="industrial_revolution__tags-item">
+                                <div class="industrial_revolution__tags-img"><img alt="The Fourth Industrial Revolution - icon - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/industrial3.png"/></div>
+                                <section>
+                                    <h6>3rd</h6>
+                                    <p>Industrial Revolution</p>
+                                    <strong>Computing </strong>
+                                </section>
+                                <figure>
+                                    <figcaption><img alt="The Fourth Industrial Revolution - icon - 6" src="https://d1b89zc79exfxt.cloudfront.net/img/industrial-ico3.png"/></figcaption>
+                                </figure>
+                                <div class="industrial_revolution__tags-date">1900s</div>
+                            </div>
+                            <div class="industrial_revolution__tags-item">
+                                <div class="industrial_revolution__tags-img"><img alt="The Fourth Industrial Revolution - icon - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/industrial4.png"/></div>
+                                <section>
+                                    <h6>4th</h6>
+                                    <p>Industrial Revolution</p>
+                                    <strong>Intelligence </strong>
+                                </section>
+                                <figure>
+                                    <figcaption><img alt="The Fourth Industrial Revolution - icon - 7" src="https://d1b89zc79exfxt.cloudfront.net/img/industrial-ico4.png"/></figcaption>
+                                </figure>
+                                <div class="industrial_revolution__tags-date">Today</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="industrial_revolution__center">
+                    <div class="container">
+                        <div class="industrial_revolution__center-item">
+                            <b>1700’s</b>
+                            <section>
+                                <strong>1st revolution (Steam)</strong>
+                                <p>
+                                    Began in Britain during the 10th century and spread to the rest of the world. This was the transition from old to new manufacturing processes which took place between the years 1760 and 1840. Using steam as a source of energy  during a time when electricity was not a common luxury. It was the beginning of some of the most utilized innovations even in the present - such as the telephone, the perfected light bulb etc.
+                                </p>
+                            </section>
+                        </div>
+                        <div class="industrial_revolution__center-item">
+                            <b>1800’s</b>
+                            <section>
+                                <strong>2nd revolution (Electricity)</strong>
+                                <p>
+                                    During the periods 1870-1914, while the first revolution focused on the growth of industries such as coal, iron, railroads and textiles, the second revolution was an illustration was an expansion of the electricity, petroleum and steel. This period was the first experience of a time which electricity was not a common luxury and the introduction of public electricity. It was the dawn of some of the most used innovations even in the present such as the telephone, the perfected light bulb etc.
+                                </p>
+                            </section>
+                        </div>
+                        <div class="industrial_revolution__center-item">
+                            <b>1900’s</b>
+                            <section>
+                                <strong>3rd Revolution (Computing)</strong>
+                                <p>
+                                    The sustainable era of distributed capitalism, hundreds of millions of people produce their own source of renewable energy, the “digital” era. 1969, The second half of the 20th century witnessed a completely new type of energy which is Nuclear energy. The rise of electronics, with transistors and microprocessors to telecommunications and computers. The revolution which miniaturized material which would allow humans to step into the space for research and bio technology, causing a rise in high-level automation in the market.
+                                </p>
+                            </section>
+                        </div>
+                        <div class="industrial_revolution__center-item">
+                            <b>Today</b>
+                            <section>
+                                <strong>4th Revolution (Intelligence)</strong>
+                                <p>
+                                    Here we are. The first ever industrial revolution rooted in a new technological phenomenon which is “digitalization” rather than in the emergence of a new type of energy, enabling us to build a new virtual world from which we can steer the physical world.
+                                    Real-time interaction and communication among different channels, players and connected objects is made possible thanks to advanced technology such as scalable cloud infrastructure,  artificial intelligence, machine learning, biometrics  and voice controls.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="industrial_revolution__bottom">
+                    <div class="container">
+                        <h2>Evolution awaits!!!</h2>
+                    </div>
+                </div>
+            </div>
+
+        </apex:define>
+    </apex:composition>
+
+    <script type="text/javascript">
+        // add no-bg class to body
+        $('body').addClass('no-bg');
+    </script>
+
+</apex:page>

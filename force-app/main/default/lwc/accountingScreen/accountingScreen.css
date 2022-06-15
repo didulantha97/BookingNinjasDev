@@ -1,0 +1,28 @@
+.carousel-button svg {
+    fill: #2c77bc;
+}
+
+.static-image-size {
+    height: 13rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.static-upcoming-image-size {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-carousel {
+    min-width: -webkit-fill-available;
+}
+
+.card-title-button {
+    min-width: -webkit-fill-available!important;
+    min-height: 4rem!important;
+}
+
+.green-font {
+    color: #00cd00;
+    font-size: large;
+}

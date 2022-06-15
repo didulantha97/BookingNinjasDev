@@ -1,0 +1,39 @@
+<!--
+ - Wrapper for LWC component: opportunityQuotePopUpPbo. Right now LWC does not support quick actions,
+    it's required to encapsulate a Lightning Web Component inside an Aura Component to show LWC inside Quick Action.
+
+    Supported Salesforce Experiences and Tools
+    https://developer.salesforce.com/docs/component-library/documentation/en/lwc/get_started_supported_experiences
+
+    Idea on the IdeaExchange
+    https://trailblazer.salesforce.com/ideaView?id=0873A000000TzwnQAC
+
+ - @author Hung Huynh
+ - @date March 12, 2021
+ - 
+ -->
+<aura:component controller="CreateInvoiceAuraController" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,lightning:actionOverride">
+    <aura:html tag="style">
+        .cuf-content {
+            padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+            padding: 0rem !important;
+        }
+        .slds-modal__content {
+            overflow-y: hidden !important;
+            height:unset !important;
+            max-height: unset !important;
+        }
+        .slds-modal__container {
+            max-width: 100rem !important;
+            width: 90% !important;
+        }
+    </aura:html>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="opportunityId" type="ID" />
+    <aura:if isTrue="{! (v.opportunityId != null)}">
+        <c:createInvoicePopup recordId="{! v.opportunityId }" onclose="{! c.closeQuickAction }" />
+    </aura:if>
+    
+</aura:component>

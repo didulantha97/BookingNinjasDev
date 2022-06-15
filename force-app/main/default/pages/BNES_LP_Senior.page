@@ -1,0 +1,277 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url( https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg11.png)');
+                    $('.wrapper').css('background-image', 'url( https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg11.png)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Gestión De Propiedades Para Ancianos Software - 1" src=" https://d1b89zc79exfxt.cloudfront.net/img/flat-landing-illustration11.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Gestión De Propiedades Para Ancianos</h1>
+                                <p>Proporcionamos la mejor experiencia para el cuidado de ancianos a un nivel completamente nuevo.</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introduzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <h3 class="text_center">Todo al alcance de tus dedos</h3>
+                                <p>Nuestro sistema, basado en la nube y potenciado por el equipo de ventas, le proporcionará todo lo que necesite para dar la mejor atención domiciliaria y, así,  satisfacer las necesidades de sus clientes. Diga adiós a las integraciones abarrotadas y a las abrumadoras interfaces. Con el sistema Booking Ninjas, tendrá un sistema completo, fácil de usar a primera vista, con funciones mínimas adaptadas para lo que necesite, y una atención al cliente al 100% las veinticuatro horas del día, los siete días de la semana de nuestros mejores empleados. Será el mejor y más sincero trato que tenga.</p>
+                                <p>Ya que el funcionamiento y gestión de una comunidad de ancianos serán un auténtico desafío, es fundamental aliviar, con la tecnología disponible, los problemas administrativos a los que se enfrentan los administradores. Uno de los métodos más convincentes conlleva el uso de sistemas de gestión de hogares de ancianos. Fundamentalmente, proporcionará una plataforma completa que facilitará los diferentes aspectos de la gestión de hogares de ancianos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <h3 class="text_center">¿Un sistema de gestión de hogares de ancianos? </h3>
+                                <p>Un sistema de gestión de hogares de ancianos ayuda a los hogares de ancianos a gestionar el bienestar y satisfacción de sus residentes mediante la mejora de la calidad de la atención médica y otros servicios. Además, también ayuda a optimizar la asignación de recursos, gestionar los horarios del personal médico, y cobrar a los pacientes para recibir pagos.</p>
+                                <p>El sistemas de gestión de hogares de ancianos administra la atención a residentes y el funcionamiento de las instalaciones, automatizando procesos, coordinando y gestionando la atención, y reduciendo gastos y desembolsos innecesarios. Este es un sistema de gestión completo que incluye algunas de las siguientes funciones: gestión de instalaciones, historial clínico electrónico (EHR), eMAR, gestión de registros médicos de pacientes, y marketing de las instalaciones. Este sistema, en esencia, ayuda a gestionar el bienestar, seguridad, y satisfacción de sus residentes.</p>
+                                <p>Además, muchas soluciones soportan la interoperabilidad, conectando a los hogares de ancianos con una red de personal de atención médica y socios. Las ventajas de este tipo de conexión incluyen la facilitación en la transición de cuidados y que los cuidadores puedan responder rápidamente a los cambios en los planes de cuidados. Con un sistema de gestión de hogares de ancianos, también podrá supervisar por completo la comunidad y red de asistencia médica, y mediar potenciales riesgo en sus residentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <h3 class="text_center">¿Quién usa un software de vida asistida?</h3>
+                                <p>El software de vida asistida está diseñado para ser usado por administradores, directores y operarios, y la plantilla encargada de la gestión de hogares de ancianos.</p>
+                                <p><strong>Propietarios de las instalaciones, administradores, gerentes, y directores.</strong> Estos son los que dirigen los sistemas de gestión de los hogares de ancianos. Pueden ser personal de atención al público, encargados del marketing, o director de operaciones. No tienen por qué ser enfermeros cualificados para asegurar que los aspectos operacionales de una instalación de vida asistida funcionen sin contratiempos.</p>
+                                <p><strong>Personal de enfermería, tanto interno como cuidadores subcontratados.</strong> Estos son enfermeros cualificados y profesionales de atención médica que proporcionan cuidados supervisados y clínicos a los residentes de una instalación de vida asistida. Tener acceso a información tan sencilla como el censo de la instalación puede ayudar a programar el número de personal disponible así como coordinar cambios para ajustarse a las necesidades de los residentes.</p>
+                                <p><strong>Nutricionistas, dietistas, coordinadores de actividades.</strong> Estos son profesionales capacitados para crear y distribuir planes de alimentación o coordinar actividades recreacionales que involucrarán a los residentes. Deben tener acceso a los registros de pacientes para asegurarse de que no prescriban un plan alimentario o actividad física que puedan comprometer la salud del residente.</p>
+                                <p><strong>Farmacéuticos y profesionales encargados de la distribución de medicinas.</strong> Muchos sistemas tienen línea directa o algún otro tipo de conexión de red con farmacias. Esto ayuda a una distribución y adherencia más precisa de medicamentos. Una base de datos unificada con los registros de los pacientes ayuda a reducir cualquier tipo de discrepancia.</p>
+                                <p><strong>Enfermeros, doctores, médicos, y otros profesionales sanitarios que hayan derivado residentes a la instalación.</strong> Los sistemas de gestión de hogares de ancianos no existen por sí solos. Estos dependen de las derivaciones de los hospitales para mantener un número mínimo de residentes en la instalación, así como para confirmar que una instalación es más apropiada que otra para un nuevo residente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <h3 class="text_center">Funciones comunes de los sistemas de gestión de hogares de ancianos</h3>
+                                <p>Distintos proveedores ofrecen diferentes funciones en sus sistemas de gestión de hogares de ancianos. Seleccionar el sistema de gestión de hogares de ancianos más apropiado para sus instalaciones será más fácil cuando conozca cuáles son las funciones más comunes y qué hacen. Enumerados a continuación encontrará algunas de las funciones:</p>
+                                <p><strong>Los usuarios pueden evaluar las actividades de la vida diaria (ADLs) - </strong>usado para la instalación de nuevos pacientes y evaluación de pre-admisiones, y exámenes periódicos para ajustar los niveles de atención.</p>
+                                <p>Los usuarios pueden gestionar detalles de las medicaciones como el registro electrónico de administración de medicamentos (eMAR) y el registro electrónico de administración de tratamientos (eTAR). Proporciona a los usuarios con descripciones de medicamentos precisas, su potencia o fuerza, e información de dosis junto a las notas de los médicos y otras sugerencias.</p>
+                                <p>Permite a la plantilla programar citas médicas para pacientes residentes. Los usuarios no solo pueden hacer y editar citas, sino también buscar y encontrar citas ya programadas.</p>
+                                <p>Los usuarios pueden acceder a informes en tiempo real (diagramas gráficos) sobre el censo de residentes, ocupación, resumen de cobros, entradas, salidas, expectativas, etc.</p>
+                                <p>Permite a los usuarios automatizar tareas de facturación repetitivas y propensas errores. Esta función ayuda a verificar la cobertura de seguros de los pacientes, presentar reclamaciones electrónicamente y mejorar colectas.</p>
+                                <p>Los usuarios pueden capturar y seguir ventajas, y gestionar el seguimiento de comunicaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <h3 class="text_center">Ventajas claves de un software de vida asistida</h3>
+                                <p>Automatiza tareas repetitivas y manuales que restan valor a la óptima proporción de cuidados.</p>
+                                <p>Mejora la planificación del personal, asignación de recursos, y la comunicación entre los proveedores de cuidados y los residentes y las familias de estos últimos.</p>
+                                <p>Proporciona información sobre el desempeño y rentabilidad de la instalación de vida asistida.</p>
+                                <p>Mejora la satisfacción de los residentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <h3 class="text_center">¿Por qué usar un software de vida asistida?</h3>
+                                <p>Aparte de las funciones mencionadas arriba, y la comodidad que la automatización conlleva, hay beneficios adicionales que el sistema puede ofrecer:</p>
+                                <p><strong>Mejorar la calidad de los cuidados.</strong> Los sistemas de gestión de hogares de ancianos automatizan las tareas manuales y mejora el flujo de trabajo diario. De este modo, el software simplifica el proceso de gestión de mantener una instalación de vida asistida, permitiendo a los cuidadores centrarse en proporcionar cuidado y reducir las posibilidades de agotamiento.</p>
+                                <p><strong>Mejorar la precisión.</strong> Los sistemas de gestión de hogares de ancianos mejoran la precisión en áreas como la distribución de medicamentos, recopilación de información, preparación de auditorías, cumplimiento de normativa, supervisión de cuidados a distancia, seguimiento de derivaciones y control de incidencias de residentes. Con este sistema, los cuidadores y operadores de las instalaciones pueden automatizar la notación y organización de documentos clínicos, coordinar mejor el intercambio de información entre la atención primaria y atención complementaria o secundaria, y asegurar la transparencia de todas las actividades de una instalación de vida asistida.</p>
+                                <p><strong>Mejorar la precisión. </strong>Los sistemas de gestión de hogares de ancianos mejoran la precisión en áreas como la dispensa de medicamentos, recopilación de datos, preparación de auditorías, cumplimiento de normativa, supervisión a distancia de cuidados, seguimiento de derivaciones, y monitorización de incidentes de residentes. Con este sistema, los cuidadores y los operadores de las instalaciones podrán automatizar la notación y organización de la documentación clínica, coordinar mejor el intercambio de datos entre la atención primaria y la complementaria, y asegurar la transparencia de todas las actividades de una instalación de vida asistida.</p>
+                                <p>Reduce en gran medida los costes de funcionamiento.</p>
+                                <p>Como se mencionaba más arriba, los gastos de funcionamiento de los sistemas de gestión de hogares de ancianos puede ser especialmente agobiantes y pesados para las organizaciones. Por esa razón, es importante optimizar las operaciones. El sistema tiene, obviamente, estas ventajas ya que fue diseñado para hacer justo eso.</p>
+                                <p>Por ejemplo, el software se encarga de toda la recopilación de datos y llevar por ti el seguimiento de varios aspectos esenciales como la información de residentes, costes, ocupación, y gestión de medicamentos, por citar algunos. El hecho de que estos estén disponibles en una única plataforma le permite renunciar a cualquier otra herramienta para gestionar esta información. Esto le permitirá un mejor aprovechamiento de recursos.</p>
+                                <p>Por supuesto, esa es una forma en que el sistema de gestión de hogares de ancianos le ayudará a controlar mejor las finanzas de su comunidad. Ya que toda la información que necesite será contabilizada, será siempre capaz de hacer decisiones fundamentadas que le servirá para hacer las operaciones más eficientes, llevando a un “efecto de goteo” que reducirá los gastos más allá.</p>
+                                <p><strong>Mayor automatización.</strong> La automatización de tareas manuales es un claro beneficio de usar sistemas de gestión de hogares de ancianos pero, ¿y si cada proceso y flujo de trabajo fuera automatizado? El objetivo final es optimizar los sistemas de gestión de hogares de ancianos (con el beneficio adicional de aliviar a los cuidadores de estrés innecesario y trabajos inútiles). Una vez que cada tarea sea automatizada, entonces la facilidad puede cosechar los beneficios de recopilar y hacer el seguimiento de datos, así como incrementar la habilidad de proporcionar el mejor cuidado posible.</p>
+                                <p><strong>Dietas sofisticadas.</strong> La comida típica de los hospitales no bastará para los hogares de ancianos. Muchos softwares han surgido para facilitar los planes de alimentación; promover la coordinación entre nutricionistas, dietistas, y cuidadores; y atender a todas las potenciales dietas. Los sistemas de gestión de hogares de ancianos que se integran sin problemas con este tipo de software o proporcionan módulos complementarios, triunfarán en estos esfuerzos alimentarios.</p>
+                                <p><strong>Dispositivos médicos.</strong> Los dispositivos médicos son una extensión natural de tanto tecnología médica como de la inclinación de los consumidores por sensores de cuerpo y rastreadores. Los dispositivos médicos se integrarán más y más en la vida de los más mayores. Las instalaciones deberán ser preparadas para hacer uso de la información que puede ser retirada de estos dispositivos, además de equipar las instalaciones para asegurar que están óptimamente preparadas para soportar estos dispositivos.</p>
+                                <p><strong>Aumento de profesionales cualificados de atención sanitaria.</strong> Más personas están entrando en hogares de ancianos y más personas están haciendo carreras en el ámbito médico. Ambos requieren personal hábil y gestión de recursos humanos y presionar a las instalaciones para reducir la rotación del personal. Hay una creciente necesidad por softwares que puedan optimizar las reclutamiento, contrataciones, y procesos de integración de profesionales médicos, así como software que puedan automatizar efectivamente tareas tediosas. ¿Por qué desperdiciar horas preciadas de profesionales que están formando parte de un grupo menguante?</p>
+                                <p><strong>Acceso móvil.</strong> Cada industria está experimentando los beneficios y necesidades de soportar una versión para móviles o de simplificar la entrada de datos móviles. No todos los profesionales de la industria de gestión de hogares de ancianos están pegados a sus escritorios, y los consumidores ya están familiarizados con el uso de aplicaciones móviles. Las aplicaciones móviles de salud ayudan a informar sobre los residentes, proporcionar solicitudes de mantenimiento de las instalaciones, y registrar las actividades de instalaciones que sólo ayudarán a incrementar la adopción de la herramienta.</p>
+                                <p><strong>Análisis de datos.</strong> Cualquier tipo de negocios puede beneficiarse de la habilidad de un software de recopilar, almacenar, y analizar datos o inteligencia. Para comunidades de vida asistida, se puede hacer uso del software para obtener datos y conocimiento que, finalmente, ayudará a los operadores a proporcionar mejores servicios, flujos de trabajos automatizados, ofertas ideales para residentes, y un equilibrio entre el trabajo sanitario y la vida de los cuidadores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <h3 class="text_center">Consideraciones clave</h3>
+                                <p>Aquí hay algunas preguntas importantes que considerar antes de comprar un sistema de gestión de hogares de ancianos:</p>
+                                <p><strong>Disponibilidad móvil:</strong> si quiere acceder a su sistema de gestión de hogares de ancianos en un iPad, iPhone, o dispositivo Android, pregunte a sus proveedores preseleccionados si disponen de una aplicación móvil. A medida que más y más profesionales de asistencia médica usan sus dispositivos móviles en una capacidad profesional, los proveedores de sistemas de gestión de hogares de ancianos están desarrollando aplicaciones para smartphones y tablets.</p>
+                                <p><strong>Adaptabilidad:</strong> pregunte a sus proveedores preseleccionados sobre la adaptabilidad de sus herramientas. Necesitará una solución que soporte su práctica a medida que crece y que sea capaz de manejar sus crecientes necesidades.</p>
+                                <p><strong>Atención al cliente:</strong> averigüe si su proveedor ofrece atención las veinticuatro horas del día, los siete días de la semana, solo durante horas de negocio, o en absoluto. También, pregunte sobre las opciones de atención disponibles, como a través de correo electrónico, llamadas telefónicas, o chat en vivo.</p>
+                                <p><strong>Integración:</strong> pregunte a su proveedor si los sistemas de gestión de hogares de ancianos se integran con su existente sistema electrónico de registros de salud (EHR) o no. La integración le ayudará a importar los datos de salud de sus pacientes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="wow fadeInUp" >
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <h3 class="text_center">Tipos de comunidades de vida asistida</h3>
+                                <p>Los diferentes tipos de sistemas de gestión de vida asistida se alinean con los distintos tipos de comunidades u hogares de ancianos que existen:</p>
+                                <p><strong>Hogares de ancianos.</strong> Los hogares de ancianos, también referidos a hogares de ancianos independientes, proporcionan viviendas, transporte, y actividades recreacionales para la población envejecida, pero los servicios de atención sanitaria no son ofrecidos necesariamente. Administradores y operarios de las comunidades de ancianos deberían buscar soluciones que ayuden a mantener la comunidad, fomentar la comunicación entre residentes y operarios, y ofrecer funcionalidades como planificación de comidas, actividades, y planificación de cuidados.</p>
+                                <p><strong>Enfermería especializada.</strong> La atención especializada solo puede ser administrada por un enfermero/a o profesional médico que tenga autorización para practicar la medicina. Por ejemplo, la atención que un cuidador no especializado puede proporcionar está limitado a las actividades de la vida diaria como bañarse, vestirse o comer. Un software de enfermería especializada, entonces, debe disponer de un módulo de validación o acreditación que ayuden a verificar las habilidades de los enfermeros antes de contratarlos.</p>
+                                <p><strong>Comunidades de retiro de cuidados continuos (CCRC). </strong>Las CCRC proporcionan viviendas a una gran variedad de ancianos, ofreciendo continuos cuidados que pueden beneficiar tanto a residentes cuya salud se esté deteriorando, y a residentes que quieran retirarse a una comunidad activa y social, que ofrezca servicios de atención médica. Las soluciones de vida asistida que satisfacen a las CCRC deben tener un sólido módulo de atención a residentes y documentación para ayudar a los operarios y cuidadores a seguir el progreso de sus residentes.</p>
+                                <p><strong>Hospicio.</strong> Los hospicios se encargan de administrar los cuidados de los enfermos terminales, de modo que las soluciones de vida asistida hechas a medida para los hospicios, deben tener fuertes capacidades para compartir datos, para mejorar la interoperabilidad y el intercambio de información de pacientes entre hospitales y hospicios.</p>
+                                <p>Los indiscutibles beneficios de los sistemas de gestión de hogares de ancianos para los administradores, sólo subrayan su valor para mejorar la vida de los ancianos. Del mismo modo, los administradores pueden ser aliviados de la mayoría de sus deberes administrativos gracias a la rapidez de estas herramientas para desempeñar sus tareas. Esto, en pocas palabras, proporciona valor para todo, lo que confirma su importancia para el futuro de la vida asistida, especialmente para afrontar sus desafíos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box landing__senior">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h3>Llevamos aquí desde hace un tiempo</h3>
+                        <p>No se preocupe, no le dejaremos colgado. Estamos basados totalmente en nuestro equipo de ventas, la mejor solución basada en la nube del mercado. Tenemos desarrolladores preparados para implementar y personalizar todo lo que necesite. Nuestro equipo de atención al cliente está, literalmente, esperando su llamada. ¿Precios? Totalmente asequibles, y relativo al volumen de unidades. Aquí estamos preparados y muy dispuestos para trabajar con usted.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="landing__workspace-item  wow fadeInLeft">
+                                <div class="landing__workspace-icon"><i><img alt="Optimice los procesos empresariales - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-workspace-icon1.png"/></i></div>
+                                <h6>Optimice los procesos empresariales</h6>
+                                <p>Suficientes gastos. Use el sistema Booking Ninjas para manejar tareas repetitivas, y centrarse en lo que realmente le importa de su negocio.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="landing__workspace-item  wow fadeInUp" >
+                                <div class="landing__workspace-icon"><i><img alt="Orientación al cliente - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-workspace-icon2.png"/></i></div>
+                                <h6>Orientación al cliente</h6>
+                                <p>Nuestro sistema gira en torno a dos partes: sus ingresos y sus clientes. Aprovéchese de la tecnología de nube, inteligencia artificial, e&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Integrations)}" target="_blank">integraciones</apex:outputLink> para proporcionar mejores servicios.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="landing__workspace-item  wow fadeInRight"  >
+                                <div class="landing__workspace-icon"><i><img alt="100% personalizada - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-workspace-icon3.png"/></i></div>
+                                <h6>100% personalizada</h6>
+                                <p>¿Quiere funcionalidades únicas? Nuestro equipo técnico le escuchará. Su plataforma será diseñada para ajustarse a las prácticas empresariales perfectamente. Siempre hay una solución para usted.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <h3 class="text_center">Tres pasos para empezar</h3>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Gestión De Propiedades Para Ancianos Software - 2" class="wow fadeInRight" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration6.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <dl>
+                                <h3>Ponerse en contacto:</h3>
+                                <dd>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al (907) 600-2345 para agilizar el proceso.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Importe sus datos</h3>
+                                <dd>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Láncese al éxito</h3>
+                                <dd>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="text_center wow fadeInUp">
+                                <h3 class="text_center">La mejor opción para su negocio</h3>
+                                <p>El sistema de Booking Ninjas está diseñado para ayudarle a alcanzar sus objetivos empresariales sin los contratiempos familiares a la mayoría de los sistemas de gestión. Nosotros ofrecemos herramientas de alta calidad con el fin de proporcionarles a ustedes un proceso de gestión sin problemas para el personal y una plataforma que proporciona un servicio excepcional de atención al cliente a sus huéspedes.</p>
+                                <p>Nos interesa la productividad, la experiencia del cliente y los beneficios para el usuario. Por esa razón ofrecemos paquetes muy útiles como parte de nuestro proceso de implementación. Nuestra plataforma de desarrollo y personalización le ayuda a usted a incluir paquetes específicos y a eliminar los que actualmente no desee. En otras palabras, usted va a obtener exactamente lo que está buscando, y mejor.</p>
+                                <p>Nosotros hacemos negocios a nivel internacional. Desde Norteamérica, hasta Europa y Asia, estamos interesados en ofrecer excelencia absoluta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/Senior_Living_icon-gray.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Senior Living Property Management Software Price - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/Senior_Living_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>¡Estamos dispuestos a trabajar con usted! Dependiendo de su situación, podrá ser elegible para paquetes de descuentos. Haga Click&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" target="_blank">aquí</apex:outputLink> para información de precios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">Prueba el piloto hoy</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

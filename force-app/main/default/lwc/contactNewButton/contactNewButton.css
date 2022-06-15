@@ -1,0 +1,21 @@
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+.header-text{
+    color: white;
+    font-weight: bold; 
+}  
+
+.footer {
+    padding-top: 20px;
+    text-align: right;
+    font-size: 15px; 
+}    
+
+.caption-text {
+    font-size: 18px; 
+    font-weight: bold;
+}

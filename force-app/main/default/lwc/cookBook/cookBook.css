@@ -1,0 +1,29 @@
+.custom-box {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    align-items: center;
+    border-color: blue;
+
+}
+
+.dash {
+    border-top: 1px solid rgb(200, 199, 201);
+    width: fit-content;
+    height: 0px;
+}
+
+.THIS.slds-spinner_container {  
+    z-index: 10000;
+    position: fixed;   
+}
+
+.header{
+    font-weight: bold;
+} 
+
+.countTotal, .empty-table {
+    padding-left: 10px;
+    font-weight: bold;
+}

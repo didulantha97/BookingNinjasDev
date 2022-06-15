@@ -1,0 +1,66 @@
+<apex:page standardController="Opportunity" extensions="CreateInvoiceController" showHeader="false" sidebar="false">
+    
+    <apex:form id="theForm">   
+         
+        <apex:outputPanel id="thePanel">
+        
+            <apex:pagemessages id="customMessages" />
+            
+            <apex:pageBlock > 
+            
+                <apex:pageBlockSection columns="2">
+                    <apex:selectList value="{!productSelected}" multiselect="false" size="15" style="width:300px;">
+                        <apex:selectOptions value="{!productsAvailable}"/>
+                    </apex:selectList>
+                    <apex:pageBlockTable value="{!selectedProducts}" var="sp">        
+                        <apex:column headerValue="Product Name" value="{!sp.Product__r.Name}" />
+                        <apex:column headerValue="Price" value="{!sp.Price__c}" />
+                        <apex:column headerValue="Quantity" value="{!sp.Quantity__c}" />
+                        <apex:column headerValue="Remove">
+                          <apex:commandButton value="X" action="{!removeSelectedProduct}" rerender="thePanel">
+                              <apex:param name="sp1" value="{!sp.Id}" assignTo="{!removeProductId}"/>
+                          </apex:commandButton>
+                        </apex:column>                    
+                    </apex:pageBlockTable>      
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection columns="1">
+                    Payment Type: 
+                    <apex:selectList value="{!paymentType}" size="1" style="width:100px;">
+                        <apex:selectOptions value="{!productPaymentTypes}"/>
+                    </apex:selectList>
+                    Enter Quantity: <apex:inputText value="{!Quantity}" style="width:100px;"/>
+                    Product Notes: <apex:inputTextarea value="{!ProductNotes}" style="width:300px;"/>
+                    <apex:commandButton value="Add Selected Product" action="{!addSelectedProduct}" rerender="thePanel" />
+                </apex:pageBlockSection>
+                
+                <br/><br/><hr/>
+                
+                <apex:pageBlockSection columns="2">
+                    <apex:outputLabel value="Total Price: "/><apex:inputText id="TotalPrice" value="{!GrandTotal}" style="width:100px;" html-readonly="true"/>
+                    <apex:outputLabel value="One-Time Payment: "/><apex:inputText id="OneTimePayment" value="{!OneTimePayment}" style="width:100px;" html-readonly="true"/>
+                    <apex:outputLabel value="Monthly Dues: "/><apex:inputText id="MonthlyDues" value="{!MonthlyDues}" style="width:100px;" html-readonly="true" />
+                    <apex:outputLabel value="DownPayment (%): "/><apex:inputText id="Downpayment" value="{!Downpayment}" style="width:100px;" />
+                </apex:pageBlockSection>
+                
+                <hr/>
+                
+                <apex:pageBlockSection columns="1">
+                    Notes: <apex:inputtextarea value="{!Notes}" style="width:900px;" />
+                </apex:pageBlockSection>
+                
+                <br/>
+                
+                <apex:pageBlockSection columns="3">
+                    <apex:commandbutton action="{!CalcTotalPrice}" value="Calculate Totals" rerender="thePanel" status="status"/>
+                    <apex:commandbutton action="{!ClearAll}"  value="Clear All" rerender="thePanel" status="status" />
+                    <apex:commandbutton action="{!BuildQuote}" value="Send Quote" disabled="{!if(GrandTotal < 0, true, false)}" />
+                </apex:pageBlockSection>
+                
+            </apex:pageBlock>
+            
+        </apex:outputPanel>
+            
+    </apex:form>
+
+</apex:page>

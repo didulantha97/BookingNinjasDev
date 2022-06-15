@@ -1,0 +1,153 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+            
+            <!-- hero -->
+            <div class="features-page-hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-7 order-lg-1">
+                            <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-hero.png" alt="Features that Make Life Easier" />
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <h1>Features that Make Life Easier</h1>
+                            <p>Welcome to the Booking Ninjas ecosystem, where we offer groundbreaking features to give your business the profitability you want.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+            <!-- content -->
+            <div class="features-page-text text_center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <h2>You can focus on your guests’ experiences</h2>
+                            <p>You have access to features that makes your guests’ experiences generally satisfying. These features focus on the overall onboarding experience of your guests, from online discovery to booking reservations to stay-ins and check-outs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="features-page-grid">
+                <div class="features-page-grid__row">
+                    <div class="row features-page-grid__cells">
+                        <div class="col-lg-6 cell-background"></div>
+                        <div class="col-lg-6 cell-background"></div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-content-1.jpg" alt="Booking Ninjas core" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Booking Ninjas core</h3>
+                                        <p>The core features of Booking Ninjas suitable for all types of establishments. It covers generic features like booking engines to top-level integrations. A lot of businesses usually start with this before moving on to more specialized solutions.</p>
+                                        <p>See how the bare-back Booking Ninjas implementation can get you started on your digital journey.</p>
+                                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Core)}" styleClass="button">Learn more</apex:outputLink>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-1">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-content-2.jpg" alt="Reservations Specials" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Reservations Specials</h3>
+                                        <p>If you’re heavy on reservations and want tools to put you on super mode, you’ll love this set of features. From specific tools like Availability grid controllers, Housekeeping, and Maintainance with Automation, you and your guests are up for a wonderful experience.</p>
+                                        <p>Let’s see what our Reservation Specials set hold for you. </p>
+                                        <a href="#" class="button">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-content-3.jpg" alt="Ticketing / Event" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>Ticketing / Event</h3>
+                                        <p>Digital management isn’t just for properties. If you’re hosting an event in any property and you’d like to take a considerable part of the load off your hands, you should check out our Ticketing specific features. It holds features from generating bar-coded tickets, to API integrations in web and mobile applications.</p>
+                                        <p>Check out all the features available under this group… we’re confident there’s something there for you.</p>
+                                        <a href="#" class="button">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-page-grid__row">
+                    <div class="features-page-grid__cells">
+                        <div class="row features-page-grid__cells">
+                            <div class="col-lg-6 cell-background"></div>
+                            <div class="col-lg-6 cell-background"></div>
+                        </div>
+                    </div>
+                    <div class="features-page-grid__content">
+                        <div class="container">
+                            <div class="row row-content-height align-items-center">
+                                <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start order-lg-2">
+                                    <div class="features-page-grid__content-img">
+                                        <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/features-content-4.jpg" alt="For the Restaurateur" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="features-page-grid__content-text">
+                                        <h3>For the Restaurateur</h3>
+                                        <p>Encompassing both software and hardware, our POS systems gives you a complete payment solution, one that works in sync with your Accounting System, Payment Integrations, and Data Analytics. One of our most innovative integrations, it really takes a huge chunk of work from your hands.</p>
+                                        <a href="#" class="button">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

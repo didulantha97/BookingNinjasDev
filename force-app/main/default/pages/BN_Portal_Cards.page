@@ -1,0 +1,213 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" controller="BN_Portal_Cards_Controller">
+
+     <!-- Template -->
+    <apex:composition template="BN_Portal_Template">
+        <!-- Define content -->
+        <apex:define name="bn_portal_content">
+        
+            <div class="col-lg-9  col-md-8">
+                <apex:outputPanel styleClass="portal__main" id="portal-cards">
+                    <div class="portal__main-text">
+                        <apex:form >
+                            <h1>Cards </h1>
+                            <div class="portal__main-form">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4">
+                                        <div class="portal__main-form-item">
+                                            <a href="#add-card" data-fancybox="add-card" class="button small" style="text-decoration:none;">Add new Card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portal__main-history">
+                                <table>
+                                    <tr>
+                                        <th>Card Holder</th>
+                                        <th>Card Number</th>
+                                        <th>Date Added</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                    <apex:repeat var="card" value="{!cards}">
+                                        <tr>
+                                            <td>{!card.Card_Holder__c}</td>
+                                            <td>XXXXXXXXXXXX{!RIGHT(card.Card_Number__c, 4)}</td>
+                                            <td>
+                                                <apex:outputText value="{0, date, MMMM dd',' yyyy}">
+                                                    <apex:param value="{!card.CreatedDate}" /> 
+                                                </apex:outputText>
+                                            </td>
+                                            <td>
+                                                <apex:commandLink value="Delete" action="{!deleteCard}" rerender="portal-cards">
+                                                    <apex:param value="{!card.Id}" assignTo="{!cardId}" name="card_id" />
+                                                </apex:commandLink>
+                                            </td>
+                                        </tr>
+                                    </apex:repeat>
+                                </table>
+                            </div>
+                        </apex:form>
+                    </div>
+                    <br/>
+                    <div class="portal__main-text">
+                        <apex:form >
+                            <h1>Checks</h1>
+                            <div class="portal__main-form">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4">
+                                        <div class="portal__main-form-item">
+                                            <a href="#add-check" data-fancybox="add-check" class="button small" style="text-decoration:none;">Add new Check</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portal__main-history">
+                                <table>
+                                    <tr>
+                                        <th>Account Name</th>
+                                        <th>Checking Number</th>
+                                        <th>Issuing Bank</th>
+                                        <th>Date Added</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                    <apex:repeat var="check" value="{!checks}">
+                                        <tr>
+                                            <td>{!check.Name__c}</td>
+                                            <td>{!check.Checking_Account_Number__c}</td>
+                                            <td>{!check.Issuing_Bank__c}</td>
+                                            <td>
+                                                <apex:outputText value="{0, date, MMMM dd',' yyyy}">
+                                                    <apex:param value="{!check.CreatedDate}" /> 
+                                                </apex:outputText>
+                                            </td>
+                                            <td>
+                                                <apex:commandLink value="Delete" action="{!deleteCheck}" rerender="portal-cards">
+                                                    <apex:param value="{!check.Id}" assignTo="{!checkId}" name="check_id" />
+                                                </apex:commandLink>
+                                            </td>
+                                        </tr>
+                                    </apex:repeat>
+                                </table>
+                            </div>
+                        </apex:form>
+                    </div>
+                    
+                    <!--modal for card-->
+                    <div class="modal payment-popup" id="add-card">
+                        <apex:form >
+                            <div class="payment-popup__title"><h6>Add a credit or debit card</h6></div>
+                            <div class="payment-popup__info">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="payment-popup__info-form">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label>Card number</label>
+                                                    <apex:input type="text" id="card_number" value="{!cardNumber}"/>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label>Card Expiration (MM/YYYY)</label>
+                                                    <apex:input type="text" id="card_exp" value="{!cardExpDate}"/>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label>Card CVV/CVC</label>
+                                                    <apex:input type="text" id="card_cvv" value="{!cardCvv}"/>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label>Card Holder Name</label>
+                                                    <apex:input type="text" id="card_name" value="{!cardName}"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="payment-popup__info-item">
+                                            <p>Amazon accepts all major credit and debit
+                                                cards:</p>
+                                            <img src="https://d1b89zc79exfxt.cloudfront.net/img/popup-cards.png" alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment-popup__button">
+                                <apex:commandButton styleClass="button" value="Add new Card" action="{!addCard}" rerender="portal-cards"/>
+                            </div>
+                            <br/>
+                            <apex:messages style="color:red;"/> 
+                            <div class="card-wrapper" style="display:none;"></div>
+                        </apex:form>
+                    </div>
+                    <!--end of modal for card-->
+                    
+                    <!--modal for check-->
+                    <div class="modal payment-popup" id="add-check">
+                        <apex:form >
+                            <div class="payment-popup__title"><h6>Add a personal checking account</h6></div>
+                            <div class="payment-popup__info">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="payment-popup__info-form">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label>Name on account</label>
+                                                    <apex:input type="text" value="{!nameOnAccount}"/>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label>Bank rounting number</label>
+                                                    <apex:input type="text" value="{!bankRoutingNumber}"/>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label>Checking account number</label>
+                                                    <apex:input type="text" value="{!checkingAccountNumber}"/>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label>Issuing Bank</label>
+                                                    <apex:input type="text" value="{!issuingBank}"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="payment-popup__info-item">
+                                            <p>Where are my bank routing and checking account
+                                                numbers?</p>
+                                            <img src="https://d1b89zc79exfxt.cloudfront.net/img/bank-info.png" alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-popup__button">
+                                <apex:commandButton styleClass="button" value="Add new Checking Account" action="{!addCheck}" rerender="portal-cards"/>
+                            </div>
+                            <br/>
+                            <apex:messages style="color:red;"/> 
+                        </apex:form>   
+                    </div>
+                    <!--end of modal for check-->
+                    
+                    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/card.js"></script>
+                    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/jquery.card.js"></script>
+                    <script>
+                        var j$ = jQuery.noConflict();
+                        j$('form').card({
+                            container: '.card-wrapper',
+                            width: 280,
+                            formSelectors: {
+                                numberInput: 'input[id$="card_number"]',
+                                expiryInput: 'input[id$="card_exp"]',
+                                cvcInput: 'input[id$="card_cvv"]',
+                                nameInput: 'input[id$="card_name"]'
+                            }
+                        });
+                    </script>
+                </apex:outputPanel>
+            </div>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

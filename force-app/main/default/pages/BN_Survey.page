@@ -1,0 +1,80 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top channel-page-top">
+                <div class="container">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6 ">
+                            <div class="about-page-top__img text_center"><img alt="Booking Ninjas Surveys" src="https://d1b89zc79exfxt.cloudfront.net/img/survey-top.png"/></div>
+                        </div>
+                        <div class="col-lg-6 ">
+                            <article>
+                                <h1>Booking Ninjas Surveys</h1>
+                                <p>Booking Ninjas is a customer driven business. Your feedback is what fuels us to continue to create new features, gain insights into typical issues a property business faces, and most importantly, learn the best ways in which we can help. </p>
+                                <p>We strive to innovate and implement the best technology available on the software market to improve office workflow, have you create closer connections to your customers, and give your property the mobility it needs to grow and adapt to the digital age.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="channel-section survey-box">
+               <div class="container">
+                   <article class="survey-text">
+                       <h2 class="title">Our Surveys</h2>
+                       <p>Whether you’re a current Booking Ninjas user that wants to inform us of ways that we can get better, or you’re a property owner that may be looking for something new, these surveys are the conduit to a better, more streamlined property management system.</p>
+                       <p>We here at Booking Ninjas don’t shy away from criticism. We want to hear your honest opinions so that we know where to focus our time and energy. Our pms can never reach its full potential without the input from professionals in the property industry.</p>
+                       <p>Below is a list of active surveys that will help continue to make Booking Ninjas the best property management software in the world.</p>
+                   </article>
+                   <div class="survey-section">
+                       <div class="row">
+                           <div class="col-lg-6">
+                               <apex:outputLink value="{!URLFOR($Page.BN_Form_Covid19)}" styleClass="survey-item" target="_blank">
+                                   <img alt="Rate My PMS" src="https://d1b89zc79exfxt.cloudfront.net/img/survey-img3.jpg"/>
+                                   <span>COVID-19 Survey</span>
+                               </apex:outputLink>
+                           </div>
+                           <div class="col-lg-6">
+                               <apex:outputLink value="{!URLFOR($Page.BN_Form_GeneralHospitalitySurvey)}" styleClass="survey-item" target="_blank">
+                                   <img alt="Hotel Industry Survey" src="https://d1b89zc79exfxt.cloudfront.net/img/survey-img2.jpg"/>
+                                   <span>General Hospitality Survey</span>
+                               </apex:outputLink>
+                           </div>
+                           <div class="col-lg-6">
+                               <apex:outputLink value="{!URLFOR($Page.BN_Form_HotelIndustrySurvey)}" styleClass="survey-item" target="_blank">
+                                   <img alt="Hotel Industry Survey" src="https://d1b89zc79exfxt.cloudfront.net/img/survey-img2.jpg"/>
+                                   <span>Hotel Industry Survey</span>
+                               </apex:outputLink>
+                           </div>
+                           <div class="col-lg-6">
+                               <apex:outputLink value="{!URLFOR($Page.BN_Form_RateMyPMS)}" styleClass="survey-item" target="_blank">
+                                   <img alt="Rate My PMS" src="https://d1b89zc79exfxt.cloudfront.net/img/survey-img3.jpg"/>
+                                   <span>Rate My PMS</span>
+                               </apex:outputLink>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- <nav class="pager">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                        </ul>
+                    </nav> -->
+               </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

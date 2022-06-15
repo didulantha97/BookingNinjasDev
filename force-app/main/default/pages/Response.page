@@ -1,0 +1,47 @@
+<apex:page showHeader="false" sidebar="false" showChat="false" standardStylesheets="false">
+    <html>
+        <head>
+            <apex:stylesheet value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+            <apex:stylesheet value="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+            <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"/>
+            <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"/>    
+                      
+            <style>
+                html, body { margin: 10px; padding: 0; }
+                .content
+                {
+                    background-color:#f4f4f4;
+                    border:1px solid #b4b4b4;
+                    margin: 0 auto;
+                    width: 750px;
+                    padding:20px;
+                }
+               
+            </style>
+        </head>
+    <body>
+    
+        <div class="content">
+            <table border="0" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;">
+                <tr>
+                    <td style="width:150px;">
+                        <img src="https://bookingninjas--c.na30.content.force.com/servlet/servlet.ImageServer?id=01536000001zhPu&oid=00D36000001H4E9&lastMod=1469499705000" alt="Logo" width="200px"/>
+                    </td>
+                    
+                    <td style="float:right;">
+                    <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                        Date:<apex:param value="{!NOW()}" />
+                    </apex:outputText>
+                       
+                    </td>
+                </tr>
+               </table>
+                   <h3>Thank you for your response!</h3>
+                    
+                    You will receive an email notification within 24 hours.
+           </div>         
+    </body>
+    </html>
+
+ 
+</apex:page>

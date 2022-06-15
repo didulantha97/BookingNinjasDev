@@ -1,0 +1,376 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top price-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 ">
+                            <div class="about-page-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/pricing-bnr.png" alt="Bookingninjas Property Management System" /></div>
+                        </div>
+                        <div class="col-lg-6 ">
+                            <article>
+                                    <h1>Sistema de gerenciamento de propriedades Ninjas</h1>
+                                    <p>Os preços do nosso Sistema de Gerenciamento de Propriedades baseado em nuvem oferecem um grande valor de mercado para um negócio de hotelaria. Pela tecnologia avançada que você recebe ao implementar nosso PMS, nossos ofertas são muito vantajosas! A implementação de um PMS em sua propriedade se tornou uma necessidade nos últimos anos. Assim como a tecnologia se desenvolveu, aumentaram também as necessidades e desejos dos clientes.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="pricing-section">
+                <!-- filter -->
+                <div class="pricing-filter">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-10">
+                                <p>Para transformar digitalmente seu negócio imobiliário na 4ª Revolução Industrial, você precisa de um PMS baseado em nuvem que coloca em ênfase a tecnologia. Isto é o que somos! Estamos à frente na liderança de incorporação da tecnologia moderna em software de gerenciamento de propriedades há mais de uma década.</p>
+    
+                                <p>Nossas taxas são determinadas por diversos fatores.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end align-items-end">
+                            <div class="col-lg-5 col-md-6">
+                                <h3>Pagar</h3>
+                                <div class="pricing-filter__monthly">
+                                    <div class="pricing-filter__item">
+                                        <small>Por mês</small>
+                                        <label><input type="checkbox" checked="checked" id="price-check" /><span></span></label>
+                                        <small>Anualmente</small>
+                                    </div>
+                                    <div class="pricing-filter__discount"><span>Pagamentos anuais com 10% de desconto</span></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6">
+                                <div class="pricing-filter__currency">
+                                    <figure class="Brazilian real">
+                                        <figcaption>Brazilian real</figcaption>
+                                        <b>R$</b>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>CONHEÇA NOSSOS PREÇOS DE PMS AJUSTÁVEIS E COMO ISTO PODE FUNCIONAR PARA VOCÊ</h3>
+                    </div>
+                </div>
+                <!-- /filter -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="pricing-section__box">
+                                <div class="pricing-section__box-top">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 col-6">
+                                            <strong id="user">R$425</strong>
+                                            <small>/usuário/mês</small>
+                                        </div>
+                                        <div class="col-lg-6 col-6">
+                                            <div class="text-right"><img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico2.png" alt="Bookingninjas Property Management System" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <article class="pricing-section__text">
+                                    <h3>TAXA DE USUÁRIO BOOKING NINJAS</h3>
+                                    <p>Todos os nossos pacotes Booking Ninjas começam com uma taxa de usuário de $85/mês. Isto é para cada usuário que você deseja permitir ser capaz de visualizar e controlar todas as áreas do software de gerenciamento de propriedades. Você pode facilmente adicionar usuários autorizados em qualquer momento que desejar.</p>
+                                </article>
+                            </div>
+                            <div class="pricing-section__box">
+                                <div class="pricing-section__box-top">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 col-6">
+                                            <strong id="space">R$125</strong>
+                                            <small>/espaço/mês</small>
+                                        </div>
+                                        <div class="col-lg-6 col-6">
+                                            <div class="text-right"><img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico5.png" alt="Bookingninjas Property Management System" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <article class="pricing-section__text">
+                                    <h3>ESPAÇO PARA REUNIÕES/EVENTOS</h3>
+                                    <p>Nossa grade de disponibilidade tudo em um é um excelente recurso para ter em espaços para reuniões e eventos. Ele permite que você gerencie reservas para eventos e reuniões em uma plataforma única, baseada em nuvem compartilhada. Nós também temos um sistema de tickets para eventos que gera códigos de barras personalizados para ingressos na qual os organizadores do evento podem utilizar na entrada para o evento.
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="pricing-section__box">
+                                <div class="pricing-section__box-top">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 col-6">
+                                            <strong id="parking">R$2</strong>
+                                            <small>/vaga/mês</small>
+                                        </div>
+                                        <div class="col-lg-6 col-6">
+                                            <div class="text-right"><img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico11.png" alt="Bookingninjas Property Management System" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <article class="pricing-section__text">
+                                    <h3>ESTACIONAMENTO</h3>
+                                    <p>Aproveite nossos métodos de pagamento avançados e integrações com o POS. Integre totalmente os seus terminais com o nosso PMS para manter o rastreamento dos clientes e fornecer ao nosso sistema mais dados para analisar. Ao utilizar nossos métodos de pagamento avançados, você oferece aos seus clientes mais liberdade para efetuarem o pagamento da maneira como eles desejarem.  
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="pricing-section__box">
+                                <div class="pricing-section__box-top">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 col-6">
+                                            <div class="text-left"><img src="https://d1b89zc79exfxt.cloudfront.net/img/twilio-big.png" class="auto" alt="Bookingninjas Property Management System" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <article class="pricing-section__text">
+                                    <h3>UTILIZAÇÃO DO TWILIO</h3>
+                                                        <p>Consulte <a href="https://www.twilio.com/voice/pricing/us" target="_blank">aqui</a></p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="pricing-section__box">
+                                        <div class="pricing-section__box-top">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-6">
+                                                    <strong id="room">R$85</strong>
+                                                    <small>/quarto/mês</small>
+                                                </div>
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="text-right"><img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico1.png" alt="Bookingninjas Property Management System" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <article class="pricing-section__text">
+                                            <h3>HOTEL/MOTEL</h3>
+                                            <p>Nosso PMS para hotel oferece melhorias para todos os aspectos do seu hotel. Reservas/agendamentos, marketing, manutenção, contabilidade, relatórios e integrações são todos parte do nosso design para fazer com que seu hotel funcione sem problemas e de maneira eficiente.</p>
+                                        </article>
+                                    </div>
+                                    <div class="pricing-section__box">
+                                        <div class="pricing-section__box-top">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-6">
+                                                    <strong id="bed">R$35</strong>
+                                                    <small>/cama/mês</small>
+                                                </div>
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="text-right"><img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico13.png" alt="Bookingninjas Property Management System" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <article class="pricing-section__text">
+                                            <h3>HOSTEL</h3>
+                                            <p>Nosso sistema de gerenciamento de hostel irá ajudar a destacar sua propriedade no mercado de aluguéis de quartos compartilhados em 2020. Nosso PMS baseado em nuvem oferece uma transformação digital para o seu hostel a fim de melhorar sua presença digital e visibilidade on-line.</p>
+                                        </article>
+                                    </div>
+                                    <div class="pricing-section__box">
+                                        <div class="pricing-section__box-top">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-6">
+                                                    <strong id="be">R$30</strong>
+                                                    <small>/unidade/mês</small>
+                                                </div>
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="text-right"><img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico14.png" alt="Bookingninjas Property Management System" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <article class="pricing-section__text">
+                                            <h3>MOTOR DE RESERVA</h3>
+                                            <p>Nosso motor de reserva é altamente escalável e totalmente integrável. O sistema é composto por portais de acesso para hóspedes, agentes, parceiros e fornecedores, permitindo uma comunicação mais clara entre membros da equipe e hóspedes. Personalize a experiência do seu hóspede para aumentar seu índice de retenção de clientes.</p>
+                                        </article>
+                                    </div>
+                                    <div class="pricing-section__box">
+                                        <div class="pricing-section__box-top">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="text-left"><img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico15.png" alt="Bookingninjas Property Management System" /></div>
+                                                </div>
+                                                <div class="col-lg-6 col-6">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <article class="pricing-section__text">
+                                            <h3>TWILIO FLEX</h3>
+                                            <p>Consulte aqui - A plataforma de centro de contato baseada em nuvem do Twilio permite que você personalize seu fluxo de trabalho a fim de atender às necessidades de sua propriedade. Faça o design do centro de controle da maneira que você desejar.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="pricing-section__box">
+                                        <div class="pricing-section__box-top">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-6">
+                                                    <strong id="coworking">R$50</strong>
+                                                    <small>/membro/mês</small>
+                                                </div>
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="text-right"><img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico16.png" alt="Bookingninjas Property Management System" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <article class="pricing-section__text">
+                                            <h3>ESPAÇO COWORKING</h3>
+                                            <p>Os espaços de coworking precisam de nossa atenção quando se trata de reservas por hora. Nosso sistema de gerenciamento de reservas permite que você visualize reservas em incrementos de 15 minutos. Nunca perca o controle do aluguel de escritórios e mantenha sua operação em funcionamento sem nenhum problema.</p>
+                                        </article>
+                                    </div>
+                                    <div class="pricing-section__box">
+                                        <div class="pricing-section__box-top">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-6">
+                                                    <strong id="storage">R$2</strong>
+                                                    <small>/unidade de armazenamento/mês</small>
+                                                </div>
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="text-right"><img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico17.png" alt="Bookingninjas Property Management System" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <article class="pricing-section__text">
+                                            <h3>SELF STORAGE</h3>
+                                            <p>Unidades de armazenamento lidam com uma grande quantidade de contratos e arrendamentos. Nossos recursos de Esign (assinatura eletrônica) são incomparáveis. Realize facilmente o pré-preenchimento de documentos e contratos para serem enviados rapidamente. Tenha todos os seus registros de documentos em arquivos em uma única plataforma.</p>
+                                        </article>
+                                    </div>
+                                    <div class="pricing-section__box">
+                                        <div class="pricing-section__box-top">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-6">
+                                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico18.png" alt="Bookingninjas Property Management System" />
+                                                </div>
+                                                <div class="col-lg-6 col-6">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <article class="pricing-section__text">
+                                            <h3>APLICATIVOS MÓVEIS PERSONALIZADOS</h3>
+                                            <p>Consulta por preço - Nossos aplicativos móveis permitem que você conecte qualquer aplicativo do mercado AppExchange do Salesforce ao nosso sistema de gerenciamento de propriedades. Eles também permitem que os gerentes de propriedades possam administrar seus negócios de qualquer lugar do mundo, utilizando qualquer dispositivo inteligente. Os preços variam. Por favor, entre em contato conosco para solicitar uma cotação</p>
+                                        </article>
+                                    </div>
+                                    <div class="pricing-section__box">
+                                        <div class="pricing-section__box-top">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-6">
+                                                    <strong id="einstein">R$200</strong>
+                                                    <small>add-on for existing BN customers</small>
+                                                </div>
+                                                <div class="col-lg-6 col-6">
+                                                    <div class="text-right"><img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico9.png" alt="Bookingninjas Property Management System" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <article class="pricing-section__text">
+                                            <h3>EINSTEIN ANALYTICS</h3>
+                                            <p>$45 adicionais para clientes BN existentes - O Einstein AI do Salesforce atua mais como um parceiro de negócios do que como uma parte da tecnologia. Ele faz sugestões inteligentes para sua propriedade, analisando dados atuais e antigos. Clique aqui para saber mais sobre os benefícios da inteligência artificial de Einstein.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-section__item">
+                        <div class="pricing-section__left">
+                            <div class="pricing-section__ico">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/price-ico12.png" alt="Bookingninjas Property Management System" />
+                            </div>
+                        </div>
+                        <article class="pricing-section__text">
+                             <div class="row">
+                                <div class="col-lg-12">
+                                    <section>
+                                        <h3>CHANNEL MANAGER</h3>
+                                        <p>Aumenta o conhecimento e visibilidade on-line da sua propriedade. Extraia dados valiosos de sites de terceiros para obter uma ideia melhor de quem são os seus clientes e o que eles estão buscando. Proporcione uma experiência personalizada para os seus hóspedes com base em suas preferências.</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- <div class="pricing-table-under">
+                        <table>
+                            <tr>
+                                <th># Quartos</th>
+                                <td>1-25</td>
+                                <td>26-50</td>
+                                <td>51-75</td>
+                                <td>76-100</td>
+                                <td>101-125</td>
+                                <td>126-150</td>
+                                <td>151-175</td>
+                                <td>176-200</td>
+                                <td>201+</td>
+                            </tr>
+                            <tr>
+                                <th>Configuração</th>
+                                <td>R$99</td>
+                                <td>R$124</td>
+                                <td>R$149</td>
+                                <td>R$174</td>
+                                <td>R$199</td>
+                                <td>R$224</td>
+                                <td>R$249</td>
+                                <td>R$274</td>
+                                <td>R$299</td>
+                            </tr>
+                            <tr>
+                                <th>Por mês</th>
+                                <td>R$49</td>
+                                <td>R$74</td>
+                                <td>R$99</td>
+                                <td>R$124</td>
+                                <td>R$149</td>
+                                <td>R$174</td>
+                                <td>R$199</td>
+                                <td>R$224</td>
+                                <td>R$249</td>
+                            </tr>
+                        </table>
+                    </div> -->
+                    <div class="pricing-text-bottom">
+                        <h3>PREÇOS PERSONALIZADOS PARA SEU SOFTWARE DE GERENCIAMENTO DE PROPRIEDADES</h3>
+                        <p>Se você é proprietário de uma empresa grande ou organização sem fins lucrativos, é recomendável que você preencha um Formulário de Declaração de Interesse. Um membro da nossa equipe irá entrar em contato imediatamente para discutir sobre os detalhes dos preços*.</p>
+    
+    
+                    <p><small>*Proprietários sem fins lucrativos e de empresas grandes com mais de 250 usuários podem ser elegíveis para descontos selecionados.
+                    </small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+            <script>
+                $(document).ready(function() {                   
+                    $('#price-check').change(function() {
+                        if(this.checked) {
+                            $('#user').text('R$425');
+                            $('#room').text('R$85');
+                            $('#coworking').text('R$50');
+                            $('#space').text('R$125');
+                            $('#bed').text('R$35');
+                            $('#storage').text('R$2');
+                            $('#parking').text('R$2');
+                            $('#be').text('R$30');
+                            $('#einstein').text('R$200');
+                        }
+                        else {
+                            $('#user').text('R$380');
+                            $('#room').text('R$76');
+                            $('#coworking').text('R$45');
+                            $('#space').text('R$110');
+                            $('#bed').text('R$30');
+                            $('#storage').text('R$1.5');
+                            $('#parking').text('R$1.5');
+                            $('#be').text('R$25');
+                            $('#einstein').text('R$180');
+                        }
+                    });
+                });      
+            </script>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

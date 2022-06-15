@@ -1,0 +1,161 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+            
+            <!-- top -->
+            <div class="about-page-top pms-page-top">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <article>
+                                    <h1>Software PMS: ¿Cuáles son las ventajas más importantes?</h1>
+                                    <p>Un sistema de gestión de propiedades (PMS) es una aplicación de software para el funcionamiento de negocios de hostelería y alojamiento tales como hoteles y propiedades comerciales o residenciales para alquiler. Es un sistema informático centralizado diseñado para organizar, programar y realizar las funciones y transacciones cotidianas de las empresas de alquiler y hostelería. También es utilizado en las industrias manufactureras y en los gobiernos locales. Son coloquialmente llamados los organizadores por excelencia de los negocios, automatizando las tareas y maximizando la eficiencia del negocio.</p>
+                                </article>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-top__img"><img alt="PMS Software" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-page-top.png"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p><apex:outputLink value="{!URLFOR($Page.BN_PMS_Salesforce)}" styleClass="blue-link">Los sistemas PMS</apex:outputLink> se adaptan a las necesidades particulares de la industria hostelera para aumentar aún más la facilidad con la que se realizan las operaciones dentro de estas. El mantenimiento de los registros informáticos y la implementación de sistemas PMS han aumentado considerablemente la eficiencia de las industrias de alojamiento y hostelería al hacer posible la actualización y consulta de registros centralizados desde múltiples computadoras y dispositivos.</p>
+                    <p>La mayoría de los profesionales de la administración de propiedades dependen de una solución brindada por estos sistemas para maximizar la funcionalidad de sus negocios. Si usted es gerente o administrador de alguna propiedad, un propietario de un negocio o un hotelero, lo más probable es que necesite de un sistema de gestión para agilizar su negocio en el día a día.</p>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="pms-page-content">
+                <!-- functions -->
+                <div class="pms-page-functions">
+                    <div class="container">
+                        <h2 class="about-page-content__title">¿Cuál es la función de un sistema de gestión de propiedades (PMS)?</h2>
+                        <p>Hoy en día una administración o gestión de una propiedad de una calidad profesional solo es posible de lograr mediante la implementación de un sistema PMS. Para empezar, no tener uno pone a su negocio en desventaja. Un sistema de gestión potencializa de manera exponencial cada una de las tareas diarias que requiere su negocio. Las tareas diarias como: reservas, registros de entrada y salida, integración del sistema telefónico, integración del punto-de-venta (POS), la planificación y gestión de eventos, el cálculo de los costos de alimentación, la gestión de los suministros de inventario y seguridad. Todo y cada uno de estos procesos se automatizan gracias al sistema, operando a través de una base de datos informática centralizada.</p>
+                    </div>
+                </div>
+                <!-- /functions -->
+                <!-- benefits -->
+                <div class="pms-page-benefits">
+                    <div class="container">
+                        <h2 class="about-page-content__title">¿Por qué son importantes los sistemas de gestión de propiedades (PMS)?<br/>¿Cómo pueden beneficiar a mi negocio de alojamiento?</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <img alt="Why Is PMS Software Important?" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-page-1.png"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Cuando decimos que los sistemas PMS incrementan la funcionalidad y hacen que su negocio funcione mejor, nos referimos a todas las tareas mencionadas anteriormente que operan bajo un único sistema de software. Pero, ¿cómo se traduce eso a los huéspedes y a los empleados? Respuesta simple: Reduciendo la carga de trabajo del personal y mejorando la experiencia de los clientes. Se crea un efecto dominó de funcionalidad dentro de su empresa. Al completar una tarea, usted puede estar seguro de que varias otras se realizan automáticamente también, lo que ayuda a los empleados a lograr mucho más en un día de trabajo.</p>
+                            </div>
+                        </div>
+                        <p>Estos sistemas cuidan la salud financiera de su empresa mediante el almacenamiento seguro de información de pago de los huéspedes, y facilitando los procesos de reservaciones, registros de entradas y salidas para que estos sean más sencillos y amigables para los usuarios. También proporcionan transparencia en las operaciones comerciales. La programación y horarios de los empleados, las nóminas y demás operaciones se organizan dentro de un sistema único y seguro. Mantener el seguimiento de su personal y hacerles responsables de sus respectivas tareas es bastante sencillo.</p>
+                    </div>
+                </div>
+                <!-- /benefits -->
+                <!-- industries -->
+                <div class="pms-page-industries">
+                    <div class="container">
+                        <h2 class="about-page-content__title">¿Qué industrias utilizan sistemas de gestión de propiedad?</h2>
+                        <div class="row pms-page-industries__box">
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="pms-page-industries__item">
+                                    <figure>
+                                        <img alt="PMS for Real estate - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-skyline.png"/>
+                                        <figcaption>Inmobiliarias</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="pms-page-industries__item">
+                                    <figure>
+                                        <img alt="PMS for Manufacturing - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-factory.png"/>
+                                        <figcaption>Manufactura</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="pms-page-industries__item">
+                                    <figure>
+                                        <img alt="PMS for Intellectual property - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-brain.png"/>
+                                        <figcaption>Propiedad Intelectual</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="pms-page-industries__item">
+                                    <figure>
+                                        <img alt="PMS for Government - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-government.png"/>
+                                        <figcaption>El gobierno</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6">
+                                <div class="pms-page-industries__item">
+                                    <figure>
+                                        <img alt="PMS for Logistics - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-truck.png"/>
+                                        <figcaption>Logística</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text_center">
+                                <div class="pms-page-industries__item-last">
+                                    <p> ...todas usan y se benefician de estos sistemas.</p>
+                                    <figure>
+                                        <img alt="PMS Benefits - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-project-management.png"/>
+                                    </figure>
+                                    <p>Por supuesto, la industria que utiliza más que cualquier otra estos sistemas es la de la gestión de alojamientos, como es la industria hostelera.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /industries -->
+                <!-- future -->
+                <div class="pms-page-future">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <h2 class="about-page-content__title">¿Cómo luce el futuro de la gestión de propiedades?</h2>
+                                <p>Según Forbes, “Los propietarios de negocios han estado utilizando softwares para gestionar sus respectivas propiedades durante años... Las aplicaciones con Inteligencia Artificial (IA) serán una extensión natural de esta nueva ola tecnológica... No reemplazaran los softwares que existen actualmente, los complementaran”. Los robots con tecnología de IA pueden hacer de todo, desde comunicarse con los inquilinos hasta convertir datos en correos electrónicos. La IA será seguramente un componente fundamental en los sistemas de gestión en un futuro próximo.</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img alt="Future of PMS Software" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-page-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /future -->
+                <!-- conclusion -->
+                <div class="pms-page-conclusion process-conclusion">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text_center">
+                                <h3>Conclusión</h3>
+                                <p>La demanda de acceso a la telefonía móvil nunca ha sido tan alta y sigue creciendo. Por esta razón, la nube y la tecnología impulsada por IA van en aumento. Y luego llega Booking Ninjas. En 2016, Booking Ninjas llegó como una solución “todo en uno” construida con una plataforma subyacente de Salesforce. Para satisfacer a los consumidores de hoy en día, la plataforma está alojada en la nube, es accesible desde el teléfono móvil, y está equipada con la tecnología de Salesforce para obtener datos, comunicación e información en tiempo real.</p>
+                                <p>Los Booking Ninjas se propusieron dar a los hoteles y demás negocios de alojamiento una ventaja digital. Ofrecen los sistemas de gestión de propiedades más completos del mercado actual. Al continuar actualizando su software con la tecnología más avanzada disponible, Booking Ninjas se esfuerza por mantener la excelencia en la innovación como una prioridad máxima y como un valor fundamental de la empresa.</p>
+                                <p>Booking Ninjas ofrece una característica única que le permite integrar aplicaciones de AppExchange y vincularlas directamente a la plataforma de Booking Ninjas. Básicamente, dentro de su plataforma, estamos en constante evolución con la tecnología más avanzada de la industria y por ende, nunca tendrás un sistema operativo anticuado.</p>
+                                <p>Con los sistemas PMS de Booking Ninjas, tendras la gestión de propiedades mas profesional del mercado. Eso es porque todas las soluciones que el sistema ofrece con respecto a la gestión y administración de propiedades las encuentras en un mismo lugar. Desde el control centralizado hasta el análisis 360, desde la IA hasta el control por voz de alta precisión, desde las integraciones de vanguardia hasta las soluciones de gestión de propiedades a gran escala, Booking Ninjas ha creado uno de los sistemas de gestión de propiedades más completos del mercado.</p>
+                                <p>La implementación del Sistema de Booking Ninjas puede hacerse en cuestión de segundos. Uno de los pilares de la empresa es la rapidez y facilidad de su proceso de migración  de datos. Todo lo que tienes que hacer es proporcionar los datos de tu negocio y su equipo de desarrollo hace el resto de forma instantánea, introduciendo tu negocio a la tecnología de elite de manera sin igual. Importar sus datos será tan fácil como guardar un contacto en su teléfono móvil. Instale sus preferencias de seguridad y, ¡eso es todo! Usted administrará su propiedad como el profesional que eres en muy poco tiempo. Para dar inicio a su transformación digital:</p>
+                                <apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" styleClass="button">Agenda una cita</apex:outputLink>&nbsp;
+                                <apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button">Toma un piloto</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- conclusion -->
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

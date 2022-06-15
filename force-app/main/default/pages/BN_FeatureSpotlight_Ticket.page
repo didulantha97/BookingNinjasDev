@@ -1,0 +1,98 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- feature-spotlight -->
+            <div class="feature-spotlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider">
+                                <div class="feature-spotlight__slider-big">
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/ticket/tickets.jpg" data-fancybox="gallery"><img alt="Event Ticketing System" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/ticket/tickets.jpg"/></a>
+                                    </div>
+                                </div>
+                                <div class="feature-spotlight__slider-small">
+                                    <div>
+                                        <img alt="Event Ticketing System" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/ticket/tickets.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider-text">
+                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="back">&#x3C; GO BACK</apex:outputLink>
+                                <h1>Event Ticketing System </h1>
+                                <p>BOOKING NINJAS has full Event Ticketing functionality, available to inform you about everything relating to your events, including ticket purchases and advanced event related data. We will connect your property to our event ticketing system, which can be used to create custom tickets with unique barcodes for entry to specific events at your hotel. Naturally, we’ve integrated our event ticketing system into our&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Solutions)}" target="_blank">best hotel property management software</apex:outputLink>!</p>
+                                <p>By integrating these property ticketing systems, we’ve allowed for the most convenient compatibility with scanning devices and&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Payment)}" target="_blank">payment systems</apex:outputLink>, which also possess the capacity to offer and process discount codes and vouchers. You’ll also be able to analyze and report data instantly, which ensures that you can keep track of your event attendance in real time.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__2collumn-text">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p><p>Booking Ninjas’ event ticketing system has created significant benefits for our company, as well as for clients and their guests. It considerably increases ease in the event planning and hosting process. Booking Ninjas provides the best hotel property management software, which includes our integrated event ticketing systems that provide our users the most simple, streamlined approach to managing events with greater efficiency.</p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer-page__content">
+                        <div class="container">
+                            <div class="costumer-page__view-list">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10">
+                                        <article>
+                                            <h2>BENEFITS</h2>
+                                            <p>Booking Ninjas invites anyone, but especially event spaces to consider the value of using our event ticketing systems. They are included in our best hotel PMS software, easily accessible by your host and guaranteed to make your job easier than you could have ever imagined. Take a look at all these benefits.</p>
+                                            
+                                            <h2>CONTROLLING ADMISSIONS PROCESS</h2>
+                                            <p>Also referred to as Partner Access, this is the best reason to use ticketing software for your events. It limits who has access to managing the event and how much they are compensated for their work. It also controls who has access to the event, which plays a significant role in event safety and planning. Having a single event ticketing system keeps your team organized through the hectic process of putting on an event. It’s your control center, giving you everything you need in one spot.</p>
+                                            
+                                            <h2>SALES ALERTS AND ONLINE TRACKING</h2>
+                                            <p>Every event planner aims to turn a profit, so tracking how well event sales are going is a common sense benefit we are thrilled to provide. Manage admissions the day of your event, monitor your sales, and see purchased tickets leading up to the event. Real-time sales alerts, tracking your guest lists, and comparing your guest demographics for future reference are all functions within our event ticketing systems.</p>
+                                            
+                                            <h2>ONLINE TICKET SALES</h2>
+                                            <p>Don’t slow down the gate by only offering tickets in person. With everything online these days, we’re proud to offer our own, self-contained event ticketing software to ensure you don’t have to arrive early and waste time to secure your tickets. When guests arrive with already purchased tickets in hand, you’re sure to see a much smoother, less stressful situation at your event’s entrance.</p>
+                                            
+                                            <h2>PRINT-AT-HOME TICKETS SAVE TIME AND MONEY</h2>
+                                            <p>Event guests still enjoy having a physical ticket in their hand. And although it is a nice touch, providing those tickets at the gate or on-site wastes time and money. Our event ticketing system provides customers the ability to print their tickets at home, so they show up prepared with their ticket. This checks one more thing of the list of details your sales team needs to account for. Our ticketing software also offers an abundance of delivery options that work with your guest and their preferences.</p>
+                                            
+                                            <h2>FASTER AND SMOOTHER ENTRANCE INTO EVENTS</h2>
+                                            <p>Less time spent managing arrivals means more money saved and more convenience in starting your events on time. On site ticket purchase and pick-up slows the entrance process and requires more man-power to manage it as well. By printing at home or pre-paying for tickets, these hassles fade significantly. Our event ticketing systems also organize everyone into a single system, all but eliminating any waits or problems at the entrance.</p>
+                                            
+                                            <h2>EXTRA SUPPORT FOR YOUR TEAM</h2>
+                                            <p>Our software handles the entire process in a more automated manner, which means less people needed for support and management. A smaller staff is ideal in the event planning game, where planners are always looking to cut costs and get the most out of their teams. Automated software takes the onus off of admissions, so you can disperse your team to other areas of need.</p>
+        
+                                            <h2>PERSONALIZED EXPERIENCE</h2>
+                                            <p>Use our event ticketing system to provide guest-alerts and guidance on event scheduling; send directions, tips for their arrival and even places they can stay nearby after purchasing their tickets. You can create a personalized experience to meet guest needs, which makes your event look professionally managed and carefully planned.</p>
+                                            <p>Every event planner wishes they had more time and funds. With the right ticketing software, you’ll increase your access to both and you don’t have to worry about doing the hard work. You save time and money while delivering a higher quality product to your attendees. And, the experience is often more streamlined for everyone involved.</p>
+                                            <p>Does your company hold a lot of events?&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}" target="_blank">Contact us</apex:outputLink> before you plan your next one and we’ll show you how our software can bring it to the next level. </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__pager">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Channel)}" styleClass="feature-spotlight__pager-item">
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_Left-black.png" alt=""/></i>
+                            <b>Channel Manager</b>
+                        </apex:outputLink>
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Einstein)}" styleClass="feature-spotlight__pager-item">
+                            <b>Einstein Analytics</b>
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_right.png" alt=""/></i>
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature-spotlight -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

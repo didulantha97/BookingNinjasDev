@@ -1,0 +1,7 @@
+<apex:page standardController="Contact" extensions="KirimEmail" action="{!createRecord}">
+<script>
+    self.close();
+    //window.parent.location.replace(document.referrer);
+    window.parent.location.href='/{!Contact.Id}';
+</script>
+</apex:page>

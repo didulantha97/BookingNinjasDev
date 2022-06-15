@@ -1,0 +1,95 @@
+<apex:page cache="false" sidebar="false" showHeader="false" standardController="Opportunity" extensions="SurveyFormController" standardStylesheets="false" docType="HTML-5.0">
+<html>
+      <head>
+         <apex:stylesheet value="{!URLFOR($Resource.bootstrap, 'bootstrap/css/bootstrap.min.css')}" />
+         <style>
+            html, body { margin: 0px; padding: 0; }
+             .content { background-color:#f4f4f4; border:1px solid #b4b4b4; margin: 0 auto; width: 750px; padding:20px; height: 750px; }
+             .clear { clear:both }
+             .propertyInfo { padding-right:30px; }
+             .row { margin-left: 0 }
+         </style>
+      </head>
+      <body>
+         <apex:form >
+            <div class="content">
+                <table border="0" style="width:100%; font-family: arial,sans-serif;font-size: 14px;color: #414141;border-bottom:2px dotted #b4b4b4;margin-bottom:25px;">
+                   <tr>
+                      <td style="width:150px;">
+                         <img src="https://bookingninjas--c.na30.content.force.com/servlet/servlet.ImageServer?id=01536000001zhPu&oid=00D36000001H4E9&lastMod=1469499705000" alt="Logo" width="200px"/>
+                      </td>
+                      <td style="padding-left:50px;">
+                          <apex:outputPanel rendered="{!IF(opp.Is_Survey_Answered__c == false,TRUE,FALSE)}">
+                             <h3 style="color:#39b510;">You have new Booking NinjasForm!</h3>
+                          </apex:OutputPanel>
+                          <apex:outputPanel rendered="{!IF(opp.Is_Survey_Answered__c == true,TRUE,FALSE)}">
+                             <h3 style="color:#39b510;">You have already answered this form.</h3>
+                          </apex:OutputPanel>
+                      </td>
+                   </tr>
+                </table>
+                <h4>Hello {!opp.Primary_Contact__r.FirstName} {!opp.Primary_Contact__r.LastName}</h4><br/>
+                    <p>Please refer to the information below for the survey form.</p><br/>
+                    <div class="propertyInfo">
+                        Email: <i>{!opp.Primary_Contact__r.Email}</i> <br/>
+                        Phone: <i>{!opp.Primary_Contact__r.Phone}</i> <br/>
+                        Opp Lead Source: <i>{!opp.LeadSource}</i> <br/>
+                    </div><br/><br/>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>1. Are you familiar with the Salesforce Platform? *</label>
+                             <apex:selectList value="{!BN_Q1}" multiselect="false" size="1" styleclass="form-control"  required="true">
+                                <apex:selectOptions value="{!items}"/>
+                             </apex:selectList>
+                             <!--<apex:inputText value="{!BN_Q1}" styleclass="form-control"  required="true"/>-->
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>2. What is the current property management software you use if any today?</label>
+                             <apex:inputText value="{!BN_Q2}" styleclass="form-control"/>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>3. How long have you been using your current Property Management System?</label>
+                             <apex:inputText value="{!BN_Q5}" styleclass="form-control"/>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>4. Approximately how many units do you work with or have under management? *</label>
+                             <apex:inputText value="{!BN_Q3}" styleclass="form-control" required="true"/>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="form-group">
+                             <label>5. What are some pain points you currently experience that you would like to have solved with a technology solution?</label>
+                             <apex:inputTextarea value="{!BN_Q4}" styleclass="form-control" rows="5" />
+                             </div>
+                         </div>
+                    </div>
+                    <br/>
+                    <apex:outputPanel rendered="{!IF(opp.Is_Survey_Answered__c == false,TRUE,FALSE)}">
+                         <div class="row">
+                             <div class="col-md-12">
+                                 <div class="form-group">
+                                     <apex:commandbutton action="{!SaveForm}" value="Submit Request Work Form" styleclass="btn btn-success"/>
+                                 </div>
+                             </div>
+                         </div>
+                    </apex:OutputPanel>
+            </div>
+         </apex:form>
+      </body>
+   </html>
+</apex:page>

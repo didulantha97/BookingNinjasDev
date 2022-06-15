@@ -1,0 +1,152 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top customer-top customer-top-left">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1">
+                            <a href="https://www.yieldplanet.com" class="partners-page__companies-img" target="_blank">
+                                <span><img alt="YieldPlanet - Partner - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/yieldPlanet-big.png"/></span>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>YieldPlanet Partner</h1>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <div class="partners-page">
+                <div class="container">
+                    <div class="costumer-page__bread">
+                            <ul>
+                                <li><a href="/">Homepage </a></li> / 
+                                <li><a href="/partners">Partners</a></li>  /  
+                                <li class="active">YieldPlanet</li>
+                            </ul>
+                    </div>
+                    <!-- <div class="partners-page__tags">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <article>
+                                        
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="costumer-page__img float_left">
+                                    <figure><img alt="partners" src="https://d1b89zc79exfxt.cloudfront.net/img/partners-img.png"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>What is YieldPlanet? </h2>
+                                    <p>YieldPlanet is a SaaS provider, meaning they offer software delivery and licensing online via a subscription. The company provides easy to use digital solutions to increase revenue for your hotel. They do this through the utilization of their many impeccable products such as a Channel Manager, Booking Engine, Price Optimizer, and Price Shopper. </p>
+                                    <p>A central&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Channel)}" target="_blank">Channel Manager</apex:outputLink> is the hub of a hotel’s property management functions. It seamlessly syncs your property’s data to hundreds of online travel agencies (OTA’s), putting the power in a hotelier’s hands. Optimize room rates on 3rd party sites to make sure you’re in full control of your hotel’s price points.</p>
+                                    <p>Similarly, a&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_BE)}" target="_blank">Booking Engine allows your guests to easily book a stay at your hotel</apex:outputLink> from your property’s website. This also includes restaurant and spa reservations. It works hand in hand with the Channel Manager to update availability information across all OTA platforms making sure your guests always have up-to-date information regarding occupancy.</p>
+                                    <p>The Price Optimizer increases your revenue per available room by automatically optimizing the most profitable price points for your rooms across all OTA’s. It is able to do this through AI enhanced demand forecasting, a digital solution that accurately predicts future occupancy and revenue for your hotel based on past data.</p>
+                                    <p>The Price Shopper feature allows you to view pricing trends across the hotel industry. Keep an eye on your competitors to see how much they’re charging on OTA’s and their website so you can find the best price point for your hotel. The solution gives you real-time graphical data with constant reports. </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-5">
+                                <div class="costumer-page__img float_right">
+                                    <figure><img alt="partners" src="https://d1b89zc79exfxt.cloudfront.net/img/costumer-photo.png"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>Benefits of YieldPlanet</h2>
+                                    <p>YieldPlanet currently serves over 15,000 hotels in 60 countries, including partnerships with industry giants such as Microsoft and Oracle. Their distribution management skills are second to none. Let’s take a look at some of the biggest benefits to the YieldPlanet platform. </p>
+                                    <p><b>Central Location</b> - As we briefly mentioned earlier, YieldPlanet’s Channel Manager puts all of your property’s information in one central location. This provides ultra convenience for a hotel manager and eliminates the need to search through multiple systems to find the info you’re looking for. Transfer reservations made from OTA’s into your property management system to add valuable data for your data analysis kit to analyze. </p>
+                                    <p><b>Data Sync</b> - With data synchronization, your hotel data across the web is always updated in real time. Let YieldPlanet’s digital solutions set well-researched price points for each OTA and GDS distribution channel depending on market trends. Take away the risk of human error and save yourself time and money when deciding the best pricing strategy for your hotel.</p>
+                                    <p><b>Flexibility</b> - Every hotel has different needs. With that, you need a digital solution that is scalable and flexible to meet the specific needs of your property. YieldPlanet adapts to the goals and KPIs you set for your hotel. Advanced price management tools allow the property software to efficiently manage the financial aspect of your company, no matter the size or location. </p>
+                                    <p><b>Quick Set Up</b> - As with any downloadable software, hotel managers want their digital solution to be easy to install and set up. YieldPlanet is just that. Plus, once you purchase the software, your hotel will receive instant technical support from the team at YieldPlanet. They provide expertise in transferring Channel Managers quickly and without error. </p>
+                                    <p><b>Security</b> - YieldPlanet is compliant with PCI and&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Gdpr)}" target="_blank">GDPR</apex:outputLink> requirements. They offer data distribution protection with the use of minimum and maximum rate caps, limiting PMS system availability, and alerting on expiring offers. They also include credit card storage, securely protecting your valuable information. </p>
+                                    <p>We here at Booking Ninjas are proud to work with YieldPlanet to&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Advantages)}" target="_blank">enhance our property management system capabilities</apex:outputLink>. Check out how with the help of YieldPlanet, we provide the most advanced Channel Manager, Booking Engine, and&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_RRC)}" target="_blank">Room Rate Controller</apex:outputLink> on the software market.  </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-page__other">
+                    <div class="container">
+                        <h3>Learn More About Other Partners</h3>
+                        <p>Learn how Booking Ninjas help property businesses improve daily yield                    </p>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Salesforce)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/logocolor1.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Salesforce)}">Salesforce</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_HFTP)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/logocolor2.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_HFTP)}">HFTP</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Twilio)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/twilio_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Twilio)}">Twilio</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_ChannelRush)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/channelrush_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_ChannelRush)}">ChannelRUSH</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Esign)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/eSign_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Esign)}">eSign Genie</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Latino)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/Latino_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Latino)}">Latino Hotel Association</apex:outputLink></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

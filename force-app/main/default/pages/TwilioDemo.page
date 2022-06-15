@@ -1,0 +1,32 @@
+<apex:page controller="TwilioService" showHeader="false" sidebar="false">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--<apex:includeScript value="{!URLFOR($Resource.Zeamster, '/jquery.min.js')}"/>-->
+        <!-- /custom css styles -->
+        <apex:slds />
+    </head>
+    
+    <body>        
+        <!-- SLDS WRAPPER -->
+        <div class="slds-scope">
+            <button type="button" id="showMsgPanel" >Show Panel</button>
+            <div id="twilio_parent" style="z-index: 9999;">
+                <c:SendTwilioComponent ></c:SendTwilioComponent>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            
+            $('#twilio_parent').hide();
+            $('#showMsgPanel').click(function(){
+                $('#twilio_parent').show();  
+            });
+        });
+        
+        function showMsgPanel(){
+            $('#twilio_parent').show();
+            
+        }
+    </script>
+</apex:page>

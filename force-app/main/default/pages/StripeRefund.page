@@ -1,0 +1,48 @@
+<apex:page standardController="Stripe_Transaction__c" extensions="StripeRefundExtension" showHeader="false" sidebar="false" >
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <apex:slds />
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            function refreshParent() {
+                //opener.window.location.reload(false);
+                window.close();
+                window.opener.location.href = window.opener.location.href;
+            }
+        </script>
+    
+        <!-- SLDS WRAPPER -->
+        <div class="slds-scope">
+            <apex:form id="form1">
+                <apex:pageblock id="block1">
+                    <apex:pageMessages ></apex:pageMessages>
+                    <!--    No Stripe transaction id found on this record   -->
+                    <apex:outputPanel id="panel1">
+                        <apex:pageMessage rendered="{!IF(trans.Stripe_Transaction_Id__c == '', true, false)}" title="No Stripe Transaction Id found on this record." severity="warning" strength="3"></apex:pageMessage>
+                    </apex:outputPanel>
+    
+                    <apex:pageBlockSection id="section1" rendered="{!IF(trans.Stripe_Transaction_Id__c == '', false, true)}">
+                        <apex:outputLabel >Customer Name: {!trans.Guest_Contact__r.Name}</apex:outputLabel>
+                        <apex:outputLabel >Stripe Transaction Id: {!trans.Stripe_Transaction_Id__c}</apex:outputLabel>
+                        <apex:inputText id="amount" value="{!amount}"/>
+                        <apex:inputField id="description" value="{!trans.Description__c}"/>
+                    </apex:pageBlockSection>
+                    <apex:pageBlockButtons location="bottom" rendered="{!IF(trans.Stripe_Transaction_Id__c == '', false, true)}">
+                        <apex:actionStatus id="chargeStatus">
+                            <apex:facet name="stop">
+                                <apex:commandButton value="Refund" status="refundStatus" reRender="block1" action="{!doRefund}"/>
+                            </apex:facet>
+                            <apex:facet name="start">
+                                <apex:commandButton value="Refunding..." status="refundStatus" disabled="true"/>
+                            </apex:facet>
+                        </apex:actionStatus>
+                        <apex:commandButton value="Cancel" onclick="refreshParent();"/>
+                    </apex:pageBlockButtons>
+                    <!--    // Stripe payment sources attached to this contact  -->
+                </apex:pageblock>
+            </apex:form>
+        </div>
+    </body>
+</apex:page>

@@ -1,0 +1,150 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- feature-spotlight -->
+            <div class="feature-spotlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider">
+                                <div class="feature-spotlight__slider-big">
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/admin_dashboard.jpg" data-fancybox="gallery"><img alt="Twilio Flex Integrations - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/admin_dashboard.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop.jpg" data-fancybox="gallery"><img alt="Twilio Flex Integrations - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop_call.jpg" data-fancybox="gallery"><img alt="Twilio Flex Integrations - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop_call.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop_chat.jpg" data-fancybox="gallery"><img alt="Twilio Flex Integrations - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop_chat.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop_open_menu.jpg" data-fancybox="gallery"><img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop_open_menu.jpg" alt="Get twilio flex"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/dial_pad.jpg" data-fancybox="gallery"><img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/dial_pad.jpg" alt="How twilio flex works"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/salesforce_twillio.jpg" data-fancybox="gallery"><img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/salesforce_twillio.jpg" alt="Use twilio flex"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/salesforce_twillio2.jpg" data-fancybox="gallery"><img alt="Twilio Flex Integrations - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/salesforce_twillio2.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/salesforce_twillio3.jpg" data-fancybox="gallery"><img alt="Twilio Flex Integrations - 5" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/salesforce_twillio3.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/teams.jpg" data-fancybox="gallery"><img alt="Twilio Flex Integrations - 6" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/teams.jpg"/></a>
+                                    </div>
+                                </div>
+                                <div class="feature-spotlight__slider-small">
+                                    <div>
+                                        <img alt="Twilio Flex Integrations - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/admin_dashboard.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop.jpg" alt="Twilio flex"/>
+                                    </div>
+                                    <div>
+                                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop_call.jpg" alt="PMS twilio flex"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Twilio Flex Integrations - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop_chat.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/Agent_Desktop_open_menu.jpg" alt="Get twilio flex"/>
+                                    </div>
+                                    <div>
+                                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/dial_pad.jpg" alt="How twilio flex works"/>
+                                    </div>
+                                    <div>
+                                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/salesforce_twillio.jpg" alt="Use twilio flex"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Twilio Flex Integrations - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/salesforce_twillio2.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/salesforce_twillio3.jpg" alt="Twilio flex"/>
+                                    </div>
+                                    <div>
+                                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/twilio/teams.jpg" alt="PMS twilio flex"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider-text">
+                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="back">&#x3C; GO BACK</apex:outputLink>
+                                <h1>Twilio Flex Integrations</h1>
+                                <p>TWILIO FLEX is a programmable contact center platform that Booking Ninjas has integrated, which can easily store and analyze client data simultaneously. By adding Twilio Flex to the Booking Ninjas platform, we’ve created an unparalleled communication experience for our customers.</p>
+                                <p><a href="https://www.twilio.com/flex" target="_blank">Twilio Flex</a> is considered the most flexible cloud contact center in the world. It was a natural fit for integration as a Booking Ninjas feature because our&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Solutions)}" target="_blank">property management software</apex:outputLink> (PMS) features are designed for and marketed as the most flexible of all PMS systems in the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer-page__content">
+                        <div class="container">
+                            <div class="costumer-page__view-list">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10">
+                                        <article>
+                                            <p>Twilio Flex allows users to take complete control of their contact centers with highly beneficial options at their disposal. One of the benefits is the ability to customize control centers to the preferences of the user. Easily add remote agents, new channels, ‘chat-bots’ and Interactive Voice Response (IVR), all to your specific preferences. There are no limits with Twilio Flex. Users love the freedom to easily create, change or extend every part of their contact centers.</p>
+                                            <div class="costumer-page__view-list_section">
+                                                <p>The ability of Twilio Flex to deploy a 100% cloud-based contact center in less than a week is unparalleled in the business. Regardless of communication method or how many different methods a user chooses to deploy within a created contact center, all communications remain encompassed within one interface. In the past, users could only serve one customer, in one channel, and on one screen, which made communication more time-consuming and took away from the customer experience.</p>
+                                                <p>Now Twilio Flex enables users with the ability to manage tasks across multiple channels, all from one interface. Users save valuable time serving customers without being boxed into a channel or spread thin across dozens of tabs at once.</p>
+                                                <p>The rapid turnaround time from building communication centers to going-live with ‘Flex’ is also not altered by the amount of channels integrated. Twilio Flex offers the widest breadth of digital channels amongst its competition, which incredibly reduces costs and doesn’t affect turnaround time. Flex users have reported saving 34% on contact center operational costs and continue to rave about the speed with which Twilio Flex can launch its contact centers.</p>
+                                                <p>Twilio Flex features an intelligent workflow engine, which means any interaction flowing through a ‘Flex’ communication center is fully customizable using Studio, Twilio’s visual workflow editor. ‘Flex’ users can easily organize and align conversations in any order or layout that suits their eye. Booking Ninjas&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" target="_blank">PMS features</apex:outputLink> become more valuable to customers as a result of increased user efficiency created by Twilio Flex’s Studio visual workflow editor. Each user customizing their communication centers multiplies efficiency at an exponential rate.</p>
+                                                <p>Twilio Flex allows users to create, modify, share and consume reports with drag and drop ease. Pre-built dashboards, email alerts with configurable thresholds, and instantly assembled report emails are all exciting benefits included for maximum transparency and collaboration amongst users within a communication system.</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <p>Group analysis happens in real-time, enhancing productivity across a workforce. By including Twilio-Flex as one of the standard&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Advantages)}" target="_blank">Booking Ninjas features</apex:outputLink>, we’ve created many additional benefits for our users and their customers. The integration increases routing flows through the Twilio Flex ‘Task Router,’ which lets you control voice and digital interaction routing.</p>
+                                    <p>The Twilio Flex ‘Task Router’ also allows you to pair your customers with the best agent based on the customer’s needs, preferences and history. These factors are considered along with the agent’s skill level and history to create the best match possible. The added benefit of combining ‘Flex’ customer data analysis with historical data accumulated via Booking Ninjas features is made possible through ‘webhook.’ When multiple sets of data are analyzed simultaneously in regard to a specific customer, it creates the most accurate compatibility analysis possible for pairing agents with customers. Having the right agent for a specific customer can drastically change their experience, which Booking Ninjas anticipates will improve our customer service reputation and ultimately increase overall success for the company.</p>
+                                    <p>The integration has seamlessly added value across the board to all of Booking Ninjas PMS features. Twilio-Flex enables users the ability to customize how they reach their customers based on their consumer’s preference, whether it be via chat, Facebook Messenger, WhatsApp, Line, email, SMS or even live voice calling via ‘PSTN Voice,’ which is available in over 100 countries. Regardless of which PMS feature you use, the added benefit of choosing your preferred communication method will be felt and appreciated.</p>
+                                    <p>The Twilio Flex integration has also enhanced Booking Ninjas PMS features by making them all more adaptable and easier for employees to use. Twilio Flex uses contextual data to help employees manage situational calls. The integration has exponentially improved our ability to serve customers and adjust to their changing needs. It has also enhanced our user’s abilities to multitask efficiently, for maximum productivity.</p>
+                                    <p>Thanks to Twilio Flex, the industry leading PMS features Booking Ninjas is so proud to provide are further enhanced by the most adaptable and easy-to-use communication capabilities in the hospitality industry.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <h2>Get in Touch with us! </h2>
+                                    <p>Interested in implementing our software or giving a trial a shot? Simply&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Interest)}" target="_blank">express your interest</apex:outputLink> and our team will be in touch! </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__pager">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_AvailabilityGrid)}" styleClass="feature-spotlight__pager-item">
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_Left-black.png" alt=""/></i>
+                            <b>Availability Grid</b>
+                        </apex:outputLink>
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_RRC)}" styleClass="feature-spotlight__pager-item">
+                            <b>Room Rates Controller (RRC)</b>
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_right.png" alt=""/></i>
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature-spotlight -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

@@ -1,0 +1,230 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('landing').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-top-bg2.jpg)');
+                    $('.wrapper').css('background-image', 'url(https://d1b89zc79exfxt.cloudfront.net/img/landing-center-bg2.jpg)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img alt="Hostel Management Software - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/Flat_MacBook2.png"/></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Software de gestión de hostales</h1>
+                                <p>Un excelente sistema para proveedores de hostales y alojamiento para estudiantes.</p>
+                            </article>
+                            <apex:form id="form">
+                                <div class="landing__hero-form  ">
+                                    <div class="landing__hero-form-success-text">¡Gracias!</div>
+                                    <apex:inputText value="{!email}" html-placeholder="Introzca su email" required="true" />
+                                    <apex:commandButton styleClass="button" value="Empecemos" action="{!subscribe}" rerender="form" />
+                                </div>
+                            </apex:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h2>El sistema adecuado para el trabajo</h2>
+                        <p>Con nuestras características y funciones disponibles y nuestro modelo de implementación racionalizado, garantizamos los resultados del sistema de Booking Ninjas. Ya es hora de deshacerse de los desperdicios digitales y tener tiempo libre para cuestiones más importantes.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Nuestro sistema funciona perfectamente para:</h3>
+                                <p>- Proveedores de pequeños hostales</p>
+                                <p>- Organizaciones de gestión de propiedad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Los ejecutivos Top prefieren Booking Ninjas</h3>
+                                <p>Nosotros nos pusimos en contacto con diversos veteranos de la industria y ellos prefirieron trabajar con Booking Ninjas en la gestión digital de hostales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Nosotros cubrimos todo lo que tu necesitas</h3>
+                                <p>Alojada en una de las plataformas más seguras y flexibles jamás construidas, Salesforce, redujimos el desperdicio de los recursos digitales y le ofrecemos el atributo específico que usted desea: Una plataforma de aprendizaje-a-primera-vista que cumple con el propósito deseado.</p>
+                                <p>Nuestro sistema está desarrollado con el objetivo de supervisar las actividades y acciones de un hostal. Este sistema es conocido por ser eficaz en las consecución de las siguientes tareas:</p>
+                                <p>• Los propietarios lo utilizan para gestionar los datos y la información del hostal. Usted puede acceder de manera rápida y fácil a cualquier información que desee. Con este sistema, usted puede obtener información de primera mano de su hostal.</p>
+                                <p>• Se puede utilizar para gestionar la información de los estudiantes que viven en el hostal. De esta forma, puedes registrar biodatos de aquellos estudiantes que se registren en el hostal. Puedes saber cómo es cada estudiante con el objetivo de realizar los preparativos adecuados en casos de emergencia.</p>
+                                <p>• Con nuestro sistema, la gestión de las tasas y facturas de cada habitación se hace más fácil. De esta forma, puedes estimar cuál fue el gasto de cada habitación en términos de reparaciones y/o similares.</p>
+                                <p>• La gestión de la habitación, que incluye la información necesaria acerca de la misma, es más efectiva.</p>
+                                <p>• Nuestro sistema puede utilizarse para llevar un registro del número de estudiantes alojados por habitación, el número de habitaciones disponibles, y el número de estudiantes que pueden ser alojados.</p>
+                                <p>• Permite almacenar la información de los empleados en el sistema.</p>
+                                <p>En la actualidad, hemos llegado a la conclusión de que la educación ya no está limitada por las fronteras. Existe un aumento en el número de estudiantes que buscan acceder a la educación superior mediante el ingreso virtual a instituciones de su preferencia, o saliendo de su zona de confort e ingresando de manera presencial a institutos y universidades que les puedan señalar un camino a seguir en sus carreras profesionales. En este caso, es importante para las escuelas, colleges y universidades contar con albergues que les sirvan a los estudiantes como lugares temporales de vivienda.</p>
+                                <p>El gran problema que les ha surgido a estas instituciones a raíz de ofrecer este tipo de albergues a sus estudiantes, es la cantidad de trabajo y papeleo que esto representa. Lo anterior puede llevar a la pobre utilización de los recursos disponibles, y puede afectar la calidad y la eficiencia de estas instituciones académicas. No obstante, hay buenas noticias para las instituciones que están decididas a utilizar el cien por ciento de sus recursos; ahora hay una manera efectiva de hacerlo. La tecnología ha avanzado a tal nivel que se ha logrado disminuir el trabajo y el papeleo en el uso de las instalaciones del hostal. Se trata del Sistema de Gestión de Hostales, un sistema novedoso que se ocupa de la administración, el comedor, la información de los empleados, los datos de los estudiantes y demás instalaciones relacionadas a la institución, de una manera efectiva.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">¿Cuáles son los beneficios del Sistema de gestión de Hostales?</h3>
+                                <p>Como institución, la administración manual de las instalaciones de los albergues y hostales puede llegar a ser una tarea bastante tediosa. No es suficiente con realizar un trabajo efectivo y eficiente. Esta nueva tecnología del Sistema de Gestión de Hostales proporciona una dinámica unida a un enfoque práctico de gestión del hostal y sus diversas instalaciones, mucho más fácil de supervisar.</p>
+                                <p>• Un beneficio muy importante del uso del Sistema de Gestión de Hostales, es que ayuda a la institución a reducir la carga y la cantidad de trabajo de los empleados que hacen parte del equipo administrativo. Lo hace a través de la simplificación de las funciones y horarios de trabajo, disminuyendo así la mano de obra. Reemplaza las tareas manuales mediante el uso de un proceso sistematizado.</p>
+                                <p>• Otro beneficio de la utilización del Sistema de Gestión de Hostales, es la forma en cómo ejecuta su trabajo. Este sistema garantiza la gestión de los registros, la ejecución eficiente de las tareas administrativas como la gestión de solicitudes, la asignación de habitaciones, la gestión de los pagos del comedor, facilita la comunicación, el formulario de registro, aspectos disciplinarios y gestión de tarifas. Mediante el uso del Sistema de Gestión de Hostales, el equipo administrativo puede acceder fácilmente a toda la información necesaria acerca del Hostal. Asimismo, el equipo administrativo puede gestionar fácilmente el flujo del trabajo desde sus dispositivos tecnológicos en cualquier momento del día, lo que garantiza que las actualizaciones en los procesos llevados a cabo en el Hostal, se realizan en tiempo real y estas notificaciones pueden ser enviadas rápidamente a los padres y tutores.</p>
+                                <p>• El sistema ayuda a las instituciones a almacenar y gestionar de manera segura la información de los estudiantes y de los empleados. Esta información es accesible únicamente al personal autorizado.</p>
+                                <p>• Otra característica importante del sistema de Gestión de Hostales es que el sistema trae consigo una nueva forma de transparencia en la gestión administrativa. Esto ayuda a aumentar la confianza entre los estudiantes, los padres y la administración.</p>
+                                <p>• Además, el uso de este sistema ayuda a que la institución realice sus procesos óptimamente, sin problemas ni errores. Ayuda a empoderar a la institución educativa, mediante la construcción de una marca más fuerte. Las instituciones deberían entender que unas instalaciones de albergue excelentes resultan atractivas para los estudiantes que buscan ser admitidos en la misma.</p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">Atributos imprescindibles del Sistema de gestión de Hostales</h3>
+                                <p>Como institución en búsqueda de un nuevo sistema de gestión de Hostales, se supone que todo lo que usted intenta hacer es hacerle la vida más fácil a sus empleados y a usted mismo. ¿De qué forma? Logrando que las tareas se completen de una manera más rápida y eficiente, y procurando que la información esté bien almacenada y sea fácilmente accesible. Usted no querría cometer el error de querer lograr todo lo anterior con la primera pieza de tecnología que se le cruce en su camino. Por el contrario usted debería probar varias marcas y elegir la que se adapte mejor a las necesidades de su institución.</p>
+                                <p>Existen algunas características y atributos que deberías tener en cuenta al momento de buscar un Sistema de Gestión de Hostales. Atributos como los señalados en las siguientes opciones:</p>
+                                <p>• Gestión de reservas para estudiantes y huéspedes.</p>
+                                <p>• La función de llegada/registro (Check in) y Salida (Check out) se encuentran disponibles.</p>
+                                <p>• Creación de nuevos perfiles para los huéspedes y almacenamiento de los datos de los mismos para el historial del sistema.</p>
+                                <p>• Control total del inventario, las tarifas y la disponibilidad.</p>
+                                <p>• Los servicios de limpieza como componente importante.</p>
+                                <p>• Facilidad para la comunicación entre padres y huéspedes.</p>
+                                <p>• Gestión de mantenimiento de propiedades.</p>
+                                <p>• Procesamiento de los pagos de forma rápida y confiable.</p>
+                                <p>• Informes regulares de rendimiento y desempeño.</p>
+                                <p>• Actualización regular de la contabilidad.</p>
+                                <p>Con este tipo de sistema en sus manos, usted podrá ver cuánta comida tiene actualmente en el plato. Este sistema será de gran ayuda para su institución y es muy importante asegurarse de elegir el correcto. No tiene sentido pagar por algo que no va a ser rentable ni productivo a largo plazo para su institución, o que incluso pudiera llegar a perjudicarla.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">¿Cuáles son las características esenciales del Sistema de gestión de Hostales?</h3>
+                                <p><strong>1. Gestionar los detalles del hostal: </strong>Los guardas del hostal ahora pueden registrar fácilmente cada detalle del mismo, como la información de las habitaciones del hostal, cuales son los guardas que están a cargo de un hostal en específico, y los tipos de hostales disponibles. Esto también consiste en las aplicaciones de mantenimiento para cada habitación del hostal. Este módulo es perfecto para cada hostal. Ofrece una variedad de reportes tales como la lista de bloqueo, lista de asignación de habitaciones, informe de comedor, informe de ingreso, entre otros. Además, también puede registrar los detalles de tus empleados junto con los de los estudiantes en este sistema. Esto ayuda a la institución a tener información de primera mano sobre todos y cada uno de los empleados y sus respectivas tareas asignadas. Por último, también hace que el contacto sea muy fácil para la institución.</p>
+                                <p><strong>2. Gestionar los detalles de las habitaciones: </strong>El sistema también almacena los registros de las habitaciones disponible en la institución. La información que incluye el número de habitaciones en cada hostal, el número de estudiantes que están en cada habitación, y el número de estudiantes que pueden ser alojados en una determinada habitación. Para cada habitación disponible, se asigna una determinada tarifa que debe ser pagada por los estudiantes interesados por la administración.</p>
+                                <p><strong>3. Asignar habitaciones a los estudiantes: </strong>La asignación de habitaciones a los estudiantes es un aspecto muy importante para la gestión de alojamiento de cualquier institución. Los estudiantes pueden ser asignados a diferentes habitaciones con base en el número de habitaciones disponibles en cada hostal. La asignación manual de habitaciones puede ser un proceso tedioso y demorado en los hostales de mediano y gran tamaño. Pero con una plataforma en línea, la tarea se vuelve más fácil, sin errores y eficiente.</p>
+                                <p><strong>4. Cobro de las tasas de los estudiantes: </strong>Existe la tediosa tarea del cobro y cálculo de la tarifa del hostal, y mediante esta tecnología, el cobro y el cálculo de la tarifa del hostal se ha vuelto mucho más fácil. No existe una contabilidad adecuada para cada cuota pagada por el estudiante. Como el dueño de la institución, usted estará encantado con esta característica, gracias a que denota transparencia en la administración.</p>
+                                <p><strong>5. Comprobación de las tasas de alojamiento por mora: </strong>El equipo administrativo puede verificar cuales son los estudiantes que han incumplido con sus cuotas de alojamiento. Ahora pueden notificar sus nombres a la junta de la institución, todo gracias al Sistema de gestión de Hostales, que funciona no solo calculando las tarifas de los hostales, sino que también mantiene un registro del estado de los pagos de cada estudiante. Este se actualiza cuando se realizan nuevos pagos y genera recibos de pago de manera instantánea. También ayuda a las instituciones a enviar mensajes automáticos y correos electrónicos a los morosos para recordarles que deben renovar sus pagos.</p>
+                                <p><strong>6. Módulos de un Sistema de Gestión de Hostales:</strong></p>
+                                <p><strong>• Módulo de usuario: </strong>Esto es para el administrador y el visitante que ingresa a la página de inicio. Está disponible para aquellas personas que tengan nombres de usuarios registrados y contraseñas.</p>
+                                <p><strong>• Módulo de cambio de contraseña: </strong>Permite al usuario cambiar su contraseña en el Sistema de Gestión de Hostales.</p>
+                                <p><strong>• Módulo del estudiante:</strong>Este modulo se utiliza para almacenar información relevante de los estudiantes. Usualmente contiene información como los detalles del perfil del estudiante, detalles educativos e información de contacto.</p>
+                                <p><strong>• Módulo de asignación de habitaciones: </strong>Este modulo está a disposición de los administradores para facilitar el proceso de asignación de habitaciones a los estudiantes teniendo en cuenta sus características educativas, el curso o la sección. Las habitaciones siempre son asignadas a los estudiantes de la mano de una tarjeta de identificación que es generada como forma de pase. Esta tarjeta, muestra información sobre los estudiantes que se alojan en una habitación determinada. También registra cuando un estudiante sale de una habitación.</p>
+                                <p><strong>• Módulo de tarifas de las habitaciones: </strong>Este modulo tiene como objetivo mostrar los registros de las tarifas de las habitaciones. Muestra estadísticas tales como el estado de los estudiantes y el estado de los saldos. Está destinado a la rendición de cuentas de las instalaciones del hostal. Este módulo también se utiliza para la renovación del alquiler de los estudiantes cada semestre. Como propietario de la institución, este módulo le ayudará a llevar registro de las cuotas pagadas. Habrá una sensación de transparencia en lo que respecta a las cuentas del hotel.</p>
+                                <p><strong>• Módulo del comedor: </strong>Este modulo se utiliza para llevar un registro de todas las formas de transacción relacionadas al comedor. Los gastos de comedor de cada estudiante se suman cada mes. Se muestra además, la factura generada para cada estudiante.</p>
+                                <p><strong>• Módulo de visitas: </strong>Este modulo es para los visitantes que ingresan al hostal. Permite introducir los datos de cualquier visitante. Este módulo puede utilizarse como una forma de control de seguridad para llevar un registro de las personas que entran a visitar a los estudiantes en el hostal. Puedes visualizar a los visitantes dependiendo del criterio que utilices para la búsqueda.</p>
+                                <p><strong>• Módulo de generación de informes: </strong>Este modulo proporciona un resumen completo de los detalles de las cuotas del hostal y las facturas del comedor. También incluye las tarifas del hostal y los informes del inventario del comedor. Este módulo está disponible para que los estudiantes accedan a sus respectivas tarifas de alojamiento y facturas del comedor. Esta información pueden comprobarla introduciendo su Hostel ID.</p>
+                                <p><strong>• Módulo de configuración: </strong>Este modulo solo se encuentra disponible para los administradores. Ellos tienen una cuenta especial que les otorga permisos especiales de acceso que no están disponibles para usuarios habituales. Este módulo permite al administrador agregar, editar o borrar registros, información de las habitaciones, detalles de los cursos, información de los estudiantes, etc.</p>
+                                <p><strong>• Alcance: </strong>El sistema de Gestion de hostales ha sido construido de tal manera que se utiliza para llevar un registro de la información general y de las transacciones del hostal. Esto ha sido de gran ayuda no solo para los propietarios sino también para los estudiantes que buscan ser admitidos en las instituciones. Este sistema ha mejorado el nivel de los servicios ofrecidos a los estudiantes, las facturas del comedor y las cuotas de alojamiento. La función principal de este sistema es la asignación  de las habitaciones a los estudiantes y la generación de las facturas de comedor de una manera fácil, sencilla y eficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box">
+                <div class="container">
+                    <h3 class="text_center">Tres pasos para empezar</h3>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Hostel Management Software - 2" class="wow fadeInRight" src="https://d1b89zc79exfxt.cloudfront.net/img/landing-illustration2.png"/>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <dl>
+                                <h3>Ponerse en contacto:</h3>
+                                <dd>Para empezar, simplemente programe una breve llamada de presentación&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" target="_blank">aquí</apex:outputLink>. Nuestro equipo de apoyo se pondrá en contacto con usted en la fecha y hora que usted desee para responder a todas sus preguntas y atender cualquier inquietud que pueda tener sobre nuestro Sistema de Gestión de la Propiedad. Ya está listo? Llame al (907) 600-2345 para agilizar el proceso.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Importe sus datos</h3>
+                                <dd>Nuestro equipo de apoyo le ayudará a transferir los datos de su propiedad a la aplicación. La importación de datos solo requiere de unos pocos clics.</dd>
+                            </dl>
+                            <dl>
+                                <h3>Láncese al éxito</h3>
+                                <dd>¡Buenas noticias! Acaba de hacer una gran mejora a su propiedad. Abra la aplicación Booking Ninjas y empiece a explorar todas las herramientas que booking Ninjas y Salesforce tienen para ofrecer. Nuestro equipo de soporte estará disponible las 24 horas del día para responder a cualquier pregunta que le pueda surgir. ¿Quieres saber como sacar el mayor provecho de las funciones de nuestro Sistema de Gestión de Propiedades o de tu nube de Salesforce? También ofrecemos &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Consulting)}" target="_blank">consultas de Salesforce</apex:outputLink> con nuestro equipo de expertos.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <div class="landing__box">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="wow fadeInUp">
+                                <h3 class="text_center">La mejor opción para su negocio</h3>
+                                <p>El sistema de Booking Ninjas está diseñado para ayudarle a alcanzar sus objetivos empresariales sin los contratiempos familiares a la mayoría de los sistemas de gestión. Nosotros ofrecemos herramientas de alta calidad con el fin de proporcionarles a ustedes un proceso de gestión sin problemas para el personal y una plataforma que proporciona un servicio excepcional de atención al cliente a sus huéspedes.</p>
+                                <p>Nos interesa la productividad, la experiencia del cliente y los beneficios para el usuario. Por esa razón ofrecemos paquetes muy útiles como parte de nuestro proceso de implementación. Nuestra plataforma de desarrollo y personalización le ayuda a usted a incluir paquetes específicos y a eliminar los que actualmente no desee. En otras palabras, usted va a obtener exactamente lo que está buscando, y mejor.</p>
+                                <p>Nosotros hacemos negocios a nivel internacional. Desde Norteamérica, hasta Europa y Asia, estamos interesados en ofrecer excelencia absoluta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url(https://d1b89zc79exfxt.cloudfront.net/img/Hostel_icon-gray.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img alt="Hostel Management Software Price - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/Hostel_icon.png"/></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>¡Estamos deseosos de trabajar contigo! Dependiendo de tu situación, usted puede tener derecho a descuentos en los paquetes. Haz clic&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" target="_blank">aquí</apex:outputLink> para obtener información sobre los precios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center"><apex:outputLink value="{!URLFOR($Page.BNES_Register)}" styleClass="button" target="_blank">Prueba el piloto hoy</apex:outputLink></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,157 @@
+<apex:page controller="BN_VacancyPageController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false"
+    applyBodyTag="false" applyHtmlTag="false" cache="true">
+    <apex:includeLightning />
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            <!-- top -->
+            <div class="about-page-top job-listing-single-bnr">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img">
+                                <img src="{!detailArt}" alt="Bookingninjas {!roleName}" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>{!roleName}</h1>
+                                <apex:outputText value="{!intro}" />
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content job-listing-single">
+                <div class="container">
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-6">
+                            <div class="job-listing-single__section">
+                                <div class="job-listing-single__icon">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon1.png" alt="Bookingninjas {!roleName}" />
+                                </div>
+                                <h3>The position will entail:</h3>
+                                <ul>
+                                    <apex:repeat value="{!overview}" var="item">
+                                        <li>
+                                            <apex:outputText value="{!item}"></apex:outputText>
+                                        </li>
+                                    </apex:repeat>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="job-listing-single__section float_right">
+                                <div class="job-listing-single__icon">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon2.png" alt="Bookingninjas {!roleName}" />
+                                </div>
+                                <h3>Qualifications </h3>
+                                <ul>
+                                    <apex:repeat value="{!qualifications}" var="item">
+                                        <li>
+                                            <apex:outputText value="{!item}"></apex:outputText>
+                                        </li>
+                                    </apex:repeat>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row justify-content-center">
+                        <div id="applicationForm">
+                            <div class="col-lg-12 text_center" id="placeHolder">
+                                <a href="#career-modal" class="button fancybox" style="margin-bottom:40px;">APPLY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12">
+                            <div class="job-listing-single__section float_right">
+                                <div class="job-listing-single__icon">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon3.png" alt="Bookingninjas {!roleName}" />
+                                </div>
+                                <h3>Job Description</h3>
+                                <apex:repeat value="{!description}" var="paragraph">
+                                    <p style="margin-bottom: 10px">
+                                        <apex:outputText value="{!paragraph}"></apex:outputText>
+                                    </p>
+                                </apex:repeat>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12">
+                            <div class="job-listing-single__section ">
+                                <div class="job-listing-single__icon">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon3.png" alt="Bookingninjas {!roleName}" />
+                                </div>
+                                <h3>Questions</h3>
+                                <ul>
+                                    <apex:repeat value="{!questions}" var="item">
+                                        <li>
+                                            <apex:outputText value="{!item}"></apex:outputText>
+                                        </li>
+                                    </apex:repeat>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12">
+                            <div class="job-listing-single__section float_right">
+                                <div class="job-listing-single__icon">
+                                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon4.png" alt="Bookingninjas {!roleName}" />
+                                </div>
+                                <h3>Bonus/Extra Credit </h3>
+                                <p>
+                                    <apex:outputText value="{!otherInformation}" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12 text_center">
+                            <apex:outputLink value="{!URLFOR($Page.BN_CareerLeadForm)}" styleClass="button" style="margin-bottom:20px;">JOIN US</apex:outputLink>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12 text_center">
+                            <p>Thanks for your time. Looking forward to hearing from you.</p>
+                            <p>
+                                <em>For more information about careers at Booking Ninjas visit
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Career)}">
+                                        here</apex:outputLink>
+                                </em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal career-modal" id="career-modal">
+                    <h3>Become one of us</h3>
+                </div>
+                <script>
+                    var pageId = "{!$CurrentPage.parameters.id}";
+                    var thankyouPageUrl = "{!URLFOR($Page.BN_ThankYou2)}"
+
+                    $Lightning.use("c:vacancyApp", function () {
+                        $Lightning.createComponent(
+                            "c:vacancyList",
+                            { vacancyId: pageId, thankyouPageUrl: thankyouPageUrl },
+                            "applicationForm",
+                            function (cmp) {
+                                $('#placeHolder').remove();
+                                // console.log("Component is created!");
+                                // console.log(cmp);
+                            });
+                    });        
+                </script>
+                <!-- </div> -->
+            </div>
+            <!-- /content -->
+        </apex:define>
+    </apex:composition>
+</apex:page>

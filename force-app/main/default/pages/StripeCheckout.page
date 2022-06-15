@@ -1,0 +1,78 @@
+<apex:page controller="StripeCheckoutController" lightningStylesheets="true">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+    var stripe = Stripe('pk_test_N3TuuDON6m6dL95FwVKnPW8b');
+    
+    function makeCharge() {
+        var sessionIdReceived = '{!sessionId}';
+        console.log('stripeCheckoutSessionId : ', sessionIdReceived);
+        stripe.redirectToCheckout({
+            // Make the id field from the Checkout Session creation API response
+            // available to this file, so you can provide it as parameter here
+            // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
+            sessionId: sessionIdReceived
+        }).then(function (result) {
+            console.log('results : ', result);
+            console.log('result JSON : ', JSON.stringify(result));
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer
+            // using `result.error.message`.
+        });                    
+        
+    }
+    </script>
+    
+    <apex:slds />
+    <div class="slds-form">
+        <apex:form >
+            <div class="slds-form-element slds-form-element_stacked">
+                <label class="slds-form-element__label" for="itemName">Item Name</label>
+                <div class="slds-form-element__control">
+                    <apex:inputText id="itemName" html-placeholder="Holiday package 5d1n" styleClass="slds-input" value="{!itemName}"
+                                    rendered="{!ISBLANK(sessionId)}"/>
+                    <apex:outputText value="{!itemName}" rendered="{! NOT(ISBLANK(sessionId))}"></apex:outputText>
+                </div>
+            </div>
+            <div class="slds-form-element slds-form-element_stacked">
+                <label class="slds-form-element__label" for="itemDescription">Item Description</label>
+                <div class="slds-form-element__control">
+                    <apex:inputTextarea id="itemDescription" html-placeholder="need wifi" styleClass="slds-textarea" 
+                                        value="{!itemDescription}" rendered="{!ISBLANK(sessionId)}" />
+                    <apex:outputText value="{!itemDescription}" rendered="{! NOT(ISBLANK(sessionId))}"></apex:outputText>
+                </div>
+            </div>
+            <div class="slds-form-element slds-form-element_stacked">
+                <label class="slds-form-element__label" for="amount">Amount</label>
+                <div class="slds-form-element__control">
+                    <apex:inputText id="amount" html-placeholder="100.50" styleclass="slds-input" value="{!amount}" 
+                                    rendered="{!ISBLANK(sessionId)}"/>
+                    <apex:outputText value="{!amount}" rendered="{! NOT(ISBLANK(sessionId))}"></apex:outputText>
+                </div>
+            </div>
+            <div class="slds-form-element slds-form-element_stacked">
+                <label class="slds-form-element__label" for="quantity">Quantity</label>
+                <div class="slds-form-element__control">
+                    <apex:inputText id="quantity" html-placeholder="2" styleclass="slds-input" value="{!quantity}" 
+                                    rendered="{!ISBLANK(sessionId)}"/>
+                    <apex:outputText value="{!quantity}" rendered="{! NOT(ISBLANK(sessionId))}"></apex:outputText>
+                </div>
+            </div>
+            <div class="slds-form-element slds-form-element_stacked">
+                <label class="slds-form-element__label" for="guestContact">Guest Contact</label>
+                <div class="slds-form-element__control">
+                    <apex:inputField id="guestContact" value="{!trans.Guest_Contact__c}" rendered="{!ISBLANK(sessionId)}"/>
+                    <apex:outputField value="{!trans.Guest_Contact__c}" rendered="{! NOT(ISBLANK(sessionId))}" />
+                </div>
+            </div>
+            
+            
+            <div>
+                <apex:commandButton id="proceedBtn" styleClass="slds-button slds-button_brand" value="Proceed" action="{!getSessionId}"
+                                   rendered="{!ISBLANK(sessionId)}" />
+                <apex:commandButton id="checkoutBtn" oncomplete="makeCharge();" action="{!captureTransaction}" value="Checkout"
+                                    rendered="{! NOT(ISBLANK(sessionId))}" reRender="none" styleClass="slds-button slds-button_brand" />
+            </div>
+            
+        </apex:form>
+    </div>
+</apex:page>

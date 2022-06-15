@@ -1,0 +1,70 @@
+<apex:page showHeader="false" sidebar="false">
+
+    <apex:includeScript value="{!URLFOR($Resource.bootstrap, 'bootstrap/js/bootstrap.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.bootstrap, 'bootstrap/js/bootstrap.min.js')}" />
+
+    <apex:stylesheet value="{!URLFOR($Resource.bootstrap, 'bootstrap/css/bootstrap.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.bootstrap, 'bootstrap/css/bootstrap.min.css')}" />
+    <style>
+    .messagebox{
+        width:500px;
+        font-size:18px;
+        line-height: 25px;
+        border: 1px solid #cecece;
+        
+    }
+    .header{
+        border: 1px solid #cecece;
+        background: rgb(136, 250, 136);
+    }
+    .body{
+        padding:20px;
+        white-space: nowrap;
+    }
+    </style>
+    <div class="navbar" style="background:rgb(9, 89, 134)">
+      <div class="navbar-inner" style="background:none;border: none;">
+        <div class="container" style="color: white;padding: 9px;">
+            <strong>Booking Ninjas</strong>&nbsp;&nbsp;&nbsp;Order Payment Form (Premium clients area) 
+        </div>
+      </div>
+    </div>
+    <apex:outputpanel rendered="{!$CurrentPage.parameters.tk == 'true'}" >
+        <center style=" margin-top:200px;">
+            <div class="messagebox">
+                <div class="header">&nbsp;</div>
+                <div class="body">
+                    Thank You<br/>
+                    Your reservation deposit has been completed. <br/>
+                    Your transaction ID : {!$currentpage.parameters.tid}<br/>
+                    Go To : <a href="http://www.bookingninjas.com">www.bookingninjas.com</a>
+                </div>
+            </div>
+        </center>
+    </apex:outputpanel>
+    <apex:outputpanel rendered="{!$CurrentPage.parameters.paid == 'true'}" >
+        <center style=" margin-top:200px;">
+            <div class="messagebox">
+                <div class="header">&nbsp;</div>
+                <div class="body">
+                    Paid<br/>
+                    This transaction is already committed. <br/>
+                    Your transaction ID : {!$currentpage.parameters.tid}<br/>
+                    Go To : <a href="http://www.bookingninjas.com">www.bookingninjas.com</a>
+                </div>
+            </div>
+        </center>
+    </apex:outputpanel>    
+    <apex:outputpanel rendered="{!$CurrentPage.parameters.expired == 'true'}" >
+        <center style=" margin-top:200px;">
+            <div class="messagebox">
+                <div class="header">&nbsp;</div>
+                <div class="body">
+                    Order Expired<br/>
+                    Your order due date is expired. Please contact sales team. <br/>
+                    Go To : <a href="http://www.bookingninjas.com">www.bookingninjas.com</a>
+                </div>
+            </div>
+        </center>
+    </apex:outputpanel>
+</apex:page>

@@ -1,0 +1,98 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top gdpr-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-top.png" alt="PMS GDPR Data Compliance"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Software de cumplimiento de GDPR</h1>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content ">
+                <div class="container">
+                    <div class="gdpr__content">
+                        <p>Como mencionamos anteriormente en nuestra&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Data)}" target="_blank">página de datos</apex:outputLink>, actualmente el análisis de datos es más importante que nunca. A medida que los datos son más valorados, las compañías de Fortune 500 buscarán cada vez más monetizar estos datos, ofreciendo un sistema de DaaS (Data-as-a-service) - esencialmente, mediante el cobro de una cuota de suscripción para el acceso a datos y análisis avanzados. El análisis de datos es nuestro fuerte. Nuestro sistema de gestión de propiedades cuenta con el respaldo del buscador de soluciones y CRM líder del sector, Salesforce. Nuestra tecnología de gestión de propiedades incluye la&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_ArtificialIntelligence)}" target="_blank">inteligencia artificial Einstein</apex:outputLink> que proporciona datos y análisis de los mismos en tiempo real, así como sugerencias inteligentes para su negocio de hostelería. Pero, sinceramente, debido a que las leyes de la Regulación General de Protección de Datos (GDPR) son relativamente nuevas, muchos de estos conglomerados ávidos de dinero no siguen las directrices y los lineamientos necesarios para garantizar un tratamiento seguro de datos. Por tal razón, es menester que usted confíe sus datos confidenciales a una empresa que cumpla con la normativa GDPR, como nosotros.</p>
+                    </div>
+                    <div class="gdpr__content">
+                        <h2>Nuestro Sistema de gestión de propiedades cumple con la normativa de la GDPR</h2>
+                        <div class="row">
+                            <div class="col-lg-6 order-lg-1">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-data-img.png" alt="GDPR Data Compliant"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Hay siete principios rectores a través de los cuales trabaja la GDPR: legalidad, delimitación de objetivos, minimización de los datos, exactitud, limitación del almacenamiento, confidencialidad y responsabilidad. La normativa GDPR requiere que los controladores de datos, es decir, empresas que manejan datos sensibles, no solo cumplan con estas regulaciones, sino que además demuestren de qué manera cumplen con las mismas. Estas regulaciones se originaron en la UE, que casualmente es donde se encuentra gran parte de nuestra clientela. Nosotros somos conscientes y respetuosos de las políticas de la GDPR desde la regulación aprobada en mayo del 2018. Nuestro brillante equipo de desarrolladores se aseguro de que nuestro Sistema de gestión tuviera incorporado en su funcionamiento el cumplimiento de la normativa GDPR, asegurando que nuestra empresa no abuse nunca de su poder en el manejo de los datos privados de nuestros clientes. Y esto no es sólo protección para usted como propietario, es protección para sus clientes. Si los datos de sus clientes son utilizados de manera fraudulenta, estos se ven perjudicados. La confianza es el componente principal en el negocio de la gestión de propiedades. Una vez se pierde la confianza, no queda nada.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdpr__content ">
+                        <h2>¿Por qué es importante la GDPR?</h2>
+                        <div class="row career-page-interest">
+                            <div class="col-lg-12">
+                                <div class="career-page-interest__item">
+                                    <figure><a href="#"><img alt="¿Por qué es importante la GDPR? - icono - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-insurance.png"/></a></figure>
+                                    <article>
+                                        <p>Varios expertos en seguridad han predicho que las políticas de la RPI, o algo similar a ellas, se extenderá pronto a EE.UU., Brasil, Corea del Sur, Japón, Tailandia y Australia, más o menos a finales de 2020. Recientemente, en los EE.UU. se ha evidenciado el caos que puede ocurrir cuando el manejo de datos ocurre de manera sospechosa, como fue el caso de la exposición de datos de Facebook, lo cual ocasionó disturbios en gran parte de la población.</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="career-page-interest__item">
+                                    <figure><a href="#"><img alt="¿Por qué es importante la GDPR? - icono - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-secure-data.png"/></a></figure>
+                                    <article>
+                                        <p>Los EE.UU. ya han comenzado a tomar más en serio el cumplimiento y manejo de los datos mediante la promulgación de la Ley Californiana de Privacidad del Consumidor (CCPA). La CCPA actúa de manera similar en California a la forma en que lo hace la GDPR en la Unión Europea (UE). Los expertos predicen que al menos otras 10 naciones pronto seguirán el ejemplo al adoptar sus propias leyes de privacidad de datos.</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="career-page-interest__item">
+                                    <figure><a href="#"><img alt="¿Por qué es importante la GDPR? - icono - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-customers.png"/></a></figure>
+                                    <article>
+                                        <p>El aumento del número de clientes Europeos radicados en EE.UU y viceversa, hace que sea una prioridad para las empresas familiarizarse con la nueva política y actuar en consecuencia. Si usted tiene una empresa que trata con clientes europeos a menudo, es imperativo que alinee sus prácticas conforme al marco regulatorio de las GDPR inmediatamente.</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="career-page-interest__item">
+                                    <figure><a href="#"><img alt="¿Por qué es importante la GDPR? - icono - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-house.png"/></a></figure>
+                                    <article>
+                                        <p>El mejor método para cumplir con las regulaciones de la GDPR es mantener todos los datos sensibles en un lugar seguro - un&nbsp;<apex:outputLink style="font-size:16px;" value="{!URLFOR($Page.BNES_PMS)}">sistema de gestión de propiedades</apex:outputLink>. Salesforce es una de las compañías más fiables en este sentido, ya que su plataforma está construida específicamente para ayudar a las empresas y aumentar sus ingresos. Booking Ninjas comparte este objetivo, y tenemos un interés genuino en el éxito de nuestros clientes, y la seguridad es un elemento primordial para lograr ese éxito.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdpr__content">
+                        <h3>Nuestro compromiso</h3>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img alt="GDPR Data Compliant - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/gdpr-bottom.png"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Con cada vez más estados y países gestionando la firma de leyes de privacidad actualizadas, las buenas prácticas con respecto al manejo de datos en las empresas ha tomado mayor valor. El sistema de gestión de propiedades (PMS) basado en la nube de Booking Ninjas incorpora prácticas reguladas por la GDPR con el objetivo de garantizar su seguridad y la de sus clientes. También cuenta con la tecnología avanzada de Salesforce para dar a su negocio de hostelería una ventaja sobre la competencia.</p>
+    
+                                <p> Aprende más sobre nuestro PMS basado en la nube&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Why)}">aquí</apex:outputLink>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+        
+</apex:page>

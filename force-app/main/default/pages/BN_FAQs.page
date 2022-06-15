@@ -1,0 +1,386 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false"
+    applyHtmlTag="false" cache="true">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <!-- top -->
+            <div class="about-page-top faq-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img
+                                    src="https://d1b89zc79exfxt.cloudfront.net/img/faq.png" alt="PMS FAQs" /></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Booking Ninjas FAQs </h1>
+                                <p>We understand that&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Solutions)}"
+                                        target="_blank">property management software</apex:outputLink> isn’t the easiest
+                                    thing for people outside the industry to understand. Because of this, we receive a
+                                    lot more questions than other businesses in the hospitality industry. And even for
+                                    professionals that do have an understanding of PMS, we get several questions about
+                                    the specification and use cases for our software. This is why we’ve made this
+                                    webpage - to clear up all confusion and to give you the answers to all your
+                                    questions. Below are some of the most frequently asked questions at Booking Ninjas.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content faq-content">
+                <div class="container">
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>What is Booking Ninjas?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Booking Ninjas is the premier property management software for businesses in the
+                                    hospitality industry. Through the use of state-of-the-art technology, our PMS
+                                    consolidates all the departments of your property business into a single,
+                                    easy-to-use platform. We also can&nbsp;<apex:outputLink
+                                        value="{!URLFOR($Page.BN_FeatureSpotlight_Mobile)}" target="_blank">achieve full
+                                        mobility</apex:outputLink> to allow property managers to manage their company
+                                    from anywhere in the world on any smart device. We are the first and only
+                                    cloud-based property management software to be an official partner of Salesforce,
+                                    the world’s leading customer management solution.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>Why should I use Booking Ninjas?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Because it’s {!year(today())}. And&nbsp;<apex:outputLink
+                                        value="{!URLFOR($Page.BN_Data)}" target="_blank">data is more valuable than ever
+                                        before</apex:outputLink>. We are a secure cloud-based PMS that can protect your
+                                    property’s big data. Our software was built by career hotel professionals and top
+                                    data scientists, making our property management system the most functional and
+                                    useful on the market. Due to our partnership with Salesforce, we have unlimited
+                                    access to the world’s sharpest technology that can be used to take your property
+                                    into the digital era.&nbsp;<apex:outputLink
+                                        value="{!URLFOR($Page.BN_IndustrialRevolution)}" target="_blank">We call that
+                                        digital transformation</apex:outputLink>.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>What does Booking Ninjas do?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Booking Ninjas is an innovative, cloud-based PMS solution designed to replace that
+                                    slow, ancient PMS you're stuck with. Hospitality groups, real estate companies, and
+                                    boutique hotels can all manage their booking engine website, phone systems,
+                                    point-of-sale, OTA/GDS booking channel integrations, and financial transactions all
+                                    from one place, anywhere in the world, even by mobile device. It uses the&nbsp;
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Integrations)}" target="_blank">vast
+                                        library of Salesforce integrations</apex:outputLink> to help you build custom
+                                    property management software for your business. Backed by a constantly adapting,
+                                    machine learning Einstein property management AI, Booking Ninjas is built for the
+                                    future.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>Is it expensive to use Booking Ninjas?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>For the amount of advanced technology you will benefit from, our deals are a steal!
+                                    Pricing depends on a variety of factors including type of property, number of rooms,
+                                    how many authorized users you’d like, and number of POS systems you’d like to
+                                    integrate. We provide the most bang for your buck as no other PMS can match our
+                                    technological capabilities. You can&nbsp;<apex:outputLink
+                                        value="{!URLFOR($Page.BN_Pricing)}" target="_blank">view all cost info on our
+                                        pricing page</apex:outputLink>.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>Our PMS customer service sucks. How is Booking Ninjas any different?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>The number one complaint property managers have with their current property
+                                    management software is customer service - in that there is none! A lot of hotel
+                                    software systems just simply organize your company’s info. Truthfully, if a property
+                                    manager was an organized individual they wouldn’t even need these systems. That’s
+                                    why we not only offer optimal organization for our customers, but&nbsp;
+                                    <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" target="_blank">tools
+                                        to help you better manage your property and grow your business</apex:outputLink>
+                                    . Our cloud-based AI capacity analyzes your property data and provides valuable
+                                    information and smart suggestions on how to save your company time and money.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>How do I get started?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Getting started on implementing a PMS to your property is as simple as picking up
+                                    your phone and calling (917)-600-3245 for an introductory call. Be prepared to
+                                    answer the following questions - How many rooms/units would you want covered, Number
+                                    of authorized users needed, and how many POS systems you would want to integrate.
+                                    Not ready yet?&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Demo)}"
+                                        target="_blank">Feel free to schedule a call with us</apex:outputLink> and we’ll
+                                    contact you at your requested date and time.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>Why do I need property management software?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Simply put, property management software makes running your property much easier.
+                                    This is because every department of your business is now on one platform, which
+                                    makes communication between departments instant. Keeping all documents, projects,
+                                    reservations, and transactions in one place saves you a ton of time and money. Not
+                                    to mention the numerous tools that become available to you once you implement the
+                                    software that benefit not only your staff, but your customers too.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>Can your PMS actually help my property’s sales?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>This is one of the biggest benefits of being an official Salesforce partner.&nbsp;
+                                    <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Einstein )}"
+                                        target="_blank">Einstein Analytics</apex:outputLink> is the single best data
+                                    analysis tool on the software market today. For example, say a company was having
+                                    trouble identifying if leads were hot or cold. Using <a
+                                        href="https://trailhead.salesforce.com/en/content/learn/modules/wave_exploration_smart_data_discovery_basics"
+                                        target="_blank">Einstein Discovery</a>, artificial intelligence will leverage
+                                    your property’s past data to determine the percentage that a specific lead will
+                                    close and how soon you could expect that. This allows you to focus more on the leads
+                                    that have a higher percentage of closing.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>How can I know that I can trust you with my sensitive data?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Well we’re a cloud-based PMS backed by Salesforce, which offers the most security for
+                                    your company’s big data. Most of the largest, most successful businesses in the
+                                    world run through the Salesforce platform. In {!year(today())}, you’ll start to see
+                                    a lot more companies offering Data-as-a-Service, which will charge you for your
+                                    data. Our data storage is included with your property management software. Also, our
+                                    company’s success directly correlates with the success of our clients. So we have no
+                                    incentive to not take every precaution with your company’s sensitive information.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>Does your PMS follow GDPR guidelines?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Absolutely, and this is very important in {!year(today())}. More and more countries
+                                    are starting to adopt data protection laws. It is becoming mandatory to abide by
+                                    these guidelines. We’ve been following GDPR since it’s adoption and work with many
+                                    properties in Europe. GDPR regulation is built in to our software so you don’t need
+                                    to worry about whether your property is following the proper data etiquette.&nbsp;
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Gdpr)}" target="_blank">Read more about
+                                        our GDPR policy here</apex:outputLink>.</p>
+                                <br />
+                                <apex:outputLink value="{!URLFOR($Page.BN_UK_PMS)}" target="_blank">Learn how our PMS supports UK properties</apex:outputLink>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>I’m worried I won’t know how to operate the advanced technology Booking Ninjas offers.
+                            </h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Not to worry. On top of our cloud-based property management software being
+                                    easy-to-use, our live support team offers 24/7 assistance for our clients. The great
+                                    thing about our technology is that it does almost all of the work for you.
+                                    Essentially, all you need to know is where to find the information you’re looking
+                                    for.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>Is your property management system made exclusively for hotels?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Of course not! There’s a reason we don’t call our system “hotel management software”.
+                                    We handle all different types of properties; motels, resorts, b&#x26;b’s, country
+                                    clubs, co-working spaces, offices, event spaces, restaurants, hostels, parking
+                                    facilities, and self-storage facilities. Plus, our PMS is fully customizable so no
+                                    matter what property you own, the settings are set to specifically fit your property
+                                    and what you want to get out of the system. All of our top notch features are
+                                    available for any property.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>Do I need to run my business through Salesforce in order to implement your PMS?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>No. While it’s more beneficial and useful to be familiar with Salesforce beforehand,
+                                    it is not a necessity. Booking Ninjas will simply migrate your data to our platform,
+                                    allowing our tools and features to digest and analyze the data and get you on your
+                                    way to running a smooth, efficient property business. The potential for our
+                                    cloud-based property management software is limitless. It’s your canvas. Our
+                                    developers can suit the software to your most desired needs.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>What are some cool features your PMS can provide to my property?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Where do we begin? You can&nbsp;<apex:outputLink
+                                        value="{!URLFOR($Page.BN_FeatureSpotlights)}" target="_blank">start by looking
+                                        at our Feature Spotlight page</apex:outputLink> where we go into detail about
+                                    each of our unique features. We offer features that literally benefit every
+                                    department of your property business. Whether it’s our&nbsp;<apex:outputLink
+                                        value="{!URLFOR($Page.BN_FeatureSpotlight_AvailabilityGrid)}" target="_blank">
+                                        all-in-one Availability Grid</apex:outputLink> that allows you to manage hotel,
+                                    event, restaurant, and spa bookings all at once. Or maybe our&nbsp;<apex:outputLink
+                                        value="{!URLFOR($Page.BN_FeatureSpotlight_Channel)}" target="_blank">Channel
+                                        Manager</apex:outputLink> which lets you extract data from third-party travel
+                                    sites to get to better know your guest’s preferences. We have more features than any
+                                    other PMS on the market.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>I want to customize my PMS layout. I don’t like the default settings.</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Perfect, how would you like it? It’s as easy as that. Our top-of-the-line software
+                                    developers can easily customize your PMS to fit your company’s preferences. Our
+                                    software is fully scalable and highly integratable. In fact, before we even begin
+                                    implementing the PMS, we will ask about any specifications you’d like and
+                                    continually work on it until you are satisfied. A satisfied customer means a
+                                    satisfied Booking Ninjas.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>I’m worried about new hires having access to my company’s private data.</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>One step ahead of you. One of the features our PMS offers is full Access Control,
+                                    meaning you are able to control what users are able to view specific areas of the
+                                    software. Let only execs or high-ranking employees view your property’s sensitive
+                                    data. Also, it’s a nice morale booster for recently promoted employees to gain
+                                    access to new parts of the property management software. This makes it easier to
+                                    delegate a proper hierarchy when it comes to employee responsibility.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>How secure is your pms?</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Our property management system is extremely secure. We have the backing of the
+                                    industry leading customer solution manager Salesforce which has grown monumentally
+                                    over the past few years to become a billion dollar company and one of the hottest
+                                    stocks on Wall Street. Our PMS is protected in the cloud, so your data will never be
+                                    lost. We also closely abide by GDPR and CCPA guidelines to ensure that your property
+                                    is always abiding by these data laws.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__trigger">
+                            <div class="faq__ico">q</div>
+                            <h4>I run an enterprise that would require over 300 users. Property management software is
+                                too expensive to invest in.</h4>
+                        </div>
+                        <div class="faq__content">
+                            <article>
+                                <div class="faq__ico">a</div>
+                                <p>Well luckily for you, we do offer discounts for enterprises that fall under this
+                                    scenario, as well as non-profits. You can find all of our information on our&nbsp;
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" target="_blank">pricing page
+                                    </apex:outputLink>. In this specific situation, it would be best to give us a call
+                                    at (917)-600-2345 Monday-Friday during business hours. You may also schedule a time
+                                    for us to call you&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}"
+                                        target="_blank">here</apex:outputLink>.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

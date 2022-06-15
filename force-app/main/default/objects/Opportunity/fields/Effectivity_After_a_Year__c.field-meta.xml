@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Effectivity_After_a_Year__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+MONTH(Effective_Date__c) = 2,
+DAY(Effective_Date__c) = 29
+),
+DATE(
+YEAR(Effective_Date__c)+1,
+3,
+1),
+DATE(
+YEAR(Effective_Date__c)+1,
+MONTH(Effective_Date__c),
+DAY(Effective_Date__c)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Renewal Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<aura:component description="scheduleCallWrapper" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <aura:html tag="style">
+        .cuf-content {
+            padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+            padding: 0rem !important;
+        }
+        .slds-modal__content {
+            overflow-y: hidden !important;
+            height:unset !important;
+            max-height: unset !important;
+        }
+        .slds-modal__container {
+            max-width: 100rem !important;
+            width: 40rem !important;
+        }      
+    </aura:html>
+        
+    <c:scheduleCall label="{!v.recordId}" onclose="{!c.closeQA}"/>
+</aura:component>

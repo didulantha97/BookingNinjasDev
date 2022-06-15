@@ -1,0 +1,144 @@
+<apex:page controller="CookBookController" sidebar="false">
+    <html>
+        <head>
+            <apex:stylesheet value="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />  
+            <apex:includeScript value="https://code.jquery.com/jquery-3.1.1.min.js"/>
+            <apex:includeScript value="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"/>
+            <apex:slds />
+            <style>
+                .table {
+                    font-family: arial, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                .tr-header > th {
+                    background-color: #1797c0;
+                    border: 1px solid #dddddd;
+                    text-align: center;
+                    color: #fff;
+                    padding: 10px;
+                }
+                .tr-body > td {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 8px;
+                }
+            </style>
+            <script>
+                var j$ = jQuery.noConflict();
+                j$(document).ready(function($) {
+                    j$(document).ready(function($) {
+                        j$('[id$=start-date]').datepicker({ 
+                            dateFormat: 'mm/dd/yy', 
+                            changeMonth: true, 
+                            changeYear: true,
+                            onSelect: function(){
+                                j$('[id$=end-date]').datepicker('option', 'minDate', j$('[id$=start-date]').datepicker("getDate"));
+                            }
+                        }).datepicker("setDate", new Date());
+                        
+                        j$('[id$=end-date]').datepicker({
+                            dateFormat: 'mm/dd/yy', 
+                            changeMonth: true, 
+                            changeYear: true 
+                        }).datepicker("setDate", new Date());
+                    });
+                });
+            </script>
+        </head>
+        <body>
+            <!-- SLDS WRAPPER -->
+            <div class="slds-scope">
+                <apex:form >
+                    <apex:pageBlock id="FILTERS_ID">
+                        <apex:pageBlockSection columns="2" >
+                            <label>Account Executives: </label>
+                            <apex:selectList value="{!UserId}" multiselect="false" size="1">
+                                <apex:selectOptions value="{!ListOfUsers}"/>
+                            </apex:selectList>
+                            &nbsp;&nbsp;
+                            
+                            <label>Start Date: </label>
+                            <apex:inputText id="start-date" value="{!StartDate}" />
+                            &nbsp;&nbsp;
+                            
+                            <label>End Date: </label>
+                            <apex:inputText id="end-date" value="{!EndDate}" />
+                            &nbsp;&nbsp;
+                            
+                            <label>Interest Level: </label>
+                            <apex:selectList value="{!InterestLevel}" multiselect="false" size="1">
+                                <apex:selectOptions value="{!ListOfInterestLevel}"/>
+                            </apex:selectList>
+                            &nbsp;&nbsp;
+                            
+                            <label>Call Result: </label>
+                            <apex:selectList value="{!CallResult}" multiselect="false" size="1">
+                                <apex:selectOptions value="{!ListOfCallResult}"/>
+                            </apex:selectList>
+                            &nbsp;&nbsp;
+                            
+                            <label>Continent: </label>
+                            <apex:selectList value="{!Continent}" multiselect="false" size="1">
+                                <apex:selectOptions value="{!ListOfContinents}"/>
+                            </apex:selectList>
+                            &nbsp;&nbsp;
+                            
+                            <label>Has Phone?: </label>
+                            <apex:inputcheckbox value="{!HasPhone}" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            
+                            <apex:commandbutton action="{!search}" value="Search Report" rerender="output" status="actStatus" />
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+                    
+                    <br/><br/>
+                    
+                    <apex:outputPanel id="output">
+                        <table class="table">
+                            <tr class="tr-body">
+                                <td colspan="7" align="right"><b>Total: {!count}</b></td>
+                            </tr>
+                            <tr class="tr-header">
+                                <th>Contact Name</th>
+                                <th>Title</th>
+                                <th>Scheduled Date</th>
+                                <th>Interest Level</th>
+                                <th>Call Result</th>
+                                <th>Linkedin</th>
+                                <th>Assigned To</th>
+                            </tr>
+                            <apex:repeat var="cb" value="{!CookBooks}">
+                                <tr class="tr-body">
+                                    <td><a href="/{!cb.Id}" target="_blank">{!cb.Contact}</a></td>
+                                    <td>{!cb.Title}</td>
+                                    <td>{!cb.ScheduledDate}</td>
+                                    <td>{!cb.InterestLevel}</td>
+                                    <td>{!cb.CallResult}</td>
+                                    <td><a href="{!cb.Linkedin}" target="_blank">{!cb.Linkedin}</a></td>
+                                    <td>{!cb.AE}</td>
+                                </tr>
+                            </apex:repeat>
+                            <tr class="tr-body">
+                                <td colspan="7" align="right"><b>Total: {!count}</b></td>
+                            </tr>
+                        </table>
+                    </apex:outputPanel>
+              
+                    <!-- Spinner -->                
+                    <apex:actionStatus id="actStatus">
+                        <apex:facet name="start">
+                            <div class="slds-spinner_container">
+                                <div class="slds-spinner--brand slds-spinner slds-spinner--medium" aria-hidden="false" role="alert">
+                                    <div class="slds-spinner__dot-a"></div>
+                                    <div class="slds-spinner__dot-b"></div>
+                                </div>
+                            </div>
+                        </apex:facet>
+                    </apex:actionStatus>
+                    <!--/ Spinner -->
+                </apex:form>
+            </div>
+        </body>
+    </html>
+</apex:page>

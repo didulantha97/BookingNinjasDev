@@ -1,0 +1,686 @@
+<apex:page controller="BNES_TemplateController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+            $(function () {
+                $('body').addClass('segment segment-spanish');
+            });
+            </script>
+            
+            <!-- hero -->
+            <div class="student-housing-page__hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housin-notebook.png" alt="El mejor software de gestión de alojamientos para estudiantes para tu propiedad" class="adaptive-img" />
+                        </div>
+                        <div class="col-lg-6">
+                            <article class="segment__hero-txt">
+                                <h1>
+                                    {!title}
+                                 </h1>
+                                 <h2>
+                                     {!description}
+                                 </h2>
+                                <apex:outputLink value="{!URLFOR($Page.BNES_Demo)}" styleClass="button-blue">Programa una llamada</apex:outputLink>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+            <!-- text -->
+            <div class="student-housing-page__center-text">
+                <div class="container">
+                    <h2>Disfruta de un software moderno de gestión de alojamientos para estudiantes hecho a medida para tus necesidades</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <p>El software de gestión de alojamientos para estudiantes de Booking Ninjas cuenta con increíbles funciones, como contabilidad, mantenimiento, control de acceso o un portal online para estudiantes, entre otros, que facilitan la navegación y el control del portal. </p>
+                            <p>El PMS presenta un único sistema unificado que permite la recopilación automática de datos para tu servicio de alquiler. Disfruta de la recopilación autónoma de datos y el análisis de los datos previamente descartados. ¡Qué vida más sencilla!</p>
+                            <p>A medida que los estudiantes se vuelven cada vez más expertos en Internet, disponer de este software basado en la nube, solucionará el problema de sus alojamientos de manera online. </p>
+                            <p>Nos importan tus datos. Con el PMS de Booking Ninjas basado en la nube, puedes crear un depósito único y central para la base de datos de todos los estudiantes.</p>
+                        </div>
+                    </div>
+                    <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-blue">
+                        Planes y precios
+                    </apex:outputLink>
+                </div>
+            </div>
+            <!-- /text -->
+            <!-- title -->
+            <div class="student-housing-page__main-title">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <h2>Con la aplicación online de alojamientos para estudiantes, atraes más solicitantes</h2>
+                            <p>¿Lo ves? Necesitas un software que permita a los estudiantes seleccionar de forma online los tipos de habitaciones, comprobar la información del alquiler atrasado, hacer solicitudes de mantenimiento y mucho más. Nuestro PMS tiene todo lo que necesitas. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="student-housing-page__articles">
+                <div class="container">
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-1.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <section>
+                                        <ul>
+                                            <li>Te permite crear un proceso de solicitud online para residentes al utilizar formularios online y seguros.</li>
+                                            <li>Estos formularios seguros protegen tus datos y te ayudan a atraer más solicitantes, lo que, a su vez, te ayuda a ahorrar tiempo.</li>
+                                            <li>Lo mejor de todo es que este formulario es una página online y pública de solicitud que puede ser accedida sin tener una cuenta.</li>
+                                            <li>Incluso proporcionamos un creador de páginas web para que puedas crear tu propia página online de solicitudes… ¡y no requiere programación!</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="student-housing-page__main-title">
+                <div class="container">
+                    <h2>
+                        Puedes gestionar tu alojamiento para estudiantes cómodamente por camas, unidades y suites
+                    </h2>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="student-housing-page__articles">
+                <div class="container">
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure class="segment-article-figure__right"><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-2.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <section>
+                                        <ul>
+                                            <li>Nuestro software de alojamientos para estudiantes te ayuda a clasificar tu propiedad de alquiler por camas, unidades (habitaciones privadas) y suites (habitaciones premium) para atender las diferentes necesidades de los estudiantes y los puntos de precios. </li>
+                                            <li>Puedes hacer cambios en las habitaciones fácilmente dentro del sistema, moviendo a estudiantes de una habitación a otra por cualquier motivo. </li>
+                                            <li>Con nuestro sistema centralizado de reservas de habitaciones, puedes hacer que tus agentes de alquileres puedan ver la disponibilidad de los distintos espacios. Esto les ayuda a hacer un seguimiento de tus propiedades y garantiza un alquiler rápido. Así tu empresa puede conseguir más dinero. </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="student-housing-page__main-title">
+                <div class="container">
+                    <h2>
+                        Reduce el caos del día de llegada con nuestro software de registros y salidas de estudiantes
+                    </h2>
+                    <p>Una de las cosas que más preocupan a los propietarios de los alojamientos para estudiantes es el caos que conlleva el día de llegada de los estudiantes. Hay muchas personas hablando al mismo tiempo que requieren tu atención y que no paran de moverse de un lugar a otro. Si no se gestiona de forma adecuada, se pueden producir errores que conllevarán tiempo, esfuerzo y dinero en solucionar. ¡Ahórrate la preocupación con nuestro PMS!</p>
+                    <p>El PMS de Booking Ninjas te ayuda a simplificar la agitación del día de llegada, gracias a su función de registro de entradas y salidas.</p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="student-housing-page__articles">
+                <div class="container">
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-3.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <section>
+                                        <ul>
+                                            <li>La función de registro de entradas y salidas reduce el estrés del día de llegada con nuestra función de grupo de registro de entradas y salidas. </li>
+                                            <li>Esto facilita la planificación y el control de las personas, a medida que te preparas para gestionar eficazmente el número de movimientos de tu propiedad.</li>
+                                            <li>Nuestro único panel de control puede mostrar toda la información de registros y salidas, facilitando su visualización y su administración. </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="student-housing-page__main-title">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-11">
+                            <h2>
+                                Ayuda a que los estudiantes se instalen a su ritmo con la función integrada de orientación para estudiantes
+                            </h2>
+                        </div>
+                    </div>
+                    <p>A medida que nos acostumbramos a la nueva normalidad, aprovéchate de esta función para orientar a los estudiantes. ¿Qué necesidad hay de reunir a todos los estudiantes en un mismo lugar, cuando pueden orientarse desde la comodidad de sus habitaciones y con sus teléfonos? </p>
+                    <p>La función integrada de orientación para estudiantes ayuda a que los inquilinos se instalen a través de la aplicación móvil.</p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="student-housing-page__articles">
+                <div class="container">
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure class="segment-article-figure__right"><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-4.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <section>
+                                        <ul>
+                                            <li>Puedes incluir información de las habitaciones asignadas, lo que reducirá las consultas en la recepción.</li>
+                                            <li>Aún mejor, permite que los estudiantes hagan por sí mismos las inspecciones de sus respectivas habitaciones utilizando una lista y presentándola online a través de la aplicación móvil.</li>
+                                            <li>Permite que los estudiantes firmen los contratos online, lo que reduce el papeleo y ahorra tiempo.</li>
+                                            <li>Y otro aspecto impresionante: los estudiantes pueden ver toda la información que necesitan, desde las políticas del alojamiento, los procesos, cultura, valores, etc. ¿Qué mejor manera de aliviar el estrés de gestionar una orientación offline?</li>
+                                            <li>La función online de presentación de solicitudes permite a los estudiantes realizar solicitudes directas en la aplicación sobre mantenimiento, cambio de habitaciones, huéspedes, etc. Esto evita las llamadas telefónicas y los correos electrónicos, ya que el sistema centralizado les permite hacer las solicitudes en un mismo lugar. ¡Y tú también puedes gestionarlas desde ahí!</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="student-housing-page__main-title">
+                <div class="container">
+                    <h2>
+                        Aplicaciones de alojamientos para estudiantes y portales online
+                    </h2>
+                    <p>Obtén funciones sencillas para los estudiantes, que ayudan a solucionar sus problemas de alojamiento. Tan solo necesitan utilizar las aplicaciones de alojamientos para estudiantes.</p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="student-housing-page__articles">
+                <div class="container">
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-5.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <section>
+                                        <ul>
+                                            <li>Para que los estudiantes y sus padres puedan hacer un seguimiento de los alojamientos. </li>
+                                            <li>Utiliza el portal online para gestionar varias cuentas, hacer pagos online, crear órdenes de trabajo, renovar alquileres, y mucho más. Un portal, diferentes funcionalidades. ¡Qué fácil puede ser la vida! </li>
+                                            <li>Los estudiantes pueden gestionar por sí mismos las reservas y los servicios sin necesidad de llamar a la recepción o enviar correos electrónicos sin parar. Con esta función, pueden administrar sus reservas y los servicios que ofreces desde la comodidad de sus teléfonos. </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="student-housing-page__main-title">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-11">
+                            <h2>
+                                Simplifica las finanzas de tu negocio con el software de contabilidad de alojamientos para estudiantes
+                            </h2>
+                        </div>
+                    </div>
+                    <p>Si gestionas varias propiedades, lo más seguro es que necesites un sistema de contabilidad de confianza que gestione la contabilidad, simplifique las modalidades de pago y que facilite el cobro del alquiler. Además de uno que te ayude a recopilar datos y que ofrezca informes financieros de las transacciones.</p>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="student-housing-page__articles">
+                <div class="container">
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure class="segment-article-figure__right"><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-6.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <section>
+                                        <ul>
+                                            <li>Nuestro PMS ofrece un software de contabilidad que facilita la gestión de las deudas. Haz un seguimiento de tus deudores, obtén datos de las deudas y organiza tus informes para conseguir una buena salud financiera para tu negocio. </li>
+                                            <li>También ofrece renovaciones automáticas para tus estudiantes. Esto te ayuda a reducir el papeleo de las renovaciones del alquiler. Ahorro de tiempo = ahorro de dinero.</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="student-housing-page__main-title">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2>
+                                ¿Qué es un negocio sin informes en tiempo real y análisis de datos?
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="student-housing-page__articles">
+                <div class="container">
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-7.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <section>
+                                        <ul>
+                                            <li>Nuestro PMS habilita la integración Tableau CRM, permitiéndote visualizar los datos de manera más significativa. Esto garantiza que obtengas todos los datos e información analítica para tu negocio. ¡Los negocios prosperan cuando se obtienen los datos correctos!</li>
+                                            <li>Predicción de disponibilidad. También puedes utilizar las predicciones semestrales para personalizar aún más tus análisis. </li>
+                                            <li>Obtén informes personalizados de tu negocio que se ajusten a aquellas áreas en las que más quieras centrarte. </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+            <!-- title -->
+            <div class="student-housing-page__main-title">
+                <div class="container">
+                    <h2>
+                        Más funciones para ayudarte a gestionar mejor tu alojamiento para estudiantes
+                    </h2>
+                </div>
+            </div>
+            <!-- /title -->
+            <!-- articles -->
+            <div class="student-housing-page__articles">
+                <div class="container">
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-8.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">
+                                        Integración de servicios auxiliares
+                                    </h3>
+                                    <section>
+                                        <p>Genera funciones adicionales de ingresos que se ajusten a tu negocio a través de plataformas integradas de compras, en la que los estudiantes puedan comprar artículos de uso personal, material de papelería y ropa de cama. De este modo, los estudiantes podrán dejar de ir a los centros comerciales, ahorrando tiempo, y, a su vez, los propietarios podrán generar más ingresos. Una fuente de ingresos estable es necesaria, ¿no crees?</p>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-9.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">
+                                        Que nada te pille por sorpresa con nuestro software de gestión del mantenimiento y las incidencias
+                                    </h3>
+                                    <section>
+                                        <p>La vida es genial cuando los incidentes y las emergencias son previstas y solucionadas adecuadamente. Sabemos lo importante que es mantener las propiedades y gestionar las incidencias, por lo que tu negocio está en manos seguras con nuestro PMS.</p>
+                                        <ul>
+                                            <li>Tus estudiantes pueden solicitar el mantenimiento a través del portal online y ver satisfechas sus necesidades en tiempo real. </li>
+                                            <li>Hazte cargo del bienestar de tus estudiantes gracias a los formularios de incidentes donde estos podrán informarte de los incidentes que requieran tu atención. </li>
+                                            <li>A medida que los estudiantes envían los informes, tu plantilla puede recibir notificaciones de estas y actualizar el estado de los informes conforme van implementando soluciones o elevando los informes. </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-10.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">
+                                        Envío de textos y mensajes masivos con fines comerciales
+                                    </h3>
+                                    <section>
+                                        <p>Envía mensajes transaccionales como recordatorios de pagos, alertas de noticias, estado de las órdenes de trabajo, seguimiento de paquetes o anuncios a través de textos, correos electrónicos o WhatsApp, utilizando el software de envío masivo de mensajes. </p>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-11.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">
+                                        Software online de pagos de alojamientos para estudiantes
+                                    </h3>
+                                    <section>
+                                        <ul>
+                                            <li>Reduce al mínimo las cuentas vencidas, mejora la seguridad, elimina el papeleo y mejora la precisión utilizando el software de alojamiento para estudiantes. Incluye funciones que permiten todo esto. </li>
+                                            <li>También es un software compatible con aplicaciones móviles. </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-12.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">
+                                        El equipaje y los paquetes de tus estudiantes están a salvo con nuestro sistema de seguimiento
+                                    </h3>
+                                    <section>
+                                        <p>De vez en cuando, los estudiantes reciben paquetes de su familia, de sus amigos o del centro académico. La posibilidad de hacer un seguimiento de estos paquetes, y que se entreguen a tiempo, tranquilizará a tus estudiantes y a tu plantilla. </p>
+                                        <ul>
+                                            <li>Con nuestro software, se pueden recibir y hacer un seguimiento de los paquetes hasta el momento de la entrega. La información de cada paquete se añade a los registros del estudiante. </li>
+                                            <li>Nuestro PMS cuenta con una integración de USPS (Servicio Postal de los Estados Unidos), a través de la cual se puede obtener información detallada del seguimiento del paquete antes de que este llegue al alojamiento. Esto te ayuda a controlar tu espacio de almacenamiento y reduce la incertidumbre de la espera. </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-housing-page__article">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/student-housing-spanish-13.png" alt="" class="adaptive-img" /></figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h3 class="title-underline">
+                                        Control de acceso del alojamiento para estudiantes
+                                    </h3>
+                                    <section>
+                                        <p>Controla por completo el acceso a las distintas secciones de tu propiedad. Habilita zonas fuera de los límites, áreas generales y otras.</p>
+                                        <ul>
+                                            <li>Controla el acceso a las distintas secciones de tu propiedad para limitar las entradas no autorizadas y las violaciones de seguridad. </li>
+                                            <li>Puedes establecer fácilmente un control a través del sistema para habilitar el paso y el acceso a estudiantes y a empleados específicos.</li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /articles -->
+
+            <!-- prices -->
+            <div class="segment__prices">
+                <div class="container">
+                    <h2 class="text_center section-title">Precio del software de gestión de alojamientos para estudiantes de Booking Ninjas</h2>
+                    <p class="text_center">Disfruta de un rango de precios que refleja el excelente valor que aportamos a tu negocio.</p>
+                    <!-- price backend needed -->
+                    <h3>PMS central de alojamientos para estudiantes (desde <span>$295 al mes</span>)</h3>
+                    <div class="text_center pricing-support__btn wow fadeIn">
+                        <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-blue">
+                            Planes y precios
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /prices -->
+
+            <!-- Add-ons -->
+            <div class="segment__addons">
+                <div class="container">
+                    <h2 class="text_center section-title">
+                        Complementos para tu software de gestión de alojamientos para estudiantes
+                    </h2>
+                    <p class="section-subtitle">Obtén complementos personalizados que sirvan mejor a tu negocio con el software de gestión de alojamientos para estudiantes de Booking Ninjas. Nuestros complementos extienden la funcionalidad de tu sistema.</p>
+                    <!-- Slider -->
+                    <div class="pricing-addons__slider">
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-be.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Motor de reservas</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-channel-manager.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Gestor de canales</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-data-analytics.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Análisis de datos</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-pos.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Terminal punto de venta (POS)</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-cash-register.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Caja registradora</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-portal.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Portal</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-email-app.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Aplicación de correo electrónico</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-membership-module.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Módulo de membresía</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-esign.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Esign (Interfaz de programación de aplicaciones adicional)</h3>
+                            </div>
+                        </div>
+                        <div class="pricing-addons__slide">
+                            <div class="pricing-addons__slide-container">
+                                <div class="pricing-addons__slide-image">
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-communications.png" />
+                                </div>
+                                <h3 class="pricing-addons__slide-title">Comunicaciones (pago por uso)</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn-more-center">
+                        <!-- translate needed -->
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}">
+                            Más complementos disponibles pronto
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /Add-ons -->
+            <!-- FAQ -->
+            <div class="segment__faq">
+                <div class="container">
+                    <h2 class="text_center section-title">Preguntas más frecuentes </h2>
+                    <div class="segment-accordion">
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>¿Qué es un software de gestión de alojamientos para estudiantes?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Un software de gestión de alojamientos para estudiantes es aquel tipo de tecnología que va más allá de las funciones de los softwares básicos de gestión de propiedades y se centra en las funciones únicas de los alojamientos para estudiantes. Estas funciones incluyen el aprovechamiento de la ocupación de las habitaciones, la gestión de las habitaciones y las preferencias de los compañeros de habitación, la integración con los sistemas de la universidad y el almacenamiento de información para los padres o los inquilinos. También se incluyen funciones estándar de contabilidad, mantenimiento y la gestión de los inquilinos y del alquiler. </p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>¿Qué funciones hay que buscar en un software de gestión de alojamientos para estudiantes?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <ul class="segment__list segment-accordion__list">
+                                    <li>Contabilidad</li>
+                                    <li>Presupuestos y previsiones</li>
+                                    <li>Un portal online para los estudiantes</li>
+                                    <li>Integración de servicios auxiliares </li>
+                                    <li>Gestión del mantenimiento y de las incidencias</li>
+                                    <li>Marketing</li>
+                                    <li>Control de acceso</li>
+                                    <li>Gestión de paquetes</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>Beneficios previstos de los softwares de gestión de alojamientos para estudiantes </h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Utilizar nuestro PMS ayuda a tu negocio en lo siguiente:</p>
+                                <ul class="segment__list segment-accordion__list">
+                                    <li>Ahorras dinero y tiempo de gestión de asuntos administrativos, gracias a las aplicaciones online. La mayoría de aplicaciones modernas de alojamiento disponen de funciones que permiten a los estudiantes elegir habitaciones de las opciones disponibles.</li>
+                                    <li>Esto facilita la aprobación por parte de las universidades y de los propietarios sin necesidad de papeleo, además de que se produzcan más transacciones al día por los estudiantes.</li>
+                                    <li>Incluye una función centralizada de información que garantiza que todos los datos actualizados se almacenen de forma segura en un solo lugar.</li>
+                                    <li>Puedes generar funciones complementarias de ingresos que se ajusten a tu negocio. Esto puede ser en forma de plataformas integradas de compras en las que los estudiantes pueden comprar artículos de aseo personal, material de papelería y ropa de cama. De este modo, los estudiantes podrán dejar de ir a los centros comerciales, ahorrando tiempo, y, a su vez, los propietarios podrán generar más ingresos. ¡Una fuente estable de ingresos es necesaria!</li>
+                                    <li>También permite el seguimiento en vivo de la asistencia de tus estudiantes en la universidad. No muchos PMS pueden integrar varios dispositivos biométricos o tarjetas de bandas magnéticas para capturar en tiempo real los movimientos de los estudiantes en el alojamiento. Esto registra la asistencia automáticamente y restringe los accesos ilegales al campus. Esta es una manera fantástica de asegurar tu propiedad y las vidas de los estudiantes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>Consideraciones clave para el software de gestión de alojamientos para estudiantes</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Antes de implementar un PMS, tienes que tomar nota de lo siguiente:</p>
+                                <ul class="segment__list segment-accordion__list">
+                                    <li>El tamaño de la empresa: el tamaño de la empresa determinará el tipo de PMS que utilizarás. Si quieres gestionar a la perfección el número de habitaciones y estudiantes en tu propiedad, necesitas conseguir un PMS que pueda cubrir adecuadamente el tamaño de tu propiedad. Esto es para evitar errores en el seguimiento de habitaciones, reservas de las habitaciones, renovación de los alquileres, mantenimiento, etc. Asegúrate de conseguir el PMS de Booking Ninjas, ya que se ajusta a todos los tipos de alojamientos para estudiantes, en cualquier lugar del mundo. Si es tu primera vez como usuario, obtén un software que ofrezca la posibilidad de ampliar tu negocio.</li>
+                                    <li>Arquitectura de implementación: para cada negocio, lo suyo. Te animamos a &nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Demo)}">programar una demostración</apex:outputLink> para asegurarte que nuestros servicios se ajustan a tu arquitectura de implementación.</li>
+                                    <li>Capacidad de integración: si necesitas integraciones con aplicaciones de terceros, Booking Ninjas es el PMS adecuado para ti. Al haber sido creado en Salesforce, nuestro sistema tiene una gran capacidad de integración. </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>¿Cómo trabajamos con los proveedores de alojamientos para estudiantes? </h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Gestionar un alojamiento para estudiantes es algo único y desafiante, ya que los estudiantes suelen ser una población pasajera. Muchos estudiantes comparten la misma casa, pero alquilan habitaciones o camas individuales. Utilizar un software de gestión de alojamientos para estudiantes es esencial para gestionar la rotación de los inquilinos, el mantenimiento y las operaciones diarias. Vamos más allá de las funciones típicas de los PMS y proporcionamos funciones que necesitan los estudiantes para los proveedores de alojamientos. </p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>¿Puedes instalar este sistema de gestión de alojamientos para estudiantes en una organización que ya cuente con Salesforce?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Sí, puedes instalar este sistema si ya cuentas con Salesforce en tu organización.</p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>¿Puedo obtener una demostración de vuestro sistema de gestión de alojamientos para estudiantes?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Sí, puedes programar una demostración de nuestro sistema de alojamientos para estudiantes. Con una demostración, puedes ver cómo se ejecutan las funciones específicas de la gestión de alojamientos para estudiantes. Es probable que no encuentres estas funciones en ningún otro sistema todo en uno. </p>
+                                <p>¡<apex:outputLink value="{!URLFOR($Page.BNES_Demo)}">Programa una demostración</apex:outputLink> ahora mismo! Puedes elegir el momento del día que más te convenga. </p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>¿Son compatibles las reservas online de asientos, escritorios y oficinas privadas a través del motor o la aplicación de reservas? </h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>Sí, el PMS de Booking Ninjas proporciona un motor de reservas que permite las reservas online para tu comunidad. Los miembros y los huéspedes pueden realizar reservas online, pagar y administrar reservas de salas de reuniones en tus instalaciones. También garantiza la disponibilidad de reservas de salas privadas y de reuniones. Está disponible tanto para escritorios como para móviles. </p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>¿Estáis conectados con el terminal punto de venta (tienda de snacks)?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>¡Así es! Tanto si tu terminal punto de venta (POS) funciona en una tienda de snacks, en un restaurante o en una cafetería, nuestro PMS conecta el terminal punto de venta al resto del PMS. Si ya tienes un sistema terminal punto de venta, podemos conectarlo al resto. Si no tienes un sistema terminal punto de venta, te proporcionaremos un sistema terminal punto de venta que se sincronice automáticamente con el resto del PMS.</p>
+                            </div>
+                        </div>
+                        <div class="segment-accordion__item">
+                            <div class="segment-accordion__trigger">
+                                <h3>¿Tenéis un portal de miembros para que estos gestionen sus cuentas?</h3>
+                                <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+                            </div>
+                            <div class="segment-accordion__content">
+                                <p>¡Sí! En el portal de miembros puedes hacer lo siguiente: ver el estado de las reservas, mejorar los planes, referir programas, etc. También puedes incluir aquellas opciones personalizadas que quieras que tus miembros vean en sus portales. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn-more-center">
+                        <!-- translate needed -->
+                        <apex:outputLink value="{!URLFOR($Page.BN_FAQs)}">Más preguntas frecuentes sobre Booking Ninjas</apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /FAQ -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>ES_Visitor</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ES Visitor</label>
+        <sharedTo>
+            <guestUser>BookingNinjasSp</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Article_Link__c</field>
+            <operation>notEqual</operation>
+            <value>NULL</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Visitor</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Visitor</label>
+        <sharedTo>
+            <guestUser>dharroch</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Article_Link__c</field>
+            <operation>notEqual</operation>
+            <value>NULL</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

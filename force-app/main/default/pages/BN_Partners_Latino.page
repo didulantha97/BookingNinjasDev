@@ -1,0 +1,216 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top customer-top customer-top-left">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1">
+                            <a href="https://www.latinohotels.org" class="partners-page__companies-img" target="_blank">
+                                <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/latino-big.png" alt=""/></span>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h2>Latino Hotel Association</h2>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <div class="partners-page">
+                <div class="container">
+                    <div class="costumer-page__bread">
+                            <ul>
+                                <li><a href="/">Homepage </a></li> / 
+                                <li><a href="/partners">Partners</a></li>  /  
+                                <li class="active">Latino Hotel Association</li>
+                            </ul>
+                    </div>
+                    <div class="partners-page__tags">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <article>
+                                        <p>The Latino Hotel Association is dedicated to serving those who want to learn, grow and succeed in the most exciting industry in the world.... hospitality! We educate and nurture passionate individuals in the hospitality industry with a focus on growing Latino and Hispanic leaders. We are committed to expanding the community of Latino Hotel owners and operators. We are a family-focused and inclusive association.</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="partners-page__tags-item">
+                                        <figure>
+                                            <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/partners-tag1.svg" alt=""/></span>
+                                            <figcaption>Headline 1</figcaption>
+                                        </figure>
+                                        <p>HFTP achieves 200% better efficiency by adopting Booking Ninjas</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="partners-page__tags-item">
+                                        <figure>
+                                            <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/partners-tag2.svg" alt=""/></span>
+                                            <figcaption>Headline 1</figcaption>
+                                        </figure>
+                                        <p>A big role HFTP plays in the hospitality industry is bringing together and organizing its expert networks</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="partners-page__tags-item">
+                                        <figure>
+                                            <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/partners-tag3.svg" alt=""/></span>
+                                            <figcaption>Headline 1</figcaption>
+                                        </figure>
+                                        <p>HFTP achieves 200% better efficiency by adopting Booking Ninjas</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="costumer-page__img float_left">
+                                    <figure><img alt="partners" src="https://d1b89zc79exfxt.cloudfront.net/img/partners-img.png"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>For HFTP, handling a hotel shouldn’t be limited to manual operations alone. 
+    
+                                    </h2>
+                                    <p>Moreover, there’s much more work to be done rather than handing tasks that could be better carried out by a property management system, hence the need for a digital solution that can provide the core services needed for the smooth running of a hotel.
+                                    </p>
+                                    <h2>How Booking Ninjas came in</h2>
+                                    <p>The need explained above could be solved by getting individual tools from the AppExchange, or other digital tools store. However, it is of paramount importance to have all your business being run from a centralized application, with just one platform. That’s where Booking Ninjas come in.</p>
+                                    <p>The cloud-based Booking Ninjas platform constitutes a highly specialized solution to hotels intending to run their operations digitally. It offered features that enable CTY Books to perform more efficiently while allowing them integrating several tools for the quality digital management of the hotel.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-page__case">
+                    <div class="container">
+                        <div class="partners-page__case-container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4">
+                                    <section>
+                                    <h2>Case (Study) in Point</h2>
+                                    <p>Learn how Booking Ninjas helped HFTP achieve graceful efficiency. HTFP improves systematic engagement, workflow, and operational speed.
+                                        by adopting the Booking Ninjas system.</p>
+                                    </section>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="costumer-page__business">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <h6>HFTP</h6>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <a href="https://www.hftpsfl.com" target="_blank"><img src="https://d1b89zc79exfxt.cloudfront.net/img/HFTP_Logo.png" alt=""/></a>
+                                            </div>
+                                        </div>
+                                        <article>
+                                            <p>HTFP improves systematic engagement, workflow, and operational speed by adopting the Booking Ninjas system                                    </p>
+                                            <small>&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}" target="_blank">Read The Story</apex:outputLink></small>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-5">
+                                <div class="costumer-page__img float_right">
+                                    <figure><img alt="partners" src="https://d1b89zc79exfxt.cloudfront.net/img/costumer-photo.png"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>Start getting results with
+                                        Booking Ninjas
+                                        
+                                    </h2>
+                                    <p>We are giving you all the property management business solutions served in one platform. From centralized control to 360 analysis, from Artificial Intelligence to high accuracy voice control, from high-end integrations to large scale property management solutions.</p>
+                                    <p>Booking ninjas is the property management solution (PMS) of the future. It’s an all-in-one platform packed with essential components such as booking and point-of-sale systems, but also has features like artificial intelligence (AI) and cloud and mobile accessibility for today’s users. Backed with Salesforce cloud technology, it is sure to make life and business easier for property managers and hoteliers.
+                                        </p>
+                                    <div class="mobile-center">
+                                        <apex:outputLink value="{!URLFOR($Page.BN_Register)}" styleClass="button" target="_blank">Get Booking Ninjas Now</apex:outputLink>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-page__other">
+                    <div class="container">
+                        <h3>Learn More About Other Partners</h3>
+                        <p>Learn how Booking Ninjas help property businesses improve daily yield                    </p>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                     <apex:outputLink value="{!URLFOR($Page.BN_Partners_Salesforce)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/logocolor1.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Salesforce)}">Salesforce</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                     <apex:outputLink value="{!URLFOR($Page.BN_Partners_HFTP)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/logocolor2.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_HFTP)}">HFTP</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                     <apex:outputLink value="{!URLFOR($Page.BN_Partners_Twilio)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/twilio_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Twilio)}">Twilio</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                     <apex:outputLink value="{!URLFOR($Page.BN_Partners_ChannelRush)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/channelrush_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_ChannelRush)}">ChannelRUSH</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                     <apex:outputLink value="{!URLFOR($Page.BN_Partners_YieldPlanet)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/yieldPlanet.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_YieldPlanet)}">YieldPlanet</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                     <apex:outputLink value="{!URLFOR($Page.BN_Partners_Esign)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/eSign_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Esign)}">eSign Genie</apex:outputLink></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

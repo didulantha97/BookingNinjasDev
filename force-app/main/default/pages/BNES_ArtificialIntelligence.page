@@ -1,0 +1,131 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img alt="Integración de Einstein Analytics de Salesforce - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/einstein-top.png"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                    <h1>Integración de Einstein Analytics de Salesforce</h1>
+                                    <p>BookingNinjas, los creadores de la aplicación líder de gestión de propiedades se han asociado recientemente con Salesforce para la integración de Einstein Analytics, un asistente de Inteligencia Artificial (IA) que permite a los administradores y propietarios trabajar de manera más inteligente. Esta asociación ha dado lugar a la aplicación más revolucionaria jamás desarrollada en la industria de la propiedad y hostelería.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content einstein-page ">
+                <div class="einstein-page-analytics">
+                    <div class="container">
+                        <h2 class="about-page-content__title"><span>Una rápida visión general de Einstein Analytics: </span></h2>
+                        <div class="einstein-page-analytics__box">
+                            <div class="einstein-page-analytics__section">
+                                <div class="einstein-page-analytics__img"><figure><img alt="Einstein Analytics Overview - icon - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/core1.png"/><figcaption></figcaption></figure></div>
+                                <div class="einstein-page-analytics__text">
+                                    <p>Es un asistente de CRM. Uno muy inteligente. Funciona con la última tecnología de Inteligencia Artificial y proporciona una asistencia muy necesaria a las empresas que lo utilicen. No es un sustituto de seres humanos - realiza tareas que a los seres humanos les cuesta lograr fácilmente.</p>
+                                </div>
+                            </div>
+                            <div class="einstein-page-analytics__box">
+                                <div class="einstein-page-analytics__section">
+                                    <div class="einstein-page-analytics__img"><figure><img alt="Einstein Analytics Overview - icon - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/core2.png"/><figcaption></figcaption></figure></div>
+                                    <div class="einstein-page-analytics__text">
+                                        <p>Einstein Analytics ayuda a los ejecutivos a rastrear el desempeño de la empresa, a aprender acerca de los nuevos riesgos para prepararse para estos y entender cómo aprovechar los recursos de la empresa de la manera más eficiente. Tiene  la capacidad de predecir inteligentemente el rendimiento de la empresa y proporciona posibles formas de mejorar la eficiencia.</p>
+                                    </div>
+                                </div>
+                                <div class="einstein-page-analytics__box">
+                                    <div class="einstein-page-analytics__section hide-arrow">
+                                        <div class="einstein-page-analytics__img"><figure><img alt="Einstein Analytics Overview - icon - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/core3.png"/><figcaption></figcaption></figure></div>
+                                        <div class="einstein-page-analytics__text">
+                                            <p>Al ser una aplicación informática, Einstein Analytics es imparcial en sus informes sobre los negocios. No es sentimental con los hechos, no camufla la verdad, te dice la verdad sobre tu posición actual y, analizando las estadísticas recientes, te dice lo que puedes hacer para mejorar tu empresa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="einstein-page-analytics__aside">
+                            <div class="row align-items-center">
+                                <div class="col-lg-3 order-lg-1">
+                                    <img alt="Einstein Analytics Overview - icon - 4" class="einstein-page-analytics__aside-img" src="https://d1b89zc79exfxt.cloudfront.net/img/einstein-ico4.png"/>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="about-page-content__title"><span>Aparte de todo eso,</span></div>
+                                    <p>Einstein Analytics te ayuda a mirar hacia afuera. Te muestra una amplia visión del panorama competitivo, donde rastrea las tasas de ganancia, y aprende y señala porque los tratos y negocios en el pasado fueron exitosos o no. Utiliza los datos casi ocultos de su negocio para detectar las tendencias y oportunidades que usted puede aprovechar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="einstein-page-end">
+                    <div class="container">
+                        <div class="about-page-content__title text_right"><span>En el otro extremo,</span></div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-1">
+                                <figure>
+                                    <img alt="Relationships - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/einstein-ico5.png"/>
+                                    <figcaption>Relaciones</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-11">
+                                <article>
+                                    <p>Con un énfasis en un mejor rendimiento empresarial, Einstein puede reforzar su actual relación de trabajo con sus empleados y construir comunidades de aprendizaje basadas en los datos recogidos por Einstein. Al reconocer lo que funciona y lo que no, puede ayudar a su equipo de trabajo a mejorar el desempeño, haciendo que su empresa sea más fuerte en conjunto.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-1">
+                                <figure>
+                                    <img alt="Invitados felices - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/einstein-ico6.png"/>
+                                    <figcaption>Invitados felices</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-11">
+                                <article>
+                                    <p>Einstein Analytics ayuda a las empresas a construir relaciones más profundas con los clientes. Esto es de gran ayuda para las empresas de servicios como los hoteles, en donde la experiencia de los huéspedes es de gran importancia. Einstein Analytics proporciona una visión de 360 grados para mejorar la experiencia de los huéspedes. Esta vista de 360 grados proporciona a los hoteles la información relevante que necesitan para gestionar eficazmente sus interacciones diarias con los huéspedes.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-1">
+                                <figure>
+                                    <img alt="Recopilación de datos - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/einstein-ico7.png"/>
+                                    <figcaption>Recopilación de datos</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-11">
+                                <article>
+                                    <p>Tanto si te gusta el análisis de datos o no, Einstein te ayudará a dar sentido a los datos que recoge. Nuestro software fue construido para acumular, procesar, explicar y almacenar datos de forma segura para su beneficio. Puedes elegir usar Einstein de la manera que mejor ayude a tu negocio, pero es más que un simple recolector de datos.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="einstein-page-bottom">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="einstein-page-bottom__img"><img alt="Integración de Einstein Analytics de Salesforce - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/einstein-img-bottom.png"/></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2>El equipo de Marketing no se queda al margen. Einstein Analytics proporciona una visión precisa de cómo se puede obtener el éxito a través de varias plataformas. Ofrece una web analítica que permite al equipo de marketing hacer un seguimiento del engagement online y permite aprovechar las pistas válidas que ese seguimiento arroja. También proporciona tendencias del mercado, lo que permite crear un mejor contenido y campañas más interactivas, lo que a su vez consigue que los clientes potenciales se conviertan en clientes satisfechos. Einstein Analytics no solo proporciona conocimientos de marketing, sino que también ofrece a los directivos una visión del rendimiento del marketing a través de todos los canales clave.</h2>
+    
+                                <h2>El sistema de gestión de propiedades de Booking Ninjas integrado con Einstein Analytics es una solución muy poderosa para los administradores de propiedades ya que les ayuda a mantener un crecimiento récord en sus negocios. Los informes de los administradores de propiedades que utilizan la aplicación dicen que esta les ha ayudado a impulsar la productividad de sus empleados. El equipo de BookingNinjas está decidido a ayudarle a mejorar constantemente su rendimiento general y, en última instancia, a buscar la satisfacción de sus clientes.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->      
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

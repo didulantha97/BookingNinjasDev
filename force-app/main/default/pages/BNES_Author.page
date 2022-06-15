@@ -1,0 +1,118 @@
+<!--
+  @description       : BN_Author, show the profile page of blog article's author
+  @author            : teguh@bookingninjas.com
+  @last modified on  : 11-24-2020
+  @last modified by  : teguh@bookingninjas.com
+  Modifications Log 
+  Ver   Date         Author                    Modification
+  1.0   11-22-2020   teguh@bookingninjas.com   Initial Version
+-->
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false" controller="BNES_AuthorController">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                    $('.main').addClass('blog-page');
+                });
+            </script>
+
+            <!-- bread -->
+            <nav class="blog-page-bread">
+                <div class="container">
+                    <a href="/es">Página principal</a>
+                    <a href="/es/blog">Blog</a>
+                    <span>Autora Invitada</span>
+                </div>
+            </nav>
+            <!-- /bread -->
+
+            <!-- content -->
+            <div class="container">
+                <div class="blog-profile">
+                    <h1>Consejo Editorial</h1>
+                    <div class="subttle">Autora Invitada</div>
+                    <div class="blog-profile__info">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <apex:outputPanel styleClass="blog-profile__photo" rendered="{!IF(author.Profile_Picture__c != null, true, false)}">
+                                    <apex:image value="{!author.Profile_Picture__c}" alt="{!if(author.Name != null, author.Name, 'Booking Ninjas')} profile photo" />
+                                    <span>{!if(parameterId == 'admin', 'Mr. Admin', author.Salutation + ' ' + author.lastName)}</span>
+                                </apex:outputPanel>
+                            </div>
+                            <div class="col">
+                                <h2>{!if(parameterId == 'admin', 'Admin', author.Name)}</h2>
+                                <span>{!if(parameterId == 'admin', 'Admin, Booking Ninjas', author.Levels__c + ', ' + author.Account.Name)}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-profile__about">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <apex:outputText escape="false" value="{!author.Bio__c}" />
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="blog-profile__aside">
+                                    <h3>Últimos Artículos del Autor</h3>
+                                    <apex:repeat value="{!authorArticles}" var="article">
+                                        <hr />
+                                        <div class="blog-profile__aside-item">
+                                            <apex:outputPanel styleClass="blog-profile__aside-img" rendered="{!IF(author.Profile_Picture__c != null, true, false)}">
+                                                <apex:image value="{!if(parameterId == 'admin', author.Profile_Picture__c, article.Author__r.Profile_Picture__c)}" alt="{!if(parameterId == 'admin', author.Name, article.Author__r.Name)}'s profile photo" />
+                                            </apex:outputPanel>
+                                            <div class="blog-profile__aside-article">
+                                                <apex:outputLink value="{!URLFOR($Page.BN_Article, null, [id=article.Id])}">
+                                                    {!article.Name}
+                                                </apex:outputLink>
+                                                <p>By {!if(parameterId == 'admin', author.Name + ', ' + author.Account.Name, article.Author__r.Name + ', ' + article.Author__r.Account.Name)}</p>
+                                            </div>
+                                        </div>
+                                    </apex:repeat>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-page__related">
+                <div class="container">
+                    <h3 class="blog-page-title text_center">Publicaciones de tendencia</h3>
+                    <div class="row">
+                        <apex:repeat value="{!trendingArticles}" var="trending">
+                            <div class="col-lg-4">
+                                <figure class="blog-page__related-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Article, null, [id=trending.Id])}" styleClass="blog-page__item-img">
+                                        <apex:image alt="{!trending.Name} cover image" value="{!trending.Cover_Photo__c}" />
+                                    </apex:outputLink>
+                                    <figcaption>
+                                        <apex:outputLink value="{!URLFOR($Page.BN_Article, null, [id=trending.Id])}">
+                                            <apex:outputText value="{!trending.Name}" />
+                                        </apex:outputLink>
+                                        <div class="blog-page-author">
+                                            <div class="blog-page-author__name">
+                                                By:
+                                                <a href="{!URLFOR($Page.BN_Author, null, [id=IF(trending.Author__c != null, trending.Author__c, 'admin')])}" class="{!if(trending.Author__r.Show_Author_Page__c != true, 'd-none', '')}">
+                                                    <apex:outputText value="{!if(trending.Author__r.Name != null, trending.Author__r.Name, 'Admin')}" />
+                                                </a>
+                                                <apex:outputText rendered="{!if(trending.Author__r.Show_Author_Page__c != true, true, false)}" value="{!if(trending.Author__r.Name != null, trending.Author__r.Name, 'Admin')}" />
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </apex:repeat>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

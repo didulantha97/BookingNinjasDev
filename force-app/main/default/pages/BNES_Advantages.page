@@ -1,0 +1,205 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BNES_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top advantage-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img alt="Advantages of BookingNinjas Property Management System" src="https://d1b89zc79exfxt.cloudfront.net/img/advantage-top.png"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Ventajas de nuestro sistema de gestión de propiedades</h1>
+                                <div class="advantage-top__video">
+                                    <div class="container">
+                                        <a class="video__img" data-fancybox="fancybox" href="https://www.youtube.com/watch?v=4QXOUYagnbQ">
+                                            <img alt="Bookingninjas Property Management System" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-video.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content advantage-content">
+               <div class="container">
+                   <div class="advantage-page__text">
+                        <article>
+                            <p>Conozca las ventajas de trabajar con Booking Ninjas…</p>
+                            <p>El software de gestión de propiedades Booking Ninjas es para administradores de propiedades que necesitan organizar sus flujos de trabajo y adaptar sus negocios a la era digital. Nuestro software basado en la nube proporciona una transformación digital para su empresa de propiedades de una forma incomparable a cualquier otro sistema PMS. Nuestro PMS Salesforce ofrece a su compañía la tecnología más reciente y avanzada del mercado software. Esta tecnología mejorará cada departamento de su propiedad.</p>
+                        </article>
+                    </div>
+                   <div class="advantage-page__tags">
+                       <div class="row">
+                           <div class="col-lg-4">
+                               <div class="advantage-page__tag">
+                                   <figure>
+                                       <span><img alt="Organización óptima - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/advantage-img1.png"/></span>
+                                       <figcaption class="text_center">Organización<br/>
+                                        óptima</figcaption>
+                                   </figure>
+                                <section>
+                                    <p>Booking Ninjas proporciona organización óptima para todos sus clientes. Mantenga todos los datos de su propiedad y otros documentos importantes juntos en una única, y fácil de usar, plataforma para acceso instantáneo.</p>
+                                </section> 
+                               </div>
+                           </div>
+                           <div class="col-lg-4">
+                               <div class="advantage-page__tag">
+                                   <figure>
+                                       <span><img alt="Movilidad - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/advantage-img2.png"/></span>
+                                       <figcaption>Movilidad</figcaption>
+                                   </figure>
+                                  <section>
+                                      <p>Uno de los mayores beneficios del PMS Booking Ninjas es que está construido en una plataforma totalmente móvil y basada en la nube. Esto facilita a los administradores de propiedades gestionar sus propiedades desde cualquier dispositivo inteligente, desde cualquier lugar del mundo.&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Mobile)}" target="_blank">Las aplicaciones móviles ofrecen una gran cantidad de mejoras</apex:outputLink> para su propiedad.</p>
+                                    </section> 
+                               </div>
+                           </div>
+                           <div class="col-lg-4">
+                               <div class="advantage-page__tag">
+                                   <figure>
+                                       <span><img alt="Personalización - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/advantage-img3.png"/></span>
+                                       <figcaption>Personalización</figcaption>
+                                   </figure>
+                                    <section><p>Nuestro software está completamente integrado y es altamente escalable. Esto significa que puede ser fácilmente personalizado para ajustarse a las necesidades de su propiedad. Alinee su software de gestión de propiedades con los objetivos de su empresa.</p></section> 
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="advantage-page__text">
+                       <article class="text_center">
+                            <h2>Ventajas de nuestro sistema de gestión de propiedades</h2>
+                            <h6>Tecnológicas:</h6>
+                            <figure><img alt="Technological - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantage-img-center.png"/></figure>
+                       </article>
+                       <p>Desde su comienzo, el sistema de gestión de propiedades Booking Ninjas ha puesto énfasis en dar a sus clientes la tecnología más avanzada para ayudar a hacer crecer su negocio de propiedades. Nuestra tecnología se fortaleció a través de una asociación oficial con un gigante de la tecnología, Salesforce. Durante cinco años, hemos sido reconocidos como un PMS Salesforce. Quizás nuestra mayor ventaja tecnológica es nuestro acceso ilimitado a&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_ArtificialIntelligence)}" target="_blank">Einstein Analytics</apex:outputLink> el principal kit de análisis de datos en el mercado software actual. Einstein aporta a los gestores de propiedades herramientas para hacer crecer cada departamento de sus negocios</p>
+                       <p>Una vez que transfiramos el big data de su propiedad a nuestro PMS basado en la nube, la IA Einstein hará las cuentas y proporcionará a su propiedad numerosas sugerencias inteligentes para mejorar su empresa. Aquí encontrará cómo Booking Ninjas y la tecnología Salesforce puede mejorar cada departamento de su propiedad:</p>
+                   </div>
+                   <div class="advantage-page__list">
+                       <div class="row">
+                           <div class="col-lg-6">
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Ventas - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon1.png"/></i>
+                                       <figcaption>Ventas</figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Einstein es capaz de generar puntos de precio óptimos para sus productos y servicios, y así, ahorrarle tiempo en poner precio manualmente a cada artículo</li>
+                                       <li>Obtener un porcentaje preciso de las probabilidades de una venta</li>
+                                       <li>Predecir cuánto tiempo tarda una cuenta en cerrarse</li>
+                                       <li>Enviar recomendaciones oportunas a representantes, sobre comunicaciones con clientes</li>
+                                       <li>Tomar notas de cada posible acuerdo, para que todo su equipo pueda conocer el estado de cada nuevo acuerdo</li>
+                                       <li>Registrar y enviar informes diarios a su equipo antes del trabajo para que sus empleados entiendan mejor en qué deben centrarse.</li>
+                                       <li>Priorizar automáticamente los correos electrónicos más importantes de su bandeja de entrada</li>
+                                       <li>Puede predecir, inteligentemente, previsiones de ingresos para AE individuales o de cualquier parte de la oficina</li>
+                                       <li>Puede evitar exceso de personal mediante el análisis de los datos históricos de su propiedad para sugerir, con precisión, cuántos empleados se necesitan para mantener los ingresos</li>
+                                   </ul>
+                               </div>
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Finanzas - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon2.png"/></i>
+                                       <figcaption>Finanzas</figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Identificar qué clientes tienen un historial de pagos tardíos o cancelaciones para comunicarse mejor con ellos antes de tiempo</li>
+                                       <li>Permita a Einstein leer correos electrónicos de clientes potenciales para determinar las probabilidades que existen de que terminen comprando alguno de sus productos o servicios</li>
+                                       <li>Previsiones precisas sobre cuánto puede esperar hacer de los cobros</li>
+                                       <li>Recomendaciones proporcionadas por IA para sugerir la forma más fácil de recibir pagos vencidos</li>
+                                       <li>Herramientas de asignación presupuestaria que permiten a los gestores de propiedades ver las distribuciones recomendadas para cada departamento de su empresa</li>
+                                       <li>Formular predicciones para las diferentes comisiones de los equipos de venta para saber cuánto presupuesto hay que apartar para cada uno</li>
+                                       <li>Gestionar consultas de facturas a través de un chatbot. Los clientes tendrán acceso a un soporte las veinticuatro horas del día, los siete días de la semana, para todas sus preguntas y preocupaciones</li>
+                                   </ul>
+                               </div>
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Comercio - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon3.png"/></i>
+                                       <figcaption>Comercio</figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Predecir con precisión qué tipos de habitaciones funcionarán mejor durante una estación específica o tiempo del año</li>
+                                       <li>Añadir incentivos para huéspedes para reservar directamente desde su página web</li>
+                                       <li>Gestionar descuentos así cómo a qué clientes se les ofrecen</li>
+                                       <li>Entregar automáticamente resultados de búsqueda que encajen con el presupuesto particular del cliente</li>
+                                       <li>Hacer que su página web recomiende ofertas, para vender más, a aquellos clientes que reserven online</li>
+                                       <li>Establecer incentivos para sus clientes por correr la voz sobre su empresa y referir nuevos clientes para su propiedad</li>
+                                       <li>Prever la demanda de sus habitaciones para evitar overbooking</li>
+                                       <li>Deje que Einstein Vision elija las mejores fotografías para atraer clientes a su página web</li>
+                                   </ul>
+                               </div>
+                           </div>
+                           <div class="col-lg-6">
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Marketing - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon4.png"/></i>
+                                       <figcaption>Marketing</figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Predecir con precisión cuántos clientes potenciales generará cada táctica de marketing, permitiéndole que se centre en los que tendrán más posibilidades de convertirse en clientes</li>
+                                       <li>Analizar los hábitos de compra de sus clientes potenciales para atraerlos mejor a su propiedad</li>
+                                       <li>Comparar clientes potenciales con sus consumidores más entregados, sorteando clientes potenciales por lo cerca que se comparan</li>
+                                       <li>Predecir la tasa de éxito de las nuevas campañas de marketing para saber si vale la pena invertir o no</li>
+                                       <li>Sugerencias de IA para ayudar a mejorar y optimizar las existentes campañas</li>
+                                       <li>Mencionar automáticamente todas sus fotografías, con las palabras clave que quiera, para ayudarle a encontrar fácilmente, las imágenes más relevantes en todo momento</li>
+                                       <li>Predecir cuándo es el mejor momento para comunicarse con un cliente basándose en sus hábitos de compromiso</li>
+                                       <li>Conocer qué forma de comunicación (correo electrónico, redes sociales, llamadas telefónicas, etc.) es la mejor manera para ponerse en contacto con el cliente</li>
+                                       <li>Anticipar las preferencias de su cliente a través del análisis de sus hábitos de compras</li>
+                                   </ul>
+                               </div>
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Servicio al cliente - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon5.png"/></i>
+                                       <figcaption>Servicio al cliente</figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Predecir fácilmente cómo de satisfecho está un cliente con su servicio, usando una puntuación estandarizada</li>
+                                       <li>Mantener registros de todas las comunicaciones previas con un cliente particular, para facilitar a su representante de servicio al cliente la llamada</li>
+                                       <li>Permitir que la IA analice cualquier producto dañado para valorar si necesita mantenimiento o no</li>
+                                       <li>Predecir cuánto tiempo tardará un agente particular en resolver un caso</li>
+                                       <li>Categorizar llamadas basándose en el nivel de dificultad y dirigirlas a agentes específicos</li>
+                                       <li>Chatbots automatizados contestando llamadas para dirigirlas directamente al departamento adecuado</li>
+                                       <li>Estimar tasas de retención de clientes basándose en el chat y el historial de compras</li>
+                                       <li>Identificar clientes insatisfechos y generar recomendaciones para representantes de servicio al cliente para ayudarles a mejorar esas relaciones</li>
+                                       <li>Más oportunidades de ventas cruzadas mediante el análisis del historial de compras del cliente</li>
+                                   </ul>
+                               </div>
+                               <div class="advantage-page__list-item">
+                                   <figure>
+                                       <i><img alt="Recursos humanos - icono" src="https://d1b89zc79exfxt.cloudfront.net/img/advantages-icon6.png"/></i>
+                                       <figcaption>Recursos humanos</figcaption>
+                                   </figure>
+                                   <ul>
+                                       <li>Predecir qué objetivos anuales deben cumplir los empleados por sí mismos y que sean capaces de alinearlos con los objetivos de su compañía</li>
+                                       <li>Identificar qué posiciones de su propiedad tienen una alta tasa de rotación</li>
+                                       <li>Permitir que Einstein Prediction Builder determine los mejores candidatos para los puestos vacantes, mediante la filtración de las aplicaciones recibidas</li>
+                                       <li>Recopilar información de los candidatos a un puesto a través del Chatbot</li>
+                                       <li>Orden de importancia de los trabajos para entender mejor qué puestos vacantes son los más importantes que ocupar</li>
+                                       <li>Hacer el seguimiento de la variedad de trabajo de un empleado para facilitar el balance de proyectos duros y divertidos</li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="advantage-page__text">
+                       <article class="text_center">
+                            <h2>¿Por qué este sistema de gestión de propiedades hoteleras es mejor que el resto?</h2>
+                       </article>
+                       <p>Booking Ninjas puede transformar digitalmente su negocio de propiedades para estar preparado para la Cuarta Revolución Industrial. El paso hacia la digitalización ya no será una opción, y no queremos ver cómo las empresas mueren como resultado de no adaptarse a la era digital.</p>
+    
+                        <p>¿Está interesado en implementar nuestro PMS Salesforce a su propiedad?&nbsp;<apex:outputLink value="{!URLFOR($Page.BNES_Calendly)}" styleClass="button desktop-button">Con tan solo una llamada</apex:outputLink>, le ayudaremos a encontrar la mejor solución para su propiedad.</p>
+                   </div>
+               </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

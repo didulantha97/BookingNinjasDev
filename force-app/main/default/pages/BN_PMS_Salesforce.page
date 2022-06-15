@@ -1,0 +1,145 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top pms-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img alt="Integration with Salesforce Platform" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-top.png"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>We’re built on the Salesforce Platform</h1>
+                                <p>The Salesforce platform is constantly shaping itself to meet the demands of our current business environment while setting standards for a new digital age. From the field of cloud computing to Artificial Intelligence, Salesforce has always aligned its efforts into ensuring it gives the best experience to users of their services. 
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content pms-saleforce-content">
+                <div class="container">
+                    <p>This is our plan, too, so we decided to team up with Salesforce to achieve that end. We plan to give the users of the Booking Ninjas system exceptional property management experiences and quality guest relationship management, more commonly known as customer relationship management (CRM). We understand that to provide such an experience, we must deliver in user experience, technology flow, scalability and other features that make an ROI more likely as soon as possible.</p>
+                    <p>A way to give that to our customers is by teaming up with the giant tech company, Salesforce, which has already shown that it could give similar experiences and outcomes to users. We are confident in this partnership, and we have had sensational results to prove us right.</p>
+                    <figure class="pms-saleforce-content__img"><img alt="Salesforce Partner - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/crm-pms.png"/></figure>
+                </div>
+                <div class="container">
+                    <div class="solution-page-integration">
+                        <div class="container">
+                            <h2>What Salesforce means for our customers                        </h2>
+                            <div class="solution-page-integration__section">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="solution-page-integration__item">
+                                            <div class="solution-page-integration__image">
+                                                <figure><img alt="Cloud-based management - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-s-icon-salesforce.png"/></figure>
+                                            </div>
+                                            <section>
+                                                <h6>Cloud-based management: 
+                                                </h6>
+                                                <p>It’s no news that Salesforce is the world’s leading figure in cloud computing. We have been able to launch the Booking Ninjas system on the Salesforce cloud platform, giving our users the flexibility cloud computing provides. This entails using a powerful application independent of time, location or device. Our software-as-a-service system, courtesy of Salesforce, means our users only have to type in the URL, put in their credentials and use the system.
+                                                </p>
+                                                <p>This method of software usage has been instrumental in delivering quality user experiences and guaranteeing productivity.
+                                                    </p>
+                                            </section>
+                                        </div>
+                                        <div class="solution-page-integration__item">
+                                            <div class="solution-page-integration__image">
+                                                <figure><img alt="Speed - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-s-icon-acceleration.png"/></figure>
+                                            </div>
+                                            <section>
+                                                <h6>Speed: </h6>
+                                                <p>
+                                                    It’s a critical feature of the industry. Due to exposure to rapid satisfaction brought about by the 4th Industrial Revolution, guests/customers today have higher expectations as to how they are attended to. It’s becoming obvious as more and more guests tend to book reservations via the internet, make payments online so they don’t have to deal with any time-wasting complications and chat with online bots for simple queries instead of sending emails.</p>
+                                                    
+                                                <p> The Salesforce-based Booking Ninjas system helps store your important data in high-performance servers which makes retrieving them as fast as possible.
+                                                    </p>
+                                            </section>
+                                        </div>
+                                        <div class="solution-page-integration__item">
+                                            <div class="solution-page-integration__image">
+                                                <figure><img alt="Updates and upgrades - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-s-icon-ability.png"/></figure>
+                                            </div>
+                                            <section>
+                                                <h6>Updates and upgrades:</h6>
+                                                <p>
+                                                    Being on the Salesforce cloud platform means any updates can be made simultaneously for every single user on the platform. This also applies to upgrades of key components of the system. </p>
+                                                    
+                                                <p>This removes the hassle of manually having to implement new features separately for every user. It ensures everyone is getting the best of the current moment without fear of being outperformed by the competition’s more advanced technology.
+                                                    
+                                                    </p>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="solution-page-integration__item">
+                                            <div class="solution-page-integration__image">
+                                                <figure><img alt="Integrations - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-s-icon-integration.png"/></figure>
+                                            </div>
+                                            <section>
+                                                <h6>Integrations: </h6>
+                                                <p> Salesforce platforms are integration-friendly, which is exactly what is needed in today’s business environment. A recent report showed that 84% of businesses are stalled by integration challenges. These integration challenges are mainly due to the organization using a system that doesn’t favor integrations or doesn’t use any form of integrations at all.
+                                                </p>
+                                                <p>Integrations are very essential to business growth, especially in the hospitality industry, where we need to be attentive, flexible and adaptive to customers’ behavior.
+                                                </p>
+                                            </section>
+                                        </div>
+                                        <div class="solution-page-integration__item">
+                                            <div class="solution-page-integration__image">
+                                                <figure><img alt="Scalability - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-s-icon-scalable.png"/></figure>
+                                            </div>
+                                            <section>
+                                                <h6>Scalability:
+                                                    
+                                                    </h6>
+                                                <p>The scope of your organization will expand over time. Or it may be restructured. This will call for some scaling work to be done in order to reflect the changes your organization has gone through. Our deployment on the Salesforce platform helps guarantee that won’t be a problem.
+                                                </p>
+                                                <p>The Salesforce platform is scalable enough to fit organizations of different sizes, ranging anywhere from a one-man venture to one with thousands of employees. Things will go smoothly like nothing significant ever happened, and with the exception of a price increase due to users and units, it would still be cost-friendly.
+                                                    
+                                                </p>
+                                            </section>
+                                        </div>
+                                        <div class="solution-page-integration__item">
+                                            <div class="solution-page-integration__image">
+                                                <figure><img alt="Ease of use - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/pms-s-icon-message.png"/></figure>
+                                            </div>
+                                            <section>
+                                                <h6>Ease of use:
+                                                    
+                                                    </h6>
+                                                <p>Our Salesforce inspired user interface makes it very easy for users to intuitively make use of the system. Every part of the visible features, the feedback, the navigation flow, and style consistency makes it a platform that can be easily used without any previous instruction.
+                                                </p>
+                                                <p>We understand the 80/20 rule applies even to digital technology, so as a Salesforce feature, it is easy to customize the layout arrangements, giving our users the option of making their most used feature instantly accessible to them.
+                                                    
+                                                    
+                                                </p>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                   <p>These are the reasons Salesforce is a perfect choice for our system. The Booking Ninjas system combines a property management system (PMS) and a customer relationship management (CRM) system to give our users the ability to have a complete experience in one platform. Such a system can only be successful if built on the appropriately powerful platform fit for it. Salesforce is ours.</p> 
+                   <p>With that in mind, we can genuinely assure you of the best digital management experience available. We plan to move in ways that guarantee our vision, which is to be the leading provider of guest targeted digital solutions in the hospitality industry. The only way to get there is to provide long-term beneficial digital solutions to all our users.</p>
+                   <blockquote>
+                    <strong>Note:</strong> We offer the Booking Ninjas platform either as a standalone application or as a package to an existing Salesforce enterprise account. Either way, 
+                    we are built with the Salesforce stack, so you get the full Salesforce experience, and at minimal costs.
+                   </blockquote> 
+                </div>
+            </div>
+            <!-- /content -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

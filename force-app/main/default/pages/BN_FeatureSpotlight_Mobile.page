@@ -1,0 +1,155 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- feature-spotlight -->
+            <div class="feature-spotlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider">
+                                <div class="feature-spotlight__slider-big">
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Home.png" data-fancybox="gallery"><img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Home.png" alt="PMS mobile app"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Room_Service_1.png" data-fancybox="gallery"><img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Room_Service_1.png" alt="Property management mobile app"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Room_Servic_2.png" data-fancybox="gallery"><img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Room_Servic_2.png" alt="PMS in phone"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Room_Service_3.png" data-fancybox="gallery"><img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Room_Service_3.png" alt="PMS mobile"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Purchase_history.png" data-fancybox="gallery"><img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Purchase_history.png" alt="Mobile app for property management"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Waiting_for_a_room.png" data-fancybox="gallery"><img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Waiting_for_a_room.png" alt="Booking Ninjas mobile app"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/QR_lock.png" data-fancybox="gallery"><img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/QR_lock.png" alt="PMS mobile app"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/QR_lock_2.png" data-fancybox="gallery"><img alt="Property management mobile app - 1" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/QR_lock_2.png"/></a>
+                                    </div>
+                                </div>
+                                <div class="feature-spotlight__slider-small">
+                                    <div>
+                                        <img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Home.png" alt="PMS mobile app"/>
+                                    </div>
+                                    <div>
+                                        <img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Room_Service_1.png" alt="Property management mobile app"/>
+                                    </div>
+                                    <div>
+                                        <img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Room_Servic_2.png" alt="PMS in phone"/>
+                                    </div>
+                                    <div>
+                                        <img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Room_Service_3.png" alt="PMS mobile"/>
+                                    </div>
+                                    <div>
+                                        <img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Purchase_history.png" alt="Mobile app for property management"/>
+                                    </div>
+                                    <div>
+                                        <img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/Waiting_for_a_room.png" alt="Booking Ninjas mobile app"/>
+                                    </div>
+                                    <div>
+                                        <img src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/QR_lock.png" alt="PMS mobile app"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Property management mobile app - 1" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/mobile/QR_lock_2.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider-text">
+                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="back">&#x3C; GO BACK</apex:outputLink>
+                                <h1>PMS Mobile App</h1>
+                                <p>Employee mobility is becoming increasingly more important to the modern day worker and the modern day workflow. In fact, over the past decade, mobile usage has increased by over 700% while desktop and laptop use have plateaued. To that point, approximately 81% of people in the world own a smartphone. This percentage is widely composed of millenials who represent the majority of a hotel’s customer base.</p>
+                                <p>The majority of millennials say their smartphone never leaves their side for the duration of their day. This means there is a huge demand for businesses to be able to offer mobile accessibility to its customer base and its employees. In fact, over 53% of workers telecommute more than half of the work week. As for its impact on business, about three quarters of the world population open business emails on smartphones. </p>
+                                <p>Finding a software solution to help your business adapt to the technological advancement of the modern-day workplace is extremely valuable. Enterprise mobility is the sharing of information across a variety of mobile devices. This allows businesses to be run from any smart device anywhere in the world. Today’s hospitality businesses must be dynamic.</p>
+                                <p><apex:outputLink value="{!URLFOR($Page.BN_Data)}" target="_blank">Data rules everything</apex:outputLink>. Access, storage, and usage can’t be limited. Furthermore, data on the go gives companies an advantage. Cloud-based storage is a property manager’s best friend. Staying on top of technological trends is easier with a&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Solutions)}" target="_blank">cloud-based property management system</apex:outputLink> and will keep your property ahead of the curve. Also, property businesses need to prioritize scalability which is what Booking Ninjas excels at. We can customize our pms to fit the specific needs of your property, allowing you to hit your KPIs regularly. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer-page__content">
+                        <div class="container">
+                            <div class="costumer-page__view-list">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-9">
+                                        <article>
+                                            <h2>Mobile Accessibility </h2>
+                                            <p>From top to bottom, hotel workers need to be accessible at all times. No more missed calls waiting at the office. The digital age means customers having access to you at all times. A property management system allows you to put your work phone in your pocket. Everything you need to run your property can be accessed through your mobile device.</p>
+                                            <div class="costumer-page__view-list_section">
+                                               <p>Additionally, a forward thinking PMS such as Booking Ninjas allows you to not only see who’s calling but also to view all prior communication with the client such as past emails, call notes, and purchase history. Issue work orders to your employees from the convenience of your phone, tablet, or laptop. Every aspect of our property software is usable on your mobile device.</p>
+                                               <p>A major problem hospitality businesses have had in the past, specifically in the sales department, was tracking calls when business was being done outside of the office. This would cause issues when trying to analyze factors such as call times, call length, and intel on what the call entailed. With a digital property management system, that isn’t a problem. Since you can access the full pms on your mobile device, all work calls are tracked and can be recorded. This also helps&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Einstein)}" target="_blank">AI features</apex:outputLink> accurately analyze call data and create smart suggestions for your property business.</p>
+                                               <p>An added benefit to going digital is the ability to transfer a call from your office phone to your mobile device seamlessly. There’s no more hanging up on a client while you run down to your car at the end of a work day. This way, clients don’t have your personal number and you can keep business relationships professional. </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <h2>Integrations</h2>
+                                    <p class="text_center"><strong>But the info your pms receives is not just your company’s data. Booking Ninjas offers&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Integrations)}" target="_blank">dozens of integration possibilities</apex:outputLink> for your property including: </strong></p>
+                                    <ul>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>1</span></span>
+                                            <small><b>Maintenance/Housekeeping</b> - Know the condition of your property at any time. Have any member of your staff log defects in your property. And fix problems faster than ever before.</small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>2</span></span>
+                                            <small><b>GDA/OTA Distribution Websites</b> - Control all info on your booking channels. Set room rates, stay requirements, and availability on outside sites all from your pms. </small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>3</span></span>
+                                            <small><b>AppExchange</b> - Due to our Salesforce partnership, you may integrate any app on the AppExchange marketplace to your pms. </small>
+                                        </li>
+                                        <li>
+                                            <span class="feature-spotlight__text-section-numb"><span>4</span></span>
+                                            <small><b>Financial</b> - Integrate the best accounting services to your pms to keep track of budgets on the fly.</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center text_center">
+                                <div class="col-lg-9">
+                                    <p>It’s important to understand that your property management system is limitless. With a wide variety of integrations from outside sources, your cloud-based pms becomes a melting pot of digital solutions. In today’s digital world, hoteliers and property managers need pms mobility to keep up with the demands of the industry and to attract millenials, the bulk of your customer base. </p>
+                                    <p>With companies turning to more remote work, you need a system that has the capability to increase efficiency in a work-from-home environment. The Booking Ninjas property management system fits the bill by providing top of the line technology to increase mobility and provide advancements to a property manager’s workflow. </p>
+                                    <p>Learn more about our mobile property software to your hospitality business&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}" target="_blank">here. Or schedule a call with us here!</apex:outputLink> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__pager">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Payment)}" styleClass="feature-spotlight__pager-item">
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_Left-black.png" alt=""/></i>
+                            <b>Advanced Payment Features</b>
+                        </apex:outputLink>
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_Report)}" styleClass="feature-spotlight__pager-item">
+                            <b>Custom Reporting Software</b>
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_right.png" alt=""/></i>
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature-spotlight -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

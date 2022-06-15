@@ -1,0 +1,373 @@
+<apex:page standardController="Quote" extensions="GenerateInvoicePDFPassthroughController" renderAs="pdf" showHeader="false"
+    sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <style>
+            table {
+                border-spacing: 0;
+                border-collapse: collapse;
+                width: 100%;
+                font-size: 12px;
+            }
+
+            .invoice-table thead th,
+            .invoice-table tbody tr.footer td {
+                background: #EDF2F6;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 12px;
+                font-weight: 600;
+                text-align: left;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .invoice-table tbody td {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .text-normal {
+                font-weight: normal;
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .text-section__header {
+                font-weight: 600;
+                font-size: 18px;
+                color: #1966F4;
+            }
+
+            .text-right {
+                text-align: right !important;
+            }
+
+            .button-orange {
+                padding: 20px 30px;
+                min-width: 200px;
+                display: inline-block;
+                font-family: Ubuntu, MuseoSansCyrl, Arial, sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.18px;
+                text-align: center;
+                text-decoration: none;
+                -webkit-appearance: none;
+                color: #fff;
+                background-color: #f79c6a;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body class="invoice-page">
+        <div class="wrapper">
+            <!--header-->
+            <table style="font: 9pt 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; width: 100%;padding-bottom:100px;">
+                <tr>
+                    <td width="100%" colspan="2">
+                        <table style="width:100%;">
+                            <tr>
+                                <th width="69%">
+                                    <apex:image value="{!$Resource.LogoNew}" width="200px" alt="Logo" />
+                                </th>
+                                <th width="31%">
+                                    <table>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h3>Booking Ninjas</h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-normal">Website</th>
+                                            <td>:&nbsp;
+                                                <a href="https://www.bookingninjas.com" class="text-normal">www.bookingninjas.com</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-normal">Phone</th>
+                                            <td>:&nbsp;
+                                                <a href="tel:+19176002345" class="text-normal">+1 917 600 2345</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-normal">Email</th>
+                                            <td>:&nbsp;
+                                                <a href="mailto:billing@bookingninjas.com" class="text-normal">billing@bookingninjas.com</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>Invoice</h2>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="69%">
+                        <table>
+                            <tr>
+                                <th colspan="2">
+                                    <h3>Client Information</h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th width="25%">Account</th>
+                                <td width="75%">:&nbsp;{!quote.Account.Name}</td>
+                            </tr>
+                            <tr>
+                                <th>Name</th>
+                                <td>:&nbsp;{!quote.Contact.Name}</td>
+                            </tr>
+                            <tr>
+                                <th>Phone Number</th>
+                                <td>:&nbsp;{!quote.Account.Phone}</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>:&nbsp;{!quote.Contact.Email}</td>
+                                <!-- <td>:&nbsp;{!quote.Contact.Email}</td> -->
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="31%">
+                        <table>
+                            <tr>
+                                <th>
+                                    <h3>&nbsp;</h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th> Invoice No.</th>
+                                <td>
+                                    : <strong>{!quote.QuoteNumber}</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th> Expiration Date</th>
+                                <td>:&nbsp;
+                                    <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                        <apex:param value="{!quote.ExpirationDate}" />
+                                    </apex:outputText>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Effective Date</th>
+                                <td>:&nbsp;
+                                    <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                        <apex:param value="{!quote.Effective_Date__c}" />
+                                    </apex:outputText>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Total (USD)</th>
+                                <td>:&nbsp;
+                                    <apex:outputText value="${0, number, ###,##0.00}">
+                                        <apex:param value="{!quote.GrandTotal}" />
+                                    </apex:outputText>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>&nbsp;</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="invoice-card" colspan="2">
+                        <div class="scroll-container">
+                            <table class="invoice-table">
+                                <!-- Don't delete "empty-col" -->
+                                <thead>
+                                    <tr>
+                                        <th class="empty-col"></th>
+                                        <th width="25%">Product</th>
+                                        <th width="12.5%">Billing Period</th>
+                                        <th width="30%">Notes</th>
+                                        <th width="14%">Price</th>
+                                        <th>Quantity</th>
+                                        <th class="text-right">Total</th>
+                                        <th class="empty-col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="extra-line">
+                                        <td class="empty-col"></td>
+                                        <td>Booking Ninjas Application</td>
+                                        <td>
+                                            {!item.Payment_Type__c}
+                                        </td>
+                                        <td>
+                                            {!item.Product2.Name} Plan ({!item.Product2.Size__c} units)
+                                        </td>
+                                        <td>
+                                            <apex:outputText value="${0, number, ###,##0.00}">
+                                                <apex:param value="{!subscriptionAmountEach}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td>{!item.Quantity}</td>
+                                        <td class="text-right">
+                                            <apex:outputText value="${0, number, ###,##0.00}">
+                                                <apex:param value="{!subscriptionAmountTotal}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                    <tr class="extra-line">
+                                        <td class="empty-col"></td>
+                                        <td>Implementation</td>
+                                        <td>One Time</td>
+                                        <td>Custom workflows, development, requirement analysis, configuration, onboarding</td>
+                                        <td>
+                                            <apex:outputText value="${0, number, ###,##0.00}">
+                                                <apex:param value="{!oneTimeAmount}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td>1.00</td>
+                                        <td class="text-right">
+                                            <apex:outputText value="${0, number, ###,##0.00}">
+                                                <apex:param value="{!oneTimeAmount}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                    <tr class="extra-line">
+                                        <td class="empty-col"></td>
+                                        <td>- Implementation Deposit</td>
+                                        <td>{!item.Product2.ImplementationDeposit__c}%</td>
+                                        <td>Pay the Implementation Fee to start your implementation process</td>
+                                        <td>
+                                            <apex:outputText value="${0, number, ###,##0.00}">
+                                                <apex:param value="{!oneTimeDepositAmount}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                    <tr class="extra-line">
+                                        <td class="empty-col"></td>
+                                        <td>- Implementation Balance</td>
+                                        <td>{!oneTimePercentageAmountLeft}%</td>
+                                        <td>The amount left to pay to confirm your subscription</td>
+                                        <td>
+                                            <apex:outputText value="${0, number, ###,##0.00}">
+                                                <apex:param value="{!oneTimeDepositLeftAmount}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                    <tr class="extra-line">
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                    <tr class="extra-line">
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                    <tr class="footer" style="{!IF(showOneTimeDiscount, '', 'display:none;')}">
+                                        <td class="empty-col"></td>
+                                        <td colspan="5" class="text-right">Handling Fee Discount ({!oneTimeDiscountPercentage}%):</td>
+                                        <td class="text-right">
+                                            <apex:outputText value="- ${0, number, ###,##0.00}">
+                                                <apex:param value="{!oneTimeDiscountAmount}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                    <tr class="footer" style="{!IF(showSubscriptioDiscount, '', 'display:none;')}">
+                                        <td class="empty-col"></td>
+                                        <td colspan="5" class="text-right">Recurring Fee Discount ({!subscriptionDiscountPercentage}%):</td>
+                                        <td class="text-right">
+                                            <apex:outputText value="- ${0, number, ###,##0.00}">
+                                                <apex:param value="{!subscriptionDiscountAmount}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                    <tr class="footer">
+                                        <td class="empty-col"></td>
+                                        <td colspan="5" class="text-right">Grand Total:</td>
+                                        <td class="text-right">
+                                            <apex:outputText value="${0, number, ###,##0.00}">
+                                                <apex:param value="{!quote.GrandTotal}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                    <tr class="footer">
+                                        <td class="empty-col"></td>
+                                        <td colspan="5" class="text-right">Due Date:</td>
+                                        <td class="text-right">
+                                            <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                                <apex:param value="{!quote.Due_Date__c}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                    <tr class="footer">
+                                        <td class="empty-col"></td>
+                                        <td colspan="5" class="text-right">Due Now ({!item.Product2.ImplementationDeposit__c}% of the Handling fee):</td>
+                                        <td class="text-right">
+                                            <apex:outputText value="${0, number, ###,##0.00}">
+                                                <apex:param value="{!quote.Due_Now__c}" />
+                                            </apex:outputText>
+                                        </td>
+                                        <td class="empty-col"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="https://www.bookingninjas.com/checkout?id={!quote.Id}&order={!item.Product2.Hierarchy_Order__c}&length={!billingCycle}" class="button-orange place-order-btn" style="float:right;">Place Order</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-section row" colspan="2">
+                        <div class="col-12 col-lg-7">
+                            <p class="text-section__header">What happens next?</p>
+                            <ul>
+                                <li>Placing an order will kickstart your implementation (POC) process.</li>
+                                <li>Two weeks into implementation, you will be required to pay the balance. You can opt out of paying your balance if you’re unsatisfied with the POC progress and want to discontinue your journey with us.</li>
+                                <li>After the implementation process, we will send you a link to confirm your account activation and become a fully subscribed user.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+
+    </html>
+
+</apex:page>

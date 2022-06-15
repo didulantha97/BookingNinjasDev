@@ -1,0 +1,695 @@
+<apex:page controller="BN_CheckoutController" action="{!redirectAction}" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false"
+    applyBodyTag="false" applyHtmlTag="false" cache="true">
+    <html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="title" content="{!title}" />
+        <meta name="description" content="{!description}" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="p:domain_verify" content="2053f77bff71fd1688a932c54e2e4ecc" />
+        <title>{!title}</title>
+
+        <link rel="icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/favicon.ico" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/fontawesome.css" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/slick.css" />
+        <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/bootstrap-grid.css" />
+        <link href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/screen.css" rel="stylesheet" media="screen" />
+        <link href="https://www.bookingninjas.com/{!IF(page = 'software-for-property-managers', '', page)}" rel="canonical" />
+
+        <meta property="og:title" content="{!title}" />
+        <meta property="og:site_name" content="Booking Ninjas" />
+        <meta property="og:url" content="https://www.bookingninjas.com/{!page}" />
+        <meta property="og:description" content="{!description}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="{!ogImage}" />
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-PQ4V7BZ');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Structured Data -->
+        <apex:outputText value="{!structuredData}" escape="false" />
+        <!-- End Structured Data -->
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/jquery.js"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+    </head>
+
+    <body class="no-header">
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ4V7BZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <link rel="stylesheet" href="https://eggshell-quoll-1301.twil.io/assets/intlTelInput.css" />
+        <style>
+            .hidden {
+                display: none;
+            }
+
+            button:hover {
+                filter: contrast(115%);
+            }
+
+            button:disabled {
+                opacity: 0.5;
+                cursor: default;
+            }
+
+            button:hover:disabled {
+                background: #ffb800;
+            }
+
+            /* spinner/processing state, errors */
+
+            .spinner,
+            .spinner:before,
+            .spinner:after {
+                border-radius: 50%;
+            }
+
+            .spinner {
+                color: #ffffff;
+                font-size: 22px;
+                text-indent: -99999px;
+                margin: 0px auto;
+                position: relative;
+                width: 20px;
+                height: 20px;
+                box-shadow: inset 0 0 0 2px;
+                -webkit-transform: translateZ(0);
+                -ms-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+
+            .spinner:before,
+            .spinner:after {
+                position: absolute;
+                content: "";
+            }
+
+            .spinner:before {
+                width: 10.4px;
+                height: 20.4px;
+                background: #f79c6a;
+                border-radius: 20.4px 0 0 20.4px;
+                top: -0.2px;
+                left: -0.2px;
+                -webkit-transform-origin: 10.4px 10.2px;
+                transform-origin: 10.4px 10.2px;
+                -webkit-animation: loading 2s infinite ease 1.5s;
+                animation: loading 2s infinite ease 1.5s;
+            }
+
+            .spinner:after {
+                width: 10.4px;
+                height: 10.2px;
+                background: #f79c6a;
+                border-radius: 0 10.2px 10.2px 0;
+                top: -0.1px;
+                left: 10.2px;
+                -webkit-transform-origin: 0px 10.2px;
+                transform-origin: 0px 10.2px;
+                -webkit-animation: loading 2s infinite ease;
+                animation: loading 2s infinite ease;
+            }
+
+            @-webkit-keyframes loading {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes loading {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+
+        </style>
+        <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+
+        <div class="wrapper">
+            <!--main-->
+            <div class="main">
+                <div class="pricing-hero checkout-hero">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-lg-5 order-lg-1">
+                                <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/checkout_image.png" alt="Booking Ninjas PMS Implementation"
+                                />
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <h1>
+                                    KickStart Your Booking Ninjas
+                                    <span class="color-blue">PMS Implementation</span>
+                                </h1>
+                                <p>Enjoy the convenience of a modern PMS while creating a smooth execution of your business’s
+                                    operations. A seamless process to yield maximum results. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <div class="checkout-process">
+                                    <h2 class="checkout-process__title">The Payment Process</h2>
+                                    <p>Make Booking Ninjas your new PMS with 3 easy steps:</p>
+                                    <ul>
+                                        <li class="wow fadeIn">
+                                            <b>Step ONE:</b>
+                                            <br/>Place your order and pay a
+                                            <big>
+                                                <apex:outputText value="{0, number, #0}" styleClass="percentage-deposit">
+                                                    <apex:param value="{!package.depositPercentage}" />
+                                                </apex:outputText>%
+                                            </big>
+                                            deposit of the implementation (POC) fee to kickstart the process.
+                                        </li>
+                                        <li class="wow fadeIn">
+                                            <b>Step TWO:</b>
+                                            <br/>Once the initial deposit is received, our implementation team will contact you within 24hrs to review the implementation process.
+                                        </li>
+                                        <li class="wow fadeIn">
+                                            <b>Step THREE:</b>
+                                            <br/>Two weeks into implementation, you will be required to pay the balance fee of 
+                                            <big>
+                                                <apex:outputText value="{0, number, #,##0}." styleClass="reminder-deposit">
+                                                    <apex:param value="{!package.depositReminder}" />
+                                                </apex:outputText>
+                                            </big>
+                                            You can opt out of paying your balance if you’re unsatisfied with the POC progress and want to discontinue your journey with us.
+                                            <br/><br/>Once your balance is paid, you may activate your account and release to your users.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="checkout-process">
+                                    <h2 class="checkout-process__title">The Implementation Process</h2>
+                                    <ul>
+                                        <li class="wow fadeIn">
+                                            <b>Stage ONE:</b>
+                                            <br/>Creation of your instance based on finalized tailor-made specifications as agreed upon.
+                                        </li>
+                                        <li class="wow fadeIn">
+                                            <b>Stage TWO:</b>
+                                            <br/>Training of key users on system modalities and polishing of procedures for optimum utilization. 
+                                        </li>
+                                        <li class="wow fadeIn">
+                                            <b>Stage THREE:</b>
+                                            <br/>Progress updates weekly until POC is complete and you can activate your account for a full subscription.
+                                            <br/><br/>Note that during this process, there will be weekly call sessions to ensure complete transparency.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="gif" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;width:100%;background: rgba(0,0,0,0.75) url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/loading.gif) no-repeat center center;z-index: 10000;"/>
+                            <!-- checkout form -->
+                            <div class="col-12 col-lg-5">
+                                <apex:form id="checkout-form" styleClass="checkout-form">
+                                    <!-- First step -->
+                                    <div class="checkout-form__first-step steps">
+                                        <div class="checkout-form-header text_center">
+                                            <p>Start Implementation
+                                                <br/> With Just
+                                                <span class="color-blue">
+                                                    <apex:outputText value="{0, number, #0}" styleClass="percentage-deposit">
+                                                        <apex:param value="{!package.depositPercentage}" />
+                                                    </apex:outputText>% Deposit
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="checkout-form-body">
+                                            <div class="checkout-form__item">
+                                                <apex:inputText value="{!firstName}"
+                                                                    html-placeholder="First name"
+                                                                    id="first_name"
+                                                                    required="true"
+                                                                    maxlength="25"
+                                                                    onchange="checkForm();" />
+                                            </div>
+                                            <div class="checkout-form__item">
+                                                <apex:inputText value="{!lastName}"
+                                                                    html-placeholder="Last name"
+                                                                    id="last_name"
+                                                                    required="true"
+                                                                    maxlength="25"
+                                                                    onchange="checkForm();" />
+                                            </div>
+                                            <div class="checkout-form__item">
+                                                <apex:inputText id="business-name"
+                                                            value="{!businessName}"
+                                                            html-placeholder="Company name"
+                                                            required="true"
+                                                            maxlength="50"
+                                                            onchange="checkForm();" />
+                                            </div>
+                                            <div class="checkout-form__item">
+                                                <apex:input type="email"
+                                                        value="{!email}"
+                                                        html-placeholder="Work email"
+                                                        required="true"
+                                                        id="email"
+                                                        onchange="checkForm();" />
+                                            </div>
+                                            <div class="checkout-form__item">
+                                                <apex:inputText id="trial-phone"
+                                                            value="{!phone}"
+                                                            html-placeholder="123-456-7890"
+                                                            required="true"
+                                                            onkeypress="return inputLimiter(event,'Telephone');"
+                                                            maxlength="14"
+                                                            style="padding-left: 115px !important;"
+                                                            onchange="checkForm();"
+                                                />
+                                            </div>
+                                            <div class="checkout-form__item">
+                                                <label>
+                                                    <span class="label">Plan</span>
+                                                    <apex:selectList value="{!pkgOrder}" multiselect="false" size="1" disabled="true">
+                                                        <apex:selectOptions value="{!availablePackages}"/>
+                                                    </apex:selectList>
+                                                </label>
+                                            </div>
+                                            <div class="checkout-form__checkbox">
+                                                <label>
+                                                    <input type="checkbox" required="true" onchange="checkForm();"/>
+                                                    <p>I agree to the
+                                                        <a href="/terms-and-conditions"> Terms </a> &amp;
+                                                        <a href="/privacy-policy"> Privacy Policy </a>
+                                                    </p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-form-footer text_center">
+                                            <button class="button-orange proceed-payment" id="go-checkout-btn" disabled="disabled">Proceed to Payment</button>
+                                            <div class="checkout-form__bar">
+                                                <div class="bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /First step -->
+                                    <!-- Second step -->
+                                    <div class="checkout-form__second-step steps">
+                                        <div class="checkout-form-header">
+                                            <p class="checkout-form__summary">Summary</p>
+                                            <div class="row checkout-form__summary-row">
+                                                <div class="col-7">
+                                                    <span class="checkout-label">
+                                                        {!package.name} Package
+                                                    </span>
+                                                </div>
+                                                <div class="col-5">
+                                                    <span class="checkout-value">
+                                                        ({!package.size} units)
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row checkout-form__summary-row">
+                                                <div class="col-7">
+                                                    <div class="checkout-label">{!IF(pkgLength == 'annualy', 'Annualy', 'Monthly')} Fee</div>
+                                                    <div style="font-size: small;">{!IF(package.subsDiscounted, '(20% OFF)', '')}</div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <span class="checkout-value">
+                                                        <apex:outputText value="{0, number, #,##0.00}" styleClass="monthly-amount">
+                                                            <apex:param value="{!package.monthlyAmount}" />
+                                                        </apex:outputText>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row checkout-form__summary-row">
+                                                <div class="col-7">
+                                                    <div class="checkout-label">Implemetation Fee</div>
+                                                    <div style="font-size: small;">{!IF(package.implDiscounted, '(20% OFF)', '')}</div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <span class="checkout-value">
+                                                        <apex:outputText value="{0, number, #,##0.00}" styleClass="total-deposit">
+                                                            <apex:param value="{!package.depositTotal}" />
+                                                        </apex:outputText>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row checkout-form__summary-row">
+                                                <div class="col-7">
+                                                    <div class="checkout-label">Deposit Fee</div>
+                                                    <div style="font-size: small;">
+                                                        <apex:outputText value="{0, number, #0}" styleClass="percentage-deposit">
+                                                            <apex:param value="{!package.depositPercentage}" />
+                                                        </apex:outputText>% from implementation fee
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <span class="checkout-value">
+                                                        <apex:outputText value="{0, number, #,##0.00}" styleClass="split-deposit">
+                                                            <apex:param value="{!package.depositSplit}" />
+                                                        </apex:outputText>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="row checkout-form__summary-row">
+                                                <div class="col-7">
+                                                    <span class="checkout-label">Refferal Code</span>
+                                                </div>
+                                                <div class="col-5">
+                                                    <a class="add-code-button">Add a code</a>
+                                                    <p class="valid-code">
+                                                        <i class="fas fa-check"></i>Applied</p>
+                                                </div>
+                                            </div>
+                                            <div class="add-code-container">
+                                                <div class="row gutters-small">
+                                                    <div class="col-7">
+                                                        <div class="checkout-form__item">
+                                                            <input type="text" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <a class="button-orange apply-discount">Apply</a>
+                                                    </div>
+                                                </div>
+
+                                                <p class="invalid-code">
+                                                    <i class="fas fa-times"></i> Refferal Code in not Valid
+                                                </p>
+                                            </div>
+                                            <div class="checkout-discount">
+                                                <div class="row checkout-form__summary-row">
+                                                    <div class="col-7">
+                                                        <span class="checkout-label">Discount (
+                                                            <apex:outputText value="{0, number, #0.00}" styleClass="percentage-discount">
+                                                                <apex:param value="{!discountPercentage}" />
+                                                            </apex:outputText>%)
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <span class="checkout-value">-$ 
+                                                            <apex:outputText value="{0, number, ###,##0.00}" styleClass="amount-discount">
+                                                                <apex:param value="{!discountAmount}" />
+                                                            </apex:outputText>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <hr/>
+                                            <div class="row checkout-form__summary-row total-row">
+                                                <div class="col-7">
+                                                    <span class="checkout-label">Due Now</span>
+                                                </div>
+                                                <div class="col-5">
+                                                    <span class="checkout-value">
+                                                        <apex:outputText value="{0, number, #,##0.00}" styleClass="split-deposit">
+                                                            <apex:param value="{!package.depositSplit}" />
+                                                        </apex:outputText>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="checkout-form-body">
+                                            <div id="card-element" class="trial__form-item" style="padding:20px!important;"></div>
+                                            <div class="sr-field-error" id="card-errors" role="alert" style="padding-bottom:10px;color:red;"></div>
+                                        </div>
+                                        <div class="checkout-form-footer text_center">
+                                            <button id="submit" class="button-orange">
+                                                <div class="spinner hidden" id="spinner"></div>
+                                                <span id="button-text">Place Order</span>
+                                            </button>
+                                            <p class="text_center checkout-form__terms">By confirming your subscription, you authorize Booking Ninjas to charge your
+                                                card for this and future payments in accordance with the company's terms.</p>
+                                            <div class="checkout-form__bar">
+                                                <div class="bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Second step -->
+                                </apex:form>
+                            </div>
+                            <!-- /checkout form -->
+                            <script src="https://eggshell-quoll-1301.twil.io/assets/intlTelInput.min.js"></script>
+                            <script src="https://bngeneral.s3-us-west-2.amazonaws.com/js/form-validation.js"></script>
+                            <script type="text/javascript">
+                                // add currency symbol
+                                $('.reminder-deposit').html(`{!pkgCurrencySymbol}${$('.reminder-deposit').html().trim()}`);
+                                $('.monthly-amount').html(`{!pkgCurrencySymbol}${$('.monthly-amount').html().trim()}`);
+                                $('.total-deposit').html(`{!pkgCurrencySymbol}${$('.total-deposit').html().trim()}`);
+                                $('.split-deposit').html(`{!pkgCurrencySymbol}${$('.split-deposit').html().trim()}`);
+                                // add dash on phone number
+                                $('[id$=trial-phone]').bind('keyup', 'keydown', function (e) {
+                                    //To accomdate for backspacing, we detect which key was pressed - if backspace, do nothing:
+                                    if (e.which !== 8) {
+                                        var numChars = $('[id$=trial-phone]').val().length;
+                                        if (numChars === 3 || numChars === 7) {
+                                            var thisVal = $('[id$=trial-phone]').val();
+                                            thisVal += '-';
+                                            $('[id$=trial-phone]').val(thisVal);
+                                        }
+                                    }
+                                });
+
+                                // Show a loader on payment submission
+                                function showLoadeder() {
+                                    let formObj = document.querySelector("[id$=checkout-form]")
+                                    if (formObj.checkValidity() === true) {
+                                        $('#gif').show();
+                                    }
+                                }
+
+                                // A reference to Stripe.js
+                                var stripe;
+
+                                let email = document.querySelector("[id$=email]").value;
+                                var orderData = {
+                                    items: [{ id: "bn-subscription" }],
+                                    currency: "{!pkgCurrencyName}",
+                                    amount: {!package.depositSplitRounded},
+                                    description:  "{!package.depositPercentage}%25 deposit of the {!package.name} package subscription."
+                                };
+
+                                fetch("/services/apexrest/Stripe/", {
+                                    method: "POST",
+                                    headers: {
+                                        "Content-Type": "application/json"
+                                    },
+                                    body: JSON.stringify(orderData)
+                                })
+                                    .then(function(result) {
+                                        return result.json();
+                                    })
+                                    .then(function(data) {
+                                        return setupElements(data);
+                                    })
+                                    .then(function(stripeData) {
+                                        document.querySelector("#submit").addEventListener("click", function(evt) {
+                                            let formObj = document.querySelector("[id$=checkout-form]")
+                                            if (formObj.checkValidity() === true) {
+                                                evt.preventDefault();
+                                                changeLoadingState(true);
+                                                // Initiate payment
+                                                pay(stripeData.stripe, stripeData.card, stripeData.clientSecret);
+                                            }
+                                        });
+                                    });
+                                
+                                // Set up Stripe.js and Elements to use in checkout form
+                                var setupElements = function(data) {
+                                    stripe = Stripe(data.publicKey);
+                                    var elements = stripe.elements();
+                                    var style = {
+                                        base: {
+                                            color: "#32325d",
+                                            fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+                                            fontSmoothing: "antialiased",
+                                            fontSize: "16px",
+                                            "::placeholder": {
+                                                color: "#aab7c4"
+                                            }
+                                        },
+                                        invalid: {
+                                            color: "#fa755a",
+                                            iconColor: "#fa755a"
+                                        }
+                                    };
+
+                                    var card = elements.create("card", { style: style, hidePostalCode: true });
+                                    card.mount("#card-element");
+
+                                    return {
+                                        stripe: stripe,
+                                        card: card,
+                                        clientSecret: data.clientSecret,
+                                        id: data.id
+                                    };
+                                };
+
+                                /*
+                                * Calls stripe.confirmCardPayment which creates a pop-up modal to
+                                * prompt the user to enter  extra authentication details without leaving your page
+                                */
+                                var pay = function(stripe, card, clientSecret) {
+                                    var fName = document.querySelector("[id$=first_name]").value;
+                                    var lName = document.querySelector("[id$=last_name]").value;
+                                    var cardholderName = `${fName} ${lName}`;
+                                    var isSavingCard = true;
+
+                                    var data = {
+                                        card: card,
+                                        billing_details: {
+                                            name: cardholderName
+                                        }
+                                    };
+
+                                    changeLoadingState(true);
+
+                                    // Initiate the payment.
+                                    // If authentication is required, confirmCardPayment will automatically display a modal
+
+                                    // Use setup_future_usage to save the card and tell Stripe how you plan to charge it in the future
+                                    stripe
+                                        .confirmCardPayment(clientSecret, {
+                                            payment_method: data,
+                                            setup_future_usage: isSavingCard ? "off_session" : ""
+                                        })
+                                        .then(function(result) {
+                                            if (result.error) {
+                                                changeLoadingState(false);
+                                                showError(result.error.message);
+                                            } else {
+                                                orderComplete(clientSecret);
+                                                // There's a risk the customer will close the browser window before the callback executes
+                                                // Fulfill any business critical processes async using a 
+                                                // In this sample we use a webhook to listen to payment_intent.succeeded 
+                                                // and add the PaymentMethod to a Customer
+                                            }
+                                        });
+                                };
+
+                                /* ------- Post-payment helpers ------- */
+
+                                // Update customer data
+                                var orderComplete = function(clientSecret) {
+                                    stripe.retrievePaymentIntent(clientSecret)
+                                        .then(function(result) {
+                                            if (result.error) {
+                                                changeLoadingState(false);
+                                                showError(result.error.message);
+                                            } else {
+                                                var fName = document.querySelector("[id$=first_name]").value;
+                                                var lName = document.querySelector("[id$=last_name]").value;
+
+                                                var customerData = {
+                                                    clientSecret: clientSecret,
+                                                    cusName: `${fName} ${lName}`,
+                                                    cusPhone: document.querySelector("[id$=trial-phone]").value,
+                                                    cusEmail: document.querySelector("[id$=email]").value,
+                                                    cusCompany: document.querySelector("[id$=business-name]").value
+                                                };
+
+                                                fetch("/services/apexrest/Stripe2/", {
+                                                    method: "POST",
+                                                    headers: {
+                                                        "Content-Type": "application/json"
+                                                    },
+                                                    body: JSON.stringify(customerData)
+                                                }).then(function() {
+                                                    // Redirect to thank you page
+                                                    window.location.href = `/order-successful?id=${clientSecret}&order={!pkgOrder}&length={!pkgLength}&invoice={!quoteId}`;
+                                                });
+                                            }
+                                        });
+                                };
+
+                                var showError = function (errorMsgText) {
+                                    changeLoadingState(false);
+                                    var errorMsg = document.querySelector(".sr-field-error");
+                                    errorMsg.textContent = errorMsgText;
+                                    setTimeout(function () {
+                                        errorMsg.textContent = "";
+                                    }, 10000);
+                                };
+
+                                // Show a spinner on payment submission
+                                var changeLoadingState = function(isLoading) {
+                                    if (isLoading) {
+                                        document.querySelector("button#submit").disabled = true;
+                                        document.querySelector("#spinner").classList.remove("hidden");
+                                        document.querySelector("#button-text").classList.add("hidden");
+                                    } else {
+                                        document.querySelector("button#submit").disabled = false;
+                                        document.querySelector("#spinner").classList.add("hidden");
+                                        document.querySelector("#button-text").classList.remove("hidden");
+                                    }
+                                };
+
+                                // Form Validation
+                                var checkForm = function() {
+                                    let formObj = document.querySelector("[id$=checkout-form]") 
+                                    if (formObj.checkValidity() === true) {
+                                        $('#go-checkout-btn').prop("disabled", false);
+                                    } else {
+                                        $('#go-checkout-btn').prop("disabled", true);
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end-main-->
+
+        </div>
+
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/jquery.fancybox.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/slick.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/wow.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/common.js"></script>
+        <script>
+            var _mfq = _mfq || [];
+            (function () {
+                var mf = document.createElement("script");
+                mf.type = "text/javascript"; mf.async = true;
+                mf.src = "//s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/6defcb08-eb86-45f4-aca3-66c1425e4139.js";
+                document.getElementsByTagName("head")[0].appendChild(mf);
+            })();
+        </script>
+        <script type="application/ld+json">
+            [ {
+                "@context" : "http://schema.org",
+                "@type" : "LocalBusiness",
+                "name" : "Booking Ninjas",
+                "image" : "https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo-footer.png",
+                "email" : "sales@bookingninjas.com",
+                "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "1815 Purdy Avenue Miami Beach, FL 33139",
+                "telephone" : "+19176002345"
+                },
+                "url" : "https://www.bookingninjas.com"
+            } ]
+        </script>
+
+    </body>
+
+    </html>
+</apex:page>

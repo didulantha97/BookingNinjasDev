@@ -1,0 +1,15 @@
+<apex:page controller="ScheduleCallController" showHeader="false" sidebar="false">
+    <head>
+        <apex:stylesheet value="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" /> 
+        <apex:stylesheet value="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css" />   
+        <apex:includeScript value="https://code.jquery.com/jquery-3.1.1.min.js"/>
+        <apex:includeScript value="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"/>
+        <apex:includeScript value="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"/>
+        <apex:slds />
+    </head>
+    <body>
+        
+        <c:ScheduleCallComponent contact_id="{!Id}" />
+
+    </body>    
+</apex:page>

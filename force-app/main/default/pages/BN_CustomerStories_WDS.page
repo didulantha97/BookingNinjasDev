@@ -1,0 +1,198 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+        
+            <!-- top -->
+            <div class="about-page-top customer-top customer-top-left">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-7 order-lg-1">
+                            <div class="customer-top__img">
+                                <img alt="Success Storie - Worldwide Properties - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/WP-1.jpg"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <article>
+                                <!-- <div class="customer-top__arrow"><i class="fas fa-arrow-up"></i>HFTP</div> -->
+                                <h1>Success Story: Worldwide Properties and Booking Ninjas</h1>
+                                <!-- <div class="customer-top__arrow"><i class="fas fa-arrow-down"></i>Industrious</div> -->
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="costumer-page">
+                <div class="costumer-page__bread">
+                    <div class="container">
+                        <ul>
+                            <li><a href="/">Home </a></li> / 
+                            <li><a href="/customer-stories">Stories</a></li>  /  
+                            <li class="active">WDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__qoute">
+                            <div class="row align-items-center">
+                                <div class="col-lg">
+                                   <div class="text-center"> <img src="https://d1b89zc79exfxt.cloudfront.net/img/Quote_icon.svg" alt=""/></div>
+                                </div>
+                                <div class="col-lg">
+                                    <hr/>
+                                </div>
+                                <div class="col-lg-7">
+                                   <blockquote>Worldwide properties understood the importance of a digital management strategy in a dynamic, modern business environment. Here is why Booking Ninjas was a good fit, and how our solutions were integrated with their services.</blockquote> 
+                                    <strong>David Harroch</strong>
+                                    <small>Founder/CEO, Booking Ninjas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5>Worldwide properties and Booking Ninjas</h5>
+                                <p>Founded by J. Eddy Martinez and Roland Ortiz, they are very a successful real estate practice with a good international reputation.</p>
+                                <p>Worldwide properties engage in the listing of properties on their web platform. The listed properties feature elegant designs, and beautiful neighborhoods including Aventura, Bal Harbour, South Of Fifth, South Beach and many more.</p>
+                                <p>Their core services include assistance in the acquisition of family homes and condominiums, the discovery of new developments in South Florida, and strategic help in selling existing properties in the area for top market value.</p>
+                                <p>They focus on delivering unparalleled value to clients through the combined efforts of their multi-lingual sales and marketing teams of brokers and real estate associates.</p>
+                                
+                                <p>Worldwide properties saw the Booking Ninjas system as a reliable platform for effectively managing their event management platform. The Miami based real-estate brokerage firm placed a priority on seamless management of the numerous properties listed on their platform and saw the Booking Ninjas platform as a good fit due to its advanced features that make such type of management possible.</p>
+                                <p>Worldwide Properties utilizes several features of the Booking Ninjas system to help ensure they effectively represent their properties. Booking Ninjas offers large scale property management features like listings, singular unit monitoring, details representation, and many more. These features ensure the user’s properties is efficiently managed and properly detailed in the listing of features.</p>
+                                <p>The basis for the implementation of Booking Ninjas was a need to deliver an easy and accurate way for them to manage their properties.</p>
+                                <p>It was a successful implementation.</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <aside class="costumer-page__sidebar">
+                                    <div class="costumer-page__sidebar-inner">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/WP_logo.png" alt=""/></figure>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>Industry:</strong>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            Property Management
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>Location:</strong>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            Miami Beach
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>About:</strong>
+                                        </div>
+                                    </div>
+                                    <p>Based in Miami, South Florida, Worldwide properties is a full-service residential and commercial brokerage firm. For 10 years, they have been focused on providing professional assistance in the planning and execution of strategic acquisition of real estate worldwide. Their diverse team of brokers and real estate associates ensures excellence is delivered to clients, both local and international.</p>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__slick js-slider">
+                            <div><img alt="Success Storie - Worldwide Properties - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/WP-2.jpg"/></div>
+                            <div><img src="https://d1b89zc79exfxt.cloudfront.net/img/WP-3.jpg" alt=""/></div>
+                            <div><img src="https://d1b89zc79exfxt.cloudfront.net/img/WP-4.jpg" alt=""/></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="costumer-page__img float_left">
+                                   <figure><img alt="Success Storie - Worldwide Properties - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/WP-5.jpg"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>The value of the Booking Ninjas system</h2>
+                                    <p>There’s a need for businesses in the industry to transition from legacy systems to adapt to modern and necessary ways of interacting and handling guests, transactions and creating convenience to their customers. </p>
+                                    <p>The willingness and ability for companies to embrace and adapt quickly will be the key challenges to overcome in the near future.  This challenge also presents an opportunity to greatly improve experiences, and to create and maintain a competitive advantage as well as make more profits.</p>
+                                    <p>We bring: </p>
+                                    
+                                    <h2>An All-in-one solution</h2>
+                                    <p>We eliminate the need to have to merge several solutions to achieve tasks. We integrate different relevant solutions together through strategic partnerships and collaborations. Our partnership with Salesforce gave us their CRM and AI expertise. Partnership with Twilio gave us their rapid and efficient communication tools, helping you maintain better relationships with your customers.</p>
+                                
+                                    <h2>A premium cloud-based service</h2>
+                                    
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <article>
+                                    <p>We are going along with the most recent way of serving applications: cloud-based services. We believe restriction to local installations will be stressful and expensive as you would have to manually install the application on every staff computer. There is also the issue of security: a cloud-hosted application is more secure from attacks than when there is a copy of the application on multiple systems.</p>
+                                    
+                                    <h2>Integration of third-party tools</h2>
+                                    <p>How’s that? By using the Booking Ninjas application, businesses have been able to gain access to apps from the AppExchange platform, by Salesforce, and integrate them into the Booking Ninjas system, like a whole application. This has reduced the stress of looking for apps that could perform auxiliary functions. Another advantage it has brought to users is the limitless functionalities apps from the AppExchange platform can bring to a business.</p>
+                                    
+                                    <h2>Conclusion</h2>
+                                    <p>The perfect Property Management System for your business is one that can deliver desired results and not just that, but also ensure you get the results. That’s why the Booking Ninjas support team is available 24/7 to answer any questions you might have concerning the application.</p>
+                                    <p>The Booking Ninjas application has been proven to deliver enviable results and has greatly profited businesses who made a decision to incorporate the application into their operations. For most of these businesses, the Booking Ninjas application has been of immense help as it has improved the quality of service provided and also helped increase the total revenue of the business.</p>
+                                    <p>The Booking Ninjas system is a good fit for your business. It’s time to consider it.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content text_center">
+                    <div class="container">
+                        <h2>Read More Customer Stories</h2>
+                        <p>Learn how Booking Ninjas help property businesses improve daily yield</p>
+                        <div class="costumer-page__carousel">
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_Industrious)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/logo_industrious.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_Industrious)}">How Industrious Office gets better deals and guest satisfaction.</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_CTY)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/Logo_CTY_books.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_CTY)}">CTY Books takes initiative in digital hotel management with Booking Ninjas</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/HFTP_Logo.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}">HTFP improves systematic engagement, workflow, and operational speed...</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_WDS)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/WP_logo.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_WDS)}">Worldwide properties implement the Booking Ninjas system for digital properties management</apex:outputLink>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

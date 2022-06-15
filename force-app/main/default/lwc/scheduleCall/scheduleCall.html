@@ -1,0 +1,92 @@
+<template> 
+    <!-- Modal/Popup Box LWC header here -->
+    <header class="slds-modal__header slds-text-align_left booking-ninjas-brand-header-background">
+        <h2 class="slds-text-heading_medium slds-hyphenate set-colour">Schedule Call</h2>
+    </header> 
+    
+    <div class="schedule-call-wrapper">
+        <div class="slds-modal__content slds-p-horizontal_small booking-ninjas-brand-body-background">
+            <div style="margin-top: 10px;">
+                <lightning-card> 
+                    <template if:true={isLoading}>
+                        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+                    </template>
+                     
+                    <div style="padding: 20px;">
+                        <div style="font-weight: bold;font-size: 15px;">
+                            {message}
+                        </div>  
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                <div>
+                                    <abbr title="required" class="slds-required">*</abbr>
+                                    Assign To:
+                                </div>    
+                                <div>
+                                    <lightning-combobox required
+                                                    variant="label-hidden"
+                                                    name="accExec"
+                                                    value={userId}
+                                                    placeholder="Select"
+                                                    options={accExecOptions}
+                                                    onchange={handleFormInputChange}></lightning-combobox>
+                                </div> 
+                            </div> 
+
+                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                <div>
+                                    <abbr title="required" class="slds-required">*</abbr>
+                                    Select Date: 
+                                </div> 
+                                <div>  
+                                    <lightning-input required
+                                                variant="label-hidden"
+                                                type="date"
+                                                name="date"
+                                                value={scheduledDate}
+                                                onchange={handleFormInputChange}></lightning-input>
+                                </div>
+                            </div> 
+
+                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                <div>
+                                    Interest Level:
+                                </div>
+                                <div>
+                                    <lightning-combobox
+                                                name="lvl"
+                                                label=""
+                                                value={interestLevel}
+                                                placeholder="Select"
+                                                options={interestLvlOptions}
+                                                onchange={handleFormInputChange} ></lightning-combobox>
+                                </div>
+                            </div>   
+    
+                            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                                <div>
+                                    Notes:
+                                </div>
+                                <div>
+                                    <lightning-textarea
+                                                name="note"
+                                                label=""
+                                                value={note}
+                                                onchange={handleFormInputChange}></lightning-textarea>
+                                </div>
+                            </div>
+                        </div>      
+                    </div> 
+    
+                    <div class="slds-col slds-align_absolute-center" style="padding-bottom: 20px;" >
+                        <button class="slds-button booking-ninjas-button booking-ninjas-button_brand" 
+                            style="width: 200px; height: 40px;"  
+                            onclick={handleClick} title="Schedule Call & Create CB">  
+                            Schedule Call & Create CB  
+                        </button> 
+                    </div>  
+                </lightning-card>  
+            </div>
+        </div>
+    </div>
+ </template>

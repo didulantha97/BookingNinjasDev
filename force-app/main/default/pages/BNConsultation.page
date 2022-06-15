@@ -1,0 +1,170 @@
+<apex:page controller="BNConsultationController" sidebar="false" showHeader="false" standardStylesheets="false">
+
+    <html>
+    <head>
+      <meta charset="UTF-8"/>
+      <meta name="description" content="Booking Ninjas is an innovative comprehensive property management application perfect for property managers."/>
+      <meta name="keywords" content="Property Management, Property Management System, PMS, Hotel, System, Hospitality Management, Salesforce, AppExchange, Cloud, Comprehensive, Solutions"/>
+      <meta name="viewport" content="initial-scale=1"/>
+      <title>Booking Ninjas: Combined Property Management / Salesforce Solution Application</title>
+      
+      <!--build:css css/styles.min.css-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bncsrc/css/bootstrap-grid.css"/>
+      <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bncsrc/css/styles.css"/>
+      <!--endbuild-->
+    </head>
+    <body>
+    <div class="wrapper">
+    <!--main-->
+    <div class="main">
+       
+    <!-- banner -->
+    <div class="bnr" style="background-image: url(https://s3.us-east-2.amazonaws.com/bncsrc/img/background.jpg)">
+        <div class="container">
+            <a href="http://inquire.bookingninjas.com" class="logo"><img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/logo.png" alt=""/></a>
+            <div class="bnr__text">
+               <div class="row">
+                   <div class="col-lg-10">
+                       <h1>Improving Property Management through digital solutions</h1>
+                       <p>Turn around your management process by embracing our  <br/>
+                           all new Property Management Solution, built on the Salesforce platform.</p>
+                   </div>
+               </div>
+            </div>
+            <apex:form id="form">
+                <apex:messages styleClass="alert alert-danger" html-role="alert" /> 
+                <div class="bnr__form">
+                    <h4>your information</h4>
+                    <input type="hidden" name="currentvfpage" value="{!$CurrentPage.Name}"/>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <apex:inputText value="{!name}" id="name" html-placeholder="Name" required="true"/>
+                        </div>
+                        <div class="col-md-4">
+                            <apex:inputText value="{!company}" id="company" html-placeholder="Company" required="true"/>
+                        </div>
+                        <div class="col-md-4">
+                            <apex:inputText value="{!email}" id="email" html-placeholder="Email" required="true"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <apex:inputText value="{!numberOfRooms}" id="numberofrooms" html-placeholder="Number of rooms" required="true"/>
+                        </div>
+                        <div class="col-md-4">
+                            <apex:inputText value="{!currentPMS}" id="currentpms" html-placeholder="Current PMS" required="true"/>
+                        </div>
+                        <div class="col-md-4">
+                            <apex:commandButton value="HOW THIS WORKS" action="{!SaveWithRedirect}" styleClass="button" />
+                        </div>
+                    </div>                   
+                </div>
+            </apex:form>
+        </div>
+    </div>
+    <!-- /banner -->
+    <!-- about -->
+    <div class="about">
+        <div class="container">
+            <article>
+                <h2>How can this be of help?</h2>
+                <p>We brought Artificial Intelligence into the property business. We saw the current generation of customers and the need for speedy transactions, we observed the high rate of customer dissatisfaction and we noticed how we can greatly ease repetitive tasks in property management, by automating them. That's why we introduced BookingNinjas. It's a property management solution that is highly suited to meet all the demands of property management. Based on the Salesforce platform, our system integrates technology features to increase productivity and boost customer experience. </p>
+            </article>
+            <div class="row">
+                <div class="col-md-4">
+                    <figure class="about__item">
+                        <img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/phone.png" alt=""/>
+                        <figcaption>Mobile Ready </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="about__item">
+                        <img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/thunder.png" alt=""/>
+                        <figcaption>Lightning ready </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank" style="text-decoration:none;">
+                        <figure class="about__item">
+                            <img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/saleforce.png" alt=""/>
+                            <figcaption>available on
+                                AppExchange </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /about -->
+    <!-- bottom -->
+    <div class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/partner.png" alt=""/>
+                </div>
+                <div class="col-md-5">
+                    <p>1815 Purdy Avenue, Miami Beach, FL 33139 <br/>
+                        sales@bookingninjas.com</p>
+                </div>
+                <div class="col-md-4">
+                    <strong>+1-305-428-2421</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /bottom -->
+    
+    </div>
+    <!--end-main-->
+    <!--footer-->
+    <footer class="footer">
+      <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+            <address>All rights reserved © 2019 - Booking Ninjas</address>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer__nav">
+            <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/visa.png" alt=""/></a>
+            <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/mc.png" alt=""/></a>
+            <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/ae.png" alt=""/></a>
+            <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/paypal.png" alt=""/></a>
+          </nav>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <!--end-footer-->
+    </div>
+    
+    <!--SCRIPT -->
+    <script src="https://s3.us-east-2.amazonaws.com/bncsrc/js/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+    <!--build:js js/main.min.js -->
+    <!-- endbuild -->
+    <script src="https://s3.us-east-2.amazonaws.com/bncsrc/js/common.js"></script>
+    <script src="https://media.twiliocdn.com/sdk/js/flex-webchat/releases/1.1.0/twilio-flex-webchat.min.js"></script>
+    <script>
+        const appConfig = {
+            accountSid:"AC9f8502ccd4a41283e0c8037a25586d49",
+            flexFlowSid:"FOe2bee542b2e19d1f7a5f9092a814174e"
+        };
+        Twilio.Flex.createWebChat(appConfig);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-70673409-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-70673409-8');
+    </script>
+    <!-- END OF SCRIPT -->
+    
+    </body>
+    </html>
+
+</apex:page>

@@ -1,0 +1,90 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+        
+            <!-- content -->
+            <div class="channel-page__top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1 text_center">
+                            <img alt="Third Party Hotel Booking Sites Integration" src="https://d1b89zc79exfxt.cloudfront.net/img/channel-top.png"/>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Third Party Hotel Booking Sites Integration</h1>
+                                <p>Increase your online presence with multiple third-party channels. Booking Ninjas not only provides our list of channel networks for you to connect with, but we also give you detailed information on each one for your convenience. </p>
+                                <p>We are always expanding our list of distribution channels, giving you the choice to connect your hotel or property to even more online marketing opportunities from our centralized PMS.</p>
+                                <p>Check out our presentation below to get an idea of what we have ready for you.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <div class="channel-page__video">
+                <div class="container">
+                    <figure class="review-page__content-img">
+                            <figcaption>
+                                <a class="video__img wow zoomIn fancybox" data-fancybox="fancybox" href="https://www.youtube.com/watch?v=gsJyAV8RTxI" style="visibility: visible; animation-name: zoomIn;">
+                                    <img alt="Review video on Bookingninjas Property Management System" src="https://d1b89zc79exfxt.cloudfront.net/img/reviews_edition.png"/>
+                                </a>
+                            </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="channel-page__partners">
+                <div class="container">
+                    <h2>Who We Work With</h2>
+                    <div class="channel-page__partners-logo">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6"><figure><a href="#"><img alt="Booking.com - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/check-logo1.png"/></a></figure></div>
+                            <div class="col-lg-3 col-sm-6"><figure><a href="#"><img alt="Expedia - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/check-logo2.png"/></a></figure></div>
+                            <div class="col-lg-3 col-sm-6"><figure><a href="#"><img alt="AirBnb - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/check-logo3.png"/></a></figure></div>
+                            <div class="col-lg-3 col-sm-6"><figure><a href="#"><img alt="Google - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/check-logo4.png"/></a></figure></div>
+                            <div class="col-lg-3 col-sm-6"><figure><a href="#"><img alt="Hotels.com - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/check-logo5.png"/></a></figure></div>
+                            <div class="col-lg-3 col-sm-6"><figure><a href="#"><img alt="RBITZ - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/check-logo6.png"/></a></figure></div>
+                            <div class="col-lg-3 col-sm-6"><figure><a href="#"><img alt="Travelocity - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/check-logo7.png"/></a></figure></div>
+                            <div class="col-lg-3 col-sm-6"><figure><a href="#"><img alt="TripAdvisor - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/check-logo8.png"/></a></figure></div>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center text_center">
+                        <div class="col-lg-8">
+                            <p>Because of our relationship with these third-party channels, we have distinctive knowledge and guidance to offer on them. Property managers have enough on their plate; let us provide you with the information you need to make an educated decision on which channels you want your property to be listed.</p>
+                            <p>We can help you build your own list of advantages and possible disadvantages with our own inside details on synchronization, commission, markup, cancellation policies, bookings, and other important features. </p>
+                            <p>For a more detailed list with key information, please visit our Google Sheet at your convenience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="channel-page__description">
+                <div class="container">
+                     <div class="calendly-page__description-box calendly-box__half-gray">
+                            <h2 class="title">How It Works</h2>
+                            <div class="calendly-page__description-item wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <p>Our cloud-based PMS allows for seamless integration to a variety of third-party travel and booking sites. The benefit of this is that you’ll be able to control the rates of your hotel on all outside applications all from your mobile device in real-time. It also allows you to offer personalized incentives on your property’s website to increase direct bookings.</p>
+                            </div>
+                            <div class="calendly-page__description-item wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <p>Since our PMS extracts crucial data such as guest information and preferences from these external applications, you are able to effortlessly collect, analyze, and put to use customer details in order to better craft more successful targeted marketing campaigns.</p>
+                            </div>
+                            <div class="calendly-page__description-item no-line wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                <p>App integrations make it so you can access every bit of your customer’s information on one succinct channel manager. There’s never a need to log-in to any other system. With the Booking Ninjas property management software, you can get to know your customers with little to no effort from you, and you can simultaneously take back control of your hotel’s booking engine from third party sites.</p>
+                        </div>
+                    </div>
+                    <P class="text_center">To take a look at the services included in our Channel Manager, please consider checking our <a href="/tour" target="_blank" class="blue-link">tour page.</a></P>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

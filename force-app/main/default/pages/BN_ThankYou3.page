@@ -1,0 +1,23 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- thank -->
+            <div class="thank">
+                <div class="container">
+                    <h1>Thank you for expressing your interest</h1>
+                    <h2>to implement the Booking Ninjas Property Management System to your property! </h2>
+                    <img src="https://d1b89zc79exfxt.cloudfront.net/img/thank-bg.png" alt=""/>
+                    <p style="text-align:center;margin:50px 0 50px 0;">Click <a href="/">here</a> to go back to home page.</p>
+                </div>
+            </div>
+            <!-- /thank -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

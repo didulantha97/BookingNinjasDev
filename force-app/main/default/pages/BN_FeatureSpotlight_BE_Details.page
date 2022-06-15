@@ -1,0 +1,219 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg feature-subpage');
+                    $('div.wrapper').css('background', 'url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-bg-2.png) no-repeat 43% 850px;');
+                });
+            </script>
+            
+            <!-- hero -->
+            <div class="feature-subpage-hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-5 order-lg-1">
+                            <div class="feature-subpage-hero__img wow fadeInRight">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-engine-hero.png" alt="Booking Engines" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 wow fadeIn">
+                            <h1>Booking Engines: How It Can Be Integrated with Your Websites</h1>
+                            <p>Businesses of different sizes can benefit heavily from having a well-integrated booking system. The significance of having a sound booking system includes getting a more direct booking through a user-friendly channel, i.e., a responsive website. Direct booking through a responsive website not only increases the site’s activities but also increases your industry’s revenue. </p>
+                            <p>In this complete guide, we are going to discuss explicitly on what booking engines mean, how it works, why you need to integrate a booking engine into a responsive and mobile-friendly website, the features to look for in a sound online booking engine, and how booking engine can be integrated into your website. Hang on tight to arm yourself with dividend-paying knowledge. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /hero -->
+
+            <!-- content -->
+            <div class="feature-subpage-box text_center wow fadeInUp">
+                <div class="container">
+                    <h2>What does Booking Engine mean for Hospitality Sector?</h2>
+                    <p> A booking engine is a system that is integrated into the business industry’s website and social media platforms to ensure that guests can book an online reservation without stress. In other words, a booking engine is a software solution that allows business organizations, particularly the ones in the hospitality realm, to sell their rooms via their website or social media platforms, e.g., Twitter, LinkedIn, Facebook, etc., your hospitality is listed on. </p>
+                    <p>A booking engine is so effective in expanding the customer base since it makes it relatively easier to browse through the available vacancies in the hospitality industry and then make a commission-free direct booking, which is one of the measures taken by renowned business organizations to optimize property’s sales strategy, and ultimately maximize revenue. </p>
+                    <p>It is no news that we now live in a world where technology evolves every day, and as that happens, more people do not want to be left out, so why should you? Many people are now more comfortable checking room availability and book a reservation online without even speaking to you. This is enough for a reason why your hospitality business must have a booking system in place. </p>
+                </div>
+            </div>
+            <div class="feature-subpage-box wow fadeIn">
+                <div class="container">
+                    <h2>How Does an Online Booking Engine Work?</h2>
+                    <div class="row">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="wow fadeInRight feature-subpage-box__img">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-engine-1.png" alt="Booking Engines" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <P>An online booking engine works great for hotels, resorts, B&amp;B, B&amp;C, restaurants, and many more by plugging into their websites and processing secure online reservations. Data are collected via the website platform and then passed to the PMS (Property Management System), which can then access and manage bookings.</P>
+                            <P>These online booking solutions can be synced with the industry’s website and its social media profiles. This way, more people will be able to book reservations without even talking to you or join a long queue at your property.</P>
+                            <P>This software solution effectively makes booking of reservations by guests highly effective and a lot easier. A sound booking engine will display the company’s rates and availability in real-time. More so, it allows the guest to select a convenient date and finalize their reservation.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-subpage-box wow fadeIn">
+                <div class="container">
+                    <h2 class="text_center">Why Do You Need a Booking Engine for Your Website?</h2>
+                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-engine-2.png" alt="Booking Engines" class="feature-subpage-img__align-left" />
+                    <p>The hospitality business is just one of the businesses out there that make a living out of people making appointments online, and if that is the case, booking must be made easy for guests online.</p>
+                    <p>For instance, you have your luxury hospitality industry by the ocean, which you market digitally via your website. This strategy will afford your potential and existing customers the needed convenience and ultimately increase your profit.</p>
+                    <p>With almost everything done through your website, you are merely relieving your guests of the headache of waiting in a long queue or making an extra effort to reach you via mail to book a reservation in your travel industry</p>
+                    <p>The following is a lowdown on the critical reasons why you must have a sound booking engine integrated with your website.</p>
+                    <p>Guests can quickly self-serve – Business organizations have advanced to the stage of employing digital marketing to further boost their credibility and proficiency, and more people are getting used to this new development and evolution. Therefore, integrating a booking engine on your website helps travelers check for available rooms in your property and how much, without even speaking to you. </p>
+                </div>
+            </div>
+            <div class="feature-subpage-box">
+                <div class="container">
+                    <dl class="wow fadeIn">
+                        <dt>Guests can quickly self-serve – </dt>
+                        <dd>Business organizations have advanced to the stage of employing digital marketing to further boost their credibility and proficiency, and more people are getting used to this new development and evolution. Therefore, integrating a booking engine on your website helps travelers check for available rooms in your property and how much, without even speaking to you. </dd>
+                    </dl>
+                    <dl class="wow fadeIn">
+                        <dt>Professionalism — </dt>
+                        <dd>With the technological advancement the world has seen, a good number of guests would be stunned if they could not book a reservation online with your travel industry.
+                            <br />
+                            A website featuring an online booking engine just so makes your business look so professional, and that’s what modern guests want because of the convenience and security it affords them. More so, they get an impression of seeing your hospitality business as an organized one. </dd>
+                    </dl>
+                    <dl class="wow fadeIn">
+                        <dt>Guests trust online booking – </dt>
+                        <dd> An excellent online booking engine provides a secure channel through which guests can make bookings online with their credit card without worrying about privacy. These data collected from the guest are then safely channeled to the property management system (PMS) used by the company.</dd>
+                    </dl>
+                    <dl class="wow fadeIn">
+                        <dt>Utmost proficiency – </dt>
+                        <dd>Yes, integrating your website with a sound booking engine makes doing business with your organization relatively easier for your guest. This software solution also ensures all data, like date, number of guests, etc., filled by your guest during booking is pushed across without no mistakes or omission.
+                            <br /><br />
+                            This system so preserves your smooth relationship with your guests because a slight mistake in these data may leave your guest disgruntled and never come back again; that’s you losing a customer and money.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="feature-subpage-box text_center wow fadeInUp">
+                <div class="container">
+                        <h2>Features to Look for in a Sound Booking Engine</h2>
+                        <p>As expected, virtually all products vary in quality and prices. There are some features an excellent booking engine must have
+                            to be considered excellent and suitable for your hospitality business. The following are a few of the essential features
+                            that a booking engine must have.
+                        </p>
+                </div>
+            </div>
+            <div class="feature-subpage-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-subpage-card grid-card text_center wow fadeInLeft">
+                                <div class="feature-subpage-card__icon">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-engine-subpage-ico-mobile.png"/>
+                                </div>
+                                <h4>Mobile-Friendly</h4>
+                                <p>Travel businesses across the world are growing fast concerning guests’ engagement. More guests prefer to have their booking done from any device and anywhere they are. Therefore, there is a need for a sound online booking engine to allow guests to make mobile bookings conveniently. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-subpage-card grid-card text_center wow fadeInUp">
+                                <div class="feature-subpage-card__icon">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-engine-subpage-ico-money.png"/>
+                                </div>
+                                <h4>Multi-currency</h4>
+                                <p>It is no brainer that there are different currencies worldwide, and having options for popular currencies like Euro, Yen, Pounds, Dollars, Naira, and many more improves customer experience. Therefore, setting up your online booking engine to receive payments in guests’ local currencies should be considered to improve customer engagement. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-subpage-card grid-card text_center wow fadeInRight">
+                                <div class="feature-subpage-card__icon">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-engine-subpage-ico-translation.png"/>
+                                </div>
+                                <h4>Multilingual</h4>
+                                <p>As stated earlier in this guide, the hospitality industry is one of the world’s most diverse business organizations. It is a travel industry that lives on its customer base from various regions and countries worldwide. Therefore, these customers must be able to choose their preferred language and quickly make an online booking without any language barrier. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-subpage-card grid-card text_center wow fadeInLeft">
+                                <div class="feature-subpage-card__icon">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-engine-subpage-ico-social-network.png"/>
+                                </div>
+                                <h4>Social Media Integration</h4>
+                                <p>Social media platforms are significant to digital marketing; therefore, all measures must be taken to ensure they are maximized. An excellent online booking engine must feature an easy social media integration and a prominent ‘Book Now’ button.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-subpage-card grid-card text_center  wow fadeInUp">
+                                <div class="feature-subpage-card__icon">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-engine-subpage-ico-room-order.png"/>
+                                </div>
+                                <h4>Room Order Auto Optimization</h4>
+                                <p>This is one feature that a sound online booking engine must have. This feature allows guests to view rooms according to the search criteria, ensuring they have a hassle-free experience while booking a reservation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-subpage-card grid-card text_center wow fadeInRight">
+                                <div class="feature-subpage-card__icon">
+                                    <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-engine-subpage-ico-analysis.png"/>
+                                </div>
+                                <h4>Google Analytics Integration</h4>
+                                <p> Google analytics is useful for tracking website visits. More ambitious hospitality business owners or managers look to seize every opportunity to boost their customer base and ultimately make more profits. This feature allows you to see where the bookings are coming from. This is data can be crucial in analyzing your hospitality website. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-subpage-box wow fadeIn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h2>How to Integrate Online Booking Engine in Your Hospitality Websites</h2>
+                        </div>
+                    </div>
+                    <p>There are two options to easily implement this software solution to your website and start to have direct bookings from your guests online. </p>
+                    <br />
+
+                    <p><strong>Option 1: Integrate a booking engine into an existing website</strong></p>
+                    <p>WordPress is a popular website platform commonly used by small hospitality business operators because it is absolutely free. To make the most out of this free website platform, do ensure:</p>
+
+                    <ul class="feature-subpage-list feature-booking-engine__list">
+                        <li>Use a customizable theme to match your hospitality business</li>
+                        <li>Make it mobile-friendly</li>
+                        <li>Use large, user-friendly booking buttons that make it convenient for online guests to book a reservation with your hospitality</li>
+                        <li>Offer secure data entry and is Payment Card Industry (PCI) compliant</li>
+                    </ul>
+
+                    <p><strong>Option 2: Host your website with your chosen online booking engine provider</strong> </p>
+                    <p>Most prominent, big hospitality industries see WordPress as not the best option for them, so they opt to create beautiful pages via a booking engine provider. You have to research which online booking provider will best serve your needs. </p>
+                </div>
+            </div>
+
+            <div class="feature-subpage-box feature-subpage-conclusion wow fadeInUp">
+                <div class="container">
+                    <div class="feature-subpage-conclusion__wrap">
+                        <h2>Conclusion</h2>
+                        <div class="row align-items-center">
+                            <div class="col-lg-2"><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/feature-subpage-conclusion.png" /></div>
+                            <div class="col-lg-10">
+                                <p>The hospitality industry has proven to be one of the world’s diverse business organizations, which means it takes extra effort to manage one effectively. Thankfully, technology is evolving every day to make travel business operations less excruciating.</p>
+                                <p>True, you may not actually find ‘the perfect online booking engine.’ All you need to do is access your needs, what specific purpose you want the software solution to render, and carefully choose which one would best serve your guests.</p>
+                                <p>This guide has provided you with the essential information on an online booking engine and its significance to achieving greater heights with your hospitality industry. If you have any questions in this context, you can reach out to us via our website, where our response team will be on standby to see to your inquiries.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

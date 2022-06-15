@@ -1,0 +1,532 @@
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false"
+ applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+	<!-- Template -->
+	<apex:composition template="BN_Template">
+		<!-- Define content -->
+		<apex:define name="bn_content">
+
+			<script>
+				$(function () {
+					$('body').addClass('segment');
+				});
+			</script>
+
+			<!-- hero -->
+			<!-- hero -->
+			<div class="be-segment-page__hero">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 order-lg-1">
+							<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-hero.png" alt="Internet Booking Engine Software"
+							 class="adaptive-img wow fadeInRight" />
+						</div>
+						<div class="col-lg-6">
+							<article class="segment__hero-txt wow fadeIn">
+								<h1>
+									Internet Booking Engine Software
+								</h1>
+								<h2>
+									Our Booking Engine services cover website integration, data processing and handling and lots more.
+								</h2>
+								<apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">
+									Schedule A Call</apex:outputLink>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /hero -->
+
+			<!-- cards -->
+			<div class="be-segment-page__center-text">
+				<div class="container">
+					<div class="row justify-content-center text_center">
+						<div class="col-lg-11">
+							<h2 class="title-h2">Helps Manage, Automate &amp; Improve Your Bookings </h2>
+							<br />
+							<p>The following are examples of properties our Booking Engine caters to:</p>
+						</div>
+					</div>
+
+					<div class="segment-list segment-list__horizontal">
+						<div class="segment-list-box">
+							<div class="segment-list-item wow fadeInUp" data-wow-delay="0s">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-hotel.png" />
+								</figure>
+								<p>Hotel Booking Engine</p>
+							</div>
+						</div>
+						<div class="segment-list-box">
+							<div class="segment-list-item wow fadeInUp" data-wow-delay="0.1s">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-student-housing.png" />
+								</figure>
+								<p>Student Housing Booking Engine</p>
+							</div>
+						</div>
+						<div class="segment-list-box">
+							<div class="segment-list-item wow fadeInUp" data-wow-delay="0.2s">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-coworking.png" />
+								</figure>
+								<p>Coworking Space Booking Engine</p>
+							</div>
+						</div>
+						<div class="segment-list-box">
+							<div class="segment-list-item wow fadeInUp" data-wow-delay="0.3s">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-hostel.png" />
+								</figure>
+								<p>Hostel Booking Engine</p>
+							</div>
+						</div>
+						<div class="segment-list-box">
+							<div class="segment-list-item wow fadeInUp" data-wow-delay="0.4s">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-clubs.png" />
+								</figure>
+								<p>Clubs Booking Engine</p>
+							</div>
+						</div>
+						<div class="segment-list-box">
+							<div class="segment-list-item wow fadeInUp" data-wow-delay="0.5s">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-parking.png" />
+								</figure>
+								<p>Parking Facility Booking Engine</p>
+							</div>
+						</div>
+						<div class="segment-list-box">
+							<div class="segment-list-item wow fadeInUp" data-wow-delay="0.6s">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-villa.png" />
+								</figure>
+								<p>Villas Booking Engine</p>
+							</div>
+						</div>
+						<div class="segment-list-box">
+							<div class="segment-list-item wow fadeInUp" data-wow-delay="0.7s">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-apartment.png" />
+								</figure>
+								<p>Apartment Units Booking Engine</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- title -->
+			<div class="be-segment-page__main-title">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-11">
+							<h2>
+								Fully-Integrated With Our Property Management System (PMS)
+							</h2>
+							<p>Many booking engines are standalone systems needing further integration with a PMS to function. Our booking engine
+								comes fully integrated with Booking Ninjas PMS, reducing complex integration needs.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /title -->
+			<!-- articles -->
+			<div class="be-segment-page__articles">
+				<div class="container">
+					<div class="be-segment-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-1.png" alt="" class="adaptive-img wow  fadeInLeft"
+									/>
+								</figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<section>
+										<ul>
+											<li>Automatically sync all data with the PMS, reducing double entry need and easing confirmations.</li>
+											<li>Determine sales strategies and centralised management of your offer.</li>
+											<li>Create various sales strategies like discounts, special offers and promotions and get absolute control of the
+												sales details, terms and conditions.</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /articles -->
+
+			<!-- cards -->
+			<div class="be-segment-page__articles">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-11">
+							<h2 class="title-h2 text_center">
+								Simple Interface With Efficient Navigation For Fast Bookings
+							</h2>
+						</div>
+					</div>
+					<div class="row segment-cards">
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-1.png" />
+								</figure>
+								<p>Designed for maximum efficiency, our Booking Engine comes with a simple and very easy interface for you and your
+									guests.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-2.png" />
+								</figure>
+								<p>Ensures your guests interact with the platform seamlessly while making reservations.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- cards -->
+			<div class="be-segment-page__articles">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-11">
+							<h2 class="title-h2 text_center">
+								User-friendly Control Centre Guarantees Reliability On All Fronts
+							</h2>
+						</div>
+					</div>
+					<div class="row segment-cards">
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-3.png" />
+								</figure>
+								<p>For Guests: Dashboard to view booking details, confirmation, cancellation and personal data management.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-4.png" />
+								</figure>
+								<p>For Manager: Manage your commercial policy in one centralized control centre with room categories and products, company
+									rates, general details, prices, restrictions and availability, promotion codes, etc.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- cards -->
+			<div class="be-segment-page__articles">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-10">
+							<h2 class="title-h2 text_center">
+								Easily Turn Your Website Into Your Direct Booking Generator
+							</h2>
+						</div>
+					</div>
+					<div class="row segment-cards">
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-5.png" />
+								</figure>
+								<p>Our Booking Engine software comes with easy-integration into your existing website.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-6.png" />
+								</figure>
+								<p>Don't have a website? Use our drag &amp; drop website builder to create one and increase direct booking instantly.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-7.png" />
+								</figure>
+								<p>Direct booking reduces commission paid to third-party booking sites.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-8.png" />
+								</figure>
+								<p>You own your guests and data. Improve business judgements from real-time data, and beat your competitors.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- cards -->
+			<div class="be-segment-page__articles">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-11">
+							<h2 class="title-h2 text_center">
+								Make More Sales With Our Groups Feature
+							</h2>
+						</div>
+					</div>
+					<div class="row segment-cards">
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-9.png" />
+								</figure>
+								<p>Enable Multi-room and Multi-rate plan booking to serve your clients better. </p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-10.png" />
+								</figure>
+								<p>Group your plans, packages and offers to suit different client needs.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- cards -->
+			<div class="be-segment-page__articles">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-10">
+							<h2 class="title-h2 text_center">
+								Connect, Authorize, Charge With Built-In Payments Gateway
+							</h2>
+						</div>
+					</div>
+					<div class="row segment-cards justify-content-center">
+						<div class="col-md-6 col-lg-4">
+							<div class="segment-cards__item wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-12.png" />
+								</figure>
+								<p>Supported payment gateways are built into the booking engine and connected to other parts of our PMS.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="segment-cards__item wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-13.png" />
+								</figure>
+								<p>Reduce the hassle of payment gateway integration.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="segment-cards__item wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-14.png" />
+								</figure>
+								<p>Simplify payments and receive worldwide payments in a safe and secured manner.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+
+			<!-- title -->
+			<div class="be-segment-page__main-title">
+				<div class="container">
+					<h2>
+						We're Proudly Built &amp; Hosted On Salesforce
+					</h2>
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<p>Gain unrivalled access to Salesforce Experience Cloud features and boost the functionality of your business.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /title -->
+
+			<!-- articles -->
+			<div class="be-segment-page__articles">
+				<div class="container">
+					<div class="be-segment-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-2.png" alt="" class="adaptive-img wow  fadeInLeft"
+									/>
+								</figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										Enjoy Absolute Business Integration
+									</h3>
+									<br />
+									<section>
+										<ul>
+											<li>Get data from any system connected to Salesforce to further improve your data integration.</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="be-segment-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6 order-lg-1">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-3.png" alt="" class="adaptive-img wow  fadeInRight"
+									/>
+								</figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										Experience Management
+									</h3>
+									<br />
+									<section>
+										<ul>
+											<li>Preconfigured and customizable dashboards to measure and analyze adoption, engagement, most popular groups, users,
+												etc.
+											</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="be-segment-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-4.png" alt="" class="adaptive-img wow  fadeInLeft"
+									/>
+								</figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										Salesforce Automation
+									</h3>
+									<br />
+									<section>
+										<ul>
+											<li>Easily share data with partners, integrate third-party systems to centralize pricing, inventory, and more while
+												avoiding channel conflicts</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /articles -->
+
+			<!-- cards -->
+			<div class="be-segment-page__articles">
+				<div class="container">
+					<h2 class="title-h2 text_center">
+						Auto-optimized Room Rate Controller Maximize Revenue
+					</h2>
+					<div class="row segment-cards">
+						<div class="col-md-4">
+							<div class="segment-cards__item wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-15.png" />
+								</figure>
+								<p>Our booking engine is connected to our Room Rate Controller, our AI engine.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="segment-cards__item wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-16.png" />
+								</figure>
+								<p>The AI engine will optimize the room rate based on availability, current occupancy and more. </p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="segment-cards__item wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-17.png" />
+								</figure>
+								<p>Increase revenues and efficiency automatically.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- cards -->
+			<div class="be-segment-page__articles">
+				<div class="container">
+					<h2 class="title-h2 text_center">
+						Room Availability Are Updated Across All Channels Automatically
+					</h2>
+					<div class="row segment-cards">
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-18.png" />
+								</figure>
+								<p>Room availability based on the real-time room occupancy ensures no overbooking.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="segment-cards__item segment-cards__item-horizontal wow fadeIn">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/be-segment-icon-19.png" />
+								</figure>
+								<p>Your room availability is sync to OTAs Channel (i.e, booking.com, Airbnb, Expedia, etc) via our channel manager as
+									well.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+
+			<!-- prices -->
+			<div class="segment__prices">
+				<div class="container">
+					<h2 class="text_center section-title">Our Pricing Reflects Our Premium Services</h2>
+					<p class="text_center">Our price relays the premium service our Booking Engine brings to your business.
+					</p>
+					<div class="text_center pricing-support__btn wow fadeIn">
+						<apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
+							PLANS &amp; PRICING
+						</apex:outputLink>
+					</div>
+				</div>
+			</div>
+			<!-- /prices -->
+
+		</apex:define>
+	</apex:composition>
+
+</apex:page>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Result__c</fullName>
+    <externalId>false</externalId>
+    <label>Call Result</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appointments</fullName>
+                <default>false</default>
+                <label>Appointments</label>
+            </value>
+            <value>
+                <fullName>Call Backs</fullName>
+                <default>false</default>
+                <label>Call Backs</label>
+            </value>
+            <value>
+                <fullName>Demo/Trial</fullName>
+                <default>false</default>
+                <label>ReEngage</label>
+            </value>
+            <value>
+                <fullName>Follow up_Warm up</fullName>
+                <default>false</default>
+                <label>Follow up/Warm up</label>
+            </value>
+            <value>
+                <fullName>Contacted</fullName>
+                <default>false</default>
+                <label>Contacted</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>2nd Meetings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2nd Meetings</label>
+            </value>
+            <value>
+                <fullName>Voice Mail</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Voice Mail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

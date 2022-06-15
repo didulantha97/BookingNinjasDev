@@ -1,0 +1,179 @@
+<apex:page controller="InvoicePaymentController" cache="false" sidebar="false" showheader="false" standardStylesheets="false">
+    <html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/card.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/jquery.card.js"></script>
+        <script src="https://checkout.stripe.com/checkout.js"></script>
+    </head>
+    <body>
+        <div class="navbar" style="background:rgb(9, 89, 134)">
+            <div class="navbar-inner" style="background:none;border: none;">
+                <div class="container" style="color: white;padding: 9px;">
+                    <apex:image value="{!$Resource.LogoNew}" alt="Logo"/>
+                </div>
+            </div>
+        </div>
+        <apex:outputPanel id="block1">
+            <div class="container">
+                <apex:form id="frm" styleClass="form-horizontal"> 
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><b>Invoice Payment Form</b></p>
+                        </div>
+                        <div class="col-md-6">
+                            Expiration Date: 
+                            <apex:outputText value="{0,date,MM/dd/yyyy}">
+                                <apex:param value="{!quote.ExpirationDate}" />
+                            </apex:outputText>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Client Personal Information</div>
+                                <div class="panel-body">
+                                    <div class="col-md-6"> 
+                                        <div class="input-group">
+                                            <span>Name: </span><b><apex:outputText id="name" value="{!quote.Contact.Name}" /></b>
+                                        </div>
+                                        <br/>
+                                        <div class="input-group">
+                                            <span>Email: </span><b><apex:outputText value="{!quote.Contact.Email_2__c}" id="email" /></b>
+                                        </div>
+                                        <br/>
+                                        <div class="input-group">
+                                            <span>Phone: </span><b><apex:outputText value="{!quote.Contact.Phone}" /></b>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"> 
+                                        <div class="input-group">
+                                            <span>Account: </span><b><apex:outputText value="{!quote.Account.Name}" /></b>
+                                        </div>
+                                        <br/>
+                                        <div class="input-group">
+                                            <span>Quote #: </span><b><apex:outputText value="{!quote.QuoteNumber}" /></b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Product Summary</div>
+                                <div class="panel-body">
+                                    <table class="table table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>Price</th>
+                                                <th>Quantity</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <apex:repeat value="{!quoteLineItems}" var="qli">
+                                                <tr>
+                                                    <td>{!qli.Product2.Name}</td>
+                                                    <td>{!qli.UnitPrice}</td>
+                                                    <td>{!qli.Quantity}</td>
+                                                    <td>{!qli.TotalPrice}</td>
+                                                </tr>
+                                            </apex:repeat>    
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Secured Payment Information</div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-group">
+                                                Card Number:
+                                                <apex:inputText value="{!cardNumber}" id="card_number" label="Card Number" styleClass="form-control" required="true" />     
+                                            </div>
+                                            <br/>
+                                            <div class="input-group">
+                                                Card Expiration (MM/YYYY):
+                                                <apex:inputText value="{!cardExpiration}" id="card_exp" label="Card Expiration" styleClass="form-control" required="true" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-group">
+                                                Card CVV:
+                                                <apex:inputText value="{!cardCvv}" id="card_cvv" label="Card CVV" styleClass="form-control" required="true" />
+                                            </div>
+                                            <br/>
+                                            <br/>
+                                            <div class="input-group">
+                                                <apex:commandButton styleClass="btn btn-success" action="{!createToken}" value="Authorize Card and Process Payment" rerender="block1" disabled="{!IF(quote.One_Time_Payment__c <= 0, true, false)}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card-wrapper"></div>
+                                        </div>                             
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Invoice Summary</div>
+                                <div class="panel-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <span class="badge">${!quote.Grand_Total__c}</span>
+                                            Grand Total
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge">${!quote.One_Time_Payment__c}</span>
+                                            One-Time Payment
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge">
+                                                ${!quote.Monthly_Price__c}, &nbsp;
+                                                <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                                    <apex:param value="{!quote.Effective_Date__c}" /> 
+                                                </apex:outputText>
+                                            </span>
+                                            Monthly Dues
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="badge" id="amount">${!amount}</span>
+                                            Due Now
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <apex:pageMessages ></apex:pageMessages>
+                    </div>
+                </apex:form>
+            </div>
+            <script>
+                var j$ = jQuery.noConflict();
+                j$('form').card({
+                    container: '.card-wrapper',
+                    width: 280,
+                    formSelectors: {
+                        numberInput: 'input[id$="card_number"]',
+                        expiryInput: 'input[id$="card_exp"]',
+                        cvcInput: 'input[id$="card_cvv"]'
+                    },
+                    placeholders: {
+                        name: j$("[id*='name']").text()
+                    }
+                });
+            </script> 
+        </apex:outputPanel>
+    </body>
+    </html>
+
+</apex:page>

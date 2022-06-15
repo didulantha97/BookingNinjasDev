@@ -1,0 +1,112 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false">
+
+    <html>
+        <head>
+          <meta charset="UTF-8"/>
+          <meta name="description" content="Booking Ninjas is an innovative comprehensive property management application perfect for property managers."/>
+          <meta name="keywords" content="Property Management, Property Management System, PMS, Hotel, System, Hospitality Management, Salesforce, AppExchange, Cloud, Comprehensive, Solutions"/>
+          <meta name="viewport" content="initial-scale=1"/>
+          <title>Booking Ninjas: Combined Property Management / Salesforce Solution Application</title>
+          
+          <!--build:css css/styles.min.css-->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+          <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bncsrc/css/bootstrap-grid.css"/>
+          <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bncsrc/css/styles.css"/>
+          <!--endbuild-->
+        </head>
+        <body>
+        <div class="wrapper">
+        <!--main-->
+        <div class="main">
+           
+        <!-- banner -->
+        <div class="bnr bnr-success" style="background-image: url(https://s3.us-east-2.amazonaws.com/bncsrc/img/success-bg.jpg)">
+            <div class="container">
+                <a href="http://inquire.bookingninjas.com" class="logo"><img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/logo.png" alt=""/></a>
+                <div class="bnr__text">
+                   <div class="row">
+                       <div class="col-lg-12">
+                           <h2>Succesfully Submitted!</h2>
+                           <article>
+                               <strong>Thank you for your enquiry.</strong>
+                                Our team will be in touch shortly. <br/>
+                                <a href="http://inquire.bookingninjas.com" class="button">back</a>
+                           </article>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <!-- /banner -->
+        
+        <!-- bottom -->
+        <div class="info info-success">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/partner.png" alt=""/>
+                    </div>
+                    <div class="col-md-5">
+                        <p>1815 Purdy Avenue, Miami Beach, FL 33139 <br/>
+                            sales@bookingninjas.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <strong>+1-305-428-2421</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /bottom -->
+        
+        </div>
+        <!--end-main-->
+        <!--footer-->
+        <footer class="footer">
+          <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+                <address>All rights reserved © 2019 - Booking Ninjas</address>
+            </div>
+            <div class="col-lg-6">
+              <nav class="footer__nav">
+                <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/visa.png" alt=""/></a>
+                <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/mc.png" alt=""/></a>
+                <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/ae.png" alt=""/></a>
+                <a href="#"><img src="https://s3.us-east-2.amazonaws.com/bncsrc/img/paypal.png" alt=""/></a>
+              </nav>
+            </div>
+          </div>
+          </div>
+        </footer>
+        <!--end-footer-->
+        </div>
+        
+        <!--SCRIPT -->
+        <script src="https://s3.us-east-2.amazonaws.com/bncsrc/js/jquery.js"></script> 
+        <!--build:js js/main.min.js -->
+        <!-- endbuild -->
+        <script src="https://s3.us-east-2.amazonaws.com/bncsrc/js/common.js"></script>
+        
+        <script src="https://media.twiliocdn.com/sdk/js/flex-webchat/releases/1.1.0/twilio-flex-webchat.min.js"></script>
+        <script>
+            const appConfig = {
+                accountSid:"AC9f8502ccd4a41283e0c8037a25586d49",
+                flexFlowSid:"FOe2bee542b2e19d1f7a5f9092a814174e"
+            };
+            Twilio.Flex.createWebChat(appConfig);
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-70673409-8"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'UA-70673409-8');
+        </script>
+        <!-- END OF SCRIPT -->
+        
+        </body>
+    </html>
+
+</apex:page>

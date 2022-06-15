@@ -1,0 +1,76 @@
+<apex:component controller="TwilioService" allowDML="true">
+    <!-- <apex:attribute name="mobile_number" required="true" type="String" assignTo="{!recipient}" description="will be the mobile number of recipient" />
+    <apex:attribute name="record_id" type="String" assignTo="{!recordId}" description="the record id where the SMS should get associated to" /> -->
+    
+    <apex:attribute name="record_ids" type="String" assignTo="{!recordId}" description="the record id where the SMS should get associated to" />
+    
+    <!-- SLDS WRAPPER -->
+        <div class="slds-scope">
+            <!-- Messages -->
+            <apex:outputPanel id="messages">
+                <!-- Error panel -->
+                <apex:outputLabel rendered="{!showError}">
+                    <div id="errorPanelmsg" style="z-index: 9999; margin-top:2px; border-radius:5px;" class="slds-notify slds-notify--alert slds-theme--error slds-theme--alert-texture" role="alert">
+                        <h2>
+                            {!responseMessage}
+                        </h2>     
+                    </div>    
+                    <script>
+                    $(document).ready(function(){                            
+                        //error meessage popup fadeout
+                        $('#errorPanelmsg').fadeOut(9000);
+                    });
+                    </script>
+                </apex:outputLabel>
+                <!-- / Error panel -->
+                
+                <!-- Success panel -->
+                <apex:outputLabel rendered="{!showSuccess}">
+                    <div id="successPanelmsg" style="z-index: 9999; margin-top:2px; border-radius:5px;" class="slds-notify slds-notify--alert slds-theme--success slds-theme--alert-texture" role="alert">
+                        {!responseMessage}     
+                    </div>    
+                    <script>
+                    $(document).ready(function(){                            
+                        //error meessage popup fadeout
+                        $('#successPanelmsg').fadeOut(9000);
+                    });
+                    </script>
+                </apex:outputLabel>
+                <!-- / Success panel -->
+                
+            </apex:outputPanel>
+            <!-- / Messages -->
+            <apex:form id="form">
+                <apex:pageBlock id="block" title="Twilio Demo">
+                    <apex:pageBlockSection id="blockSection" title="Send Message" collapsible="false" >
+                        <apex:outputLabel >Template</apex:outputLabel>
+                        <apex:selectList id="selectTemplate" value="{!selectedTemplate}" size="1" multiselect="false">
+                            <apex:selectOptions value="{!templates}" />
+                            <apex:actionSupport action="{!onChangeTemplate}" event="onchange" reRender="inpMessage"/>
+                        </apex:selectList>
+                        <apex:outputLabel >Message</apex:outputLabel>
+                        <apex:inputTextarea id="inpMessage" value="{!message}"/>
+                        <apex:commandButton value="Send SMS" action="{!triggerMessage}" reRender="messages" status="actStatus" >
+                            <apex:param assignTo="{!isSMS}" value="true"/>
+                        </apex:commandButton>
+                        <apex:commandButton value="Send WhatsApp" action="{!triggerMessage}" reRender="messages" status="actStatus" >
+                            <apex:param assignTo="{!isSMS}" value="false"/>
+                        </apex:commandButton>
+                    </apex:pageBlockSection>
+                </apex:pageBlock>                                
+                
+                <!-- Spinner -->                
+                <apex:actionStatus id="actStatus">
+                    <apex:facet name="start">
+                        <div class="slds-spinner_container">
+                            <div class="slds-spinner--brand slds-spinner slds-spinner--medium" aria-hidden="false" role="alert">
+                                <div class="slds-spinner__dot-a"></div>
+                                <div class="slds-spinner__dot-b"></div>
+                            </div>
+                        </div>
+                    </apex:facet>
+                </apex:actionStatus>
+                <!--/ Spinner -->
+            </apex:form>
+        </div>
+</apex:component>

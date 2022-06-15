@@ -1,0 +1,118 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- feature-spotlight -->
+            <div class="feature-spotlight">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider">
+                                <div class="feature-spotlight__slider-big">
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/1.jpg" data-fancybox="gallery"><img alt="Salesforce AppExchange Integration - 1" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/1.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/2.jpg" data-fancybox="gallery"><img alt="Salesforce AppExchange Integration - 2" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/2.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/3.jpg" data-fancybox="gallery"><img alt="Salesforce AppExchange Integration - 3" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/3.jpg"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/4.jpg" data-fancybox="gallery"><img src="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/grid/appexchange/4.jpg" alt="Features on Bookingninjas Property Management System"/></a>
+                                    </div>
+                                    <div>
+                                        <a href="https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/5.jpg" data-fancybox="gallery"><img alt="Salesforce AppExchange Integration - 5" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/5.jpg"/></a>
+                                    </div>
+                                </div>
+                                <div class="feature-spotlight__slider-small">
+                                    <div>
+                                        <img alt="Salesforce AppExchange Integration - 1" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/1.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Salesforce AppExchange Integration - 2" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/2.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Salesforce AppExchange Integration - 3" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/3.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Salesforce AppExchange Integration - 4" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/4.jpg"/>
+                                    </div>
+                                    <div>
+                                        <img alt="Salesforce AppExchange Integration - 5" src=" https://d1b89zc79exfxt.cloudfront.net/img/spotlight/appexchange/5.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feature-spotlight__slider-text">
+                                <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="back">&#x3C; GO BACK</apex:outputLink>
+                                <h1>AppExchange: Thousands of Solutions At Your Fingertips</h1>
+                                <p><i>Booking Ninjas’ versatile PMS system integrates seamlessly with Salesforce AppExchange allowing you to build a platform that addresses all your hotel software needs.</i></p>
+                                <p>Bookings may be the heart of your property management business, but you know that the efforts of several teams help to drive this important metric of success. That’s why Booking Ninjas’ cloud-based Salesforce PMS gives your business access to thousands of solutions through AppExchange, the leading enterprise cloud marketplace with the tools to craft solutions for all your needs. Apps integrate seamlessly with Booking Ninjas allowing you to customize a platform that supports and integrates all aspects of your business. Suddenly the possibilities are endless!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__2collumn-text">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>Booking Ninjas’ is proud to be partnered with Salesforce and AppExchange to offer a range of solutions that can change the way you do business. Choose the solutions that are right for you and find new digital solutions that scale with your success. From simple task managers to advanced computational software, the thousands of apps, helpful customer reviews, and knowledgeable consultants available on AppExchange make it easy to get the most out of your hotel software.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="costumer-page__content">
+                        <div class="container">
+                            <div class="costumer-page__view-list">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-11">
+                                        <article>
+                                            <h2>There’s an app for that (and so much more)</h2>
+                                            <p>AppExchange might already have the perfect solution waiting in the marketplace with helpful customer reviews to guide your decision-making. With over 5,000 ready-to-install third-party applications available, millions of users have already found digital solutions that make a difference for their business. Find solutions to a range of tasks by department and industry, and we’re only scratching the surface of the use cases solved by our relationship with AppExchange. </p>
+                                            <div class="costumer-page__view-list_section">
+                                               <p>Components enable you to create custom apps and pages without code. Craft custom solutions that fit your business and clients using drag and drop building blocks.  Create a marketing or HR hub by aggregating that department’s most powerful tools onto one page within your Booking Ninjas’ platform. Customize apps to better meet the needs of your team so you have the right solution in the right place.</p>
+                                               <p>Bolt Solutions offer pre-built templates for industry solutions built by an ecosystem of partners that integrate seamlessly with your platform. Leverage industry expertise directly into your business by implementing proven solutions with only a few clicks.</p>
+                                               <p>Lightning Data supercharges your sales and marketing efforts with pre-integrated, approved, and scalable data solutions that fuel your business with the right data. Always have the right information at hand when making decisions and empower your employees to work faster and smarter with data solutions that support and grow your business.</p>
+                                               <p>Flow solutions automate processes and connect with third-party systems so all your operations are streamlined and integrated. Create efficiencies that will make you and your staff happy by eliminating redundancies and repetitive tasks through intelligent automation and seamless integration of operations. </p>
+                                               <p>There are nearly limitless options for developing powerful tools that meet your needs, and AppExchange offers a range of ways to find the perfect solution for your business amongst the options listed above. Explore the home page to see featured and trending solutions available to you, use intelligent search options to zero in on the right apps and integrations for your business, and receive personalized recommendations so you never miss an opportunity to strengthen your operations. Want advice from people who have been there before? Turn to App Guides that offer customer recommended solutions across a range of categorizations and industries with guidance on finding the best apps and integrations to support you. Certified expertise for your business and industry is close at hand with consultants available right in the marketplace. </p>
+                                               <p>In addition to a robust marketplace of powerful tools and solutions that can be customized and scaled to your business, AppExchange offers community recommendations and support, technical Q&#x26;A to answer all your questions, free solutions and workflows, as well as collections of apps and solutions listed by product and industry.</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__text-section">
+                        <div class="container">
+                            <div class="row justify-content-center text_center">
+                                <div class="col-lg-11">
+                                    <h2>The Power Of a Platform</h2>
+                                    <p>Booking Ninjas has created a suite of digital solutions with our&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Why)}" target="_blank">PMS system</apex:outputLink> that supports your property management business, and our partnership with Salesforce AppExchange makes it easy to find digital solutions for every aspect of your business. Share information across one platform by integrating industry-leading technology solutions with your Salesforce PMS so you and your team can execute tasks efficiently. With powerful cloud-based solutions you can access everything you need to run your business, both on-site and while working remotely</p>
+                                    <p>To find out more about Booking Ninjas’ partnership with Salesforce AppExchange and find out where you can get Booking Ninjas visit our <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank">AppExchange Listing</a>. Explore the powerful solutions available to you on <a href="https://appexchange.salesforce.com/mktcollections/curated/whatisappexchange" target="_blank">AppExchange here</a>, as well as&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Advantages)}" target="_blank">learn more about our property management system</apex:outputLink> and&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Register)}" target="_blank">try out a 14 day pilot version of our software</apex:outputLink>!</p>
+                                    <p>Also be sure to check out our YouTube channel which provides videos detailing the benefits of the Booking Ninjas property management system!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-spotlight__pager">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_AccessControl)}" styleClass="feature-spotlight__pager-item">
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_Left-black.png" alt=""/></i>
+                            <b>Access Control</b>
+                        </apex:outputLink>
+                        <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlight_AvailabilityGrid)}" styleClass="feature-spotlight__pager-item">
+                            <b>Availability Grid</b>
+                            <i><img src="https://d1b89zc79exfxt.cloudfront.net/img/Arrow_right.png" alt=""/></i>
+                        </apex:outputLink>
+                    </div>
+                </div>
+            </div>
+            <!-- /feature-spotlight -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

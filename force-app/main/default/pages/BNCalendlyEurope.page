@@ -1,0 +1,183 @@
+<apex:page controller="BNConsultationController" showHeader="false" sidebar="false" standardStylesheets="false">
+  <html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="Title" content="Booking Ninjas: Combined Property Management/ Salesforce Solution Application"/>
+        <meta name="description" content="Booking Ninjas is an innovative comprehensive property management application perfect for property managers."/>
+        <meta name="keywords" content="Property Management, Property Management System, PMS, Hotel, System, Hospitality Management, Salesforce, AppExchange, Cloud, Comprehensive, Solutions"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+        <title>Booking Ninjas: Combined Property Management/ Salesforce Solution Application</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+      <!--build:css css/styles.min.css-->
+      <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/v2/slick.css"/>
+      <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/v2/bootstrap-grid.css"/>
+      <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/bnsrc/css/v2/styles.css"/>
+      <!--endbuild-->
+    </head>
+    <body>
+    <div class="wrapper">
+    <!--header-->
+    <header class="header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-7">
+            <a href="/BNIndex3" class="logo"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/v2/logo.png" alt=""/></a>
+          </div>
+          <div class="col-md-6 col-5">
+            <nav class="lang">
+              <ul>
+                <li><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/v2/en.png" alt=""/></a></li>
+                <li><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/v2/es.png" alt=""/></a></li>
+                <li><a href="#"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/v2/br.png" alt=""/></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--end-header-->
+    <!--main-->
+    <div class="main">
+    
+       
+    <!-- banner -->
+    <div class="bnr">
+        <div class="container">
+            <div class="row align-items-center">
+                 <div class="col-lg-6 order-lg-1">
+                     <div class="bnr__iframe">
+                    <iframe src="https://calendly.com/bookingninjas/europe-and-uae" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <article>
+                        <h1>See how it works</h1>
+                        <h6>Have a personal experience with our application and see how it works hand in hand with your business. You will have a real time experience with the application, and you can be rest assured to be thrilled by it. The application was developed with you in mind, so get comfortable making maximum use of it.</h6>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /banner -->
+    
+    
+    
+    </div>
+    <!--end-main-->
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <a href="/BNIndex3" class="logo"><img src="https://s3.us-east-2.amazonaws.com/bnsrc/img/v2/logo-footer.png" alt=""/></a>
+              <address>
+                <p>
+                  1815 Purdy Avenue  <br/>
+                  Miami Beach, FL 33139
+                </p>
+                <p><small> sales@bookingninjas.com</small></p>
+                 <a href="tel:+13054282421"> +1-305-428-2421</a>
+              </address>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-12 order-lg-1" style="margin: 45px 0 0 165px;">
+                    <div class="footer__title">BOOKINGNINJAS</div>
+                    <p>Enhance the quality of guest services, increasing staff productivity and streamlining operations. Make your business a lot simpler and a lot more effective with Booking Ninjas.</p>
+                </div>
+                <div class="col-lg-9">
+                  <apex:form id="subscribeForm">
+                    <apex:inputText value="{!email}" html-placeholder="Enter your email" required="true"/>
+                    <apex:commandButton action="{!Subscribe}" value="Subscribe" styleClass="button" rerender="subscribeResult"/>
+                    <apex:outputPanel id="subscribeResult">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Error panel -->
+                                <apex:outputLabel rendered="{!isFailed}">
+                                    <div id="errorPanelmsg" class="alert alert-danger" role="alert">
+                                        <h2>
+                                            {!responseMessage}
+                                        </h2>     
+                                    </div>    
+                                    <script>
+                                    $(document).ready(function(){                            
+                                        //error meessage popup fadeout
+                                        $('#errorPanelmsg').fadeOut(9000);
+                                    });
+                                    </script>
+                                </apex:outputLabel>
+                                <!-- / Error panel -->
+                
+                                <!-- Success panel -->
+                                <apex:outputLabel rendered="{!isSuccess}">
+                                    <div id="successPanelmsg" class="alert alert-success" role="alert">
+                                        {!responseMessage}     
+                                    </div>    
+                                    <script>
+                                    $(document).ready(function(){  
+                                        // clear form
+                                        $('#contactForm')[0].reset();                          
+                                        //error meessage popup fadeout
+                                        $('#successPanelmsg').fadeOut(9000);
+                                    });
+                                    </script>
+                                </apex:outputLabel>
+                                <!-- / Success panel -->
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                  </apex:form>
+                  <nav class="footer__social">
+                    <a href="https://www.facebook.com/bookingninjas" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/bookingninjas" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCOrcTzmQnmY7DG2nzwfa8zw" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/5346092/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3A00000DvKtaUAF" target="_blank"><i class="fab fa-salesforce"></i></a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">All rights reserved © 2019 - Booking Ninjas</div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end-footer-->
+    </div>
+    
+    <!--SCRIPT -->
+    <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/v2/jquery.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <!--build:js js/main.min.js -->
+    <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/v2/slick.js"></script>
+    <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/v2/wow.js"></script>
+    <!-- endbuild -->
+    <script src="https://s3.us-east-2.amazonaws.com/bnsrc/js/v2/common.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- END OF SCRIPT -->
+    
+    <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function() {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.async = true;
+            mf.src = "//cdn.mouseflow.com/projects/d4cbf8e7-7f0a-4b66-8df8-0e3aaef5edb9.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>
+    
+    </body>
+</html>
+</apex:page>

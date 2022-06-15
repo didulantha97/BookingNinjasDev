@@ -1,0 +1,267 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false"
+    cache="false" controller="BN_CareerController">
+    <apex:includeLightning />
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <!-- top -->
+            <div class="about-page-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img">
+                                <img alt="Booking Ninjas Career - 1" src=" https://d1b89zc79exfxt.cloudfront.net/img/career-bnr1.png" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Booking Ninjas Career</h1>
+                                <p>
+                                    <span>Be a part of something big</span>
+                                </p>
+                                <p>Booking Ninjas empowers people to express themselves by connecting them with a platform that
+                                    caters to real business needs. We’re on a mission to change the way the world views property
+                                    management and improve it on a daily basis.</p>
+                                <p>Join our team and help bring smiles to millions around the world</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content career-page-content">
+                <div class="career-page-timeline">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-lg-3 col-md-6">
+                                <section>
+                                    <p>
+                                        <a href="#">Create influence</a>
+                                    </p>
+                                    <a href="#">With Booking Ninjas, your work is of great value. Perform at your best and watch your
+                                        work influence lives and the productivity of businesses around you.</a>
+                                </section>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <section>
+                                    <p>
+                                        <a href="#">Team spirit </a>
+                                    </p>
+                                    <a href="#">Work with a team that gets you. We are very involved with our working relationships,
+                                        and we do our best to ensure you work with a group that is perfect for you.</a>
+                                </section>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <section>
+                                    <p>
+                                        <a href="#">Work + fun</a>
+                                    </p>
+                                    <a href="#">While we promote good work ethics, we can&#x27;t help indulging in fun activities. Be
+                                        a part of awork environment that gets things done and have fun while at it.</a>
+                                </section>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <section>
+                                    <p>
+                                        <a href="#">Get credibility </a>
+                                    </p>
+                                    <a href="#">Be seen as a leader in your niche. Get recognized as a team player in the property management
+                                        revolution.
+                                    </a>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="about-page-content__title">
+                            <a href="#career-modal" class="button fancybox">APPLY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="career-page-perks">
+                    <div class="container">
+                        <h3 class="about-page-content__title">
+                            <span>The Perks</span>
+                        </h3>
+                        <div class="row no-gutters">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="career-page-perks__item">
+                                    <figure>
+                                        <a href="#">
+                                            <img alt="Flexible Work Schedule - icon" src=" https://d1b89zc79exfxt.cloudfront.net/img/worker.png" />
+                                        </a>
+                                    </figure>
+                                    <section>
+                                        <p>
+                                            <span>Flexible work schedule</span>
+                                        </p>
+                                        <p>Work in ways you’re comfortable with. Be your own self.</p>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="career-page-perks__item">
+                                    <figure>
+                                        <a href="#">
+                                            <img alt="Room to Grow - icon" src=" https://d1b89zc79exfxt.cloudfront.net/img/statistics.png" />
+                                        </a>
+                                    </figure>
+                                    <section>
+                                        <p>
+                                            <span>Room to grow</span>
+                                        </p>
+                                        <p>Every role has learning fused into it. Get better with challenges and take control.</p>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="career-page-perks__item">
+                                    <figure>
+                                        <a href="#">
+                                            <img alt="Have a Voice - icon" src=" https://d1b89zc79exfxt.cloudfront.net/img/voting.png" />
+                                        </a>
+                                    </figure>
+                                    <section>
+                                        <p>
+                                            <span>Have a voice</span>
+                                        </p>
+                                        <p>Everyone is a stakeholder. We makie sure everyone has opinions and we consider them.</p>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="career-page-perks__item">
+                                    <figure>
+                                        <a href="#">
+                                            <img alt="Explore - icon" src=" https://d1b89zc79exfxt.cloudfront.net/img/flag.png" />
+                                        </a>
+                                    </figure>
+                                    <section>
+                                        <p>
+                                            <span>Explore</span>
+                                        </p>
+                                        <p>We don&#x27;t fix you to your resume. Have the freedom to explore other paths.</p>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="career-page-perks__item">
+                                    <figure>
+                                        <a href="#">
+                                            <img alt="Rewards - icon" src=" https://d1b89zc79exfxt.cloudfront.net/img/trophy.png" />
+                                        </a>
+                                    </figure>
+                                    <section>
+                                        <p>
+                                            <span>Rewards? Sure.</span>
+                                        </p>
+                                        <p>We know you love exceeding expectations. And we have special rewards for that.</p>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="career-page-perks__item">
+                                    <figure>
+                                        <a href="#">
+                                            <img alt="Remote Opportunities - icon" src=" https://d1b89zc79exfxt.cloudfront.net/img/monitors.png" />
+                                        </a>
+                                    </figure>
+                                    <section>
+                                        <p>
+                                            <span>Remote opportunities</span>
+                                        </p>
+                                        <p>Can&#x27;t come to Miami? No problem. We have remote job opportunities to cover for
+                                            that.
+                                        </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="career-page-interest">
+                    <div class="container">
+                        <h2 class="about-page-content__title">
+                            <span>What’s your interest?</span>
+                        </h2>
+                        <div id="vacancyGrid" />
+                    </div>
+                </div>
+                <div class="career-page-contact">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <figure>
+                                    <img alt="Booking Ninjas Career - 2" src=" https://d1b89zc79exfxt.cloudfront.net/img/become-one-of-us.png" />
+                                </figure>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-page-content__title">Become one of us</div>
+                                <p>Get ready to join the coolest team ever. Click the button below to begin the application
+                                    process for our careers.</p>
+                                <apex:outputLink value="{!URLFOR($Page.BN_CareerLeadForm)}" styleClass="button">JOIN US</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal career-modal" id="career-modal">
+                    <h3>Become one of us</h3>
+                    <apex:form >
+                        <div class="career-modal__form">
+                            <div class="career-modal__form-item">
+                                <label>Name
+                                    <sup>*</sup>
+                                </label>
+                                <apex:inputText value="{!name}" />
+                            </div>
+                            <div class="career-modal__form-item">
+                                <label>Phone
+                                    <sup>*</sup>
+                                </label>
+                                <apex:inputText value="{!phone}" />
+                            </div>
+                            <div class="career-modal__form-item">
+                                <label>Email
+                                    <sup>*</sup>
+                                </label>
+                                <apex:inputText value="{!email}" />
+                            </div>
+                            <div class="career-modal__form-item">
+                                <label>Linkedin URL</label>
+                                <apex:inputText value="{!linkedin}" />
+                            </div>
+                            <div class="career-modal__form-item">
+                                <label>Position</label>
+                                <apex:selectList size="1" value="{!position}">
+                                    <apex:selectOptions value="{!positionList}" />
+                                </apex:selectList>
+                            </div>
+                            <div class="career-modal__form-item text_center">
+                                <apex:commandButton action="{!register}" value="Submit" styleClass="button" />
+                            </div>
+                            <div class="career-modal__form-item text_center">
+                                <small>
+                                    <i class="fas fa-lock"></i> We hate spam and promise to keep your data address safe</small>
+                            </div>
+                        </div>
+                    </apex:form>
+                </div>
+            </div>
+            <!-- /content -->
+            <script>
+                $Lightning.use("c:vacancyApp", function () {
+                    $Lightning.createComponent(
+                        "c:vacancyList",
+                        { vacancyId: null },
+                        "vacancyGrid",
+                        function (cmp) {
+                            console.log("Component is created!");
+                            console.log(cmp);
+                        });
+                });        
+            </script>
+        </apex:define>
+    </apex:composition>
+</apex:page>

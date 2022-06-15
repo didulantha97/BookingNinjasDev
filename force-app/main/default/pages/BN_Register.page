@@ -1,0 +1,414 @@
+<!--
+  @description       : 
+  @author            : 
+  @group             : 
+  @last modified on  : 12-13-2020
+  @last modified by  : teguh@bookingninjas.com
+-->
+<apex:page docType="html-5.0"
+           showHeader="false"
+           sidebar="false"
+           standardStylesheets="false"
+           applyBodyTag="false"
+           applyHtmlTag="false"
+           cache="true"
+           controller="BN_RegisterController">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <link rel="stylesheet"
+                  href="https://eggshell-quoll-1301.twil.io/assets/intlTelInput.css" />
+            <style>
+                .hidden {
+                    display: none;
+                }
+
+                button:hover {
+                    filter: contrast(115%);
+                }
+
+                button:disabled {
+                    opacity: 0.5;
+                    cursor: default;
+                }
+
+                button:hover:disabled {
+                    background: #ffb800;
+                }
+
+                /* spinner/processing state, errors */
+
+                .spinner,
+                .spinner:before,
+                .spinner:after {
+                    border-radius: 50%;
+                }
+
+                .spinner {
+                    color: #ffffff;
+                    font-size: 22px;
+                    text-indent: -99999px;
+                    margin: 0px auto;
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    box-shadow: inset 0 0 0 2px;
+                    -webkit-transform: translateZ(0);
+                    -ms-transform: translateZ(0);
+                    transform: translateZ(0);
+                }
+
+                .spinner:before,
+                .spinner:after {
+                    position: absolute;
+                    content: "";
+                }
+
+                .spinner:before {
+                    width: 10.4px;
+                    height: 20.4px;
+                    background: #fbb805;
+                    border-radius: 20.4px 0 0 20.4px;
+                    top: -0.2px;
+                    left: -0.2px;
+                    -webkit-transform-origin: 10.4px 10.2px;
+                    transform-origin: 10.4px 10.2px;
+                    -webkit-animation: loading 2s infinite ease 1.5s;
+                    animation: loading 2s infinite ease 1.5s;
+                }
+
+                .spinner:after {
+                    width: 10.4px;
+                    height: 10.2px;
+                    background: #fbb805;
+                    border-radius: 0 10.2px 10.2px 0;
+                    top: -0.1px;
+                    left: 10.2px;
+                    -webkit-transform-origin: 0px 10.2px;
+                    transform-origin: 0px 10.2px;
+                    -webkit-animation: loading 2s infinite ease;
+                    animation: loading 2s infinite ease;
+                }
+
+                @-webkit-keyframes loading {
+                    0% {
+                        -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                    }
+                }
+
+                @keyframes loading {
+                    0% {
+                        -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                    }
+                }
+
+            </style>
+            <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+
+            <div class="trial">
+                <div class="trial__bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 trial__col-padding">
+                                <h4>The Booking Ninjas Pilot Trial Program</h4>
+                                <h2>For the Pilot testing, you get a working demo of what we will be offering you. Our pilot
+                                    features include:</h2>
+                                <ul class="trial__advantage">
+                                    <li>Intelligent Customer/Guest Analysis</li>
+                                    <li>Accept online payments instantly</li>
+                                    <li>Virtual Management of Physical Properties and Facilities</li>
+                                    <li>Digital Marketing Management Platform</li>
+                                    <li>All-in-one Channel Management</li>
+                                    <li>Integration of external third-party services (optional)</li>
+                                    <li>Customization upon your request</li>
+                                    <li>You can find out more&nbsp;
+                                        <apex:outputLink value="{!URLFOR($Page.BN_Integrations)}"
+                                                         target="_blank">here</apex:outputLink> and&nbsp;
+                                        <apex:outputLink value="{!URLFOR($Page.BN_Solutions)}"
+                                                         target="_blank">here</apex:outputLink>.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 trial__col-bg">
+                                <div id="gif"
+                                     style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;width:100%;background: rgba(0,0,0,0.75) url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/loading.gif) no-repeat center center;z-index: 10000;"
+                                />
+                                <apex:form id="trial-form">
+                                    <div class="trial__form">
+                                        <h3>Sign up for your 14-day pilot access.</h3>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="trial__form-item">
+                                                    <apex:inputText value="{!firstName}"
+                                                                    html-placeholder="First name"
+                                                                    id="first_name"
+                                                                    required="true"
+                                                                    maxlength="25" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="trial__form-item">
+                                                    <apex:inputText value="{!lastName}"
+                                                                    html-placeholder="Last name"
+                                                                    id="last_name"
+                                                                    required="true"
+                                                                    maxlength="25" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="trial__form-item">
+                                            <apex:inputText id="business-name"
+                                                            value="{!businessName}"
+                                                            html-placeholder="Company name"
+                                                            required="true"
+                                                            maxlength="50" />
+                                        </div>
+                                        <div class="trial__form-item">
+                                            <apex:input type="email"
+                                                        value="{!email}"
+                                                        html-placeholder="Work email"
+                                                        required="true"
+                                                        id="email" />
+                                        </div>
+                                        <div class="trial__form-item">
+                                            <apex:inputText id="trial-phone"
+                                                            value="{!phone}"
+                                                            html-placeholder="123-456-7890"
+                                                            required="true"
+                                                            onkeypress="return inputLimiter(event,'Telephone');"
+                                                            maxlength="14"
+                                                            style="padding-left: 115px !important;" />
+                                        </div>
+                                        <small style="margin-top:-3px;padding-bottom:0px!important;">Your card will be charged a dollar ($1) to authenticate your sign-up.</small>
+                                        <div id="card-element" class="trial__form-item" style="padding:20px!important;">
+                                        </div>
+                                        <div class="sr-field-error" id="card-errors" role="alert" style="padding-bottom:10px;color:red;"></div>
+                                        <div class="trial__form-item-check">
+                                            <label>
+                                                <input class="trial__form-checkbox" type="checkbox" required="required" />
+                                                I agree to the <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a> and understand that this a recurring subsription. 
+                                                I will be charged automatically on a recurring basis unless I cancel.
+                                            </label>
+                                        </div>
+
+                                        <div class="trial__form-btn">
+                                            <button id="submit" class="button">
+                                                <div class="spinner hidden" id="spinner"></div>
+                                                <span id="button-text">Sign Up</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </apex:form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://eggshell-quoll-1301.twil.io/assets/intlTelInput.min.js"></script>
+            <script src="https://bngeneral.s3-us-west-2.amazonaws.com/js/form-validation.js"></script>
+            <script type="text/javascript">
+                // add dash on phone number
+                $('[id$=trial-phone]').bind('keyup', 'keydown', function (e) {
+                    //To accomdate for backspacing, we detect which key was pressed - if backspace, do nothing:
+                    if (e.which !== 8) {
+                        var numChars = $('[id$=trial-phone]').val().length;
+                        if (numChars === 3 || numChars === 7) {
+                            var thisVal = $('[id$=trial-phone]').val();
+                            thisVal += '-';
+                            $('[id$=trial-phone]').val(thisVal);
+                        }
+                    }
+                });
+
+                // Show a loader on payment submission
+                function showLoadeder() {
+                    let formObj = document.querySelector("[id$=trial-form]")
+                    if (formObj.checkValidity() === true) {
+                        $('#gif').show();
+                    }
+                }
+
+                // A reference to Stripe.js
+                var stripe;
+
+                var orderData = {
+                    items: [{ id: "bn-trial" }],
+                    currency: "usd",
+                    amount: 1,
+                    description: "Booking Ninjas trial request."
+                };
+
+                fetch("/services/apexrest/Stripe/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(orderData)
+                })
+                    .then(function(result) {
+                        return result.json();
+                    })
+                    .then(function(data) {
+                        return setupElements(data);
+                    })
+                    .then(function(stripeData) {
+                        document.querySelector("#submit").addEventListener("click", function(evt) {
+                            let formObj = document.querySelector("[id$=trial-form]")
+                            if (formObj.checkValidity() === true) {
+                                evt.preventDefault();
+                                changeLoadingState(true);
+                                // Initiate payment
+                                pay(stripeData.stripe, stripeData.card, stripeData.clientSecret);
+                            }
+                        });
+                    });
+                
+                // Set up Stripe.js and Elements to use in checkout form
+                var setupElements = function(data) {
+                    stripe = Stripe(data.publicKey);
+                    var elements = stripe.elements();
+                    var style = {
+                        base: {
+                            color: "#32325d",
+                            fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+                            fontSmoothing: "antialiased",
+                            fontSize: "16px",
+                            "::placeholder": {
+                                color: "#aab7c4"
+                            }
+                        },
+                        invalid: {
+                            color: "#fa755a",
+                            iconColor: "#fa755a"
+                        }
+                    };
+
+                    var card = elements.create("card", { style: style, hidePostalCode: true });
+                    card.mount("#card-element");
+
+                    return {
+                        stripe: stripe,
+                        card: card,
+                        clientSecret: data.clientSecret,
+                        id: data.id
+                    };
+                };
+
+                /*
+                * Calls stripe.confirmCardPayment which creates a pop-up modal to
+                * prompt the user to enter  extra authentication details without leaving your page
+                */
+                var pay = function(stripe, card, clientSecret) {
+                    var fName = document.querySelector("[id$=first_name]").value;
+                    var lName = document.querySelector("[id$=last_name]").value;
+                    var cardholderName = `${fName} ${lName}`;
+                    var isSavingCard = true;
+
+                    var data = {
+                        card: card,
+                        billing_details: {
+                            name: cardholderName
+                        }
+                    };
+
+                    changeLoadingState(true);
+
+                    // Initiate the payment.
+                    // If authentication is required, confirmCardPayment will automatically display a modal
+
+                    // Use setup_future_usage to save the card and tell Stripe how you plan to charge it in the future
+                    stripe
+                        .confirmCardPayment(clientSecret, {
+                            payment_method: data,
+                            setup_future_usage: isSavingCard ? "off_session" : ""
+                        })
+                        .then(function(result) {
+                            if (result.error) {
+                                changeLoadingState(false);
+                                showError(result.error.message);
+                            } else {
+                                orderComplete(clientSecret);
+                                // There's a risk the customer will close the browser window before the callback executes
+                                // Fulfill any business critical processes async using a 
+                                // In this sample we use a webhook to listen to payment_intent.succeeded 
+                                // and add the PaymentMethod to a Customer
+                            }
+                        });
+                };
+
+                /* ------- Post-payment helpers ------- */
+
+                // Update customer data
+                var orderComplete = function(clientSecret) {
+                    stripe.retrievePaymentIntent(clientSecret)
+                        .then(function(result) {
+                            if (result.error) {
+                                changeLoadingState(false);
+                                showError(result.error.message);
+                            } else {
+                                var fName = document.querySelector("[id$=first_name]").value;
+                                var lName = document.querySelector("[id$=last_name]").value;
+
+                                var customerData = {
+                                    clientSecret: clientSecret,
+                                    cusName: `${fName} ${lName}`,
+                                    cusPhone: document.querySelector("[id$=trial-phone]").value,
+                                    cusEmail: document.querySelector("[id$=email]").value,
+                                    cusCompany: document.querySelector("[id$=business-name]").value
+                                };
+
+                                fetch("/services/apexrest/Stripe2/", {
+                                    method: "POST",
+                                    headers: {
+                                        "Content-Type": "application/json"
+                                    },
+                                    body: JSON.stringify(customerData)
+                                }).then(function() {
+                                    // Redirect to thank you page
+                                    window.location.href = `/trial-request-successful?id=${clientSecret}`;
+                                });
+                            }
+                        });
+                };
+
+                var showError = function (errorMsgText) {
+                    changeLoadingState(false);
+                    var errorMsg = document.querySelector(".sr-field-error");
+                    errorMsg.textContent = errorMsgText;
+                    setTimeout(function () {
+                        errorMsg.textContent = "";
+                    }, 10000);
+                };
+
+                // Show a spinner on payment submission
+                var changeLoadingState = function(isLoading) {
+                    if (isLoading) {
+                        document.querySelector("button#submit").disabled = true;
+                        document.querySelector("#spinner").classList.remove("hidden");
+                        document.querySelector("#button-text").classList.add("hidden");
+                    } else {
+                        document.querySelector("button#submit").disabled = false;
+                        document.querySelector("#spinner").classList.add("hidden");
+                        document.querySelector("#button-text").classList.remove("hidden");
+                    }
+                };
+
+            </script>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

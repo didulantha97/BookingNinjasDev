@@ -1,0 +1,157 @@
+<apex:page controller="BN_TemplateController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
+    <html>
+       <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <meta name="title" content="{!title}"/>
+            <meta name="description" content="{!description}"/>
+            <meta name="viewport" content="initial-scale=1"/>
+            <meta name="p:domain_verify" content="2053f77bff71fd1688a932c54e2e4ecc"/>
+            <title>{!title}</title>
+
+            <link rel="icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/favicon.ico" />
+            <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/jquery.fancybox.min.css" />
+            <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/fontawesome.css" />
+            <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/slick.css" />
+            <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/bootstrap-grid.css" />
+            <link href="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/css/screen.css" rel="stylesheet" media="screen" />
+            <link href="https://www.bookingninjas.com/{!page}" rel="canonical" />
+            
+            <!-- Google Tag Manager -->
+            <script>
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-PQ4V7BZ');
+            </script>
+            <!-- End Google Tag Manager -->
+            
+            <!-- Structured Data -->
+            <apex:outputText value="{!structuredData}" escape="false" />
+            <!-- End Structured Data -->
+            <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/jquery.js"></script>
+            <script src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.5.0/twilio-flex-webchat.min.js"></script>
+            <script src="https://carmine-dhole-7132.twil.io/assets/appConfig.js"></script>
+            <script src="https://js.stripe.com/v3/"></script>
+        </head>
+        <body class="landing" style="background-image: url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/landing-top-bg6.jpg);">
+    
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ4V7BZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+    
+            <div class="wrapper no-bg">
+                <!--header-->
+                <header class="header header-light">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto logo-wrap">
+                            <a class="logo" href="/"><img alt="Booking Ninjas Logo" src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo-icon.png" /></a>
+                        </div>
+                        <div class="col-12 col-sm-auto justify-content-center buttons">
+                            <apex:outputLink styleClass="button" value="{!URLFOR($Page.BNCalendly)}">SCHEDULE A MEETING</apex:outputLink>
+                        </div>
+                    </div>
+                </header>
+                <!--end-header-->
+                <!--main-->
+                <div class="main" id="main-section">
+
+                    <apex:insert name="bn_content"/>
+                    
+                </div>
+                <!--end-main-->
+                <!--footer-->
+                <footer class="footer">
+                    <div class="footer__top text_center">
+                        <div class="container">
+                            <div class="row justify-content-center ">
+                                <div class="col-lg-5">
+                                    <a href="/" class="logo"><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo-footer.png" alt="" /></a>
+                                    <address>
+                                        <p>
+                                            1815 Purdy Avenue <br />
+                                            Miami Beach, FL 33139
+                                        </p>
+                                        <p><small> sales@bookingninjas.com</small></p>
+                                        <a href="tel:866212"> (866) 217 3210</a>
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom text_center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-md-6">All rights reserved © 2021 - Booking Ninjas</div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!--end-footer-->
+            </div>
+            
+            <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/jquery.fancybox.min.js"></script>
+            <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/slick.js"></script>
+            <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/wow.js"></script>
+            <script src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/common.js"></script>
+        
+            <script>
+                Twilio.FlexWebChat.createWebChat(appConfig).then(
+                    webChat => {
+                        const { manager } = webChat;
+
+                        webChat.init();
+
+                        if (webChat.manager.store.getState().flex.session.isEntryPointExpanded) {
+                            Twilio.FlexWebChat.Actions.invokeAction('MinimizeChat'); // minimize chat as default
+                        }
+
+                        Twilio.FlexWebChat.Actions.on("afterStartEngagement", (payload) => {
+                            // play audio chat
+                            manager.chatClient.on("messageAdded", (e) => {
+                                if (!webChat.manager.store.getState().flex.session.isEntryPointExpanded) {
+                                    Twilio.FlexWebChat.Actions.invokeAction('ToggleChatVisibility'); // if new message, maximize chat
+                                }
+                                let currentUser = webChat.manager.store.getState().flex.session.tokenPayload.identity;
+                                if (e.author !== currentUser) { // play audio if receive new message
+                                    const mediaId = Twilio.FlexWebChat.AudioPlayerManager.play({
+                                        url: "https://carmine-dhole-7132.twil.io/assets/chat.mp3",
+                                        repeatable: false
+                                    });
+                                }
+                            });
+                        });
+
+                    }
+                );
+            </script>
+            
+            <script>
+                var _mfq = _mfq || [];
+                (function() {
+                    var mf = document.createElement("script");
+                    mf.type = "text/javascript"; mf.async = true;
+                    mf.src = "//s3-us-west-2.amazonaws.com/www.bookingninjas.com/js/6defcb08-eb86-45f4-aca3-66c1425e4139.js";
+                    document.getElementsByTagName("head")[0].appendChild(mf);
+                })();
+            </script>
+            <script type="application/ld+json">
+                [ {
+                    "@context" : "http://schema.org",
+                    "@type" : "LocalBusiness",
+                    "name" : "Booking Ninjas",
+                    "image" : "https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/logo-footer.png",
+                    "email" : "sales@bookingninjas.com",
+                    "address" : {
+                    "@type" : "PostalAddress",
+                    "streetAddress" : "1815 Purdy Avenue Miami Beach, FL 33139",
+                    "telephone" : "+19176002345"
+                    },
+                    "url" : "https://www.bookingninjas.com"
+                } ]
+            </script>
+    
+        </body>
+    </html>
+
+</apex:page>

@@ -1,0 +1,378 @@
+<apex:page cache="false"  sidebar="false" showheader="false" controller="OrderPaymentController" standardStylesheets="false" action="{!redirectExpirationDate}">
+<apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" />
+    
+<style>
+ .footer {
+    text-align: center;
+    width:100%;
+    overflow:hidden;
+    padding: 5px 0;
+    margin-top: 10px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+    display:block;
+    float:left;
+}
+.span7 label {
+    margin-right: 5px;
+    float: left;
+    width: 90px;
+    text-align: right;
+}
+legend {
+    padding: 6px 0px 6px 0px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: 1px solid #e5e5e5;
+    background-color: #3c3c3c;
+    
+}
+.paymentsec label{
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+hr{
+    margin-top: 15px;
+    float:left;
+    width: 100%;
+}
+.selectcardtype{
+    width:105px;
+}
+legend div{
+    margin-left:6px;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+h4 {
+    display: inline;
+    margin-right: 10px;
+}
+.errorM3{
+    margin-left: 30px;
+    padding: 10px;
+    background-color: rgb(241, 194, 194);
+}
+</style>
+
+    <apex:includeScript value="{!URLFOR($Resource.bootstrap, 'bootstrap/js/bootstrap.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.bootstrap, 'bootstrap/js/bootstrap.min.js')}" />
+
+    <apex:stylesheet value="{!URLFOR($Resource.bootstrap, 'bootstrap/css/bootstrap.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.bootstrap, 'bootstrap/css/bootstrap.min.css')}" />
+    <script>
+        var jsonString = '';
+     
+    function somethin(){
+        doPayment();
+    }
+    function validate(){
+        if( $('.firstname').val() == null || $('.firstname').val().trim() == ''){
+            displayMessage('Please enter First name');
+            return false;
+        }else if( $('.lastname').val() == null || $('.lastname').val().trim() == ''){
+            displayMessage('Please enter Last name');
+            return false;
+        }else if( $('.email').val() == null || $('.email').val().trim() == ''){
+            displayMessage('Please enter Email ID');
+            return false;
+        }else if( $('.phone').val() == null || $('.phone').val().trim() == ''){
+            displayMessage('Please enter phone number');
+            return false;
+        }else if( $('.street').val() == null || $('.street').val().trim() == ''){
+            displayMessage('Please enter Billing Address');
+            return false;
+        }else if( $('.city').val() == null || $('.city').val().trim() == ''){
+            displayMessage('Please enter City');
+            return false;
+        }else if( $('.zipcode').val() == null || $('.zipcode').val().trim() == ''){
+            displayMessage('Please enter Postalcode');
+            return false;
+        }else if($('.country').val() == null || $('.country').val().trim() == ''){
+            displayMessage('Please select Country');
+            return false;
+        }else if($('.country').val() == 'United States' && ($('.state').val() == null || $('.state').val().trim() == '')){
+            displayMessage('Please select state');
+            return false;
+        }else if( $('.creditcardnumber').val() == null || $('.creditcardnumber').val().trim() == ''){
+            displayMessage('Please enter valid Credit Card Number');
+            return false;
+        }else if( document.getElementById('j_id0:frm:cardtype').value  == null || document.getElementById('j_id0:frm:cardtype').value.trim() == ''){
+            displayMessage('Please select valid Credit Card Type');
+            return false;
+        }else if( $('.expmont').val() == null || $('.expmont').val().trim() == ''){
+            displayMessage('Please select valid Expiry Date');
+            return false;
+        }else if( $('.expyear').val() == null || $('.expyear').val().trim() == ''){
+            displayMessage('Please select valid Expiry Date');
+            return false;
+        }else if( $('.expmont').val() != null && $('.expmont').val().trim() != '' && $('.expyear').val() != null && $('.expyear').val().trim() != '' ){
+                var monthInt = parseInt($('.expmont').val());
+                var yearInt = parseInt($('.expyear').val());
+                var currentYear = (new Date()).getYear()+1900;
+                var currentMonth = (new Date()).getMonth();
+                if(yearInt < currentYear || (yearInt == currentYear && monthInt < (currentMonth+1))){
+                    displayMessage('Please select valid Expiry Date');
+                    return false;       
+                }else
+                    save();
+                  
+        }else{
+            save();
+        }
+    }
+    function oncomplete(){
+        displayMessage(54545);
+        dopayment();    
+    }
+    function siomehthi(){
+        //displayMessage(2323);
+    }
+    
+    function displayMessage(msg){
+        $('#errmsg').html(msg);
+        $('#displayMessagemsg').show();
+    }
+  
+    
+</script>
+    <apex:outputpanel id="ccinfoid">
+        <script>
+        jsonString = '{"oppId" : "{!recId}","cardtype":"{!orderObj.Client__r.Card_Type__c}","cardnum":"{!orderObj.Client__r.Card_Number__c}","expmonth":"{!orderObj.Client__r.Card_Expiration_Month__c}","expyear":"{!orderObj.Client__r.Card_Expiration_Year__c}","name":"{!orderObj.Client__r.Name}"}';
+    </script>
+    </apex:outputpanel>
+    <style>
+.btnclass {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #006dcc;
+    background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc),
+        to(#0044cc) );
+    background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+    background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+    background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+    background-repeat: repeat-x;
+    filter: progid : DXImageTransform.Microsoft.gradient ( startColorstr =
+        '#ff0088cc', endColorstr = '#ff0044cc', GradientType = 0 );
+    border-color: #0044cc #0044cc #002a80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid : DXImageTransform.Microsoft.gradient ( enabled =   false
+        );
+}
+</style>
+    <div class="navbar" style="background:rgb(9, 89, 134)">
+      <div class="navbar-inner" style="background:none;border: none;">
+        <div class="container" style="color: white;padding: 9px;">
+            <strong>Booking Ninjas</strong>&nbsp;&nbsp;&nbsp;Combined Property Management/ Salesforce Solution Application
+        </div>
+      </div>
+    </div>
+    <div class="span14" style="margin-left: 50px;">
+    <apex:form id="frm" styleClass="form-horizontal">
+    <apex:actionfunction name="save" action="{!save}" reRender="errmsg" oncomplete="somethin();" ></apex:actionfunction>
+    <apex:actionFunction name="doPayment" action="{!doPayment}" reRender="errmsg" oncomplete="siomehthi()"></apex:actionFunction>
+    <apex:outputPanel id="errmsg">
+        <apex:pageMessages />
+        <div style="display:none" class="message errorM3" id="displayMessagemsg" role="displayMessage">
+                <table border="0" cellpadding="0" cellspacing="0" class="messageTable" style="padding:0px;margin:0px;">
+                    <tbody>
+                        <tr valign="top">
+                            <td><img alt="ERROR" class="msgIcon" src="/s.gif" title="ERROR"/></td><td class="messageCell"><div id="j_id0:frm:j_id12:j_id13:j_id14:0:j_id15:j_id16:j_id18" class="messageText"><span id="j_id0:frm:j_id12:j_id13:j_id14:0:j_id15:j_id16:j_id19" style="color:#cc0000"><h4>Error:</h4></span><span id="errmsg"></span><br /></div></td></tr><tr><td></td><td></td></tr></tbody></table></div>
+    </apex:outputPanel>
+    <div class="span7">
+        <h3 style="
+    margin-bottom: 5px;
+    line-height: 20px;
+">Online Payment Form:</h3>
+        <div class="pull-left" style="color:#636363;padding-left:1px">Get your dream solution today</div>
+        <div class="span pull-right" style="color:#636363">Expiration Date: 
+            <apex:outputText value="{0,date,MM/dd/yyyy}">
+               <apex:param value="{!orderObj.Expiry_Date__c}" />
+            </apex:outputText>
+            
+        </div>
+        <!-- input type="button" onClick="updateOrder();" value="Update Oppty"/ -->
+        
+        <br />
+        <!--
+        -->
+        <div style="border:1px solid #ccc;margin-top:5px;" class="pull-left">
+        <legend style="margin-bottom: 2px;"><div>Personal Information</div></legend>
+        <div class="span7" style="margin-top: 5px">
+        <div class="span3"><label>First Name</label> <apex:inputField styleclass="firstname input-medium" label="Name"
+            value="{!orderObj.ChargentOrders__Billing_First_Name__c}" /></div>
+        <div class="span3"><label>Email</label> <apex:inputField styleclass="email input-medium" label="Name"
+            value="{!orderObj.ChargentOrders__Billing_Email__c}" /></div>
+        </div>
+        <div class="span7" style="margin-top: 10px; margin-bottom: 10px;">
+        <div class="span3"><label>Last Name</label> <apex:inputField styleclass="lastname input-medium" label="Name"
+            value="{!orderObj.ChargentOrders__Billing_Last_Name__c}" /></div>
+
+        <div class="span3"><label>Phone</label> <apex:inputField styleclass="phone input-medium" label="Name"
+            value="{!orderObj.ChargentOrders__Billing_Phone__c}" /></div>
+        </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+<div style="border:1px solid #ccc;margin-top:5px;" class="pull-left">
+        <legend style="margin-bottom: 2px;"><div>Billing Information</div></legend>
+        <apex:outputPanel id="cardfrm">
+        <div class="span7" style="margin-top: 5px">
+            <div class="span3">
+                <apex:actionRegion >
+                    <label>Existing Credit Card</label>
+                    
+                    <apex:actionFunction action="{!fetchCardDetails}"
+                        name="fetchCardDetails" rerender="paymentblockid,cardfrm">
+                    </apex:actionFunction>
+                </apex:actionRegion>
+            </div>
+            <div class="span3">
+                <label>City</label> 
+                <apex:inputField styleclass="city input-medium" label="Name"
+                    value="{!orderObj.ChargentOrders__Billing_City__c}" />
+            </div>
+        </div>
+        <div class="span7" style="margin-top: 0px; margin-bottom: 10px;">
+            <div class="span3">
+                <label>Address</label> 
+                <apex:inputField styleclass="street input-medium" style="height:100px" label="Name"
+                        value="{!orderObj.ChargentOrders__Billing_Address__c}" />
+            </div>
+            <div class="span3">
+                <label>Postal code</label> 
+                <apex:inputField styleclass="zipcode input-medium" label="Name"
+                    value="{!orderObj.ChargentOrders__Billing_Zip_Postal__c}" />
+                <div style="margin-top: 10px;">
+                    <label>State</label> 
+                    <apex:inputField style="width:165px"  styleclass="state input-medium" label="Name"
+                    value="{!orderObj.ChargentOrders__Billing_State__c}" />
+                    <div style="margin-top: 10px">
+                        <label>Country</label> 
+                        <apex:inputField style="width:165px" styleclass="country input-medium" label="Name"
+                            value="{!orderObj.ChargentOrders__Billing_Country__c}" /></div>
+                    </div>
+                </div>
+            </div>
+        </apex:outputpanel> 
+        </div>
+        
+        <apex:outputpanel style="border:1px solid #ccc;margin-top:5px;width:104%;display:block" styleclass="pull-left">
+        <legend style="margin-bottom: 2px;background-color: rgb(73, 255, 146)"><div>Secure Payment
+        Information <div class="pull-right" style="margin-right:2px;">
+            <img src="{!$resource.creditcard}/24/visa_24.png" />
+            <img src="{!$resource.creditcard}/24/amex_24.png" />
+            <img src="{!$resource.creditcard}/24/mastercard_24.png" />
+            <img src="{!$resource.creditcard}/24/discover_24.png" />
+        </div></div></legend>
+        <apex:outputpanel id="paymentblockid" styleclass="span8 paymentsec" style="margin: 0px">
+        <div class="pull-left" style="width:155px;margin-right: 0px;padding: 0px;"><img src="{!$resource.creditcard}/102-512.png" style="opacity: 0.2;width:130px;" /></div>
+        <div class="span6" style="margin-top: 10px;margin-left:0px;width:540px">
+        <!--<div class="span3"><label>Name (as it appears on your card)</label> <apex:inputField styleclass="input-large" label="Name"
+            value="{!orderObj.ChargentOrders__Card_Number__c}" /></div>
+        -->
+                <div class="span3" style="margin-left:0px;"><label>Card Number (no dashes or spaces)</label> <apex:inputField styleclass="input-large creditcardnumber" label="Name"
+            value="{!orderObj.ChargentOrders__Card_Number__c}" /></div>
+        <div class="span3" style="margin-left:0px;width:105px"><label>Card Type</label> <apex:inputfield style="width:105px;float:left;" styleclass="selectcardtype creditcardtype" id="cardtype" label="Name"
+            value="{!orderObj.ChargentOrders__Card_Type__c}" /></div>
+        </div>
+        <div class="span6" style="margin-top: 10px;margin-left:0px;width:540px">
+
+        <div class="span3" style="margin-left:0px;"><label>Expiration Date</label> <apex:selectList size="1" styleclass="input-medium expmont" style=" width: 100px; "
+            label="Name"
+            value="{!orderObj.ChargentOrders__Card_Expiration_Month__c}">
+            <apex:selectoptions value="{!month}" />
+        </apex:selectList>&nbsp; <apex:selectList size="1" styleclass="input-medium expyear"
+            style=" width: 100px; " label="Name"
+            value="{!orderObj.ChargentOrders__Card_Expiration_Year__c}">
+            <apex:selectoptions value="{!year}" />
+        </apex:selectList></div>
+        <div class="span3" style="margin-left:0px;"><label title="3 on back, Amex: 4 on front">Security Code</label> <apex:inputField label="Name" styleclass="input-small"
+            value="{!orderObj.ChargentOrders__Card_Security_Code__c}" /></div>
+        </div>
+        <div class="span8" style="margin-top: 10px;margin-left:0px;">
+<apex:inputfield value="{!orderObj.ChargentOrders__Payment_Method__c}" style="display:none"/>
+
+        
+        </div>
+        </apex:outputpanel>
+        </apex:outputpanel>
+        
+    </div>
+    <div class="span4" style="border:1px solid #ccc;margin-top:60px;margin-left:40px;">
+        <legend style="margin-top: 0px;"><div>Order Summary</div></legend>
+        <div class="span2">
+        <div style="float: left;">Product 1:</div>
+        <div style="float: left;">&nbsp;<apex:outputField label="Name"
+            value="{!orderObj.opportunity__r.Product_Item_1__r.Name}" /></div>
+        </div>
+        <div class="span2">
+        <div style="float: left;">Product 2:</div>
+        <div style="float: left;">&nbsp;<apex:outputField label="Name"
+            value="{!orderObj.opportunity__r.Product_Item_2__r.Name}" /></div>
+        </div>
+        <div class="span2">
+        <div style="float: left;">Product 3:</div>
+        <div style="float: left;">&nbsp;<apex:outputField label="Name"
+            value="{!orderObj.opportunity__r.Product_Item_3__r.Name}" /></div>
+        </div>
+        <div class="span2">
+        <div style="float: left;">Product 4:</div>
+        <div style="float: left;">&nbsp;<apex:outputField label="Name"
+            value="{!orderObj.opportunity__r.Product_Item_4__r.Name}" /></div>
+        </div>
+        <div class="span2">
+        <div style="float: left;">Product 5:</div>
+        <div style="float: left;">&nbsp;<apex:outputField label="Name"
+            value="{!orderObj.opportunity__r.Product_Item_5__r.Name}" /></div>
+        </div>
+        <hr/>
+        <hr style="width:100%"/>
+        <div class="span3">
+        <div style="float: left;">Total Amount</div>
+        <div style="float: right;"><apex:outputField label="Name"
+            value="{!orderObj.Opportunity__r.One_Time_Payment__c}" /> </div>
+        </div>
+        <div class="span3">
+        <div style="float: left;">Down Payment (30%)</div>
+        <div style="float: right;">$<apex:outputtext label="Name"
+            value="{!orderObj.Opportunity__r.One_Time_Payment__c*0.3}" /></div>
+        </div>
+        <div class="span3">
+        <div style="float: left;">Balance (70%)</div>
+        <div style="float: right;">$<apex:outputtext label="Name"
+            value="{!orderObj.Opportunity__r.One_Time_Payment__c*0.7}" /></div>
+        </div>
+        <div class="pull-left" style="margin-top:10px;text-align:center;width:100%;padding:10px 0 10px 0;border:1px solid #ececec;background-color: rgb(73, 255, 146);font-size:20px;font-weight:bold;">Now you will pay: <apex:outputField label="Name"
+            value="{!orderObj.ChargentOrders__Charge_Amount__c}" /></div>
+        <div class="pull-left" style="margin-top:10px;text-align:center;width:100%;padding:10px 0 10px 0;">
+            <center>
+            <input type="button"  class="btn btn-warning" onclick="return validate()" value="Pay and Confirm" /> 
+                </center>        
+        </div>
+    </div>
+
+    </apex:form>
+    
+    
+    </div>
+     <br/>
+   
+     <footer class="footer">
+        <div class="container">
+            <p>
+                <center>
+                    All Rights Reserved &nbsp; &copy; &nbsp;Booking Ninjas
+                </center>
+            </p>
+        </div>
+    </footer>
+    
+</apex:page>

@@ -1,0 +1,228 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+        
+            <!-- top -->
+            <div class="about-page-top customer-top customer-top-left">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-7 order-lg-1">
+                            <div class="customer-top__img">
+                                <img alt="Success Storie - Industrious Office - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/Industrious-1.jpg"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <article>
+                                <!-- <div class="customer-top__arrow"><i class="fas fa-arrow-up"></i>HFTP</div> -->
+                                <h1>Success Story: How Industrious Office Gets Better Deals and Guest Satisfaction Working with Booking Ninjas</h1>
+                                <!-- <div class="customer-top__arrow"><i class="fas fa-arrow-down"></i>Industrious</div> -->
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="costumer-page">
+                <div class="costumer-page__bread">
+                    <div class="container">
+                        <ul>
+                            <li><a href="/">Home </a></li> / 
+                            <li><a href="/customer-stories">Stories</a></li>  /  
+                            <li class="active">Industrious</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__qoute">
+                            <div class="row align-items-center">
+                                <div class="col-lg">
+                                   <div class="text-center"> <img src="https://d1b89zc79exfxt.cloudfront.net/img/Quote_icon.svg" alt=""/></div>
+                                </div>
+                                <div class="col-lg">
+                                    <hr/>
+                                </div>
+                                <div class="col-lg-7">
+                                   <blockquote>With the ever-increasing need for office space, there is a higher level of importance put into property management so as to ensure the best is delivered to occupants, as well as getting better deals than ever before. Here’s how Industrious pulled that off.</blockquote> 
+                                    <strong>David Harroch</strong>
+                                    <small>Founder/CEO, Booking Ninjas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5>Brief walk-through on the implementation process</h5>
+                                <p>Their quality infrastructures, impressive design, and great work experience make them one of the best workspace providers in the US. They promote work-fun integration and provide their members with excellent hospitality and great-looking offices.</p>
+                                    <p>They are the largest workspace provider in the US with over 80 locations in more than 45 cities and, they have a similar culture maintained in all the offices nationwide.</p>
+                                    <p>They work with businesses of all sizes, ranging from startups to nation-wide businesses looking to enter new markets, and they strive to maintain their position as a provider of the best co-working space experience nationwide. Their main purpose, as spelled out on their website is to deliver “Workplace experiences that help teams of all sizes transform ideas into action, with the flexibility to scale on their own terms”.</p>
+                                    
+                                <p>Industrious saw the Booking Ninjas system as a reliable platform for effectively managing their event management platform. The US-based co-working space provider placed a priority on seamless management of events of all scales and saw the Booking Ninjas platform as a good fit due to its advanced features that make such type of management possible.</p>
+                                <p>Industrious uses several tools in the Booking Ninjas system to help ensure their events run smoothly. Booking Ninjas offers event-handling features such as ticketing systems, communication channels and real-time monitoring of event processes. These features allow for the smooth handling of events without any fear of unforeseen problems.</p>
+                                <p>The basis for the implementation of Booking Ninjas was a need to deliver an easy and accurate way for them to manage their events.</p>
+                                <p>It was a successful implementation.</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <aside class="costumer-page__sidebar">
+                                    <div class="costumer-page__sidebar-inner">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/logo_industrious.png" alt=""/></figure>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>Industry:</strong>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            Hospitality
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>Location:</strong>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            Various, United States
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>About:</strong>
+                                        </div>
+                                    </div>
+                                    <p>Founded in 2013 by James Hodari and Justin Stewart, Industrious is a premium workspace provider, helping thousands of companies scale their businesses by providing flexible co-working spaces for official use. They primarily serve as a provider of a community workplace designed to reinvent the modern workplace. The company's community workplace offers private offices and collaborative spaces for solo entrepreneurs, law firms and startups, enabling startups, entrepreneurs and small businesses to collaborate and share experiences.</p>
+                                    
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__slick js-slider">
+                            <div><img alt="Success Storie - Industrious Office - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/Industrious-2.jpg"/></div>
+                            <div><img src="https://d1b89zc79exfxt.cloudfront.net/img/Industrious-3.jpg" alt=""/></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between">
+                            <div class="col-lg-5">
+                                <div class="costumer-page__img">
+                                   <figure><a class="video__img wow zoomIn fancybox" data-fancybox="fancybox" href="https://www.youtube.com/watch?v=rbR85czmMIA&amp;feature=youtu.be" >
+                                    <img alt="Success Storie - Industrious Office - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/Industrious-4.jpg"/>
+                                </a></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>Booking Ninjas and Industrious</h2>
+                                    <p>As one might expect from a co-working space provider and event management company, there’s a lot of property management to do. Industrious®, with a company size of over 200 provides co-working space on a nationwide level, which means several properties to manage all at once. There’s also the issue of property information access, at any location, at any time, where cloud management of their properties seems like the best solution.</p>
+                                    <p>That led to the incorporation of digital solutions, including the Booking Ninjas property management system, perfectly suited for cloud management of several properties on a single platform. The ability of the Booking Ninjas to integrate several applications from the leading provider of business tools, Salesforce AppExchange, also made it a perfect solution suited for the very moment.</p>                             
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="costumer-page__img float_left">
+                                   <figure><img alt="Success Storie - Industrious Office - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/Industrious-4.jpg"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>Final note</h2>
+                                    <p>The presence of management software in a workplace helps to improve efficiency. Here, delays are not allowed, as each person gets notified when their attention is needed or when it’s their turn to contribute or add to work. With a clear protocol, all the workers have to do is follow it to produce a resounding result. Of course, they are allowed to include their ideas and opinions when doing the duties expected of them.</p>
+                                    <p>The benefit of having a co-working management system is seen not only in the business but also in the way the workers carry out their tasks efficiently as wellas the product or results of these tasks they so carry out diligently. When a good co-working manage software is used adequately, the company will grow and expand while being able to achieve its goals.</p>
+                                    <p>There are many other benefits that users stand to gain, other than the listed, but it all depends on what the company wants their software to do. Any member of a group could pitch the idea of using a co-working management system.</p>
+                                    
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <article>
+                                    <p>However, it essential that every member of the organization is aboard the system. Most times, no specialized training is required before the management system can be used, and a large number of people can use the system at the same time without a hitch. There could be a partition too, which divides the people into groups so that only people with mutual interests get to interact.</p>
+                                    <p>If you are a manager looking for the best type of co-working management system, you can talk to us. As the general manager or administrator, you can have control of all that necessary parts of the system. You can add, or remove people, give others enough administration power to monitor and manage certain groups while you oversee it all. Do you think that will be tedious? No, it’s not. With the co-working management system, every management level is done with ease, just like communication.  </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__view-list">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <article>
+                                        <p>What we were able to provide for Industrious®:</p>
+                                        <div class="costumer-page__view-list_section">
+                                            <ul>
+                                                <li>Management of bookings and events</li>
+                                                <li>Enable them to have full control of invoicing reservation management/payment</li>
+                                                <li>Contract/eSign management</li>
+                                                <li>Provision of Booking Engine</li>
+                                                <li>Einstein AI, a feature of the Booking Ninjas PMS brought about by Salesforce provides cutting edge data analytics and forecast, giving a whole new meaning to digital management, and Industrious is making plans for the nearest future to include it as part of their business solutions structure.</li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="costumer-page__content text_center">
+                    <div class="container">
+                        <h2>Read More Customer Stories</h2>
+                        <p>Learn how Booking Ninjas help property businesses improve daily yield</p>
+                        <div class="costumer-page__carousel">
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/HFTP_Logo.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}">HTFP improves systematic engagement, workflow, and operational speed...</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_CTY)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/Logo_CTY_books.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_CTY)}">CTY Books takes initiative in digital hotel management with Booking Ninjas</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_WDS)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/WP_logo.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_WDS)}">Worldwide properties implement the Booking Ninjas system for digital properties management</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_Industrious)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/logo_industrious.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_Industrious)}">How Industrious Office gets better deals and guest satisfaction.</apex:outputLink>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

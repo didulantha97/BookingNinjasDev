@@ -1,0 +1,25 @@
+<apex:page controller="BN_ThankYouController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+			<div class="trial-payment">
+				<div class="container">
+					<div class="row justify-content-center text_center">
+						<div class="col-md-8 col-lg-6">
+							<img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/trial-payment.png" />
+							<h1>{!message}</h1>
+							<div class="row">
+								<div class="col-12"><a href="/" class="button">Go Home</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

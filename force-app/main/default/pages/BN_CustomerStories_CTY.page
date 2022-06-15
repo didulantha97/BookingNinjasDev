@@ -1,0 +1,244 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+        
+            <!-- top -->
+            <div class="about-page-top customer-top customer-top-left">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-7 order-lg-1">
+                            <div class="customer-top__img">
+                                <img alt="Success Storie - CTY Books - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/main_photo_cty_books.png"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <article>
+                                <!-- <div class="customer-top__arrow"><i class="fas fa-arrow-up"></i>HFTP</div> -->
+                                <h1>Success Story: How CTY Books Takes the Lead in Digital Hotel Operations by Working with Booking Ninjas</h1>
+                                <!-- <div class="customer-top__arrow"><i class="fas fa-arrow-down"></i>Industrious</div> -->
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="costumer-page">
+                <div class="costumer-page__bread">
+                    <div class="container">
+                        <ul>
+                            <li><a href="/">Home </a></li> / 
+                            <li><a href="/customer-stories">Stories</a></li>  /  
+                            <li class="active">CTY Books</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__qoute">
+                            <div class="row align-items-center">
+                                <div class="col-lg">
+                                   <div class="text-center"> <img src="https://d1b89zc79exfxt.cloudfront.net/img/Quote_icon.svg" alt=""/></div>
+                                </div>
+                                <div class="col-lg">
+                                    <hr/>
+                                </div>
+                                <div class="col-lg-7">
+                                   <blockquote>An all-digital hotel might sound like a lot of work at first. Or maybe too complex to achieve in the first place. Here’s how CTY Books is pushing through that barrier, taking the lead, and getting results.</blockquote> 
+                                    <strong>David Harroch</strong>
+                                    <small>Founder/CEO, Booking Ninjas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5>Brief walk-through on the implementation process</h5>
+                                <p>CTY Books uses the Booking Ninjas PMS to effectively manage its day-to-day operations. The Netherlands-based hotel saw the Booking Ninjas platform as a good fit for their property management as it had the necessary features needed to run a digital-first model approach in hotel management. </p>
+                                <p>Important features of the Booking Ninjas system are being used by CTY Books, many of which serve to reduce costs of running the hotel, improve efficiency of other resources in the hotel, and generally boost the productivity of the revenue-generating assets to the hotel by seamlessly integrating them to a centralized platform for efficient use and monitoring.</p>
+                                <p>The basis for the implementation of BookingNinjas was a need to deliver a safe and engaging experience for the guest and staff of the hotel. In light of that, a lot of processes were undergone to ensure such an experience was delivered.</p>
+                                <p>Result? It was a success.</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <aside class="costumer-page__sidebar">
+                                    <div class="costumer-page__sidebar-inner">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/Logo_CTY_books.png" alt=""/></figure>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>Industry:</strong>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            Hospitality
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>Location:</strong>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            Netherlands
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <strong>About:</strong>
+                                        </div>
+                                    </div>
+                                    <p>CTY Books is a Netherlands-based hotel, located in the historic city of Leiden. They are known for their comfortable amenities and rich guest experience, giving their guests a beautiful feel of the historic city while making sure they have a good relaxing time on the premises.</p>
+                                    <p>The site of the hotel used to be one of the city’s oldest buildings, which provides a great view of many of the city’s historic landmarks including the castle, rivers and the city hall.</p>
+                                    <p>Their exclusively modern infrastructure consists of advanced amenities and boasts of 100% renewable energy, luxury bathrooms, and kitchens, and engaging downstairs cafe. Their central location also gives them an advantage with a maximum of 5-minute walking distance to all the museums, the riverside cafe, and the shopping street.</p>
+                                    <p>It’s a good place to be.</p>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__slick js-slider">
+                            <div><img alt="Success Storie - CTY Books - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/photo.jpg"/></div>
+                            <div><img alt="Success Storie - CTY Books - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/photo.jpg"/></div>
+                            <div><img alt="Success Storie - CTY Books - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/photo.jpg"/></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between">
+                            <div class="col-lg-5">
+                                <div class="costumer-page__img">
+                                   <figure><a class="video__img wow zoomIn fancybox" data-fancybox="fancybox" href="https://www.youtube.com/watch?v=rbR85czmMIA&amp;feature=youtu.be" >
+                                    <img alt="Video" src="https://d1b89zc79exfxt.cloudfront.net/img/image_Do_more.jpg"/>
+                                </a></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>Pre Booking Ninjas</h2>
+                                    <p>The management team of CTY Books wanted a platform for the smooth digital management of their hotel. This was before the actual launch of the hotel itself. They were careful enough to carry out the preparation in advance, paying attention to the entire process in detail. Nothing had to go wrong.</p>
+                                    <p>They tried out some platforms they could lay their hands on but they did not meet up to expectations. It was either that the platforms had too many dependencies (<a href="https://www.bookingninjas.com/blog/10-bad-signs-in-a-property-management-system" target="_blank">which is a red flag for any hotel management platform</a>), or it was not suitable enough to handle their entire operations. The director was fed up with what they have been trying out so far, and soon enough, through some contacts, they were able to learn about the Booking Ninjas platform. What they <a href="https://www.bookingninjas.com/solutions" target="_blank">found out</a> looked good, so they decided to have a talk with us.</p>
+                                    <p>The idea behind the search for a compatible digital management platform was that they wanted, first of all, a reliable implementation of their portfolio digital key (QR code). In addition to that, they wanted an early adoption of digital hotel practices, as having large scale readjustments to their business model would be unstable and risky.</p>
+                                    <p>It was the right time for the implementation, and there was a right platform for them to use in carrying out the plan.</p>                             
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="costumer-page__img float_left">
+                                   <figure><img alt="Success Storie - CTY Books - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/CTY-last.jpg"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>How Booking Ninjas came in</h2>
+                                    <p>The Booking Ninjas system meets the requirements of CTY Books’ needs. We run an efficient cloud-based platform in partnership with Salesforce which means we get to naturally integrate many of Salesforce enterprise applications, most of which are essentially crucial to a business’s rapid growth.</p>
+                                    <p>Our integration feature allows for the seamless incorporation of over 1000 apps from the AppExchange market, Twilio’s communication tools, and many others. We had a platform that had everything needed for quick and stable growth.</p>
+                                    <p>Also, it is of paramount importance to have all your business being run from a centralized application, with just one platform. The cloud-based Booking Ninjas platform constitutes a highly specialized solution to hotels intending to run their operations digitally. It offered features that enable CTY Books to perform more efficiently while allowing them integrating several tools for the quality digital management of the hotel.</p>
+                                    <p>We implemented the QR code feature for CTY Books, making them the first Netherlands-based hotel to successfully do this. The smooth implementation of this feature led to more confidence, and we went on to facilitate other important integrations that were deemed necessary.</p>
+                                    <p>We set up the model to be a cloud-based, digitally run platform with <a href="https://www.bookingninjas.com/why-booking-ninjas" target="_blank">stable fail-safes</a> to ensure everything goes as planned at all times.</p>                                   
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <article>
+                                    <p>The Booking Ninjas system implementation for CTY Books also featured a logging system for careful and secure handling of data concerning guest information, reservations, payments, and most internal activities. The POS system was also included in the implementation, along with the House-keeping features which ensure every physical part of the hotel was constantly monitored and maintained by the management.</p>
+                                    <p>The Twilio partnership was also leveraged in this deal, ensuring the entire organizational structure of CTY Books had an efficient, unobstructed mode of communication among departments and personnel to guests. This is to establish internal rapport as well as making sure the customer is always attended to, through whatever medium is available.</p>
+                                    <p>They leverage most of the features of the Booking Ninjas platform. Seeing as complete coordination can be established between the digital platform, the staff and their guests, it became a reliable option for their hotel management.</p>
+                                    <p>Based on the cloud-deployed nature of the system, all they have to do is login and regardless of the location, time, or device, activities could still be carried out efficiently in the hotel. It was a successful execution of a well-thought plan.</p>
+                                    
+                                    <h2>Where are they now?</h2>
+                                    <p>CTY Books thrives on its digital platform. They have been able to launch successfully and start their operations, fully backed by their digital setup.</p>
+                                    <p>They have positioned themselves for taking advantage of the opportunities brought about by the 4th Industrial Revolution and set a standard for hotels in the Netherlands and entire Europe to meet up with. Due to their initiative, they are becoming a force to be reckoned with in the hospitality industry, taking proactive measures to ensure they get the best from the digital world.</p>
+                                    <p>For the foreseeable future, CTY Books will continue improving its digital advantage, and there are a lot of opportunities for growth coming up.</p>
+                                    
+                                    <h2>Final note</h2>
+                                    <p>CTY Books saw an opportunity to be the leading hotel in the Netherlands in terms of the adoption of modern digital practices, and they took it. They are currently the first hotel in the country to run a portfolio digital key platform, as well as several other technological initiatives in the hotel sector. </p>
+                                    <p>Soon, there will be an implementation of Artificial Intelligence for smart data analysis, putting them far ahead of other hotels in their country, and most likely, Europe.</p>
+                                    <p>There are many opportunities presented with the 4th Industrial Revolution, and it is for the best if they are adopted earlier than the competition.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="costumer-page__view-list">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <article>
+                                        <p>As a brief read aid, the implementation we carried out are listed below:-</p>
+                                        <div class="costumer-page__view-list_section">
+                                            <ul>
+                                                <li>QR code locks feature</li>
+                                                <li>Improved staff and guest communication, via Twilio</li>
+                                                <li>Uber integration for guest transportation</li>
+                                                <li>Channel Manager integration for centralized control of room rates and availability</li>
+                                                <li>Advanced Booking Engine</li>
+                                                <li>Digital portal for agents, guests, staff, and vendors</li>
+                                                <li>POS integrations for seamless payments and transaction recording</li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="costumer-page__content text_center">
+                    <div class="container">
+                        <h2>Read More Customer Stories</h2>
+                        <p>Learn how Booking Ninjas help property businesses improve daily yield</p>
+                        <div class="costumer-page__carousel">
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/HFTP_Logo.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_HFTP)}">HTFP improves systematic engagement, workflow, and operational speed...</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_Industrious)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/logo_industrious.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_Industrious)}">How Industrious Office gets better deals and guest satisfaction.</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_WDS)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/WP_logo.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_WDS)}">Worldwide properties implement the Booking Ninjas system for digital properties management</apex:outputLink>
+                                </section>
+                            </div>
+                            <div class="costumer-page__carousel-item">
+                                <figure><figcaption><apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_CTY)}"><img src="https://d1b89zc79exfxt.cloudfront.net/img/Logo_CTY_books.png" alt=""/></apex:outputLink></figcaption></figure>
+                                <section>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_CustomerStories_CTY)}">CTY Books takes initiative in digital hotel management with Booking Ninjas</apex:outputLink>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

@@ -1,0 +1,707 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false"
+    applyHtmlTag="false" cache="true" controller="BN_TemplateController">
+
+    <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <div class="segment">
+                <!-- hero -->
+                <div class="parking-page__hero">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-1">
+                                <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking-notebook.png"
+                                    alt="" class="adaptive-img" />
+                            </div>
+                            <div class="col-lg-6">
+                                <article class="segment__hero-txt">
+                                    <h1>Vehicle Parking <br />
+                                        Management System
+                                    </h1>
+                                    <h2>All-In-One Parking Property Management That Maximizes
+                                        Your Parking Capacity &amp; Revenues
+                                    </h2>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Call</apex:outputLink>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /hero -->
+                <!-- text -->
+                <div class="parking-page__center-text">
+                    <div class="container">
+                        <h2>Modernize Parking Management</h2>
+                        <p>Our PMS enables integration with multiple systems that used to be isolated. With this
+                            feature, you have automatic data collection of your properties. This makes you enjoy
+                            autonomous collation and analysis of previously discarded data. With accurate data
+                            at your disposal, business runs better, isn’t it?
+                        </p>
+                        <p>You gain better business insights with combined data which reduces double entry for
+                            your sheets. You save time and money from this process.
+                        </p>
+                        <p>Gain better insight into our hardware which enables parking barriers, ticketing
+                            machines, etc. With our barrier-free parking
+                        </p>
+                        <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
+                            PLANS &amp; PRICING</apex:outputLink>
+                    </div>
+                </div>
+                <!-- /text -->
+                <!-- feature -->
+                <div class="parking-page__feature">
+                    <div class="container">
+                        <div class="parking-page__feature-top">
+                            <h2>Amazing Features of Our <span>Intelligent Parking Control
+                                    System</span> That Meets Your Parking Management Needs</h2>
+                            <p>Our PMS is integrated with amazing features that enable easy car parking. These
+                                have been carefully selected and integrated into our PMS to work seamlessly on
+                                your applications. We do our research well and our findings have helped us
+                                develop these features to suit your very needs.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="parking-page__feature-item">
+                                    <div class="parking-page__feature-title">
+                                        <strong>Parking
+                                            Guidance
+                                            System</strong>
+                                        <span>
+                                            <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking_ico1.png"
+                                                alt="" />
+                                        </span>
+                                    </div>
+                                    <article>
+                                        <p>This software provides real-time
+                                            information regarding the occupation and availability of your
+                                            parking space. See
+                                            real-time data on your parking space and know available and occupied
+                                            spaces.</p>
+                                        <p>This also allows you to reduce search time,
+                                            decrease traffic congestion, and provide
+                                            real-time occupancy data for your
+                                            consumption. With this, you save more
+                                            time in allocating new parking space and
+                                            help your customers save time by reducing
+                                            the congestion that usually occurs in
+                                            parking spaces. All a customer needs is to arrive on time, get a
+                                            good parking space, and leave without the hassle of
+                                            congestion. You meet this need, and your business is off for a long
+                                            and fruitful stay!
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="parking-page__feature-item">
+                                    <div class="parking-page__feature-title">
+                                        <strong>Parking
+                                            Enforcement</strong>
+                                        <span>
+                                            <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking_ico2.png"
+                                                alt="" />
+                                        </span>
+                                    </div>
+                                    <article>
+                                        <p>Our PMS helps car park owners enforce rules in a very orderly manner
+                                            devoid of rancour. With our application, you can monitor cars parked
+                                            and ensure they are complying with the rules and regulations
+                                            of your parking space.</p>
+                                        <p>You can also monitor the full process from start to finish to see if
+                                            cars are parked in compliance with the parking rules and rates.
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="parking-page__feature-item">
+                                    <div class="parking-page__feature-title">
+                                        <strong>Permits
+                                            Management</strong>
+                                        <span>
+                                            <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking_ico3.png"
+                                                alt="" />
+                                        </span>
+                                    </div>
+                                    <article>
+                                        <p>Our Parking Management System helps you gain total control over your
+                                            parking
+                                            facilities and who parks therein, at what time and the exact spot.
+                                            This application gives you the right layout for your
+                                            operations if you choose from the many options.
+                                        </p>
+                                        <p>
+                                            You can link permits easily to facilities or vehicles in your space,
+                                            thereby, ensuring you adhere strictly to the approved number of
+                                            spaces. Without law and compliance, business sucks. We keep this in
+                                            mind.
+                                        </p>
+                                        <p>
+                                            It comes with a Flexible Parking Permit that has options for
+                                            payments, distribution,
+                                            configuration, and more. We know exactly what to do to move your
+                                            business further!
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /feature -->
+                <!-- articles -->
+                <div class="parking-page__articles">
+                    <div class="container">
+                        <div class="parking-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking1.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">Enjoy Flexible User Group Parking Allocation
+                                            &amp; Reservation With Our All-For-One Software</h3>
+                                        <section>
+                                            <ul>
+                                                <li>Get support for your parking allocation and reservation
+                                                    using our application. It supports flexible user grouping
+                                                    into
+                                                    easily-identifiable clusters. This helps with your
+                                                    management of space in your facility. </li>
+                                                <li>With this software, you can allocate parking lots based on
+                                                    user groups such as season parking, visitors, etc. This is
+                                                    important
+                                                    as it is flexible and can interchange as your customers
+                                                    change.
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parking-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-1">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking2.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">Why You Need A Parking Guidance System</h3>
+                                        <section>
+                                            <ul>
+                                                <li>If you must go for a modernized PMS, you should opt for one
+                                                    that provides real-time information regarding the occupation
+                                                    and availability of your parking space to customers or
+                                                    visitors. This will help you plan properly and ensure your
+                                                    property is in good shape as chaos is reduced from
+                                                    allocating already
+                                                    occupied space.</li>
+                                                <li>Reduce the search time for an available space and decrease
+                                                    traffic congestion.</li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parking-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking3.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">Our Incredible Parking Enforcement Software
+                                            Offers You Flexibility And Cool Control of Your Business</h3>
+                                        <section>
+                                            <ul>
+                                                <li>Booking Ninjas PMS comes with an incredible Parking
+                                                    Enforcement software that enables flexibility and control.
+                                                    It monitors parked cars to ensure they comply with parking
+                                                    regulations, rules and rates. </li>
+                                                <li>Our application manages all the enforcement processes with
+                                                    cameras, meters, license plate recognition and mobile
+                                                    payment systems.</li>
+                                                <li>Our PMS helps integrate these features, giving you more
+                                                    room to concentrate on your business. Great deal, isn’t it?
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parking-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-1">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking7.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">With Our Permits Management Software, Your
+                                            Business Just Took A New Turn </h3>
+                                        <section>
+                                            <ul>
+                                                <li> We know the trouble associated with managing Parking
+                                                    Spaces. With our PMS Permits Management software, you can
+                                                    now manage and link these violations to the right offenders.
+                                                </li>
+                                                <li> We also offer Flexible Parking Permits configuration to
+                                                    enable you to allocate flexible permits for customers. </li>
+                                                <li> Print parking permits with a start and end date to easily
+                                                    organise your space. This helps you plan accordingly as you
+                                                    know the duration of each space occupant.
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parking-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking8.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">Have Smoother Control Of Your Parking Space
+                                            Using Our Parking Barrier &amp; Ticketing Machine</h3>
+                                        <section>
+                                            <ul>
+                                                <li>Our PMS integrates these features which makes for smoother
+                                                    control and data collection.
+                                                </li>
+                                                <li>With this, customers can use one ticket which gives them
+                                                    access to the parking slot, do all they need to, and leave
+                                                    with the same ticket.
+                                                </li>
+                                                <li>Integration with supported parking barrier &amp; ticketing
+                                                    machine for smoother control &amp; data collection
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parking-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 order-lg-1">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking9.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">Ensure The Safety Of Your Customers Using
+                                            The Parking System Security &amp; Access Control
+                                        </h3>
+                                        <section>
+                                            <ul>
+                                                <li> Your customers can have access to your parking space based
+                                                    on the control levels you assign them. This gives you full
+                                                    control over your space and ensures you set the right
+                                                    boundaries to guarantee safety of your space and the cars
+                                                    therein. With this feature, you set rules that give access
+                                                    to
+                                                    different sets of people in your space. </li>
+                                                <li>Our PMS works with the latest technologies in modern parking
+                                                    systems to grant access to control systems.
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parking-page__article">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <figure><img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/parking10.png"
+                                            alt="" class="adaptive-img" /></figure>
+                                </div>
+                                <div class="col-lg-6">
+                                    <article>
+                                        <h3 class="title-underline">We Know Data Is Important So We Provide
+                                            Statistical Reporting &amp; Analytics Of Your Business Transactions
+                                        </h3>
+                                        <section>
+                                            <p>What’s a business without data? Data is life. It puts figures and
+                                                life to your business!
+                                            </p>
+                                            <ul>
+                                                <li>Booking Ninjas PMS provides real time occupancy tracking
+                                                    which affords you the opportunity to have on-the-spot
+                                                    analysis of occupied parking spaces and unoccupied ones.
+                                                    This helps you make more allocations without clashing and
+                                                    conflicting bookings. You reduce chaos and focus your
+                                                    interest on how best to grow your business.
+                                                </li>
+                                                <li>We also provide occupancy forecasts to calculate or predict
+                                                    future occupancy of your parking space. This helps you plan
+                                                    ahead using the data provided and maintain your space
+                                                    between peak periods and non-peak periods.
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /articles -->
+                <!-- title -->
+                <div class="parking-page__main-title">
+                    <div class="container">
+                        <h2>Why Choose Booking Ninjas Parking Management System?</h2>
+                        <p>With our software, car parking is made simple as you can manage your inventory
+                            easily.
+                        </p>
+                        <p>It is built on Salesforce to easily integrate with your existing Salesforce system
+                            and is able to extend its functionality
+                            with other Salesforce plugins. So tell me, what else do you need to come right
+                            aboard?
+                        </p>
+                    </div>
+                </div>
+                <!-- /title -->
+                <!-- title -->
+                <div class="parking-page__main-title">
+                    <div class="container">
+                    </div>
+                </div>
+                <!-- /title -->
+                <!-- prices -->
+                <div class="segment__prices parking-page__prices">
+                    <div class="container">
+                        <section>
+                            <h2>Booking Ninjas <span>Parking Management System Price</span></h2>
+                            <p>Our price range reflects the pristine value we bring to your Parking Management
+                                business. You determine what value you get.</p>
+                            <h3>Starts from <span>
+                                <apex:outputText value="{0, number, currency}">
+                                    <apex:param value="{!lowest_monthly_price}" />
+                                </apex:outputText>/month
+                            </span></h3>
+                            <p>With just&nbsp;
+                                <apex:outputText value="{0, number, currency}">
+                                    <apex:param value="{!lowest_monthly_price}" />
+                                </apex:outputText>/month
+                                , you enjoy a variety of features that promise to help you
+                                scale up your work.
+                                This is why you should opt for our PMS as we can solve the following:
+                            </p>
+                        </section>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="segment__price">
+                                    <b>Guest Management</b>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="segment__price">
+                                    <b>Reservation Management</b>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="segment__price">
+                                    <b>User Management</b>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="segment__price">
+                                    <b>Parking Inventory Management</b>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="segment__price">
+                                    <b>Availability Hour Grid</b>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="segment__price">
+                                    <b>Permit &amp; Payment API</b>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="segment__price">
+                                    <b>Reporting &amp; Analytics</b>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="segment__price">
+                                    <b>Mobile Apps</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text_center pricing-support__btn wow fadeIn">
+                            <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
+                                PLANS &amp; PRICING
+                            </apex:outputLink>
+                        </div>
+                    </div>
+                </div>
+                <!-- /prices -->
+                <div class="segment__addons parking-page__addons">
+                    <div class="container">
+                        <h2 class="text_center section-title">
+                            Get Bespoke Features Exclusive to Your Business <br />
+                            With Our Parking Management System Add-Ons
+                        </h2>
+                        <p>We know every business is unique and comes with specific needs to suit their
+                            clientele.
+                            This is why we have integrated great options as add-ons to cover the other aspects
+                            of your business you know best.
+                            Get tailor made features to meet your every needs. These include:</p>
+                        <!-- Slider -->
+                        <div class="pricing-addons__slider">
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-be.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Booking Engine</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-channel-manager.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Channel Manager</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-data-analytics.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Data Analytics</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-pos.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">POS</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-cash-register.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Cash Register</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-portal.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Portal</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-email-app.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Email App</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-membership-module.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Membership Module</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-esign.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Esign (Additional Api's)</h3>
+                                </div>
+                            </div>
+                            <div class="pricing-addons__slide">
+                                <div class="pricing-addons__slide-container">
+                                    <div class="pricing-addons__slide-image">
+                                        <img
+                                            src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-communications.png" />
+                                    </div>
+                                    <h3 class="pricing-addons__slide-title">Communications (paid by usage)</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learn-more-center">
+                            <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}">More add-ons
+                                available soon
+                            </apex:outputLink>
+                        </div>
+                    </div>
+                </div>
+                <div class="segment__faq parking-page__faq">
+                    <div class="container">
+                        <h2 class="text_center section-title">FAQ</h2>
+                        <div class="segment-accordion">
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>What is a parking management system</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>This is a system that brings an array of technological solutions to
+                                        enable owners of car parks, manage their property and space. This helps
+                                        them have total control over their property, allowing them to grant
+                                        access to drivers to their space and totally controls the management of
+                                        said space on a built and integrated system.</p>
+                                    <p>Booking Ninjas’ PMS ensures that the solutions it offers can be deployed
+                                        to any environment using its top-notch software features. This provides
+                                        an opportunity for Parking Space owners to design a custom-made
+                                        experience that best suits them.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>How to set up a parking management system?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>You can schedule a call with us so we run a demo. If you are OK with the
+                                        demo, you tell us extra add-ons you need and we’ll get the ball rolling.
+                                    </p>
+                                    <p>To schedule a demo, book an appointment&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}">here
+                                        </apex:outputLink>.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Can you install this parking management system into an existing
+                                        Salesforce organization?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    Yes, you can.
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Can I get a demo of your parking management system?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Yes, you can. Schedule a discovery call where we can get a grasp of your
+                                        parking space and understand how best we can serve you.</p>
+                                    <p>From the discovery call, using the new information you included in the
+                                        Pre-demo survey, we will book a demo where we show you how your best
+                                        features can work when integrated into your system. </p>
+                                    <p>To begin, please <a
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSeGrLEMDcIlhA0H4kum9GIY5qJ5u7YyfibItmszwhH_iO4sDQ/viewform?usp=pp_url">fill
+                                            this Pre-demo survey form</a> to give us a better idea of your
+                                        needs. From here, we can schedule a call for a demo. </p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Why is a smart parking system important?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Our PMS helps you scale up your business in many ways. When you deploy
+                                        our PMS, you increase your revenue and manage your parking space
+                                        effectively. </p>
+                                    <p>We provide Parking Guidance System, Parking Enforcement and Permits
+                                        Management tailored absolutely to meet your business needs.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>What are the benefits of smart parking for drivers?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Smart parking enables drivers the opportunity to book ahead of their
+                                        journeys. It is easier to leave your house when you know you have an
+                                        available parking spot which is safe and convenient and helps you
+                                        perform other tasks of the day easily without worry of break ins and
+                                        other shenanigans.</p>
+                                    <p>It saves them time and money they’ll use in seeking available parking
+                                        slots.</p>
+                                    <p>It gives them the security that their cars are safe and well looked
+                                        after.</p>
+                                    <p>You can plan your route before you leave home, making it possible to also
+                                        plan your day. Makes for more productivity.</p>
+                                </div>
+                            </div>
+                            <div class="segment-accordion__item">
+                                <div class="segment-accordion__trigger">
+                                    <h3>Who should use a parking management system?</h3>
+                                    <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="segment-accordion__content">
+                                    <p>Parking Management System can be used by operators and managers of
+                                        properties. These include: </p>
+                                    <ul class="segment__list segment-accordion__list">
+                                        <li>Higher Education</li>
+                                        <li>Healthcare Facilities</li>
+                                        <li>Municipalities</li>
+                                        <li>Corporate campuses</li>
+                                        <li>Operators</li>
+                                        <li>Parks</li>
+                                        <li>Road Marking Systems</li>
+                                        <li>Traffic Management</li>
+                                        <li>Local Public Transport</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learn-more-center">
+                            <apex:outputLink value="{!URLFOR($Page.BN_FAQs)}">
+                                More FAQs about Booking Ninjas
+                            </apex:outputLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

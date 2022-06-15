@@ -1,0 +1,29 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top submission-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1  text_center">
+                            <div class="submission-page-top__img-nobg text_center">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/submission-thank-you-top.png" alt="Guest Post Submission"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="submission-page-top__thanks-title">Thank you for your submission!</h1>
+                            <p>We have received your information, and we will be in touch with you about your contribution shortly. Booking Ninjas appreciates your involvement and looks forward to working with you!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,183 @@
+<apex:page controller="BN_ConsultationController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('no-bg');
+                });
+            </script>
+        
+            <div class="consulting-hero">
+                <div class="container">
+                    <article>
+                        <h1>Your Salesforce Specialists</h1>
+                        <p>Get more on the platform. Use our extensive experience to put the sales in your force.</p>
+                        <a href="#consulting-popup" data-fancybox="consulting-popup" class="button">REQUEST A CONSULTATION</a>
+                    </article>
+                </div>
+            </div>
+            <div class="consulting-services">
+                <div class="container">
+                    <section>
+                        <h2>What exactly does Salesforce have to offer?</h2>
+                    </section>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <section>
+                            <figure><img alt="Marketing Cloud - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-ico1.png"/></figure>
+                            <h3>Marketing Cloud</h3>
+                            <p>A campaigning platform that provides guided training, marketing automation, personalized communications, remote capabilities, team collaboration.</p>
+                            </section>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <section>
+                            <figure><img alt="Service Cloud - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-ico2.png"/></figure>
+                            <h3>Service Cloud</h3>
+                            <p>In this support portal, manage and assist your service teams, bolster your customer service, and optimize all methods of your service support for better results and higher efficiency.</p>
+                            </section>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <section>
+                            <figure><img alt="Sales Cloud - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-ico3.png"/></figure>
+                            <h3>Sales Cloud</h3>
+                            <p>Salesforces’ CRM, where you can monitor your team performance, customer satisfaction, industry trends, and your company’s overall health.</p>
+                            </section>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <section>
+                            <figure><img alt="Proprietary Einstein AI - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-ico4.png"/></figure>
+                            <h3>Einstein AI</h3>
+                            <p>The intuitive brains of Salesforces’ CRM will present its own suggestions on your customer data, predict upcoming trends, and help you monitor potential marketing opportunities.</p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <section>
+                            <figure><img alt="Plug Into Salesforce - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-ico5.png"/></figure>
+                            <h3>AppExchange</h3>
+                            <p>Allowing businesses to connect and work together, this online network presents ways for companies to find business solutions quickly and efficiently.</p>
+                            </section>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <section>
+                            <figure><img alt="Mobile App Development - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-ico6.png"/></figure>
+                            <h3>Mobile App Development</h3>
+                            <p>Together with the Lightning App Builder, the Customer 360 Platform delivers the opportunity to design and create your own app - no matter what markup language you use.</p>
+                        </section>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <section>
+                            <figure><img alt="Community Cloud - icon" src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-ico7.png"/></figure>
+                            <h3>Community Builder</h3>
+                            <p>A website/portal launcher complete with customization options for templates and themes, branding suggestions, and access to gathered customer data from online traffic.</p>
+                        </section>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <br/>
+            <div class="consulting-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title"><span>Talk with Us</span></div> 
+                            <p>Our Salesforce experts come with over a decade of experience using this technologically advanced platform. We have the experience and ability to digitally transform your business through the technology of tomorrow. Our team creates custom, cloud-based Salesforce solutions that are unique to the needs of your business.</p>
+                            <p>Most Salesforce users don’t realize that they’re only using 50% of the tools that the digital platform provides. Our team wants to make sure that you are reaping the full benefits of the platform. There’s a reason we are the only property management system with an official app innovation partnership with Salesforce; they saw that we were representing their platform to the maximum level by using their technology to the highest degree.</p>
+                            <p>Embrace the transition to a better, more reliable system with the help of one of our trained Salesforce professionals. Our consultants know how to get the most out of every Salesforce cloud and product. Much like the Booking Ninjas property management software can improve every aspect of your business, our Salesforce consultants can help you utilize the Salesforce platform to its fullest potential.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="consulting-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="title"><span>Contact</span></div> 
+                            <p>We are more than happy to interact with you before our consultation session. We want to get to know you. If you have any questions regarding what our consultation entails then please drop us a line below or call the number listed Monday through Friday during business hours.</p>
+                            <div class="consulting-contact__item">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-ico-pin.png" alt="Bookingninjas Property Management System"/>
+                                <p>
+                                    Booking Ninjas <br/>
+                                    1815 Purdy Avenue <br/>
+                                    Miami Beach, FL  33139
+                                </p>
+                            </div>
+                            <div class="consulting-contact__item">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-ico-mail.png" alt="Bookingninjas Property Management System"/>
+                                <p>
+                                   <a href="mailto:sales@bookingninjas.com">sales@bookingninjas.com</a>
+                                </p>
+                            </div>
+                            <div class="consulting-contact__item">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-ico-phone.png" alt="Bookingninjas Property Management System"/>
+                                <p>
+                                    <a href="tel:+19176002345"><strong>+1 (917) 600 2345</strong></a>
+                                </p>
+                            </div>
+                            <apex:outputLink value="{!URLFOR($Page.BN_ConsultingForm)}" styleClass="button" target="_blank">REQUEST A CONSULTATION</apex:outputLink>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="consulting-contact__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.3042932693415!2d-80.14446082299678!3d25.79353335885804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b47de86e5ec7%3A0x782738599c5bd1b8!2s1815%20Purdy%20Ave%2C%20Miami%20Beach%2C%20FL%2033139%2C%20USA!5e0!3m2!1sen!2sph!4v1576894062541!5m2!1sen!2sph" width="600" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup -->
+            <div class="modal consulting-popup" id="consulting-popup">
+                <div class="career-lead-form__section">
+                    <h2 class="career-lead-form__title">Send us your details
+                        and we will get in touch with you</h2>
+                    <apex:form >
+                        <div class="career-lead-form__box">
+                            <div class="career-lead-form__item">
+                                <label>Your Name<sup>*</sup></label>
+                                <apex:input type="text" value="{!name}" required="true"/>
+                            </div>
+                            <div class="career-lead-form__item">
+                                <label>Property Name<sup>*</sup></label>
+                                <apex:input type="text" value="{!property}" required="true"/>
+                            </div>
+                            <div class="career-lead-form__item">
+                                <label>Company<sup>*</sup></label>
+                                <apex:input type="text" value="{!company}" required="true"/>
+                            </div>
+                            <div class="career-lead-form__item">
+                                <label>Email</label>
+                                <apex:input type="email" value="{!email}" required="true"/>
+                            </div>
+                            <div class="career-lead-form__item">
+                                <label>Phone</label>
+                                <apex:input type="tel" value="{!phone}" required="true"/>
+                            </div>
+                            <div class="career-lead-form__item">
+                                <label>Preferred meeting time</label>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <apex:input type="time" value="{!meetingTime}" required="true" id="appt" html-name="appt" html-min="09:00" html-max="18:00" styleClass="consulting-time" />                                              
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <apex:input type="date" value="{!meetingDate}" styleClass="consulting-date" required="true" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="career-lead-form__item text_center">
+                                <apex:commandButton value="Submit" action="{!save}" styleClass="button"/>
+                                <small><i class="fas fa-lock"></i> We hate spam and promise to keep your data address safe</small>
+                            </div>
+                        </div>
+                    </apex:form>
+                </div>
+            </div>
+            <!-- /popup -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

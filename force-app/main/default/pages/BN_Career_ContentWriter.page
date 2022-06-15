@@ -1,0 +1,145 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_CareerController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top job-listing-single-bnr">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/content_writer.png" alt="Bookingninjas Property Management System"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Content Writer</h1>
+                                <p>We are a Salesforce partner with an App Exchange application looking to expand our team with new Content writers.                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content job-listing-single">
+                <div class="container">
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-6">
+                            <div class="job-listing-single__section">
+                                <div class="job-listing-single__icon"><img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon1.png" alt="Bookingninjas Property Management System"/></div>
+                                <h3>The position will entail:</h3>
+                                <ul>
+                                    <li>Following content suggestions and coming up with creative quality content including, blog posts, webpages, press releases and video scripts</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="job-listing-single__section float_right">
+                                <div class="job-listing-single__icon"><img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon2.png" alt="Bookingninjas Property Management System"/></div>
+                                <h3>Qualifications                            </h3>
+                                <ul>
+                                    <li>Experience with creative writing (writing sample is required)</li>
+                                    <li>Hard Working/ Results Driven / Self motivate</li>
+                                    <li>Understand Search Engine Optimization</li>
+                                    <li>Meets strict deadlines and good communicator</li>
+                                    <li>Team Player/ always looking to get better</li>
+                                    <li>Work Remote</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12 text_center">
+                            <a href="#career-modal" class="button fancybox" style="margin-bottom:40px;">APPLY NOW</a>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12">
+                            <div class="job-listing-single__section float_right">
+                                <div class="job-listing-single__icon"><img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon3.png" alt="Bookingninjas Property Management System"/></div>
+                                <h3>Job Description</h3>
+                                <p>At Booking Ninjas, we make sure that our website viewers are given every piece of valuable information regarding our app. We’re constantly crafting new web pages to showcase our top of the line features to the world. Use the power of words to convey our message on multiple platforms.</p>
+                                <p>You’ll be responsible for drafting copy for our site, press releases, emails, blog posts, guest posts, and more. With this comes a thorough understanding of SEO and how to optimize your content to rank high in search engines. </p>
+                            </div>
+                        </div>
+                    </div>                  
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12">
+                            <div class="job-listing-single__section ">
+                                <div class="job-listing-single__icon"><img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon3.png" alt="Bookingninjas Property Management System"/></div>
+                                <h3>Questions</h3>
+                                <ul>
+                                    <li>We are in the hospitality business. Tell us a time you used good customer service to solve a work problem?</li>
+                                    <li>Tell us about a time when you came up with a creative solution on your own to solve an issue at work.</li>
+                                    <li>We&#x27;ve told you about our expectations for this job. What do you want to get from working at this position with Booking Ninjas?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12">
+                            <div class="job-listing-single__section float_right">
+                                <div class="job-listing-single__icon"><img src="https://d1b89zc79exfxt.cloudfront.net/img/job_listing_single-icon4.png" alt="Bookingninjas Property Management System"/></div>
+                                <h3>Bonus/Extra Credit                            </h3>
+                                <p>The top applicants will want to record a quick, two-minute max video introduction with a fun fact about themselves, experience working remotely if any, and what one quality they have that will push the Booking Ninjas team to the top. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12 text_center">
+                            <apex:outputLink value="{!URLFOR($Page.BN_CareerLeadForm)}" styleClass="button" style="margin-bottom:20px;">JOIN US</apex:outputLink> <br/>
+                        </div>
+                    </div>
+                    <div class="job-listing-single__row row">
+                        <div class="col-lg-12 text_center">
+                            <p>Thanks for your time. Looking forward to hearing from you.</p>
+                            <p><em>For more information about careers at Booking Ninjas visit <apex:outputLink value="{!URLFOR($Page.BN_Career)}"> here</apex:outputLink> </em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal career-modal" id="career-modal">
+                    <h3>Become one of us</h3>
+                    <apex:form >
+                        <div class="career-modal__form">
+                            <div class="career-modal__form-item">
+                                <label>Name <sup>*</sup></label>
+                                <apex:inputText value="{!name}"/>
+                            </div>
+                            <div class="career-modal__form-item">
+                                <label>Phone <sup>*</sup></label>
+                                <apex:inputText value="{!phone}"/>
+                            </div>
+                            <div class="career-modal__form-item">
+                                <label>Email <sup>*</sup></label>
+                                <apex:inputText value="{!email}"/>
+                            </div>
+                            <div class="career-modal__form-item">
+                                <label>Linkedin URL</label>
+                                <apex:inputText value="{!linkedin}"/>
+                            </div>
+                            <div class="career-modal__form-item">
+                                <label>Position</label>
+                                <apex:selectList size="1" value="{!position}">
+                                    <apex:selectOptions value="{!positionList}"/>
+                                </apex:selectList>
+                            </div>
+                            <div class="career-modal__form-item text_center">
+                                <apex:commandButton action="{!register}" value="Submit" styleClass="button"/>
+                            </div>
+                            <div class="career-modal__form-item text_center">
+                                <small><i class="fas fa-lock"></i> We hate spam and promise to keep your data address safe</small>
+                            </div>
+                        </div>
+                    </apex:form>
+                </div>
+            </div>
+            <!-- /content -->
+
+       </apex:define>
+    </apex:composition>
+
+
+</apex:page>

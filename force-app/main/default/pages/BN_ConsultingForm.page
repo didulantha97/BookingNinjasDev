@@ -1,0 +1,74 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_ConsultationController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- form -->
+            <div class="career-lead-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1>Are you ready for 
+                                the future?</h1>
+                            <p>Get more from the platform. Use our extensive experience to put the sales into your force</p>
+                            <figure>
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/consulting-form-img.png" alt="Bookingninjas Property Management System"/>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="career-lead-form__section">
+                                <h2 class="career-lead-form__title">Send us your details
+                                    and we will get in touch with you</h2>
+                                <apex:form >
+                                    <div class="career-lead-form__box">
+                                        <div class="career-lead-form__item">
+                                            <label>Your Name<sup>*</sup></label>
+                                            <apex:input type="text" value="{!name}" required="true"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Property Name<sup>*</sup></label>
+                                            <apex:input type="text" value="{!property}" required="true"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Company<sup>*</sup></label>
+                                            <apex:input type="text" value="{!company}" required="true"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Email<sup>*</sup></label>
+                                            <apex:input type="email" value="{!email}" required="true"/>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Phone</label>
+                                            <apex:input type="tel" value="{!phone}" required="true" />
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Preferred meeting time</label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <apex:input type="time" value="{!meetingTime}" required="true" id="appt" html-name="appt" html-min="09:00" html-max="18:00" styleClass="consulting-time" />                                              
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <apex:input type="date" value="{!meetingDate}" styleClass="consulting-date" required="true" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="career-lead-form__item text_center">
+                                            <apex:commandButton value="Submit" action="{!save}" styleClass="button"/>
+                                            <small><i class="fas fa-lock"></i> We hate spam and promise to keep your data address safe</small>
+                                        </div>
+                                    </div>
+                                </apex:form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /form -->
+
+        </apex:define>
+    </apex:composition>
+
+
+</apex:page>

@@ -1,0 +1,110 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true" controller="BN_WaitListController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top wait-list-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="about-page-top__img"><img src="https://d1b89zc79exfxt.cloudfront.net/img/wait-list.png" alt="Bookingninjas Best Property Management System"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Waitlist </h1>
+                                <p>Thank you for expressing your interest to implement the Booking Ninjas Property Management System to your property! Currently, we are in the midst of helping other customers. In the meantime, join our waitlist to be on the way to receiving your digital transformation! We will notify you as soon as our next onboarding team becomes available. 
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="about-page-content wait-list-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="career-lead-form__section">
+                                <h2 class="career-lead-form__title">How It Works </h2>
+                                <apex:form >
+                                    <div class="career-lead-form__box">
+                                        <div class="career-lead-form__item">
+                                            <label>Add your name to our waitlist<sup>*</sup></label>
+                                            <apex:input type="text" value="{!name}" required="true" />
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Your Email<sup>*</sup></label>
+                                            <apex:input type="email" value="{!email}" required="true" />
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Your Phone<sup>*</sup></label>
+                                            <apex:input type="tel" value="{!phone}" required="true" />
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>Preferred contact method<sup>*</sup></label>
+                                            <apex:selectList size="1" value="{!preferredMethod}" required="true">
+                                                <apex:selectOptions value="{!PreferredContactMethod}"/>
+                                            </apex:selectList>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                           <label class="career-lead-form__checkbox">
+                                               <apex:inputcheckbox value="{!optforSMS}" />
+                                               <span>You may choose to opt in to our SMS system. We will send 
+                                                you a text message to confirm your position on the waitlist. </span>
+                                           </label>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>You will be alerted when our onboarding team is ready 
+                                                to discuss our PMS with you. </label>
+                                        </div>
+                                        <div class="career-lead-form__item">
+                                            <label>You will then be prompted to confirm you are available 
+                                                at the allotted time. </label>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <apex:input type="date" value="{!availabilityDate}" styleClass="consulting-date" required="true" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="career-lead-form__item text_center">
+                                            <apex:commandButton action="{!register}" value="Submit" styleClass="button"/>
+                                            <small><i class="fas fa-lock"></i> We hate spam and promise to keep your data address safe</small>
+                                        
+                                        </div>
+                                    </div>
+                                </apex:form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="about__content">
+                        <div class="wait-list">
+                            <h2 class="title">To save yourself some time, please be prepared  <br/>
+                                to provide the following info:</h2>
+                            <ol>
+                                <li>How many units do you need covered under the PMS? </li>
+                                <li>Number of authorized users?                             </li>
+                                <li>Your property’s address </li>
+                                <li>What are you looking for out of the PMS? </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="about__content text_center">
+                        <p>If you wish to expedite the process, feel free to give us a call during business hours Monday-Friday 
+                            at (917)-600-2345 or schedule a call here </p>
+                            
+                        <h4>Have a great day! We look forward to helping you find a solution for your PMS needs! </h4>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

@@ -1,0 +1,55 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <div class="tour">
+                <div class="tour__nav">
+                    <div class="container">
+                        <strong>Run my business smarter</strong>
+                        <nav>
+                            <ul>
+                                <li class="tour_pager_arr"><img src="https://d1b89zc79exfxt.cloudfront.net/img/icons/pager_arrow.png" alt=""/></li>
+                                <li><a class="active" href="#tour1">1</a></li>
+                                <li><a href="#tour2">2</a></li>
+                                <li><a href="#tour3">3</a></li>
+                                <li><a href="#tour4">4</a></li>
+                                <li><a href="#tour5">5</a></li>
+                                <li><a href="#tour6">6</a></li>
+                                <li><a href="#tour7">7</a></li>
+                                <li class="tour_pager_arr"><img src="https://d1b89zc79exfxt.cloudfront.net/img/icons/pager_arrow.png" alt=""/></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="tour__block">
+                    <div class="tour__item active" id="tour1">
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/tour1.jpg" alt=""/>
+                    </div>
+                    <div class="tour__item" id="tour2">
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/tour2.jpg" alt=""/>
+                    </div>
+                    <div class="tour__item" id="tour3">
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/tour3.jpg" alt=""/>
+                    </div>
+                    <div class="tour__item" id="tour4">
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/tour4.jpg" alt=""/>
+                    </div>
+                    <div class="tour__item" id="tour5">
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/tour5.jpg" alt=""/>
+                    </div>
+                    <div class="tour__item" id="tour6">
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/tour6.jpg" alt=""/>
+                    </div>
+                    <div class="tour__item" id="tour7">
+                        <img src="https://d1b89zc79exfxt.cloudfront.net/img/tour7.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

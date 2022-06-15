@@ -1,0 +1,163 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="about-page-top customer-top customer-top-left">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1">
+                            <a href="https://www.esigngenie.com" class="partners-page__companies-img" target="_blank">
+                                <span><img alt="eSign Genie - Partner - logo" src="https://d1b89zc79exfxt.cloudfront.net/img/eSign-big.png"/></span>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>eSign Genie Partner</h1>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <div class="partners-page">
+                <div class="container">
+                    <div class="costumer-page__bread">
+                            <ul>
+                                <li><a href="/">Homepage </a></li> / 
+                                <li><a href="/partners">Partners</a></li>  /  
+                                <li class="active">eSign Genie</li>
+                            </ul>
+                    </div>
+                
+                    <!-- <div class="partners-page__tags">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <article>
+                                        
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="costumer-page__img float_left">
+                                    <figure><img alt="partners" src="https://d1b89zc79exfxt.cloudfront.net/img/partners-img.png"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>What is eSign?</h2>
+                                    <p>eSign is short for electronic signature. It’s a form of data that can be used to sign important documents and carries the same legality as signing your name with a pen. An electronic signature is used to validate a document and sign a piece of legislation into action. It has become a vital digital solution over recent years, including being used on official government documents. With that comes bank-level encryption to protect exposure of information found on business reports and documents. </p>
+                                    <p>eSign takes away the stress of having to fax, mail, or print company forms. Some businesses even give you the ability to verbally sign documents through a recording that can be sent to any recipient. This technology is everywhere, even in places you don’t think about. For example, when you’re buying a product on Amazon, you’re in actuality giving electronic consent (aka a signature) for the company to charge your credit card. </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-5">
+                                <div class="costumer-page__img float_right">
+                                    <figure><img alt="partners" src="https://d1b89zc79exfxt.cloudfront.net/img/costumer-photo.png"/></figure>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <article>
+                                    <h2>The Benefits of eSign</h2>
+                                    <p>There are a multitude of advantages to incorporating electronic signatures to your property business. </p>
+                                    <p><b>Saving Time</b> - The old ways of faxing a document and waiting for the recipient to sign and fax it back are over. Any company still using this method is sure to lose customers. With eSign, all it takes is a few clicks to send a pre-filled document to whoever you want. Similarly, it only takes a few clicks for you to sign if somebody sends you an electronic document. Stuck in traffic? No problem. With eSign capabilities, you can sign and send documents from any device at any time. You also save time looking for reports. No more rifling through bulky sheets of paper to find the contact you’re looking for. Just search the form you’re looking for and bring the contract right up for your convenience.</p>
+                                    <p><b>Save Money</b> - Remember the times of buying stacks of paper and replacing ink cartridges every week? With electronic signatures, you save a ton of money on supplies as well as shipping and packaging expenses. Also, wet ink signatures have a lot of potential for human blunders. Smeared signatures can ruin important documents and void contracts, making you have to go through the whole signing process again. Signing electronically on the other hand, takes away the chance of human error.</p>
+                                    <p><b>Flexibility</b> - Adjusting contracts has never been easier. In days past, negotiations between parties to reach a deal used to be a headache, rather a migraine. This included going back to the drawing board and re-drafting. But with a signing tool, you can easily adjust contracts in a much quicker fashion. In addition, all recipients of the contract can see adjustments being made in real-time. Plus, due to its impressive encryption algorithm, no third parties can access the forms without permission. This coincides with the air tight security that comes with Booking Ninjas, making our pms the most secure.</p>
+                                    <p><b>Decision Turnover</b> - Implementing new codes and policies within an organization can be very time-consuming. Yet this is one of the most important factors of running an organized and efficient workspace. Writing up contracts and getting all stakeholders to agree can be a daunting task. Electronic signatures expedite the process from decision to execution. Signing new policies into your organization’s handbook can set new legislation into place in a matter of hours.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumer-page__content">
+                    <div class="container">
+                        <div class="row  justify-content-between align-items-center">
+                            <div class="col-lg-12">
+                                <article>
+                                    <h2>eSign with Booking Ninjas</h2>
+                                    <p><apex:outputLink value="{!URLFOR($Page.BN_Solutions)}" target="_blank">The Booking Ninjas property management system</apex:outputLink> comes loaded with the best eSign technology on the market. This contributes to the fact that Booking Ninjas’ features come with one goal in mind - to make things better for your customers and your employees. Our pms saves you valuable resources such as time and money. </p>
+                                    <p>Our e-signature services allow your property to populate and send documents in seconds, locate reports in an instant, and sign important paperwork from the comfort of your own mobile device. Another interesting feature is the ability to set auto-reminders. This alerts both you and the recipients of a work document of impending deadlines, ensuring that neither side forgets to fill out the forms by the allotted deadline. </p>
+                                    <p>Simply put,&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Why)}" target="_blank">Booking Ninjas makes your job as a property manager easier</apex:outputLink>. Hoteliers around the world that have tried our software have never looked back. Technology rules the world. So looking at the hospitality landscape for the foreseeable future, innovation should be at the top of every hotelier’s priority list. One of our&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_CoreValues)}" target="_blank">core values</apex:outputLink> here at Booking Ninjas is innovation, a constant focus on implementing the best tech to our property management software and leveraging it to increase the efficiency and productivity of our clients. And eSign is one of those technological advancements. </p>
+                                    <p>This is just one of the features that the Booking Ninjas property management software offers. Be sure to&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" target="_blank">check out our full list</apex:outputLink> to see why we’re the best cloud-based pms for 2020 and beyond! </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-page__other">
+                    <div class="container">
+                        <h3>Learn More About Other Partners</h3>
+                        <p>Learn how Booking Ninjas help property businesses improve daily yield</p>
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Salesforce)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/logocolor1.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Salesforce)}">Salesforce</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_HFTP)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/logocolor2.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_HFTP)}">HFTP</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Twilio)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/twilio_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Twilio)}">Twilio</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_ChannelRush)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/channelrush_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_ChannelRush)}">ChannelRUSH</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_YieldPlanet)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/yieldPlanet.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_YieldPlanet)}">YieldPlanet</apex:outputLink></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <div class="partners-page__other-item">
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Partners_Latino)}" styleClass="partners-page__companies-img">
+                                        <span><img src="https://d1b89zc79exfxt.cloudfront.net/img/Latino_logo.png" alt=""/></span>
+                                    </apex:outputLink>
+                                    <h6><apex:outputLink value="{!URLFOR($Page.BN_Partners_Latino)}">Latino Hotel Association</apex:outputLink></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

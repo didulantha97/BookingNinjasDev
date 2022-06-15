@@ -1,0 +1,96 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" controller="BN_Portal_ClientV2MOM_Controller">
+
+     <!-- Template -->
+    <apex:composition template="BN_Portal_Template">
+        <!-- Define content -->
+        <apex:define name="bn_portal_content">
+        
+            <div class="col-lg-9  col-md-8">
+                
+                <div class="portal__main">
+                    <h1>V2MOM Profile</h1>
+                    <apex:form id="portal-v2mom">
+                        <div class="portal__v2mom">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 order-lg-1">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/v2mom1.png" alt=""/></figure>
+                                </div>
+                                <div class="col-lg-8">
+                                    <section>
+                                        <h5>Tell us about your Vision</h5>
+                                        <apex:inputTextarea value="{!vision}" html-placeholder="Your comment..." />
+                                        <apex:commandButton value="Save Vision Answer" action="{!saveV2MOM}" styleClass="button" rerender="portal-v2mom"/>
+                                        <apex:messages style="color:red;"/>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portal__v2mom">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 order-lg-1">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/v2mom2.png" alt=""/></figure>
+                                </div>
+                                <div class="col-lg-8">
+                                    <section>
+                                        <h5>Tell us about your Values</h5>
+                                        <apex:inputTextarea value="{!values}" html-placeholder="Your comment..." />
+                                        <apex:commandButton value="Save Values Answer" action="{!saveV2MOM}" styleClass="button" rerender="portal-v2mom"/>
+                                        <apex:messages style="color:red;"/>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portal__v2mom">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 order-lg-1">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/v2mom3.png" alt=""/></figure>
+                                </div>
+                                <div class="col-lg-8">
+                                    <section>
+                                        <h5>Tell us about your Methods</h5>
+                                        <apex:inputTextarea value="{!methods}" html-placeholder="Your comment..." />
+                                        <apex:commandButton value="Save Methods Answer" action="{!saveV2MOM}" styleClass="button" rerender="portal-v2mom"/>
+                                        <apex:messages style="color:red;"/>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portal__v2mom">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 order-lg-1">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/v2mom4.png" alt=""/></figure>
+                                </div>
+                                <div class="col-lg-8">
+                                    <section>
+                                        <h5>Tell us about your Obstacles</h5>
+                                        <apex:inputTextarea value="{!obstacles}" html-placeholder="Your comment..." />
+                                        <apex:commandButton value="Save Obstacles Answer" action="{!saveV2MOM}" styleClass="button" rerender="portal-v2mom"/>
+                                        <apex:messages style="color:red;"/>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portal__v2mom">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 order-lg-1">
+                                    <figure><img src="https://d1b89zc79exfxt.cloudfront.net/img/v2mom5.png" alt=""/></figure>
+                                </div>
+                                <div class="col-lg-8">
+                                    <section>
+                                        <h5>Tell us about your Measures</h5>
+                                        <apex:inputTextarea value="{!measures}" html-placeholder="Your comment..." />
+                                        <apex:commandButton value="Save Measures Answer" action="{!saveV2MOM}" styleClass="button" rerender="portal-v2mom"/>
+                                        <apex:messages style="color:red;"/>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </apex:form>
+                </div> 
+                
+            </div>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

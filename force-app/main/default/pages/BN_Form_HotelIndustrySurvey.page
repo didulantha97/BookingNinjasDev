@@ -1,0 +1,19 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+           <div class="thankyou">
+               <div class="container">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfUehHbmcwwJHmSN9zT5jODWzRcyLXVYq3HKnP0FC6X4SRf4Q/viewform" width="468" height="60" >
+                        
+                     </iframe>
+               </div>
+           </div>
+
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

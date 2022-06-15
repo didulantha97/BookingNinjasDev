@@ -1,0 +1,67 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" controller="BN_Portal_Account_Controller">
+
+     <!-- Template -->
+    <apex:composition template="BN_Portal_Template">
+        <!-- Define content -->
+        <apex:define name="bn_portal_content">
+         
+            <div class="col-lg-9  col-md-8">
+                <div class="portal__main">
+                    <div class="portal__main-text">
+                        <h1>Account profile </h1>
+                    </div>
+                    <div class="portal__main-table">
+                        <table>
+                            <tr>
+                                <td>Account Name</td>
+                                <td>{!contact.Account.Name}</td>
+                            </tr>
+                            <tr>
+                                <td>Client Name</td>
+                                <td>{!contact.Name}</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>{!contact.Email}</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>{!contact.Phone}</td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+                <apex:outputPanel rendered="{!IF(userRole == 'Client', true, false)}">
+                    <div class="portal__main-text">
+                        <h1>Opportunities</h1>
+                    </div>
+                    <div class="portal__main-history">
+                        <table>
+                            <tr>
+                                <th>Opportunity Name</th>
+                                <th>Account Name</th>
+                                <th>Stage</th>
+                                <th>Effectivity Date</th>
+                            </tr>
+                            <apex:repeat var="opportunity" value="{!opportunities}">
+                                <tr>
+                                    <td>{!opportunity.Name}</td>
+                                    <td>{!opportunity.Account.Name}</td>
+                                    <td>{!opportunity.StageName}</td>
+                                    <td>
+                                        <apex:outputText value="{0, date, MMMM dd',' yyyy}">
+                                            <apex:param value="{!opportunity.CloseDate}" /> 
+                                        </apex:outputText>
+                                    </td>
+                                </tr>
+                            </apex:repeat>
+                        </table>
+                    </div>
+                </apex:outputPanel>
+            </div>
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

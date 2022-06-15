@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>Usage_Metrics</defaultLandingTab>
+    <description>A sample application for visualizing ISV-related usage metrics data with charting. This application requires the &quot;Read Usage Metrics Data&quot; organization feature is enabled.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Usage Metrics</label>
+    <tabs>Usage_Metrics</tabs>
+    <tabs>Article__c</tabs>
+    <tabs>Financial_Account__c</tabs>
+    <tabs>Category_List__c</tabs>
+    <tabs>Financial_Account_LineItem__c</tabs>
+    <tabs>Detailed_Category__c</tabs>
+    <tabs>Expenses__c</tabs>
+    <tabs>Pre_Call_Planner__c</tabs>
+    <tabs>Cook_Book__c</tabs>
+    <tabs>Feedback__c</tabs>
+    <tabs>Journal__c</tabs>
+    <tabs>Meal_Plan__c</tabs>
+    <tabs>Workout_Plan__c</tabs>
+    <tabs>SMS_Template__c</tabs>
+    <tabs>Account_Executive__c</tabs>
+    <tabs>CHANNEL_ORDERS__Customer__c</tabs>
+    <tabs>Card__c</tabs>
+    <tabs>Article_Views__c</tabs>
+    <tabs>NewActivity__c</tabs>
+    <tabs>Campaign_Report__c</tabs>
+    <tabs>CustomerStories__c</tabs>
+    <tabs>Page_Schema__c</tabs>
+    <tabs>CurrencyType__c</tabs>
+</CustomApplication>

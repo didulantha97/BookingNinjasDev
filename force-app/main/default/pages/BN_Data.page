@@ -1,0 +1,179 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+            <!-- top -->
+            <div class="data-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="data-top__img"><img alt="Automatic Data Processing System" src="https://d1b89zc79exfxt.cloudfront.net/img/data-top-bg.png"/></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <article>
+                                <h1>Automatic Data Processing System &#38; PMS Data</h1>
+                                <p>Besides a lot of money, these companies 
+                                    are the best at data processing.  </p>
+                                    
+                                    <p>Data processing is the process of retrieving, transforming, and classifying information.  </p>
+                                    
+                                    <p>The largest companies in the world (Amazon, Google, Facebook) have mastered this process.  </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="why-page-content data-content">
+                <div class="container">
+                    <div class="why-page-content__item">
+                        <h1>Data processing provides endless benefits to your property management business:                     </h1>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="why-page-content__img"><img alt="PMS Data Processing - 1" class="float_right" src="https://d1b89zc79exfxt.cloudfront.net/img/data1.png"/></div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="data-check-items">
+                                    <span>Cost reduction</span>
+                                    <span>Easy storage</span>
+                                    <span>Increase in productivity</span>
+                                    <span>Accurate projections</span>
+                                    <span>Smarter decisions  </span>
+                                    <em>...among many others.</em>
+                                </div>
+                               <p>In the property management business, when you think about data, you think about knowing your customers. Where they are, who they are, and most importantly how you can catch their attention. </p> 
+    
+                                <p> Think about it: If a hotel manager doesn’t know who their customers are and where they’re coming from, then they have no idea how they should be marketing their hotel. </p> 
+    
+                               <h5> This is the importance of data for your PMS in 2020.  </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <h2>Where data is headed              </h2>
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-lg-4 order-lg-1">
+                                <div class="why-page-content__img"><img alt="PMS Data Processing - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/data2.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <p>Now is the perfect time to hop aboard the data train. Heading into 2020, data analysis is more valuable than ever, which means you can expect to see more DaaS (Data-as-a-service) offered by companies. In fact, according to Towards Data Science, “90% of the world’s largest enterprises are expected to generate income from data-as-a-service.” This means more and more data companies will try to reach into your wallet to get you to pay for a subscription to obtain advanced data and analytics. Save yourself the added expense by implementing a PMS that includes access to these analytics to your property. </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-page-content__item">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-lg-4">
+                                <div class="why-page-content__img"><img alt="PMS Data Processing - 3" class="float_right" src="https://d1b89zc79exfxt.cloudfront.net/img/data3.png"/></div>
+                            </div>
+                            <div class="col-lg-7">
+                                <article>
+                                    <p>Another trend that is soon going to take impact is data governance. The California Consumer Privacy Act (CCPA) was signed into law at the beginning of 2020. This act will work alongside another regulation, the General Data Protection Regulation (GDPR) to ensure businesses follow the data security and handling guidelines. Because the acts are relatively new, many companies have yet to begin following these rules and regulations mostly out of ignorance. But they are a law now with strong consequences for those who don’t adapt to the new legislation. A property management system will fully comply with GDPR and CCPA guidelines to ensure your property management business is playing by the rules. </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-gray">
+                    <div class="container">
+                        <h2 class="data-gray__title"><strong>Our        </strong>       <span><img alt="Our Data Advantages - 1" src="https://d1b89zc79exfxt.cloudfront.net/img/startup-rocket.png"/></span>      <small>data <br/>
+                            advantage</small></h2>
+                        <div class="solution-page-integration__section">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Our Data Advantages - 2" src="https://d1b89zc79exfxt.cloudfront.net/img/solutions-icon5.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p> Being built on the Salesforce platform, the Booking Ninjas Property Management Software is able to process your big data faster and more efficiently than any other PMS on the market.</p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Our Data Advantages - 4" src="https://d1b89zc79exfxt.cloudfront.net/img/crm-ico.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>The Salesforce CRM was built specifically to enhance the relationship between businesses and their customers. With this, much of the platform was designed to analyze useful data to help companies better appeal to their target audience. </p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Our Data Advantages - 6" src="https://d1b89zc79exfxt.cloudfront.net/img/analysis_ico.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>Tools such as augmented and predictive analysis, data automation, and in-memory and natural language processing help contemporize your property management business. 
+                                            </p>    
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Our Data Advantages - 8" src="https://d1b89zc79exfxt.cloudfront.net/img/data-ico.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>The volume and quality of PMS data will only continue to grow. Artificial intelligence and machine learning are now mandatory tools to process information. With wireless technology such as 5G rolling out in 2020, most companies will have a large cloud-based online presence. 
+                                            </p>    
+                                        </section>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Our Data Advantages - 3" src="https://d1b89zc79exfxt.cloudfront.net/img/data-screen.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>Salesforce uses machine learning to convert raw data into information that your PMS can read and analyze.  
+                                            </p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Our Data Advantages - 5" src="https://d1b89zc79exfxt.cloudfront.net/img/why-recap3.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>As a Salesforce partner, Booking Ninjas is able to utilize revolutionary technology such as Einstein AI to personalize the guest experience making it the best property management software on the PMS market. 
+                                            </p>
+                                        </section>
+                                    </div>
+                                    <div class="solution-page-integration__item">
+                                        <div class="solution-page-integration__image">
+                                            <figure><img alt="Our Data Advantages - 7" src="https://d1b89zc79exfxt.cloudfront.net/img/data-ninja.png"/></figure>
+                                        </div>
+                                        <section>
+                                            <p>As the most advanced data and analytics package in the property management industry today, Booking Ninjas can save your property management business a ton of money on research and development while alleviating the common stress of the average property management employee by making their job more convenient and easy. </p>    
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-page-bottom data-page-bottom ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/data-bottom.png" alt="PMS enabled property"/> 
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>Become a pms enabled property                       </h3>
+                                <p>When it comes to an all-in-one property management solution, you cannot afford second best. The best way 
+                                    to stay ahead of the boom in data processing is to adapt 
+                                    to the times and accept the change. By implementing 
+                                    a Salesforce-backed PMS software to your hotel, motel, resort, country club, residential property, or self-storage facility, data processing is done for you in seconds putting you on the path to optimal customer service and a more structured workflow. 
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

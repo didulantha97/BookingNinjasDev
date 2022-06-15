@@ -1,0 +1,740 @@
+<!--
+  @description       : 
+  @author            : is.didulantha123@gmail.com
+  @group             : 
+  @last modified on  : 11-23-2020
+  @last modified by  : is.didulantha123@gmail.com
+  Modifications Log 
+  Ver   Date         Author                       Modification
+  2.0   11-06-2022   is.didulantha123@gmail.com   Updated Version
+-->
+<apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+        
+			<script>
+				$(function () {
+					$('body').addClass('segment');
+				});
+			</script>
+            
+            <!-- hero -->
+			<div class="villa-management-page__hero">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 order-lg-1">
+							<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-hero.png" alt="Online Villas Management Software" class="adaptive-img" />
+						</div>
+						<div class="col-lg-6">
+							<article class="segment__hero-txt">
+								<h1>
+									Online Villas Management Software
+								</h1>
+								<h2>
+									Property Management Software to Automate Your Villa Rental with Booking Engine, POS, AirBnB Integration &amp; More. Recognized by Salesforce. Request a demo! 
+								</h2>
+                                <apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">
+                                    Schedule A Call</apex:outputLink>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /hero -->
+			<!-- cards -->
+			<div class="villa-management-page__center-text">
+				<div class="container">
+					<h2 class="title-h2">
+						Our Cloud-based Property Management System Protects Your Data
+					</h2>
+					<div class="row segment-cards">
+						<div class="col-lg-6">
+							<div class="segment-cards__item segment-cards__item-horizontal">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-1.png" />
+								</figure>
+								<p>As the only villa Property Management System software company to be listed on Salesforce, our cloud-based protects and saves your data.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="segment-cards__item segment-cards__item-horizontal">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-2.png" />
+								</figure>
+								<p>Access your data anywhere, anytime and focus on other aspects of your business.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- title -->
+			<div class="villa-management-page__main-title">
+				<div class="container">
+					<div class="text-center">
+						<h2>
+							Our Villas Management System Tailored To Fit Exact Needs
+						</h2>
+						<p>
+							The villas management system comes with bespoke features to manage your villas real estate property.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- articles -->
+			<div class="villa-management-page__articles">
+				<div class="container">
+					<div class="villa-management-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-1.png" alt="" class="adaptive-img wow fadeInLeft" /></figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										Get Amazing User Experience With Our Booking Engine
+									</h3>
+									<section>
+										<ul>
+											<li>Our booking engine enhances your user experience thereby making your website look more professional.</li>
+											<li>Booking Ninjas' Booking Engine is commission-free; saves you money whilst you make more money. Amazing, right?</li>
+											<li>Guests can easily select choice villas and dates of stay and directly place the booking.</li>
+											<li>Stores your guest's info, see where your guests are visiting from and make real improvements to your company's future marketing strategy.</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+
+					</div>
+					<div class="villa-management-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6 order-lg-1">
+								<figure>
+                                    <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-2.png" alt="" class="adaptive-img wow fadeInRight" />
+                                </figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										Expand Your Reach With Our Channel Manager
+									</h3>
+									<section>
+										<ul>
+											<li>Booking Ninjas Channel Manager helps you easily increase your online presence and directly connect to major booking channels. </li>
+											<li>Update your listings on major channels for your villas like Google, Airbnb, Amadeus, Abritel, Ctrip, booking.com, etc.</li>
+											<li>With our Channel Manager Software, you freely list and sell your villa rooms on all your integrated booking sites, at the same time. </li>
+											<li>Automatically update villa availability date real-time on all sites once a booking is made and attract more bookings through instant updates to your inventory.</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /articles -->
+			<!-- cards -->
+			<div class="villa-management-page__articles">
+				<div class="container">
+					<h2 class="title-h2 text_center">
+						Spread Your Wings With Our Airbnb Integration
+					</h2>
+					<div class="row segment-cards">
+						<div class="col-lg-6">
+							<div class="segment-cards__item segment-cards__item-horizontal">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-3.png" />
+								</figure>
+								<p>
+									Booking Ninjas' PMS gives wide coverage for the new number of guests connected with the community. The more the reach, the more visibility your business gets.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="segment-cards__item segment-cards__item-horizontal">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-4.png" />
+								</figure>
+								<p>You can Integrate with our PMS and build your business list on Airbnb.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- title -->
+			<div class="villa-management-page__main-title">
+				<div class="container">
+					<div class="text-center">
+						<h2>Payment Services Simplifies The Booking Process</h2>
+						<p>With our payment services at Booking Ninjas, we have simplified the process and made it easier for customers to have varied options whilst using your villas.</p>
+					</div>
+				</div>
+			</div>
+			<!-- /title -->
+			<!-- articles -->
+			<div class="villa-management-page__articles">
+				<div class="container">
+					<div class="villa-management-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-3.png" alt="" class="adaptive-img wow  fadeInLeft" /></figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										Easy Payment Gateway With Booking Ninjas
+									</h3>
+									<section>
+										<ul>
+											<li>Enjoy easy authorization of credit cards through our efficient and smooth payment gateway</li>
+											<li>Our digital wallet accepts payment from Apple Pay, Google Pay, Visa Checkout, and many more. The more options available, the better customers are at retaining your service. Wouldn't you love that?</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+						<div class="villa-management-page__article">
+							<div class="row align-items-center">
+								<div class="col-lg-6 order-lg-1">
+									<figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-4.png" alt="" class="adaptive-img wow  fadeInRight" /></figure>
+								</div>
+								<div class="col-lg-6">
+									<article>
+										<h3 class="title-underline">
+											There'd Be No Issues When Your Guests Split the Bill
+										</h3>
+										<section>
+											<ul>
+												<li>Your guests can split bills at any of your villa's amenities including room fees.</li>
+												<li>With this, get added benefits such as having 2 authorized cards on file instead of 1.</li>
+											</ul>
+										</section>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /articles -->
+			<!-- cards -->
+			<div class="villa-management-page__articles">
+				<div class="container">
+					<h2 class="title-h2">Adequate Planning With Our All-in-One Availability Grid</h2>
+					<div class="row segment-cards">
+						<div class="col-lg-4 wow fadeInUp">
+							<div class="segment-cards__item">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-5.png" />
+								</figure>
+								<p>Our PMS comes with an all-in-one availability grid that displays proper data of your villas amenities–booked, empty and otherwise.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 wow fadeInUp">
+							<div class="segment-cards__item">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-6.png" />
+								</figure>
+								<p>You can use the Availability Hour Grid (AHG) to improve resource planning and gain insight on reservations. </p>
+							</div>
+						</div>
+						<div class="col-lg-4 wow fadeInUp">
+							<div class="segment-cards__item">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-7.png" />
+								</figure>
+								<p>With an easy-to-use drag and drop interface, allocate resources in advance and keep a lookout for current and future availabilities.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- cards -->
+			<div class="villa-management-page__articles">
+				<div class="container">
+					<h2 class="title-h2">
+						Take Charge With Our AI-Based Room Rate Controller
+					</h2>
+					<div class="row segment-cards">
+						<div class="col-lg-4 wow fadeInUp">
+							<div class="segment-cards__item">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-8.png" />
+								</figure>
+								<p>Our PMS comes with an AI-based Yield Management Pricing System that helps you control your present and future villa room rates.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 wow fadeInUp">
+							<div class="segment-cards__item">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-9.png" />
+								</figure>
+								<p>Decide what option best works for you: set room rates either manually or automatically and also send mass messages and updates to all your booking engines and channels.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 wow fadeInUp">
+							<div class="segment-cards__item">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-10.png" />
+								</figure>
+								<p>With our algorithm, easily identify the best revenue sources with intelligent rule-based pricing strategies. This way, you know you're updated on revenue opportunities.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- cards -->
+			<div class="villa-management-page__articles">
+				<div class="container">
+					<h2 class="title-h2">
+						Enjoy Absolute Customer Support with Our Core CRM
+					</h2>
+					<div class="row segment-cards">
+						<div class="col-lg-4 wow fadeInUp">
+							<div class="segment-cards__item">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-12.png" />
+								</figure>
+								<p>With our Personalized customer interactions, create emotional investment from your guests and increase the chances of repeat stays.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 wow fadeInUp">
+							<div class="segment-cards__item">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-13.png" />
+								</figure>
+								<p>Improve guest communication methods to enhance the productivity and efficiency of workflow.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 wow fadeInUp">
+							<div class="segment-cards__item">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-14.png" />
+								</figure>
+								<p>Give your guests a quality customer experience with all the features of the management system.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+			<!-- cards -->
+			<div class="villa-management-page__articles">
+				<div class="container">
+					<h2 class="title-h2 text_center">
+						Website Solutions for Your Villas Management Software
+					</h2>
+					<div class="row segment-cards">
+						<div class="col-lg-6">
+							<div class="segment-cards__item segment-cards__item-horizontal">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-15.png" />
+								</figure>
+								<p>
+									Our management software helps you build an amazing bookable website with a proper brand image to manage your tasks from one platform.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="segment-cards__item segment-cards__item-horizontal">
+								<figure>
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-icon-16.png" />
+								</figure>
+								<p>Unify your presence by optimizing your brand!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+
+			<!-- title -->
+			<div class="villa-management-page__main-title">
+				<div class="container">
+					<h2>
+						Additional Features of Our Villas Management Software
+					</h2>
+				</div>
+			</div>
+			<!-- /title -->
+			<!-- articles -->
+			<div class="villa-management-page__articles">
+				<div class="container">
+					<div class="villa-management-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-5.png" alt="" class="adaptive-img wow  fadeInLeft" /></figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										F&amp;B Orders/Requests
+									</h3>
+									<section>
+										<ul>
+											<li>Our direct room service feature allows guests to order from their room and their selections will show up instantly on your PMS which alerts the kitchen to start on the order.</li>
+											<li>Booking Ninjas PMS helps you track incoming food and beverage packages and simplify event catering. </li>
+											<li>The order can then be constantly updated to let your guests know what the expected time of delivery is.</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="villa-management-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6 order-lg-1">
+								<figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-6.png" alt="" class="adaptive-img wow  fadeInRight"/></figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										Fix Instant Messaging With Automation
+									</h3>
+									<section>
+										<ul>
+											<li>Prepare and send automated messages like check-in details, confirmation emails, etc. </li>
+											<li>This saves time and helps you eliminate manual adding of messages and responses</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="villa-management-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-7.png" alt="" class="adaptive-img wow  fadeInLeft" /></figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										Guest App
+									</h3>
+									<section>
+										<ul>
+											<li>Manage your guests' interactions and activities seamlessly using the Guest App.</li>
+											<li>Our Guest App enables your guests to make orders, submit service requests, and make inquiries/complaints on services and amenities provided by your villa.</li>
+											<li>With this, it will save the complaint time and the rowdiness of offline complaints. </li>
+											<li>This is fully integrated with our PMS and helps you serve your guests even better.</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="villa-management-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6 order-lg-1">
+								<figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-8.png" alt="" class="adaptive-img wow  fadeInRight" /></figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										Self Check-In
+									</h3>
+									<section>
+										<ul>
+											<li>Check-ins can be stressful when not automated. And when circumstances like bad flight or crazy weather overwhelm your guests, it may delay the check-in time and process.</li>
+											<li>Our PMS comes with an automated self-check-in feature to minimize time wastage and create a lasting first impression on your guests.</li>
+											<li>This offers your guests a more reliable alternative to physical front desk check-in.</li>
+											<li>Helps you streamline your villa operations, allowing your staff to concentrate on key areas that enhance your guest's experience and promote your villa growth</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="villa-management-page__article">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<figure><img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/villa-management-9.png" alt="" class="adaptive-img wow  fadeInLeft" /></figure>
+							</div>
+							<div class="col-lg-6">
+								<article>
+									<h3 class="title-underline">
+										Salesforce Integration
+									</h3>
+									<section>
+										<ul>
+											<li>Booking Ninjas offers various implementations which are available on Salesforce's AppExchange. </li>
+											<li>Enjoy Twilio Flex optional add-on, which enables you to personalize your call automation process by pulling up up-to-date information on incoming callers. </li>
+											<li>And yes, any Salesforce cloud you currently use is fully applicable to our villa PMS. Lose nothing while you integrate your data!</li>
+										</ul>
+									</section>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /articles -->
+
+			<!-- prices -->
+			<div class="segment__prices">
+				<div class="container">
+					<h2 class="text_center section-title">Booking Ninjas Villas Management Software Price</h2>
+					<p class="text_center">Our special bundle prices reflect the value we bring to your villas property.
+						<br />
+						Check out our price packages and say hello to an easy life
+					</p>
+					<h3>Core Student Housing PMS (Starts from <span>
+                        ${!LowestEnglishPrice} per month</span>)
+                    </h3>
+					<div class="text_center pricing-support__btn wow fadeIn">
+                        <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
+                            PLANS &amp; PRICING
+                        </apex:outputLink>
+					</div>
+				</div>
+			</div>
+			<!-- /prices -->
+
+			<!-- Add-ons -->
+			<div class="segment__addons">
+				<div class="container">
+					<h2 class="text_center section-title">
+						Add-Ons For Your Villas Management Software
+					</h2>
+
+					<!-- Slider -->
+					<div class="pricing-addons__slider">
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-be.png" />
+								</div>
+								<h3 class="pricing-addons__slide-title">Booking Engine</h3>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-channel-manager.png" />
+								</div>
+								<h3 class="pricing-addons__slide-title">Channel Manager</h3>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-data-analytics.png" />
+								</div>
+								<h3 class="pricing-addons__slide-title">Data Analytics</h3>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-pos.png" />
+								</div>
+								<h3 class="pricing-addons__slide-title">POS</h3>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-cash-register.png" />
+								</div>
+								<h3 class="pricing-addons__slide-title">Cash Register</h3>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-portal.png" />
+								</div>
+								<h3 class="pricing-addons__slide-title">Portal</h3>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-email-app.png" />
+								</div>
+								<h3 class="pricing-addons__slide-title">Email App</h3>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-membership-module.png" />
+								</div>
+								<h3 class="pricing-addons__slide-title">Membership Module</h3>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-esign.png" />
+								</div>
+								<h3 class="pricing-addons__slide-title">Esign (Additional Api's)</h3>
+							</div>
+						</div>
+						<div class="pricing-addons__slide">
+							<div class="pricing-addons__slide-container">
+								<div class="pricing-addons__slide-image">
+									<img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-communications.png" />
+								</div>
+								<h3 class="pricing-addons__slide-title">Communications (paid by usage)</h3>
+							</div>
+						</div>
+					</div>
+					<div class="learn-more-center">
+						<apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}">More add-ons
+                                        available soon</apex:outputLink>
+					</div>
+				</div>
+			</div>
+			<!-- /Add-ons -->
+			<!-- FAQ -->
+			<div class="segment__faq">
+				<div class="container">
+					<h2 class="text_center section-title">FAQ</h2>
+					<div class="segment-accordion">
+						<div class="segment-accordion__item">
+							<div class="segment-accordion__trigger">
+								<h3>What is Villas management software?</h3>
+								<div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="segment-accordion__content">
+								<p>A villas management software is a complete suite of tools for villas owners and managers to help them manage their business. These tools include reporting, lead capture, reservations, financials, and workforce management. It can even be integrated with point of sale systems and other hospitality software, eliminating the need for manual data entry.</p>
+							</div>
+						</div>
+					</div>
+					<div class="segment-accordion">
+						<div class="segment-accordion__item">
+							<div class="segment-accordion__trigger">
+								<h3>How Villas management system works?</h3>
+								<div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="segment-accordion__content">
+								<p>A villas management system is software that automates most aspects of running a single villa or a chain of villas. The most critical areas are reservations, guest services, and revenue management. In addition, these systems allow for better customer service by improving response time and streamlining operations.</p>
+							</div>
+						</div>
+					</div>
+					<div class="segment-accordion">
+						<div class="segment-accordion__item">
+							<div class="segment-accordion__trigger">
+								<h3>How to set up a villa property management system?</h3>
+								<div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="segment-accordion__content">
+								<p>To set up your villas management system, the first thing you need to do is book an introductory demo with us - 
+                                    &nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Demo)}">https://www.bookingninjas.com/demo</apex:outputLink>
+								</p>
+								<p>During this demo, you get to see all the features that could be utilizedfor your villas. This process is unique for each business and the requirements for setting up your personalized villas management system are determined during this call.</p>
+							</div>
+						</div>
+					</div>
+					<div class="segment-accordion">
+						<div class="segment-accordion__item">
+							<div class="segment-accordion__trigger">
+								<h3>What to consider when looking for a new villas management software?</h3>
+								<div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="segment-accordion__content">
+								<p>When looking for new villas management software, it is crucial to remember that you want something easy to integrate and use. It needs to integrate with your current POS and reservation systems and provide mobile capability. You also want something easy to work with so you can check customers in and out and manage rates. Read more on 
+                                    <a href="/blog/5-things-to-look-out-for-in-a-good-property-management-system"> how to choose the right hotel management software for your business</a>.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="segment-accordion">
+						<div class="segment-accordion__item">
+							<div class="segment-accordion__trigger">
+								<h3>Can you install this system into an existing Salesforce organization?</h3>
+								<div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="segment-accordion__content">
+								<p>Yes, you can install this system into an existing Salesforce organization. If you already have an existing Salesforce organization then installing the Booking Ninjas Hotel PMS is guaranteed to be an ideal fit for your properties.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="segment-accordion">
+						<div class="segment-accordion__item">
+							<div class="segment-accordion__trigger">
+								<h3>Can I get a demo of your villas management system?</h3>
+								<div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="segment-accordion__content">
+								<p>Yes, you can schedule a demo of our villas management system. With a demo, you see how the system helps deliver a great experience to customers and staff by automating the administrative process. </p>
+								<p>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Demo)}"> Schedule a demo today!</apex:outputLink>&nbsp;
+                                    You can choose any day or time convenient for you.</p>
+							</div>
+						</div>
+					</div>
+					<div class="segment-accordion">
+						<div class="segment-accordion__item">
+							<div class="segment-accordion__trigger">
+								<h3>Can you connect my inventories to a channel manager?</h3>
+								<div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="segment-accordion__content">
+								<p>Yes, you can connect your inventories to your current channel manager. If you don't have a channel manager, we provide the channel management feature as well (at a discounted price for villas using our PMS!)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="segment-accordion">
+						<div class="segment-accordion__item">
+							<div class="segment-accordion__trigger">
+								<h3>Do you support online booking via booking engine/app?
+								</h3>
+								<div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="segment-accordion__content">
+								<p>Yes, Booking Ninjas PMS provides a booking engine that supports online booking for your customers. Members and guests can book online, pay and manage their reservations in any of your villas. Available both on desktop and mobile platforms.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="segment-accordion">
+						<div class="segment-accordion__item">
+							<div class="segment-accordion__trigger">
+								<h3>Do you connect with the POS (snacks shop)?</h3>
+								<div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="segment-accordion__content">
+								<p>Yes. Whether your POS operates in a snack shop, restaurant, bursary or cafe, our PMS connects the POS to the rest of the PMS. If you already have a POS system, we can connect it to the rest of your instance. If you don't have an existing POS system, we will provide the POS system which is automatically synced with the rest of the PMS.</p>
+							</div>
+						</div>
+					</div>
+					<div class="segment-accordion">
+						<div class="segment-accordion__item">
+							<div class="segment-accordion__trigger">
+								<h3>Do you have a member portal for the member to manage their account?</h3>
+								<div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i></div>
+							</div>
+							<div class="segment-accordion__content">
+								<p>Yes, we do. For the member portal, you can do the following: Status booking, etc (day pass/monthly member), upgrade plan, referrer program, etc. You can also include custom options you'd like your members to see on their portal.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="learn-more-center">
+                        <apex:outputLink value="{!URLFOR($Page.BN_FAQs)}">More FAQs about Booking Ninjas
+                        </apex:outputLink>
+					</div>
+				</div>
+			</div>
+			<!-- /FAQ -->
+            
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

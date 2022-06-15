@@ -1,0 +1,68 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false" controller="BN_TemplateController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+            
+            <!-- top -->
+            <div class="about-page-top invite-page-top">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 order-lg-1  text_center">
+                            <div class="invite-page-top__img text_center">
+                                <img src="https://d1b89zc79exfxt.cloudfront.net/img/invite-top.png" alt="Invite a Friend"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1>Referral Program</h1>
+                            <p>At Booking Ninjas, we aim to promote and cultivate 
+                                a culture of success within our company, with 
+                                our partners, and with all property managers, worldwide. 
+                                We want our current clients and future customers t
+                                o know about the current benefits and future rewards 
+                                from deciding to commit to a partnership with us. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /top -->
+            <!-- content -->
+            <div class="invite-page">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text_center">
+                            <p>The Booking Ninjas community has room to grow, and property managers deserve a sense of unification in their field. Together, we can ensure that members within Booking Ninjas will reach their goals, be able to set new ones, and look forward to future successes in conjunction with our company. In the current dynamic climate, administrators and hoteliers need to have the reassurance that their digital engagement plans and online management systems are leading them towards progress and advancements. Booking Ninjas pledges a continued cultivation of success for many years to come.</p>
+                        </div>
+                    </div>
+                    <div class="invite-page__community">
+                        <div class="row">
+                            <div class="col-lg-6 text_center"><img src="https://d1b89zc79exfxt.cloudfront.net/img/invite-1.png"/></div>
+                            <div class="col-lg-6">
+                                <p>By referring friends, you will not only be strengthening the online community of property managers everywhere, but you will also be encouraging continual growth and advancements for yourself and others for the foreseeable future. Booking Ninjas seeks to reward our members who add to the community, and we look forward to sharing new benefits and possibilities with you.</p>
+                                <p>Current clients at Booking Ninjas can help foster this system of success by referring friends and other property managers to Booking Ninjas’ services. Our partners can expect to have new opportunities and promotions to try out when they refer colleagues. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="invite-page__form text_center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2>Ability to insert email addresses here:</h2>
+                                <p>To refer friends and colleagues to Booking Ninjas, please provide their email address below. We appreciate your time and consideration to help build the Booking Ninjas community. </p>
+                                <apex:form >
+                                    <apex:input type="email" value="{!email}" html-placeholder="Email Address" required="true" />
+                                    <apex:commandButton value="Send" styleClass="button" action="{!subscribe}"/>
+                                </apex:form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+        
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

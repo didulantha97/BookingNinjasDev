@@ -1,0 +1,30 @@
+.slds-table thead th {
+    background: transparent;
+    color: #838da9;
+}
+
+.slds-table tr {
+    border-collapse: separate;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.slds-table .slds-cell-fixed {
+    background-color: transparent;
+    top: 10pt;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.slds-cell-edit:hover {
+    background-color: var(--lwc-colorBackgroundInputDisabled, rgb(236, 235, 234));
+}
+
+.break-word {
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}

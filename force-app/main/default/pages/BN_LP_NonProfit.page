@@ -1,0 +1,361 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="false" controller="BN_HomeController">
+
+     <!-- Template -->
+    <apex:composition template="BN_Template">
+        <!-- Define content -->
+        <apex:define name="bn_content">
+
+            <script>
+                $(function () {
+                    $('body').addClass('landing landing__nonprofit-wrapper');
+                    $('body').css({"background-image": "url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/landing-nonprofit-top-bg.jpg)", "background-position": "center top 40px"});
+                    $('div.wrapper').css('background-image', 'url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/landing-center-bg14.png)');
+                });
+            </script>
+            
+            <!-- banner -->
+            <div class="landing__hero landing__hero-nonprofit">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="landing__hero-img wow bounceInRight"><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-top-img.png" alt="Best Nonprofit Property Management Software" /></div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn">
+                            <article>
+                                <h1>Best Nonprofit Property Management Software</h1>
+                                <h2>Affordable Tool to Help NPO Manage &amp; Automate Your Real Estate Property</h2>
+                                <br />
+                            </article>
+                            
+                            <div class="text_center">
+                                <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button">SCHEDULE A MEETING</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /banner -->
+            <!-- content -->
+            <div class="landing__box landing__box-nonprofit">
+                <div class="container">
+                    <div class="text_center wow fadeIn">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <h3 class="title">Pricing considers your contributions</h3>
+                                <p>You do a lot for the community, and we notice! Our unit-based pricing model considers your contributions and makes the cost-per-unit more affordable to match restrictive budgets.</p>
+                                <apex:outputLink styleClass="button landing__button" value="{!URLFOR($Page.BN_Pricing)}">See Pricing</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box landing__box-nonprofit">
+                <div class="container">
+                    <div class="wow fadeInUp">
+                        <h3>You don’t have to add the stress of running a Non Profit with managing the properties. Booking Ninjas Property Management System’s Got you covered.</h3>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-6">
+                                <p>As a manager running an NGO, you have your hands full with registration, human management, fundraising, and other societal obligations, therefore adding property management to it may make things even harder. Managing the property and ensuring the rooms have the perfect inhabitant is not easy. Still, you’re expected to have a good knowledge of what’s going on in the building and know what rooms are occupied. Why not make things easier by opting for a Property Management System?</p>
+                                <p>Property Management Systems for Non-Profit Establishments has everything you will need to help your front desk job and overall management. They are created specifically for all nonprofit organizations, societies, and clubs that have buildings and properties to maintain.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-content-1.png" alt="Software Management for Non-Profit" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__nonprofit-tags text_center">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h3>Features to get the most out of your nonprofit</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInLeft">
+                                <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-1.png" alt="Software Management For Non-Profit Booking Ninjas" /></i></div>
+                                <h6>Total Onboarding</h6>
+                                <p>Everyone in the building can be onboarded to the platform-from the senior managers, to the nurses, caregivers, volunteers, and the needy. You can create accounts based on position to determine the extent of access. In the end, everyone can access particular information, and log complaints when needed.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInRight">
+                                <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-2.png" alt="Software Management For Non-Profit Booking Ninjas" /></i></div>
+                                <h6>Mobile Access</h6>
+                                <p>Using Mobile Applications, the platform can be accessed. Therefore, making accessibility, giving, and receiving updates very easy. Using the phone or a system, changes can be made.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInLeft">
+                                <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-3.png" alt="Software Management For Non-Profit Booking Ninjas" /></i></div>
+                                <h6>Communication Media (SMS/Text/Email/Phone)</h6>
+                                <p>Available on the software is a medium of communication. Text can be exchanged, discussions are held and inventory taken at any time.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInRight">
+                                <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-4.png" alt="Software Management For Non-Profit Booking Ninjas" /></i></div>
+                                <h6>Maintenance Request Log and Tracker</h6>
+                                <p>Another feature that comes with the Property Management Software is one that allows tenants to log complaints and have their requests attended to. In the case that you fixed someone in an inaccessible area which will affect their health, they can easily let you know. If services are needed as well, they can be requested and tracked to know when fulfilled.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInLeft">
+                                <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-5.png" alt="Software Management For Non-Profit Booking Ninjas" /></i></div>
+                                <h6>Rent Conditions</h6>
+                                <p>The Property Management Software helps you to review rent conditions. Inhabitants in non-profit homes, may not have to pay rent, but what might pop up many times are questions on their health status, when they were admitted in, how long they are to stay, rent obligations they are expected to fulfill while there, and who can visit them, among other questions. On admittance, all of this information is filled in and can be gotten with a search when required.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInRight">
+                                <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-6.png" alt="Software Management For Non-Profit Booking Ninjas" /></i></div>
+                                <h6>Graphical Report and Data Analysis Tools</h6>
+                                <p>Another important feature necessary for presentation, and decision making made available is the Graphical Report and Data Analysis tools. For fundraising, end-of-the-year reports, or other formalities, you can derive charts and graphs to help you. How many blind people were taken in this year? How many cancer patients were supported? How long did the average homeless person stay when admitted? are all questions that your data analysis tools will help you with. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInLeft">
+                                <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-7.png" alt="Software Management For Non-Profit Booking Ninjas" /></i></div>
+                                <h6>Real-time Notification, Updates, and Reports</h6>
+                                <p>As soon as a change is made, you get an immediate notification to that effect. This way, you can tell who was moved to another room, or what is going on at any time. You get notifications and updates when due and can answer questions in the case of an emergency. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInRight">
+                                <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-8.png" alt="Software Management For Non-Profit Booking Ninjas" /></i></div>
+                                <h6>Storage</h6>
+                                <p>The Property Management system also has a storage feature that allows you to keep crucial information in cloud storage for years. You can always access this information and use it in the future for decision making.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- CTA button -->
+            <div class="text_center">
+                <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button">SCHEDULE A MEETING</apex:outputLink>
+            </div>
+            <br />
+            <!-- /CTA button -->
+            <!-- content -->
+            <div class="landing__nonprofit-tags">
+                <div class="container">
+                    <div class="text_center wow fadeInUp" >
+                        <h3>Why You Need a Property Management System for your NGO</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInLeft">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-9.png" alt="Total Onboarding Software Management for Non-Profit Booking Ninjas" /></i></div>
+                                    </div>
+                                    <div class="col">
+                                        <h6>Total Onboarding</h6>
+                                    </div>
+                                </div>
+                                <p>Property Management Systems are created to cover the overall management of the establishment. You can get the full details and information you require at any time without hassle. You can predict when an occupant will leave and even tell their history at a glance. You know what rooms are empty and who can access or use it.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInRight">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-10.png" alt="Inventory Management Software Management for Non-Profit Booking Ninjas" /></i></div>
+                                    </div>
+                                    <div class="col">
+                                        <h6>Inventory Management</h6>
+                                    </div>
+                                </div>
+                                <p>As a non-profit organization, you need to keep track of everyone accepted into the organization, their health condition, or their condition of acceptance into the organization. A property Management system is the perfect way to do that. You can understand each individual’s story and why they were accepted into the organization. You can find the perfect room for them by knowing what rooms are available and how accessible they are for people who may have physical limitations.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="landing__nonprofit-tag wow fadeInLeft">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-11.png" alt="Ease Software Management for Non-Profit Booking Ninjas" /></i></div>
+                                    </div>
+                                    <div class="col">
+                                        <h6>Ease</h6>
+                                    </div>
+                                </div>
+                                <p>Running an NGO is not the easiest task, but with a property management system, you bring a level of ease into your work. You deal with less paperwork and can access records from anywhere in the World.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="landing__nonprofit-tag wow fadeInUp">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-12.png" alt="Accountability - Software Management for Non-Profit Booking Ninjas" /></i></div>
+                                    </div>
+                                    <div class="col">
+                                        <h6>Accountability</h6>
+                                    </div>
+                                </div>
+                                <p>Property Management Software helps you to increase your level of accountability. You receive updates that notify you when things happen and you can make decisions more easily.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="landing__nonprofit-tag wow fadeInRight">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-13.png" alt="Synchronization - Software Management for Non-Profit Booking Ninjas" /></i></div>
+                                    </div>
+                                    <div class="col">
+                                        <h6>Synchronization</h6>
+                                    </div>
+                                </div>
+                                <p>Everyone on the platform is connected. As a result, every update reaches everyone. Occupants and Managers are linked and can interact.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInLeft">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-14.png" alt="Faster Front Desk Services - Software Management for Non-Profit Booking Ninjas" /></i></div>
+                                    </div>
+                                    <div class="col">
+                                        <h6>Faster Front Desk Services</h6>
+                                    </div>
+                                </div>
+                                <p>With Property Management Software, time spent at the front desk to check-in is reduced as every information needed can be filled in on the platform. Rooms are allocated faster based on conditions and health status. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="landing__nonprofit-tag wow fadeInRight">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="landing__nonprofit-tag-icon"><i><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-ico-15.png" alt="Multi-Property Management - Software Management for Non-Profit Booking Ninjas" /></i></div>
+                                    </div>
+                                    <div class="col">
+                                        <h6>Multi-Property Management</h6>
+                                    </div>
+                                </div>
+                                <p>Does your organization have more than one building? You can board as many properties on the system as possible. One won’t interrupt the other, and you can manage it all with ease.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- CTA button -->
+            <div class="text_center">
+                <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button">SCHEDULE A MEETING</apex:outputLink>
+            </div>
+            <br />
+            <!-- /CTA button -->
+            <!-- content -->
+            <div class="landing__box landing__box-nonprofit landing__checked wow fadeIn">
+                <div class="container">
+                    <h3 class=" text_center">More Additionals Booking Ninjas Can Offer You</h3>
+                    <ul class="landing__checked-list">
+                        <li>Customer Support</li>
+                        <li>Reliable Technology</li>
+                        <li>Additional Features Of Choice</li>
+                        <li>Good ROI</li>
+                        <li>Maintenance Services</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- content -->
+            <div class="landing__box wow fadeInUp">
+                <div class="container">
+                    <h3 class=" text_center">Easy way to get started with Booking Ninjas</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="landing__bottom" style="background-image: url(https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-hand-bg.png);">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3">
+                                        <div class="text_center"><img src="https://s3-us-west-2.amazonaws.com/www.bookingninjas.com/img/nonprofit-hand.png" alt="Booking Ninjas Software Management For Non-Profit" /></div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <section>
+                                            <p>To get started on our implementation process, schedule a call with us. We can talk about the needs of your organization, and which features can be used to meet them.</p>
+                                            <p>You can go straight ahead and try out a demo of our system. Use this&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Register)}">link</apex:outputLink> to get your trial version of our system. Please note that you will be asked to add your card details in order to gain access.</p>
+                                            <p>We are available to answer any questions you have. To send an email, you can reach us at <a href="mailto:sales@bookingninjas.com">sales@bookingninjas.com</a>.</p>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_center">
+                                <apex:outputLink styleClass="button landing__button" value="{!URLFOR($Page.BN_Register)}">Let’s Go</apex:outputLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <div class="landing__faq wow fadeInUp">
+                <div class="container">
+                    <h3 class=" text_center">FAQs</h3>
+                    <div class="landing__faq-item">
+                        <div class="landing__faq-question">
+                            What plans are available for your Property Management Software?
+                            <div class="nonprofit__accordion"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="landing__faq-answear">
+                            <p>We offer highly adjustable pricing primarily depending on what features you want to be integrated. Our out-of-box features are mostly what you need to get fully started.
+                            <br /><apex:outputLink value="{!URLFOR($Page.BN_Pricing)}">Visit this page</apex:outputLink> for more information on pricing.</p>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="landing__faq-item">
+                        <div class="landing__faq-question">
+                            What business types does your Property Management System support?
+                            <div class="nonprofit__accordion"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="landing__faq-answear">
+                            <p>Basically any business in the industry. As long as you have real people as customers/guests, our system is for you. Our system is also critical for business-intensive operations such as Accounting, Payments Systems, Automation, and many more.&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_Solutions)}">Go to our solutions page</apex:outputLink> for a full list.</p>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="landing__faq-item">
+                        <div class="landing__faq-question">
+                            What types of Property management software do you have? 
+                            <div class="nonprofit__accordion"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="landing__faq-answear">
+                            <p>Our Salesforce-powered system entirely focuses on rapid and long-term benefits for the end-user. As the first Cloud-based Property Management System, we have been innovating in that field to ensure users have a good time managing their customers and properties.
+                                So basically, our system is one that makes work easier for you. You can log in on any device, at any time, and have access to your data, as well as give out commands and whatever else you decide to manage with.</p>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="landing__faq-item">
+                        <div class="landing__faq-question">
+                            Can I board more than one building on software?
+                            <div class="nonprofit__accordion"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="landing__faq-answear">
+                            <p>Of course. Our system is built for multiple property management.</p>
+                        </div>
+                    </div>
+                    <!-- -->
+                    <div class="landing__faq-item">
+                        <div class="landing__faq-question">
+                            Will your property management system handle marketing?
+                            <div class="nonprofit__accordion"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="landing__faq-answear">
+                            <p>Yes. We are&nbsp;<apex:outputLink value="{!URLFOR($Page.BN_PMS_Salesforce)}">built on the Salesforce Platform</apex:outputLink>, which is the first marketing+management platform to ever be built. With the Booking Ninjas system, you have access to tools from the Salesforce AppExchange platform, where you will find the best marketing tools you’ve been hearing about. From Email Campaigns to personal touch, we’ve got you covered.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content -->
+            <!-- CTA button -->
+            <div class="text_center">
+                <apex:outputLink value="{!URLFOR($Page.BNCalendly)}" styleClass="button">SCHEDULE A MEETING</apex:outputLink>
+            </div>
+            <!-- /CTA button -->
+            
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>
