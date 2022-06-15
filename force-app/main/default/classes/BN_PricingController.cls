@@ -57,7 +57,7 @@ public class BN_PricingController {
             }else if(isocode.equals('EUR')){
                 currencySymbol = '€';
             }else if(isocode.equals('IDR')){
-                currencySymbol = '€';
+                currencySymbol = 'Rp';
             }else if(isocode.equals('CAD')){
                 currencySymbol = '$';
             }else {

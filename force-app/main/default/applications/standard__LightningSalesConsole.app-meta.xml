@@ -15,15 +15,11 @@
     <tabs>standard-Contact</tabs>
     <tabs>Cook_Book_Report</tabs>
     <tabs>Financial_Account__c</tabs>
-    <tabs>CurrencyType__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
             <tab>Cook_Book_Report</tab>
-        </mappings>
-        <mappings>
-            <tab>CurrencyType__c</tab>
         </mappings>
         <mappings>
             <tab>Financial_Account__c</tab>

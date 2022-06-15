@@ -14,5 +14,4 @@
     <tabs>standard-report</tabs>
     <tabs>CustomerStories__c</tabs>
     <tabs>Page_Schema__c</tabs>
-    <tabs>CurrencyType__c</tabs>
 </CustomApplication>

@@ -24,7 +24,6 @@
     <tabs>Page_Schema__c</tabs>
     <tabs>Webinar__c</tabs>
     <tabs>Webinar_Registration__c</tabs>
-    <tabs>CurrencyType__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>undefined_UtilityBar</utilityBar>
 </CustomApplication>

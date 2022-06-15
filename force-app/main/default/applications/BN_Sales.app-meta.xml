@@ -18,7 +18,6 @@
     <tabs>Webinar__c</tabs>
     <tabs>standard-Quote</tabs>
     <tabs>Accounting_Screen</tabs>
-    <tabs>CurrencyType__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>BN_Sales_UtilityBar</utilityBar>
 </CustomApplication>

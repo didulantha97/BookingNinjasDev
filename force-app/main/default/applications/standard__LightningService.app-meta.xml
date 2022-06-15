@@ -29,7 +29,6 @@
     <tabs>Campaign_Report__c</tabs>
     <tabs>CustomerStories__c</tabs>
     <tabs>Page_Schema__c</tabs>
-    <tabs>CurrencyType__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -50,9 +49,6 @@
         </mappings>
         <mappings>
             <tab>Cook_Book__c</tab>
-        </mappings>
-        <mappings>
-            <tab>CurrencyType__c</tab>
         </mappings>
         <mappings>
             <tab>CustomerStories__c</tab>

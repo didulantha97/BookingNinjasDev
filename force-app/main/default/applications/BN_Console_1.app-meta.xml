@@ -18,7 +18,6 @@
     <tabs>Webinar__c</tabs>
     <tabs>Webinar_Registration__c</tabs>
     <tabs>Email_Subscription__c</tabs>
-    <tabs>CurrencyType__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>BN_Console_1_UtilityBar</utilityBar>
 </CustomApplication>

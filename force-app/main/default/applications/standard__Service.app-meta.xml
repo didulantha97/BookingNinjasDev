@@ -30,5 +30,4 @@
     <tabs>Campaign_Report__c</tabs>
     <tabs>CustomerStories__c</tabs>
     <tabs>Page_Schema__c</tabs>
-    <tabs>CurrencyType__c</tabs>
 </CustomApplication>

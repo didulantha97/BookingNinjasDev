@@ -8,6 +8,5 @@
     <tabs>standard-OnlineSalesHome</tabs>
     <tabs>CustomerStories__c</tabs>
     <tabs>Page_Schema__c</tabs>
-    <tabs>CurrencyType__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
