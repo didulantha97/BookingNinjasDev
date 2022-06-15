@@ -31,11 +31,10 @@ public without sharing class BN_EmailSubscribeController {
     public Decimal getLowestSpanishPrice(){
        
         String code = 'EUR';
-        String region = '(ES) Spain';
 
-        CurrencyType__c ct = [SELECT ISOCode__c, ConversionRate__c  FROM CurrencyType__c WHERE ISOCode__c=:code];        
+        CurrencyType ct = [SELECT IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsoCode=:code];        
 
-        List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Product_Region__c =: region AND Type__c = 'Web'];
+        List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Expose_on_site__c = TRUE];
 
         List<Decimal> lowestPriceList = new List<Decimal>();
 
@@ -45,14 +44,14 @@ public without sharing class BN_EmailSubscribeController {
 
         lowestPriceList.sort();
 
-        price = lowestPriceList.get(0) * ct.ConversionRate__c;
+        price = lowestPriceList.get(0) * ct.ConversionRate;
 
         return price.round(System.RoundingMode.HALF_EVEN);
     }
     
     public Decimal getLowestEnglishPrice(){
 
-        List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Type__c = 'Web'];
+        List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Expose_on_site__c = TRUE];
 
         List<Decimal> lowestPriceList = new List<Decimal>();
 
