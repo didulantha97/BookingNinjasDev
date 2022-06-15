@@ -1,4 +1,7 @@
-public without sharing class BN_PricingController {
+public class BN_PricingController {
+
+    
+
     public static List<ProductWrapper> getProducts() {
         List<Product2> products = [
             SELECT
@@ -31,16 +34,38 @@ public without sharing class BN_PricingController {
         
         List<CurrencyWrapper> currencyWrapperList = new List<CurrencyWrapper>();
         
-        for(CurrencyType__c sym : [SELECT Name, ISOCode__c, Symbol__c, ConversionRate__c  FROM CurrencyType__c WHERE IsActive__c=:TRUE ORDER BY ConversionRate__c DESC]){
+        for(CurrencyType sym : [SELECT Id, IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsActive=:TRUE ORDER BY ConversionRate DESC]){
             CurrencyWrapper cw = new CurrencyWrapper();
-            cw.cname = sym.Name;
-            cw.code = sym.ISOCode__c;
-            cw.symbol = sym.Symbol__c;
-            cw.rate = sym.ConversionRate__c;
+            cw.code = sym.IsoCode;
+            cw.symbol = getCurrencySymbol(sym.IsoCode);
+            cw.rate = sym.ConversionRate;
             currencyWrapperList.add(cw);
         }
         return currencyWrapperList;
 
+    }
+
+    public static String getCurrencySymbol(String isocode){
+        
+        String currencySymbol;
+
+        if(isocode != null){
+            if(isocode.equals('USD')){
+                currencySymbol = '$';
+            }else if(isocode.equals('COP')){
+                currencySymbol = '$';
+            }else if(isocode.equals('EUR')){
+                currencySymbol = '€';
+            }else if(isocode.equals('IDR')){
+                currencySymbol = '€';
+            }else if(isocode.equals('CAD')){
+                currencySymbol = '$';
+            }else {
+                currencySymbol = '$';
+            }
+           
+        }    
+        return currencySymbol;     
     }
 
     public class ProductWrapper {
@@ -100,7 +125,6 @@ public without sharing class BN_PricingController {
 
      //Use Multi currency
      public class CurrencyWrapper {
-        public String cname { get; set; }
         public String code { get; set; }
         public String symbol { get; set; }
         public Decimal rate { get; set; }

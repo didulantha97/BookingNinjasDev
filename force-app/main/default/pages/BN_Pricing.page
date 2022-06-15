@@ -53,7 +53,7 @@
 							<div class="pricing-filter__currency">
 								<apex:repeat value="{!Currency}" var="cur">
 									<figure class="currency {!if(cur.code == 'USD', 'active', '')}" data-name="{!cur.code}" data-rate="{!cur.rate}" data-sym="{!cur.symbol}">
-										<figcaption>{!cur.cname}</figcaption>
+										<figcaption>{!cur.code}</figcaption>
 										<b>{!cur.symbol}</b>
 									</figure>
 								</apex:repeat>
