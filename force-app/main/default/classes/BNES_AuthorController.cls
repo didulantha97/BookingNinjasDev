@@ -1,4 +1,4 @@
-public    class BNES_AuthorController {
+public class BNES_AuthorController {
     private String contactId;
     public String parameterId { get; set; }
 

@@ -1,4 +1,4 @@
-public  class BN_ThankYouController {
+public class BN_ThankYouController {
     public Id objId { get; set; }
     public String objType { get; set; }
     public String message { get; set; }

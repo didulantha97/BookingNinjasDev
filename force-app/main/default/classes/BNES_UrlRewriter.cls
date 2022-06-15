@@ -1,4 +1,4 @@
-global with sharing class BNES_UrlRewriter implements Site.UrlRewriter {
+global class BNES_UrlRewriter implements Site.UrlRewriter {
 
     String regEx = '[^a-zA-Z0-9]';
 

@@ -1,4 +1,4 @@
-public with sharing class BN_HomeController {
+public class BN_HomeController {
     
     // demo lead form
     public Lead lead {get; set;}

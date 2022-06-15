@@ -1,4 +1,4 @@
-public  class BN_BlogController {
+public class BN_BlogController {
     List<Article__c> recentArticles;
     List<Article__c> popularArticles;
     public String subEmail { get; set; }

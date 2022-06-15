@@ -1,4 +1,4 @@
-public    class BNES_BlogController {
+public class BNES_BlogController {
     List<Article__c> recentArticles;
     List<Article__c> popularArticles;
     public String subEmail { get; set; }

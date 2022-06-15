@@ -1,5 +1,5 @@
 @isTest
-public with sharing class BNES_PricingController_Test {
+public class BNES_PricingController_Test {
     @testSetup
     static void setup() {
         List<Product2> newProductList = new List<Product2>();
