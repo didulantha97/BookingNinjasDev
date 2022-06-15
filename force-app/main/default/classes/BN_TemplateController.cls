@@ -716,7 +716,7 @@ public class BN_TemplateController {
 
     public Decimal getMinPrice(){
 
-        List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Type__c = 'Web'];
+        List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Expose_on_site__c = TRUE];
 
         List<Decimal> lowestPriceList = new List<Decimal>();
 

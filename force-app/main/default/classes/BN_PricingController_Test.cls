@@ -15,20 +15,11 @@ public class BN_PricingController_Test {
                 Hierarchy_Order__c = 1,
                 Expose_on_site__c = true,
                 IsActive = true,
-                Type__c = 'Web',
                 Product_Region__c = '(EN) English'
             )
         );
         insert newProductList;
         
-        CurrencyType__c cs = new CurrencyType__c();
-        cs.Name = 'Test Currency';
-        cs.ConversionRate__c = 379.00;
-        cs.ISOCode__c = 'TSO';
-        cs.IsActive__c = true;
-        cs.Symbol__c = '$';
-        
-        insert cs;
     }
 
     @isTest

@@ -15,7 +15,7 @@ public class BN_PricingController {
                 Size__c,
                 Hierarchy_Order__c
             FROM Product2
-            WHERE Expose_on_site__c = TRUE AND IsActive = TRUE AND Product_Region__c = '(EN) English' AND Type__c = 'Web'
+            WHERE Expose_on_site__c = TRUE AND IsActive = TRUE AND Product_Region__c = '(EN) English'
             ORDER BY Hierarchy_Order__c ASC
         ];
 

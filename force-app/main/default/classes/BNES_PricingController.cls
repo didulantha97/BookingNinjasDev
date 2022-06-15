@@ -13,7 +13,7 @@ public class BNES_PricingController {
                 Size__c,
                 Hierarchy_Order__c
             FROM Product2
-            WHERE Expose_on_site__c = TRUE AND IsActive = TRUE AND Product_Region__c = '(ES) Spain' AND Type__c = 'Web'
+            WHERE Expose_on_site__c = TRUE AND IsActive = TRUE AND Product_Region__c = '(ES) Spain'
             ORDER BY Hierarchy_Order__c ASC
         ];
 
