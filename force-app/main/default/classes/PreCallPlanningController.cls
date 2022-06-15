@@ -1,4 +1,4 @@
-public without sharing class PreCallPlanningController {
+public    class PreCallPlanningController {
      String recId;
      public Pre_Call_Planner__c precall {get; set;}
      public Account account {get; set;}

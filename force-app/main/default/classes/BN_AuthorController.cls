@@ -1,4 +1,4 @@
-public without sharing class BN_AuthorController {
+public class BN_AuthorController {
     private String contactId;
     public String parameterId { get; set; }
 

@@ -1,4 +1,4 @@
-public without sharing class RequestDemoController {
+public    class RequestDemoController {
     String recId;
     public Lead lead {get; set;}
     public Opportunity opp {get; set;}

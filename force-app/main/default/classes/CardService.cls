@@ -1,4 +1,4 @@
-public without sharing class CardService {
+public    class CardService {
     /**
      * creates Card record to related contact
      * @param fieldVals fieldValues that sent by call out response

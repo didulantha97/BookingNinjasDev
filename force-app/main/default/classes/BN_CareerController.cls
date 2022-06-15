@@ -1,4 +1,4 @@
-public without sharing class BN_CareerController {
+public class BN_CareerController {
 
     public Career__c career {get; set;}
     

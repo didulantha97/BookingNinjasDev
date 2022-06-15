@@ -1,4 +1,4 @@
-public without sharing class BNES_ArticleController {
+public    class BNES_ArticleController {
     public String articleId { get; set; }
 
     public BNES_ArticleController() {

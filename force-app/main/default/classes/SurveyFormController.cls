@@ -1,4 +1,4 @@
-public without sharing class SurveyFormController {
+public    class SurveyFormController {
     String recId;
     public Lead lead {get; set;}
     public Opportunity opp {get; set;}

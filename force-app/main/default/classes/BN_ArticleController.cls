@@ -1,4 +1,4 @@
-public without sharing class BN_ArticleController {
+public class BN_ArticleController {
     public String articleId { get; set; }
 
     public BN_ArticleController() {

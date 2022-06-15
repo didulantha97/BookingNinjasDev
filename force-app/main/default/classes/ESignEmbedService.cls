@@ -1,4 +1,4 @@
-global without sharing class ESignEmbedService {
+global    class ESignEmbedService {
 
     /**
      * Fetches eSign_Embed_Config__c custom settings value

@@ -1,4 +1,4 @@
-public without sharing class BN_VacancyController {    
+public    class BN_VacancyController {    
     @AuraEnabled(cacheable=true)
     public static Vacancy__c getSingleVacancy(String vacancyId) {
         return [

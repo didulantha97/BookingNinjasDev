@@ -1,4 +1,4 @@
-public without sharing class BN_EmailSubscribeController {
+public class BN_EmailSubscribeController {
 
     public Email_Subscription__c subscription {get; set;}
     public String email {get; set;}

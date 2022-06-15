@@ -1,4 +1,4 @@
-public without sharing class BN_InvoiceController {
+public class BN_InvoiceController {
     private String crediential {
         get {
             List<Stripe_Settings__c> st = [

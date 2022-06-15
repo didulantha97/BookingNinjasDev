@@ -1,4 +1,4 @@
-public without sharing class OrderCreationController {
+public    class OrderCreationController {
 
     Id recId {get;set;}
     

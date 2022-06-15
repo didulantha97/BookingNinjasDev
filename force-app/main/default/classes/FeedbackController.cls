@@ -1,4 +1,4 @@
-public without sharing class FeedbackController {
+public    class FeedbackController {
 
     String recId;
     public Contact con {get; set;}

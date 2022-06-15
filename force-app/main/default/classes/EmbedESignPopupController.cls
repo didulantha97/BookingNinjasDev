@@ -1,4 +1,4 @@
-public without sharing class EmbedESignPopupController {
+public    class EmbedESignPopupController {
     @AuraEnabled
     public static String getEmbedSessionURL(Id recordId) {
         try {
