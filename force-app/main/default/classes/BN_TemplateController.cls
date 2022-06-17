@@ -23,6 +23,8 @@ public class BN_TemplateController {
     public String content { get; set; }
     private String metaTitleSuffix;
     public Decimal lowest_monthly_price { get; set; }
+    public Decimal price {get; set;}
+    public String IsoCode {get; set;}
 
 
     public BN_TemplateController() {
@@ -714,7 +716,25 @@ public class BN_TemplateController {
         return (decimal)results[0]?.get('lowest_monthly_price');
     }
 
+    public String getIsoCode(){
+        String pageName = ApexPages.currentPage().getUrl().substringAfter('/');
+        String apexPageName = ApexPages.currentPage().getUrl().substringAfter('apex/');
+
+        if(pageName.contains('') || apexPageName.contains('BN_')){
+            IsoCode = 'USD';
+        }else if(pageName.contains('es') || apexPageName.contains('BNES_')){
+            IsoCode = 'EUR';
+        }
+        return IsoCode;
+    }
+
     public Decimal getMinPrice(){
+
+        getIsoCode();
+
+        String isocode = IsoCode;
+
+        CurrencyType ct = [SELECT IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsoCode=:isocode];        
 
         List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Expose_on_site__c = TRUE];
 
@@ -726,9 +746,11 @@ public class BN_TemplateController {
 
         lowestPriceList.sort();
 
-        lowest_monthly_price = lowestPriceList.get(0).round(System.RoundingMode.HALF_EVEN);
+        price = lowestPriceList.get(0) * ct.ConversionRate;
+        
+        return price.round(System.RoundingMode.HALF_EVEN);
 
-        return lowest_monthly_price;
     }
+
 
 }

@@ -34,8 +34,7 @@ public class BN_EmailSubscribeController_Test {
     public static testMethod void testLowestPrices(){
         Test.startTest();
         	BN_EmailSubscribeController ctrl2 = new BN_EmailSubscribeController();
-        	ctrl2.getLowestSpanishPrice();
-        	ctrl2.getLowestEnglishPrice();
+        	ctrl2.getLowestPrice();
         Test.stopTest();
     }
 

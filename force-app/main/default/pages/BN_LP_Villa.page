@@ -490,7 +490,7 @@
 						Check out our price packages and say hello to an easy life
 					</p>
 					<h3>Core Student Housing PMS (Starts from <span>
-                        ${!LowestEnglishPrice} per month</span>)
+                        ${!LowestPrice}/per month</span>)
                     </h3>
 					<div class="text_center pricing-support__btn wow fadeIn">
                         <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">

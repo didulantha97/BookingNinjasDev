@@ -29,7 +29,7 @@ public class BNEP_HomeController {
     // Package information
     public String pricingInfo {get; set;}
     
-    public BN_HomeController() {
+    public BNEP_HomeController() {
         
         industry = '';
         name = '';

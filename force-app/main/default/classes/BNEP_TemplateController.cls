@@ -8,7 +8,7 @@
  * Ver   Date         Author                        Modification
  * 1.0   11-24-2020   is.didulantha123@gmail.com    New
 **/
-public with sharing class BNEP_TemplateController {
+public class BNEP_TemplateController {
     public String page { get; set; }
     public String title { get; set; }
     public String description { get; set; }
@@ -22,6 +22,9 @@ public with sharing class BNEP_TemplateController {
     public String content { get; set; }
     private String metaTitleSuffix;
     public Decimal lowest_monthly_price { get; set; }
+
+    public Decimal price {get; set;}
+    public String IsoCode {get; set;}
 
 
     public BNEP_TemplateController() {
@@ -40,11 +43,11 @@ public with sharing class BNEP_TemplateController {
 
 
         metaTitleSuffix = '| BookingNinjas';
-        title = 'Property Management System | BookingNinjas';
-        description = 'Get Booking Ninjas Property Management System ⚡ Easy to use cloud-based Property Management Software that helps automate business operating.';
+        title = 'Sistema de Gestão de Propriedades | BookingNinjas';
+        description = 'Obtenha o sistema de gerenciamento de propriedades Booking Ninjas ⚡ Software de gerenciamento de propriedades baseado em nuvem fácil de usar que ajuda a automatizar a operação dos negócios.';
         ogImage = 'https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/booking-ninjas.png';
 
-        if (page == 'apex/BN_Index') {
+        if (page == 'apex/BNEP_Index' || page == '/ep') {
             try {
                 Page_Schema__c pageSchema = [SELECT Name, Schema__c FROM Page_Schema__c WHERE Name = :page LIMIT 1];
                 structuredData = pageSchema.Schema__c.trim();
@@ -52,8 +55,8 @@ public with sharing class BNEP_TemplateController {
                 System.debug('no page schema for this page');
             }
             page = '';
-            title = 'Cloud-Based Property Management System (PMS) | Booking Ninjas';
-            description = 'Full-featured PMS to manage your properties\' daily operations (Hotel, Student Housing, etc). The only recognized PMS by Salesforce. Take a pilot today!';
+            title = 'Sistema de gerenciamento de propriedades baseado em nuvem (PMS) | Booking Ninjas';
+            description = 'PMS completo para gerenciar as operações diárias de suas propriedades (Hotel, Residência Estudantil, etc). O único PMS reconhecido pela Salesforce. Faça um piloto hoje!';
         } else if (page == 'pricing') {
             title = 'Booking Ninjas Pricing - Pay for what suits you';
             description = 'Pay for what suits you. Flexible pricing models that reflect your primary needs.';
@@ -355,9 +358,9 @@ public with sharing class BNEP_TemplateController {
             } catch(Exception e) {
                 System.debug('no page schema for this page');
             }
-        } else if (page == 'hostel-management-system') {
-            title = 'Online Hostel Management System | Booking Ninjas';
-            description = 'All-In-One Hostel Property Management System to manage your Hostel in the cloud. The only recognized Hostel PMS by Salesforce. Request a demo!';
+        } else if (page == 'sistema de gerenciamento de albergue') {
+            title = 'Sistema de gerenciamento de albergues on-line | Booking Ninjas';
+            description = 'All-In-One Hostel Property Management System para gerenciar seu Hostel na nuvem. O único PMS de Hostel reconhecido pela Salesforce. Solicite uma demonstração!';
             try {
                 Page_Schema__c pageSchema = [SELECT Name, Schema__c FROM Page_Schema__c WHERE Name = :page LIMIT 1];
                 structuredData = pageSchema.Schema__c.trim();
@@ -713,5 +716,40 @@ public with sharing class BNEP_TemplateController {
         return (decimal)results[0]?.get('lowest_monthly_price');
     }
 
+    public String getIsoCode(){
+        String pageName = ApexPages.currentPage().getUrl().substringAfter('/');
+        String apexPageName = ApexPages.currentPage().getUrl().substringAfter('apex/');
+
+        if(pageName.contains('') || apexPageName.contains('BN_')){
+            IsoCode = 'USD';
+        }else if(pageName.contains('es') || pageName.contains('ep') || apexPageName.contains('BNES_') || apexPageName.contains('BNEP_')){
+            IsoCode = 'EUR';
+        }
+        return IsoCode;
+    }
+
+    public Decimal getMinPrice(){
+
+        getIsoCode();
+
+        String isocode = IsoCode;
+
+        CurrencyType ct = [SELECT IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsoCode=:isocode];        
+
+        List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Expose_on_site__c = TRUE];
+
+        List<Decimal> lowestPriceList = new List<Decimal>();
+
+        for(Product2 p: amounts){
+            lowestPriceList.add(p.MonthlyFee__c);
+        }
+
+        lowestPriceList.sort();
+
+        price = lowestPriceList.get(0) * ct.ConversionRate;
+        
+        return price.round(System.RoundingMode.HALF_EVEN);
+
+    }
 
 }

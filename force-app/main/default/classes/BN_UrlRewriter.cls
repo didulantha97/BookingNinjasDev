@@ -3,6 +3,7 @@ global class BN_UrlRewriter implements Site.UrlRewriter {
     String regEx = '[^a-zA-Z0-9]';
 
     // Variables to represent the user-friendly URLs
+    String PORTUGESE_INDEX = '/ep';
     String SPANISH_INDEX = '/es';
     String ABOUT_PAGE = '/about-us';
     String ADVANTAGES_PAGE = '/advantages-of-our-property-management-system';
@@ -157,6 +158,7 @@ global class BN_UrlRewriter implements Site.UrlRewriter {
     
     //Variables to represent my custom Visualforce pages
     String SPANISH_VF_INDEX = '/BNES_Index';
+    String PORTUGESE_VF_INDEX = '/BNEP_Index';
     String ABOUT_VF_PAGE = '/BN_About';
     String ADVANTAGES_VF_PAGE = '/BN_Advantages';
     String ARTICLE_VF_PAGE = '/BN_Article?id=';
@@ -794,6 +796,9 @@ global class BN_UrlRewriter implements Site.UrlRewriter {
         if(url.startsWithIgnoreCase(SPANISH_INDEX)) {
             return new PageReference(SPANISH_VF_INDEX);
         }
+        if(url.startsWithIgnoreCase(PORTUGESE_INDEX)) {
+            return new PageReference(PORTUGESE_VF_INDEX);
+        }
 
         //portal
         if(url.startsWithIgnoreCase(PORTAL_HOME_PAGE) || url == '/login?sfdcIFrameOrigin=null') {
@@ -1331,7 +1336,10 @@ global class BN_UrlRewriter implements Site.UrlRewriter {
             else if(url.startsWith(SPANISH_VF_INDEX)) {
                 myFriendlyUrls.add(new PageReference(SPANISH_INDEX));
             }
-            
+            else if(url.startsWith(PORTUGESE_VF_INDEX)) {
+                myFriendlyUrls.add(new PageReference(PORTUGESE_INDEX));
+            }
+     
             // portal
             else if(url == PORTAL_HOME_VF_PAGE) {
                 myFriendlyUrls.add(new PageReference(PORTAL_HOME_PAGE));

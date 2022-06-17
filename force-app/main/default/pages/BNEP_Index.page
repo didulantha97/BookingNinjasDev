@@ -1,17 +1,7 @@
-/**
- * @description       : 
- * @author            : 
- * @group             : 
- * @last modified on  : 15-06-2022
- * @last modified by  : is.didulantha123@gmail.com
- * Modifications Log 
- * Ver   Date         Author                        Modification
- * 1.0   11-24-2020   is.didulantha123@gmail.com    New
-**/
-<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" controller="BN_HomeController">
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" controller="BNEP_HomeController">
    
     <!-- Template -->
-    <apex:composition template="BN_Template">
+    <apex:composition template="BNEP_Template">
         <!-- Define content -->
         <apex:define name="bn_content">
 			<div class="homepage">
@@ -210,7 +200,7 @@
 							</div>
 							<div class="col-lg-6">
 								<article class="text-wrap">
-									<h3>Sistema Integrado de Contabilidade /h3>
+									<h3>Sistema Integrado de Contabilidade </h3>
 									<p>Finanças e Gestão de Pagamentos livre de preocupações</p>
 									<br />
 									<p class="text-p-bottom">Nós compreendemos os desafios de lidar com multidões de trabalhos operacionais - e como a gestão financeira pode ocupar um enorme pedaço do seu tempo. O Booking Ninjas tratará de todas as finanças relacionadas com o seu negócio para que você possa ter paz na mente e concentre-se ao invés disso na estratégia e na gestão. </p>
@@ -819,7 +809,7 @@
 				<div class="demo-section">
 					<div class="container text_center">
 						<h2>
-							Simplifique as suas operações &
+							Simplifique as suas operações &amp;
 							<br />
 							Aumente a sua receita com Booking Ninjas
 						</h2>

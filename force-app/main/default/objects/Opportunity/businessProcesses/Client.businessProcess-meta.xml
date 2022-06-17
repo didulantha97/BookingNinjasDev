@@ -35,10 +35,6 @@
         <default>false</default>
     </values>
     <values>
-        <fullName>Leads</fullName>
-        <default>false</default>
-    </values>
-    <values>
         <fullName>Negotiation%2FReview</fullName>
         <default>false</default>
     </values>

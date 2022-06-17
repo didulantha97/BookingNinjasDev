@@ -1,6 +1,8 @@
 <apex:page controller="BN_EmailSubscribeController" docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" cache="true">
 
-     <!-- Template -->
+	<input type="hidden" name="currentvfpage" value="{!$CurrentPage.Name}"/>
+
+	<!-- Template -->
     <apex:composition template="BNES_Template">
         <!-- Define content -->
         <apex:define name="bn_content">
@@ -480,7 +482,7 @@
 						Échale un vistazo a nuestros distintos paquetes de precios y da la bienvenida a una vida fácil
 					</p>
 					<h3>PMS básico de viviendas para estudiantes (Empezar desde <span>
-                        €{!LowestSpanishPrice} por mes</span>)
+						€{!LowestPrice}/por mes</span>)
                     </h3>
 					<div class="text_center pricing-support__btn wow fadeIn">
                         <apex:outputLink value="{!URLFOR($Page.BNES_Pricing)}" styleClass="button-orange">

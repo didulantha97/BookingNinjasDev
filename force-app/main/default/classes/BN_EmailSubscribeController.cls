@@ -3,6 +3,7 @@ public class BN_EmailSubscribeController {
     public Email_Subscription__c subscription {get; set;}
     public String email {get; set;}
     public Decimal price {get; set;}
+    public String IsoCode {get; set;}
  
     public BN_EmailSubscribeController()
     {
@@ -28,11 +29,25 @@ public class BN_EmailSubscribeController {
         return emails.size() > 0 ? true : false;
     }
 
-    public Decimal getLowestSpanishPrice(){
-       
-        String code = 'EUR';
+    public String getIsoCode(){
+        String pageName = ApexPages.currentPage().getUrl().substringAfter('/');
+        String apexPageName = ApexPages.currentPage().getUrl().substringAfter('apex/');
 
-        CurrencyType ct = [SELECT IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsoCode=:code];        
+        if(pageName.contains('') || apexPageName.contains('BN_')){
+            IsoCode = 'USD';
+        }else if((pageName.contains('es') || pageName.contains('ep')) || (apexPageName.contains('BNES_') || apexPageName.contains('BNEP_'))){
+            IsoCode = 'EUR';
+        }
+        return IsoCode;
+    }
+
+    public Decimal getLowestPrice(){
+
+        getIsoCode();
+
+        String isocode = IsoCode;
+
+        CurrencyType ct = [SELECT IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsoCode=:isocode];        
 
         List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Expose_on_site__c = TRUE];
 
@@ -45,24 +60,9 @@ public class BN_EmailSubscribeController {
         lowestPriceList.sort();
 
         price = lowestPriceList.get(0) * ct.ConversionRate;
-
+        
         return price.round(System.RoundingMode.HALF_EVEN);
+
     }
     
-    public Decimal getLowestEnglishPrice(){
-
-        List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Expose_on_site__c = TRUE];
-
-        List<Decimal> lowestPriceList = new List<Decimal>();
-
-        for(Product2 p: amounts){
-            lowestPriceList.add(p.MonthlyFee__c);
-        }
-
-        lowestPriceList.sort();
-
-        price = lowestPriceList.get(0).round(System.RoundingMode.HALF_EVEN);
-
-        return price;
-    }
 }

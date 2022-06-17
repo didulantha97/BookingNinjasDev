@@ -1,7 +1,5 @@
 public class BN_PricingController {
 
-    
-
     public static List<ProductWrapper> getProducts() {
         List<Product2> products = [
             SELECT
@@ -16,6 +14,7 @@ public class BN_PricingController {
                 Hierarchy_Order__c
             FROM Product2
             WHERE Expose_on_site__c = TRUE AND IsActive = TRUE AND Product_Region__c = '(EN) English'
+            AND Features__c != NULL
             ORDER BY Hierarchy_Order__c ASC
         ];
 
@@ -33,16 +32,19 @@ public class BN_PricingController {
     public static List<CurrencyWrapper> getCurrency(){
         
         List<CurrencyWrapper> currencyWrapperList = new List<CurrencyWrapper>();
-        
-        for(CurrencyType sym : [SELECT Id, IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsActive=:TRUE ORDER BY ConversionRate DESC]){
-            CurrencyWrapper cw = new CurrencyWrapper();
-            cw.code = sym.IsoCode;
-            cw.symbol = getCurrencySymbol(sym.IsoCode);
-            cw.rate = sym.ConversionRate;
-            currencyWrapperList.add(cw);
-        }
-        return currencyWrapperList;
 
+        List<CurrencyType> currencyList = [SELECT Id, IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsActive=:TRUE ORDER BY ConversionRate DESC];
+
+            for(CurrencyType sym : currencyList){
+                CurrencyWrapper cw = new CurrencyWrapper();
+                cw.code = sym.IsoCode;
+                cw.symbol = getCurrencySymbol(sym.IsoCode);
+                cw.rate = sym.ConversionRate;
+                currencyWrapperList.add(cw);
+            }
+                
+        return currencyWrapperList;
+        
     }
 
     public static String getCurrencySymbol(String isocode){
@@ -50,6 +52,7 @@ public class BN_PricingController {
         String currencySymbol;
 
         if(isocode != null){
+            
             if(isocode.equals('USD')){
                 currencySymbol = '$';
             }else if(isocode.equals('COP')){

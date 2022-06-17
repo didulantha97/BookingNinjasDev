@@ -2,7 +2,7 @@
     applyHtmlTag="false" cache="true" controller="BN_EmailSubscribeController">
 
     <!-- Template -->
-    <apex:composition template="BN_Template">
+    <apex:composition template="BNEP_Template">
         <!-- Define content -->
         <apex:define name="bn_content">
             <div class="segment">
@@ -12,11 +12,9 @@
                             <div
                                 class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
                                 <div class="text-holder">
-                                    <h1 class="h1">Online Hostel <br /> Management System</h1>
-                                    <h2 class="h2">All-In-One Hostel Property Management System (PMS) <br /> To
-                                        Manage
-                                        Your Hostel In The Cloud</h2>
-                                        <apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Call</apex:outputLink>
+                                    <h1 class="h1">Sistema Online de <br /> Gerenciamento de Hostel</h1>
+                                    <h2 class="h2">Sistema Multifuncional de Gerenciamento de Propriedade Hostel(PMS) <br /> Para gerenciar o seu Hostel na nuvem </h2>
+                                        <apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Agende Uma Chamada</apex:outputLink>
                                 </div>
                             </div>
                             <div class="col-lg-6 d-flex align-items-center">
@@ -32,31 +30,21 @@
                 </div>
                 <section class="text-section">
                     <div class="container">
-                        <h2 class="h2">Modernize Hostel Management</h2>
+                        <h2 class="h2">Modernize a Gestão de Hostels</h2>
                         <div class="text-holder">
-                            <p>From Multi-property configuration with a centralized Guest Profile table to
-                                Centralized
-                                Accounting configuration, the Booking Ninjas PMS is equipped with all the
-                                features
-                                to
-                                automate your daily operations.</p>
-                            <p>Booking Ninjas can be packaged with existing Salesforce integrations, reducing
-                                friction
-                                in
-                                accessing multiple parts of your <br /> current Salesforce system.</p>
+                            <p>Desde a configuração Multi-propriedade com uma tabela centralizada do Perfil do Hóspede até à configuração de Contabilidade Centralizada, o Booking Ninjas PMS está equipado com todos os recursos para automatizar as suas operações diárias. </p>
+                            <p>O Booking Ninjas pode ser conjunto com as integrações existentes do Salesforce, reduzindo o atrito no acesso a múltiplas partes do seu <br /> atual sistema da Salesforce.</p>
                         </div>
                         <div class="btn-holder">
-                            <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">Plan
-                                &amp;
-                                Pricing</apex:outputLink>
+                            <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">Plano &amp; Preços</apex:outputLink>
                         </div>
                     </div>
                 </section><!-- .text-section -->
                 <section class="section-illustrations">
                     <div class="container">
                         <div class="section-header">
-                            <h3 class="h2">Features of Our Hostel Management System</h3>
-                            <p>Features That Increase Your Hostel Revenues</p>
+                            <h3 class="h2">Características do nosso Sistema de Gerenciamento de Hostels</h3>
+                            <p>Características que aumentam as receitas do seu Hostels</p>
                         </div>
                         <div class="row item-row">
                             <div class="col-lg-6">
@@ -68,15 +56,10 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h3 class="h4 title-border">Online Hostel Booking Software</h3>
+                                        <h3 class="h4 title-border">Software de Reservas Online de Hostels</h3>
                                         <ul class="list style1">
-                                            <li>You can now handle reservations of varying room types including
-                                                group
-                                                bookings.</li>
-                                            <li>What's more, our booking engine is commission-free! You can
-                                                scale
-                                                your
-                                                online bookings without worry.</li>
+                                            <li>Você pode agora tratar de reservas de vários tipos de quartos, incluindo reservas de grupo.</li>
+                                            <li>Além disso, o nosso mecanismo de reservas está livre de comissões! Você pode escalar as suas reservas online sem se preocupar.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -86,19 +69,9 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h3 class="h4 title-border">Channel Manager for Hostel</h3>
-                                        <p>Manage all channels going in and out of your business digitally with
-                                            our
-                                            channel
-                                            manager. From reservation management to guest information
-                                            management,
-                                            pushing
-                                            out rates, our channel manager ensures you’re always up to date
-                                            without
-                                            discrepancies or human errors.</p>
-                                        <p>Get access to multiple distribution channels and manage them all in a
-                                            single
-                                            dashboard efficiently to get the best out of the exposure.</p>
+                                        <h3 class="h4 title-border">Gerenciador de Canal para Hostel</h3>
+                                        <p>Gerencie todos os canais que entram e saem do seu negócio digitalmente com o nosso gestor de canais. Desde a gestão de reservas até à gestão de informação de hóspedes, empurrando para fora as tarifas, o nosso gerenciador de canais assegura que você está sempre atualizado sem discrepâncias ou erros humanos.</p>
+                                        <p>Obtenha acesso a múltiplos canais de distribuição e controle todos em um único painel de controle de forma eficiente para tirar o melhor proveito da exposição. </p>
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <ul class="list style1">
@@ -116,7 +89,7 @@
                                                     <li>Hostelss club</li>
                                                     <li>HostelGalaxy</li>
                                                     <li>Hostels247</li>
-                                                    <li>And more</li>
+                                                    <li>E mais</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -140,21 +113,16 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h3 class="h4 title-border">Hostel Rate &amp; Yield Management</h3>
+                                        <h3 class="h4 title-border">Taxa do Hostel e Gerenciamento do Rendimento</h3>
                                         <ul class="list style1">
-                                            <li>See a boost in your revenue when you implement yield management
-                                                strategies.
-                                                Easily adjust your room rates based on room type, group
-                                                occupancy or
-                                                current
-                                                market trends.</li>
+                                            <li>Veja um aumento nas suas receitas quando você implementar estratégias de gestão de rendimento. Ajuste facilmente as suas taxas do quarto com base no tipo de quarto, ocupação do grupo ou tendências atuais do mercado.</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="section-header style2">
-                            <h2 class="h2">Features That Improves Your Hostel Guest Experience</h2>
+                            <h2 class="h2">Recursos que melhoram a experiência do hóspede no Hostel</h2>
                         </div>
                         <div class="row item-row">
                             <div class="col-lg-6">
@@ -166,16 +134,8 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h3 class="h4 title-border">Hostel Reservation Software</h3>
-                                        <p>Our Central Reservation System (CRS) manages and oversees your room
-                                            availability,
-                                            rates, guest information, payment processing, and hostel
-                                            information.
-                                            Tailored
-                                            to sell beds and private rooms, you can keep track of the number of
-                                            students
-                                            and
-                                            room availability for efficient hostel reservations.</p>
+                                        <h3 class="h4 title-border">Software de Reserva para Hostel</h3>
+                                        <p>O nosso Sistema Central de Reservas (CRS) gerencia e supervisiona a disponibilidade do seu quarto, suas tarifas, informação dos hóspedes, processamento de pagamentos e informação do hostel. Adaptado para vender camas e quartos privados, você pode acompanhar o número de estudantes e a disponibilidade de quartos para reservas eficientes no hostel.</p>
                                     </div>
                                 </div>
                             </div>
@@ -184,16 +144,10 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h4 class="h4 title-border">Centralized Guest Profiles &amp; <br />
-                                            Booking
-                                            Data
+                                        <h4 class="h4 title-border">Perfis Centralizados dos Hóspedes &amp;<br />
+                                           Dados de Reservas
                                         </h4>
-                                        <p>Our Guest management tools retrieve and organize all the information
-                                            about
-                                            your
-                                            guests that help you understand them better and create personalized
-                                            experiences
-                                            for them.</p>
+                                        <p>As nossas ferramentas de gestão dos hóspedes recuperam e organizam toda a informação sobre os seus visitantes, que te ajudam a compreendê-los melhor e a criar experiências personalizadas para eles.</p>
                                     </div>
                                 </div>
                             </div>
@@ -214,22 +168,16 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h4 class="h4 title-border">Integrations with On-Premise <br /> Hardware
+                                        <h4 class="h4 title-border">Integrações com o On-Premise<br /> Hardware
                                         </h4>
-                                        <p>Increase overall productivity and create an easier workplace by
-                                            integrating
-                                            your
-                                            hostel with on-premise hardware commonly used in hostels. This
-                                            includes
-                                            Door
-                                            Locking Systems, EMV payment hardware, Cash Drawer Kicking and more.
+                                        <p>Aumente a produtividade geral e crie um local de trabalho mais fácil, ao integrar o seu hostel com o hardware on-premise comumente usado em hostels. Isso inclui sistemas de bloqueio de portas, hardware de pagamento EMV, gaveta de dinheiro com abertura automática por sistema e muito mais.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="section-header style2">
-                            <h2 class="h2">Features That Assist Your Hostel Daily Operations</h2>
+                            <h2 class="h2">Características que ajudam o seu hostel nas suas operações diárias</h2>
                         </div>
                         <div class="row item-row">
                             <div class="col-lg-6">
@@ -241,13 +189,8 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h3 class="h4 title-border">Hostel Room Allocation System</h3>
-                                        <p>Attain higher guest satisfaction by assigning rooms digitally before
-                                            their
-                                            arrival based on their preferences, budget and/or the number of
-                                            available
-                                            rooms
-                                            in each hostel.</p>
+                                        <h3 class="h4 title-border">Sistema de Alocação de Quartos do Hostel </h3>
+                                        <p>Atinja maior satisfação dos hóspedes atribuindo digitalmente os quartos, antes que cheguem, baseado nas preferências deles, do orçamento e/ou do número de quartos disponíveis em cada hostel.</p>
                                     </div>
                                 </div>
                             </div>
@@ -256,17 +199,8 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h3 class="h4 title-border">Hostel Housekeeping Software</h3>
-                                        <p>Track and assign rooms’ housekeeping, making operations more
-                                            efficient
-                                            and
-                                            accurate. Guests can make housekeeping demands through the app and
-                                            get
-                                            notified
-                                            when their room is ready. The housekeeping manager is always
-                                            up-to-date
-                                            on
-                                            housekeeping duties through the app.</p>
+                                        <h3 class="h4 title-border">Software de serviço doméstico do hostel</h3>
+                                        <p>Rastreie e atribua as tarefas domésticas dos quartos, tornando as operações mais eficientes e precisas. Os hóspedes podem fazer exigências de serviços domésticos através do app e serem notificados quando o quarto estiver pronto. O gerente de serviço doméstico está sempre atualizado sobre as tarefas domésticas através do app.</p>
                                     </div>
                                 </div>
                             </div>
@@ -287,17 +221,8 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h3 class="h4 title-border">Built-in POS Functionality</h3>
-                                        <p>Records transactions, process payments, and collects guest
-                                            information
-                                            for
-                                            their
-                                            booking. Our POS system is integrated with the central PMS to make
-                                            marketing,
-                                            accounting, and other tasks smoother. You can even sell sundries
-                                            over
-                                            the
-                                            counter and handle daily charges at the time of booking.</p>
+                                        <h3 class="h4 title-border">Funcionalidade de POS embutida</h3>
+                                        <p>Registra transações, processa pagamentos e coleta informações dos hóspedes para a reserva. O nosso sistema POS é integrado com o PMS central para fazer o marketing, a contabilidade e outras tarefas mais leves. Você pode até vender diversos produtos no balcão e lidar com as cobranças diárias no momento da reserva.</p>
                                     </div>
                                 </div>
                             </div>
@@ -306,25 +231,15 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h3 class="h4 title-border">Integrated &amp; Centralized Accounting
-                                            Software
+                                        <h3 class="h4 title-border">Software de contabilidade integrado e centralizado 
                                         </h3>
-                                        <p>Handle your accounting tasks in-house with our integrated accounting
-                                            software.
+                                        <p>Lide com as suas tarefas de contabilidade internamente através do nosso software de contabilidade integrado.
                                         </p>
                                         <ul class="list style1">
-                                            <li>Tax Handling (different location-based tax)</li>
-                                            <li>Accrual basis accounting (End-of-day accounting process, Post
-                                                accommodation,
-                                                Fixed accounting periods)</li>
-                                            <li>Accounts Receivable / Corporate Customers (Direct Bill
-                                                functionality,
-                                                Charge
-                                                routing to company master accounts)</li>
-                                            <li>OTA Deposit handling - the system records commissions that are
-                                                prepaid
-                                                by
-                                                the guest to the OTA</li>
+                                            <li>Tratamento de impostos (imposto baseado em localização diferente)</li>
+                                            <li>Contabilidade do exercício (Processo de contabilidade no fim de dia, Pós Alojamento, Períodos de contabilidade fixos)</li>
+                                            <li>Contas a Receber / Clientes Empresariais (funcionalidade de cobrança direta, direcionamento de cobranças para as contas principais da empresa)</li>
+                                            <li>Tratamento do depósito OTA - o sistema regista as comissões que são pré-pagas pelo hóspede para a OTA</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -346,21 +261,12 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h4 class="h4 title-border">Security Management</h4>
-                                        <p>Stay on top of your system security by utilizing our built-in
-                                            security
-                                            management
-                                            tools..</p>
+                                        <h4 class="h4 title-border">Gerenciamento de Segurança</h4>
+                                        <p>Mantenha-se a par da segurança do seu sistema ao usar as nossas ferramentas incorporadas de gerenciamento de segurança...</p>
                                         <ul class="list style1">
-                                            <li>Role-Based Security for users (profiles, role hierarchy)</li>
-                                            <li>User-level permissions for access to each location (private
-                                                model
-                                                for
-                                                certain records)</li>
-                                            <li>Access restrictions - Login only from Whitelisted IPs for front
-                                                line
-                                                staff,
-                                                access from anywhere for managers/admins</li>
+                                            <li>Segurança feita com funções para os usuários(perfis, hierarquia de funções)</li>
+                                            <li>Permissões niveladas de usuário para o acesso a cada local (modelo privado para certos registos)</li>
+                                            <li>Restrições de acesso - Acesso apenas a partir dos IPs permitidos para os funcionários da linha da frente, acesso a partir de qualquer lugar para gestores/administradores</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -370,15 +276,8 @@
                             <div class="col-lg-6 d-flex align-items-center">
                                 <div class="content-holder">
                                     <div class="text-holder">
-                                        <h4 class="h4 title-border">Hostel Performance Reports</h4>
-                                        <p>Enjoy the benefits of performance reports such as improved
-                                            decision-making
-                                            process and increased team members accountability. Performance
-                                            report
-                                            summary
-                                            includes all details relating to the hostel fees, mess bills,
-                                            inventory
-                                            management and more.</p>
+                                        <h4 class="h4 title-border">Relatórios de desempenho do Hostel </h4>
+                                        <p>Aproveite os benefícios dos relatórios de desempenho, tais como melhorias no processo de tomada de decisões e o aumento das responsabilidades dos membros da equipe. O resumo dos relatórios de desempenho inclui todos os detalhes relacionados com as taxas do hostel, contas do refeitório, gestão do inventário e muito mais.</p>
                                     </div>
                                 </div>
                             </div>
@@ -394,21 +293,20 @@
                 <section class="section-pricing">
                     <div class="container">
                         <div class="section-header style2">
-                            <h2 class="h2">Booking Ninjas Hostel Management Software Price</h2>
-                            <p>Choose your preferred features and add-ons to build your ideal hostel management
-                                software.
+                            <h2 class="h2">Preço do Software de Gerenciamento de Hostel da Booking Ninjas</h2>
+                            <p>Escolha os seus recursos e complementos preferidos para construir o seu software ideal de gerenciamento de Hostel.
                             </p>
                         </div>
                         <div class="section-header">
-                            <span class="prices-title">Core Hostel PMS (Starts from
+                            <span class="prices-title">PMS de Hostel principal (Começa a partir de
                                 <span>
-                                    ${!LowestPrice}/month
-                                </span>)</span>
-                                <p>The core Hostel PMS provides you with all the basic features that assist your daily hostel operations. Includes hostel reservation system, hostel analytics, security management, inventory management and employee management app.</p>
+                                    ${!LowestPrice}/mês
+                                </span>)
+                            </span>
+                                <p>O PMS de Hostel principal te fornece todos os recursos básicos que ajudam nas suas operações diárias do hostel. Inclui sistema de reservas de hostel, análise do hostel, gerenciamento da segurança, gerenciamento do inventário e app de gestão dos empregados.</p>
                             <div class="btn-holder">
                                 <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
-                                    PLANS
-                                    &amp; PRICING</apex:outputLink>
+                                   PLANOS E PREÇOS</apex:outputLink>
                             </div>
                         </div>
                     </div>
@@ -416,9 +314,8 @@
                 <section class="segment__addons">
                     <div class="container">
                         <div class="section-header">
-                            <h2 class="h2">Hostel Management System Add-Ons</h2>
-                            <p>Personalize your Hostel PMS by purchasing affordable add-ons to build an instance
-                                peculiar to your establishment.</p>
+                            <h2 class="h2">Complementos de Sistema de Gestão do Hostel</h2>
+                            <p>Personalize o seu PMS do Hostel, comprando complementos acessíveis para construir um formato único para o seu estabelecimento.</p>
                         </div>
                         <!-- Slider -->
                         <div class="pricing-addons__slider">
@@ -428,7 +325,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-be.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Booking Engine</h3>
+                                    <h3 class="pricing-addons__slide-title">Engine de Reservas </h3>
 
                                 </div>
                             </div>
@@ -438,7 +335,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-channel-manager.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Channel Manager</h3>
+                                    <h3 class="pricing-addons__slide-title"> Gerenciador de Canais </h3>
 
                                 </div>
                             </div>
@@ -448,7 +345,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-data-analytics.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Data Analytics</h3>
+                                    <h3 class="pricing-addons__slide-title">Análise de Dados</h3>
 
                                 </div>
                             </div>
@@ -523,9 +420,7 @@
                         </div>
                         <div class="learn-more-center">
                             <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}" styleClass="g-more">
-                                And
-                                more
-                                add-ons available soon</apex:outputLink>
+                               E mais complementos disponíveis em breve</apex:outputLink>
                         </div>
                     </div>
                 </section><!-- .section-managment -->
@@ -535,68 +430,48 @@
                         <div class="segment-accordion">
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>What is an online hostel management system</h3>
+                                    <h3>O que é um sistema online de gerenciamento de hostel?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>A hostel management system is software developed for managing various
-                                        activities
-                                        in
-                                        the hostel. It manages activities including the student information,
-                                        room
-                                        information, mess bills, room allocation details, fee details and
-                                        tracking
-                                        of
-                                        the
-                                        number of students and availability of students.</p>
+                                    <p>Um sistema de gerenciamento de hostel é um software desenvolvido para a gestão de várias atividades no hostel. Ele administra atividades que incluem a informação dos estudantes, informação sobre o quarto, contas do refeitório, detalhes de alocação dos quartos, detalhes de taxas, rastreio do número de estudantes e disponibilidade de estudantes.</p>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3> Can I integrate my current booking engine/channel manager into your
-                                        hostel
-                                        management software?</h3>
+                                    <h3>Eu posso integrar o meu software atual de reservas/gerenciamento de canais com o software de gerenciamento do hostel de vocês?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>Yes, our hostel management system integrates easily with a third party
-                                        booking
-                                        engine/channel manager.</p>
+                                    <p>Sim, o nosso sistema de gerenciamento de hostel se integra facilmente com um software de reservas/gerenciamento de canais que pertencem a terceiros.</p>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>Will your hostel PMS support different regional taxes from different
-                                        countries?
+                                    <h3>O seu PMS do hostel irá suportar diferentes impostos regionais de diferentes países?
                                     </h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>Yes, our hostel PMS supports regional taxes from different countries and
-                                        is
-                                        available
-                                        worldwide</p>
+                                    <p>Sim, o nosso PMS de hostel suporta impostos regionais de diferentes países e está disponível em todo o mundo.</p>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>Can your hostel PMS manage the extra services we offer?</h3>
+                                    <h3>O seu PMS pode gerenciar os serviços extras que oferecemos?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>Our core hostel PMS can manage a handful of services from food services
-                                        to
-                                        rental
-                                        services, events and more. Explore our full segments list&nbsp;<apex:outputlink value="{!URLFOR($Page.BN_Index)}">here</apex:outputlink>.</p>
+                                    <p>O nosso PMS de hostel principal pode gerir um punhado de serviços, desde serviços de alimentação até serviços de aluguel, eventos e muito mais. Explore aqui a nossa lista completa de segmentos.<apex:outputlink value="{!URLFOR($Page.BN_Index)}">here</apex:outputlink>.</p>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3> Can I get a demo of this hostel management system?</h3>
+                                    <h3> Eu posso obter uma demonstração deste sistema de gerenciamento de hostels?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>

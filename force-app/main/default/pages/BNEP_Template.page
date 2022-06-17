@@ -1,13 +1,10 @@
-/**
- * @description       : 
- * @author            : 
- * @group             : 
- * @last modified on  : 15-06-2022
- * @last modified by  : is.didulantha123@gmail.com
- * Modifications Log 
- * Ver   Date         Author                        Modification
- * 1.0   11-24-2020   is.didulantha123@gmail.com    New
-**/
+<!--
+  @description       : 
+  @author            : 
+  @group             : 
+  @last modified on  : 12-13-2020
+  @last modified by  : teguh@bookingninjas.com
+-->
 <apex:page controller="BNEP_TemplateController" docType="html-5.0" showHeader="false" sidebar="false"
     standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false">
     <html>
@@ -93,7 +90,7 @@
                         <nav class="navigation">
                             <ul>
                                 <li>
-                                    <apex:outputLink value="/">HOME</apex:outputLink>
+                                    <apex:outputLink value="/ep">HOME</apex:outputLink>
                                 </li>
                                 <li>
                                     <a class="navigation-dropdown__click">FEATURES</a>
@@ -132,53 +129,26 @@
                                     </span>
                                     <div class="navigation-dropdown">
                                         <ul>
-                                            <li>
-                                                <a href="/hotels">HOTELS</a>
-                                            </li>
-                                            <li>
-                                                <a href="/hostels">HOSTELS</a>
-                                            </li>
-                                            <li>
-                                                <a href="/restaurants">RESTAURANTS</a>
-                                            </li>
-                                            <li>
-                                                <a href="/club-management-software">CLUBS</a>
-                                            </li>
-                                            <li>
-                                                <a href="/coworking">COWORKING SPACE</a>
-                                            </li>
-                                            <li>
-                                                <a href="/storage">SELF STORAGE</a>
-                                            </li>
-                                            <li>
-                                                <a href="/student-housing">STUDENT HOUSING</a>
-                                            </li>
-                                            <li>
-                                                <a href="/parking-facilities">PARKING FACILITIES</a>
-                                            </li>
-                                            <li>
-                                                <a href="/events">EVENTS</a>
-                                            </li>
-                                            <li>
-                                                <a href="/senior-living">SENIOR LIVING</a>
-                                            </li>
-                                            <li>
-                                                <a href="/vacation-rentals">VACATION RENTALS</a>
-                                            </li>
-                                            <li>
-                                                <a href="/villas-management-software">VILLAS</a>
-                                            </li>
-                                            <li>
-                                                <a href="/government">GOVERNMENT</a>
-                                            </li>
-                                            <li>
-                                                <a href="/non-profit">NONPROFIT</a>
-                                            </li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_Hotels)}">Hotéis</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNEP_LP_Hostels)}">Albergues</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_Restaurant)}">Restaurantes</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_PropertyManagers)}">Gerentes de propriedade</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_Club)}">Clubes de campo</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNEP_LP_CoWorking)}">Trabalho em equipe</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_Storage)}">Auto armazenamento</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNEP_LP_StudentHousing)}">Moradia de estudantes</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_Parking)}">Estacionamentos</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_Event)}">Eventos</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_Senior)}">Asilo</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_Vacation)}">Alquileres vacacionales</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_Villa)}">Alojamentos</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BNES_LP_Government)}">Governo</apex:outputLink></li>
+                                            <li><apex:outputLink value="{!URLFOR($Page.BN_LP_NonProfit)}">Sem fins lucrativos</apex:outputLink></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}">PRICING</apex:outputLink>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}">PREÇOS</apex:outputLink>
                                 </li>
                                 <li>
                                     <a class="navigation-dropdown__click">RESOURCES</a>
@@ -188,39 +158,40 @@
                                     <div class="navigation-dropdown">
                                         <ul>
                                             <li>
-                                                <a href="/blog">BLOG</a>
+                                                <a href="ep/blog">BLOG</a>
                                             </li>
                                             <li>
-                                                <a href="/faqs">FAQS</a>
+                                                <a href="ep/faqs">Perguntas frequentes</a>
                                             </li>
                                             <li>
-                                                <a href="/customer-stories">CUSTOMER
-                                                    STORIES</a>
+                                                <a href="ep/customer-stories">CLIENTE
+                                                    HISTÓRIAS</a>
                                             </li>
                                             <li>
-                                                <a href="/webinar">WEBINARS</a>
+                                                <a href="ep/webinar">WEBINARS</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/about-us">ABOUT US</a>
+                                    <a href="ep/about-us">SOBRE NÓS</a>
                                 </li>
                                 <li class="navigation__lang">
-                                    <a class="navigation-dropdown__click"><i class="flag flag-united-states"></i><span>English</span></a>
+                                    <a class="navigation-dropdown__click"><i class="flag flag-portugal"></i><span>Portuguese</span></a>
                                     <span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
                                     <div class="navigation-dropdown">
                                         <ul>
                                             <li><a href="/"><i class="flag flag-united-states"></i>English</a></li>
                                             <li><a href="/es"><i class="flag flag-spain"></i>Espanol</a></li>
+                                            <li><a href="/ep"><i class="flag flag-portugal"></i>Portuguese</a></li>
                                         </ul>
                                     </div>
                                 </li>
                             </ul>
                             <!-- CTA buttons in mobile menu -->
                             <div class="col-sm-auto buttons">
-                                <apex:outputLink styleClass="button-orange" value="{!URLFOR($Page.BN_Demo)}">SCHEDULE A CALL</apex:outputLink>
-                                <apex:outputLink styleClass="button-orange" value="{!URLFOR($Page.BN_Register)}">Take a Pilot</apex:outputLink>
+                                <apex:outputLink styleClass="button-orange" value="{!URLFOR($Page.BN_Demo)}">AGENDAR UMA CHAMADA</apex:outputLink>
+                                <apex:outputLink styleClass="button-orange" value="{!URLFOR($Page.BN_Register)}">Pegue um piloto</apex:outputLink>
                             </div>
                             <!-- // CTA buttons in mobile menu -->
                         </nav>

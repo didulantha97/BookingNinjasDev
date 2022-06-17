@@ -14,6 +14,7 @@ public class BNES_PricingController {
                 Hierarchy_Order__c
             FROM Product2
             WHERE Expose_on_site__c = TRUE AND IsActive = TRUE AND Product_Region__c = '(ES) Spain'
+            AND Features__c != NULL
             ORDER BY Hierarchy_Order__c ASC
         ];
 
@@ -27,21 +28,24 @@ public class BNES_PricingController {
         return wrappers;
     }
 
-   //To Use Multi currency on layout
-   public static List<CurrencyWrapper> getCurrency(){
+    //To Use Multi currency on layout
+    public static List<CurrencyWrapper> getCurrency(){
         
-    List<CurrencyWrapper> currencyWrapperList = new List<CurrencyWrapper>();
-    
-    for(CurrencyType sym : [SELECT Id, IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsActive=:TRUE ORDER BY ConversionRate DESC]){
-        CurrencyWrapper cw = new CurrencyWrapper();
-        cw.code = sym.IsoCode;
-        cw.symbol = getCurrencySymbol(sym.IsoCode);
-        cw.rate = sym.ConversionRate;
-        currencyWrapperList.add(cw);
-    }
-    return currencyWrapperList;
+        List<CurrencyWrapper> currencyWrapperList = new List<CurrencyWrapper>();
 
-}
+        List<CurrencyType> currencyList = [SELECT Id, IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsActive=:TRUE ORDER BY ConversionRate DESC];
+
+            for(CurrencyType sym : currencyList){
+                CurrencyWrapper cw = new CurrencyWrapper();
+                cw.code = sym.IsoCode;
+                cw.symbol = getCurrencySymbol(sym.IsoCode);
+                cw.rate = sym.ConversionRate;
+                currencyWrapperList.add(cw);
+            }
+                
+        return currencyWrapperList;
+        
+    }
 
 public static String getCurrencySymbol(String isocode){
     

@@ -14,6 +14,10 @@ public with sharing class BNES_TemplateController {
     public String content { get; set; }
     private String metaTitleSuffix;
 
+    public Decimal price {get; set;}
+    public String IsoCode {get; set;}
+
+
     public BNES_TemplateController() {
         page = ApexPages.currentPage()
             .getUrl()
@@ -25,7 +29,7 @@ public with sharing class BNES_TemplateController {
         title = 'Sistema de Gestión de Propiedades Basado en la Nube (PMS) | BookingNinjas';
         description = 'PMS completamente equipado para gestionar las operaciones diarias de tu propiedad (hotel, alojamiento para estudiantes, etc.). El único PMS reconocido por Salesforce. ¡Haz una prueba hoy!';
 
-        if (page == '/es') {
+        if (page == '/es' || page == 'apex/BNES_Index') {
             try {
                 Page_Schema__c pageSchema = [SELECT Name, Schema__c FROM Page_Schema__c WHERE Name = :page LIMIT 1];
                 structuredData = pageSchema.Schema__c.trim();
@@ -516,5 +520,41 @@ public with sharing class BNES_TemplateController {
             message
         };
         Messaging.SendEmailResult[] results = Messaging.sendEmail(messages);
+    }
+
+    public String getIsoCode(){
+        String pageName = ApexPages.currentPage().getUrl().substringAfter('/');
+        String apexPageName = ApexPages.currentPage().getUrl().substringAfter('apex/');
+
+        if(pageName.contains('') || apexPageName.contains('BN_')){
+            IsoCode = 'USD';
+        }else if(pageName.contains('es') || apexPageName.contains('BNES_')){
+            IsoCode = 'EUR';
+        }
+        return IsoCode;
+    }
+
+    public Decimal getMinPrice(){
+
+        getIsoCode();
+
+        String isocode = IsoCode;
+
+        CurrencyType ct = [SELECT IsoCode, ConversionRate, IsActive FROM CurrencyType WHERE IsoCode=:isocode];        
+
+        List<Product2> amounts = [SELECT MonthlyFee__c FROM Product2 WHERE IsActive = TRUE AND Expose_on_site__c = TRUE];
+
+        List<Decimal> lowestPriceList = new List<Decimal>();
+
+        for(Product2 p: amounts){
+            lowestPriceList.add(p.MonthlyFee__c);
+        }
+
+        lowestPriceList.sort();
+
+        price = lowestPriceList.get(0) * ct.ConversionRate;
+        
+        return price.round(System.RoundingMode.HALF_EVEN);
+
     }
 }

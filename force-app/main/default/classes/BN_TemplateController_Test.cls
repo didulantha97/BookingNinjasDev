@@ -187,6 +187,7 @@ public class BN_TemplateController_Test {
             
             ctrl.email = 'joee@johnson.com';
             ctrl.getMonthlyFee(); 
+            ctrl.getMinPrice();
             
         Test.stopTest();
     }

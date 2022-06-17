@@ -1,8 +1,8 @@
 <apex:page docType="html-5.0" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false"
-    applyHtmlTag="false" cache="true" controller="BN_TemplateController">
+    applyHtmlTag="false" cache="true" controller="BNEP_TemplateController">
 
     <!-- Template -->
-    <apex:composition template="BN_Template">
+    <apex:composition template="BNEP_Template">
         <!-- Define content -->
         <apex:define name="bn_content">
 
@@ -19,14 +19,12 @@
                             <div class="col-lg-6">
                                 <article class="segment__hero-txt">
                                     <h1>
-                                        Best Student Housing Management Software For Your Property
+                                        Melhor software de Gerenciamento de Alojamento para o seu imóvel
                                     </h1>
                                     <h2>
-                                        Affordable Cloud-Based Student Accommodation Management System with
-                                        Accounting, Maintenance, Access Control, Online Student Portal &amp;
-                                        More
+                                        Sistema acessível de Gerenciamento de Alojamentos para Alunos baseado nas nuvens que conta com Contabilidade, Manutenção, Controle de Acesso, Portal Online do Aluno &amp;amp; Mais
                                     </h2>
-                                    <apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Schedule A Call</apex:outputLink>
+                                    <apex:outputLink value="{!URLFOR($Page.BN_Demo)}" styleClass="button-orange">Agende Uma Chamada</apex:outputLink>
                                 </article>
                             </div>
                         </div>
@@ -36,26 +34,17 @@
                 <!-- text -->
                 <div class="student-housing-page__center-text">
                     <div class="container">
-                        <h2>Enjoy A Modern Student Housing Property Management Software Tailored to Meet Your
-                            Specifications</h2>
+                        <h2>Aproveite um Software Moderno de Gerenciamento de Propriedades do Alojamento para Estudantes adaptado às suas exigências.</h2>
                         <div class="row justify-content-center">
                             <div class="col-lg-10">
-                                <p>Booking Ninjas Student Housing Management Software comes with amazing
-                                    features that unify. Accounting, Maintenance, Access Control, Online Student
-                                    Portal, making for easy navigation and control of the portal.</p>
-                                <p>The PMS also breaks down various silos into a unified single system that
-                                    enables the automatic collection of data for your rental service. Enjoy
-                                    autonomous collation and analysis of previously discarded data. What a
-                                    simplified life!</p>
-                                <p>As students become increasingly internet-savvy, you want to key into this by
-                                    having cloud-based software that solves their accommodation woes online.</p>
-                                <p>We care about your data. With the Booking Ninjas Cloud-based PMS, you can
-                                    create a single, central repository for the entire student database.</p>
+                                <p>O Software de Gerenciamento de Alojamentos da Booking Ninjas para Alunos vem com características surpreendentes que unem: Contabilidade, Manutenção, Controle de Acesso, Portal Online do Estudante, de modo que facilita a navegação e o controle do portal.</p>
+                                <p>O PMS também decompõe vários processos em um único sistema unificado que permite a coleta automática de dados para o seu serviço de aluguel. Aproveite a coleta e análise automática de dados descartados anteriormente. Isso simplifica muito, não?</p>
+                                <p>À medida que os estudantes ficam cada vez mais práticos com a Internet, você irá querer se concentrar mais nela através de um software baseado nas nuvens que resolve os seus problemas de alojamento de maneira online.</p>
+                                <p>Nós nos preocupamos com os seus dados. Com o PMS da Booking Ninjas baseado nas nuvens, você pode criar um repositório central e único para toda a base de dados dos estudantes.</p>
                             </div>
                         </div>
                         <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
-                            PLANS
-                            &amp; PRICING</apex:outputLink>
+                            PLANOS &amp; PREÇOS</apex:outputLink>
                     </div>
                 </div>
                 <!-- /text -->
@@ -64,11 +53,9 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-10">
-                                <h2>With The Online Student Housing Application, You Attract More Applicants
+                                <h2>Com a Aplicação Online de Alojamento Estudantil, Você Atrai Mais Candidatos.
                                 </h2>
-                                <p>You see, you need a software that аllоws studеnts tо gо оnlinе аnd select
-                                    room types, check dеtаils rеgаrding due rent, place rеquеsts for mаintеnаnсе
-                                    and more. That is why we’ve got you covered with our PMS.</p>
+                                <p>Perceba que é necessário um software que permita estudantes ficarem online, para que  assim ele possa selecionar os tipos de quartos, verificar os detalhes envolvendo aluguel, que faça com pedido de manutenção e muito mais. É por isso que nós temos tudo pronto para você com o nosso PMS.</p>
                             </div>
                         </div>
                     </div>
@@ -88,15 +75,11 @@
                                     <article>
                                         <section>
                                             <ul>
-                                                <li>It allows you to create an online resident application
-                                                    process by using secure online forms. </li>
-                                                <li>These secure forms protect your data and help attract more
-                                                    applicants which in turn saves time.</li>
-                                                <li>The beauty of it all is that this form is on a public online
-                                                    application page that can be accessed without an account
+                                                <li>Ele te permite criar um processo de aplicação online de residência, usando formulários online e seguros.</li>
+                                                <li>Esses formulários seguros protegem os seus dados e te ajudam a atrair mais candidatos, que em troca te poupa tempo.</li>
+                                                <li>A beleza de tudo isso é que este formulário está em uma página pública de candidatura online que pode ser acessada sem uma conta.
                                                 </li>
-                                                <li>We even provide a website builder for you to build your
-                                                    online application page...no coding required!</li>
+                                                <li>Nós até mesmo fornecemos um criador de websites para que você possa criar a sua página de aplicações online...sem necessidade de programar!</li>
                                             </ul>
                                         </section>
                                     </article>
@@ -110,7 +93,7 @@
                 <div class="student-housing-page__main-title">
                     <div class="container">
                         <h2>
-                            You Can Comfortably Manage Your Student Housing By Bed, Unit &amp; Suite
+                            Você pode organizar tranquilamente o seu alojamento de estudantes por cama, unidade &amp; suíte
                         </h2>
                     </div>
                 </div>
@@ -129,19 +112,11 @@
                                     <article>
                                         <section>
                                             <ul>
-                                                <li>Our Student Housing Software helps you break down your
-                                                    rental space by bed, unit (private room) &amp; suite
-                                                    (premium
-                                                    room) to cater to different student needs and price points.
+                                                <li>O nosso Software de Alojamento Estudantil te ajuda a decompor o seu espaço de aluguel por cama, unidade (quarto privado) &amp; suíte (quarto Premium) para atender às diferentes necessidades e pontos de preço dos estudantes.
                                                 </li>
-                                                <li>You can easily make room moves within the system, moving a
-                                                    student from one room to the other for whatever reasons.
+                                                <li>Você pode facilmente fazer deslocamentos de quarto dentro do sistema, deslocando um estudante de um quarto para o outro, seja lá qual for a razão.
                                                 </li>
-                                                <li>With our Centralized Room Reservation System, you can give
-                                                    your leasing agents the ability to see the availability of
-                                                    different spaces. This helps them keep track of all your
-                                                    spaces and ensures quick renting of space. More money is
-                                                    made for your business.</li>
+                                                <li>Com o nosso Sistema Centralizado de Reserva de Quarto, você pode dar aos seus agentes de locação a possibilidade de ver a disponibilidade de diferentes espaços. Isso ajuda ele a rastrear todos os seus espaços e a assegurar um rápido aluguel dos espaços. Mais dinheiro é trazido para o seu negócio.</li>
                                             </ul>
                                         </section>
                                     </article>
@@ -155,15 +130,10 @@
                 <div class="student-housing-page__main-title">
                     <div class="container">
                         <h2>
-                            Reduce The Move-In-Day Chaos With Our Mass Student Check-In &amp; Check-Out Software
+                            Reduza o caos da mudança com o nosso software em massa de Check-In &amp; Check-Out para estudantes
                         </h2>
-                        <p>One thing student housing property owners dread is the chaos that accompanies every
-                            move-in day. Too many people talking, needing attention, and moving around
-                            simultaneously. If not properly managed, it can lead to several mistakes that can
-                            take time and effort in addition to money, to correct. Save yourself the stress with
-                            our PMS!</p>
-                        <p>The Booking Ninjas PMS helps you simplify the moving day buzz with our mass move-in
-                            and move-out feature.</p>
+                        <p>Uma coisa que os proprietários de imóveis para estudantes temem é o caos que existe todo dia com as mudanças de alojamento. Muitas pessoas falando, precisando de atenção e deslocando-se simultaneamente. Se não for bem administrado, isso pode levar a vários erros que podem te tomar tempo e esforço, além de dinheiro, para corrigi-los. Poupe seu stress com o nosso PMS! </p>
+                        <p>O PMS da Booking Ninjas te ajuda a simplificar a agitação do dia movimentado com a nossa funcionalidade de entrada e saída em massa.</p>
                     </div>
                 </div>
                 <!-- /title -->
@@ -181,14 +151,9 @@
                                     <article>
                                         <section>
                                             <ul>
-                                                <li>The mass move-in and move-out feature reduce the stress of
-                                                    moving day with our group check-in/out feature.</li>
-                                                <li>This helps for proper planning and crowd control as you
-                                                    prepare effectively to handle the number of movements in
-                                                    your property.</li>
-                                                <li>Our single dashboard can display student check-in/check-out
-                                                    information in bulk, making it easier to be viewed and
-                                                    managed.</li>
+                                                <li>A funcionalidade de entrada e saída em massa reduz o stress do dia das mudanças com a nossa funcionalidade de entrada e saída em grupo.</li>
+                                                <li>Isso é útil para planejamentos adequados e controle de multidões à medida que você se prepara efetivamente para lidar com o número de mudanças na sua propriedade.</li>
+                                                <li>O nosso painel de controle único pode exibir informações de check-in/check-out de estudantes em massa, facilitando a sua visualização e gestão.</li>
                                             </ul>
                                         </section>
                                     </article>
@@ -204,16 +169,12 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-11">
                                 <h2>
-                                    Help your Students Settle In According To Their Pace With The Built-In
-                                    Student Orientation Feature
+                                    Ajude os seus alunos a se instalar de acordo com o seu ritmo, com a funcionalidade de Orientação Estudantil incorporada
                                 </h2>
                             </div>
                         </div>
-                        <p>As we settle into the new normal, take advantage of this feature to conduct student
-                            orientations. Why assemble all students in one hall, when they can easily go through
-                            the orientation from the comfort of their rooms, with their phones?</p>
-                        <p>The Built-In Student Orientation feature helps your tenants settle in well through
-                            the mobile app</p>
+                        <p>À medida que nos instalamos no novo normal, aproveite este recurso para realizar orientações para os estudantes. Por que reunir todos os estudantes em uma sala, quando eles podem facilmente ir direto para as orientações a partir do conforto dos seus próprios quartos </p>
+                        <p>A função Integrada de Orientação Estudantil ajuda os seus inquilinos a se acomodarem bem através do app mobile.</p>
                     </div>
                 </div>
                 <!-- /title -->
@@ -231,24 +192,11 @@
                                     <article>
                                         <section>
                                             <ul>
-                                                <li>You can include information on their bedroom allocations.
-                                                    This reduces the front desk inquiry. </li>
-                                                <li>More beautifully, it allows students to conduct room
-                                                    self-inspection using a checklist and submit them
-                                                    electronically via the mobile app.</li>
-                                                <li>Allows for online student contract signing which reduces
-                                                    paperwork and saves time.</li>
-                                                <li>And another awesome part: students go through the online
-                                                    student induction where you input details about your student
-                                                    housing policies, processes, practices, culture, values,
-                                                    etc. What better way to ease the stress of managing an
-                                                    offline orientation?</li>
-                                                <li>The online student request submission feature allows
-                                                    students to make direct requests on the app about
-                                                    maintenance, room transfers, guests, etc. This reduces the
-                                                    need for constant phone calls and emails as the centralised
-                                                    system enables them to make all their requests in one place.
-                                                    And you manage it from there.</li>
+                                                <li>Você pode incluir informações sobre as alocações no quarto deles. Isso reduz os questionamentos na recepção. </li>
+                                                <li>Mais formosamente, ele permite aos estudantes realizarem a auto-inspeção dos quartos utilizando uma lista de verificação e os envia eletronicamente através da app mobile.</li>
+                                                <li>Permite a assinatura de contrato de estudante online, reduzindo assim a papelada e poupando tempo.</li>
+                                                <li>E outra coisa incrível: os estudantes passam pela iniciação online, onde você introduz detalhes sobre as suas políticas de alojamento, processos, práticas, cultura, valores, etc. Não é essa uma forma melhor de aliviar o stress da realização de uma orientação offline?</li>
+                                                <li>A funcionalidade de submissão online de pedidos permite que os estudantes façam pedidos diretos na app relacionados à manutenção, transferências de quartos, convidados, etc. Isso reduz a necessidade de constantes chamadas telefônicas e e-mails, uma vez que o sistema centralizado permite que eles façam todos os seus pedidos em um único local. E você gerencia tudo a partir deste local!</li>
                                             </ul>
                                         </section>
                                     </article>
@@ -262,10 +210,9 @@
                 <div class="student-housing-page__main-title">
                     <div class="container">
                         <h2>
-                            Student Housing Apps &amp; Online Portal
+                            App de Alojamento para Estudantes &amp; Portal Online
                         </h2>
-                        <p>Get student-friendly features that solve simple problems faced by students in housing
-                            accommodations using the student housing apps. </p>
+                        <p>Obtenha recursos agradáveis aos estudante que resolvem problemas simples enfrentados pelos estudantes em alojamentos, usando os apps de alojamento para estudantes. </p>
                     </div>
                 </div>
                 <!-- /title -->
@@ -283,17 +230,10 @@
                                     <article>
                                         <section>
                                             <ul>
-                                                <li>For students &amp; parents to keep track of their
-                                                    accommodation.
+                                                <li>Para os estudantes e os pais manterem o acompanhamento do alojamento deles.
                                                 </li>
-                                                <li>Use the online portal to manage various accounts, make
-                                                    payments online, create work orders, renew leases, and much
-                                                    more. One portal, different functionalities. How easy can
-                                                    life get?</li>
-                                                <li>Students can self-serve their bookings and services without
-                                                    calling the front desk nonstop or dropping emails
-                                                    continually. With this feature, they manage their bookings
-                                                    and the services you offer from the comfort of their phones
+                                                <li>Use o portal online para gerenciar várias contas, fazer pagamentos online, criar ordens de trabalho, renovar aluguéis, e muito mais. Um portal, diferentes funcionalidades. Quão fácil a vida pode ficar? </li>
+                                                <li>Os estudantes podem auto-servir as suas reservas e serviços sem telefonar para a recepção constantemente ou mandar e-mails continuamente. Com esse recurso, eles gerenciam as suas próprias reservas e serviços que você oferece, e tudo isso no conforto do celular deles.
                                                 </li>
                                             </ul>
                                         </section>
@@ -310,14 +250,11 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-11">
                                 <h2>
-                                    Simplify Your Business Math With The Student Housing Accounting Software
+                                    Simplifique a sua Matemática Empresarial com o Software de Contabilidade de Alojamento para Alunos
                                 </h2>
                             </div>
                         </div>
-                        <p>Managing properties across various sites implies there's the need for a reliable
-                            accounting system that manages accounting, simplifies payment modalities, and makes
-                            rent collection much easier. You also need one that helps collate data and offers a
-                            great financial report for transactions.</p>
+                        <p>A gestão de propriedades em vários locais implica a necessidade de um sistema contábil confiável que gerencie a contabilidade, simplifique as formas de pagamento e torne a cobrança de aluguel muito mais fácil. Você também precisa de um software para obter ajuda com a comparação de dados e que ofereça um excelente relatório financeiro para as transações.</p>
                     </div>
                 </div>
                 <!-- /title -->
@@ -335,13 +272,8 @@
                                     <article>
                                         <section>
                                             <ul>
-                                                <li>Our PMS offers accounting software that makes debt
-                                                    management easy for you. Track all your debtors, get real
-                                                    data on debt owed, and organise your report to make for
-                                                    healthy finance for your business.</li>
-                                                <li>It also offers automated renewals for your students. This
-                                                    helps reduce the bureaucracy of rent renewals. Saved time =
-                                                    saved money!</li>
+                                                <li>O nosso PMS oferece um software de contabilidade que facilita a gestão de dívidas para você. Que rastreia todos os seus devedores, obtém dados reais sobre a dívida e organiza o seu relatório para atingir finanças saudáveis para o seu negócio.</li>
+                                                <li>Ele também oferece renovações automáticas para os seus estudantes. Isso ajuda a reduzir a burocracia das renovações de aluguel. Poupar tempo = poupar dinheiro!</li>
                                             </ul>
                                         </section>
                                     </article>
@@ -357,7 +289,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <h2>
-                                    What’s A Business Without Real-time Reporting &amp; Analytics of Data?
+                                    O que é um negócio sem relatórios e análises de dados em tempo real?
                                 </h2>
                             </div>
                         </div>
@@ -378,14 +310,9 @@
                                     <article>
                                         <section>
                                             <ul>
-                                                <li>Our PMS enables Tableau CRM integration, allowing you to
-                                                    visualize data in the most meaningful way. This ensures that
-                                                    you get all the data and analytical insights for your
-                                                    business. Businesses thrive when we get data right! </li>
-                                                <li>Availability forecasting: You can also use semester-based
-                                                    forecasting to further tailor your analytics.</li>
-                                                <li>Get customized reports of your business to suit specific
-                                                    areas you’d love to pay more interest in.</li>
+                                                <li>O nosso PMS permite a integração do Tableau CRM, que te permite visualizar os dados da forma mais significativa. Isso te garante que você obterá todos os dados e insights analíticos para o seu negócio. Os negócios prosperam quando nós obtemos os dados corretos! </li>
+                                                <li>Previsão da disponibilidade: Você também pode usar a previsão semestral para personalizar ainda mais a sua análise.</li>
+                                                <li>Obtenha relatórios personalizados do seu negócio para se adequar a áreas específicas nas quais você gostaria de prestar mais atenção.</li>
                                             </ul>
                                         </section>
                                     </article>
@@ -399,7 +326,7 @@
                 <div class="student-housing-page__main-title">
                     <div class="container">
                         <h2>
-                            More Features To Help You Manage Your Student Housing Better
+                            Mais recursos para o ajudar a gerenciar melhor o seu alojamento estudantil
                         </h2>
                     </div>
                 </div>
@@ -417,15 +344,10 @@
                                 <div class="col-lg-6">
                                     <article>
                                         <h3 class="title-underline">
-                                            Ancillary Services Integration
+                                            Integração de Serviços Auxiliares
                                         </h3>
                                         <section>
-                                            <p>Gеnеrаtе add-on revenue features to suit your business through
-                                                inbuilt shopping platforms where students can buy toiletries,
-                                                stationeries and bedding packs. The cool thing here is, it saves
-                                                students time from going to shopping malls and also helps the
-                                                property owner generate more income. Steady cash flow is
-                                                necessary, you’d agree with me.</p>
+                                            <p>Gere receitas adicionais que se adequam ao seu negócio através de plataformas incorporadas de compras, onde os estudantes podem comprar artigos de higiene pessoal, artigos de papelaria e kits de roupa de cama. O mais legal aqui é que isso economiza o tempo dos estudantes, de irem até centros comerciais e também ajuda o proprietário a gerar mais rendimentos. É necessário um fluxo de caixa estável, você não concorda comigo?</p>
                                         </section>
                                     </article>
                                 </div>
@@ -441,24 +363,14 @@
                                 <div class="col-lg-6">
                                     <article>
                                         <h3 class="title-underline">
-                                            Never Be Caught Unaware With Our Maintenance &amp; Inсidеnсе
-                                            Management
-                                            Software
+                                           Nunca seja pego desprevenido com o nosso software de gerenciamento de manutenções &amp; Inсidеntеs
                                         </h3>
                                         <section>
-                                            <p>Life is good when incidents and emergencies are properly
-                                                forecasted and taken care of. Because we know how important it
-                                                is to maintain properties and manage incidences, your business
-                                                is safe with our PMS.</p>
+                                            <p>A vida é boa quando os incidentes e emergências são adequadamente previstos e cuidados. Porque nós sabemos como é importante cuidar das propriedades e gerenciar os incidentes, o seu negócio está seguro com o nosso PMS.</p>
                                             <ul>
-                                                <li>Your students can request maintenance via the online portal
-                                                    and have their needs met in real-time. </li>
-                                                <li>Take charge of your students' welfare by the online incident
-                                                    report form where they inform you of incidents that require
-                                                    attention.</li>
-                                                <li>As the reports are sent by students, your staff can receive
-                                                    notifications of these and update the status of the report
-                                                    as they deploy solutions or escalate the reports.</li>
+                                                <li>Os seus estudantes podem pedir por manutenção através do portal online e ter as suas necessidades satisfeitas em tempo real. </li>
+                                                <li>Esteja no controle do bem-estar dos seus estudantes através do formulário de incidentes online, onde eles te informam dos incidentes que precisam de atenção.</li>
+                                                <li>À medida que os relatórios são enviados pelos estudantes, os seus funcionários podem receber as notificações deles e atualizar o status do relatório à medida que encontram soluções ou escalam os relatórios.</li>
                                             </ul>
                                         </section>
                                     </article>
@@ -475,13 +387,10 @@
                                 <div class="col-lg-6">
                                     <article>
                                         <h3 class="title-underline">
-                                            Mass Texting &amp; Messaging for Marketing
+                                            Mensagens e Textos em Massa para o Marketing
                                         </h3>
                                         <section>
-                                            <p>Send transactional messages like payment reminders, news alerts,
-                                                work order status, package tracking, or announcements with text,
-                                                email, or even WhatsApp using the Mass Texting and Messaging
-                                                software.</p>
+                                            <p>Envie mensagens transacionais, tais como lembretes de pagamento, alertas de notícias, status das ordens de trabalho, rastreio de pacotes ou anúncios com texto, e-mail ou até mesmo WhatsApp, usando o software de Mensagens e Textos em Massa.</p>
                                         </section>
                                     </article>
                                 </div>
@@ -497,14 +406,12 @@
                                 <div class="col-lg-6">
                                     <article>
                                         <h3 class="title-underline">
-                                            Online Student Housing Payment Software
+                                            Software de Pagamento Online do Alojamento para Estudantes
                                         </h3>
                                         <section>
                                             <ul>
-                                                <li>Minimize past due accounts, enhance security, remove
-                                                    paperwork, and improve accuracy using the student housing
-                                                    software. It comes with features that enable these.</li>
-                                                <li>This is also a Mobile app supported software</li>
+                                                <li>Minimize contas vencidas, aumente a segurança, remova a papelada e melhore a precisão usando o software de alojamento dos estudantes. Ele conta com características que permitem tudo isso.</li>
+                                                <li>Este é também um software que suporta o App Mobile</li>
                                             </ul>
                                         </section>
                                     </article>
@@ -521,21 +428,13 @@
                                 <div class="col-lg-6">
                                     <article>
                                         <h3 class="title-underline">
-                                            Your Student’s Package &amp; Parcel Are Safe Through Our Tracking
-                                            System
+                                            O Pacote dos seus Estudantes &amp; e as Encomendas ficam seguras através do nosso sistema de rastreio
                                         </h3>
                                         <section>
-                                            <p>Every now and then, students receive packages and parcels from
-                                                family, friends, and school-related purposes. The ability to get
-                                                these parcels tracked and delivered in time helps ease off
-                                                stress for your students and your staffs</p>
+                                            <p>De tempos em tempos, os estudantes recebem pacotes e encomendas da família, de amigos e relacionados com a escola. A capacidade de fazer com que estas encomendas sejam rastreadas e entregues a tempo ajuda a aliviar o stress dos seus estudantes e dos seus funcionários.</p>
                                             <ul>
-                                                <li>With our software, packages can be received and tracked
-                                                    until it lands in the hands of the student. Each package
-                                                    information is added to the student record. </li>
-                                                <li>Our PMS is Integrated with USPS for detailed tracking even
-                                                    before it reaches the student housing. This helps control
-                                                    your storage space and reduces anxiety while waiting.</li>
+                                                <li>Com o nosso software, as encomendas podem ser recebidas e rastreadas até chegar nas mãos do estudante. Cada informação da encomenda é adicionada ao registo do estudante. </li>
+                                                <li>O nosso PMS é integrado com o USPS para um acompanhamento detalhado, mesmo antes da  encomenda chegar ao alojamento do estudante. Isso ajuda a controlar o seu espaço de armazenamento e reduz a ansiedade enquanto espera.</li>
                                             </ul>
                                         </section>
                                     </article>
@@ -552,17 +451,13 @@
                                 <div class="col-lg-6">
                                     <article>
                                         <h3 class="title-underline">
-                                            Student Housing Access Control
+                                            Controle de Acesso ao Alojamento do Estudante
                                         </h3>
                                         <section>
-                                            <p>Have total control of the access available to various sections of
-                                                your property. Allow for ‘Out-Of-Bounds’ areas, general areas,
-                                                and the likes.</p>
+                                            <p>Tenha total controle do acesso disponível aos vários departamentos da sua propriedade. Permita a entrada em áreas fora do limite, áreas em geral e afins.</p>
                                             <ul>
-                                                <li>Control access to various sections of your property to limit
-                                                    trespassing and security breaches.</li>
-                                                <li>Easily set rule-based control via the system to allow
-                                                    passage and access to only qualified students/staff.</li>
+                                                <li>Controle o acesso aos vários departamentos da sua propriedade para limitar a invasão de estabelecimentos e as violações de segurança.</li>
+                                                <li> Estabeleça facilmente um controle regrado através do sistema para permitir a passagem e o acesso apenas de estudantes/funcionários qualificados.</li>
                                             </ul>
                                         </section>
                                     </article>
@@ -576,17 +471,14 @@
                 <!-- prices -->
                 <div class="segment__prices">
                     <div class="container">
-                        <h2 class="text_center section-title">Booking Ninjas Student Housing Management Software
-                            Pricing</h2>
-                        <p class="text_center">Enjoy a price range that reflects the excellent value we bring to
-                            your business.</p>
-                        <h3>Core Student Housing PMS (Starts from <span>
-                            ${!MinPrice}/month</span>)
+                        <h2 class="text_center section-title">Preço do Software de Gerenciamento de Alojamento para Estudantes da Booking Ninjas</h2>
+                        <p class="text_center">Desfrute de uma gama de preços que refletem o valor agregado que trazemos para o seu negócio.</p>
+                        <h3>PMS principal de alojamento de estudantes(Começa a partir de <span>
+                            {!MinPrice}/mês</span>)
                         </h3>
                         <div class="text_center pricing-support__btn wow fadeIn">
                             <apex:outputLink value="{!URLFOR($Page.BN_Pricing)}" styleClass="button-orange">
-                                PLANS
-                                &amp; PRICING</apex:outputLink>
+                                PLANOS &amp; PREÇOS</apex:outputLink>
                         </div>
                     </div>
                 </div>
@@ -596,11 +488,9 @@
                 <div class="segment__addons">
                     <div class="container">
                         <h2 class="text_center section-title">
-                            Add-Ons For Your Student Housing Property Management Software
+                           Complementos para o Software de Gerenciamento de Propriedades do Alojamento para os seus estudantes
                         </h2>
-                        <p class="section-subtitle">Get tailor-made add-ons that serve your business better with
-                            the Booking Ninjas Student Housing Property Management Software. Our value-reaching
-                            add-ons further extend the functionality of your system.</p>
+                        <p class="section-subtitle">Obtenha complementos feitos personalizadamente que servem melhor o seu negócio com o Software de Gerenciamento de Propriedades de Alojamento para Estudantes Booking Ninjas. Os nossos complementos de valor agregado aumentam ainda mais a funcionalidade do seu sistema.</p>
                         <!-- Slider -->
                         <div class="pricing-addons__slider">
                             <div class="pricing-addons__slide">
@@ -609,7 +499,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-be.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Booking Engine</h3>
+                                    <h3 class="pricing-addons__slide-title">Engine de Reservas </h3>
                                 </div>
                             </div>
                             <div class="pricing-addons__slide">
@@ -618,7 +508,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-channel-manager.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Channel Manager</h3>
+                                    <h3 class="pricing-addons__slide-title">Gerenciador de canais</h3>
                                 </div>
                             </div>
                             <div class="pricing-addons__slide">
@@ -627,7 +517,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-data-analytics.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Data Analytics</h3>
+                                    <h3 class="pricing-addons__slide-title"> Análise de Dados </h3>
                                 </div>
                             </div>
                             <div class="pricing-addons__slide">
@@ -636,7 +526,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-pos.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">POS</h3>
+                                    <h3 class="pricing-addons__slide-title"> POS </h3>
                                 </div>
                             </div>
                             <div class="pricing-addons__slide">
@@ -645,7 +535,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-cash-register.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Cash Register</h3>
+                                    <h3 class="pricing-addons__slide-title">Registro de Caixa </h3>
                                 </div>
                             </div>
                             <div class="pricing-addons__slide">
@@ -654,7 +544,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-portal.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Portal</h3>
+                                    <h3 class="pricing-addons__slide-title">Portal </h3>
                                 </div>
                             </div>
                             <div class="pricing-addons__slide">
@@ -663,7 +553,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-email-app.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Email App</h3>
+                                    <h3 class="pricing-addons__slide-title">Email app </h3>
                                 </div>
                             </div>
                             <div class="pricing-addons__slide">
@@ -672,7 +562,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-membership-module.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Membership Module</h3>
+                                    <h3 class="pricing-addons__slide-title">Módulo de Membros</h3>
                                 </div>
                             </div>
                             <div class="pricing-addons__slide">
@@ -681,7 +571,7 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-esign.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Esign (Additional Api's)</h3>
+                                    <h3 class="pricing-addons__slide-title">Assinatura digital (API adicional)</h3>
                                 </div>
                             </div>
                             <div class="pricing-addons__slide">
@@ -690,13 +580,12 @@
                                         <img
                                             src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/pricing-addon-communications.png" />
                                     </div>
-                                    <h3 class="pricing-addons__slide-title">Communications (paid by usage)</h3>
+                                    <h3 class="pricing-addons__slide-title">Comunicações (Pagas por uso)</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="learn-more-center">
-                            <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}">More add-ons
-                                available soon</apex:outputLink>
+                            <apex:outputLink value="{!URLFOR($Page.BN_FeatureSpotlights)}">Mais complementos disponíveis em breve</apex:outputLink>
                         </div>
                     </div>
                 </div>
@@ -708,193 +597,138 @@
                         <div class="segment-accordion">
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>What is student hоusing management sоftwаrе?</h3>
+                                    <h3>O que é o Software de Gerenciamento de Alojamento para Estudantes?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>Student housing sоftwаrе is the technology that goes beyond basic
-                                        рrореrtу management sоftwаrе fеаturеs and fосusеs on features unique to
-                                        student housing. These include mаximizing rооm оссuраnсу, managing rооm
-                                        and roommate рrеfеrеnсеs, intеgrаting with саmрus sуstеms, аnd storing
-                                        information for parents оr tеnаnts. Inсludеs stаndаrd ассounting,
-                                        maintenance, аnd tеnаnt and lеаsе management functions.</p>
+                                    <p>Software de Alojamento para Estudantes é a tecnologia que vai além de um simples software de gerenciamento de propriedades e que foca em recursos exclusivos para o alojamento estudantil. O que inclui maximização da ocupação dos quartos, gerenciamento das preferências de quartos e colega de quarto, integração com o sistema do campus e armazenando informação para os pais ou inquilinos. Incluindo contabilidade padronizada, manutenção e funções de gerenciamento dos inquilinos e do aluguel.</p>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>Whаt fеаturеs tо lооk fоr in a studеnt housing sоftwаrе?</h3>
+                                    <h3>Quais características eu devo observar em um software de alojamento estudantil?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
                                     <ul class="segment__list segment-accordion__list">
-                                        <li>Accounting</li>
-                                        <li>Budgеting and forecasting</li>
-                                        <li>Online роrtаl fоr studеnts</li>
-                                        <li>Ancillary services Integration</li>
-                                        <li>Maintenance аnd inсidеnсе management</li>
+                                        <li>Contabilidade</li>
+                                        <li>Orçamento e previsão</li>
+                                        <li>Pоrtаl online para estudantes</li>
+                                        <li>Integração de serviços auxiliares</li>
+                                        <li>Gestão da manutenção e de incidentes</li>
                                         <li>Marketing</li>
-                                        <li>Access Control</li>
-                                        <li>Package Management</li>
+                                        <li>Controle de Acesso</li>
+                                        <li>Gestão de encomendas</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>Exресtеd Benefits of Student Housing Management Software</h3>
+                                    <h3>Benefícios esperados do Software de Gerenciamento de Alojamento para estudantes</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>Using our PMS affords you the following comfort for your business:</p>
+                                    <p>O uso do nosso PMS te proporciona os seguintes confortos para o seu negócio:</p>
                                     <ul class="segment__list segment-accordion__list">
-                                        <li>You save соsts and administrative timе viа online аррliсаtiоns. Most
-                                            modern housing applications have enabled options for students to
-                                            apply and make preferred choices of rooms from the available
-                                            options.</li>
-                                        <li>This helps fасilitаtе рареrlеss аррrоvаls by universities and
-                                            property owners and makes for more transactions per day by students.
+                                        <li>Economiza em custos e no tempo administrativo através de aplicativos online. A maioria dos aplicativos de alojamento modernos têm permitido que estudantes possam escolher que quarto preferem entre as opções disponíveis.</li>
+                                        <li>Te ajuda a facilitar aprovações (sem a necessidade de papeladas) por universidades e donos de propriedades e faz mais transações ao dia por estudantes.
                                         </li>
-                                        <li>It comes with a centralised infоrmаtiоn feature that ensures all
-                                            data are safely kept and updated in one place.</li>
-                                        <li>You can gеnеrаtе add-on revenue features to suit your business. This
-                                            could be in the form of inbuilt shopping platforms where students
-                                            can buy toiletries, stationery, and bedding packs. This saves
-                                            students time from going to shopping malls and also helps the
-                                            property owner generate more income. Steady cash flow is necessary!
+                                        <li>Ele vem com um recurso de informação centralizada que assegura que todos os dados são mantidos e atualizados em segurança em um único local.</li>
+                                        <li>Você pode gerar receitas através desses complementos para se adequar ao seu negócio. Podendo ser no formato de plataformas de compras integradas, onde os estudantes podem comprar artigos de higiene pessoal, artigos de papelaria e kits de roupa de cama. Isso poupa o tempo dos estudantes de irem aos centros comerciais e também ajuda o dono da propriedade na geração de mais rendimentos. Fluxo de caixa estável é necessário!
                                         </li>
-                                        <li>Also enables livе аttеndаnсе tracking for your students on campus.
-                                            Not many PMSs can integrate various biometric devices or swipe cards
-                                            to capture real-time movement on student accommodations. This
-                                            automatically records attendance and restricts illegal access on
-                                            campus. A very beautiful way to secure your property and the lives
-                                            of students. </li>
+                                        <li>Também permite registro de frequência real para os seus estudantes no campus. Não existem muitos PMSs que conseguem integrar vários dispositivos biométricos ou cartões de deslize para captar o movimento em tempo real nas acomodações dos estudantes. Isso regista automaticamente a frequência e restringe o acesso ilegal no campus. Uma forma muito bonita de proteger a sua propriedade e a vida dos estudantes.</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>Kеу cоnsidеrаtiоns for student hоusing management software</h3>
+                                    <h3>Considerações importantes para o software de alojamento de estudantes</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>Before you deploy a PMS, you must take note of the following:</p>
+                                    <p>Antes de você implementar o PMS, você deve compreender o seguinte:</p>
                                     <ul class="segment__list segment-accordion__list">
-                                        <li>Business sizе: The size of the business will determine the type of
-                                            PMS you sign up for. If you want to perfectly manage the number of
-                                            rooms and students on your property, you want to get a PMS that can
-                                            adequately cover the size your property operates on. This is to
-                                            avoid mistakes in room tracking, room booking, rent renewals,
-                                            maintenance, etc. Ensure to get the Booking Ninjas PMS as it
-                                            comfortably caters for all sizes of student accommodations, in
-                                            whatever location of the world. Get software that offers the
-                                            opportunity to scale up your business, if you are a first-time user.
+                                        <li>Tamanho da empresa: A dimensão da empresa determinará o tipo de PMS que você irá se inscrever. Se você quiser administrar perfeitamente o número de quartos e estudantes na sua propriedade, você irá querer um PMS que possa cobrir adequadamente o tamanho da sua propriedade. Isso, para evitar erros no rastreio de quartos, reservas de quartos, renovações de aluguel, manutenção, etc. Certifique-se de obter o PMS da Booking Ninjas, uma vez que este atende confortavelmente a todos os tamanhos de acomodações para estudantes, em qualquer lugar do mundo. Adquira um software que ofereça a oportunidade de escalar o seu negócio, se for usuário pela primeira vez.
                                         </li>
-                                        <li>Dерlоуmеnt architecture: To each business, it’s own. We encourage
-                                            you to&nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}">
+                                        <li>Design de execução: Cada negócio é próprio. Nós te encorajamos a agendar um teste para&amp;nbsp;<apex:outputLink value="{!URLFOR($Page.BNCalendly)}">
                                                 schedule a demo
-                                            </apex:outputLink> to
-                                            ensure our services suit your deployment architecture.</li>
-                                        <li>Intеgrаtiоn capability: If you need integrations with 3rd party
-                                            applications, Booking Ninjas is the right PMS for you. Being built
-                                            on Salesforce, our system is has a high integration capacity.</li>
+                                            </apex:outputLink> assegurar que os nossos serviços se adequam ao seu design de execução.</li>
+                                        <li>Capacidade de integração: Se você precisar de integração com aplicativos de terceiros, a Booking Ninjas é o PMS certo para você. Sendo construído com o Salesforce, nosso sistema tem uma capacidade elevada de integração.</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>How We Work With Student Housing Providers?</h3>
+                                    <h3>Como Nós Trabalhamos com os Fornecedores de Alojamento para Estudantes?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>Mаnаging student housing is unique and сhаllеnging because students аrе
-                                        tурiсаllу a trаnsiеnt population, with many studеnts shаring the sаmе
-                                        house, but rеnting individual rooms or bеds. Using management sоftwаrе
-                                        for studеnt hоusing is еssеntiаl fоr mаnаging tenant turnоvеr,
-                                        maintenance, аnd dаilу ореrаtiоns. We go beyond typical PMS features and
-                                        provide an instance that prioritises features needed by student housing
-                                        providers.</p>
+                                    <p>Gerenciar o alojamento estudantil é único e desafiador, porque os estudantes são geralmente uma população em constante transição, com muitos estudantes compartilhando a mesma casa, mas alugando quartos ou camas individuais. Usar o sоftwаrе de gerenciamento de alojamento para estudantes é essencial para administrar a rotação de inquilinos, manutenção e operações diárias. Nós vamos além de características simples de PMS e fornecemos uma caso que dê prioridade aos recursos necessários pelos fornecedores de alojamento estudantil.</p>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>Can you install this Student housing management system into an existing
-                                        Salesforce organisation?</h3>
+                                    <h3>Vocês podem instalar este sistema de Gerenciamento de Alojamento Estudantil em uma organização com Salesforce já existente?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>Yes, you can install this system into your existing Salesforce
-                                        organisation.</p>
+                                    <p>Sim, você pode instalar este sistema na sua organização com Salesforce já existente.</p>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>Can I get a demo of your student housing management system?</h3>
+                                    <h3>Eu posso obter um teste do seu sistema de Gerenciamento de alojamentos de estudantes?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>Yes, you can schedule a demo of our student housing system. With a demo,
-                                        you see how the system helps deliver features peculiar to student
-                                        housing management. Features you probably won’t find anywhere in an
-                                        all-in-one system.</p>
+                                    <p>Sim, pode agendar um teste do nosso sistema de alojamento de estudantes. Com um teste, você pode ver como o sistema ajuda a entregar características peculiares para o gerenciamento de alojamentos de estudantes. Características estas que você provavelmente não encontrará em lugar nenhum que tenha um sistema tudo-em-um.</p>
                                     <p>
-                                        <apex:outputLink value="{!URLFOR($Page.BNCalendly)}">Schedule a demo
-                                        </apex:outputLink>&nbsp;today! You can
-                                        choose any day or time convenient for you.
+                                        <apex:outputLink value="{!URLFOR($Page.BNCalendly)}">Marque um teste
+                                        </apex:outputLink>&amp;nbsp;hoje! Você pode escolher qualquer dia ou hora conveniente para você.
 
                                     </p>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>Do you support online booking for seats, desks, private offices via
-                                        booking engine/app?</h3>
+                                    <h3>Vocês suportam reservas online de assentos, mesas e escritórios privados através do engine/app?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    <p>Yes, Booking Ninjas PMS provides a booking engine that supports online
-                                        booking for your community. Members and guests can book online, pay and
-                                        manage their meeting room reservations in any of your centres. Also
-                                        ensures availability of Private &amp; Meeting Room Booking. Available
-                                        both
-                                        on desktop and mobile platforms.</p>
+                                    <p>Sim, o PMS da Booking Ninjas fornece um engine de reservas que suporta reservas online para a sua comunidade. Membros e hóspedes podem reservar online, pagar e controlar as suas reservas de salas de reunião em qualquer um dos seus centros. Também assegura a disponibilidade de Reservas de Salas Privadas &amp; de Reunião. Disponível tanto nas plataformas do desktop como do app.</p>
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>Do you connect with the POS (snacks shop)?</h3>
+                                    <h3>Vocês têm conexão com o POS (snacks shop)?</h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    Yes, we do. Whether your POS operates in a snack shop, restaurant, bursary
-                                    or cafe, our PMS connects the POS to the rest of the PMS. If you already
-                                    have a POS system, we can connect it to the rest of your instance. If you
-                                    don’t have an existing POS system, we will provide the POS system which is
-                                    automatically synced with the rest of the PMS.
+                                    Sim, nós temos. Quer o seu POS funcione em uma lanchonete, restaurante, escritório ou cafeteria, o nosso PMS conecta o POS ao resto do PMS. Se você já tiver um sistema POS, nós podemos conectá-lo com o resto do seu protótipo. Se não tiver um sistema POS existente, nós fornecemos o sistema POS que está automaticamente sincronizado com o resto do PMS.
                                 </div>
                             </div>
                             <div class="segment-accordion__item">
                                 <div class="segment-accordion__trigger">
-                                    <h3>Do you have a member portal for the member to manage their account?</h3>
+                                    <h3>Vocês têm um portal de membros para que ele possa gerenciar a conta dele? </h3>
                                     <div class="segment-accordion__icon"><i class="fas fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="segment-accordion__content">
-                                    Yes, we do. For the member portal, you can do the following: Status booking,
-                                    etc (day pass/monthly member), upgrade plan, referrer program, etc. You can
-                                    also include custom options you’d like your members to see on their portal.
+                                    Sim, temos. Para o portal de membros, você pode fazer o seguinte: Status de Reserva, etc. (assinatura diária/mensal de membro), plano de Upgrade, programa de recomendação, etc. Você pode também incluir opções personalizadas que você gostaria que os seus membros vissem no seu portal.
                                 </div>
                             </div>
                         </div>
                         <div class="learn-more-center">
-                            <apex:outputLink value="{!URLFOR($Page.BN_FAQs)}">More FAQs about Booking Ninjas
+                            <apex:outputLink value="{!URLFOR($Page.BN_FAQs)}">Mais FAQs sobre Booking Ninjas
                             </apex:outputLink>
                         </div>
                     </div>

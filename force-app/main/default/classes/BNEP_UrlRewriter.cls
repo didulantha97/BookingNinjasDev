@@ -1,9 +1,9 @@
-global with sharing class BNEP_UrlRewriter implements Site.UrlRewriter {
+global class BNEP_UrlRewriter implements Site.UrlRewriter {
 
     String regEx = '[^a-zA-Z0-9]';
 
     // Variables to represent the user-friendly URLs
-    String SPANISH_INDEX = '/ep';
+    String SPANISH_INDEX = '/es';
     String ABOUT_PAGE = '/about-us';
     String ADVANTAGES_PAGE = '/advantages-of-our-property-management-system';
     String ARTICLE_PAGE = '/blog/';
@@ -40,7 +40,7 @@ global with sharing class BNEP_UrlRewriter implements Site.UrlRewriter {
     String CONTACT_PAGE = '/contact-us';
     String CORE_VALUES_PAGE = '/core-values-of-booking-ninjas-product';
     String COVID19_PAGE = '/covid-19';
-    String COWORKING_LANDING_PAGE = '/coworking-space-management-software';
+    String COWORKING_LANDING_PAGE = '/software-de-gerenciamento-de-espaço-de-coworking';
     String CUSTOMER_STORIES_CTY_PAGE = '/customer-story/cty-books';
     String CUSTOMER_STORIES_HFTP_PAGE = '/customer-story/hftp-south-florida';
     String CUSTOMER_STORIES_INDUSTRIOUS_PAGE = '/customer-story/industrious-office';
@@ -60,8 +60,8 @@ global with sharing class BNEP_UrlRewriter implements Site.UrlRewriter {
     String GLANCE_PAGE = '/capabilities-of-booking-ninjas-product';
     String GOVERNMENT_LANDING_PAGE = '/government-property-management-software';
     String GUEST_POST_SUBMISSION_PAGE = '/guest-post-submission';
-    String HOSTEL_LANDING_PAGE = '/hostel-management-system';
-    String HOTEL_LANDING_PAGE = '/hotel-management-software';
+    String HOSTEL_LANDING_PAGE = '/sistema de gerenciamento de albergue';
+    String HOTEL_LANDING_PAGE = '/software de gestão hoteleira';
     String HOTEL_TRIAL_LANDING_PAGE = '/hotel-property-management-software-free-trial';
     String IMPLEMENTATION_PAGE = '/pms-implementation';
     String INDUSTRIAL_REVOLUTION_PAGE = '/industrial-revolution';
@@ -99,7 +99,7 @@ global with sharing class BNEP_UrlRewriter implements Site.UrlRewriter {
     String SITEMAP_PAGE = '/sitemap.xml';
     String SOLUTIONS_PAGE = '/solutions-for-property-management';
     String STORAGE_LANDING_PAGE = '/self-storage-management-software';
-    String STUDENTHOUSING_LANDING_PAGE = '/student-housing-property-management-software';
+    String STUDENTHOUSING_LANDING_PAGE = '/moradia-de-estudantes';
     String SUBMISSION_THANKYOU_PAGE = '/thank-you-for-your-submission';
     String SURVEYS_PAGE = '/surveys';
     String TERMS_PAGE = '/terms-and-conditions';
@@ -193,7 +193,7 @@ global with sharing class BNEP_UrlRewriter implements Site.UrlRewriter {
     String CONTACT_VF_PAGE = '/BN_Contact';
     String CORE_VALUES_VF_PAGE = '/BN_CoreValues';
     String COVID19_VF_PAGE = '/BN_Covid19';
-    String COWORKING_LANDING_VF_PAGE = '/BN_LP_CoWorking';
+    String COWORKING_LANDING_VF_PAGE = '/BNEP_LP_CoWorking';
     String CUSTOMER_STORIES_CTY_VF_PAGE = '/BN_CustomerStories_CTY';
     String CUSTOMER_STORIES_HFTP_VF_PAGE = '/BN_CustomerStories_HFTP';
     String CUSTOMER_STORIES_INDUSTRIOUS_VF_PAGE = '/BN_CustomerStories_Industrious';
@@ -213,7 +213,7 @@ global with sharing class BNEP_UrlRewriter implements Site.UrlRewriter {
     String GLANCE_VF_PAGE = '/BN_Glance';
     String GOVERNMENT_LANDING_VF_PAGE = '/BN_LP_Government';
     String GUEST_POST_SUBMISSION_VF_PAGE = '/BN_GuestPost';
-    String HOSTEL_LANDING_VF_PAGE = '/BN_LP_Hostels';
+    String HOSTEL_LANDING_VF_PAGE = '/BNEP_LP_Hostels';
     String HOTEL_LANDING_VF_PAGE = '/BN_LP_Hotels';
     String HOTEL_TRIAL_LANDING_VF_PAGE = '/BN_LP_HotelsTrial';
     String IMPLEMENTATION_VF_PAGE = '/BN_Implementation';
@@ -252,7 +252,7 @@ global with sharing class BNEP_UrlRewriter implements Site.UrlRewriter {
     String SITEMAP_VF_PAGE = '/sitemap.xml';
     String SOLUTIONS_VF_PAGE = '/BN_Solutions';
     String STORAGE_LANDING_VF_PAGE = '/BN_LP_Storage';
-    String STUDENTHOUSING_LANDING_VF_PAGE = '/BN_LP_StudentHousing';
+    String STUDENTHOUSING_LANDING_VF_PAGE = '/BNEP_LP_StudentHousing';
     String SUBMISSION_THANKYOU_VF_PAGE = '/BN_GuestPost_TY';
     String SURVEYS_VF_PAGE = '/BN_Survey';
     String TERMS_VF_PAGE = '/BN_TermsAndConditions';
