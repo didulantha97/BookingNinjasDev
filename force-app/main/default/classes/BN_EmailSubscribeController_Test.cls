@@ -19,23 +19,27 @@ public class BN_EmailSubscribeController_Test {
     {
         Test.startTest();
         
-            PageReference pageRef = Page.BN_LP_Club;
-            Test.setCurrentPage(pageRef);
-
-            BN_EmailSubscribeController ctrl = new BN_EmailSubscribeController();
-            
-            ctrl.email = 'joee@johnson.com';
-            ctrl.subscribe(); 
-                  
+        PageReference pageRef = Page.BN_LP_Club;
+        Test.setCurrentPage(pageRef);
+        
+        BN_EmailSubscribeController ctrl = new BN_EmailSubscribeController();
+        
+        ctrl.email = 'joee@johnson.com';
+        ctrl.subscribe(); 
+        
         Test.stopTest();
         
     }
     
     public static testMethod void testLowestPrices(){
         Test.startTest();
-        	BN_EmailSubscribeController ctrl2 = new BN_EmailSubscribeController();
-        	ctrl2.getLowestPrice();
+        
+        PageReference ref = Page.BN_LP_Club;
+        Test.setCurrentPage(ref);
+        
+        BN_EmailSubscribeController ctrl2 = new BN_EmailSubscribeController();
+        ctrl2.getLowestPrice();
         Test.stopTest();
     }
-
+    
 }

@@ -1,4 +1,4 @@
-@isTest()
+@isTest(seealldata = true)
 public class BN_TemplateController_Test {
 
     public static String[] pages = new List<String>();
@@ -176,7 +176,7 @@ public class BN_TemplateController_Test {
         Test.stopTest();
     }
 
-    public static testMethod void testMonthlyFee() 
+    public static testMethod void testCheckEmail() 
     {
         Test.startTest();
         
@@ -187,8 +187,20 @@ public class BN_TemplateController_Test {
             
             ctrl.email = 'joee@johnson.com';
             ctrl.getMonthlyFee(); 
-            ctrl.getMinPrice();
             
         Test.stopTest();
+
     }
+    
+    public static testMethod void testLowestPrices(){
+        Test.startTest();
+        
+        PageReference ref = Page.BN_LP_Club;
+        Test.setCurrentPage(ref);
+        
+        BN_TemplateController ctrl2 = new BN_TemplateController();
+        ctrl2.getMinPrice();
+        Test.stopTest();
+    }
+    
 }
